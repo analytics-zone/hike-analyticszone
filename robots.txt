@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hike.analyticszone.app/sitemap.xml
