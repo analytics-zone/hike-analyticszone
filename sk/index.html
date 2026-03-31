@@ -1,61 +1,247 @@
-<!DOCTYPE html><html lang="sk" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet"><title>Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...</title><meta name="description" content="Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná..."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="aplikácia na analýzu turistiky, aplikácia na analýzu chôdze, aplikácia pre iOS s dôrazom na ochranu osobných údajov, turistické metriky zdravia, kroková analýza"><link rel="canonical" href="https://hike.analyticszone.app/sk/"><meta property="og:type" content="website"><meta property="og:url" content="https://hike.analyticszone.app/sk/"><meta property="og:title" content="Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia..."><meta property="og:description" content="Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná..."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="sk_SK"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/sk/"><meta name="twitter:title" content="Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia..."><meta name="twitter:description" content="Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná..."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/"><link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/"><link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/"><link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/"><link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/"><link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/"><link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/"><link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/"><link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/"><link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
+<!DOCTYPE html>
+<html lang="sk" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...</title>
+  <meta name="description" content="Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná...">
+  <meta name="author" content="AnalyticsZone Team">
+
+  
+  
+  <meta name="keywords" content="aplikácia na analýzu turistiky, aplikácia na analýzu chôdze, aplikácia pre iOS s dôrazom na ochranu osobných údajov, turistické metriky zdravia, kroková analýza">
+  
+
+  
+  <link rel="canonical" href="https://hike.analyticszone.app/sk/">
+
+  
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hike.analyticszone.app/sk/">
+  <meta property="og:title" content="Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...">
+  <meta property="og:description" content="Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná...">
+  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Hike Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hike.analyticszone.app/sk/">
+  <meta name="twitter:title" content="Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...">
+  <meta name="twitter:description" content="Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná...">
+  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@hikeanalytics">
+  <meta name="twitter:creator" content="@hikeanalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/">
+  
+  <link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/">
+  
+  <link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/">
+  
+  <link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/">
+  
+  <link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/">
+  
+  <link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/">
+  
+  <link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/">
+  
+  <link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/">
+  
+  <link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/">
+  
+  <link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/">
+  
+  <link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/">
+  
+  <link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/">
+  
+  <link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/">
+  
+  <link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/">
+  
+  <link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/">
+  
+  <link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/">
+  
+  <link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  
+  
+  
+  
+  <meta name="robots" content="index, follow">
+  
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6760036261">
+  
+
+  
+  <style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -314,7 +500,20 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=f4a4f52b4341"><script type="application/ld+json">
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../assets/css/main.min.css?v=19fdca55b3da">
+
+  
+  
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -349,7 +548,10 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -358,7 +560,11 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "sk"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -373,7 +579,14 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -416,7 +629,22 @@ img[width][height] {
     }
   ]
 }
-</script><script>
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -430,457 +658,1465 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script></head><body><a href="#main-content" class="skip-link">Preskočiť na obsah</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/sk/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/sk/" 
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Preskočiť na obsah</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/sk/" class="site-logo">
+                <picture>
+                    <source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
+                </picture>
+                <span class="logo-text">Hike Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/sk/" 
                                 aria-current="">
                                 Domov
-                            </a></li><li class="has-submenu" ><a href="/sk/getting-started/" class="nav-label">Učte sa</a><ul class="submenu"><li><a href="/sk/getting-started/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/sk/getting-started/" class="nav-label">Učte sa</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/sk/getting-started/" 
                                         aria-current="">
                                         Začíname
-                                    </a></li><li><a href="/sk/walking-zones/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/walking-zones/" 
                                         aria-current="">
                                         Turistické zóny
-                                    </a></li><li><a href="/sk/gait-analysis/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/gait-analysis/" 
                                         aria-current="">
                                         Analýza chôdze
-                                    </a></li><li><a href="/sk/training-load/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/training-load/" 
                                         aria-current="">
                                         Tréningové zaťaženie
-                                    </a></li><li><a href="/sk/wss-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/wss-calculator/" 
                                         aria-current="">
                                         WSS kalkulačka
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/sk/research/" class="nav-label">Veda</a><ul class="submenu"><li><a href="/sk/research/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/sk/research/" class="nav-label">Veda</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/sk/research/" 
                                         aria-current="">
                                         Výskum
-                                    </a></li><li><a href="/sk/formulas/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/formulas/" 
                                         aria-current="">
                                         Vzorce
-                                    </a></li><li><a href="/sk/gait-efficiency/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/gait-efficiency/" 
                                         aria-current="">
                                         Efektívnosť chôdze
-                                    </a></li><li><a href="/sk/stride-mechanics/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/stride-mechanics/" 
                                         aria-current="">
                                         Mechanika kroku
-                                    </a></li><li><a href="/sk/walking-vs-running/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/walking-vs-running/" 
                                         aria-current="">
                                         Pešia turistika vs beh
-                                    </a></li><li><a href="/sk/benchmarks/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/benchmarks/" 
                                         aria-current="">
                                         Benchmarks
-                                    </a></li><li><a href="/sk/bibliography/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/bibliography/" 
                                         aria-current="">
                                         Bibliografia
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/sk/for-health/" class="nav-label">Pre Teba</a><ul class="submenu"><li><a href="/sk/for-health/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/sk/for-health/" class="nav-label">Pre Teba</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/sk/for-health/" 
                                         aria-current="">
                                         Pre zdravie
-                                    </a></li><li><a href="/sk/for-fitness/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/for-fitness/" 
                                         aria-current="">
                                         Pre Fitness
-                                    </a></li><li><a href="/sk/for-seniors/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/for-seniors/" 
                                         aria-current="">
                                         Pre seniorov
-                                    </a></li><li><a href="/sk/for-rehabilitation/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/for-rehabilitation/" 
                                         aria-current="">
                                         Na rehabilitáciu
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/sk/cadence-calculator/" class="nav-label">Nástroje</a><ul class="submenu"><li><a href="/sk/cadence-calculator/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/sk/cadence-calculator/" class="nav-label">Nástroje</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/sk/cadence-calculator/" 
                                         aria-current="">
                                         Kalkulačka kadencie
-                                    </a></li><li><a href="/sk/gait-assessment/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/gait-assessment/" 
                                         aria-current="">
                                         Hodnotenie chôdze
-                                    </a></li><li><a href="/sk/vo2max-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/sk/vo2max-calculator/" 
                                         aria-current="">
                                         Kalkulačka VO₂max
-                                    </a></li></ul></li><li><a href="/sk/contact/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/sk/contact/" 
                                 aria-current="">
                                 Kontaktovať
-                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Vyberte jazyk"><option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Vyberte jazyk">
+                        
+                        <option value="af" >
                             Afrikaans
-                        </option><option value="am" >
+                        </option>
+                        
+                        <option value="am" >
                             አမ္ဟာ
-                        </option><option value="ar" >
+                        </option>
+                        
+                        <option value="ar" >
                             العربية
-                        </option><option value="bg" >
+                        </option>
+                        
+                        <option value="bg" >
                             Български
-                        </option><option value="bn" >
+                        </option>
+                        
+                        <option value="bn" >
                             বাংলা
-                        </option><option value="ca" >
+                        </option>
+                        
+                        <option value="ca" >
                             Català
-                        </option><option value="cs" >
+                        </option>
+                        
+                        <option value="cs" >
                             Čeština
-                        </option><option value="da" >
+                        </option>
+                        
+                        <option value="da" >
                             Dansk
-                        </option><option value="de" >
+                        </option>
+                        
+                        <option value="de" >
                             Deutsch
-                        </option><option value="el" >
+                        </option>
+                        
+                        <option value="el" >
                             Ελληνικά
-                        </option><option value="en" >
+                        </option>
+                        
+                        <option value="en" >
                             English
-                        </option><option value="es" >
+                        </option>
+                        
+                        <option value="es" >
                             Español
-                        </option><option value="et" >
+                        </option>
+                        
+                        <option value="et" >
                             Eesti
-                        </option><option value="fa" >
+                        </option>
+                        
+                        <option value="fa" >
                             فارسی
-                        </option><option value="fi" >
+                        </option>
+                        
+                        <option value="fi" >
                             Suomi
-                        </option><option value="fr" >
+                        </option>
+                        
+                        <option value="fr" >
                             Français
-                        </option><option value="gu" >
+                        </option>
+                        
+                        <option value="gu" >
                             ગુજરાતી
-                        </option><option value="ha" >
+                        </option>
+                        
+                        <option value="ha" >
                             Hausa
-                        </option><option value="he" >
+                        </option>
+                        
+                        <option value="he" >
                             עברית
-                        </option><option value="hi" >
+                        </option>
+                        
+                        <option value="hi" >
                             हिन्दी
-                        </option><option value="hr" >
+                        </option>
+                        
+                        <option value="hr" >
                             Hrvatski
-                        </option><option value="hu" >
+                        </option>
+                        
+                        <option value="hu" >
                             Magyar
-                        </option><option value="id" >
+                        </option>
+                        
+                        <option value="id" >
                             Bahasa Indonesia
-                        </option><option value="is" >
+                        </option>
+                        
+                        <option value="is" >
                             Íslenska
-                        </option><option value="it" >
+                        </option>
+                        
+                        <option value="it" >
                             Italiano
-                        </option><option value="ja" >
+                        </option>
+                        
+                        <option value="ja" >
                             日本語
-                        </option><option value="km" >
+                        </option>
+                        
+                        <option value="km" >
                             ភាសាខ្មែរ
-                        </option><option value="kn" >
+                        </option>
+                        
+                        <option value="kn" >
                             ಕನ್ನಡ
-                        </option><option value="ko" >
+                        </option>
+                        
+                        <option value="ko" >
                             한국어
-                        </option><option value="lt" >
+                        </option>
+                        
+                        <option value="lt" >
                             Lietuvių
-                        </option><option value="lv" >
+                        </option>
+                        
+                        <option value="lv" >
                             Latviešu
-                        </option><option value="ms" >
+                        </option>
+                        
+                        <option value="ms" >
                             Bahasa Melayu
-                        </option><option value="my" >
+                        </option>
+                        
+                        <option value="my" >
                             မြန်မာ
-                        </option><option value="nb" >
+                        </option>
+                        
+                        <option value="nb" >
                             Norsk Bokmål
-                        </option><option value="nl" >
+                        </option>
+                        
+                        <option value="nl" >
                             Nederlands
-                        </option><option value="pl" >
+                        </option>
+                        
+                        <option value="pl" >
                             Polski
-                        </option><option value="pt" >
+                        </option>
+                        
+                        <option value="pt" >
                             Português
-                        </option><option value="pt-br" >
+                        </option>
+                        
+                        <option value="pt-br" >
                             Português (Brasil)
-                        </option><option value="ro" >
+                        </option>
+                        
+                        <option value="ro" >
                             Română
-                        </option><option value="ru" >
+                        </option>
+                        
+                        <option value="ru" >
                             Русский
-                        </option><option value="sk" selected>
+                        </option>
+                        
+                        <option value="sk" selected>
                             Slovenčina
-                        </option><option value="sl" >
+                        </option>
+                        
+                        <option value="sl" >
                             Slovenščina
-                        </option><option value="sr" >
+                        </option>
+                        
+                        <option value="sr" >
                             Српски
-                        </option><option value="sv" >
+                        </option>
+                        
+                        <option value="sv" >
                             Svenska
-                        </option><option value="sw" >
+                        </option>
+                        
+                        <option value="sw" >
                             Kiswahili
-                        </option><option value="ta" >
+                        </option>
+                        
+                        <option value="ta" >
                             தமிழ்
-                        </option><option value="te" >
+                        </option>
+                        
+                        <option value="te" >
                             తెలుగు
-                        </option><option value="th" >
+                        </option>
+                        
+                        <option value="th" >
                             ไทย
-                        </option><option value="tl" >
+                        </option>
+                        
+                        <option value="tl" >
                             Tagalog
-                        </option><option value="tr" >
+                        </option>
+                        
+                        <option value="tr" >
                             Türkçe
-                        </option><option value="uk" >
+                        </option>
+                        
+                        <option value="uk" >
                             Українська
-                        </option><option value="ur" >
+                        </option>
+                        
+                        <option value="ur" >
                             اردو
-                        </option><option value="vi" >
+                        </option>
+                        
+                        <option value="vi" >
                             Tiếng Việt
-                        </option><option value="yo" >
+                        </option>
+                        
+                        <option value="yo" >
                             Yorùbá
-                        </option><option value="zh" >
+                        </option>
+                        
+                        <option value="zh" >
                             中文
-                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
+                            </svg>
+                        </a>
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Prepnúť ponuku"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content">
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
+                                
+                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
+                                
+                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Prepnúť ponuku"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
     
     Hike Analytics App Landing Page – Homepage
 Hrdinská sekcia s úvodom do aplikácie
-<section class="app-hero"><div class="container"><div class="app-hero-content"><div class="app-hero-text"><div class="app-hero-badge"><span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span><span>Analytika turistiky založená na vede</span></div><h1>Choďte inteligentnejšie, žite zdravšie</h1><p class="app-hero-subtitle">Aplikácia iOS na prvom mieste na ochranu osobných údajov s analýzou chôdze podloženou výskumom, tréningovými zónami založenými na kadencii a komplexným
+<section class="app-hero">
+<div class="container">
+<div class="app-hero-content">
+<div class="app-hero-text">
+<div class="app-hero-badge">
+<span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span>
+<span>Analytika turistiky založená na vede</span>
+</div>
+<h1>Choďte inteligentnejšie, žite zdravšie</h1>
+<p class="app-hero-subtitle">Aplikácia iOS na prvom mieste na ochranu osobných údajov s analýzou chôdze podloženou výskumom, tréningovými zónami založenými na kadencii a komplexným
           sledovanie zdravia.
-          Poháňané recenzovanými štúdiami vrátane CADENCE-Adults, výskumu Peak-30 a biomechaniky.</p><div class="app-hero-cta"><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Stiahnite si na App Store</a><a class="btn btn-large btn-secondary" href="#science">Preskúmajte vedu</a></div><p class="mt-6 text-sm-muted">✓ 7-dňová bezplatná skúšobná verzia    ✓ Nevyžaduje sa žiadny účet    ✓ 100 % miestnych údajov</p></div><div class="app-hero-mockup"><div class="mockup-phone"><img alt="Aplikácia Hike Analytics iOS zobrazujúca turistické tréningy s metrikami chôdze a zdravotnými údajmi na iPhone" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/></div></div></div></div></section>
+          Poháňané recenzovanými štúdiami vrátane CADENCE-Adults, výskumu Peak-30 a biomechaniky.</p>
+<div class="app-hero-cta">
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Stiahnite si na App Store</a>
+<a class="btn btn-large btn-secondary" href="#science">Preskúmajte vedu</a>
+</div>
+<p class="mt-6 text-sm-muted">✓ 7-dňová bezplatná skúšobná verzia    ✓ Nevyžaduje sa žiadny účet    ✓ 100 % miestnych údajov</p>
+</div>
+<div class="app-hero-mockup">
+<div class="mockup-phone">
+<img alt="Aplikácia Hike Analytics iOS zobrazujúca turistické tréningy s metrikami chôdze a zdravotnými údajmi na iPhone" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+</section>
 Sekcia vedeckej nadácie - NOVINKA
-<section class="scientific-foundation" id="science"><div class="container"><div class="section-header"><div class="section-badge">Podložené výskumom</div><h2 class="section-title">Postavené na vedeckých dôkazoch</h2><p class="section-subtitle">Každá metrika a odporúčanie sú založené na recenzovanom výskume</p></div><div class="science-highlights"><div class="science-card"><div class="science-number">78 500</div><h3>Peak-30 Cadence Research</h3><p>Na základe britskej štúdie Biobank, ktorá ukazuje, že ≥100 spm počas 30 minút nezávisle predpovedá o 40 – 50 % nižšie riziko úmrtnosti
-          (Del Pozo-Cruz a kol., JAMA 2022)</p></div><div class="science-card"><div class="science-number">100 spm</div><h3>Stredná prahová hodnota intenzity</h3><p>Štúdia CADENCE-Adults (Tudor-Locke et al., 2019) stanovila 100 krokov za minútu = 3 MET s 86% citlivosťou,
-          89,6% špecifickosť – základ našich zón kadencie</p></div><div class="science-card"><div class="science-number">2-4×</div><h3>ACWR Prevencia zranení</h3><p>Pomer akútnej:chronickej záťaže &gt;1,50 zvyšuje riziko zranenia 2-4× (Gabbett, Br J Sports Med 2016) – sledujeme to
-          automaticky, aby ste boli v bezpečí</p></div><div class="science-card"><div class="science-number">11</div><h3>Overené vzorce</h3><p>Od Moorovej rovnice kadencie→MET k výpočtom nákladov na dopravu<a href="/sk/formulas/">každý
-            vzorec</a>zahŕňa validačné údaje a klinickú interpretáciu</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/sk/bibliography/">Zobraziť 50+ vedeckých referencií →</a></div></div></section>
+<section class="scientific-foundation" id="science">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Podložené výskumom</div>
+<h2 class="section-title">Postavené na vedeckých dôkazoch</h2>
+<p class="section-subtitle">Každá metrika a odporúčanie sú založené na recenzovanom výskume</p>
+</div>
+<div class="science-highlights">
+<div class="science-card">
+<div class="science-number">78 500</div>
+<h3>Peak-30 Cadence Research</h3>
+<p>Na základe britskej štúdie Biobank, ktorá ukazuje, že ≥100 spm počas 30 minút nezávisle predpovedá o 40 – 50 % nižšie riziko úmrtnosti
+          (Del Pozo-Cruz a kol., JAMA 2022)</p>
+</div>
+<div class="science-card">
+<div class="science-number">100 spm</div>
+<h3>Stredná prahová hodnota intenzity</h3>
+<p>Štúdia CADENCE-Adults (Tudor-Locke et al., 2019) stanovila 100 krokov za minútu = 3 MET s 86% citlivosťou,
+          89,6% špecifickosť – základ našich zón kadencie</p>
+</div>
+<div class="science-card">
+<div class="science-number">2-4×</div>
+<h3>ACWR Prevencia zranení</h3>
+<p>Pomer akútnej:chronickej záťaže &gt;1,50 zvyšuje riziko zranenia 2-4× (Gabbett, Br J Sports Med 2016) – sledujeme to
+          automaticky, aby ste boli v bezpečí</p>
+</div>
+<div class="science-card">
+<div class="science-number">11</div>
+<h3>Overené vzorce</h3>
+<p>Od Moorovej rovnice kadencie→MET k výpočtom nákladov na dopravu<a href="/sk/formulas/">každý
+            vzorec</a>zahŕňa validačné údaje a klinickú interpretáciu</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a class="btn btn-secondary" href="/sk/bibliography/">Zobraziť 50+ vedeckých referencií →</a>
+</div>
+</div>
+</section>
 Sekcia kľúčových funkcií
-<section class="app-features" id="features"><div class="container"><div class="section-header"><div class="section-badge">Vlastnosti</div><h2 class="section-title">Pokročilé metriky výkonnosti turistiky</h2><p class="section-subtitle">Profesionálna analýza určená pre turistov na všetkých úrovniach</p></div><div class="app-features-grid"><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-zones"></use></svg></div><h3>Tréningové zóny založené na kadencii</h3><p>Vlak s<a href="/sk/walking-zones/">5 zón podporovaných výskumom</a>(60-99 spm až 130+ spm) na základe
-          CADENCE-Štúdium pre dospelých. Praktickejšie ako zóny srdcovej frekvencie – nie je potrebný hrudný pás. Track Peak-30 kadencie denne.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>Komplexná analýza chôdze</h3><p>Sledovať<a href="/sk/gait-analysis/">7 základných metrík chôdze</a>: kadencia, dĺžka kroku (40-50%
+<section class="app-features" id="features">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Vlastnosti</div>
+<h2 class="section-title">Pokročilé metriky výkonnosti turistiky</h2>
+<p class="section-subtitle">Profesionálna analýza určená pre turistov na všetkých úrovniach</p>
+</div>
+<div class="app-features-grid">
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-zones"></use>
+</svg>
+</div>
+<h3>Tréningové zóny založené na kadencii</h3>
+<p>Vlak s<a href="/sk/walking-zones/">5 zón podporovaných výskumom</a>(60-99 spm až 130+ spm) na základe
+          CADENCE-Štúdium pre dospelých. Praktickejšie ako zóny srdcovej frekvencie – nie je potrebný hrudný pás. Track Peak-30 kadencie denne.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-chart"></use>
+</svg>
+</div>
+<h3>Komplexná analýza chôdze</h3>
+<p>Sledovať<a href="/sk/gait-analysis/">7 základných metrík chôdze</a>: kadencia, dĺžka kroku (40-50%
           výška), čas kontaktu so zemou (200-300 ms), dvojitá podpora (20-30 %), asymetria (vzorec GSI), rýchlosť a
-          vertikálna oscilácia (4-8cm).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-load"></use></svg></div><h3>Školenie Riadenie záťaže</h3><p>Zabráňte pretrénovaniu pomocou<a href="/sk/training-load/">Skóre stresu pri turistike (WSS)</a>a ACWR
+          vertikálna oscilácia (4-8cm).</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-load"></use>
+</svg>
+</div>
+<h3>Školenie Riadenie záťaže</h3>
+<p>Zabráňte pretrénovaniu pomocou<a href="/sk/training-load/">Skóre stresu pri turistike (WSS)</a>a ACWR
           sledovanie. Sledujte pomer akútny:chronický (ponechajte 0,80 – 1,30) a získajte prispôsobené odporúčania na obnovu založené na
-          váš náklad.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-stride"></use></svg></div><h3>Biomechanika a účinnosť</h3><p>Hlboký<a href="/sk/stride-mechanics/">analýza mechaniky kroku</a>a<a href="/sk/gait-efficiency/">turistická ekonomika</a>sledovanie. Optimalizujte náklady na dopravu (~0,48 – 0,55
-          kcal/kg/km pri 1,3 m/s), identifikovať odchýlky chôdze, zlepšiť účinnosť o 10-15%.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-health"></use></svg></div><h3>Zdravotná integrácia</h3><p>Bezproblémová integrácia Apple Health. Automaticky importujte turistické tréningy a synchronizujte srdcovú frekvenciu, vzdialenosť,
+          váš náklad.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-stride"></use>
+</svg>
+</div>
+<h3>Biomechanika a účinnosť</h3>
+<p>Hlboký<a href="/sk/stride-mechanics/">analýza mechaniky kroku</a>a<a href="/sk/gait-efficiency/">turistická ekonomika</a>sledovanie. Optimalizujte náklady na dopravu (~0,48 – 0,55
+          kcal/kg/km pri 1,3 m/s), identifikovať odchýlky chôdze, zlepšiť účinnosť o 10-15%.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-health"></use>
+</svg>
+</div>
+<h3>Zdravotná integrácia</h3>
+<p>Bezproblémová integrácia Apple Health. Automaticky importujte turistické tréningy a synchronizujte srdcovú frekvenciu, vzdialenosť,
           kroky a zdravotné metriky. Kompatibilné s metrikami mobility Apple Watch (Stabilita pri turistike, Dvojitá podpora %, %)
-          Asymetria).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-privacy"></use></svg></div><h3>Úplné súkromie</h3><p>Všetky vaše turistické údaje zostanú na vašom iPhone. Žiadna cloudová synchronizácia, žiadne účty, žiadne sledovanie. Vaše zdravotné metriky sú
-          100% súkromné a bezpečné s lokálnym spracovaním. V súlade s filozofiou GDPR a HIPAA.</p></div></div></div></section>
+          Asymetria).</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-privacy"></use>
+</svg>
+</div>
+<h3>Úplné súkromie</h3>
+<p>Všetky vaše turistické údaje zostanú na vašom iPhone. Žiadna cloudová synchronizácia, žiadne účty, žiadne sledovanie. Vaše zdravotné metriky sú
+          100% súkromné a bezpečné s lokálnym spracovaním. V súlade s filozofiou GDPR a HIPAA.</p>
+</div>
+</div>
+</div>
+</section>
 Sekcia vedeckých diferenciátorov - NOVINKA
-<section class="differentiators"><div class="container"><div class="section-header"><div class="section-badge">Prečo Hike Analytics</div><h2 class="section-title">Jediná aplikácia pre pešiu turistiku postavená na vede</h2><p class="section-subtitle">Nielen počítanie krokov – komplexná analýza podporovaná výskumom biomechaniky</p></div><div class="differentiator-list"><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Kadencia nad srdcovou frekvenciou</h3><p><strong>Prečo na tom záleží:</strong>Srdcová frekvencia sa mení v závislosti od tepla, stresu, kofeínu, choroby. Kadencia je
+<section class="differentiators">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Prečo Hike Analytics</div>
+<h2 class="section-title">Jediná aplikácia pre pešiu turistiku postavená na vede</h2>
+<p class="section-subtitle">Nielen počítanie krokov – komplexná analýza podporovaná výskumom biomechaniky</p>
+</div>
+<div class="differentiator-list">
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Kadencia nad srdcovou frekvenciou</h3>
+<p><strong>Prečo na tom záleží:</strong>Srdcová frekvencia sa mení v závislosti od tepla, stresu, kofeínu, choroby. Kadencia je
             spoľahlivé, praktické a osvedčené. Štúdia CADENCE-Adults ukázala 100 spm = stredná intenzita s 86 %
-            citlivosť – presnejšia ako odhad HR.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Peak-30 Cadence Tracking</h3><p><strong>Metrika prelomu:</strong>Najlepších 30 po sebe nasledujúcich minút turistiky denne nezávisle
+            citlivosť – presnejšia ako odhad HR.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Peak-30 Cadence Tracking</h3>
+<p><strong>Metrika prelomu:</strong>Najlepších 30 po sebe nasledujúcich minút turistiky denne nezávisle
             predpovedá kardiovaskulárne zdravie a úmrtnosť (78 500 účastníkov UK Biobank). Sledujeme to denne – žiadne iné
-            turistická aplikácia áno.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Prevencia zranení s ACWR</h3><p><strong>Športová veda prispôsobená na turistiku:</strong>Monitorujte svoj pomer akútnej:chronickej pracovnej záťaže, aby ste tomu zabránili
-            zranenia z nadmerného používania. Výskum ukazuje ACWR &gt;1,50 = 2-4× riziko zranenia. Pred nebezpečnými výkyvmi vás upozorníme.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Optimalizácia ekonomiky turistiky</h3><p><strong>Energetická účinnosť:</strong>Sledujte náklady na dopravu a efektivitu pešej turistiky (EF, Vertical Ratio).
+            turistická aplikácia áno.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Prevencia zranení s ACWR</h3>
+<p><strong>Športová veda prispôsobená na turistiku:</strong>Monitorujte svoj pomer akútnej:chronickej pracovnej záťaže, aby ste tomu zabránili
+            zranenia z nadmerného používania. Výskum ukazuje ACWR &gt;1,50 = 2-4× riziko zranenia. Pred nebezpečnými výkyvmi vás upozorníme.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Optimalizácia ekonomiky turistiky</h3>
+<p><strong>Energetická účinnosť:</strong>Sledujte náklady na dopravu a efektivitu pešej turistiky (EF, Vertical Ratio).
             Zlepšite hospodárnosť o 10 – 15 % prostredníctvom tréningu zóny 2, optimalizácie kroku a silovej práce – so špecifickým zameraním
-            vedenie.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Symetria chôdze a riziko pádu</h3><p><strong>Metriky klinického stupňa:</strong>Vypočítajte index symetrie chôdze (GSI) na zistenie asymetrie. Dvojité
+            vedenie.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Symetria chôdze a riziko pádu</h3>
+<p><strong>Metriky klinického stupňa:</strong>Vypočítajte index symetrie chôdze (GSI) na zistenie asymetrie. Dvojité
             podpora &gt; 35 % a rýchlosť turistiky &lt; 0,8 m/s naznačujú zvýšené riziko pádu – kritické pre starších dospelých a
-              rehabilitácia.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>50+ recenzovaných citácií</h3><p><strong>Usmernenie založené na dôkazoch:</strong>Každé odporúčanie odkazuje na<a href="/sk/bibliography/">publikovaný výskum</a>. Od prahov kadencie Tudor-Locke až po
-            Životný znak Studenského rýchlosti chôdze – transparentnosť vo vede.</p></div></div></div></div></section>
+              rehabilitácia.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>50+ recenzovaných citácií</h3>
+<p><strong>Usmernenie založené na dôkazoch:</strong>Každé odporúčanie odkazuje na<a href="/sk/bibliography/">publikovaný výskum</a>. Od prahov kadencie Tudor-Locke až po
+            Životný znak Studenského rýchlosti chôdze – transparentnosť vo vede.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 Ako to funguje sekcia
-<section class="how-it-works"><div class="container"><div class="section-header"><div class="section-badge">Ako to funguje</div><h2 class="section-title">Začnite s turistikou inteligentnejšie v 3 krokoch</h2></div><div class="steps-container steps-grid"><div class="step-card"><div class="step-number">1</div><h3>Pripojte Apple Health</h3><p>Importujte svoje turistické tréningy automaticky z Apple Health. Hike Analytics analyzuje vaše historické údaje
-          stanovte si základné metriky a vypočítajte svoju chronickú tréningovú záťaž (28-dňový priemer).</p></div><div class="step-card"><div class="step-number">2</div><h3>Získajte prehľady založené na dôkazoch</h3><p>Získajte komplexnú analýzu vrátane kadencie Peak-30, metrík chôdze, ekonomiky turistiky (Cost of Transport),
-          a ACWR. Pochopte svoje vzorce pomocou prahov podložených výskumom.</p></div><div class="step-card"><div class="step-number">3</div><h3>Trénovať vedecky</h3><p>Postupujte podľa prispôsobených odporúčaní pre zóny kadencie, progresiu tréningového zaťaženia (5-10% týždenne) a
-          zotavenie. Sledujte zlepšovanie efektívnosti, rýchlosti a zdravotných výsledkov v priebehu času.</p></div></div></div></section>
+<section class="how-it-works">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Ako to funguje</div>
+<h2 class="section-title">Začnite s turistikou inteligentnejšie v 3 krokoch</h2>
+</div>
+<div class="steps-container steps-grid">
+<div class="step-card">
+<div class="step-number">1</div>
+<h3>Pripojte Apple Health</h3>
+<p>Importujte svoje turistické tréningy automaticky z Apple Health. Hike Analytics analyzuje vaše historické údaje
+          stanovte si základné metriky a vypočítajte svoju chronickú tréningovú záťaž (28-dňový priemer).</p>
+</div>
+<div class="step-card">
+<div class="step-number">2</div>
+<h3>Získajte prehľady založené na dôkazoch</h3>
+<p>Získajte komplexnú analýzu vrátane kadencie Peak-30, metrík chôdze, ekonomiky turistiky (Cost of Transport),
+          a ACWR. Pochopte svoje vzorce pomocou prahov podložených výskumom.</p>
+</div>
+<div class="step-card">
+<div class="step-number">3</div>
+<h3>Trénovať vedecky</h3>
+<p>Postupujte podľa prispôsobených odporúčaní pre zóny kadencie, progresiu tréningového zaťaženia (5-10% týždenne) a
+          zotavenie. Sledujte zlepšovanie efektívnosti, rýchlosti a zdravotných výsledkov v priebehu času.</p>
+</div>
+</div>
+</div>
+</section>
 Pre koho je sekcia
-<section class="target-audience"><div class="container"><div class="section-header"><div class="section-badge">Pre koho je</div><h2 class="section-title">Ideálne pre každého turistu</h2></div><div class="audience-grid"><div class="audience-card"><h3>Zdravotní nadšenci</h3><p>Dosiahnite 150 minút/týždeň pri miernej aktivite (100+ spm). Track Peak-30 kadencie pre kardiovaskulárne zdravie.
-          Presne dodržiavajte odporúčania WHO/CDC – nielen počítajte kroky.</p></div><div class="audience-card"><h3>Fitness turisti</h3><p>Trénujte so zónami kadencie (Zóna 2 pri 100-110 spm pre aeróbny základ, intervaly pri 120-130 spm). Zlepšiť turistiku
-          systematickým vzdelávaním o 10-15%. Sledujte WSS na optimalizáciu zaťaženia.</p></div><div class="audience-card"><h3>Závodní turisti</h3><p>Majster<a href="/sk/stride-mechanics/#race-hiking">technika závodnej turistiky</a>(130-160 spm, rovno
-          noha, prehnaná rotácia bedra). Sledujte biomechaniku, monitorujte tréningovú záťaž, zabráňte pretrénovaniu pomocou ACWR.</p></div><div class="audience-card"><h3>Starší dospelí (65+)</h3><p>Monitor<a href="/sk/gait-analysis/#gait-speed">rýchlosť chôdze ako vitálny znak</a>(udržať &gt;1,0 m/s).
+<section class="target-audience">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Pre koho je</div>
+<h2 class="section-title">Ideálne pre každého turistu</h2>
+</div>
+<div class="audience-grid">
+<div class="audience-card">
+<h3>Zdravotní nadšenci</h3>
+<p>Dosiahnite 150 minút/týždeň pri miernej aktivite (100+ spm). Track Peak-30 kadencie pre kardiovaskulárne zdravie.
+          Presne dodržiavajte odporúčania WHO/CDC – nielen počítajte kroky.</p>
+</div>
+<div class="audience-card">
+<h3>Fitness turisti</h3>
+<p>Trénujte so zónami kadencie (Zóna 2 pri 100-110 spm pre aeróbny základ, intervaly pri 120-130 spm). Zlepšiť turistiku
+          systematickým vzdelávaním o 10-15%. Sledujte WSS na optimalizáciu zaťaženia.</p>
+</div>
+<div class="audience-card">
+<h3>Závodní turisti</h3>
+<p>Majster<a href="/sk/stride-mechanics/#race-hiking">technika závodnej turistiky</a>(130-160 spm, rovno
+          noha, prehnaná rotácia bedra). Sledujte biomechaniku, monitorujte tréningovú záťaž, zabráňte pretrénovaniu pomocou ACWR.</p>
+</div>
+<div class="audience-card">
+<h3>Starší dospelí (65+)</h3>
+<p>Monitor<a href="/sk/gait-analysis/#gait-speed">rýchlosť chôdze ako vitálny znak</a>(udržať &gt;1,0 m/s).
           Sledujte % dvojitej podpory (&lt;35 % = dobrá stabilita), asymetriu a indikátory rizika pádu. Včasné odhalenie
-            pokles mobility.</p></div><div class="audience-card"><h3>Rehabilitační pacienti</h3><p>Objektívne sledujte zlepšenia chôdze pomocou vzorca GSI (asymetria &lt;5%=dobrá), obnovenie dĺžky kroku a
-            pokrok v rýchlosti turistiky. Dokumentujte výsledky pre poskytovateľov zdravotnej starostlivosti.</p></div><div class="audience-card"><h3>Chudnutie a zdravie</h3><p>Optimalizujte spaľovanie kalórií pomocou zónového tréningu. Presne vypočítajte energetický výdaj pomocou Moorovej kadencie→METs
-          rovnica. Vybudujte si udržateľné cvičebné návyky s postupnou progresiou záťaže.</p></div></div></div></section>
+            pokles mobility.</p>
+</div>
+<div class="audience-card">
+<h3>Rehabilitační pacienti</h3>
+<p>Objektívne sledujte zlepšenia chôdze pomocou vzorca GSI (asymetria &lt;5%=dobrá), obnovenie dĺžky kroku a
+            pokrok v rýchlosti turistiky. Dokumentujte výsledky pre poskytovateľov zdravotnej starostlivosti.</p>
+</div>
+<div class="audience-card">
+<h3>Chudnutie a zdravie</h3>
+<p>Optimalizujte spaľovanie kalórií pomocou zónového tréningu. Presne vypočítajte energetický výdaj pomocou Moorovej kadencie→METs
+          rovnica. Vybudujte si udržateľné cvičebné návyky s postupnou progresiou záťaže.</p>
+</div>
+</div>
+</div>
+</section>
 Sekcia vzdelávacích zdrojov - NOVINKA
-<section class="learning-resources"><div class="container"><div class="section-header"><div class="section-badge">Naučte sa</div><h2 class="section-title">Hlboké vedecké poznatky</h2><p class="section-subtitle">Komplexné príručky vysvetľujúce vedu za každou metrikou</p></div><div class="resources-grid"><div class="resource-card"><div class="resource-category">Základy</div><h3><a href="/sk/walking-zones/">Tréningové zóny založené na kadencii</a></h3><p>Kompletná zmena paradigmy z HR na kadenciu. Naučte sa 5 zón (60-99 až 130+ spm), CADENCE-Výskum dospelých,
-          Koncept Peak-30 a protokoly VVD.</p></div><div class="resource-card"><div class="resource-category">Biomechanika</div><h3><a href="/sk/stride-mechanics/">Mechanika pešieho kroku</a></h3><p>Fázy cyklu chôdze, technika pretekovej turistiky (pravidlá svetovej atletiky), rozdiely medzi turistikou a behom. GSI
-          vzorec pre asymetriu, pozemné reakčné sily.</p></div><div class="resource-card"><div class="resource-category">Výkon</div><h3><a href="/sk/gait-efficiency/">Turistika Economy &amp; CoT</a></h3><p>Optimalizácia nákladov na dopravu, model obráteného kyvadla (65-70% rekuperácia energie), Froudeho číslo, tvar U
-          ekonomická krivka, prechod hike-run pri 2,2 m/s.</p></div><div class="resource-card"><div class="resource-category">Školenie</div><h3><a href="/sk/training-load/">Školenie Riadenie záťaže</a></h3><p>Kadencia Peak-30 (Del Pozo-Cruz 2022), koncept rýchlych súbojov, prevencia zranení ACWR, periodizácia 3:1,
-          polarizované vs pyramídové rozloženie intenzity.</p></div><div class="resource-card"><div class="resource-category">Metriky</div><h3><a href="/sk/gait-analysis/">Metriky analýzy chôdze</a></h3><p>7 základných metrík s klinickými prahmi: kadencia (100 spm = 3 MET), dĺžka kroku (40 – 50 % výška),
-          dvojitá podpora (&gt;35% = riziko pádu), asymetria, rýchlosť.</p></div><div class="resource-card"><div class="resource-category">Vzorce</div><h3><a href="/sk/formulas/">Vedecké vzorce</a></h3><p>11 overených rovníc: Mooreova kadencia→METs (R²=0,87), ACSM VO₂, energetický výdaj, GSI, EF, náklady na
-          Doprava, tréningové zaťaženie, predikcia 6MWT.</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/sk/research/">Preskúmať všetky články o výskume →</a></div></div></section>
+<section class="learning-resources">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Naučte sa</div>
+<h2 class="section-title">Hlboké vedecké poznatky</h2>
+<p class="section-subtitle">Komplexné príručky vysvetľujúce vedu za každou metrikou</p>
+</div>
+<div class="resources-grid">
+<div class="resource-card">
+<div class="resource-category">Základy</div>
+<h3><a href="/sk/walking-zones/">Tréningové zóny založené na kadencii</a></h3>
+<p>Kompletná zmena paradigmy z HR na kadenciu. Naučte sa 5 zón (60-99 až 130+ spm), CADENCE-Výskum dospelých,
+          Koncept Peak-30 a protokoly VVD.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Biomechanika</div>
+<h3><a href="/sk/stride-mechanics/">Mechanika pešieho kroku</a></h3>
+<p>Fázy cyklu chôdze, technika pretekovej turistiky (pravidlá svetovej atletiky), rozdiely medzi turistikou a behom. GSI
+          vzorec pre asymetriu, pozemné reakčné sily.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Výkon</div>
+<h3><a href="/sk/gait-efficiency/">Turistika Economy &amp; CoT</a></h3>
+<p>Optimalizácia nákladov na dopravu, model obráteného kyvadla (65-70% rekuperácia energie), Froudeho číslo, tvar U
+          ekonomická krivka, prechod hike-run pri 2,2 m/s.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Školenie</div>
+<h3><a href="/sk/training-load/">Školenie Riadenie záťaže</a></h3>
+<p>Kadencia Peak-30 (Del Pozo-Cruz 2022), koncept rýchlych súbojov, prevencia zranení ACWR, periodizácia 3:1,
+          polarizované vs pyramídové rozloženie intenzity.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Metriky</div>
+<h3><a href="/sk/gait-analysis/">Metriky analýzy chôdze</a></h3>
+<p>7 základných metrík s klinickými prahmi: kadencia (100 spm = 3 MET), dĺžka kroku (40 – 50 % výška),
+          dvojitá podpora (&gt;35% = riziko pádu), asymetria, rýchlosť.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Vzorce</div>
+<h3><a href="/sk/formulas/">Vedecké vzorce</a></h3>
+<p>11 overených rovníc: Mooreova kadencia→METs (R²=0,87), ACSM VO₂, energetický výdaj, GSI, EF, náklady na
+          Doprava, tréningové zaťaženie, predikcia 6MWT.</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a class="btn btn-secondary" href="/sk/research/">Preskúmať všetky články o výskume →</a>
+</div>
+</div>
+</section>
 Cenová sekcia
-<section class="pricing"><div class="container"><div class="section-header"><div class="section-badge">Ceny</div><h2 class="section-title">Jednoduché, transparentné ceny</h2><p class="section-subtitle">Vyskúšajte Hike Analytics zadarmo na 7 dní. Nevyžaduje sa žiadna kreditná karta.</p></div><div class="pricing-card"><div class="price-header"><h3>Hike Analytics Premium</h3><div class="price"><span class="amount">3,99 USD</span><span class="period">/mesiac</span></div></div><ul class="features-list"><li>Sledovanie kadencie Peak-30</li><li>Tréningové zóny založené na kadencii</li><li>Pokročilá analýza chôdze (GSI, CoT, EF, Vertical Ratio)</li><li>Skóre stresu pri turistike (WSS)</li><li>ACWR prevencia zranení</li><li>11 overených vzorcov</li><li>Úplné súkromie údajov (miestne spracovanie)</li><li>Integrácia Apple Health</li><li>Žiadne reklamy, nikdy</li></ul><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Spustiť bezplatnú skúšobnú verziu</a><p class="trial-note">7-dňová bezplatná skúšobná verzia • Zrušenie kedykoľvek • Nevyžaduje sa kreditná karta</p></div></div></section>
+<section class="pricing">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Ceny</div>
+<h2 class="section-title">Jednoduché, transparentné ceny</h2>
+<p class="section-subtitle">Vyskúšajte Hike Analytics zadarmo na 7 dní. Nevyžaduje sa žiadna kreditná karta.</p>
+</div>
+<div class="pricing-card">
+<div class="price-header">
+<h3>Hike Analytics Premium</h3>
+<div class="price">
+<span class="amount">3,99 USD</span>
+<span class="period">/mesiac</span>
+</div>
+</div>
+<ul class="features-list">
+<li>Sledovanie kadencie Peak-30</li>
+<li>Tréningové zóny založené na kadencii</li>
+<li>Pokročilá analýza chôdze (GSI, CoT, EF, Vertical Ratio)</li>
+<li>Skóre stresu pri turistike (WSS)</li>
+<li>ACWR prevencia zranení</li>
+<li>11 overených vzorcov</li>
+<li>Úplné súkromie údajov (miestne spracovanie)</li>
+<li>Integrácia Apple Health</li>
+<li>Žiadne reklamy, nikdy</li>
+</ul>
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Spustiť bezplatnú skúšobnú verziu</a>
+<p class="trial-note">7-dňová bezplatná skúšobná verzia • Zrušenie kedykoľvek • Nevyžaduje sa kreditná karta</p>
+</div>
+</div>
+</section>
 Časté otázky
-<section class="faq"><div class="container"><div class="section-header"><div class="section-badge">FAQ</div><h2 class="section-title">Často kladené otázky</h2></div><div class="faq-grid"><div class="faq-item"><h3>Čím sa Hike Analytics líši od iných turistických aplikácií?</h3><p>Sme jediná turistická aplikácia postavená na recenzovanom výskume. Každá metrika – kadencia 30, ACWR, náklady
+<section class="faq">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">FAQ</div>
+<h2 class="section-title">Často kladené otázky</h2>
+</div>
+<div class="faq-grid">
+<div class="faq-item">
+<h3>Čím sa Hike Analytics líši od iných turistických aplikácií?</h3>
+<p>Sme jediná turistická aplikácia postavená na recenzovanom výskume. Každá metrika – kadencia 30, ACWR, náklady
           Doprava – pochádza z publikovaných štúdií. Citujeme viac ako 50 vedeckých prác a vysvetľujeme dôkazy za každým
-          odporúčanie. Nie je to počítanie krokov; je to biomechanika a fyziológia cvičenia aplikovaná na turistiku.</p></div><div class="faq-item"><h3>Čo je Peak-30 kadencia a prečo na tom záleží?</h3><p>Peak-30 kadencia je váš priemerný počet krokov za minútu počas najlepších 30 po sebe nasledujúcich minút turistiky každý deň.
+          odporúčanie. Nie je to počítanie krokov; je to biomechanika a fyziológia cvičenia aplikovaná na turistiku.</p>
+</div>
+<div class="faq-item">
+<h3>Čo je Peak-30 kadencia a prečo na tom záleží?</h3>
+<p>Peak-30 kadencia je váš priemerný počet krokov za minútu počas najlepších 30 po sebe nasledujúcich minút turistiky každý deň.
           Prielomová štúdia na 78 500 ľuďoch (Del Pozo-Cruz, JAMA 2022) ukázala, že nezávisle predpovedá úmrtnosť
-          riziko – aj po kontrole celkových denných krokov. Sledujeme to automaticky, čo žiadna iná aplikácia nerobí.</p></div><div class="faq-item"><h3>Ako ACWR predchádza zraneniam?</h3><p>Acute:Chronic Workload Ratio porovnáva váš nedávny tréning (posledných 7 dní) s vaším dlhodobým priemerom (28
+          riziko – aj po kontrole celkových denných krokov. Sledujeme to automaticky, čo žiadna iná aplikácia nerobí.</p>
+</div>
+<div class="faq-item">
+<h3>Ako ACWR predchádza zraneniam?</h3>
+<p>Acute:Chronic Workload Ratio porovnáva váš nedávny tréning (posledných 7 dní) s vaším dlhodobým priemerom (28
           dní). Výskum ukazuje, že ACWR &gt; 1,50 zvyšuje riziko zranenia 2-4 krát. Vypočítavame to denne a varujeme vás predtým
-          nebezpečné skoky, ktoré vám pomôžu bezpečne napredovať s 5 – 10 % týždenným zvýšením.</p></div><div class="faq-item"><h3>Prečo zóny kadencie namiesto zón tepovej frekvencie?</h3><p>Kadencia je spoľahlivejšia a praktickejšia. Štúdia CADENCE-Adults dokázala 100 spm = stredná intenzita (3 MET)
+          nebezpečné skoky, ktoré vám pomôžu bezpečne napredovať s 5 – 10 % týždenným zvýšením.</p>
+</div>
+<div class="faq-item">
+<h3>Prečo zóny kadencie namiesto zón tepovej frekvencie?</h3>
+<p>Kadencia je spoľahlivejšia a praktickejšia. Štúdia CADENCE-Adults dokázala 100 spm = stredná intenzita (3 MET)
           s 86 % senzitivitou a 90 % špecifickosťou. Srdcová frekvencia sa mení v závislosti od tepla, stresu, choroby, kofeínu – kadencie
-          nie. Navyše nepotrebujete hrudný pás ani hodinky; stačí počítať kroky.</p></div><div class="faq-item"><h3>Môže Hike Analytics pomôcť pri prevencii pádu?</h3><p>áno. Sledujeme klinické indikátory rizika pádu: rýchlosť chôdze &lt;0,8 m/s, dvojitá podpora&gt;35 %, asymetria (GSI) &gt;10 %,
+          nie. Navyše nepotrebujete hrudný pás ani hodinky; stačí počítať kroky.</p>
+</div>
+<div class="faq-item">
+<h3>Môže Hike Analytics pomôcť pri prevencii pádu?</h3>
+<p>áno. Sledujeme klinické indikátory rizika pádu: rýchlosť chôdze &lt;0,8 m/s, dvojitá podpora&gt;35 %, asymetria (GSI) &gt;10 %,
             a stabilitu pri turistike. Toto sú prahové hodnoty založené na dôkazoch z geriatrického výskumu. Včasná detekcia umožňuje
-            zásah pred pádom – kritický pre dospelých 65+.</p></div><div class="faq-item"><h3>Ako Hike Analytics chráni moje súkromie?</h3><p>Všetky údaje zostanú na vašom iPhone – obdobie. Žiadna cloudová synchronizácia, žiadne účty, žiadne servery prijímajúce vaše zdravotné údaje. my
+            zásah pred pádom – kritický pre dospelých 65+.</p>
+</div>
+<div class="faq-item">
+<h3>Ako Hike Analytics chráni moje súkromie?</h3>
+<p>Všetky údaje zostanú na vašom iPhone – obdobie. Žiadna cloudová synchronizácia, žiadne účty, žiadne servery prijímajúce vaše zdravotné údaje. my
           spracovať všetko lokálne pomocou algoritmov na zariadení. Vaše turistické metriky, poloha, tepová frekvencia – úplne
           súkromné. Riadime sa filozofiou GDPR a HIPAA, aj keď to od nás zákon nevyžaduje (keďže nikdy nevidíme
-          vaše údaje).</p></div><div class="faq-item"><h3>Potrebujem špeciálne vybavenie?</h3><p>Nie. Hike Analytics funguje s iPhone alebo Apple Watch. Pre základné metriky (kadencia, vzdialenosť, kroky) stačí vaša
+          vaše údaje).</p>
+</div>
+<div class="faq-item">
+<h3>Potrebujem špeciálne vybavenie?</h3>
+<p>Nie. Hike Analytics funguje s iPhone alebo Apple Watch. Pre základné metriky (kadencia, vzdialenosť, kroky) stačí vaša
           telefón. Pre údaje o srdcovej frekvencii a presnejšie metriky vám Apple Watch pomôžu, ale nie sú potrebné. Integrujeme sa
-          s Apple Health, takže funguje každé kompatibilné zariadenie.</p></div><div class="faq-item"><h3>Je Hike Analytics vhodná na rehabilitáciu?</h3><p>Absolútne. Používajú nás rehabilitační pacienti, ktorí objektívne sledujú zotavenie. Vzorec indexu symetrie chôdze (GSI).
+          s Apple Health, takže funguje každé kompatibilné zariadenie.</p>
+</div>
+<div class="faq-item">
+<h3>Je Hike Analytics vhodná na rehabilitáciu?</h3>
+<p>Absolútne. Používajú nás rehabilitační pacienti, ktorí objektívne sledujú zotavenie. Vzorec indexu symetrie chôdze (GSI).
           kvantifikuje ľavo-pravé rozdiely (&lt;3% normálne,&gt;10% klinicky významné). Monitorujte obnovu dĺžky kroku,
             zlepšenie rýchlosti turistiky a zníženie asymetrie. Zdieľajte objektívne údaje so svojím telovýchovným lekárom resp
-            lekár.</p></div><div class="faq-item"><h3>Aký je vedecký základ pre 11 vzorcov?</h3><p>Každý<a href="/sk/formulas/">vzorec</a>zahŕňa overovacie údaje a citáciu pôvodného výskumu.
+            lekár.</p>
+</div>
+<div class="faq-item">
+<h3>Aký je vedecký základ pre 11 vzorcov?</h3>
+<p>Každý<a href="/sk/formulas/">vzorec</a>zahŕňa overovacie údaje a citáciu pôvodného výskumu.
           Príklad: Mooreova rovnica kadencie→METs (R²=0,87, presnosť ±0,5 METs, 76 dospelých) je o 23 – 35 % presnejšia ako
-          staršie ACSM rovnice. Ukážeme vedu, nielen výpočty v čiernej skrinke.</p></div></div></div></section>
+          staršie ACSM rovnice. Ukážeme vedu, nielen výpočty v čiernej skrinke.</p>
+</div>
+</div>
+</div>
+</section>
 Sekcia CTA
-<section class="final-cta"><div class="container"><div class="cta-content"><h2>Ste pripravení ísť inteligentnejšie?</h2><p>Pripojte sa k turistom, ktorí zlepšujú zdravie pomocou analýzy chôdze podloženej výskumom a vedeckej prípravy</p><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Stiahnite si Hike Analytics</a><p class="cta-note">7-dňová bezplatná skúšobná verzia • iOS 16+ • Kompatibilné s Apple Health • Nevyžaduje sa kreditná karta</p></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...</h2><p class="ai-citation-answer">Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná...</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>aplikácia na analýzu turistiky · aplikácia na analýzu chôdze · aplikácia pre iOS s dôrazom na ochranu osobných údajov · turistické metriky zdravia · kroková analýza</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../sk/bibliography/">
+<section class="final-cta">
+<div class="container">
+<div class="cta-content">
+<h2>Ste pripravení ísť inteligentnejšie?</h2>
+<p>Pripojte sa k turistom, ktorí zlepšujú zdravie pomocou analýzy chôdze podloženej výskumom a vedeckej prípravy</p>
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Stiahnite si Hike Analytics</a>
+<p class="cta-note">7-dňová bezplatná skúšobná verzia • iOS 16+ • Kompatibilné s Apple Health • Nevyžaduje sa kreditná karta</p>
+</div>
+</div>
+</section>
+    
+
+    
+    
+
+    
+    
+<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
+  <div class="container ai-citation-shell">
+    <h2 class="ai-citation-title">Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...</h2>
+    <p class="ai-citation-answer">Súkromná iOS aplikácia na turistiku s pokročilou analýzou chôdze. Lokálne sledujte metriky krokov, turistické zóny, WSS. Vedecké poznatky pre turistov. Bezplatná...</p>
+
+    <ul class="ai-citation-facts" role="list">
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">📅</span>
+        <span>2026-03-11</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact ai-citation-keywords">
+        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
+        <span>aplikácia na analýzu turistiky · aplikácia na analýzu chôdze · aplikácia pre iOS s dôrazom na ochranu osobných údajov · turistické metriky zdravia · kroková analýza</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
+        <a href="../sk/bibliography/">
           
           Bibliografia
           
-        </a></li></ul><nav class="ai-citation-links" aria-label="Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia..."><a class="ai-related-link" href="../sk/research/">
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <nav class="ai-citation-links" aria-label="Analýza súkromnej turistiky – analýza chôdze, WSS, metriky zdravia...">
+      
+      <a class="ai-related-link" href="../sk/research/">
         Výskum
-      </a><a class="ai-related-link" href="../sk/getting-started/">
+      </a>
+      
+      <a class="ai-related-link" href="../sk/getting-started/">
         Začíname
-      </a><a class="ai-related-link" href="../sk/contact/">
+      </a>
+      
+      <a class="ai-related-link" href="../sk/contact/">
         Kontaktovať
-      </a></nav></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Stiahnuť</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Stiahnite si na App Store"><img src="../assets/images/badge-app-store.svg"
+      </a>
+      
+    </nav>
+    
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Hike Analytics</h2>
+                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Stiahnuť</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Stiahnite si na App Store">
+                        <img src="../assets/images/badge-app-store.svg"
                             alt="Stiahnite si na App Store" width="135"
-                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Získajte ju v službe Google Play"><img src="../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Získajte ju v službe Google Play">
+                        <img src="../assets/images/badge-google-play.svg"
                             alt="Získajte ju v službe Google Play" width="135"
-                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Dostupné v</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Dostupné v</h3>
+            <div class="lang-grid">
+                
+                <a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a><a href="/am/" class="lang-link"
+                </a>
+                
+                <a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a><a href="/ar/" class="lang-link"
+                </a>
+                
+                <a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a><a href="/bg/" class="lang-link"
+                </a>
+                
+                <a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a><a href="/bn/" class="lang-link"
+                </a>
+                
+                <a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a><a href="/ca/" class="lang-link"
+                </a>
+                
+                <a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a><a href="/cs/" class="lang-link"
+                </a>
+                
+                <a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a><a href="/da/" class="lang-link"
+                </a>
+                
+                <a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a><a href="/de/" class="lang-link"
+                </a>
+                
+                <a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a><a href="/el/" class="lang-link"
+                </a>
+                
+                <a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a><a href="/en/" class="lang-link"
+                </a>
+                
+                <a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a><a href="/es/" class="lang-link"
+                </a>
+                
+                <a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a><a href="/et/" class="lang-link"
+                </a>
+                
+                <a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a><a href="/fa/" class="lang-link"
+                </a>
+                
+                <a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a><a href="/fi/" class="lang-link"
+                </a>
+                
+                <a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a><a href="/fr/" class="lang-link"
+                </a>
+                
+                <a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a><a href="/gu/" class="lang-link"
+                </a>
+                
+                <a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a><a href="/ha/" class="lang-link"
+                </a>
+                
+                <a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a><a href="/he/" class="lang-link"
+                </a>
+                
+                <a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a><a href="/hi/" class="lang-link"
+                </a>
+                
+                <a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a><a href="/hr/" class="lang-link"
+                </a>
+                
+                <a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a><a href="/hu/" class="lang-link"
+                </a>
+                
+                <a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a><a href="/id/" class="lang-link"
+                </a>
+                
+                <a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a><a href="/is/" class="lang-link"
+                </a>
+                
+                <a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a><a href="/it/" class="lang-link"
+                </a>
+                
+                <a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a><a href="/ja/" class="lang-link"
+                </a>
+                
+                <a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a><a href="/km/" class="lang-link"
+                </a>
+                
+                <a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a><a href="/kn/" class="lang-link"
+                </a>
+                
+                <a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a><a href="/ko/" class="lang-link"
+                </a>
+                
+                <a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a><a href="/lt/" class="lang-link"
+                </a>
+                
+                <a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a><a href="/lv/" class="lang-link"
+                </a>
+                
+                <a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a><a href="/ms/" class="lang-link"
+                </a>
+                
+                <a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a><a href="/my/" class="lang-link"
+                </a>
+                
+                <a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a><a href="/nb/" class="lang-link"
+                </a>
+                
+                <a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a><a href="/nl/" class="lang-link"
+                </a>
+                
+                <a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a><a href="/pl/" class="lang-link"
+                </a>
+                
+                <a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a><a href="/pt/" class="lang-link"
+                </a>
+                
+                <a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a><a href="/pt-br/" class="lang-link"
+                </a>
+                
+                <a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a><a href="/ro/" class="lang-link"
+                </a>
+                
+                <a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a><a href="/ru/" class="lang-link"
+                </a>
+                
+                <a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a><a href="/sk/" class="lang-link active"
+                </a>
+                
+                <a href="/sk/" class="lang-link active"
                     hreflang="sk" >
                     Slovenčina
-                </a><a href="/sl/" class="lang-link"
+                </a>
+                
+                <a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a><a href="/sr/" class="lang-link"
+                </a>
+                
+                <a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a><a href="/sv/" class="lang-link"
+                </a>
+                
+                <a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a><a href="/sw/" class="lang-link"
+                </a>
+                
+                <a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a><a href="/ta/" class="lang-link"
+                </a>
+                
+                <a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a><a href="/te/" class="lang-link"
+                </a>
+                
+                <a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a><a href="/th/" class="lang-link"
+                </a>
+                
+                <a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a><a href="/tl/" class="lang-link"
+                </a>
+                
+                <a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a><a href="/tr/" class="lang-link"
+                </a>
+                
+                <a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a><a href="/uk/" class="lang-link"
+                </a>
+                
+                <a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a><a href="/ur/" class="lang-link"
+                </a>
+                
+                <a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a><a href="/vi/" class="lang-link"
+                </a>
+                
+                <a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a><a href="/yo/" class="lang-link"
+                </a>
+                
+                <a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a><a href="/zh/" class="lang-link"
+                </a>
+                
+                <a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
                 &copy; 2026 Hike Analytics. Všetky práva vyhradené
-            </p><ul class="footer-legal"><li><a href="/sk/privacy/">Ochrana osobných údajov</a></li><li><a href="/sk/terms/">Podmienky</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Táto webová stránka používa súbory cookie na zlepšenie vášho zážitku.</p><a href="/sk/privacy/" class="text-sm">Zistite viac</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Odmietnuť</button><button id="cookie-accept" class="btn btn-primary btn-small">Prijať</button></div></div></div><script src="../assets/js/core.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/search.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/carousel.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/sk/privacy/">Ochrana osobných údajov</a></li>
+                <li><a href="/sk/terms/">Podmienky</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Táto webová stránka používa súbory cookie na zlepšenie vášho zážitku.</p>
+            <a href="/sk/privacy/" class="text-sm">Zistite viac</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Odmietnuť</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Prijať</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../assets/js/core.min.js?v=19fdca55b3da" defer></script>
+  <script src="../assets/js/search.min.js?v=19fdca55b3da" defer></script>
+  
+  <script src="../assets/js/carousel.min.js?v=19fdca55b3da" defer></script>
+  
+
+  
+  
+  <script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
+</body>
+
+</html>

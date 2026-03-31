@@ -1,61 +1,247 @@
-<!DOCTYPE html><html lang="fi" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet"><title>Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...</title><meta name="description" content="Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia..."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="vaellusanalytiikkasovellus, kävelyanalyysisovellus, yksityisyyden ensisijainen iOS-sovellus, vaellusterveysmittareita, askelanalyysi"><link rel="canonical" href="https://hike.analyticszone.app/fi/"><meta property="og:type" content="website"><meta property="og:url" content="https://hike.analyticszone.app/fi/"><meta property="og:title" content="Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit..."><meta property="og:description" content="Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia..."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="fi_FI"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/fi/"><meta name="twitter:title" content="Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit..."><meta name="twitter:description" content="Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia..."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/"><link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/"><link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/"><link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/"><link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/"><link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/"><link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/"><link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/"><link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/"><link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...</title>
+  <meta name="description" content="Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia...">
+  <meta name="author" content="AnalyticsZone Team">
+
+  
+  
+  <meta name="keywords" content="vaellusanalytiikkasovellus, kävelyanalyysisovellus, yksityisyyden ensisijainen iOS-sovellus, vaellusterveysmittareita, askelanalyysi">
+  
+
+  
+  <link rel="canonical" href="https://hike.analyticszone.app/fi/">
+
+  
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hike.analyticszone.app/fi/">
+  <meta property="og:title" content="Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...">
+  <meta property="og:description" content="Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia...">
+  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="fi_FI">
+  <meta property="og:site_name" content="Hike Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hike.analyticszone.app/fi/">
+  <meta name="twitter:title" content="Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...">
+  <meta name="twitter:description" content="Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia...">
+  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@hikeanalytics">
+  <meta name="twitter:creator" content="@hikeanalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/">
+  
+  <link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/">
+  
+  <link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/">
+  
+  <link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/">
+  
+  <link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/">
+  
+  <link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/">
+  
+  <link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/">
+  
+  <link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/">
+  
+  <link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/">
+  
+  <link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/">
+  
+  <link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/">
+  
+  <link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/">
+  
+  <link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/">
+  
+  <link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/">
+  
+  <link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/">
+  
+  <link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/">
+  
+  <link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  
+  
+  
+  
+  <meta name="robots" content="index, follow">
+  
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6760036261">
+  
+
+  
+  <style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -314,7 +500,20 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=f4a4f52b4341"><script type="application/ld+json">
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../assets/css/main.min.css?v=19fdca55b3da">
+
+  
+  
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -349,7 +548,10 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -358,7 +560,11 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "fi"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -373,7 +579,14 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -416,7 +629,22 @@ img[width][height] {
     }
   ]
 }
-</script><script>
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -430,457 +658,1465 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script></head><body><a href="#main-content" class="skip-link">Siirry sisältöön</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/fi/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/fi/" 
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Siirry sisältöön</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/fi/" class="site-logo">
+                <picture>
+                    <source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
+                </picture>
+                <span class="logo-text">Hike Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/fi/" 
                                 aria-current="">
                                 Kotiin
-                            </a></li><li class="has-submenu" ><a href="/fi/getting-started/" class="nav-label">Oppia</a><ul class="submenu"><li><a href="/fi/getting-started/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/fi/getting-started/" class="nav-label">Oppia</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/fi/getting-started/" 
                                         aria-current="">
                                         Aloitus
-                                    </a></li><li><a href="/fi/walking-zones/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/walking-zones/" 
                                         aria-current="">
                                         Vaellusalueet
-                                    </a></li><li><a href="/fi/gait-analysis/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/gait-analysis/" 
                                         aria-current="">
                                         Kävelyanalyysi
-                                    </a></li><li><a href="/fi/training-load/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/training-load/" 
                                         aria-current="">
                                         Harjoittelukuorma
-                                    </a></li><li><a href="/fi/wss-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/wss-calculator/" 
                                         aria-current="">
                                         WSS-laskin
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/fi/research/" class="nav-label">Tiede</a><ul class="submenu"><li><a href="/fi/research/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/fi/research/" class="nav-label">Tiede</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/fi/research/" 
                                         aria-current="">
                                         Tutkimus
-                                    </a></li><li><a href="/fi/formulas/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/formulas/" 
                                         aria-current="">
                                         Kaavat
-                                    </a></li><li><a href="/fi/gait-efficiency/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/gait-efficiency/" 
                                         aria-current="">
                                         Kävelytehokkuus
-                                    </a></li><li><a href="/fi/stride-mechanics/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/stride-mechanics/" 
                                         aria-current="">
                                         Askelmekaniikka
-                                    </a></li><li><a href="/fi/walking-vs-running/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/walking-vs-running/" 
                                         aria-current="">
                                         Vaellus vs juoksu
-                                    </a></li><li><a href="/fi/benchmarks/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/benchmarks/" 
                                         aria-current="">
                                         Vertailuarvot
-                                    </a></li><li><a href="/fi/bibliography/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/bibliography/" 
                                         aria-current="">
                                         Bibliografia
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/fi/for-health/" class="nav-label">Sinulle</a><ul class="submenu"><li><a href="/fi/for-health/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/fi/for-health/" class="nav-label">Sinulle</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/fi/for-health/" 
                                         aria-current="">
                                         Terveyden puolesta
-                                    </a></li><li><a href="/fi/for-fitness/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/for-fitness/" 
                                         aria-current="">
                                         Fitnessille
-                                    </a></li><li><a href="/fi/for-seniors/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/for-seniors/" 
                                         aria-current="">
                                         Senioreille
-                                    </a></li><li><a href="/fi/for-rehabilitation/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/for-rehabilitation/" 
                                         aria-current="">
                                         Kuntoutusta varten
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/fi/cadence-calculator/" class="nav-label">Työkalut</a><ul class="submenu"><li><a href="/fi/cadence-calculator/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/fi/cadence-calculator/" class="nav-label">Työkalut</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/fi/cadence-calculator/" 
                                         aria-current="">
                                         Poljinnopeuslaskin
-                                    </a></li><li><a href="/fi/gait-assessment/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/gait-assessment/" 
                                         aria-current="">
                                         Kävelyarviointi
-                                    </a></li><li><a href="/fi/vo2max-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/fi/vo2max-calculator/" 
                                         aria-current="">
                                         VO₂max -laskin
-                                    </a></li></ul></li><li><a href="/fi/contact/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/fi/contact/" 
                                 aria-current="">
                                 Ota yhteyttä
-                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Valitse kieli"><option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Valitse kieli">
+                        
+                        <option value="af" >
                             Afrikaans
-                        </option><option value="am" >
+                        </option>
+                        
+                        <option value="am" >
                             አမ္ဟာ
-                        </option><option value="ar" >
+                        </option>
+                        
+                        <option value="ar" >
                             العربية
-                        </option><option value="bg" >
+                        </option>
+                        
+                        <option value="bg" >
                             Български
-                        </option><option value="bn" >
+                        </option>
+                        
+                        <option value="bn" >
                             বাংলা
-                        </option><option value="ca" >
+                        </option>
+                        
+                        <option value="ca" >
                             Català
-                        </option><option value="cs" >
+                        </option>
+                        
+                        <option value="cs" >
                             Čeština
-                        </option><option value="da" >
+                        </option>
+                        
+                        <option value="da" >
                             Dansk
-                        </option><option value="de" >
+                        </option>
+                        
+                        <option value="de" >
                             Deutsch
-                        </option><option value="el" >
+                        </option>
+                        
+                        <option value="el" >
                             Ελληνικά
-                        </option><option value="en" >
+                        </option>
+                        
+                        <option value="en" >
                             English
-                        </option><option value="es" >
+                        </option>
+                        
+                        <option value="es" >
                             Español
-                        </option><option value="et" >
+                        </option>
+                        
+                        <option value="et" >
                             Eesti
-                        </option><option value="fa" >
+                        </option>
+                        
+                        <option value="fa" >
                             فارسی
-                        </option><option value="fi" selected>
+                        </option>
+                        
+                        <option value="fi" selected>
                             Suomi
-                        </option><option value="fr" >
+                        </option>
+                        
+                        <option value="fr" >
                             Français
-                        </option><option value="gu" >
+                        </option>
+                        
+                        <option value="gu" >
                             ગુજરાતી
-                        </option><option value="ha" >
+                        </option>
+                        
+                        <option value="ha" >
                             Hausa
-                        </option><option value="he" >
+                        </option>
+                        
+                        <option value="he" >
                             עברית
-                        </option><option value="hi" >
+                        </option>
+                        
+                        <option value="hi" >
                             हिन्दी
-                        </option><option value="hr" >
+                        </option>
+                        
+                        <option value="hr" >
                             Hrvatski
-                        </option><option value="hu" >
+                        </option>
+                        
+                        <option value="hu" >
                             Magyar
-                        </option><option value="id" >
+                        </option>
+                        
+                        <option value="id" >
                             Bahasa Indonesia
-                        </option><option value="is" >
+                        </option>
+                        
+                        <option value="is" >
                             Íslenska
-                        </option><option value="it" >
+                        </option>
+                        
+                        <option value="it" >
                             Italiano
-                        </option><option value="ja" >
+                        </option>
+                        
+                        <option value="ja" >
                             日本語
-                        </option><option value="km" >
+                        </option>
+                        
+                        <option value="km" >
                             ភាសាខ្មែរ
-                        </option><option value="kn" >
+                        </option>
+                        
+                        <option value="kn" >
                             ಕನ್ನಡ
-                        </option><option value="ko" >
+                        </option>
+                        
+                        <option value="ko" >
                             한국어
-                        </option><option value="lt" >
+                        </option>
+                        
+                        <option value="lt" >
                             Lietuvių
-                        </option><option value="lv" >
+                        </option>
+                        
+                        <option value="lv" >
                             Latviešu
-                        </option><option value="ms" >
+                        </option>
+                        
+                        <option value="ms" >
                             Bahasa Melayu
-                        </option><option value="my" >
+                        </option>
+                        
+                        <option value="my" >
                             မြန်မာ
-                        </option><option value="nb" >
+                        </option>
+                        
+                        <option value="nb" >
                             Norsk Bokmål
-                        </option><option value="nl" >
+                        </option>
+                        
+                        <option value="nl" >
                             Nederlands
-                        </option><option value="pl" >
+                        </option>
+                        
+                        <option value="pl" >
                             Polski
-                        </option><option value="pt" >
+                        </option>
+                        
+                        <option value="pt" >
                             Português
-                        </option><option value="pt-br" >
+                        </option>
+                        
+                        <option value="pt-br" >
                             Português (Brasil)
-                        </option><option value="ro" >
+                        </option>
+                        
+                        <option value="ro" >
                             Română
-                        </option><option value="ru" >
+                        </option>
+                        
+                        <option value="ru" >
                             Русский
-                        </option><option value="sk" >
+                        </option>
+                        
+                        <option value="sk" >
                             Slovenčina
-                        </option><option value="sl" >
+                        </option>
+                        
+                        <option value="sl" >
                             Slovenščina
-                        </option><option value="sr" >
+                        </option>
+                        
+                        <option value="sr" >
                             Српски
-                        </option><option value="sv" >
+                        </option>
+                        
+                        <option value="sv" >
                             Svenska
-                        </option><option value="sw" >
+                        </option>
+                        
+                        <option value="sw" >
                             Kiswahili
-                        </option><option value="ta" >
+                        </option>
+                        
+                        <option value="ta" >
                             தமிழ்
-                        </option><option value="te" >
+                        </option>
+                        
+                        <option value="te" >
                             తెలుగు
-                        </option><option value="th" >
+                        </option>
+                        
+                        <option value="th" >
                             ไทย
-                        </option><option value="tl" >
+                        </option>
+                        
+                        <option value="tl" >
                             Tagalog
-                        </option><option value="tr" >
+                        </option>
+                        
+                        <option value="tr" >
                             Türkçe
-                        </option><option value="uk" >
+                        </option>
+                        
+                        <option value="uk" >
                             Українська
-                        </option><option value="ur" >
+                        </option>
+                        
+                        <option value="ur" >
                             اردو
-                        </option><option value="vi" >
+                        </option>
+                        
+                        <option value="vi" >
                             Tiếng Việt
-                        </option><option value="yo" >
+                        </option>
+                        
+                        <option value="yo" >
                             Yorùbá
-                        </option><option value="zh" >
+                        </option>
+                        
+                        <option value="zh" >
                             中文
-                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
+                            </svg>
+                        </a>
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Vaihda valikkoa"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content">
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
+                                
+                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
+                                
+                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Vaihda valikkoa"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
     
     Hike Analytics -sovelluksen aloitussivu - Kotisivu
 Hero-osio sovelluksen esittelyllä
-<section class="app-hero"><div class="container"><div class="app-hero-content"><div class="app-hero-text"><div class="app-hero-badge"><span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span><span>Tieteeseen perustuva vaellusanalyysi</span></div><h1>Vaeltaa älykkäämmin, elä terveellisemmin</h1><p class="app-hero-subtitle">Tietosuoja-asiakas iOS-sovellus, jossa on tutkimuksella tuettu kävelyanalyysi, poljinnopeuspohjaiset harjoitusalueet ja kattava
+<section class="app-hero">
+<div class="container">
+<div class="app-hero-content">
+<div class="app-hero-text">
+<div class="app-hero-badge">
+<span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span>
+<span>Tieteeseen perustuva vaellusanalyysi</span>
+</div>
+<h1>Vaeltaa älykkäämmin, elä terveellisemmin</h1>
+<p class="app-hero-subtitle">Tietosuoja-asiakas iOS-sovellus, jossa on tutkimuksella tuettu kävelyanalyysi, poljinnopeuspohjaiset harjoitusalueet ja kattava
           terveyden seuranta.
-          Perustuu vertaisarvioituihin tutkimuksiin, mukaan lukien CADENCE-Adults, Peak-30-tutkimus ja biomekaniikkatiede.</p><div class="app-hero-cta"><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Lataa App Store:stä</a><a class="btn btn-large btn-secondary" href="#science">Tutustu Tieteeseen</a></div><p class="mt-6 text-sm-muted">✓ 7 päivän ilmainen kokeilu    ✓ tiliä ei vaadita    ✓ 100 % paikallista dataa</p></div><div class="app-hero-mockup"><div class="mockup-phone"><img alt="Hike Analytics iOS -sovellus, joka näyttää vaellusharjoituksia kävelytiedoilla ja terveystiedoilla iPhone:ssä" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/></div></div></div></div></section>
+          Perustuu vertaisarvioituihin tutkimuksiin, mukaan lukien CADENCE-Adults, Peak-30-tutkimus ja biomekaniikkatiede.</p>
+<div class="app-hero-cta">
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Lataa App Store:stä</a>
+<a class="btn btn-large btn-secondary" href="#science">Tutustu Tieteeseen</a>
+</div>
+<p class="mt-6 text-sm-muted">✓ 7 päivän ilmainen kokeilu    ✓ tiliä ei vaadita    ✓ 100 % paikallista dataa</p>
+</div>
+<div class="app-hero-mockup">
+<div class="mockup-phone">
+<img alt="Hike Analytics iOS -sovellus, joka näyttää vaellusharjoituksia kävelytiedoilla ja terveystiedoilla iPhone:ssä" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+</section>
 Tieteellisen säätiön osasto - UUSI
-<section class="scientific-foundation" id="science"><div class="container"><div class="section-header"><div class="section-badge">Tutkimustukea</div><h2 class="section-title">Rakennettu tieteelliseen näyttöön</h2><p class="section-subtitle">Jokainen mittari ja suositus perustuu vertaisarvioituihin tutkimuksiin</p></div><div class="science-highlights"><div class="science-card"><div class="science-number">78 500</div><h3>Peak-30-poljinnopeustutkimus</h3><p>Perustuu Yhdistyneen kuningaskunnan Biobank-tutkimukseen, joka osoittaa ≥100 spm 30 minuutin ajan itsenäisesti ennustaa 40-50 % pienemmän kuolleisuusriskin
-          (Del Pozo-Cruz et al., JAMA 2022)</p></div><div class="science-card"><div class="science-number">100 spm</div><h3>Kohtalaisen intensiteetin kynnys</h3><p>CADENCE-Adults -tutkimus (Tudor-Locke et al., 2019) vahvisti 100 askelta minuutissa = 3 MET:tä 86 %:n herkkyydellä,
-          89,6 %:n spesifisyys – poljinnopeusalueidemme perusta</p></div><div class="science-card"><div class="science-number">2-4×</div><h3>ACWR:n tapaturmien ehkäisy</h3><p>Akuutti: Krooninen työkuormitussuhde &gt;1,50 lisää loukkaantumisriskiä 2–4 kertaa (Gabbett, Br J Sports Med 2016) – seuraamme tätä
-          automaattisesti pitääksesi sinut turvassa</p></div><div class="science-card"><div class="science-number">11</div><h3>Validoidut kaavat</h3><p>Mooren kadenssi→METs-yhtälöstä kuljetuskustannuslaskelmiin,<a href="/fi/formulas/">jokainen
-            kaava</a>sisältää validointitiedot ja kliinisen tulkinnan</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/fi/bibliography/">Näytä yli 50 tieteellistä referenssiä →</a></div></div></section>
+<section class="scientific-foundation" id="science">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Tutkimustukea</div>
+<h2 class="section-title">Rakennettu tieteelliseen näyttöön</h2>
+<p class="section-subtitle">Jokainen mittari ja suositus perustuu vertaisarvioituihin tutkimuksiin</p>
+</div>
+<div class="science-highlights">
+<div class="science-card">
+<div class="science-number">78 500</div>
+<h3>Peak-30-poljinnopeustutkimus</h3>
+<p>Perustuu Yhdistyneen kuningaskunnan Biobank-tutkimukseen, joka osoittaa ≥100 spm 30 minuutin ajan itsenäisesti ennustaa 40-50 % pienemmän kuolleisuusriskin
+          (Del Pozo-Cruz et al., JAMA 2022)</p>
+</div>
+<div class="science-card">
+<div class="science-number">100 spm</div>
+<h3>Kohtalaisen intensiteetin kynnys</h3>
+<p>CADENCE-Adults -tutkimus (Tudor-Locke et al., 2019) vahvisti 100 askelta minuutissa = 3 MET:tä 86 %:n herkkyydellä,
+          89,6 %:n spesifisyys – poljinnopeusalueidemme perusta</p>
+</div>
+<div class="science-card">
+<div class="science-number">2-4×</div>
+<h3>ACWR:n tapaturmien ehkäisy</h3>
+<p>Akuutti: Krooninen työkuormitussuhde &gt;1,50 lisää loukkaantumisriskiä 2–4 kertaa (Gabbett, Br J Sports Med 2016) – seuraamme tätä
+          automaattisesti pitääksesi sinut turvassa</p>
+</div>
+<div class="science-card">
+<div class="science-number">11</div>
+<h3>Validoidut kaavat</h3>
+<p>Mooren kadenssi→METs-yhtälöstä kuljetuskustannuslaskelmiin,<a href="/fi/formulas/">jokainen
+            kaava</a>sisältää validointitiedot ja kliinisen tulkinnan</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a class="btn btn-secondary" href="/fi/bibliography/">Näytä yli 50 tieteellistä referenssiä →</a>
+</div>
+</div>
+</section>
 Tärkeimmät ominaisuudet -osio
-<section class="app-features" id="features"><div class="container"><div class="section-header"><div class="section-badge">Ominaisuudet</div><h2 class="section-title">Kehittyneet retkeilyn suorituskykymittarit</h2><p class="section-subtitle">Ammattitason analyysi suunniteltu retkeilijöille kaikilla tasoilla</p></div><div class="app-features-grid"><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-zones"></use></svg></div><h3>Poljinnopeuspohjaiset harjoitusalueet</h3><p>Juna kanssa<a href="/fi/walking-zones/">5 tutkimuksen tukemaa vyöhykettä</a>(60-99 spm - 130+ spm) perustuu
-          CADENCE-Aikuisten tutkimus. Käytännöllisempi kuin sykealueet – rintahihnaa ei tarvita. Rata Peak - 30 poljinnopeus päivittäin.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>Kattava kävelyanalyysi</h3><p>Raita<a href="/fi/gait-analysis/">7 olennaista kävelymittaria</a>: poljinnopeus, askelpituus (40-50%
+<section class="app-features" id="features">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Ominaisuudet</div>
+<h2 class="section-title">Kehittyneet retkeilyn suorituskykymittarit</h2>
+<p class="section-subtitle">Ammattitason analyysi suunniteltu retkeilijöille kaikilla tasoilla</p>
+</div>
+<div class="app-features-grid">
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-zones"></use>
+</svg>
+</div>
+<h3>Poljinnopeuspohjaiset harjoitusalueet</h3>
+<p>Juna kanssa<a href="/fi/walking-zones/">5 tutkimuksen tukemaa vyöhykettä</a>(60-99 spm - 130+ spm) perustuu
+          CADENCE-Aikuisten tutkimus. Käytännöllisempi kuin sykealueet – rintahihnaa ei tarvita. Rata Peak - 30 poljinnopeus päivittäin.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-chart"></use>
+</svg>
+</div>
+<h3>Kattava kävelyanalyysi</h3>
+<p>Raita<a href="/fi/gait-analysis/">7 olennaista kävelymittaria</a>: poljinnopeus, askelpituus (40-50%
           korkeus), kosketusaika maahan (200-300ms), kaksoistuki (20-30%), epäsymmetria (GSI-kaava), nopeus ja
-          pystysuora värähtely (4-8cm).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-load"></use></svg></div><h3>Koulutuskuormituksen hallinta</h3><p>Estä yliharjoittelu käyttämällä<a href="/fi/training-load/">Vaellusstressipisteet (WSS)</a>ja ACWR
+          pystysuora värähtely (4-8cm).</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-load"></use>
+</svg>
+</div>
+<h3>Koulutuskuormituksen hallinta</h3>
+<p>Estä yliharjoittelu käyttämällä<a href="/fi/training-load/">Vaellusstressipisteet (WSS)</a>ja ACWR
           seurantaa. Seuraa akuutti:krooninen suhdetta (pidä 0,80-1,30) ja hanki henkilökohtaisia palautussuosituksia, jotka perustuvat
-          kuormasi.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-stride"></use></svg></div><h3>Biomekaniikka ja tehokkuus</h3><p>Syvä<a href="/fi/stride-mechanics/">askelmekaniikkaanalyysi</a>ja<a href="/fi/gait-efficiency/">vaellustalous</a>seuranta. Optimoi kuljetuskustannukset (~0,48-0,55
-          kcal/kg/km nopeudella 1,3 m/s), tunnistaa askelpoikkeamat, parantaa tehokkuutta 10-15 %.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-health"></use></svg></div><h3>Terveysintegraatio</h3><p>Saumaton Apple Health-integraatio. Tuo vaellusharjoitukset automaattisesti ja synkronoi syke, matka,
+          kuormasi.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-stride"></use>
+</svg>
+</div>
+<h3>Biomekaniikka ja tehokkuus</h3>
+<p>Syvä<a href="/fi/stride-mechanics/">askelmekaniikkaanalyysi</a>ja<a href="/fi/gait-efficiency/">vaellustalous</a>seuranta. Optimoi kuljetuskustannukset (~0,48-0,55
+          kcal/kg/km nopeudella 1,3 m/s), tunnistaa askelpoikkeamat, parantaa tehokkuutta 10-15 %.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-health"></use>
+</svg>
+</div>
+<h3>Terveysintegraatio</h3>
+<p>Saumaton Apple Health-integraatio. Tuo vaellusharjoitukset automaattisesti ja synkronoi syke, matka,
           askeleita ja terveysmittareita. Yhteensopiva Apple Watchin liikkuvuusmittareiden kanssa (vaellusvakaus, tuplatuki %,
-          Epäsymmetria).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-privacy"></use></svg></div><h3>Täydellinen tietosuoja</h3><p>Kaikki vaellustietosi säilyvät iPhone:ssä. Ei pilvisynkronointia, ei tilejä, ei seurantaa. Terveysmittarisi ovat
-          100 % yksityinen ja suojattu paikallisella käsittelyllä. GDPR- ja HIPAA-filosofian yhteensopiva.</p></div></div></div></section>
+          Epäsymmetria).</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-privacy"></use>
+</svg>
+</div>
+<h3>Täydellinen tietosuoja</h3>
+<p>Kaikki vaellustietosi säilyvät iPhone:ssä. Ei pilvisynkronointia, ei tilejä, ei seurantaa. Terveysmittarisi ovat
+          100 % yksityinen ja suojattu paikallisella käsittelyllä. GDPR- ja HIPAA-filosofian yhteensopiva.</p>
+</div>
+</div>
+</div>
+</section>
 Tieteelliset erottelutekijät - UUSI
-<section class="differentiators"><div class="container"><div class="section-header"><div class="section-badge">Miksi Hike Analytics</div><h2 class="section-title">Ainoa tieteeseen rakennettu retkeilysovellus</h2><p class="section-subtitle">Ei vain askelten laskemista – kattavaa analytiikkaa biomekaniikan tutkimuksen tukemana</p></div><div class="differentiator-list"><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Poljinnopeus yli sykkeen</h3><p><strong>Miksi sillä on merkitystä:</strong>Syke vaihtelee kuumuuden, stressin, kofeiinin ja sairauden mukaan. Kadenssi on
+<section class="differentiators">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Miksi Hike Analytics</div>
+<h2 class="section-title">Ainoa tieteeseen rakennettu retkeilysovellus</h2>
+<p class="section-subtitle">Ei vain askelten laskemista – kattavaa analytiikkaa biomekaniikan tutkimuksen tukemana</p>
+</div>
+<div class="differentiator-list">
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Poljinnopeus yli sykkeen</h3>
+<p><strong>Miksi sillä on merkitystä:</strong>Syke vaihtelee kuumuuden, stressin, kofeiinin ja sairauden mukaan. Kadenssi on
             luotettava, käytännöllinen ja todistettu. CADENCE-Adults -tutkimus osoitti 100 spm = kohtalainen intensiteetti 86 %:lla
-            herkkyys – tarkempi kuin sykearvio.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Peak-30-poljinnopeuden seuranta</h3><p><strong>Läpimurtomittari:</strong>Paras 30 peräkkäistä minuuttia vaellusta päivässä itsenäisesti
+            herkkyys – tarkempi kuin sykearvio.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Peak-30-poljinnopeuden seuranta</h3>
+<p><strong>Läpimurtomittari:</strong>Paras 30 peräkkäistä minuuttia vaellusta päivässä itsenäisesti
             ennustaa sydän- ja verisuoniterveyttä ja kuolleisuutta (78 500 Yhdistyneen kuningaskunnan Biopankin osallistujaa). Seuraamme tätä päivittäin – ei muuta
-            vaellussovellus tekee.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Vahinkojen ehkäisy ACWR:n avulla</h3><p><strong>Patikointiin soveltuva urheilutiede:</strong>Seuraa akuuttia:kroonista työkuormitussuhdettasi estääksesi
-            liikakäyttövammat. Tutkimukset osoittavat, että ACWR &gt;1,50 = 2-4 × loukkaantumisriski. Varoitamme sinua ennen kuin vaarallisia piikkejä ilmenee.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Vaellustalouden optimointi</h3><p><strong>Energiatehokkuus:</strong>Seuraa kuljetuskustannuksia ja vaellustehokkuutta (EF, Vertical Ratio).
+            vaellussovellus tekee.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Vahinkojen ehkäisy ACWR:n avulla</h3>
+<p><strong>Patikointiin soveltuva urheilutiede:</strong>Seuraa akuuttia:kroonista työkuormitussuhdettasi estääksesi
+            liikakäyttövammat. Tutkimukset osoittavat, että ACWR &gt;1,50 = 2-4 × loukkaantumisriski. Varoitamme sinua ennen kuin vaarallisia piikkejä ilmenee.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Vaellustalouden optimointi</h3>
+<p><strong>Energiatehokkuus:</strong>Seuraa kuljetuskustannuksia ja vaellustehokkuutta (EF, Vertical Ratio).
             Paranna taloudellisuutta 10–15 % Zone 2 -harjoittelun, askelten optimoinnin ja voimatyön avulla – erityisillä
-            opastusta.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Kävelysymmetria ja putoamisriski</h3><p><strong>Kliinisen asteen mittarit:</strong>Laske kävelysymmetryindeksi (GSI) epäsymmetrian havaitsemiseksi. Kaksinkertainen
+            opastusta.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Kävelysymmetria ja putoamisriski</h3>
+<p><strong>Kliinisen asteen mittarit:</strong>Laske kävelysymmetryindeksi (GSI) epäsymmetrian havaitsemiseksi. Kaksinkertainen
             tuki &gt;35 % ja vaellusnopeus &lt;0,8 m/s osoittavat kohonnutta putoamisriskiä – kriittinen iäkkäille ja
-              kuntoutus.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>50+ vertaisarvioitua sitaattia</h3><p><strong>Todistukseen perustuvat ohjeet:</strong>Jokainen suositus linkittää<a href="/fi/bibliography/">julkaistu tutkimus</a>. Tudor-Locken poljinnopeuden kynnyksistä
-            Studenskin askelnopeuden elintärkeä merkki – tieteen läpinäkyvyys.</p></div></div></div></div></section>
+              kuntoutus.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>50+ vertaisarvioitua sitaattia</h3>
+<p><strong>Todistukseen perustuvat ohjeet:</strong>Jokainen suositus linkittää<a href="/fi/bibliography/">julkaistu tutkimus</a>. Tudor-Locken poljinnopeuden kynnyksistä
+            Studenskin askelnopeuden elintärkeä merkki – tieteen läpinäkyvyys.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 Miten se toimii -osio
-<section class="how-it-works"><div class="container"><div class="section-header"><div class="section-badge">Miten se toimii</div><h2 class="section-title">Aloita vaellus älykkäämmin kolmessa vaiheessa</h2></div><div class="steps-container steps-grid"><div class="step-card"><div class="step-number">1</div><h3>Yhdistä Apple Health</h3><p>Tuo vaellusharjoittelusi automaattisesti Apple Health:stä. Hike Analytics analysoi historiatietosi
-          määritä perusmittarit ja laske krooninen harjoituskuormasi (28 päivän keskiarvo).</p></div><div class="step-card"><div class="step-number">2</div><h3>Hanki todisteisiin perustuvia näkemyksiä</h3><p>Saat kattavan analyysin, mukaan lukien Peak-30-poljinnopeus, kävelytiedot, vaellustalouden (kuljetuskustannukset),
-          ja ACWR. Ymmärrä mallejasi tutkimuksen tukemien kynnysarvojen avulla.</p></div><div class="step-card"><div class="step-number">3</div><h3>Kouluta tieteellisesti</h3><p>Noudata henkilökohtaisia suosituksia poljinnopeusalueista, harjoituskuormituksen etenemisestä (5-10 % viikoittain) ja
-          toipuminen. Seuraa tehokkuuden, nopeuden ja terveysvaikutusten parannuksia ajan myötä.</p></div></div></div></section>
+<section class="how-it-works">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Miten se toimii</div>
+<h2 class="section-title">Aloita vaellus älykkäämmin kolmessa vaiheessa</h2>
+</div>
+<div class="steps-container steps-grid">
+<div class="step-card">
+<div class="step-number">1</div>
+<h3>Yhdistä Apple Health</h3>
+<p>Tuo vaellusharjoittelusi automaattisesti Apple Health:stä. Hike Analytics analysoi historiatietosi
+          määritä perusmittarit ja laske krooninen harjoituskuormasi (28 päivän keskiarvo).</p>
+</div>
+<div class="step-card">
+<div class="step-number">2</div>
+<h3>Hanki todisteisiin perustuvia näkemyksiä</h3>
+<p>Saat kattavan analyysin, mukaan lukien Peak-30-poljinnopeus, kävelytiedot, vaellustalouden (kuljetuskustannukset),
+          ja ACWR. Ymmärrä mallejasi tutkimuksen tukemien kynnysarvojen avulla.</p>
+</div>
+<div class="step-card">
+<div class="step-number">3</div>
+<h3>Kouluta tieteellisesti</h3>
+<p>Noudata henkilökohtaisia suosituksia poljinnopeusalueista, harjoituskuormituksen etenemisestä (5-10 % viikoittain) ja
+          toipuminen. Seuraa tehokkuuden, nopeuden ja terveysvaikutusten parannuksia ajan myötä.</p>
+</div>
+</div>
+</div>
+</section>
 Kenelle se on -osiossa
-<section class="target-audience"><div class="container"><div class="section-header"><div class="section-badge">Kenelle se on tarkoitettu</div><h2 class="section-title">Täydellinen jokaiselle retkeilijälle</h2></div><div class="audience-grid"><div class="audience-card"><h3>Terveysharrastajat</h3><p>Saavuta 150 min/viikko kohtalainen aktiivisuus (100+ spm). Track Peak-30 poljinnopeus sydämen ja verisuonten terveydelle.
-          Täytä WHO/CDC:n suositukset tarkasti – ei vain askellaskentaa.</p></div><div class="audience-card"><h3>Fitness Hikers</h3><p>Harjoittele poljinnopeusvyöhykkeillä (vyöhyke 2 100-110 s/min aerobisella pohjalla, välit 120-130 s/min). Paranna patikointia
-          10-15 % järjestelmällisen koulutuksen avulla. Seuraa WSS:ää optimoidaksesi kuormituksen.</p></div><div class="audience-card"><h3>Kilpavaeltajat</h3><p>Mestari<a href="/fi/stride-mechanics/#race-hiking">kilpailuvaellustekniikka</a>(130-160 spm, suora
-          jalka, liioiteltu lonkan kierto). Seuraa biomekaniikkaa, seuraa harjoituskuormitusta, estä ylikuntoutuminen ACWR:llä.</p></div><div class="audience-card"><h3>Vanhemmat aikuiset (65+)</h3><p>Monitori<a href="/fi/gait-analysis/#gait-speed">askelnopeus elintärkeänä merkkinä</a>(säilytä &gt; 1,0 m/s).
+<section class="target-audience">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Kenelle se on tarkoitettu</div>
+<h2 class="section-title">Täydellinen jokaiselle retkeilijälle</h2>
+</div>
+<div class="audience-grid">
+<div class="audience-card">
+<h3>Terveysharrastajat</h3>
+<p>Saavuta 150 min/viikko kohtalainen aktiivisuus (100+ spm). Track Peak-30 poljinnopeus sydämen ja verisuonten terveydelle.
+          Täytä WHO/CDC:n suositukset tarkasti – ei vain askellaskentaa.</p>
+</div>
+<div class="audience-card">
+<h3>Fitness Hikers</h3>
+<p>Harjoittele poljinnopeusvyöhykkeillä (vyöhyke 2 100-110 s/min aerobisella pohjalla, välit 120-130 s/min). Paranna patikointia
+          10-15 % järjestelmällisen koulutuksen avulla. Seuraa WSS:ää optimoidaksesi kuormituksen.</p>
+</div>
+<div class="audience-card">
+<h3>Kilpavaeltajat</h3>
+<p>Mestari<a href="/fi/stride-mechanics/#race-hiking">kilpailuvaellustekniikka</a>(130-160 spm, suora
+          jalka, liioiteltu lonkan kierto). Seuraa biomekaniikkaa, seuraa harjoituskuormitusta, estä ylikuntoutuminen ACWR:llä.</p>
+</div>
+<div class="audience-card">
+<h3>Vanhemmat aikuiset (65+)</h3>
+<p>Monitori<a href="/fi/gait-analysis/#gait-speed">askelnopeus elintärkeänä merkkinä</a>(säilytä &gt; 1,0 m/s).
           Seuraa kaksoistukiprosenttia (&lt;35 %=hyvä vakaus), epäsymmetria- ja putoamisriskin indikaattoreita. Varhainen havaitseminen
-            liikkuvuuden heikkeneminen.</p></div><div class="audience-card"><h3>Kuntoutuspotilaat</h3><p>Seuraa objektiivisesti kävelyn parannuksia GSI-kaavan avulla (epäsymmetria &lt;5%=hyvä), askelpituuden palautumista ja
-            vaellusnopeuden edistyminen. Dokumentoi tulokset terveydenhuollon tarjoajille.</p></div><div class="audience-card"><h3>Painonpudotus ja terveys</h3><p>Optimoi kalorien poltto vyöhykeharjoittelulla. Laske energiankulutus tarkasti Mooren poljinnopeudella→MET:illä
-          yhtälö. Rakenna kestäviä liikuntatottumuksia kuormituksen asteittaisella etenemisellä.</p></div></div></div></section>
+            liikkuvuuden heikkeneminen.</p>
+</div>
+<div class="audience-card">
+<h3>Kuntoutuspotilaat</h3>
+<p>Seuraa objektiivisesti kävelyn parannuksia GSI-kaavan avulla (epäsymmetria &lt;5%=hyvä), askelpituuden palautumista ja
+            vaellusnopeuden edistyminen. Dokumentoi tulokset terveydenhuollon tarjoajille.</p>
+</div>
+<div class="audience-card">
+<h3>Painonpudotus ja terveys</h3>
+<p>Optimoi kalorien poltto vyöhykeharjoittelulla. Laske energiankulutus tarkasti Mooren poljinnopeudella→MET:illä
+          yhtälö. Rakenna kestäviä liikuntatottumuksia kuormituksen asteittaisella etenemisellä.</p>
+</div>
+</div>
+</div>
+</section>
 Oppimisresurssit - UUSI
-<section class="learning-resources"><div class="container"><div class="section-header"><div class="section-badge">Opi</div><h2 class="section-title">Syvä tieteellinen tieto</h2><p class="section-subtitle">Kattavat oppaat, jotka selittävät jokaisen mittarin taustalla olevan tieteen</p></div><div class="resources-grid"><div class="resource-card"><div class="resource-category">Perusteet</div><h3><a href="/fi/walking-zones/">Poljinnopeuspohjaiset harjoitusalueet</a></h3><p>Täydellinen paradigman muutos HR:stä kadenssiin. Opi 5 vyöhykettä (60-99 - 130+ spm), CADENCE-Aikuisten tutkimus,
-          Peak-30-konsepti ja sisävesiliikenteen protokollat.</p></div><div class="resource-card"><div class="resource-category">Biomekaniikka</div><h3><a href="/fi/stride-mechanics/">Hiking Stride Mechanics</a></h3><p>Kävelysyklin vaiheet, kilpailuvaellustekniikka (World Athletics säännöt), vaellus vs juoksu erot. GSI
-          epäsymmetrian kaava, maareaktiovoimat.</p></div><div class="resource-card"><div class="resource-category">Suorituskyky</div><h3><a href="/fi/gait-efficiency/">Vaellustalous &amp; CoT</a></h3><p>Kuljetuskustannusten optimointi, käänteinen heilurimalli (65-70 % energian talteenotto), Frouden numero, U-muotoinen
-          taloudellisuuskäyrä, vaellus-juoksu siirtymä nopeudella 2,2 m/s.</p></div><div class="resource-card"><div class="resource-category">Koulutus</div><h3><a href="/fi/training-load/">Koulutuskuormituksen hallinta</a></h3><p>Peak-30 poljinnopeus (Del Pozo-Cruz 2022), reipas ottelukonsepti, ACWR-vammojen ehkäisy, 3:1-jaksotus,
-          polarisoitu vs pyramidaalinen intensiteettijakauma.</p></div><div class="resource-card"><div class="resource-category">Mittarit</div><h3><a href="/fi/gait-analysis/">Kävelyanalyysin tiedot</a></h3><p>7 olennaista mittaria kliinisillä kynnyksillä: poljinnopeus (100 spm = 3 MET), askelpituus (40-50 % korkeus),
-          kaksoistuki (&gt;35% = putoamisriski), epäsymmetria, nopeus.</p></div><div class="resource-card"><div class="resource-category">Kaavat</div><h3><a href="/fi/formulas/">Tieteelliset kaavat</a></h3><p>11 validoitua yhtälöä: Mooren poljinnopeus → MET (R²=0,87), ACSM VO₂, energiankulutus, GSI, EF, kustannukset
-          Kuljetus, harjoituskuorma, 6MWT ennuste.</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/fi/research/">Tutustu kaikkiin tutkimusartikkeleihin →</a></div></div></section>
+<section class="learning-resources">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Opi</div>
+<h2 class="section-title">Syvä tieteellinen tieto</h2>
+<p class="section-subtitle">Kattavat oppaat, jotka selittävät jokaisen mittarin taustalla olevan tieteen</p>
+</div>
+<div class="resources-grid">
+<div class="resource-card">
+<div class="resource-category">Perusteet</div>
+<h3><a href="/fi/walking-zones/">Poljinnopeuspohjaiset harjoitusalueet</a></h3>
+<p>Täydellinen paradigman muutos HR:stä kadenssiin. Opi 5 vyöhykettä (60-99 - 130+ spm), CADENCE-Aikuisten tutkimus,
+          Peak-30-konsepti ja sisävesiliikenteen protokollat.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Biomekaniikka</div>
+<h3><a href="/fi/stride-mechanics/">Hiking Stride Mechanics</a></h3>
+<p>Kävelysyklin vaiheet, kilpailuvaellustekniikka (World Athletics säännöt), vaellus vs juoksu erot. GSI
+          epäsymmetrian kaava, maareaktiovoimat.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Suorituskyky</div>
+<h3><a href="/fi/gait-efficiency/">Vaellustalous &amp; CoT</a></h3>
+<p>Kuljetuskustannusten optimointi, käänteinen heilurimalli (65-70 % energian talteenotto), Frouden numero, U-muotoinen
+          taloudellisuuskäyrä, vaellus-juoksu siirtymä nopeudella 2,2 m/s.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Koulutus</div>
+<h3><a href="/fi/training-load/">Koulutuskuormituksen hallinta</a></h3>
+<p>Peak-30 poljinnopeus (Del Pozo-Cruz 2022), reipas ottelukonsepti, ACWR-vammojen ehkäisy, 3:1-jaksotus,
+          polarisoitu vs pyramidaalinen intensiteettijakauma.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Mittarit</div>
+<h3><a href="/fi/gait-analysis/">Kävelyanalyysin tiedot</a></h3>
+<p>7 olennaista mittaria kliinisillä kynnyksillä: poljinnopeus (100 spm = 3 MET), askelpituus (40-50 % korkeus),
+          kaksoistuki (&gt;35% = putoamisriski), epäsymmetria, nopeus.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Kaavat</div>
+<h3><a href="/fi/formulas/">Tieteelliset kaavat</a></h3>
+<p>11 validoitua yhtälöä: Mooren poljinnopeus → MET (R²=0,87), ACSM VO₂, energiankulutus, GSI, EF, kustannukset
+          Kuljetus, harjoituskuorma, 6MWT ennuste.</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a class="btn btn-secondary" href="/fi/research/">Tutustu kaikkiin tutkimusartikkeleihin →</a>
+</div>
+</div>
+</section>
 Hinnoittelu-osio
-<section class="pricing"><div class="container"><div class="section-header"><div class="section-badge">Hinnoittelu</div><h2 class="section-title">Yksinkertainen, läpinäkyvä hinnoittelu</h2><p class="section-subtitle">Kokeile Hike Analyticsia ilmaiseksi 7 päivää. Luottokorttia ei vaadita.</p></div><div class="pricing-card"><div class="price-header"><h3>Hike Analytics Premium</h3><div class="price"><span class="amount">3,99 $</span><span class="period">/kuukausi</span></div></div><ul class="features-list"><li>Huippu-30-poljinnopeuden seuranta</li><li>Poljinnopeuspohjaiset harjoitusalueet</li><li>Kehittynyt kävelyanalyysi (GSI, CoT, EF, pystysuora suhde)</li><li>Vaellusstressipisteet (WSS)</li><li>ACWR-vammojen ehkäisy</li><li>11 vahvistettua kaavaa</li><li>Täydellinen tietosuoja (paikallinen käsittely)</li><li>Apple Health-integraatio</li><li>Ei mainoksia, koskaan</li></ul><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Aloita ilmainen kokeilu</a><p class="trial-note">7 päivän ilmainen kokeilu • Peru milloin tahansa • Luottokorttia ei tarvita</p></div></div></section>
+<section class="pricing">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Hinnoittelu</div>
+<h2 class="section-title">Yksinkertainen, läpinäkyvä hinnoittelu</h2>
+<p class="section-subtitle">Kokeile Hike Analyticsia ilmaiseksi 7 päivää. Luottokorttia ei vaadita.</p>
+</div>
+<div class="pricing-card">
+<div class="price-header">
+<h3>Hike Analytics Premium</h3>
+<div class="price">
+<span class="amount">3,99 $</span>
+<span class="period">/kuukausi</span>
+</div>
+</div>
+<ul class="features-list">
+<li>Huippu-30-poljinnopeuden seuranta</li>
+<li>Poljinnopeuspohjaiset harjoitusalueet</li>
+<li>Kehittynyt kävelyanalyysi (GSI, CoT, EF, pystysuora suhde)</li>
+<li>Vaellusstressipisteet (WSS)</li>
+<li>ACWR-vammojen ehkäisy</li>
+<li>11 vahvistettua kaavaa</li>
+<li>Täydellinen tietosuoja (paikallinen käsittely)</li>
+<li>Apple Health-integraatio</li>
+<li>Ei mainoksia, koskaan</li>
+</ul>
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Aloita ilmainen kokeilu</a>
+<p class="trial-note">7 päivän ilmainen kokeilu • Peru milloin tahansa • Luottokorttia ei tarvita</p>
+</div>
+</div>
+</section>
 UKK-osio
-<section class="faq"><div class="container"><div class="section-header"><div class="section-badge">FAQ</div><h2 class="section-title">Usein kysytyt kysymykset</h2></div><div class="faq-grid"><div class="faq-item"><h3>Mikä tekee Hike Analyticsista eron muista vaellussovelluksista?</h3><p>Olemme ainoa vaellussovellus, joka on rakennettu vertaisarvioituun tutkimukseen. Jokainen mittari – huippu-30 poljinnopeus, ACWR, kustannukset
+<section class="faq">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">FAQ</div>
+<h2 class="section-title">Usein kysytyt kysymykset</h2>
+</div>
+<div class="faq-grid">
+<div class="faq-item">
+<h3>Mikä tekee Hike Analyticsista eron muista vaellussovelluksista?</h3>
+<p>Olemme ainoa vaellussovellus, joka on rakennettu vertaisarvioituun tutkimukseen. Jokainen mittari – huippu-30 poljinnopeus, ACWR, kustannukset
           Kuljetus – tulee julkaistuista tutkimuksista. Lainaamme yli 50 tieteellistä artikkelia ja selitämme jokaisen taustalla olevat todisteet
-          suositus. Se ei ole askelten laskemista; se on retkeilyyn sovellettua biomekaniikkaa ja liikuntafysiologiaa.</p></div><div class="faq-item"><h3>Mikä on Peak-30-poljinnopeus ja miksi sillä on merkitystä?</h3><p>Huippu-30 poljinnopeus on keskimääräinen askelmääräsi minuutissa joka päivä parhaan 30 peräkkäisen vaellusminuutin aikana.
+          suositus. Se ei ole askelten laskemista; se on retkeilyyn sovellettua biomekaniikkaa ja liikuntafysiologiaa.</p>
+</div>
+<div class="faq-item">
+<h3>Mikä on Peak-30-poljinnopeus ja miksi sillä on merkitystä?</h3>
+<p>Huippu-30 poljinnopeus on keskimääräinen askelmääräsi minuutissa joka päivä parhaan 30 peräkkäisen vaellusminuutin aikana.
           78 500 ihmisen läpimurtotutkimus (Del Pozo-Cruz, JAMA 2022) osoitti, että se ennustaa itsenäisesti kuolleisuutta
-          riski – jopa päivittäisten askelten kokonaismäärän hallinnan jälkeen. Seuraamme tätä automaattisesti, mitä mikään muu sovellus ei tee.</p></div><div class="faq-item"><h3>Miten ACWR ehkäisee loukkaantumisia?</h3><p>Acute:Chronic Workload Ratio vertaa viimeaikaista harjoitteluasi (viimeiset 7 päivää) pitkän aikavälin keskiarvoon (28
+          riski – jopa päivittäisten askelten kokonaismäärän hallinnan jälkeen. Seuraamme tätä automaattisesti, mitä mikään muu sovellus ei tee.</p>
+</div>
+<div class="faq-item">
+<h3>Miten ACWR ehkäisee loukkaantumisia?</h3>
+<p>Acute:Chronic Workload Ratio vertaa viimeaikaista harjoitteluasi (viimeiset 7 päivää) pitkän aikavälin keskiarvoon (28
           päivää). Tutkimusten mukaan ACWR &gt;1,50 lisää loukkaantumisriskiä 2-4 kertaa. Laskemme tämän päivittäin ja varoitamme sinua etukäteen
-          vaarallisia piikkejä, jotka auttavat sinua edistymään turvallisesti 5-10 % viikoittaisella korotuksella.</p></div><div class="faq-item"><h3>Miksi poljinnopeusalueet sykealueiden sijaan?</h3><p>Kadenssi on luotettavampi ja käytännöllisempi. CADENCE-Adults -tutkimus osoitti, että 100 spm = kohtalainen intensiteetti (3 MET)
+          vaarallisia piikkejä, jotka auttavat sinua edistymään turvallisesti 5-10 % viikoittaisella korotuksella.</p>
+</div>
+<div class="faq-item">
+<h3>Miksi poljinnopeusalueet sykealueiden sijaan?</h3>
+<p>Kadenssi on luotettavampi ja käytännöllisempi. CADENCE-Adults -tutkimus osoitti, että 100 spm = kohtalainen intensiteetti (3 MET)
           86 % herkkyydellä ja 90 % spesifisyydellä. Syke vaihtelee kuumuuden, stressin, sairauden, kofeiinin ja poljinnopeuden mukaan
-          ei. Lisäksi et tarvitse rintahihnaa tai kelloa; laske vain askeleita.</p></div><div class="faq-item"><h3>Voiko Hike Analytics auttaa putoamisen ehkäisyssä?</h3><p>Kyllä. Seuraamme kliinisiä putoamisriskin indikaattoreita: askelnopeus &lt;0,8 m/s, kaksoistuki&gt;35%, epäsymmetria (GSI) &gt;10%,
+          ei. Lisäksi et tarvitse rintahihnaa tai kelloa; laske vain askeleita.</p>
+</div>
+<div class="faq-item">
+<h3>Voiko Hike Analytics auttaa putoamisen ehkäisyssä?</h3>
+<p>Kyllä. Seuraamme kliinisiä putoamisriskin indikaattoreita: askelnopeus &lt;0,8 m/s, kaksoistuki&gt;35%, epäsymmetria (GSI) &gt;10%,
             ja vaellusvakaus. Nämä ovat näyttöön perustuvia kynnysarvoja geriatrian tutkimuksesta. Varhainen havaitseminen mahdollistaa
-            interventio ennen kaatumista – kriittistä yli 65-vuotiaille aikuisille.</p></div><div class="faq-item"><h3>Miten Hike Analytics suojaa yksityisyyttäni?</h3><p>Kaikki tiedot pysyvät iPhone-jaksollasi. Ei pilvisynkronointia, ei tilejä, ei palvelimia, jotka vastaanottavat terveystietojasi. Me
+            interventio ennen kaatumista – kriittistä yli 65-vuotiaille aikuisille.</p>
+</div>
+<div class="faq-item">
+<h3>Miten Hike Analytics suojaa yksityisyyttäni?</h3>
+<p>Kaikki tiedot pysyvät iPhone-jaksollasi. Ei pilvisynkronointia, ei tilejä, ei palvelimia, jotka vastaanottavat terveystietojasi. Me
           käsittelee kaiken paikallisesti käyttämällä laitteessa olevia algoritmeja. Vaellusmittarisi, sijaintisi, sykkeesi – täysin
           yksityinen. Noudatamme GDPR- ja HIPAA-filosofiaa, vaikka meitä ei lain mukaan vaadita (koska emme koskaan näe
-          tietosi).</p></div><div class="faq-item"><h3>Tarvitsenko erikoisvarusteita?</h3><p>Ei. Hike Analytics toimii iPhone:n tai Apple Watchin kanssa. Perusmittareita (poljinnopeus, etäisyys, askeleet) varten vain sinun
+          tietosi).</p>
+</div>
+<div class="faq-item">
+<h3>Tarvitsenko erikoisvarusteita?</h3>
+<p>Ei. Hike Analytics toimii iPhone:n tai Apple Watchin kanssa. Perusmittareita (poljinnopeus, etäisyys, askeleet) varten vain sinun
           puhelin. Apple Watch auttaa syketietojen ja tarkempien mittareiden saamiseksi, mutta se ei ole pakollinen. Integroimme
-          Apple Health:n kanssa, joten mikä tahansa yhteensopiva laite toimii.</p></div><div class="faq-item"><h3>Sopiiko Hike Analytics kuntoutukseen?</h3><p>Täysin. Meitä käyttävät kuntoutuspotilaat, jotka seuraavat toipumista objektiivisesti. Gait Symmetry Index (GSI) -kaava
+          Apple Health:n kanssa, joten mikä tahansa yhteensopiva laite toimii.</p>
+</div>
+<div class="faq-item">
+<h3>Sopiiko Hike Analytics kuntoutukseen?</h3>
+<p>Täysin. Meitä käyttävät kuntoutuspotilaat, jotka seuraavat toipumista objektiivisesti. Gait Symmetry Index (GSI) -kaava
           mittaa vasemman ja oikean väliset erot (&lt;3 % normaalia, &gt;10 % kliinisesti merkitsevää). seurata askelpituuden palautumista,
             vaellusnopeuden parantaminen ja epäsymmetrian vähentäminen. Jaa objektiivisia tietoja fysioterapeuttisi tai
-            lääkäri.</p></div><div class="faq-item"><h3>Mikä on 11 kaavan tieteellinen perusta?</h3><p>Jokainen<a href="/fi/formulas/">kaava</a>sisältää validointitiedot ja alkuperäisen tutkimuksen lainauksen.
+            lääkäri.</p>
+</div>
+<div class="faq-item">
+<h3>Mikä on 11 kaavan tieteellinen perusta?</h3>
+<p>Jokainen<a href="/fi/formulas/">kaava</a>sisältää validointitiedot ja alkuperäisen tutkimuksen lainauksen.
           Esimerkki: Mooren poljinnopeus→METs-yhtälö (R²=0,87, tarkkuus ±0,5 METs, 76 aikuista) on 23-35 % tarkempi kuin
-          vanhemmat ACSM-yhtälöt. Näytämme tieteen, ei vain mustan laatikon laskelmia.</p></div></div></div></section>
+          vanhemmat ACSM-yhtälöt. Näytämme tieteen, ei vain mustan laatikon laskelmia.</p>
+</div>
+</div>
+</div>
+</section>
 CTA-osio
-<section class="final-cta"><div class="container"><div class="cta-content"><h2>Oletko valmis vaeltamaan älykkäämmin?</h2><p>Liity terveyttä parantavien retkeilijöiden joukkoon tutkimukseen perustuvan kävelyanalyysin ja koulutustieteen avulla</p><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Lataa Hike Analytics</a><p class="cta-note">7 päivän ilmainen kokeilu • iOS 16+ • Apple Health-yhteensopiva • Luottokorttia ei tarvita</p></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...</h2><p class="ai-citation-answer">Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia...</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>vaellusanalytiikkasovellus · kävelyanalyysisovellus · yksityisyyden ensisijainen iOS-sovellus · vaellusterveysmittareita · askelanalyysi</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../fi/bibliography/">
+<section class="final-cta">
+<div class="container">
+<div class="cta-content">
+<h2>Oletko valmis vaeltamaan älykkäämmin?</h2>
+<p>Liity terveyttä parantavien retkeilijöiden joukkoon tutkimukseen perustuvan kävelyanalyysin ja koulutustieteen avulla</p>
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Lataa Hike Analytics</a>
+<p class="cta-note">7 päivän ilmainen kokeilu • iOS 16+ • Apple Health-yhteensopiva • Luottokorttia ei tarvita</p>
+</div>
+</div>
+</section>
+    
+
+    
+    
+
+    
+    
+<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
+  <div class="container ai-citation-shell">
+    <h2 class="ai-citation-title">Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...</h2>
+    <p class="ai-citation-answer">Yksityinen iOS-vaellussovellus edistyneellä kävelyanalyysillä. Seuraa askelmittareita, vaellusalueita, WSS paikallisesti. Tieteeseen perustuvia oivalluksia...</p>
+
+    <ul class="ai-citation-facts" role="list">
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">📅</span>
+        <span>2026-03-11</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact ai-citation-keywords">
+        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
+        <span>vaellusanalytiikkasovellus · kävelyanalyysisovellus · yksityisyyden ensisijainen iOS-sovellus · vaellusterveysmittareita · askelanalyysi</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
+        <a href="../fi/bibliography/">
           
           Bibliografia
           
-        </a></li></ul><nav class="ai-citation-links" aria-label="Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit..."><a class="ai-related-link" href="../fi/research/">
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <nav class="ai-citation-links" aria-label="Yksityinen vaellusanalyysi – kävelyanalyysi, WSS, terveysmittarit...">
+      
+      <a class="ai-related-link" href="../fi/research/">
         Tutkimus
-      </a><a class="ai-related-link" href="../fi/getting-started/">
+      </a>
+      
+      <a class="ai-related-link" href="../fi/getting-started/">
         Aloitus
-      </a><a class="ai-related-link" href="../fi/contact/">
+      </a>
+      
+      <a class="ai-related-link" href="../fi/contact/">
         Ota yhteyttä
-      </a></nav></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Lataa</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Lataa App Storesta"><img src="../assets/images/badge-app-store.svg"
+      </a>
+      
+    </nav>
+    
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Hike Analytics</h2>
+                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Lataa</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Lataa App Storesta">
+                        <img src="../assets/images/badge-app-store.svg"
                             alt="Lataa App Storesta" width="135"
-                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Hanki se Google Playsta"><img src="../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Hanki se Google Playsta">
+                        <img src="../assets/images/badge-google-play.svg"
                             alt="Hanki se Google Playsta" width="135"
-                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Saatavilla</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Saatavilla</h3>
+            <div class="lang-grid">
+                
+                <a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a><a href="/am/" class="lang-link"
+                </a>
+                
+                <a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a><a href="/ar/" class="lang-link"
+                </a>
+                
+                <a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a><a href="/bg/" class="lang-link"
+                </a>
+                
+                <a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a><a href="/bn/" class="lang-link"
+                </a>
+                
+                <a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a><a href="/ca/" class="lang-link"
+                </a>
+                
+                <a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a><a href="/cs/" class="lang-link"
+                </a>
+                
+                <a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a><a href="/da/" class="lang-link"
+                </a>
+                
+                <a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a><a href="/de/" class="lang-link"
+                </a>
+                
+                <a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a><a href="/el/" class="lang-link"
+                </a>
+                
+                <a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a><a href="/en/" class="lang-link"
+                </a>
+                
+                <a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a><a href="/es/" class="lang-link"
+                </a>
+                
+                <a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a><a href="/et/" class="lang-link"
+                </a>
+                
+                <a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a><a href="/fa/" class="lang-link"
+                </a>
+                
+                <a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a><a href="/fi/" class="lang-link active"
+                </a>
+                
+                <a href="/fi/" class="lang-link active"
                     hreflang="fi" >
                     Suomi
-                </a><a href="/fr/" class="lang-link"
+                </a>
+                
+                <a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a><a href="/gu/" class="lang-link"
+                </a>
+                
+                <a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a><a href="/ha/" class="lang-link"
+                </a>
+                
+                <a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a><a href="/he/" class="lang-link"
+                </a>
+                
+                <a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a><a href="/hi/" class="lang-link"
+                </a>
+                
+                <a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a><a href="/hr/" class="lang-link"
+                </a>
+                
+                <a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a><a href="/hu/" class="lang-link"
+                </a>
+                
+                <a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a><a href="/id/" class="lang-link"
+                </a>
+                
+                <a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a><a href="/is/" class="lang-link"
+                </a>
+                
+                <a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a><a href="/it/" class="lang-link"
+                </a>
+                
+                <a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a><a href="/ja/" class="lang-link"
+                </a>
+                
+                <a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a><a href="/km/" class="lang-link"
+                </a>
+                
+                <a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a><a href="/kn/" class="lang-link"
+                </a>
+                
+                <a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a><a href="/ko/" class="lang-link"
+                </a>
+                
+                <a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a><a href="/lt/" class="lang-link"
+                </a>
+                
+                <a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a><a href="/lv/" class="lang-link"
+                </a>
+                
+                <a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a><a href="/ms/" class="lang-link"
+                </a>
+                
+                <a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a><a href="/my/" class="lang-link"
+                </a>
+                
+                <a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a><a href="/nb/" class="lang-link"
+                </a>
+                
+                <a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a><a href="/nl/" class="lang-link"
+                </a>
+                
+                <a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a><a href="/pl/" class="lang-link"
+                </a>
+                
+                <a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a><a href="/pt/" class="lang-link"
+                </a>
+                
+                <a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a><a href="/pt-br/" class="lang-link"
+                </a>
+                
+                <a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a><a href="/ro/" class="lang-link"
+                </a>
+                
+                <a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a><a href="/ru/" class="lang-link"
+                </a>
+                
+                <a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a><a href="/sk/" class="lang-link"
+                </a>
+                
+                <a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a><a href="/sl/" class="lang-link"
+                </a>
+                
+                <a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a><a href="/sr/" class="lang-link"
+                </a>
+                
+                <a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a><a href="/sv/" class="lang-link"
+                </a>
+                
+                <a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a><a href="/sw/" class="lang-link"
+                </a>
+                
+                <a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a><a href="/ta/" class="lang-link"
+                </a>
+                
+                <a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a><a href="/te/" class="lang-link"
+                </a>
+                
+                <a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a><a href="/th/" class="lang-link"
+                </a>
+                
+                <a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a><a href="/tl/" class="lang-link"
+                </a>
+                
+                <a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a><a href="/tr/" class="lang-link"
+                </a>
+                
+                <a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a><a href="/uk/" class="lang-link"
+                </a>
+                
+                <a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a><a href="/ur/" class="lang-link"
+                </a>
+                
+                <a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a><a href="/vi/" class="lang-link"
+                </a>
+                
+                <a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a><a href="/yo/" class="lang-link"
+                </a>
+                
+                <a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a><a href="/zh/" class="lang-link"
+                </a>
+                
+                <a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
                 &copy; 2026 Hike Analytics. Kaikki oikeudet pidätetään
-            </p><ul class="footer-legal"><li><a href="/fi/privacy/">Yksityisyys</a></li><li><a href="/fi/terms/">Ehdot</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Tämä sivusto käyttää evästeitä parantaakseen käyttökokemustasi.</p><a href="/fi/privacy/" class="text-sm">Lue lisää</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Hylkää</button><button id="cookie-accept" class="btn btn-primary btn-small">Hyväksyä</button></div></div></div><script src="../assets/js/core.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/search.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/carousel.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/fi/privacy/">Yksityisyys</a></li>
+                <li><a href="/fi/terms/">Ehdot</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Tämä sivusto käyttää evästeitä parantaakseen käyttökokemustasi.</p>
+            <a href="/fi/privacy/" class="text-sm">Lue lisää</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Hylkää</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Hyväksyä</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../assets/js/core.min.js?v=19fdca55b3da" defer></script>
+  <script src="../assets/js/search.min.js?v=19fdca55b3da" defer></script>
+  
+  <script src="../assets/js/carousel.min.js?v=19fdca55b3da" defer></script>
+  
+
+  
+  
+  <script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
+</body>
+
+</html>

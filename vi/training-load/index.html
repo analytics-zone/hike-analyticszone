@@ -1,61 +1,251 @@
-<!DOCTYPE html><html lang="vi" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet"><title>Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu...</title><meta name="description" content="Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao..."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="điểm số căng thẳng khi đi bộ đường dài, Máy tính WSS, tải đào tạo đi bộ đường dài, khối lượng đi bộ đường dài hàng tuần, theo dõi tập thể dục đi bộ đường dài"><link rel="canonical" href="https://hike.analyticszone.app/vi/training-load/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-11T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://hike.analyticszone.app/vi/training-load/"><meta property="og:title" content="Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu..."><meta property="og:description" content="Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao..."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="vi_VN"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/vi/training-load/"><meta name="twitter:title" content="Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu..."><meta name="twitter:description" content="Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao..."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/training-load/"><link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/training-load/"><link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/training-load/"><link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/training-load/"><link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/training-load/"><link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/training-load/"><link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/training-load/"><link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/training-load/"><link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/training-load/"><link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/training-load/"><link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/training-load/"><link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/training-load/"><link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/training-load/"><link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/training-load/"><link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/training-load/"><link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/training-load/"><link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/training-load/"><link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/training-load/"><link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/training-load/"><link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/training-load/"><link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/training-load/"><link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/training-load/"><link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/training-load/"><link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/training-load/"><link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/training-load/"><link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/training-load/"><link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/training-load/"><link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/training-load/"><link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/training-load/"><link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/training-load/"><link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/training-load/"><link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/training-load/"><link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/training-load/"><link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/training-load/"><link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/training-load/"><link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/training-load/"><link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/training-load/"><link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/training-load/"><link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/training-load/"><link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/training-load/"><link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/training-load/"><link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/training-load/"><link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/training-load/"><link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/training-load/"><link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/training-load/"><link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/training-load/"><link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/training-load/"><link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/training-load/"><link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/training-load/"><link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/training-load/"><link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/training-load/"><link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/training-load/"><link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/training-load/"><link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/training-load/"><link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/training-load/"><link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/training-load/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu...</title>
+  <meta name="description" content="Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao...">
+  <meta name="author" content="AnalyticsZone Team">
+
+  
+  
+  <meta name="keywords" content="điểm số căng thẳng khi đi bộ đường dài, Máy tính WSS, tải đào tạo đi bộ đường dài, khối lượng đi bộ đường dài hàng tuần, theo dõi tập thể dục đi bộ đường dài">
+  
+
+  
+  <link rel="canonical" href="https://hike.analyticszone.app/vi/training-load/">
+
+  
+  
+  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+  <meta property="article:modified_time" content="2026-03-11T14:30:00Z">
+  <meta property="article:author" content="AnalyticsZone Team">
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hike.analyticszone.app/vi/training-load/">
+  <meta property="og:title" content="Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu...">
+  <meta property="og:description" content="Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao...">
+  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Hike Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hike.analyticszone.app/vi/training-load/">
+  <meta name="twitter:title" content="Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu...">
+  <meta name="twitter:description" content="Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao...">
+  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@hikeanalytics">
+  <meta name="twitter:creator" content="@hikeanalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/training-load/">
+  
+  <link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/training-load/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/training-load/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/training-load/">
+  
+  <link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/training-load/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/training-load/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/training-load/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/training-load/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/training-load/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/training-load/">
+  
+  <link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/training-load/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/training-load/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/training-load/">
+  
+  <link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/training-load/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/training-load/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/training-load/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/training-load/">
+  
+  <link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/training-load/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/training-load/">
+  
+  <link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/training-load/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/training-load/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/training-load/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/training-load/">
+  
+  <link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/training-load/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/training-load/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/training-load/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/training-load/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/training-load/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/training-load/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/training-load/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/training-load/">
+  
+  <link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/training-load/">
+  
+  <link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/training-load/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/training-load/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/training-load/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/training-load/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/training-load/">
+  
+  <link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/training-load/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/training-load/">
+  
+  <link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/training-load/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/training-load/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/training-load/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/training-load/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/training-load/">
+  
+  <link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/training-load/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/training-load/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/training-load/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/training-load/">
+  
+  <link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/training-load/">
+  
+  <link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/training-load/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/training-load/">
+  
+  <link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/training-load/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/training-load/">
+  
+  <link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/training-load/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/training-load/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/training-load/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  
+  
+  
+  
+  <meta name="robots" content="index, follow">
+  
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6760036261">
+  
+
+  
+  <style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -314,7 +504,20 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=f4a4f52b4341"><script type="application/ld+json">
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../../assets/css/main.min.css?v=19fdca55b3da">
+
+  
+  
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -349,7 +552,10 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -358,7 +564,11 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "vi"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -373,7 +583,12 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -402,7 +617,11 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -445,7 +664,14 @@ img[width][height] {
     }
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -470,7 +696,17 @@ img[width][height] {
     "@id": "https://hike.analyticszone.app/vi/training-load/"
   }
 }
-</script><script>
+</script>
+
+
+
+
+
+  
+  
+
+  
+  <script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -484,423 +720,1989 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script></head><body><a href="#main-content" class="skip-link">Chuyển đến nội dung</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/vi/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/vi/" 
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/vi/" class="site-logo">
+                <picture>
+                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
+                </picture>
+                <span class="logo-text">Hike Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/vi/" 
                                 aria-current="">
                                 Trang chủ
-                            </a></li><li class="has-submenu" ><a href="/vi/getting-started/" class="nav-label">Học hỏi</a><ul class="submenu"><li><a href="/vi/getting-started/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/vi/getting-started/" class="nav-label">Học hỏi</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/vi/getting-started/" 
                                         aria-current="">
                                         Bắt đầu
-                                    </a></li><li><a href="/vi/walking-zones/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/walking-zones/" 
                                         aria-current="">
                                         Khu đi bộ đường dài
-                                    </a></li><li><a href="/vi/gait-analysis/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/gait-analysis/" 
                                         aria-current="">
                                         Phân tích dáng đi
-                                    </a></li><li><a href="/vi/training-load/" class="active" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/training-load/" class="active" 
                                         aria-current="page">
                                         Tải đào tạo
-                                    </a></li><li><a href="/vi/wss-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/wss-calculator/" 
                                         aria-current="">
                                         Máy tính WSS
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/vi/research/" class="nav-label">Khoa học</a><ul class="submenu"><li><a href="/vi/research/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/vi/research/" class="nav-label">Khoa học</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/vi/research/" 
                                         aria-current="">
                                         Nghiên cứu
-                                    </a></li><li><a href="/vi/formulas/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/formulas/" 
                                         aria-current="">
                                         Công thức
-                                    </a></li><li><a href="/vi/gait-efficiency/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/gait-efficiency/" 
                                         aria-current="">
                                         Hiệu quả dáng đi
-                                    </a></li><li><a href="/vi/stride-mechanics/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/stride-mechanics/" 
                                         aria-current="">
                                         Cơ chế bước đi
-                                    </a></li><li><a href="/vi/walking-vs-running/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/walking-vs-running/" 
                                         aria-current="">
                                         Đi bộ vs Chạy
-                                    </a></li><li><a href="/vi/benchmarks/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/benchmarks/" 
                                         aria-current="">
                                         Điểm chuẩn
-                                    </a></li><li><a href="/vi/bibliography/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/bibliography/" 
                                         aria-current="">
                                         Thư mục
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/vi/for-health/" class="nav-label">Dành cho bạn</a><ul class="submenu"><li><a href="/vi/for-health/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/vi/for-health/" class="nav-label">Dành cho bạn</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/vi/for-health/" 
                                         aria-current="">
                                         Vì sức khỏe
-                                    </a></li><li><a href="/vi/for-fitness/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/for-fitness/" 
                                         aria-current="">
                                         Để tập thể hình
-                                    </a></li><li><a href="/vi/for-seniors/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/for-seniors/" 
                                         aria-current="">
                                         Dành cho người cao tuổi
-                                    </a></li><li><a href="/vi/for-rehabilitation/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/for-rehabilitation/" 
                                         aria-current="">
                                         Để phục hồi chức năng
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/vi/cadence-calculator/" class="nav-label">Công cụ</a><ul class="submenu"><li><a href="/vi/cadence-calculator/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/vi/cadence-calculator/" class="nav-label">Công cụ</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/vi/cadence-calculator/" 
                                         aria-current="">
                                         Máy tính nhịp
-                                    </a></li><li><a href="/vi/gait-assessment/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/gait-assessment/" 
                                         aria-current="">
                                         Đánh giá dáng đi
-                                    </a></li><li><a href="/vi/vo2max-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/vi/vo2max-calculator/" 
                                         aria-current="">
                                         Máy tính VO₂max
-                                    </a></li></ul></li><li><a href="/vi/contact/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/vi/contact/" 
                                 aria-current="">
                                 Liên hệ
-                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Chọn ngôn ngữ"><option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Chọn ngôn ngữ">
+                        
+                        <option value="af" >
                             Afrikaans
-                        </option><option value="am" >
+                        </option>
+                        
+                        <option value="am" >
                             አမ္ဟာ
-                        </option><option value="ar" >
+                        </option>
+                        
+                        <option value="ar" >
                             العربية
-                        </option><option value="bg" >
+                        </option>
+                        
+                        <option value="bg" >
                             Български
-                        </option><option value="bn" >
+                        </option>
+                        
+                        <option value="bn" >
                             বাংলা
-                        </option><option value="ca" >
+                        </option>
+                        
+                        <option value="ca" >
                             Català
-                        </option><option value="cs" >
+                        </option>
+                        
+                        <option value="cs" >
                             Čeština
-                        </option><option value="da" >
+                        </option>
+                        
+                        <option value="da" >
                             Dansk
-                        </option><option value="de" >
+                        </option>
+                        
+                        <option value="de" >
                             Deutsch
-                        </option><option value="el" >
+                        </option>
+                        
+                        <option value="el" >
                             Ελληνικά
-                        </option><option value="en" >
+                        </option>
+                        
+                        <option value="en" >
                             English
-                        </option><option value="es" >
+                        </option>
+                        
+                        <option value="es" >
                             Español
-                        </option><option value="et" >
+                        </option>
+                        
+                        <option value="et" >
                             Eesti
-                        </option><option value="fa" >
+                        </option>
+                        
+                        <option value="fa" >
                             فارسی
-                        </option><option value="fi" >
+                        </option>
+                        
+                        <option value="fi" >
                             Suomi
-                        </option><option value="fr" >
+                        </option>
+                        
+                        <option value="fr" >
                             Français
-                        </option><option value="gu" >
+                        </option>
+                        
+                        <option value="gu" >
                             ગુજરાતી
-                        </option><option value="ha" >
+                        </option>
+                        
+                        <option value="ha" >
                             Hausa
-                        </option><option value="he" >
+                        </option>
+                        
+                        <option value="he" >
                             עברית
-                        </option><option value="hi" >
+                        </option>
+                        
+                        <option value="hi" >
                             हिन्दी
-                        </option><option value="hr" >
+                        </option>
+                        
+                        <option value="hr" >
                             Hrvatski
-                        </option><option value="hu" >
+                        </option>
+                        
+                        <option value="hu" >
                             Magyar
-                        </option><option value="id" >
+                        </option>
+                        
+                        <option value="id" >
                             Bahasa Indonesia
-                        </option><option value="is" >
+                        </option>
+                        
+                        <option value="is" >
                             Íslenska
-                        </option><option value="it" >
+                        </option>
+                        
+                        <option value="it" >
                             Italiano
-                        </option><option value="ja" >
+                        </option>
+                        
+                        <option value="ja" >
                             日本語
-                        </option><option value="km" >
+                        </option>
+                        
+                        <option value="km" >
                             ភាសាខ្មែរ
-                        </option><option value="kn" >
+                        </option>
+                        
+                        <option value="kn" >
                             ಕನ್ನಡ
-                        </option><option value="ko" >
+                        </option>
+                        
+                        <option value="ko" >
                             한국어
-                        </option><option value="lt" >
+                        </option>
+                        
+                        <option value="lt" >
                             Lietuvių
-                        </option><option value="lv" >
+                        </option>
+                        
+                        <option value="lv" >
                             Latviešu
-                        </option><option value="ms" >
+                        </option>
+                        
+                        <option value="ms" >
                             Bahasa Melayu
-                        </option><option value="my" >
+                        </option>
+                        
+                        <option value="my" >
                             မြန်မာ
-                        </option><option value="nb" >
+                        </option>
+                        
+                        <option value="nb" >
                             Norsk Bokmål
-                        </option><option value="nl" >
+                        </option>
+                        
+                        <option value="nl" >
                             Nederlands
-                        </option><option value="pl" >
+                        </option>
+                        
+                        <option value="pl" >
                             Polski
-                        </option><option value="pt" >
+                        </option>
+                        
+                        <option value="pt" >
                             Português
-                        </option><option value="pt-br" >
+                        </option>
+                        
+                        <option value="pt-br" >
                             Português (Brasil)
-                        </option><option value="ro" >
+                        </option>
+                        
+                        <option value="ro" >
                             Română
-                        </option><option value="ru" >
+                        </option>
+                        
+                        <option value="ru" >
                             Русский
-                        </option><option value="sk" >
+                        </option>
+                        
+                        <option value="sk" >
                             Slovenčina
-                        </option><option value="sl" >
+                        </option>
+                        
+                        <option value="sl" >
                             Slovenščina
-                        </option><option value="sr" >
+                        </option>
+                        
+                        <option value="sr" >
                             Српски
-                        </option><option value="sv" >
+                        </option>
+                        
+                        <option value="sv" >
                             Svenska
-                        </option><option value="sw" >
+                        </option>
+                        
+                        <option value="sw" >
                             Kiswahili
-                        </option><option value="ta" >
+                        </option>
+                        
+                        <option value="ta" >
                             தமிழ்
-                        </option><option value="te" >
+                        </option>
+                        
+                        <option value="te" >
                             తెలుగు
-                        </option><option value="th" >
+                        </option>
+                        
+                        <option value="th" >
                             ไทย
-                        </option><option value="tl" >
+                        </option>
+                        
+                        <option value="tl" >
                             Tagalog
-                        </option><option value="tr" >
+                        </option>
+                        
+                        <option value="tr" >
                             Türkçe
-                        </option><option value="uk" >
+                        </option>
+                        
+                        <option value="uk" >
                             Українська
-                        </option><option value="ur" >
+                        </option>
+                        
+                        <option value="ur" >
                             اردو
-                        </option><option value="vi" selected>
+                        </option>
+                        
+                        <option value="vi" selected>
                             Tiếng Việt
-                        </option><option value="yo" >
+                        </option>
+                        
+                        <option value="yo" >
                             Yorùbá
-                        </option><option value="zh" >
+                        </option>
+                        
+                        <option value="zh" >
                             中文
-                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
+                            </svg>
+                        </a>
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Chuyển đổi menu"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/getting-started/">Học hỏi</a></li><li><span aria-current="page">Tải đào tạo</span></li></ol></div></nav><main id="main-content" class="main-content">
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
+                                
+                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
+                                
+                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Chuyển đổi menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol>
+            
+            <li>
+                
+                <a href="/vi/">Trang chủ</a>
+                
+            </li>
+            
+            <li>
+                
+                <a href="/vi/getting-started/">Học hỏi</a>
+                
+            </li>
+            
+            <li>
+                
+                <span aria-current="page">Tải đào tạo</span>
+                
+            </li>
+            
+        </ol>
+    </div>
+</nav>
+
+
+  
+  <main id="main-content" class="main-content">
     
     Hướng dẫn tải đào tạo
-<section class="guide-hero"><div class="container"><div class="breadcrumb"><a href="/vi/">Trang chủ</a>/<a href="/vi/#learn">Tìm hiểu</a>/ Khối lượng đào tạo</div><h1>Quản lý tải trọng đào tạo đi bộ đường dài</h1><p class="lead">Phương pháp khoa học để cân bằng giữa kích thích tập luyện, thích ứng và phục hồi</p></div></section><section class="guide-content"><div class="container"><div class="content-grid"><div class="main-content">
+<section class="guide-hero">
+<div class="container">
+<div class="breadcrumb">
+<a href="/vi/">Trang chủ</a>/<a href="/vi/#learn">Tìm hiểu</a>/ Khối lượng đào tạo</div>
+<h1>Quản lý tải trọng đào tạo đi bộ đường dài</h1>
+<p class="lead">Phương pháp khoa học để cân bằng giữa kích thích tập luyện, thích ứng và phục hồi</p>
+</div>
+</section>
+<section class="guide-content">
+<div class="container">
+<div class="content-grid">
+<div class="main-content">
 Giới thiệu
-<h2 id="intro">Tải đào tạo là gì?</h2><p><strong>Khối lượng đào tạo</strong>định lượng căng thẳng sinh lý tích lũy mà cơ thể bạn trải qua khi tập luyện đi bộ đường dài. Nó tích hợp ba chiều chính:</p><ol><li><strong>Thời lượng:</strong>Bạn đi bộ bao lâu</li><li><strong>Cường độ:</strong>Mức độ khó bạn đi bộ (nhịp điệu, nhịp tim, tốc độ)</li><li><strong>Tần số:</strong>Bạn có thường xuyên đi bộ đường dài</li></ol><p>Quản lý tải tập luyện phù hợp giúp cải thiện nhất quán đồng thời giảm thiểu nguy cơ chấn thương và tập luyện quá sức. Không giống như việc đi bộ đường dài thông thường để di chuyển,<strong>đi bộ đường dài theo định hướng đào tạo</strong>đòi hỏi phải lập kế hoạch tiến triển và phục hồi một cách có hệ thống.</p><div class="key-finding"><strong>Nghiên cứu chuyên sâu:</strong>Mối quan hệ giữa tải tập luyện và khả năng thích ứng tuân theo đường cong chữ U ngược: tải quá ít sẽ không tạo ra sự thích ứng, cải thiện ổ tải tối ưu và tải quá mức dẫn đến tập luyện quá sức và chấn thương (Soligard và cộng sự, 2016).</div>
+<h2 id="intro">Tải đào tạo là gì?</h2>
+<p><strong>Khối lượng đào tạo</strong>định lượng căng thẳng sinh lý tích lũy mà cơ thể bạn trải qua khi tập luyện đi bộ đường dài. Nó tích hợp ba chiều chính:</p>
+<ol>
+<li><strong>Thời lượng:</strong>Bạn đi bộ bao lâu</li>
+<li><strong>Cường độ:</strong>Mức độ khó bạn đi bộ (nhịp điệu, nhịp tim, tốc độ)</li>
+<li><strong>Tần số:</strong>Bạn có thường xuyên đi bộ đường dài</li>
+</ol>
+<p>Quản lý tải tập luyện phù hợp giúp cải thiện nhất quán đồng thời giảm thiểu nguy cơ chấn thương và tập luyện quá sức. Không giống như việc đi bộ đường dài thông thường để di chuyển,<strong>đi bộ đường dài theo định hướng đào tạo</strong>đòi hỏi phải lập kế hoạch tiến triển và phục hồi một cách có hệ thống.</p>
+<div class="key-finding">
+<strong>Nghiên cứu chuyên sâu:</strong>Mối quan hệ giữa tải tập luyện và khả năng thích ứng tuân theo đường cong chữ U ngược: tải quá ít sẽ không tạo ra sự thích ứng, cải thiện ổ tải tối ưu và tải quá mức dẫn đến tập luyện quá sức và chấn thương (Soligard và cộng sự, 2016).</div>
 Nhịp độ đỉnh-30
-<h2 id="peak30">Nhịp độ đỉnh-30: Một thước đo đột phá</h2><p>Nghiên cứu gần đây đã xác định<strong>Nhịp đỉnh-30</strong>as a powerful predictor of health outcomes and mortality risk, independent of total daily steps.</p><h3>Nhịp độ Peak-30 là gì?</h3><p><strong>Nhịp đỉnh-30</strong>là nhịp độ trung bình (bước mỗi phút) trong<strong>của bạn hay nhất 30 phút liên tiếp</strong>đi bộ đường dài trong một ngày. Số liệu này thể hiện khả năng của bạn trong việc duy trì hoạt động đi bộ đường dài nhanh chóng và có mục đích.</p><div class="key-finding"><strong>Nghiên cứu đột phá:</strong>Del Pozo-Cruz và cộng sự. (2022) đã phân tích 78.500 người tham gia Biobank ở Vương quốc Anh và phát hiện ra rằng nhịp Peak-30 dự đoán độc lập tỷ lệ tử vong do mọi nguyên nhân và nguy cơ mắc bệnh tim mạch, ngay cả sau khi kiểm soát tổng số bước đi hàng ngày.</div><h3>Ngưỡng nhịp độ cao nhất-30 và kết quả sức khỏe</h3><div class="data-table"><table><thead><tr><th>Nhịp độ đỉnh-30</th><th>Phân loại</th><th>Nguy cơ tử vong</th><th>Tình trạng sức khỏe</th></tr></thead><tbody><tr><td>&lt;60 phút/phút</td><td>Rất thấp</td><td>Tham chiếu (cao nhất)</td><td>Kiểu ít vận động</td></tr><tr><td>60-79 phút/phút</td><td>Thấp</td><td>~15% rủi ro thấp hơn</td><td>Đi bộ đường dài thông thường</td></tr><tr><td>80-99 phút/phút</td><td>Vừa phải</td><td>~30% rủi ro thấp hơn</td><td>Đi bộ đường dài thường xuyên</td></tr><tr><td>100-109 phút/phút</td><td>Nhanh</td><td>~40% rủi ro thấp hơn</td><td>Định hướng thể dục</td></tr><tr><td>≥110 spm</td><td>Rất nhanh</td><td>~50% rủi ro thấp hơn</td><td>Thể lực cao</td></tr></tbody></table></div><p><strong>Thông tin chi tiết chính:</strong>Nhịp đỉnh-30 ≥100 spm tương ứng với<strong>hoạt động thể chất vừa phải đến mạnh mẽ</strong>(MVPA) và đại diện cho ngưỡng lợi ích sức khỏe đáng kể.</p><h3>Ý nghĩa đào tạo</h3><p>Nhịp độ Peak-30 cung cấp hướng dẫn luyện tập hữu ích:</p><ul><li><strong>Đặt mục tiêu:</strong>Nhịp mục tiêu Đỉnh-30 trên 100 spm ít nhất 5 ngày mỗi tuần</li><li><strong>Thiết kế bài tập:</strong>Đi bộ đường dài ít nhất 30 phút mỗi ngày</li><li><strong>Theo dõi tiến độ:</strong>Theo dõi mức tăng nhịp Peak-30 khi thể lực được cải thiện</li><li><strong>Đơn thuốc cường độ:</strong>Sử dụng vùng nhịp thay vì HR để đào tạo thực tế hơn</li></ul>
+<h2 id="peak30">Nhịp độ đỉnh-30: Một thước đo đột phá</h2>
+<p>Nghiên cứu gần đây đã xác định<strong>Nhịp đỉnh-30</strong>as a powerful predictor of health outcomes and mortality risk, independent of total daily steps.</p>
+<h3>Nhịp độ Peak-30 là gì?</h3>
+<p><strong>Nhịp đỉnh-30</strong>là nhịp độ trung bình (bước mỗi phút) trong<strong>của bạn hay nhất 30 phút liên tiếp</strong>đi bộ đường dài trong một ngày. Số liệu này thể hiện khả năng của bạn trong việc duy trì hoạt động đi bộ đường dài nhanh chóng và có mục đích.</p>
+<div class="key-finding">
+<strong>Nghiên cứu đột phá:</strong>Del Pozo-Cruz và cộng sự. (2022) đã phân tích 78.500 người tham gia Biobank ở Vương quốc Anh và phát hiện ra rằng nhịp Peak-30 dự đoán độc lập tỷ lệ tử vong do mọi nguyên nhân và nguy cơ mắc bệnh tim mạch, ngay cả sau khi kiểm soát tổng số bước đi hàng ngày.</div>
+<h3>Ngưỡng nhịp độ cao nhất-30 và kết quả sức khỏe</h3>
+<div class="data-table">
+<table>
+<thead>
+<tr>
+<th>Nhịp độ đỉnh-30</th>
+<th>Phân loại</th>
+<th>Nguy cơ tử vong</th>
+<th>Tình trạng sức khỏe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;60 phút/phút</td>
+<td>Rất thấp</td>
+<td>Tham chiếu (cao nhất)</td>
+<td>Kiểu ít vận động</td>
+</tr>
+<tr>
+<td>60-79 phút/phút</td>
+<td>Thấp</td>
+<td>~15% rủi ro thấp hơn</td>
+<td>Đi bộ đường dài thông thường</td>
+</tr>
+<tr>
+<td>80-99 phút/phút</td>
+<td>Vừa phải</td>
+<td>~30% rủi ro thấp hơn</td>
+<td>Đi bộ đường dài thường xuyên</td>
+</tr>
+<tr>
+<td>100-109 phút/phút</td>
+<td>Nhanh</td>
+<td>~40% rủi ro thấp hơn</td>
+<td>Định hướng thể dục</td>
+</tr>
+<tr>
+<td>≥110 spm</td>
+<td>Rất nhanh</td>
+<td>~50% rủi ro thấp hơn</td>
+<td>Thể lực cao</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Thông tin chi tiết chính:</strong>Nhịp đỉnh-30 ≥100 spm tương ứng với<strong>hoạt động thể chất vừa phải đến mạnh mẽ</strong>(MVPA) và đại diện cho ngưỡng lợi ích sức khỏe đáng kể.</p>
+<h3>Ý nghĩa đào tạo</h3>
+<p>Nhịp độ Peak-30 cung cấp hướng dẫn luyện tập hữu ích:</p>
+<ul>
+<li><strong>Đặt mục tiêu:</strong>Nhịp mục tiêu Đỉnh-30 trên 100 spm ít nhất 5 ngày mỗi tuần</li>
+<li><strong>Thiết kế bài tập:</strong>Đi bộ đường dài ít nhất 30 phút mỗi ngày</li>
+<li><strong>Theo dõi tiến độ:</strong>Theo dõi mức tăng nhịp Peak-30 khi thể lực được cải thiện</li>
+<li><strong>Đơn thuốc cường độ:</strong>Sử dụng vùng nhịp thay vì HR để đào tạo thực tế hơn</li>
+</ul>
 Những trận đấu nhanh
-<h2 id="brisk-bouts">Những trận đấu nhanh: Chất lượng hơn số lượng</h2><p>Một<strong>cơn sốt nhanh</strong>là khoảng thời gian đi bộ đường dài liên tục với tốc độ ≥100 bước/phút (ngưỡng cường độ vừa phải) kéo dài ít nhất 10 phút mà không giảm xuống dưới ngưỡng nhịp trong hơn 1-2 phút.</p><h3>Cơ sở khoa học</h3><p>Hướng dẫn Hoạt động Thể chất năm 2018 của Hoa Kỳ đã loại bỏ yêu cầu trước đây rằng hoạt động thể dục nhịp điệu phải diễn ra theo từng đợt ít nhất 10 phút. Tuy nhiên, nghiên cứu cho thấy<strong>những cơn tăng tốc kéo dài</strong>mang lại những lợi ích độc đáo:</p><ul><li><strong>Thích ứng tim mạch:</strong>Nhân lực tăng cao được duy trì thúc đẩy cải thiện khả năng hiếu khí</li><li><strong>Hiệu quả trao đổi chất:</strong>Hơn 10 phút cho phép các quá trình trao đổi chất tham gia đầy đủ</li><li><strong>Phát triển kỹ năng:</strong>Nhịp độ cao hơn được duy trì sẽ cải thiện cơ chế đi bộ đường dài</li><li><strong>Lợi ích tâm lý:</strong>Tư duy "tập luyện" có chủ đích và chuyển động ngẫu nhiên</li></ul><h3>Mục tiêu trận đấu nhanh hàng tuần</h3><div class="data-table"><table><thead><tr><th>Mức độ thể lực</th><th>Phút Nhanh Hàng Tuần</th><th>Số Trận</th><th>Lịch trình mẫu</th></tr></thead><tbody><tr><td><strong>Người mới bắt đầu</strong></td><td>75-100 phút</td><td>3-4 hiệp 20-30 phút</td><td>Thứ Hai/Thứ Tư/Thứ Sáu: 25 phút mỗi ngày</td></tr><tr><td><strong>Trung cấp</strong></td><td>150-200 phút</td><td>5-6 hiệp 25-40 phút</td><td>30 phút hàng ngày + 1 chuyến đi bộ đường dài cuối tuần</td></tr><tr><td><strong>Nâng cao</strong></td><td>200-300+ phút</td><td>5-7 hiệp 30-60 phút</td><td>40 phút hàng ngày + quãng đường + đi bộ đường dài</td></tr></tbody></table></div><p><strong>Đáp ứng Nguyên tắc Y tế Công cộng:</strong>150 phút/tuần hoạt động với cường độ vừa phải (nhịp độ trên 100 spm) đáp ứng các khuyến nghị của WHO và CDC về lợi ích sức khỏe.</p><h3>Số liệu chất lượng của trận đấu nhanh</h3><p>Không phải tất cả các cơn nhanh đều như nhau. Chất lượng có thể được đánh giá bởi:</p><ol><li><strong>Độ ổn định nhịp:</strong>Biến động tối thiểu xung quanh nhịp mục tiêu (±5 spm)</li><li><strong>Thời lượng:</strong>Các hiệp kéo dài hơn (30-45 phút) &gt; nhiều hiệp ngắn</li><li><strong>Cường độ:</strong>Nhịp độ trung bình cao hơn trong hiệp đấu (110 spm &gt; 100 spm)</li><li><strong>Tính nhất quán:</strong>Tần suất các ngày tập nhanh trong tuần (5-7 ngày &gt; 3 ngày)</li></ol>
+<h2 id="brisk-bouts">Những trận đấu nhanh: Chất lượng hơn số lượng</h2>
+<p>Một<strong>cơn sốt nhanh</strong>là khoảng thời gian đi bộ đường dài liên tục với tốc độ ≥100 bước/phút (ngưỡng cường độ vừa phải) kéo dài ít nhất 10 phút mà không giảm xuống dưới ngưỡng nhịp trong hơn 1-2 phút.</p>
+<h3>Cơ sở khoa học</h3>
+<p>Hướng dẫn Hoạt động Thể chất năm 2018 của Hoa Kỳ đã loại bỏ yêu cầu trước đây rằng hoạt động thể dục nhịp điệu phải diễn ra theo từng đợt ít nhất 10 phút. Tuy nhiên, nghiên cứu cho thấy<strong>những cơn tăng tốc kéo dài</strong>mang lại những lợi ích độc đáo:</p>
+<ul>
+<li><strong>Thích ứng tim mạch:</strong>Nhân lực tăng cao được duy trì thúc đẩy cải thiện khả năng hiếu khí</li>
+<li><strong>Hiệu quả trao đổi chất:</strong>Hơn 10 phút cho phép các quá trình trao đổi chất tham gia đầy đủ</li>
+<li><strong>Phát triển kỹ năng:</strong>Nhịp độ cao hơn được duy trì sẽ cải thiện cơ chế đi bộ đường dài</li>
+<li><strong>Lợi ích tâm lý:</strong>Tư duy "tập luyện" có chủ đích và chuyển động ngẫu nhiên</li>
+</ul>
+<h3>Mục tiêu trận đấu nhanh hàng tuần</h3>
+<div class="data-table">
+<table>
+<thead>
+<tr>
+<th>Mức độ thể lực</th>
+<th>Phút Nhanh Hàng Tuần</th>
+<th>Số Trận</th>
+<th>Lịch trình mẫu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Người mới bắt đầu</strong></td>
+<td>75-100 phút</td>
+<td>3-4 hiệp 20-30 phút</td>
+<td>Thứ Hai/Thứ Tư/Thứ Sáu: 25 phút mỗi ngày</td>
+</tr>
+<tr>
+<td><strong>Trung cấp</strong></td>
+<td>150-200 phút</td>
+<td>5-6 hiệp 25-40 phút</td>
+<td>30 phút hàng ngày + 1 chuyến đi bộ đường dài cuối tuần</td>
+</tr>
+<tr>
+<td><strong>Nâng cao</strong></td>
+<td>200-300+ phút</td>
+<td>5-7 hiệp 30-60 phút</td>
+<td>40 phút hàng ngày + quãng đường + đi bộ đường dài</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Đáp ứng Nguyên tắc Y tế Công cộng:</strong>150 phút/tuần hoạt động với cường độ vừa phải (nhịp độ trên 100 spm) đáp ứng các khuyến nghị của WHO và CDC về lợi ích sức khỏe.</p>
+<h3>Số liệu chất lượng của trận đấu nhanh</h3>
+<p>Không phải tất cả các cơn nhanh đều như nhau. Chất lượng có thể được đánh giá bởi:</p>
+<ol>
+<li><strong>Độ ổn định nhịp:</strong>Biến động tối thiểu xung quanh nhịp mục tiêu (±5 spm)</li>
+<li><strong>Thời lượng:</strong>Các hiệp kéo dài hơn (30-45 phút) &gt; nhiều hiệp ngắn</li>
+<li><strong>Cường độ:</strong>Nhịp độ trung bình cao hơn trong hiệp đấu (110 spm &gt; 100 spm)</li>
+<li><strong>Tính nhất quán:</strong>Tần suất các ngày tập nhanh trong tuần (5-7 ngày &gt; 3 ngày)</li>
+</ol>
 Điểm căng thẳng khi đi bộ đường dài
-<h2 id="wss">Điểm căng thẳng khi đi bộ đường dài (WSS)</h2><p><strong>Điểm căng thẳng khi đi bộ đường dài (WSS)</strong>là thước đo độc quyền dùng để định lượng khối lượng tập luyện của từng bài tập. Nó điều chỉnh các khái niệm từ Điểm căng thẳng khi luyện tập (TSS) được sử dụng trong đạp xe và chạy.</p><h3>Các phương pháp tính toán WSS</h3><p>WSS có thể được tính bằng cách sử dụng<strong>nhịp tim</strong>hoặc<strong>nhịp</strong>như thước đo cường độ:</p><h4>Phương pháp 1: WSS dựa trên nhịp tim</h4><p>Trọng số thời gian theo vùng nhịp tim:</p><div class="formula-box"><pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
+<h2 id="wss">Điểm căng thẳng khi đi bộ đường dài (WSS)</h2>
+<p><strong>Điểm căng thẳng khi đi bộ đường dài (WSS)</strong>là thước đo độc quyền dùng để định lượng khối lượng tập luyện của từng bài tập. Nó điều chỉnh các khái niệm từ Điểm căng thẳng khi luyện tập (TSS) được sử dụng trong đạp xe và chạy.</p>
+<h3>Các phương pháp tính toán WSS</h3>
+<p>WSS có thể được tính bằng cách sử dụng<strong>nhịp tim</strong>hoặc<strong>nhịp</strong>như thước đo cường độ:</p>
+<h4>Phương pháp 1: WSS dựa trên nhịp tim</h4>
+<p>Trọng số thời gian theo vùng nhịp tim:</p>
+<div class="formula-box">
+<pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
 
 Zone Multipliers:
   Zone 1 (50-60% HRmax): 1.0
   Zone 2 (60-70% HRmax): 2.0
   Zone 3 (70-80% HRmax): 3.0
   Zone 4 (80-90% HRmax): 4.0
-  Zone 5 (90-100% HRmax): 5.0</pre></div><p><strong>Ví dụ:</strong>Đi bộ 60 phút với:</p><ul><li>10 phút khởi động ở Vùng 1 = 10 × 1.0 = 10</li><li>40 phút ổn định ở Vùng 2 = 40 × 2,0 = 80</li><li>Thời gian hồi chiêu 10 phút ở Vùng 1 = 10 × 1,0 = 10</li><li><strong>Tổng WSS = 100</strong></li></ul><h4>Phương pháp 2: WSS dựa trên nhịp</h4><p>Trọng số thời gian theo cường độ nhịp:</p><div class="formula-box"><pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
+  Zone 5 (90-100% HRmax): 5.0</pre>
+</div>
+<p><strong>Ví dụ:</strong>Đi bộ 60 phút với:</p>
+<ul>
+<li>10 phút khởi động ở Vùng 1 = 10 × 1.0 = 10</li>
+<li>40 phút ổn định ở Vùng 2 = 40 × 2,0 = 80</li>
+<li>Thời gian hồi chiêu 10 phút ở Vùng 1 = 10 × 1,0 = 10</li>
+<li><strong>Tổng WSS = 100</strong></li>
+</ul>
+<h4>Phương pháp 2: WSS dựa trên nhịp</h4>
+<p>Trọng số thời gian theo cường độ nhịp:</p>
+<div class="formula-box">
+<pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
 
 Cadence Multipliers:
   60-99 spm (light): 1.0
   100-109 spm (moderate): 2.5
   110-119 spm (mod-vigorous): 3.5
   120-129 spm (vigorous): 4.5
-  ≥130 spm (very vigorous): 6.0</pre></div><p><strong>Ưu điểm:</strong>WSS dựa trên nhịp độ không yêu cầu giám sát nhân sự và thiết thực hơn đối với hầu hết người đi bộ đường dài.</p><h3>Giá trị WSS điển hình theo loại bài tập</h3><div class="data-table"><table><thead><tr><th>Loại bài tập</th><th>Thời lượng</th><th>Cường độ trung bình</th><th>WSS điển hình</th></tr></thead><tbody><tr><td>Tăng tốc phục hồi</td><td>20-30 phút</td><td>Vùng 1, &lt;100 spm</td><td>20-30</td></tr><tr><td>Đi bộ aerobic dễ dàng</td><td>30-45 phút</td><td>Vùng 2, 100-105 spm</td><td>60-90</td></tr><tr><td>Đi bộ nhanh và ổn định</td><td>45-60 phút</td><td>Vùng 2, 105-110 spm</td><td>90-150</td></tr><tr><td>Tăng nhịp độ</td><td>30-40 phút</td><td>Vùng 3, 110-120 spm</td><td>90-140</td></tr><tr><td>Tập luyện xen kẽ</td><td>40-50 phút</td><td>Vùng hỗn hợp, đỉnh 120+ spm</td><td>120-200</td></tr><tr><td>Đi bộ đường dài</td><td>90-120 phút</td><td>Vùng 2, 100-110 spm</td><td>180-300</td></tr><tr><td>Huấn luyện đi bộ đường dài</td><td>60-90 phút</td><td>Vùng 3-4, 120-140 spm</td><td>200-400</td></tr></tbody></table></div>
+  ≥130 spm (very vigorous): 6.0</pre>
+</div>
+<p><strong>Ưu điểm:</strong>WSS dựa trên nhịp độ không yêu cầu giám sát nhân sự và thiết thực hơn đối với hầu hết người đi bộ đường dài.</p>
+<h3>Giá trị WSS điển hình theo loại bài tập</h3>
+<div class="data-table">
+<table>
+<thead>
+<tr>
+<th>Loại bài tập</th>
+<th>Thời lượng</th>
+<th>Cường độ trung bình</th>
+<th>WSS điển hình</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tăng tốc phục hồi</td>
+<td>20-30 phút</td>
+<td>Vùng 1, &lt;100 spm</td>
+<td>20-30</td>
+</tr>
+<tr>
+<td>Đi bộ aerobic dễ dàng</td>
+<td>30-45 phút</td>
+<td>Vùng 2, 100-105 spm</td>
+<td>60-90</td>
+</tr>
+<tr>
+<td>Đi bộ nhanh và ổn định</td>
+<td>45-60 phút</td>
+<td>Vùng 2, 105-110 spm</td>
+<td>90-150</td>
+</tr>
+<tr>
+<td>Tăng nhịp độ</td>
+<td>30-40 phút</td>
+<td>Vùng 3, 110-120 spm</td>
+<td>90-140</td>
+</tr>
+<tr>
+<td>Tập luyện xen kẽ</td>
+<td>40-50 phút</td>
+<td>Vùng hỗn hợp, đỉnh 120+ spm</td>
+<td>120-200</td>
+</tr>
+<tr>
+<td>Đi bộ đường dài</td>
+<td>90-120 phút</td>
+<td>Vùng 2, 100-110 spm</td>
+<td>180-300</td>
+</tr>
+<tr>
+<td>Huấn luyện đi bộ đường dài</td>
+<td>60-90 phút</td>
+<td>Vùng 3-4, 120-140 spm</td>
+<td>200-400</td>
+</tr>
+</tbody>
+</table>
+</div>
 Tải đào tạo hàng tuần
-<h2 id="weekly-load">Nguyên tắc tải đào tạo hàng tuần</h2><p>Khối lượng tập luyện hàng tuần nên được cá nhân hóa dựa trên mức độ thể lực, mục tiêu và thời gian sẵn có. Nguyên tắc được cung cấp trong cả<strong>WSS</strong>và<strong>phút nhanh chóng</strong>cho sự linh hoạt.</p><h3>Người mới bắt đầu (kinh nghiệm đào tạo 0-6 tháng)</h3><ul><li><strong>WSS hàng tuần:</strong>150-300</li><li><strong>Phút nhanh ( ≥100 spm):</strong>75-120 phút/tuần</li><li><strong>Total hiking time:</strong>120-200 phút/tuần</li><li><strong>Mục tiêu đỉnh 30:</strong>90-100 phút/phút</li><li><strong>Số buổi mỗi tuần:</strong>4-5</li><li><strong>Tiêu điểm:</strong>Tính nhất quán, hình thành thói quen, phát triển kỹ thuật</li><li><strong>Tiến trình:</strong>Tăng 5-10% mỗi tuần</li></ul><p><strong>Tuần mẫu (Tổng WSS: 250):</strong></p><ul><li>Thứ Hai: 30 phút đi bộ dễ dàng, 100 phút/phút (WSS 50)</li><li>Thứ 3: Nghỉ ngơi hoặc đi dạo nhẹ nhàng 20 phút</li><li>Thứ Tư: 35 phút đi bộ nhanh, 105 phút/phút (WSS 70)</li><li>Thứ năm: 25 phút đi bộ dễ dàng, 95 phút/phút (WSS 40)</li><li>Thứ sáu: Nghỉ ngơi</li><li>Thứ bảy: Đi bộ đều đặn 45 phút, 102 spm (WSS 90)</li><li>CN: Dễ dàng 20-30 phút</li></ul><h3>Trung cấp (kinh nghiệm đào tạo 6-18 tháng)</h3><ul><li><strong>WSS hàng tuần:</strong>300-550</li><li><strong>Phút nhanh ( ≥100 spm):</strong>150-250 phút/tuần</li><li><strong>Tổng thời gian đi bộ đường dài:</strong>250-400 phút/tuần</li><li><strong>Mục tiêu đỉnh 30:</strong>105-115 phút/phút</li><li><strong>Số buổi mỗi tuần:</strong>5-6</li><li><strong>Tiêu điểm:</strong>Xây dựng năng lực hiếu khí, sức bền tốc độ, giới thiệu quãng đường</li><li><strong>Tiến trình:</strong>Tăng 10% mỗi tuần, với các tuần phục hồi</li></ul><p><strong>Tuần mẫu (Tổng WSS: 420):</strong></p><ul><li>Thứ Hai: 40 phút đi bộ đều đặn, 108 spm (WSS 100)</li><li>Thứ ba: Phục hồi dễ dàng trong 30 phút, 95 spm (WSS 45)</li><li>Thứ Tư: khoảng thời gian 45 phút (5×4 phút @ 120 spm / 3 phút dễ dàng) (WSS 130)</li><li>Thứ năm: 35 phút đi bộ dễ dàng, 100 spm (WSS 60)</li><li>Thứ sáu: Nghỉ ngơi hoặc đi bộ nhẹ nhàng 20 phút</li><li>Thứ bảy: Đi bộ dài 75 phút, 105 phút/phút (WSS 150)</li><li>Mặt trời: 30 phút phục hồi dễ dàng (WSS 40)</li></ul><h3>Nâng cao (kinh nghiệm đào tạo trên 18 tháng)</h3><ul><li><strong>WSS hàng tuần:</strong>500-900+</li><li><strong>Phút nhanh ( ≥100 spm):</strong>250-400+ phút/tuần</li><li><strong>Tổng thời gian đi bộ đường dài:</strong>400-700+ phút/tuần</li><li><strong>Mục tiêu đỉnh 30:</strong>115-130+ spm</li><li><strong>Số buổi mỗi tuần:</strong>6-7</li><li><strong>Tiêu điểm:</strong>Thành tích, thi đấu, kỹ thuật đua leo núi</li><li><strong>Tiến trình:</strong>Định kỳ với các giai đoạn đào tạo riêng biệt</li></ul><p><strong>Tuần mẫu (Tổng WSS: 720):</strong></p><ul><li>Thứ Hai: Đi bộ đều đặn 50 phút, 110 spm (WSS 120)</li><li>Thứ Ba: 40 phút đi bộ dễ dàng, 100 phút/phút (WSS 70)</li><li>Thứ Tư: nhịp độ 60 phút (40 phút @ 115-120 spm) (WSS 180)</li><li>Thứ năm: Tăng tốc phục hồi 35 phút, 95 spm (WSS 50)</li><li>Thứ Sáu: khoảng thời gian 50 phút (10×2 phút @ 130+ spm / 2 phút dễ dàng) (WSS 180)</li><li>Thứ bảy: Đi bộ dài 90 phút, 108 spm (WSS 200)</li><li>Chủ nhật: Đi bộ dễ dàng 40 phút (WSS 60)</li></ul>
+<h2 id="weekly-load">Nguyên tắc tải đào tạo hàng tuần</h2>
+<p>Khối lượng tập luyện hàng tuần nên được cá nhân hóa dựa trên mức độ thể lực, mục tiêu và thời gian sẵn có. Nguyên tắc được cung cấp trong cả<strong>WSS</strong>và<strong>phút nhanh chóng</strong>cho sự linh hoạt.</p>
+<h3>Người mới bắt đầu (kinh nghiệm đào tạo 0-6 tháng)</h3>
+<ul>
+<li><strong>WSS hàng tuần:</strong>150-300</li>
+<li><strong>Phút nhanh ( ≥100 spm):</strong>75-120 phút/tuần</li>
+<li><strong>Total hiking time:</strong>120-200 phút/tuần</li>
+<li><strong>Mục tiêu đỉnh 30:</strong>90-100 phút/phút</li>
+<li><strong>Số buổi mỗi tuần:</strong>4-5</li>
+<li><strong>Tiêu điểm:</strong>Tính nhất quán, hình thành thói quen, phát triển kỹ thuật</li>
+<li><strong>Tiến trình:</strong>Tăng 5-10% mỗi tuần</li>
+</ul>
+<p><strong>Tuần mẫu (Tổng WSS: 250):</strong></p>
+<ul>
+<li>Thứ Hai: 30 phút đi bộ dễ dàng, 100 phút/phút (WSS 50)</li>
+<li>Thứ 3: Nghỉ ngơi hoặc đi dạo nhẹ nhàng 20 phút</li>
+<li>Thứ Tư: 35 phút đi bộ nhanh, 105 phút/phút (WSS 70)</li>
+<li>Thứ năm: 25 phút đi bộ dễ dàng, 95 phút/phút (WSS 40)</li>
+<li>Thứ sáu: Nghỉ ngơi</li>
+<li>Thứ bảy: Đi bộ đều đặn 45 phút, 102 spm (WSS 90)</li>
+<li>CN: Dễ dàng 20-30 phút</li>
+</ul>
+<h3>Trung cấp (kinh nghiệm đào tạo 6-18 tháng)</h3>
+<ul>
+<li><strong>WSS hàng tuần:</strong>300-550</li>
+<li><strong>Phút nhanh ( ≥100 spm):</strong>150-250 phút/tuần</li>
+<li><strong>Tổng thời gian đi bộ đường dài:</strong>250-400 phút/tuần</li>
+<li><strong>Mục tiêu đỉnh 30:</strong>105-115 phút/phút</li>
+<li><strong>Số buổi mỗi tuần:</strong>5-6</li>
+<li><strong>Tiêu điểm:</strong>Xây dựng năng lực hiếu khí, sức bền tốc độ, giới thiệu quãng đường</li>
+<li><strong>Tiến trình:</strong>Tăng 10% mỗi tuần, với các tuần phục hồi</li>
+</ul>
+<p><strong>Tuần mẫu (Tổng WSS: 420):</strong></p>
+<ul>
+<li>Thứ Hai: 40 phút đi bộ đều đặn, 108 spm (WSS 100)</li>
+<li>Thứ ba: Phục hồi dễ dàng trong 30 phút, 95 spm (WSS 45)</li>
+<li>Thứ Tư: khoảng thời gian 45 phút (5×4 phút @ 120 spm / 3 phút dễ dàng) (WSS 130)</li>
+<li>Thứ năm: 35 phút đi bộ dễ dàng, 100 spm (WSS 60)</li>
+<li>Thứ sáu: Nghỉ ngơi hoặc đi bộ nhẹ nhàng 20 phút</li>
+<li>Thứ bảy: Đi bộ dài 75 phút, 105 phút/phút (WSS 150)</li>
+<li>Mặt trời: 30 phút phục hồi dễ dàng (WSS 40)</li>
+</ul>
+<h3>Nâng cao (kinh nghiệm đào tạo trên 18 tháng)</h3>
+<ul>
+<li><strong>WSS hàng tuần:</strong>500-900+</li>
+<li><strong>Phút nhanh ( ≥100 spm):</strong>250-400+ phút/tuần</li>
+<li><strong>Tổng thời gian đi bộ đường dài:</strong>400-700+ phút/tuần</li>
+<li><strong>Mục tiêu đỉnh 30:</strong>115-130+ spm</li>
+<li><strong>Số buổi mỗi tuần:</strong>6-7</li>
+<li><strong>Tiêu điểm:</strong>Thành tích, thi đấu, kỹ thuật đua leo núi</li>
+<li><strong>Tiến trình:</strong>Định kỳ với các giai đoạn đào tạo riêng biệt</li>
+</ul>
+<p><strong>Tuần mẫu (Tổng WSS: 720):</strong></p>
+<ul>
+<li>Thứ Hai: Đi bộ đều đặn 50 phút, 110 spm (WSS 120)</li>
+<li>Thứ Ba: 40 phút đi bộ dễ dàng, 100 phút/phút (WSS 70)</li>
+<li>Thứ Tư: nhịp độ 60 phút (40 phút @ 115-120 spm) (WSS 180)</li>
+<li>Thứ năm: Tăng tốc phục hồi 35 phút, 95 spm (WSS 50)</li>
+<li>Thứ Sáu: khoảng thời gian 50 phút (10×2 phút @ 130+ spm / 2 phút dễ dàng) (WSS 180)</li>
+<li>Thứ bảy: Đi bộ dài 90 phút, 108 spm (WSS 200)</li>
+<li>Chủ nhật: Đi bộ dễ dàng 40 phút (WSS 60)</li>
+</ul>
 Tải trọng cấp tính và mãn tính
-<h2 id="acwr">Cấp tính:Tỷ lệ khối lượng công việc mãn tính (ACWR)</h2><p><strong>Cấp tính:Tỷ lệ khối lượng công việc mãn tính</strong>là một công cụ mạnh mẽ để quản lý rủi ro chấn thương bằng cách so sánh cường độ tập luyện gần đây (cấp tính) với cường độ tập luyện dài hạn (mãn tính).</p><h3>Tính toán</h3><div class="formula-box"><pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
+<h2 id="acwr">Cấp tính:Tỷ lệ khối lượng công việc mãn tính (ACWR)</h2>
+<p><strong>Cấp tính:Tỷ lệ khối lượng công việc mãn tính</strong>là một công cụ mạnh mẽ để quản lý rủi ro chấn thương bằng cách so sánh cường độ tập luyện gần đây (cấp tính) với cường độ tập luyện dài hạn (mãn tính).</p>
+<h3>Tính toán</h3>
+<div class="formula-box">
+<pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
 
 Example:
   Last 7 days WSS: 450
   Average of previous 28 days: 380
-  ACWR = 450 / 380 = 1.18</pre></div><h3>Phiên dịch ACWR</h3><div class="data-table"><table><thead><tr><th>Phạm vi ACWR</th><th>Nguy cơ chấn thương</th><th>Tình trạng đào tạo</th><th>Hành động</th></tr></thead><tbody><tr><td>&lt;0,80</td><td>Thấp-Trung bình</td><td>Có thể đào tạo</td><td>Cân nhắc tăng tải nếu khỏe mạnh</td></tr><tr><td>0,80-1,00</td><td>Thấp</td><td>Đào tạo ổn định</td><td>Duy trì tải hiện tại</td></tr><tr><td>1.00-1.30</td><td>Thấp</td><td>Tiến triển tối ưu</td><td>Điểm ngọt ngào để thích ứng</td></tr><tr><td>1.30-1.50</td><td>Vừa phải</td><td>Tăng nhanh</td><td>Theo dõi dấu hiệu mệt mỏi</td></tr><tr><td>&gt;1,50</td><td>Cao</td><td>Đột biến nguy hiểm</td><td>Giảm tải, ưu tiên phục hồi</td></tr></tbody></table></div><div class="key-finding"><strong>Kết quả nghiên cứu:</strong>Các vận động viên có ACWR &gt;1,50 có nguy cơ chấn thương cao gấp 2-4 lần so với những vận động viên có ACWR trong khoảng 0,80-1,30 (Gabbett, 2016). Nguyên tắc này áp dụng cho mọi môn thể thao, bao gồm cả việc tập luyện đi bộ đường dài.</div><h3>Ứng dụng thực tế</h3><p><strong>Kịch bản 1: Trở về sau cơn bệnh</strong></p><ul><li>Tuần trước khi bị bệnh: 400 WSS</li><li>Lỡ 10 ngày (trung bình 28 ngày giảm xuống còn 285)</li><li>Đừng nhảy ngược về 400 (ACWR = 1,40)</li><li>Thay vào đó: Tiếp tục ở mức 250-300 WSS (ACWR = 0,88-1,05)</li></ul><p><strong>Kịch bản 2: Sự tiến triển đầy tham vọng</strong></p><ul><li>Trung bình 4 tuần hiện tại: 350 WSS/tuần</li><li>Lập kế hoạch tuần tới: Muốn làm 500 WSS</li><li>ACWR sẽ là 1,43 (rủi ro trung bình-cao)</li><li>Cách tiếp cận tốt hơn: 420-450 WSS (ACWR 1.20-1.29)</li></ul>
+  ACWR = 450 / 380 = 1.18</pre>
+</div>
+<h3>Phiên dịch ACWR</h3>
+<div class="data-table">
+<table>
+<thead>
+<tr>
+<th>Phạm vi ACWR</th>
+<th>Nguy cơ chấn thương</th>
+<th>Tình trạng đào tạo</th>
+<th>Hành động</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;0,80</td>
+<td>Thấp-Trung bình</td>
+<td>Có thể đào tạo</td>
+<td>Cân nhắc tăng tải nếu khỏe mạnh</td>
+</tr>
+<tr>
+<td>0,80-1,00</td>
+<td>Thấp</td>
+<td>Đào tạo ổn định</td>
+<td>Duy trì tải hiện tại</td>
+</tr>
+<tr>
+<td>1.00-1.30</td>
+<td>Thấp</td>
+<td>Tiến triển tối ưu</td>
+<td>Điểm ngọt ngào để thích ứng</td>
+</tr>
+<tr>
+<td>1.30-1.50</td>
+<td>Vừa phải</td>
+<td>Tăng nhanh</td>
+<td>Theo dõi dấu hiệu mệt mỏi</td>
+</tr>
+<tr>
+<td>&gt;1,50</td>
+<td>Cao</td>
+<td>Đột biến nguy hiểm</td>
+<td>Giảm tải, ưu tiên phục hồi</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="key-finding">
+<strong>Kết quả nghiên cứu:</strong>Các vận động viên có ACWR &gt;1,50 có nguy cơ chấn thương cao gấp 2-4 lần so với những vận động viên có ACWR trong khoảng 0,80-1,30 (Gabbett, 2016). Nguyên tắc này áp dụng cho mọi môn thể thao, bao gồm cả việc tập luyện đi bộ đường dài.</div>
+<h3>Ứng dụng thực tế</h3>
+<p><strong>Kịch bản 1: Trở về sau cơn bệnh</strong></p>
+<ul>
+<li>Tuần trước khi bị bệnh: 400 WSS</li>
+<li>Lỡ 10 ngày (trung bình 28 ngày giảm xuống còn 285)</li>
+<li>Đừng nhảy ngược về 400 (ACWR = 1,40)</li>
+<li>Thay vào đó: Tiếp tục ở mức 250-300 WSS (ACWR = 0,88-1,05)</li>
+</ul>
+<p><strong>Kịch bản 2: Sự tiến triển đầy tham vọng</strong></p>
+<ul>
+<li>Trung bình 4 tuần hiện tại: 350 WSS/tuần</li>
+<li>Lập kế hoạch tuần tới: Muốn làm 500 WSS</li>
+<li>ACWR sẽ là 1,43 (rủi ro trung bình-cao)</li>
+<li>Cách tiếp cận tốt hơn: 420-450 WSS (ACWR 1.20-1.29)</li>
+</ul>
 Tiến trình tải đào tạo
-<h2 id="progression">Chiến lược tăng dần tải đào tạo</h2><h3>Quy tắc 10% (có sắc thái)</h3><p>Truyền thống<strong>Quy tắc 10%</strong>đề nghị tăng khối lượng đào tạo hàng tuần không quá 10% mỗi tuần. Mặc dù hữu ích như một hướng dẫn nhưng nghiên cứu hiện đại lại đề xuất những cách tiếp cận mang nhiều sắc thái hơn:</p><ul><li><strong>Dành cho người mới bắt đầu:</strong>Tăng 5-10% hàng tuần là phù hợp</li><li><strong>Dành cho người đi bộ đường dài có kinh nghiệm:</strong>Có thể chấp nhận mức tăng 10-15% nếu ACWR duy trì &lt;1,30</li><li><strong>Sau giờ nghỉ:</strong>Tiến triển chậm hơn (5%) sẽ an toàn hơn</li><li><strong>Khi tải cao:</strong>Duy trì hoặc giảm bớt thay vì tiếp tục tăng</li></ul><h3>Định kỳ: Mô hình 3:1</h3><p>Mô hình tiến triển dựa trên bằng chứng nhất thay thế<strong>3 tuần tăng tải</strong>với<strong>1 tuần phục hồi</strong>:</p><p><strong>Ví dụ khối 8 tuần (bắt đầu từ 300 WSS):</strong></p><div class="data-table"><table><thead><tr><th>Tuần</th><th>WSS hàng tuần</th><th>Thay đổi</th><th>Giai đoạn</th></tr></thead><tbody><tr><td>1</td><td>300</td><td>Đường cơ sở</td><td>Xây dựng</td></tr><tr><td>2</td><td>330</td><td>+10%</td><td>Xây dựng</td></tr><tr><td>3</td><td>365</td><td>+11%</td><td>Xây dựng</td></tr><tr><td>4</td><td>220</td><td>-40%</td><td><strong>Phục hồi</strong></td></tr><tr><td>5</td><td>400</td><td>+10%</td><td>Xây dựng</td></tr><tr><td>6</td><td>440</td><td>+10%</td><td>Xây dựng</td></tr><tr><td>7</td><td>485</td><td>+10%</td><td>Xây dựng</td></tr><tr><td>8</td><td>290</td><td>-40%</td><td><strong>Phục hồi</strong></td></tr></tbody></table></div><p><strong>Lợi ích của tuần phục hồi:</strong></p><ul><li>Cho phép thích ứng sinh lý (siêu bù)</li><li>Bổ sung lượng glycogen dự trữ</li><li>Sửa chữa các tổn thương vi mô ở mô</li><li>Giảm mệt mỏi tích lũy</li><li>Refreshes motivation and mental energy</li><li>Chuẩn bị cơ thể cho buổi tập tiếp theo</li></ul><h3>Định kỳ khối</h3><p>Đối với việc đào tạo người đi bộ đường dài nâng cao để biểu diễn hoặc tham gia sự kiện, hãy tổ chức đào tạo thành các<strong>riêng biệt xe máy</strong>(khối 4-8 tuần):</p><p><strong>Ví dụ về định kỳ hàng năm:</strong></p><ol><li><strong>Giai đoạn cơ bản (8-12 tuần):</strong><ul><li>Trọng tâm: Xây dựng cơ sở hiếu khí với khối lượng Vùng 2</li><li>WSS hàng tuần: 400-550</li><li>80% thời gian ở tốc độ 100-110 spm</li><li>Đi bộ đường dài tăng từ 60 lên 120 phút</li></ul></li><li><strong>Giai đoạn xây dựng (6-8 tuần):</strong><ul><li>Trọng tâm: Thêm công việc nhịp độ Vùng 3 và các khoảng thời gian ngắn</li><li>WSS hàng tuần: 500-650</li><li>70% Vùng 2, 20% Vùng 3, 10% Vùng 4</li><li>2 buổi chất lượng mỗi tuần</li></ul></li><li><strong>Giai đoạn cao điểm (4-6 tuần):</strong><ul><li>Trọng tâm: Công việc cường độ cao, dành riêng cho chủng tộc</li><li>WSS hàng tuần: 550-750</li><li>Bao gồm các khoảng thời gian và mô phỏng tốc độ cuộc đua</li><li>Duy trì khối lượng dễ dàng</li></ul></li><li><strong>Giảm dần (1-2 tuần):</strong><ul><li>Trọng tâm: Giảm âm lượng, duy trì cường độ</li><li>WSS hàng tuần: 200-350 (giảm 50%)</li><li>Giữ 1-2 buổi ngắn, sắc nét</li><li>Ưu tiên nghỉ ngơi và sẵn sàng</li></ul></li><li><strong>Phục hồi/Chuyển đổi (2-4 tuần):</strong><ul><li>Trọng tâm: Phục hồi tích cực, đào tạo chéo</li><li>WSS hàng tuần: 150-300</li><li>Tất cả đều đi bộ dễ dàng, không có cấu trúc</li><li>Tái tạo tinh thần và thể chất</li></ul></li></ol>
+<h2 id="progression">Chiến lược tăng dần tải đào tạo</h2>
+<h3>Quy tắc 10% (có sắc thái)</h3>
+<p>Truyền thống<strong>Quy tắc 10%</strong>đề nghị tăng khối lượng đào tạo hàng tuần không quá 10% mỗi tuần. Mặc dù hữu ích như một hướng dẫn nhưng nghiên cứu hiện đại lại đề xuất những cách tiếp cận mang nhiều sắc thái hơn:</p>
+<ul>
+<li><strong>Dành cho người mới bắt đầu:</strong>Tăng 5-10% hàng tuần là phù hợp</li>
+<li><strong>Dành cho người đi bộ đường dài có kinh nghiệm:</strong>Có thể chấp nhận mức tăng 10-15% nếu ACWR duy trì &lt;1,30</li>
+<li><strong>Sau giờ nghỉ:</strong>Tiến triển chậm hơn (5%) sẽ an toàn hơn</li>
+<li><strong>Khi tải cao:</strong>Duy trì hoặc giảm bớt thay vì tiếp tục tăng</li>
+</ul>
+<h3>Định kỳ: Mô hình 3:1</h3>
+<p>Mô hình tiến triển dựa trên bằng chứng nhất thay thế<strong>3 tuần tăng tải</strong>với<strong>1 tuần phục hồi</strong>:</p>
+<p><strong>Ví dụ khối 8 tuần (bắt đầu từ 300 WSS):</strong></p>
+<div class="data-table">
+<table>
+<thead>
+<tr>
+<th>Tuần</th>
+<th>WSS hàng tuần</th>
+<th>Thay đổi</th>
+<th>Giai đoạn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>300</td>
+<td>Đường cơ sở</td>
+<td>Xây dựng</td>
+</tr>
+<tr>
+<td>2</td>
+<td>330</td>
+<td>+10%</td>
+<td>Xây dựng</td>
+</tr>
+<tr>
+<td>3</td>
+<td>365</td>
+<td>+11%</td>
+<td>Xây dựng</td>
+</tr>
+<tr>
+<td>4</td>
+<td>220</td>
+<td>-40%</td>
+<td><strong>Phục hồi</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>400</td>
+<td>+10%</td>
+<td>Xây dựng</td>
+</tr>
+<tr>
+<td>6</td>
+<td>440</td>
+<td>+10%</td>
+<td>Xây dựng</td>
+</tr>
+<tr>
+<td>7</td>
+<td>485</td>
+<td>+10%</td>
+<td>Xây dựng</td>
+</tr>
+<tr>
+<td>8</td>
+<td>290</td>
+<td>-40%</td>
+<td><strong>Phục hồi</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Lợi ích của tuần phục hồi:</strong></p>
+<ul>
+<li>Cho phép thích ứng sinh lý (siêu bù)</li>
+<li>Bổ sung lượng glycogen dự trữ</li>
+<li>Sửa chữa các tổn thương vi mô ở mô</li>
+<li>Giảm mệt mỏi tích lũy</li>
+<li>Refreshes motivation and mental energy</li>
+<li>Chuẩn bị cơ thể cho buổi tập tiếp theo</li>
+</ul>
+<h3>Định kỳ khối</h3>
+<p>Đối với việc đào tạo người đi bộ đường dài nâng cao để biểu diễn hoặc tham gia sự kiện, hãy tổ chức đào tạo thành các<strong>riêng biệt xe máy</strong>(khối 4-8 tuần):</p>
+<p><strong>Ví dụ về định kỳ hàng năm:</strong></p>
+<ol>
+<li>
+<strong>Giai đoạn cơ bản (8-12 tuần):</strong>
+<ul>
+<li>Trọng tâm: Xây dựng cơ sở hiếu khí với khối lượng Vùng 2</li>
+<li>WSS hàng tuần: 400-550</li>
+<li>80% thời gian ở tốc độ 100-110 spm</li>
+<li>Đi bộ đường dài tăng từ 60 lên 120 phút</li>
+</ul>
+</li>
+<li>
+<strong>Giai đoạn xây dựng (6-8 tuần):</strong>
+<ul>
+<li>Trọng tâm: Thêm công việc nhịp độ Vùng 3 và các khoảng thời gian ngắn</li>
+<li>WSS hàng tuần: 500-650</li>
+<li>70% Vùng 2, 20% Vùng 3, 10% Vùng 4</li>
+<li>2 buổi chất lượng mỗi tuần</li>
+</ul>
+</li>
+<li>
+<strong>Giai đoạn cao điểm (4-6 tuần):</strong>
+<ul>
+<li>Trọng tâm: Công việc cường độ cao, dành riêng cho chủng tộc</li>
+<li>WSS hàng tuần: 550-750</li>
+<li>Bao gồm các khoảng thời gian và mô phỏng tốc độ cuộc đua</li>
+<li>Duy trì khối lượng dễ dàng</li>
+</ul>
+</li>
+<li>
+<strong>Giảm dần (1-2 tuần):</strong>
+<ul>
+<li>Trọng tâm: Giảm âm lượng, duy trì cường độ</li>
+<li>WSS hàng tuần: 200-350 (giảm 50%)</li>
+<li>Giữ 1-2 buổi ngắn, sắc nét</li>
+<li>Ưu tiên nghỉ ngơi và sẵn sàng</li>
+</ul>
+</li>
+<li>
+<strong>Phục hồi/Chuyển đổi (2-4 tuần):</strong>
+<ul>
+<li>Trọng tâm: Phục hồi tích cực, đào tạo chéo</li>
+<li>WSS hàng tuần: 150-300</li>
+<li>Tất cả đều đi bộ dễ dàng, không có cấu trúc</li>
+<li>Tái tạo tinh thần và thể chất</li>
+</ul>
+</li>
+</ol>
 Giám sát tải đào tạo
-<h2 id="monitoring">Giám sát và điều chỉnh tải đào tạo</h2><h3>Số liệu khách quan</h3><p><strong>Theo dõi những điều này hàng ngày/hàng tuần:</strong></p><ol><li><strong>Nhịp tim lúc nghỉ ngơi (RHR):</strong><ul><li>Đo khi thức dậy, trước khi ra khỏi giường</li><li>Theo dõi trung bình luân phiên 7 ngày</li><li>Độ cao 5-10 nhịp/phút cho thấy khả năng phục hồi chưa hoàn toàn</li><li>Độ cao liên tục (&gt;1 tuần) cho thấy nguy cơ tập luyện quá sức</li></ul></li><li><strong>Biến thiên nhịp tim (HRV):</strong><ul><li>HRV cao hơn = khả năng phục hồi và sẵn sàng tốt hơn</li><li>Giảm &gt;10% so với mức cơ bản = mức độ sẵn sàng giảm</li><li>Sử dụng ứng dụng như Elite HRV, HRV4Training hoặc Oura Ring</li></ul></li><li><strong>Nhịp độ đỉnh-30:</strong><ul><li>Theo dõi hàng ngày để đánh giá khả năng duy trì cường độ</li><li>Xu hướng giảm có thể cho thấy sự mệt mỏi tích lũy</li><li>Sử dụng làm chỉ báo mức độ sẵn sàng tập luyện</li></ul></li><li><strong>Tốc độ đi bộ với nỗ lực tiêu chuẩn:</strong><ul><li>Kiểm tra hàng tháng: 20-30 phút với nỗ lực nhất quán</li><li>Cải thiện tốc độ với cùng một nỗ lực = thích ứng tích cực</li><li>Tốc độ giảm = phục hồi không đầy đủ hoặc tập luyện quá sức</li></ul></li></ol><h3>Số liệu chủ quan</h3><p><strong>Bảng câu hỏi về sức khỏe hàng ngày (điểm 1-5 mỗi câu):</strong></p><ol><li><strong>Chất lượng giấc ngủ:</strong>1 = tệ, 5 = xuất sắc</li><li><strong>Mức độ mệt mỏi:</strong>1 = kiệt sức, 5 = tràn đầy sinh lực</li><li><strong>Đau nhức cơ bắp:</strong>1 = rất đau, 5 = không đau</li><li><strong>Tâm trạng/động lực:</strong>1 = kém, 5 = tuyệt vời</li><li><strong>Mức độ căng thẳng:</strong>1 = rất cao, 5 = rất thấp</li></ol><p><strong>Giải thích tổng điểm sức khỏe:</strong></p><ul><li><strong>20-25:</strong>Sẵn sàng xuất sắc, tiến hành đào tạo theo kế hoạch</li><li><strong>15-19:</strong>Sẵn sàng tốt, đào tạo theo kế hoạch hoặc giảm nhẹ</li><li><strong>10-14:</strong>Quan ngại vừa phải, cân nhắc ngày dễ dàng hơn hoặc thời gian ngắn hơn</li><li><strong>5-9:</strong>Khả năng sẵn sàng kém, làm việc trong ngày rất dễ dàng hoặc nghỉ ngơi</li></ul><h3>Dấu Hiệu Tải Tập Phù Hợp</h3><ul><li>Cảm thấy tràn đầy sinh lực và có động lực cho hầu hết các chuyến đi bộ đường dài</li><li>Cải thiện hiệu suất dần dần theo tuần/tháng</li><li>Chất lượng giấc ngủ ổn định (7-9 tiếng, cảm giác như được nghỉ ngơi)</li><li>Ổn định hoặc cải thiện nhịp tim khi nghỉ ngơi</li><li>Giảm đau nhức cơ bắp tối thiểu sau 24-48 giờ sau tập luyện</li><li>Duy trì niềm đam mê đi bộ đường dài</li><li>Có thể đạt được nhịp/nhịp mục tiêu một cách nhất quán</li></ul><h3>Dấu hiệu cảnh báo về cường độ luyện tập quá mức</h3><ul><li><strong>Hiệu suất:</strong>Tốc độ giảm, không thể đạt được nhịp mục tiêu, nỗ lực gia tăng</li><li><strong>Sinh lý:</strong>RHR tăng (5-10+ bpm so với mức cơ bản), HRV giảm, mệt mỏi dai dẳng dù đã nghỉ ngơi</li><li><strong>Cơ xương khớp:</strong>Đau nhức cơ dai dẳng, đau nhức nhiều chỗ nhẹ, tỷ lệ chấn thương tăng lên</li><li><strong>Tâm lý:</strong>Mất động lực, cáu kỉnh, rối loạn tâm trạng, khó tập trung</li><li><strong>Ngủ:</strong>Khó đi vào giấc ngủ, thức dậy thường xuyên, không cảm thấy nghỉ ngơi dù đã ngủ đủ giờ</li><li><strong>Miễn dịch:</strong>Thường xuyên bị cảm lạnh hoặc nhiễm trùng, vết thương nhỏ chậm lành</li></ul><p><strong>Kế hoạch hành động nếu xuất hiện dấu hiệu cảnh báo:</strong></p><ol><li>Giảm ngay 30-50% thời gian tập luyện</li><li>Chỉ tập trung vào những chuyến đi bộ đường dài dễ dàng và thú vị</li><li>Ưu tiên giấc ngủ (mục tiêu 8-9 tiếng)</li><li>Review dinh dưỡng và hydrat hóa</li><li>Xem xét những căng thẳng khi không đi bộ đường dài (công việc, cuộc sống) và giải quyết nếu có thể</li><li>Nếu các triệu chứng kéo dài &gt;1 tuần, hãy tham khảo ý kiến ​​nhà cung cấp dịch vụ chăm sóc sức khỏe</li></ol>
+<h2 id="monitoring">Giám sát và điều chỉnh tải đào tạo</h2>
+<h3>Số liệu khách quan</h3>
+<p><strong>Theo dõi những điều này hàng ngày/hàng tuần:</strong></p>
+<ol>
+<li>
+<strong>Nhịp tim lúc nghỉ ngơi (RHR):</strong>
+<ul>
+<li>Đo khi thức dậy, trước khi ra khỏi giường</li>
+<li>Theo dõi trung bình luân phiên 7 ngày</li>
+<li>Độ cao 5-10 nhịp/phút cho thấy khả năng phục hồi chưa hoàn toàn</li>
+<li>Độ cao liên tục (&gt;1 tuần) cho thấy nguy cơ tập luyện quá sức</li>
+</ul>
+</li>
+<li>
+<strong>Biến thiên nhịp tim (HRV):</strong>
+<ul>
+<li>HRV cao hơn = khả năng phục hồi và sẵn sàng tốt hơn</li>
+<li>Giảm &gt;10% so với mức cơ bản = mức độ sẵn sàng giảm</li>
+<li>Sử dụng ứng dụng như Elite HRV, HRV4Training hoặc Oura Ring</li>
+</ul>
+</li>
+<li>
+<strong>Nhịp độ đỉnh-30:</strong>
+<ul>
+<li>Theo dõi hàng ngày để đánh giá khả năng duy trì cường độ</li>
+<li>Xu hướng giảm có thể cho thấy sự mệt mỏi tích lũy</li>
+<li>Sử dụng làm chỉ báo mức độ sẵn sàng tập luyện</li>
+</ul>
+</li>
+<li>
+<strong>Tốc độ đi bộ với nỗ lực tiêu chuẩn:</strong>
+<ul>
+<li>Kiểm tra hàng tháng: 20-30 phút với nỗ lực nhất quán</li>
+<li>Cải thiện tốc độ với cùng một nỗ lực = thích ứng tích cực</li>
+<li>Tốc độ giảm = phục hồi không đầy đủ hoặc tập luyện quá sức</li>
+</ul>
+</li>
+</ol>
+<h3>Số liệu chủ quan</h3>
+<p><strong>Bảng câu hỏi về sức khỏe hàng ngày (điểm 1-5 mỗi câu):</strong></p>
+<ol>
+<li><strong>Chất lượng giấc ngủ:</strong>1 = tệ, 5 = xuất sắc</li>
+<li><strong>Mức độ mệt mỏi:</strong>1 = kiệt sức, 5 = tràn đầy sinh lực</li>
+<li><strong>Đau nhức cơ bắp:</strong>1 = rất đau, 5 = không đau</li>
+<li><strong>Tâm trạng/động lực:</strong>1 = kém, 5 = tuyệt vời</li>
+<li><strong>Mức độ căng thẳng:</strong>1 = rất cao, 5 = rất thấp</li>
+</ol>
+<p><strong>Giải thích tổng điểm sức khỏe:</strong></p>
+<ul>
+<li><strong>20-25:</strong>Sẵn sàng xuất sắc, tiến hành đào tạo theo kế hoạch</li>
+<li><strong>15-19:</strong>Sẵn sàng tốt, đào tạo theo kế hoạch hoặc giảm nhẹ</li>
+<li><strong>10-14:</strong>Quan ngại vừa phải, cân nhắc ngày dễ dàng hơn hoặc thời gian ngắn hơn</li>
+<li><strong>5-9:</strong>Khả năng sẵn sàng kém, làm việc trong ngày rất dễ dàng hoặc nghỉ ngơi</li>
+</ul>
+<h3>Dấu Hiệu Tải Tập Phù Hợp</h3>
+<ul>
+<li>Cảm thấy tràn đầy sinh lực và có động lực cho hầu hết các chuyến đi bộ đường dài</li>
+<li>Cải thiện hiệu suất dần dần theo tuần/tháng</li>
+<li>Chất lượng giấc ngủ ổn định (7-9 tiếng, cảm giác như được nghỉ ngơi)</li>
+<li>Ổn định hoặc cải thiện nhịp tim khi nghỉ ngơi</li>
+<li>Giảm đau nhức cơ bắp tối thiểu sau 24-48 giờ sau tập luyện</li>
+<li>Duy trì niềm đam mê đi bộ đường dài</li>
+<li>Có thể đạt được nhịp/nhịp mục tiêu một cách nhất quán</li>
+</ul>
+<h3>Dấu hiệu cảnh báo về cường độ luyện tập quá mức</h3>
+<ul>
+<li><strong>Hiệu suất:</strong>Tốc độ giảm, không thể đạt được nhịp mục tiêu, nỗ lực gia tăng</li>
+<li><strong>Sinh lý:</strong>RHR tăng (5-10+ bpm so với mức cơ bản), HRV giảm, mệt mỏi dai dẳng dù đã nghỉ ngơi</li>
+<li><strong>Cơ xương khớp:</strong>Đau nhức cơ dai dẳng, đau nhức nhiều chỗ nhẹ, tỷ lệ chấn thương tăng lên</li>
+<li><strong>Tâm lý:</strong>Mất động lực, cáu kỉnh, rối loạn tâm trạng, khó tập trung</li>
+<li><strong>Ngủ:</strong>Khó đi vào giấc ngủ, thức dậy thường xuyên, không cảm thấy nghỉ ngơi dù đã ngủ đủ giờ</li>
+<li><strong>Miễn dịch:</strong>Thường xuyên bị cảm lạnh hoặc nhiễm trùng, vết thương nhỏ chậm lành</li>
+</ul>
+<p><strong>Kế hoạch hành động nếu xuất hiện dấu hiệu cảnh báo:</strong></p>
+<ol>
+<li>Giảm ngay 30-50% thời gian tập luyện</li>
+<li>Chỉ tập trung vào những chuyến đi bộ đường dài dễ dàng và thú vị</li>
+<li>Ưu tiên giấc ngủ (mục tiêu 8-9 tiếng)</li>
+<li>Review dinh dưỡng và hydrat hóa</li>
+<li>Xem xét những căng thẳng khi không đi bộ đường dài (công việc, cuộc sống) và giải quyết nếu có thể</li>
+<li>Nếu các triệu chứng kéo dài &gt;1 tuần, hãy tham khảo ý kiến ​​nhà cung cấp dịch vụ chăm sóc sức khỏe</li>
+</ol>
 Phân phối cường độ
-<h2 id="intensity">Mô hình phân phối cường độ</h2><p>Cách bạn phân bổ cường độ tập luyện trong tuần sẽ tác động đáng kể đến khả năng thích ứng và hiệu suất. Hai mô hình chính được sử dụng:</p><h3>Đào tạo phân cực (Mô hình 80/20)</h3><p><strong>Mô hình 80/20</strong>chia thời gian tập luyện giữa cường độ thấp và cường độ cao với cường độ vừa phải tối thiểu:</p><ul><li><strong>Dễ 80% (Vùng 1-2):</strong>95-105 spm, tốc độ đàm thoại</li><li><strong>0-5% vừa phải (Vùng 3):</strong>Thời gian tối thiểu ở 110-120 spm</li><li><strong>Độ cứng 15-20% (Vùng 4-5):</strong>Hơn 120 quãng spm và nhịp độ</li></ul><p><strong>Lý do:</strong>Tối đa hóa sự phát triển hiếu khí (âm lượng dễ dàng) đồng thời cung cấp kích thích cường độ cao để thực hiện mà không tích tụ mệt mỏi do làm việc quá mức vừa phải.</p><p><strong>Tốt nhất cho:</strong>Người đi bộ đường dài nâng cao, người đi bộ đường dài trong cuộc đua, đào tạo theo định hướng hiệu suất</p><p><strong>Lịch trình mẫu hàng tuần (tổng cộng 300 phút):</strong></p><ul><li>240 phút đi bộ dễ dàng (80%): Đi bộ dễ dàng 30-40 phút hàng ngày + đi bộ dài cuối tuần</li><li>60 phút chăm chỉ (20%): 2× buổi tập ngắt quãng/nhịp độ mỗi tuần</li></ul><h3>Đào tạo kim tự tháp (Mô hình 60/30/10)</h3><p><strong>mô hình kim tự tháp</strong>phân bổ cường độ trên tất cả các vùng:</p><ul><li><strong>Dễ 60-70% (Vùng 1-2):</strong>Phát triển hiếu khí cơ bản</li><li><strong>20-30% vừa phải (Vùng 3):</strong>Nhịp độ và tốc độ làm việc bền vững</li><li><strong>Độ cứng 10% (Vùng 4-5):</strong>Khoảng cường độ cao</li></ul><p><strong>Lý do:</strong>Tăng dần cường độ dần dần, tốt hơn để phát triển khả năng cường độ vừa phải, dễ phục hồi hơn.</p><p><strong>Tốt nhất cho:</strong>Người đi bộ đường dài từ sơ cấp đến trung cấp, tập luyện chú trọng đến sức khỏe, những người dễ bị chấn thương</p><p><strong>Lịch trình mẫu hàng tuần (tổng cộng 300 phút):</strong></p><ul><li>180-210 phút dễ dàng (60-70%): Hầu hết các chuyến đi bộ hàng ngày với tốc độ thoải mái</li><li>60-90 phút vừa phải (20-30%): 2-3× đi bộ nhanh mỗi tuần</li><li>30 phút chăm chỉ (10%): 1× buổi tập ngắt quãng mỗi tuần</li></ul><div class="key-finding"><strong>Nghiên cứu chuyên sâu:</strong>Các vận động viên sức bền ưu tú trong các môn thể thao luôn sử dụng phương pháp tập luyện phân cực. Tuy nhiên, về kết quả sức khỏe và thể lực, mô hình kim tự tháp tạo ra kết quả xuất sắc với nguy cơ chấn thương thấp hơn (Stöggl &amp; Sperlich, 2014).</div>
+<h2 id="intensity">Mô hình phân phối cường độ</h2>
+<p>Cách bạn phân bổ cường độ tập luyện trong tuần sẽ tác động đáng kể đến khả năng thích ứng và hiệu suất. Hai mô hình chính được sử dụng:</p>
+<h3>Đào tạo phân cực (Mô hình 80/20)</h3>
+<p><strong>Mô hình 80/20</strong>chia thời gian tập luyện giữa cường độ thấp và cường độ cao với cường độ vừa phải tối thiểu:</p>
+<ul>
+<li><strong>Dễ 80% (Vùng 1-2):</strong>95-105 spm, tốc độ đàm thoại</li>
+<li><strong>0-5% vừa phải (Vùng 3):</strong>Thời gian tối thiểu ở 110-120 spm</li>
+<li><strong>Độ cứng 15-20% (Vùng 4-5):</strong>Hơn 120 quãng spm và nhịp độ</li>
+</ul>
+<p><strong>Lý do:</strong>Tối đa hóa sự phát triển hiếu khí (âm lượng dễ dàng) đồng thời cung cấp kích thích cường độ cao để thực hiện mà không tích tụ mệt mỏi do làm việc quá mức vừa phải.</p>
+<p><strong>Tốt nhất cho:</strong>Người đi bộ đường dài nâng cao, người đi bộ đường dài trong cuộc đua, đào tạo theo định hướng hiệu suất</p>
+<p><strong>Lịch trình mẫu hàng tuần (tổng cộng 300 phút):</strong></p>
+<ul>
+<li>240 phút đi bộ dễ dàng (80%): Đi bộ dễ dàng 30-40 phút hàng ngày + đi bộ dài cuối tuần</li>
+<li>60 phút chăm chỉ (20%): 2× buổi tập ngắt quãng/nhịp độ mỗi tuần</li>
+</ul>
+<h3>Đào tạo kim tự tháp (Mô hình 60/30/10)</h3>
+<p><strong>mô hình kim tự tháp</strong>phân bổ cường độ trên tất cả các vùng:</p>
+<ul>
+<li><strong>Dễ 60-70% (Vùng 1-2):</strong>Phát triển hiếu khí cơ bản</li>
+<li><strong>20-30% vừa phải (Vùng 3):</strong>Nhịp độ và tốc độ làm việc bền vững</li>
+<li><strong>Độ cứng 10% (Vùng 4-5):</strong>Khoảng cường độ cao</li>
+</ul>
+<p><strong>Lý do:</strong>Tăng dần cường độ dần dần, tốt hơn để phát triển khả năng cường độ vừa phải, dễ phục hồi hơn.</p>
+<p><strong>Tốt nhất cho:</strong>Người đi bộ đường dài từ sơ cấp đến trung cấp, tập luyện chú trọng đến sức khỏe, những người dễ bị chấn thương</p>
+<p><strong>Lịch trình mẫu hàng tuần (tổng cộng 300 phút):</strong></p>
+<ul>
+<li>180-210 phút dễ dàng (60-70%): Hầu hết các chuyến đi bộ hàng ngày với tốc độ thoải mái</li>
+<li>60-90 phút vừa phải (20-30%): 2-3× đi bộ nhanh mỗi tuần</li>
+<li>30 phút chăm chỉ (10%): 1× buổi tập ngắt quãng mỗi tuần</li>
+</ul>
+<div class="key-finding">
+<strong>Nghiên cứu chuyên sâu:</strong>Các vận động viên sức bền ưu tú trong các môn thể thao luôn sử dụng phương pháp tập luyện phân cực. Tuy nhiên, về kết quả sức khỏe và thể lực, mô hình kim tự tháp tạo ra kết quả xuất sắc với nguy cơ chấn thương thấp hơn (Stöggl &amp; Sperlich, 2014).</div>
 Chiến lược phục hồi
-<h2 id="recovery">Chiến lược phục hồi và thích ứng</h2><p>Kích thích tập luyện chỉ tạo ra sự thích ứng khi kết hợp với sự phục hồi đầy đủ. Nếu không hồi phục, cường độ luyện tập sẽ trở thành căng thẳng trong luyện tập mà không mang lại lợi ích gì.</p><h3>Kỹ thuật phục hồi tích cực</h3><ol><li><strong>Đi bộ dễ dàng (60-90 spm):</strong><ul><li>20-30 phút ở cường độ rất thấp</li><li>Thúc đẩy lưu lượng máu mà không gây thêm căng thẳng</li><li>Lợi ích tâm lý của việc vận động</li></ul></li><li><strong>Đào tạo chéo:</strong><ul><li>đạp xe, yoga, thái cực quyền</li><li>Các kiểu chuyển động khác nhau làm giảm căng thẳng lặp đi lặp lại</li><li>Duy trì thể lực với sự đa dạng</li></ul></li><li><strong>Kéo giãn năng động và di chuyển:</strong><ul><li>15-20 phút mỗi ngày</li><li>Tập trung vào hông, mắt cá chân, bắp chân, gân kheo</li><li>Duy trì phạm vi chuyển động để có dáng đi hiệu quả</li></ul></li></ol><h3>Kỹ thuật phục hồi thụ động</h3><ol><li><strong>Tối ưu hóa giấc ngủ:</strong><ul><li>7-9 tiếng mỗi đêm (người lớn)</li><li>Lịch trình ngủ/thức nhất quán</li><li>Phòng tối, mát mẻ (60-67°F / 16-19°C)</li><li>Hạn chế xem màn hình 1 giờ trước khi đi ngủ</li></ul></li><li><strong>Dinh dưỡng phục hồi:</strong><ul><li>Chất đạm: 1,2-1,6 g/kg thể trọng mỗi ngày</li><li>Carbohydrate: Vừa đủ để bổ sung glycogen (3-5 g/kg)</li><li>Hydrat hóa: Theo dõi màu nước tiểu (vàng nhạt)</li><li>Thực phẩm chống viêm: Quả mọng, cá béo, rau lá xanh</li></ul></li><li><strong>Massage và giải phóng cân cơ:</strong><ul><li>Lăn bọt 10-15 phút sau khi đi bộ</li><li>Tập trung vào bắp chân, dây IT, cơ gấp hông, cơ mông</li><li>Massage chuyên nghiệp 2-4 tuần một lần nếu ngân sách cho phép</li></ul></li><li><strong>Ngâm trong nước lạnh (tùy chọn):</strong><ul><li>10-15 phút trong nước có nhiệt độ 50-59°F (10-15°C)</li><li>Trong vòng 1 giờ sau khi tập luyện chăm chỉ</li><li>Có thể làm giảm đau nhức và viêm cơ</li><li>Không được đề xuất quá 2× mỗi tuần</li></ul></li></ol><h3>Phục hồi tinh thần</h3><ul><li><strong>Giống:</strong>Kết hợp các tuyến đường, địa hình và cảnh quan để duy trì sự tương tác</li><li><strong>Tăng vọt xã hội:</strong>Đi bộ đường dài với bạn bè hoặc nhóm để giải trí</li><li><strong>Chánh niệm:</strong>Thực hành nhận thức về thời điểm hiện tại trong những chuyến đi bộ dễ dàng</li><li><strong>Tuần tải xuống:</strong>Nghỉ ngơi tinh thần sau khi tập luyện có cấu trúc 3-4 tuần một lần</li><li><strong>Trái mùa:</strong>2-4 tuần mỗi năm đi bộ đường dài có cấu trúc tối thiểu</li></ul>
+<h2 id="recovery">Chiến lược phục hồi và thích ứng</h2>
+<p>Kích thích tập luyện chỉ tạo ra sự thích ứng khi kết hợp với sự phục hồi đầy đủ. Nếu không hồi phục, cường độ luyện tập sẽ trở thành căng thẳng trong luyện tập mà không mang lại lợi ích gì.</p>
+<h3>Kỹ thuật phục hồi tích cực</h3>
+<ol>
+<li>
+<strong>Đi bộ dễ dàng (60-90 spm):</strong>
+<ul>
+<li>20-30 phút ở cường độ rất thấp</li>
+<li>Thúc đẩy lưu lượng máu mà không gây thêm căng thẳng</li>
+<li>Lợi ích tâm lý của việc vận động</li>
+</ul>
+</li>
+<li>
+<strong>Đào tạo chéo:</strong>
+<ul>
+<li>đạp xe, yoga, thái cực quyền</li>
+<li>Các kiểu chuyển động khác nhau làm giảm căng thẳng lặp đi lặp lại</li>
+<li>Duy trì thể lực với sự đa dạng</li>
+</ul>
+</li>
+<li>
+<strong>Kéo giãn năng động và di chuyển:</strong>
+<ul>
+<li>15-20 phút mỗi ngày</li>
+<li>Tập trung vào hông, mắt cá chân, bắp chân, gân kheo</li>
+<li>Duy trì phạm vi chuyển động để có dáng đi hiệu quả</li>
+</ul>
+</li>
+</ol>
+<h3>Kỹ thuật phục hồi thụ động</h3>
+<ol>
+<li>
+<strong>Tối ưu hóa giấc ngủ:</strong>
+<ul>
+<li>7-9 tiếng mỗi đêm (người lớn)</li>
+<li>Lịch trình ngủ/thức nhất quán</li>
+<li>Phòng tối, mát mẻ (60-67°F / 16-19°C)</li>
+<li>Hạn chế xem màn hình 1 giờ trước khi đi ngủ</li>
+</ul>
+</li>
+<li>
+<strong>Dinh dưỡng phục hồi:</strong>
+<ul>
+<li>Chất đạm: 1,2-1,6 g/kg thể trọng mỗi ngày</li>
+<li>Carbohydrate: Vừa đủ để bổ sung glycogen (3-5 g/kg)</li>
+<li>Hydrat hóa: Theo dõi màu nước tiểu (vàng nhạt)</li>
+<li>Thực phẩm chống viêm: Quả mọng, cá béo, rau lá xanh</li>
+</ul>
+</li>
+<li>
+<strong>Massage và giải phóng cân cơ:</strong>
+<ul>
+<li>Lăn bọt 10-15 phút sau khi đi bộ</li>
+<li>Tập trung vào bắp chân, dây IT, cơ gấp hông, cơ mông</li>
+<li>Massage chuyên nghiệp 2-4 tuần một lần nếu ngân sách cho phép</li>
+</ul>
+</li>
+<li>
+<strong>Ngâm trong nước lạnh (tùy chọn):</strong>
+<ul>
+<li>10-15 phút trong nước có nhiệt độ 50-59°F (10-15°C)</li>
+<li>Trong vòng 1 giờ sau khi tập luyện chăm chỉ</li>
+<li>Có thể làm giảm đau nhức và viêm cơ</li>
+<li>Không được đề xuất quá 2× mỗi tuần</li>
+</ul>
+</li>
+</ol>
+<h3>Phục hồi tinh thần</h3>
+<ul>
+<li><strong>Giống:</strong>Kết hợp các tuyến đường, địa hình và cảnh quan để duy trì sự tương tác</li>
+<li><strong>Tăng vọt xã hội:</strong>Đi bộ đường dài với bạn bè hoặc nhóm để giải trí</li>
+<li><strong>Chánh niệm:</strong>Thực hành nhận thức về thời điểm hiện tại trong những chuyến đi bộ dễ dàng</li>
+<li><strong>Tuần tải xuống:</strong>Nghỉ ngơi tinh thần sau khi tập luyện có cấu trúc 3-4 tuần một lần</li>
+<li><strong>Trái mùa:</strong>2-4 tuần mỗi năm đi bộ đường dài có cấu trúc tối thiểu</li>
+</ul>
 Các khái niệm nâng cao
-<h2 id="advanced">Khái niệm tải đào tạo nâng cao</h2><h3>Xung huấn luyện (TRIMP)</h3><p><strong>BẢO VỆ30X</strong>(Training Impulse) định lượng cường độ tập luyện bằng cách sử dụng dữ liệu nhịp tim với trọng số cấp số nhân để có cường độ cao hơn.</p><div class="formula-box"><pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
+<h2 id="advanced">Khái niệm tải đào tạo nâng cao</h2>
+<h3>Xung huấn luyện (TRIMP)</h3>
+<p><strong>BẢO VỆ30X</strong>(Training Impulse) định lượng cường độ tập luyện bằng cách sử dụng dữ liệu nhịp tim với trọng số cấp số nhân để có cường độ cao hơn.</p>
+<div class="formula-box">
+<pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
 
 Where:
-  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre></div><p><strong>Ví dụ:</strong></p><ul><li>Thời lượng: 60 phút</li><li>Nhịp tim trung bình: 130 bpm</li><li>Nhịp tim lúc nghỉ: 60 bpm</li><li>Nhịp tim tối đa: 180 bpm</li><li>ΔHR tỷ lệ = (130-60)/(180-60) = 70/120 = 0,583</li><li>BẢO VỆ30X = 60 × 0,583 × 0,64e^(1,92×0,583) = 60 × 0,583 × 1,94 = 67,9</li></ul><p><strong>Lưu ý:</strong>Các giá trị TRIMP không thể so sánh trực tiếp với WSS nhưng cả hai đều định lượng khối lượng đào tạo.</p><h3>Người Mẫu Thể Dục- Mệt Mỏi</h3><p>Việc huấn luyện tạo ra hai tác dụng trái ngược nhau:</p><ul><li><strong>Sự thích hợp:</strong>Thích ứng tích cực xây dựng chậm, phân rã chậm (thời gian cố định 42 ngày)</li><li><strong>Mệt mỏi:</strong>Hiệu ứng tiêu cực phát triển nhanh, phân rã nhanh (hằng số thời gian 7 ngày)</li></ul><p><strong>Thành tích = Thể lực - Mệt mỏi</strong></p><p>Mô hình này giải thích:</p><ul><li>Tại sao ngày nghỉ ngơi có thể mang lại hiệu suất tốt hơn (mệt mỏi tiêu tan nhanh hơn thể lực)</li><li>Tại sao máy tập cơ có tác dụng (giảm mệt mỏi trong khi vẫn duy trì thể lực)</li><li>Tại sao tuần phục hồi là cần thiết (quản lý sự mệt mỏi tích lũy)</li></ul><h3>Tải trọng luyện tập mãn tính (CTL) và Hình thức</h3><p>Các số liệu nâng cao được theo dõi bởi các nền tảng như Hike Analytics:</p><ul><li><strong>CTL (Tải đào tạo mãn tính):</strong>WSS hàng ngày trung bình theo cấp số nhân trong 42 ngày — đại diện cho thể lực</li><li><strong>ATL (Tải tập luyện cấp tính):</strong>WSS hàng ngày trung bình theo cấp số nhân trong 7 ngày — thể hiện sự mệt mỏi</li><li><strong>TSB (Cân bằng căng thẳng khi tập luyện):</strong>CTL - ATL — thể hiện hình thức/sự tươi mới</li></ul><p><strong>TSB Phiên dịch:</strong></p><ul><li><strong>BẢO VỆ4X &lt; -30:</strong>Mệt mỏi cao, rủi ro vượt mức</li><li><strong>BẢO VỆ4X -30 đến -10:</strong>Khu tập luyện hiệu quả, mệt mỏi bình thường</li><li><strong>BẢO VỆ4X -10 đến +10:</strong>Dạng trung lập</li><li><strong>BẢO VỆ4X +10 đến +25:</strong>Tươi mới, sẵn sàng cho cuộc đua tốt</li><li><strong>BẢO VỆ4X &gt; +25:</strong>Rất mới mẻ, nhưng sẽ gây chán nản nếu duy trì</li></ul>
+  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre>
+</div>
+<p><strong>Ví dụ:</strong></p>
+<ul>
+<li>Thời lượng: 60 phút</li>
+<li>Nhịp tim trung bình: 130 bpm</li>
+<li>Nhịp tim lúc nghỉ: 60 bpm</li>
+<li>Nhịp tim tối đa: 180 bpm</li>
+<li>ΔHR tỷ lệ = (130-60)/(180-60) = 70/120 = 0,583</li>
+<li>BẢO VỆ30X = 60 × 0,583 × 0,64e^(1,92×0,583) = 60 × 0,583 × 1,94 = 67,9</li>
+</ul>
+<p><strong>Lưu ý:</strong>Các giá trị TRIMP không thể so sánh trực tiếp với WSS nhưng cả hai đều định lượng khối lượng đào tạo.</p>
+<h3>Người Mẫu Thể Dục- Mệt Mỏi</h3>
+<p>Việc huấn luyện tạo ra hai tác dụng trái ngược nhau:</p>
+<ul>
+<li><strong>Sự thích hợp:</strong>Thích ứng tích cực xây dựng chậm, phân rã chậm (thời gian cố định 42 ngày)</li>
+<li><strong>Mệt mỏi:</strong>Hiệu ứng tiêu cực phát triển nhanh, phân rã nhanh (hằng số thời gian 7 ngày)</li>
+</ul>
+<p><strong>Thành tích = Thể lực - Mệt mỏi</strong></p>
+<p>Mô hình này giải thích:</p>
+<ul>
+<li>Tại sao ngày nghỉ ngơi có thể mang lại hiệu suất tốt hơn (mệt mỏi tiêu tan nhanh hơn thể lực)</li>
+<li>Tại sao máy tập cơ có tác dụng (giảm mệt mỏi trong khi vẫn duy trì thể lực)</li>
+<li>Tại sao tuần phục hồi là cần thiết (quản lý sự mệt mỏi tích lũy)</li>
+</ul>
+<h3>Tải trọng luyện tập mãn tính (CTL) và Hình thức</h3>
+<p>Các số liệu nâng cao được theo dõi bởi các nền tảng như Hike Analytics:</p>
+<ul>
+<li><strong>CTL (Tải đào tạo mãn tính):</strong>WSS hàng ngày trung bình theo cấp số nhân trong 42 ngày — đại diện cho thể lực</li>
+<li><strong>ATL (Tải tập luyện cấp tính):</strong>WSS hàng ngày trung bình theo cấp số nhân trong 7 ngày — thể hiện sự mệt mỏi</li>
+<li><strong>TSB (Cân bằng căng thẳng khi tập luyện):</strong>CTL - ATL — thể hiện hình thức/sự tươi mới</li>
+</ul>
+<p><strong>TSB Phiên dịch:</strong></p>
+<ul>
+<li><strong>BẢO VỆ4X &lt; -30:</strong>Mệt mỏi cao, rủi ro vượt mức</li>
+<li><strong>BẢO VỆ4X -30 đến -10:</strong>Khu tập luyện hiệu quả, mệt mỏi bình thường</li>
+<li><strong>BẢO VỆ4X -10 đến +10:</strong>Dạng trung lập</li>
+<li><strong>BẢO VỆ4X +10 đến +25:</strong>Tươi mới, sẵn sàng cho cuộc đua tốt</li>
+<li><strong>BẢO VỆ4X &gt; +25:</strong>Rất mới mẻ, nhưng sẽ gây chán nản nếu duy trì</li>
+</ul>
 Ứng dụng thực tế
-<h2 id="practical">Quản lý tải đào tạo thực tế</h2><h3>Mẫu kế hoạch hàng tuần</h3><p><strong>Cấu trúc mỗi tuần với:</strong></p><ol><li><strong>1-2 buổi chất lượng:</strong>Các quãng, nhịp độ hoặc tốc độ chạy đua</li><li><strong>1 chuyến đi bộ dài:</strong>60-120 phút với tốc độ vừa phải</li><li><strong>3-4 chuyến đi bộ dễ dàng:</strong>Phục hồi và tích lũy khối lượng</li><li><strong>1 ngày nghỉ:</strong>Nghỉ ngơi hoàn toàn hoặc hoạt động rất nhẹ nhàng</li></ol><p><strong>Ví dụ về tuần trung gian (Mục tiêu: 420 WSS):</strong></p><div class="data-table"><table><thead><tr><th>Ngày</th><th>Tập luyện</th><th>Thời lượng</th><th>Cường độ</th><th>WSS</th></tr></thead><tbody><tr><td>Thứ Hai</td><td>Đi bộ ổn định</td><td>45 phút</td><td>105 spm (Vùng 2)</td><td>90</td></tr><tr><td>Thứ Ba</td><td>Phục hồi dễ dàng</td><td>30 phút</td><td>95 spm (Vùng 1)</td><td>40</td></tr><tr><td>Thứ Tư</td><td><strong>Khoảng thời gian</strong></td><td>Tổng cộng 50 phút</td><td>5×5 phút @ 120 spm</td><td>140</td></tr><tr><td>Thứ năm</td><td>Đi bộ dễ dàng</td><td>35 phút</td><td>100 spm (Vùng 2)</td><td>55</td></tr><tr><td>Thứ Sáu</td><td>Ngày nghỉ</td><td>—</td><td>—</td><td>0</td></tr><tr><td>Thứ bảy</td><td><strong>Đi bộ đường dài</strong></td><td>75 phút</td><td>105 spm (Vùng 2)</td><td>150</td></tr><tr><td>Chủ Nhật</td><td>Phục hồi dễ dàng</td><td>30 phút</td><td>95 spm (Vùng 1)</td><td>40</td></tr><tr><td colspan="4"><strong>Tổng số hàng tuần</strong></td><td><strong>515 WSS</strong></td></tr></tbody></table></div><h3>Điều chỉnh dựa trên phản hồi</h3><p><strong>Tình huống 1: Cảm thấy mệt mỏi vào giữa tuần</strong></p><ul><li>Kiểm tra RHR (cao?) và điểm sức khỏe (thấp?)</li><li>Thay thế việc tập luyện vất vả bằng việc đi bộ dễ dàng</li><li>Thêm ngày nghỉ nếu cần</li><li>Tiếp tục luyện tập theo kế hoạch khi bình phục</li></ul><p><strong>Kịch bản 2: Cảm thấy tuyệt vời và tiến triển tốt</strong></p><ul><li>Tiếp tục gói hiện tại (không thêm tải bốc đồng)</li><li>Tuần sau tăng tải 5-10%</li><li>Coi trọng chất lượng hơn số lượng (tăng cường độ một chút)</li></ul><p><strong>Kịch bản 3: Hoạt động kém hiệu quả kéo dài</strong></p><ul><li>Xem xét căng thẳng ngoài tập luyện (công việc, giấc ngủ, sự kiện cuộc sống)</li><li>Giảm tải tập luyện 30-40% trong 1-2 tuần</li><li>Tập trung vào giấc ngủ, dinh dưỡng và kiểm soát căng thẳng</li><li>Xây dựng lại dần dần sau khi xác nhận phục hồi</li></ul>
+<h2 id="practical">Quản lý tải đào tạo thực tế</h2>
+<h3>Mẫu kế hoạch hàng tuần</h3>
+<p><strong>Cấu trúc mỗi tuần với:</strong></p>
+<ol>
+<li><strong>1-2 buổi chất lượng:</strong>Các quãng, nhịp độ hoặc tốc độ chạy đua</li>
+<li><strong>1 chuyến đi bộ dài:</strong>60-120 phút với tốc độ vừa phải</li>
+<li><strong>3-4 chuyến đi bộ dễ dàng:</strong>Phục hồi và tích lũy khối lượng</li>
+<li><strong>1 ngày nghỉ:</strong>Nghỉ ngơi hoàn toàn hoặc hoạt động rất nhẹ nhàng</li>
+</ol>
+<p><strong>Ví dụ về tuần trung gian (Mục tiêu: 420 WSS):</strong></p>
+<div class="data-table">
+<table>
+<thead>
+<tr>
+<th>Ngày</th>
+<th>Tập luyện</th>
+<th>Thời lượng</th>
+<th>Cường độ</th>
+<th>WSS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thứ Hai</td>
+<td>Đi bộ ổn định</td>
+<td>45 phút</td>
+<td>105 spm (Vùng 2)</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Thứ Ba</td>
+<td>Phục hồi dễ dàng</td>
+<td>30 phút</td>
+<td>95 spm (Vùng 1)</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Thứ Tư</td>
+<td><strong>Khoảng thời gian</strong></td>
+<td>Tổng cộng 50 phút</td>
+<td>5×5 phút @ 120 spm</td>
+<td>140</td>
+</tr>
+<tr>
+<td>Thứ năm</td>
+<td>Đi bộ dễ dàng</td>
+<td>35 phút</td>
+<td>100 spm (Vùng 2)</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Thứ Sáu</td>
+<td>Ngày nghỉ</td>
+<td>—</td>
+<td>—</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Thứ bảy</td>
+<td><strong>Đi bộ đường dài</strong></td>
+<td>75 phút</td>
+<td>105 spm (Vùng 2)</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Chủ Nhật</td>
+<td>Phục hồi dễ dàng</td>
+<td>30 phút</td>
+<td>95 spm (Vùng 1)</td>
+<td>40</td>
+</tr>
+<tr>
+<td colspan="4"><strong>Tổng số hàng tuần</strong></td>
+<td><strong>515 WSS</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Điều chỉnh dựa trên phản hồi</h3>
+<p><strong>Tình huống 1: Cảm thấy mệt mỏi vào giữa tuần</strong></p>
+<ul>
+<li>Kiểm tra RHR (cao?) và điểm sức khỏe (thấp?)</li>
+<li>Thay thế việc tập luyện vất vả bằng việc đi bộ dễ dàng</li>
+<li>Thêm ngày nghỉ nếu cần</li>
+<li>Tiếp tục luyện tập theo kế hoạch khi bình phục</li>
+</ul>
+<p><strong>Kịch bản 2: Cảm thấy tuyệt vời và tiến triển tốt</strong></p>
+<ul>
+<li>Tiếp tục gói hiện tại (không thêm tải bốc đồng)</li>
+<li>Tuần sau tăng tải 5-10%</li>
+<li>Coi trọng chất lượng hơn số lượng (tăng cường độ một chút)</li>
+</ul>
+<p><strong>Kịch bản 3: Hoạt động kém hiệu quả kéo dài</strong></p>
+<ul>
+<li>Xem xét căng thẳng ngoài tập luyện (công việc, giấc ngủ, sự kiện cuộc sống)</li>
+<li>Giảm tải tập luyện 30-40% trong 1-2 tuần</li>
+<li>Tập trung vào giấc ngủ, dinh dưỡng và kiểm soát căng thẳng</li>
+<li>Xây dựng lại dần dần sau khi xác nhận phục hồi</li>
+</ul>
 Tóm tắt
-<h2 id="summary">Tóm tắt: Các nguyên tắc tải trọng đào tạo chính</h2><div class="key-finding"><strong>Năm trụ cột của quản lý tải đào tạo:</strong><ol><li><strong>Định lượng tải:</strong>Sử dụng WSS, phút nhanh hoặc TRIMP để theo dõi kích thích tập luyện</li><li><strong>Tiến bộ dần dần:</strong>Tăng 5-10% hàng tuần, với tỷ lệ xây dựng:hồi phục 3:1</li><li><strong>Giám sát ACWR:</strong>Giữ tỷ lệ cấp tính:mạn tính trong khoảng 0,80-1,30 để giảm thiểu nguy cơ chấn thương</li><li><strong>Ưu tiên phục hồi:</strong>Luyện tập + Phục hồi = Thích ứng (thiếu sẽ cản trở sự tiến bộ)</li><li><strong>Cá nhân hóa:</strong>Điều chỉnh dựa trên các số liệu khách quan (RHR, HRV, hiệu suất) và cảm nhận chủ quan</li></ol></div><p><strong>Các bước hành động:</strong></p><ol><li>Tính WSS hàng tuần hiện tại của bạn bằng máy tính bên dưới</li><li>Đặt mục tiêu thực tế dựa trên cấp độ kinh nghiệm của bạn</li><li>Lập kế hoạch tăng lũy ​​tiến hàng tuần (5-10%)</li><li>Lên lịch phục hồi tuần 3-4 tuần một lần</li><li>Theo dõi nhịp tim Peak-30 và nhịp tim khi nghỉ ngơi hàng ngày</li><li>Sử dụng bảng câu hỏi về sức khỏe để hướng dẫn điều chỉnh hàng ngày</li><li>Review ACWR hàng tuần để sớm nắm bắt những đột biến nguy hiểm</li><li>Ưu tiên giấc ngủ (7-9 tiếng) và dinh dưỡng để phục hồi</li></ol>
+<h2 id="summary">Tóm tắt: Các nguyên tắc tải trọng đào tạo chính</h2>
+<div class="key-finding">
+<strong>Năm trụ cột của quản lý tải đào tạo:</strong>
+<ol>
+<li><strong>Định lượng tải:</strong>Sử dụng WSS, phút nhanh hoặc TRIMP để theo dõi kích thích tập luyện</li>
+<li><strong>Tiến bộ dần dần:</strong>Tăng 5-10% hàng tuần, với tỷ lệ xây dựng:hồi phục 3:1</li>
+<li><strong>Giám sát ACWR:</strong>Giữ tỷ lệ cấp tính:mạn tính trong khoảng 0,80-1,30 để giảm thiểu nguy cơ chấn thương</li>
+<li><strong>Ưu tiên phục hồi:</strong>Luyện tập + Phục hồi = Thích ứng (thiếu sẽ cản trở sự tiến bộ)</li>
+<li><strong>Cá nhân hóa:</strong>Điều chỉnh dựa trên các số liệu khách quan (RHR, HRV, hiệu suất) và cảm nhận chủ quan</li>
+</ol>
+</div>
+<p><strong>Các bước hành động:</strong></p>
+<ol>
+<li>Tính WSS hàng tuần hiện tại của bạn bằng máy tính bên dưới</li>
+<li>Đặt mục tiêu thực tế dựa trên cấp độ kinh nghiệm của bạn</li>
+<li>Lập kế hoạch tăng lũy ​​tiến hàng tuần (5-10%)</li>
+<li>Lên lịch phục hồi tuần 3-4 tuần một lần</li>
+<li>Theo dõi nhịp tim Peak-30 và nhịp tim khi nghỉ ngơi hàng ngày</li>
+<li>Sử dụng bảng câu hỏi về sức khỏe để hướng dẫn điều chỉnh hàng ngày</li>
+<li>Review ACWR hàng tuần để sớm nắm bắt những đột biến nguy hiểm</li>
+<li>Ưu tiên giấc ngủ (7-9 tiếng) và dinh dưỡng để phục hồi</li>
+</ol>
 Máy tính và Công cụ
-<h2 id="calculating">Tính toán khối lượng tập luyện của bạn</h2><p>Sử dụng máy tính miễn phí của chúng tôi để xác định khối lượng luyện tập của bạn:</p><ul><li><a href="/vi/wss-calculator/"><strong>Máy tính WSS</strong></a>— Tính Điểm căng thẳng khi đi bộ đường dài cho các bài tập cá nhân</li></ul>
+<h2 id="calculating">Tính toán khối lượng tập luyện của bạn</h2>
+<p>Sử dụng máy tính miễn phí của chúng tôi để xác định khối lượng luyện tập của bạn:</p>
+<ul>
+<li><a href="/vi/wss-calculator/"><strong>Máy tính WSS</strong></a>— Tính Điểm căng thẳng khi đi bộ đường dài cho các bài tập cá nhân</li>
+</ul>
 Tài liệu tham khảo khoa học
-<h2 id="references">Tài liệu tham khảo khoa học</h2><p>Hướng dẫn này tổng hợp nghiên cứu từ sinh lý học thể dục, khoa học thể thao và các nghiên cứu cụ thể về đi bộ đường dài:</p><ul><li><strong>Del Pozo-Cruz B, và cộng sự. (2022).</strong>"Hiệp hội về số bước đi hàng ngày và cường độ với bệnh tim mạch xảy ra."<em>Mạng JAMA mở</em>5(12):e2248107. [Nghiên cứu nhịp đỉnh-30]</li><li><strong>Gabbett TJ. (2016).</strong>"Nghịch lý ngăn ngừa chấn thương trong tập luyện."<em>Tạp chí Y học Thể thao Anh</em>50:273-280. [ACWR và nguy cơ chấn thương]</li><li><strong>Soligard T và cộng sự. (2016).</strong>"Bao nhiêu là quá nhiều? (Phần 1) Tuyên bố đồng thuận của Ủy ban Olympic quốc tế về tải trọng trong thể thao và nguy cơ chấn thương."<em>Tạp chí Y học Thể thao Anh</em>50:1030-1041.</li><li><strong>Stöggl TL, Sperlich B. (2014).</strong>"Huấn luyện phân cực có tác động lớn hơn đến các biến số sức bền chính so với luyện tập ngưỡng, cường độ cao hoặc khối lượng lớn."<em>Biên giới trong sinh lý học</em>5:33. [Phân bổ cường độ]</li><li><strong>Banister EW. (1991).</strong>"Mô hình hóa thành tích thể thao ưu tú." Trong: MacDougall JD, và cộng sự, biên tập.<em>Kiểm tra sinh lý của vận động viên ưu tú</em>. Động học của con người. [Mẫu tập thể dục chống mệt mỏi, TRIMP]</li><li><strong>Tudor-Locke C, và cộng sự. (2019).</strong>"Nhịp đi bộ đường dài (số bước/phút) và cường độ ở độ tuổi 21-40: CADENCE-người lớn."<em>Đạo luật Int J Hành vi Nutr Phys</em>16:8. [Ngưỡng nhịp]</li></ul><p><strong>Để nghiên cứu thêm:</strong></p><ul><li><a href="/vi/bibliography/">Thư mục khoa học hoàn chỉnh</a></li><li><a href="/vi/research/">Nghiên cứu đi bộ đường dài mới nhất</a></li></ul>
+<h2 id="references">Tài liệu tham khảo khoa học</h2>
+<p>Hướng dẫn này tổng hợp nghiên cứu từ sinh lý học thể dục, khoa học thể thao và các nghiên cứu cụ thể về đi bộ đường dài:</p>
+<ul>
+<li><strong>Del Pozo-Cruz B, và cộng sự. (2022).</strong>"Hiệp hội về số bước đi hàng ngày và cường độ với bệnh tim mạch xảy ra."<em>Mạng JAMA mở</em>5(12):e2248107. [Nghiên cứu nhịp đỉnh-30]</li>
+<li><strong>Gabbett TJ. (2016).</strong>"Nghịch lý ngăn ngừa chấn thương trong tập luyện."<em>Tạp chí Y học Thể thao Anh</em>50:273-280. [ACWR và nguy cơ chấn thương]</li>
+<li><strong>Soligard T và cộng sự. (2016).</strong>"Bao nhiêu là quá nhiều? (Phần 1) Tuyên bố đồng thuận của Ủy ban Olympic quốc tế về tải trọng trong thể thao và nguy cơ chấn thương."<em>Tạp chí Y học Thể thao Anh</em>50:1030-1041.</li>
+<li><strong>Stöggl TL, Sperlich B. (2014).</strong>"Huấn luyện phân cực có tác động lớn hơn đến các biến số sức bền chính so với luyện tập ngưỡng, cường độ cao hoặc khối lượng lớn."<em>Biên giới trong sinh lý học</em>5:33. [Phân bổ cường độ]</li>
+<li><strong>Banister EW. (1991).</strong>"Mô hình hóa thành tích thể thao ưu tú." Trong: MacDougall JD, và cộng sự, biên tập.<em>Kiểm tra sinh lý của vận động viên ưu tú</em>. Động học của con người. [Mẫu tập thể dục chống mệt mỏi, TRIMP]</li>
+<li><strong>Tudor-Locke C, và cộng sự. (2019).</strong>"Nhịp đi bộ đường dài (số bước/phút) và cường độ ở độ tuổi 21-40: CADENCE-người lớn."<em>Đạo luật Int J Hành vi Nutr Phys</em>16:8. [Ngưỡng nhịp]</li>
+</ul>
+<p><strong>Để nghiên cứu thêm:</strong></p>
+<ul>
+<li><a href="/vi/bibliography/">Thư mục khoa học hoàn chỉnh</a></li>
+<li><a href="/vi/research/">Nghiên cứu đi bộ đường dài mới nhất</a></li>
+</ul>
 Các bước tiếp theo
-<h2 id="next-steps">Các bước tiếp theo</h2><ul><li><a href="/vi/walking-zones/">Tìm hiểu về các khu tập luyện dựa trên nhịp</a></li><li><a href="/vi/formulas/">Khám phá các công thức và tính toán tải trọng đào tạo</a></li><li><a href="/vi/gait-analysis/">Hiểu các số liệu về dáng đi để theo dõi</a></li><li><a href="/vi/stride-mechanics/">Tối ưu hóa cơ sinh học đi bộ đường dài</a></li></ul></div>
+<h2 id="next-steps">Các bước tiếp theo</h2>
+<ul>
+<li><a href="/vi/walking-zones/">Tìm hiểu về các khu tập luyện dựa trên nhịp</a></li>
+<li><a href="/vi/formulas/">Khám phá các công thức và tính toán tải trọng đào tạo</a></li>
+<li><a href="/vi/gait-analysis/">Hiểu các số liệu về dáng đi để theo dõi</a></li>
+<li><a href="/vi/stride-mechanics/">Tối ưu hóa cơ sinh học đi bộ đường dài</a></li>
+</ul>
+</div>
 Thanh bên
-<aside class="sidebar"><div class="toc"><h3>Mục lục</h3><ul><li><a href="#intro">Tải đào tạo là gì?</a></li><li><a href="#peak30">Nhịp độ đỉnh-30</a></li><li><a href="#brisk-bouts">Những trận đấu nhanh</a></li><li><a href="#wss">Điểm căng thẳng khi đi bộ đường dài</a></li><li><a href="#weekly-load">Nguyên tắc hàng tuần</a></li><li><a href="#acwr">Cấp tính:Mãn tính Tỷ lệ</a></li><li><a href="#progression">Chiến lược thăng tiến</a></li><li><a href="#monitoring">Giám sát tải</a></li><li><a href="#intensity">Phân phối cường độ</a></li><li><a href="#recovery">Chiến lược phục hồi</a></li><li><a href="#advanced">Các khái niệm nâng cao</a></li><li><a href="#practical">Ứng dụng thực tế</a></li><li><a href="#summary">Tóm tắt</a></li><li><a href="#calculating">Máy tính</a></li><li><a href="#references">Tài liệu tham khảo</a></li></ul></div><div class="cta-box"><h3>Theo dõi tải của bạn</h3><p>Tự động theo dõi WSS, nhịp Peak-30 và ACWR bằng Hike Analytics.</p><a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Tải ứng dụng</a></div><div class="tip-box"><h4>Mẹo nhanh</h4><p>Bắt đầu theo dõi nhịp Peak-30 của bạn ngay hôm nay! Đặt mục tiêu ≥100 spm trong ít nhất 30 phút để đạt ngưỡng có lợi cho sức khỏe.</p></div></aside></div></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Tải xuống</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Tải xuống trên App Store"><img src="../../assets/images/badge-app-store.svg"
+<aside class="sidebar">
+<div class="toc">
+<h3>Mục lục</h3>
+<ul>
+<li><a href="#intro">Tải đào tạo là gì?</a></li>
+<li><a href="#peak30">Nhịp độ đỉnh-30</a></li>
+<li><a href="#brisk-bouts">Những trận đấu nhanh</a></li>
+<li><a href="#wss">Điểm căng thẳng khi đi bộ đường dài</a></li>
+<li><a href="#weekly-load">Nguyên tắc hàng tuần</a></li>
+<li><a href="#acwr">Cấp tính:Mãn tính Tỷ lệ</a></li>
+<li><a href="#progression">Chiến lược thăng tiến</a></li>
+<li><a href="#monitoring">Giám sát tải</a></li>
+<li><a href="#intensity">Phân phối cường độ</a></li>
+<li><a href="#recovery">Chiến lược phục hồi</a></li>
+<li><a href="#advanced">Các khái niệm nâng cao</a></li>
+<li><a href="#practical">Ứng dụng thực tế</a></li>
+<li><a href="#summary">Tóm tắt</a></li>
+<li><a href="#calculating">Máy tính</a></li>
+<li><a href="#references">Tài liệu tham khảo</a></li>
+</ul>
+</div>
+<div class="cta-box">
+<h3>Theo dõi tải của bạn</h3>
+<p>Tự động theo dõi WSS, nhịp Peak-30 và ACWR bằng Hike Analytics.</p>
+<a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Tải ứng dụng</a>
+</div>
+<div class="tip-box">
+<h4>Mẹo nhanh</h4>
+<p>Bắt đầu theo dõi nhịp Peak-30 của bạn ngay hôm nay! Đặt mục tiêu ≥100 spm trong ít nhất 30 phút để đạt ngưỡng có lợi cho sức khỏe.</p>
+</div>
+</aside>
+</div>
+</div>
+</section>
+    
+
+    
+    
+<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
+  <div class="container container-narrow">
+    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
+      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
+      <div class="eeat-details">
+        
+        
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+          Expertly Reviewed by 
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">AnalyticsZone Team</span>
+          </span>
+        </h3>
+        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+    
+<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load">
+  <div class="container ai-citation-shell">
+    <h2 class="ai-citation-title">Hướng dẫn về khối lượng tập luyện đi bộ đường dài: WSS, Số liệu...</h2>
+    <p class="ai-citation-answer">Tìm hiểu số liệu về tải trọng khi tập luyện đi bộ đường dài. Tính toán WSS, theo dõi khối lượng hàng tuần, giám sát phục hồi. Theo dõi thể lực một cách khoa học. Bao...</p>
+
+    <ul class="ai-citation-facts" role="list">
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">📅</span>
+        <span>2026-03-11</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact ai-citation-keywords">
+        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
+        <span>điểm số căng thẳng khi đi bộ đường dài · Máy tính WSS · tải đào tạo đi bộ đường dài · khối lượng đi bộ đường dài hàng tuần · theo dõi tập thể dục đi bộ đường dài</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
+        <a href="../../vi/bibliography/">
+          
+          Thư mục
+          
+        </a>
+      </li>
+      
+    </ul>
+
+    
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Hike Analytics</h2>
+                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Tải xuống</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Tải xuống trên App Store">
+                        <img src="../../assets/images/badge-app-store.svg"
                             alt="Tải xuống trên App Store" width="135"
-                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Tải nó trên Google Play"><img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Tải nó trên Google Play">
+                        <img src="../../assets/images/badge-google-play.svg"
                             alt="Tải nó trên Google Play" width="135"
-                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Có sẵn ở</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Có sẵn ở</h3>
+            <div class="lang-grid">
+                
+                <a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a><a href="/am/" class="lang-link"
+                </a>
+                
+                <a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a><a href="/ar/" class="lang-link"
+                </a>
+                
+                <a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a><a href="/bg/" class="lang-link"
+                </a>
+                
+                <a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a><a href="/bn/" class="lang-link"
+                </a>
+                
+                <a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a><a href="/ca/" class="lang-link"
+                </a>
+                
+                <a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a><a href="/cs/" class="lang-link"
+                </a>
+                
+                <a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a><a href="/da/" class="lang-link"
+                </a>
+                
+                <a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a><a href="/de/" class="lang-link"
+                </a>
+                
+                <a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a><a href="/el/" class="lang-link"
+                </a>
+                
+                <a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a><a href="/en/" class="lang-link"
+                </a>
+                
+                <a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a><a href="/es/" class="lang-link"
+                </a>
+                
+                <a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a><a href="/et/" class="lang-link"
+                </a>
+                
+                <a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a><a href="/fa/" class="lang-link"
+                </a>
+                
+                <a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a><a href="/fi/" class="lang-link"
+                </a>
+                
+                <a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a><a href="/fr/" class="lang-link"
+                </a>
+                
+                <a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a><a href="/gu/" class="lang-link"
+                </a>
+                
+                <a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a><a href="/ha/" class="lang-link"
+                </a>
+                
+                <a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a><a href="/he/" class="lang-link"
+                </a>
+                
+                <a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a><a href="/hi/" class="lang-link"
+                </a>
+                
+                <a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a><a href="/hr/" class="lang-link"
+                </a>
+                
+                <a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a><a href="/hu/" class="lang-link"
+                </a>
+                
+                <a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a><a href="/id/" class="lang-link"
+                </a>
+                
+                <a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a><a href="/is/" class="lang-link"
+                </a>
+                
+                <a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a><a href="/it/" class="lang-link"
+                </a>
+                
+                <a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a><a href="/ja/" class="lang-link"
+                </a>
+                
+                <a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a><a href="/km/" class="lang-link"
+                </a>
+                
+                <a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a><a href="/kn/" class="lang-link"
+                </a>
+                
+                <a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a><a href="/ko/" class="lang-link"
+                </a>
+                
+                <a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a><a href="/lt/" class="lang-link"
+                </a>
+                
+                <a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a><a href="/lv/" class="lang-link"
+                </a>
+                
+                <a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a><a href="/ms/" class="lang-link"
+                </a>
+                
+                <a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a><a href="/my/" class="lang-link"
+                </a>
+                
+                <a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a><a href="/nb/" class="lang-link"
+                </a>
+                
+                <a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a><a href="/nl/" class="lang-link"
+                </a>
+                
+                <a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a><a href="/pl/" class="lang-link"
+                </a>
+                
+                <a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a><a href="/pt/" class="lang-link"
+                </a>
+                
+                <a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a><a href="/pt-br/" class="lang-link"
+                </a>
+                
+                <a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a><a href="/ro/" class="lang-link"
+                </a>
+                
+                <a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a><a href="/ru/" class="lang-link"
+                </a>
+                
+                <a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a><a href="/sk/" class="lang-link"
+                </a>
+                
+                <a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a><a href="/sl/" class="lang-link"
+                </a>
+                
+                <a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a><a href="/sr/" class="lang-link"
+                </a>
+                
+                <a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a><a href="/sv/" class="lang-link"
+                </a>
+                
+                <a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a><a href="/sw/" class="lang-link"
+                </a>
+                
+                <a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a><a href="/ta/" class="lang-link"
+                </a>
+                
+                <a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a><a href="/te/" class="lang-link"
+                </a>
+                
+                <a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a><a href="/th/" class="lang-link"
+                </a>
+                
+                <a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a><a href="/tl/" class="lang-link"
+                </a>
+                
+                <a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a><a href="/tr/" class="lang-link"
+                </a>
+                
+                <a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a><a href="/uk/" class="lang-link"
+                </a>
+                
+                <a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a><a href="/ur/" class="lang-link"
+                </a>
+                
+                <a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a><a href="/vi/" class="lang-link active"
+                </a>
+                
+                <a href="/vi/" class="lang-link active"
                     hreflang="vi" >
                     Tiếng Việt
-                </a><a href="/yo/" class="lang-link"
+                </a>
+                
+                <a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a><a href="/zh/" class="lang-link"
+                </a>
+                
+                <a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
                 &copy; 2026 Hike Analytics. Mọi quyền được bảo lưu
-            </p><ul class="footer-legal"><li><a href="/vi/privacy/">Sự riêng tư</a></li><li><a href="/vi/terms/">Điều khoản</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn.</p><a href="/vi/privacy/" class="text-sm">Tìm hiểu thêm</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Sự suy sụp</button><button id="cookie-accept" class="btn btn-primary btn-small">Chấp nhận</button></div></div></div><script src="../../assets/js/core.min.js?v=f4a4f52b4341" defer></script><script src="../../assets/js/search.min.js?v=f4a4f52b4341" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/vi/privacy/">Sự riêng tư</a></li>
+                <li><a href="/vi/terms/">Điều khoản</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn.</p>
+            <a href="/vi/privacy/" class="text-sm">Tìm hiểu thêm</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Sự suy sụp</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Chấp nhận</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../../assets/js/core.min.js?v=19fdca55b3da" defer></script>
+  <script src="../../assets/js/search.min.js?v=19fdca55b3da" defer></script>
+  
+
+  
+  
+  <script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
+</body>
+
+</html>

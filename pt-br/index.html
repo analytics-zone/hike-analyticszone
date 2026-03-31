@@ -1,61 +1,247 @@
-<!DOCTYPE html><html lang="pt-br" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet"><title>Private Hiking Analytics - Análise de marcha, WSS, métricas de...</title><meta name="description" content="Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na..."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="aplicativo de análise de caminhadas, aplicativo de análise de marcha, Aplicativo iOS que prioriza a privacidade, métricas de saúde para caminhadas, análise de passada"><link rel="canonical" href="https://hike.analyticszone.app/pt-br/"><meta property="og:type" content="website"><meta property="og:url" content="https://hike.analyticszone.app/pt-br/"><meta property="og:title" content="Private Hiking Analytics - Análise de marcha, WSS, métricas de..."><meta property="og:description" content="Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na..."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/pt-br/"><meta name="twitter:title" content="Private Hiking Analytics - Análise de marcha, WSS, métricas de..."><meta name="twitter:description" content="Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na..."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/"><link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/"><link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/"><link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/"><link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/"><link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/"><link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/"><link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/"><link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/"><link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet">
+
+  
+  <title>Private Hiking Analytics - Análise de marcha, WSS, métricas de...</title>
+  <meta name="description" content="Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na...">
+  <meta name="author" content="AnalyticsZone Team">
+
+  
+  
+  <meta name="keywords" content="aplicativo de análise de caminhadas, aplicativo de análise de marcha, Aplicativo iOS que prioriza a privacidade, métricas de saúde para caminhadas, análise de passada">
+  
+
+  
+  <link rel="canonical" href="https://hike.analyticszone.app/pt-br/">
+
+  
+  
+
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hike.analyticszone.app/pt-br/">
+  <meta property="og:title" content="Private Hiking Analytics - Análise de marcha, WSS, métricas de...">
+  <meta property="og:description" content="Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na...">
+  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Hike Analytics">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hike.analyticszone.app/pt-br/">
+  <meta name="twitter:title" content="Private Hiking Analytics - Análise de marcha, WSS, métricas de...">
+  <meta name="twitter:description" content="Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na...">
+  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
+  
+  <meta name="twitter:site" content="@hikeanalytics">
+  <meta name="twitter:creator" content="@hikeanalytics">
+  
+
+  
+  
+  <link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/">
+  
+  <link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/">
+  
+  <link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/">
+  
+  <link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/">
+  
+  <link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/">
+  
+  <link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/">
+  
+  <link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/">
+  
+  <link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/">
+  
+  <link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/">
+  
+  <link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/">
+  
+  <link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/">
+  
+  <link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/">
+  
+  <link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/">
+  
+  <link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/">
+  
+  <link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/">
+  
+  <link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/">
+  
+  <link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/">
+  
+  <link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/">
+  
+  <link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/">
+  
+  <link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/">
+  
+  <link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/">
+  
+  <link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/">
+  
+  <link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/">
+  
+  <link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/">
+  
+  <link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/">
+  
+  <link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/">
+  
+  <link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/">
+  
+  <link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/">
+  
+  <link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/">
+  
+  <link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/">
+  
+  <link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/">
+  
+  <link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/">
+  
+  <link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/">
+  
+  <link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/">
+  
+  <link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/">
+  
+  <link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/">
+  
+  <link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/">
+  
+  <link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/">
+  
+  <link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/">
+  
+  <link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/">
+  
+  <link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/">
+  
+  <link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/">
+  
+  <link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/">
+  
+  <link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/">
+  
+  <link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/">
+  
+  <link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/">
+  
+  <link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/">
+  
+  <link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/">
+  
+  <link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/">
+  
+  <link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/">
+  
+  <link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/">
+  
+  <link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/">
+  
+  <link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/">
+  
+  <link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/">
+  
+  <link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/">
+  
+  <link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  
+  
+  
+  
+  <meta name="robots" content="index, follow">
+  
+
+  
+  
+  
+  <meta name="apple-itunes-app" content="app-id=6760036261">
+  
+
+  
+  <style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -314,7 +500,20 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=f4a4f52b4341"><script type="application/ld+json">
+</style>
+
+  
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  
+  <link rel="stylesheet" href="../assets/css/main.min.css?v=19fdca55b3da">
+
+  
+  
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -349,7 +548,10 @@ img[width][height] {
     
   ]
 }
-</script><script type="application/ld+json">
+</script>
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -358,7 +560,11 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "pt-br"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -373,7 +579,14 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script><script type="application/ld+json">
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -387,7 +600,7 @@ img[width][height] {
     "url": "https://hike.analyticszone.app"
   },
   "datePublished": "2025-01-15",
-  "dateModified": "2026-03-11",
+  "dateModified": "2026-03-24",
   "keywords": ["aplicativo de análise de caminhadas", "aplicativo de análise de marcha", "Aplicativo iOS que prioriza a privacidade", "métricas de saúde para caminhadas", "análise de passada"],
   "about": [
     {
@@ -416,7 +629,22 @@ img[width][height] {
     }
   ]
 }
-</script><script>
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  <script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -430,457 +658,1465 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script></head><body><a href="#main-content" class="skip-link">Pular para o conteúdo</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/pt-br/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/pt-br/" 
+  </script>
+</head>
+
+<body>
+  
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+  
+  <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/pt-br/" class="site-logo">
+                <picture>
+                    <source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
+                </picture>
+                <span class="logo-text">Hike Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <div class="nav-group-left">
+                    <ul>
+                        
+                        <li>
+                            
+                            <a href="/pt-br/" 
                                 aria-current="">
                                 Lar
-                            </a></li><li class="has-submenu" ><a href="/pt-br/getting-started/" class="nav-label">Aprender</a><ul class="submenu"><li><a href="/pt-br/getting-started/" 
+                            </a>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/pt-br/getting-started/" class="nav-label">Aprender</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/pt-br/getting-started/" 
                                         aria-current="">
                                         Começando
-                                    </a></li><li><a href="/pt-br/walking-zones/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/walking-zones/" 
                                         aria-current="">
                                         Zonas de caminhada
-                                    </a></li><li><a href="/pt-br/gait-analysis/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/gait-analysis/" 
                                         aria-current="">
                                         Análise da Marcha
-                                    </a></li><li><a href="/pt-br/training-load/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/training-load/" 
                                         aria-current="">
                                         Carga de treinamento
-                                    </a></li><li><a href="/pt-br/wss-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/wss-calculator/" 
                                         aria-current="">
                                         Calculadora WSS
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/pt-br/research/" class="nav-label">Ciência</a><ul class="submenu"><li><a href="/pt-br/research/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/pt-br/research/" class="nav-label">Ciência</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/pt-br/research/" 
                                         aria-current="">
                                         Pesquisar
-                                    </a></li><li><a href="/pt-br/formulas/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/formulas/" 
                                         aria-current="">
                                         Fórmulas
-                                    </a></li><li><a href="/pt-br/gait-efficiency/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/gait-efficiency/" 
                                         aria-current="">
                                         Eficiência da marcha
-                                    </a></li><li><a href="/pt-br/stride-mechanics/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/stride-mechanics/" 
                                         aria-current="">
                                         Mecânica da passada
-                                    </a></li><li><a href="/pt-br/walking-vs-running/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/walking-vs-running/" 
                                         aria-current="">
                                         Caminhada vs Corrida
-                                    </a></li><li><a href="/pt-br/benchmarks/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/benchmarks/" 
                                         aria-current="">
                                         Referências
-                                    </a></li><li><a href="/pt-br/bibliography/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/bibliography/" 
                                         aria-current="">
                                         Bibliografia
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/pt-br/for-health/" class="nav-label">Para você</a><ul class="submenu"><li><a href="/pt-br/for-health/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/pt-br/for-health/" class="nav-label">Para você</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/pt-br/for-health/" 
                                         aria-current="">
                                         Para a saúde
-                                    </a></li><li><a href="/pt-br/for-fitness/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/for-fitness/" 
                                         aria-current="">
                                         Para condicionamento físico
-                                    </a></li><li><a href="/pt-br/for-seniors/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/for-seniors/" 
                                         aria-current="">
                                         Para Idosos
-                                    </a></li><li><a href="/pt-br/for-rehabilitation/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/for-rehabilitation/" 
                                         aria-current="">
                                         Para reabilitação
-                                    </a></li></ul></li><li class="has-submenu" ><a href="/pt-br/cadence-calculator/" class="nav-label">Ferramentas</a><ul class="submenu"><li><a href="/pt-br/cadence-calculator/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li class="has-submenu" >
+                            
+                            
+                            <a href="/pt-br/cadence-calculator/" class="nav-label">Ferramentas</a>
+                            
+                            <ul class="submenu">
+                                
+                                <li>
+                                    <a href="/pt-br/cadence-calculator/" 
                                         aria-current="">
                                         Calculadora de cadência
-                                    </a></li><li><a href="/pt-br/gait-assessment/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/gait-assessment/" 
                                         aria-current="">
                                         Avaliação da marcha
-                                    </a></li><li><a href="/pt-br/vo2max-calculator/" 
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/pt-br/vo2max-calculator/" 
                                         aria-current="">
                                         Calculadora VO₂max
-                                    </a></li></ul></li><li><a href="/pt-br/contact/" 
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                            </li>
+                            
+                        <li>
+                            
+                            <a href="/pt-br/contact/" 
                                 aria-current="">
                                 Contato
-                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a>
+                            
+                            </li>
+                            
+                    </ul>
+
+                    
+                    <div class="search-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Selecione o idioma"><option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                    </div>
+
+                    
+                    <select class="language-selector" id="language-select" aria-label="Selecione o idioma">
+                        
+                        <option value="af" >
                             Afrikaans
-                        </option><option value="am" >
+                        </option>
+                        
+                        <option value="am" >
                             አမ္ဟာ
-                        </option><option value="ar" >
+                        </option>
+                        
+                        <option value="ar" >
                             العربية
-                        </option><option value="bg" >
+                        </option>
+                        
+                        <option value="bg" >
                             Български
-                        </option><option value="bn" >
+                        </option>
+                        
+                        <option value="bn" >
                             বাংলা
-                        </option><option value="ca" >
+                        </option>
+                        
+                        <option value="ca" >
                             Català
-                        </option><option value="cs" >
+                        </option>
+                        
+                        <option value="cs" >
                             Čeština
-                        </option><option value="da" >
+                        </option>
+                        
+                        <option value="da" >
                             Dansk
-                        </option><option value="de" >
+                        </option>
+                        
+                        <option value="de" >
                             Deutsch
-                        </option><option value="el" >
+                        </option>
+                        
+                        <option value="el" >
                             Ελληνικά
-                        </option><option value="en" >
+                        </option>
+                        
+                        <option value="en" >
                             English
-                        </option><option value="es" >
+                        </option>
+                        
+                        <option value="es" >
                             Español
-                        </option><option value="et" >
+                        </option>
+                        
+                        <option value="et" >
                             Eesti
-                        </option><option value="fa" >
+                        </option>
+                        
+                        <option value="fa" >
                             فارسی
-                        </option><option value="fi" >
+                        </option>
+                        
+                        <option value="fi" >
                             Suomi
-                        </option><option value="fr" >
+                        </option>
+                        
+                        <option value="fr" >
                             Français
-                        </option><option value="gu" >
+                        </option>
+                        
+                        <option value="gu" >
                             ગુજરાતી
-                        </option><option value="ha" >
+                        </option>
+                        
+                        <option value="ha" >
                             Hausa
-                        </option><option value="he" >
+                        </option>
+                        
+                        <option value="he" >
                             עברית
-                        </option><option value="hi" >
+                        </option>
+                        
+                        <option value="hi" >
                             हिन्दी
-                        </option><option value="hr" >
+                        </option>
+                        
+                        <option value="hr" >
                             Hrvatski
-                        </option><option value="hu" >
+                        </option>
+                        
+                        <option value="hu" >
                             Magyar
-                        </option><option value="id" >
+                        </option>
+                        
+                        <option value="id" >
                             Bahasa Indonesia
-                        </option><option value="is" >
+                        </option>
+                        
+                        <option value="is" >
                             Íslenska
-                        </option><option value="it" >
+                        </option>
+                        
+                        <option value="it" >
                             Italiano
-                        </option><option value="ja" >
+                        </option>
+                        
+                        <option value="ja" >
                             日本語
-                        </option><option value="km" >
+                        </option>
+                        
+                        <option value="km" >
                             ភាសាខ្មែរ
-                        </option><option value="kn" >
+                        </option>
+                        
+                        <option value="kn" >
                             ಕನ್ನಡ
-                        </option><option value="ko" >
+                        </option>
+                        
+                        <option value="ko" >
                             한국어
-                        </option><option value="lt" >
+                        </option>
+                        
+                        <option value="lt" >
                             Lietuvių
-                        </option><option value="lv" >
+                        </option>
+                        
+                        <option value="lv" >
                             Latviešu
-                        </option><option value="ms" >
+                        </option>
+                        
+                        <option value="ms" >
                             Bahasa Melayu
-                        </option><option value="my" >
+                        </option>
+                        
+                        <option value="my" >
                             မြန်မာ
-                        </option><option value="nb" >
+                        </option>
+                        
+                        <option value="nb" >
                             Norsk Bokmål
-                        </option><option value="nl" >
+                        </option>
+                        
+                        <option value="nl" >
                             Nederlands
-                        </option><option value="pl" >
+                        </option>
+                        
+                        <option value="pl" >
                             Polski
-                        </option><option value="pt" >
+                        </option>
+                        
+                        <option value="pt" >
                             Português
-                        </option><option value="pt-br" selected>
+                        </option>
+                        
+                        <option value="pt-br" selected>
                             Português (Brasil)
-                        </option><option value="ro" >
+                        </option>
+                        
+                        <option value="ro" >
                             Română
-                        </option><option value="ru" >
+                        </option>
+                        
+                        <option value="ru" >
                             Русский
-                        </option><option value="sk" >
+                        </option>
+                        
+                        <option value="sk" >
                             Slovenčina
-                        </option><option value="sl" >
+                        </option>
+                        
+                        <option value="sl" >
                             Slovenščina
-                        </option><option value="sr" >
+                        </option>
+                        
+                        <option value="sr" >
                             Српски
-                        </option><option value="sv" >
+                        </option>
+                        
+                        <option value="sv" >
                             Svenska
-                        </option><option value="sw" >
+                        </option>
+                        
+                        <option value="sw" >
                             Kiswahili
-                        </option><option value="ta" >
+                        </option>
+                        
+                        <option value="ta" >
                             தமிழ்
-                        </option><option value="te" >
+                        </option>
+                        
+                        <option value="te" >
                             తెలుగు
-                        </option><option value="th" >
+                        </option>
+                        
+                        <option value="th" >
                             ไทย
-                        </option><option value="tl" >
+                        </option>
+                        
+                        <option value="tl" >
                             Tagalog
-                        </option><option value="tr" >
+                        </option>
+                        
+                        <option value="tr" >
                             Türkçe
-                        </option><option value="uk" >
+                        </option>
+                        
+                        <option value="uk" >
                             Українська
-                        </option><option value="ur" >
+                        </option>
+                        
+                        <option value="ur" >
                             اردو
-                        </option><option value="vi" >
+                        </option>
+                        
+                        <option value="vi" >
                             Tiếng Việt
-                        </option><option value="yo" >
+                        </option>
+                        
+                        <option value="yo" >
                             Yorùbá
-                        </option><option value="zh" >
+                        </option>
+                        
+                        <option value="zh" >
                             中文
-                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor"><path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option>
+                        
+                    </select>
+                </div>
+
+                <div class="nav-group-right">
+                    
+
+
+                    
+                    <div class="header-app-buttons">
+                        
+                        
+                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                            </svg>
+                        </a>
+                        
+
+                        
+                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
+                            </svg>
+                        </a>
+                        
+                        
+                    </div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="suite-menu-container">
+                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Alternar menu"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content">
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </button>
+                        <div class="suite-dropdown hidden" id="suite-dropdown">
+                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
+                            <div class="suite-apps-grid">
+                                
+                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
+                                
+                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
+                                
+                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
+                                
+                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
+                                
+                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
+                                
+                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
+                                
+                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
+                                
+                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
+                                
+                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Alternar menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+  
+  
+
+
+  
+  <main id="main-content" class="main-content">
     
-    Hike Analytics App Landing Page - Homepage
-Hero Section with App Introduction
-<section class="app-hero"><div class="container"><div class="app-hero-content"><div class="app-hero-text"><div class="app-hero-badge"><span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span><span>Science-Based Hiking Analytics</span></div><h1>Hike Smarter, Live Healthier</h1><p class="app-hero-subtitle">Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and comprehensive
-          health tracking.
-          Powered by peer-reviewed studies including CADENCE-Adults, Peak-30 research, and biomechanics science.</p><div class="app-hero-cta"><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Download on App Store</a><a class="btn btn-large btn-secondary" href="#science">Explore the Science</a></div><p class="mt-6 text-sm-muted">✓ 7-day free trial    ✓ No account required    ✓ 100% local data</p></div><div class="app-hero-mockup"><div class="mockup-phone"><img alt="Hike Analytics iOS app showing hiking workouts with gait metrics and health data on iPhone" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/></div></div></div></div></section>
-Scientific Foundation Section - NEW
-<section class="scientific-foundation" id="science"><div class="container"><div class="section-header"><div class="section-badge">Research-Backed</div><h2 class="section-title">Built on Scientific Evidence</h2><p class="section-subtitle">Every metric and recommendation is grounded in peer-reviewed research</p></div><div class="science-highlights"><div class="science-card"><div class="science-number">78,500</div><h3>Peak-30 Cadence Research</h3><p>Based on UK Biobank study showing ≥100 spm for 30 minutes independently predicts 40-50% lower mortality risk
-          (Del Pozo-Cruz et al., JAMA 2022)</p></div><div class="science-card"><div class="science-number">100 spm</div><h3>Moderate Intensity Threshold</h3><p>CADENCE-Adults study (Tudor-Locke et al., 2019) established 100 steps/minute = 3 METs with 86% sensitivity,
-          89.6% specificity—the foundation of our cadence zones</p></div><div class="science-card"><div class="science-number">2-4×</div><h3>ACWR Injury Prevention</h3><p>Acute:Chronic Workload Ratio &gt;1.50 increases injury risk 2-4× (Gabbett, Br J Sports Med 2016)—we track this
-          automatically to keep you safe</p></div><div class="science-card"><div class="science-number">11</div><h3>Validated Formulas</h3><p>From Moore's cadence→METs equation to Cost of Transport calculations,<a href="/pt-br/formulas/">every
-            formula</a>includes validation data and clinical interpretation</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/pt-br/bibliography/">View 50+ Scientific References →</a></div></div></section>
-Key Features Section
-<section class="app-features" id="features"><div class="container"><div class="section-header"><div class="section-badge">Features</div><h2 class="section-title">Advanced Hiking Performance Metrics</h2><p class="section-subtitle">Professional-grade analysis designed for hikers at every level</p></div><div class="app-features-grid"><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-zones"></use></svg></div><h3>Cadence-Based Training Zones</h3><p>Train with<a href="/pt-br/walking-zones/">5 research-backed zones</a>(60-99 spm to 130+ spm) based on
-          CADENCE-Adults study. More practical than heart rate zones—no chest strap needed. Track Peak-30 cadence daily.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>Comprehensive Gait Analysis</h3><p>Track<a href="/pt-br/gait-analysis/">7 essential gait metrics</a>: cadence, stride length (40-50%
-          height), ground contact time (200-300ms), double support (20-30%), asymmetry (GSI formula), speed, and
-          vertical oscillation (4-8cm).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-load"></use></svg></div><h3>Training Load Management</h3><p>Prevent overtraining with<a href="/pt-br/training-load/">Hiking Stress Score (WSS)</a>and ACWR
-          tracking. Monitor acute:chronic ratio (keep 0.80-1.30) and get personalized recovery recommendations based on
-          your load.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-stride"></use></svg></div><h3>Biomechanics &amp; Efficiency</h3><p>Deep<a href="/pt-br/stride-mechanics/">stride mechanics analysis</a>and<a href="/pt-br/gait-efficiency/">hiking economy</a>tracking. Optimize Cost of Transport (~0.48-0.55
-          kcal/kg/km at 1.3 m/s), identify gait deviations, improve efficiency by 10-15%.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-health"></use></svg></div><h3>Health Integration</h3><p>Seamless Apple Health integration. Import hiking workouts automatically and sync heart rate, distance,
-          steps, and health metrics. Compatible with Apple Watch mobility metrics (Hiking Steadiness, Double Support %,
-          Asymmetry).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-privacy"></use></svg></div><h3>Complete Privacy</h3><p>All your hiking data stays on your iPhone. No cloud sync, no accounts, no tracking. Your health metrics are
-          100% private and secure with local processing. GDPR and HIPAA philosophy compliant.</p></div></div></div></section>
-Scientific Differentiators Section - NEW
-<section class="differentiators"><div class="container"><div class="section-header"><div class="section-badge">Why Hike Analytics</div><h2 class="section-title">The Only Hiking App Built on Science</h2><p class="section-subtitle">Not just step counting—comprehensive analytics backed by biomechanics research</p></div><div class="differentiator-list"><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Cadence Over Heart Rate</h3><p><strong>Why it matters:</strong>Heart rate varies with heat, stress, caffeine, illness. Cadence is
-            reliable, practical, and proven. The CADENCE-Adults study showed 100 spm = moderate intensity with 86%
-            sensitivity—more accurate than HR estimation.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Peak-30 Cadence Tracking</h3><p><strong>Breakthrough metric:</strong>Your best 30 consecutive minutes of hiking per day independently
-            predicts cardiovascular health and mortality (78,500 UK Biobank participants). We track this daily—no other
-            hiking app does.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Injury Prevention with ACWR</h3><p><strong>Sports science adapted for hiking:</strong>Monitor your Acute:Chronic Workload Ratio to prevent
-            overuse injuries. Research shows ACWR &gt;1.50 = 2-4× injury risk. We alert you before dangerous spikes occur.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Hiking Economy Optimization</h3><p><strong>Energy efficiency:</strong>Track Cost of Transport and hiking efficiency (EF, Vertical Ratio).
-            Improve economy by 10-15% through Zone 2 training, stride optimization, and strength work—with specific
-            guidance.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Gait Symmetry &amp; Fall Risk</h3><p><strong>Clinical-grade metrics:</strong>Calculate Gait Symmetry Index (GSI) to detect asymmetry. Double
-            support &gt;35% and hiking speed &lt;0.8 m/s indicate elevated fall risk—critical for older adults and
-              rehabilitation.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>50+ Peer-Reviewed Citations</h3><p><strong>Evidence-based guidance:</strong>Every recommendation links to<a href="/pt-br/bibliography/">published research</a>. From Tudor-Locke's cadence thresholds to
-            Studenski's gait speed vital sign—transparency in science.</p></div></div></div></div></section>
-How It Works Section
-<section class="how-it-works"><div class="container"><div class="section-header"><div class="section-badge">How It Works</div><h2 class="section-title">Start Hiking Smarter in 3 Steps</h2></div><div class="steps-container steps-grid"><div class="step-card"><div class="step-number">1</div><h3>Connect Apple Health</h3><p>Import your hiking workouts automatically from Apple Health. Hike Analytics analyzes your historical data to
-          establish baseline metrics and calculate your chronic training load (28-day average).</p></div><div class="step-card"><div class="step-number">2</div><h3>Get Evidence-Based Insights</h3><p>Receive comprehensive analysis including Peak-30 cadence, gait metrics, hiking economy (Cost of Transport),
-          and ACWR. Understand your patterns with research-backed thresholds.</p></div><div class="step-card"><div class="step-number">3</div><h3>Train Scientifically</h3><p>Follow personalized recommendations for cadence zones, training load progression (5-10% weekly), and
-          recovery. Track improvements in efficiency, speed, and health outcomes over time.</p></div></div></div></section>
-Who It's For Section
-<section class="target-audience"><div class="container"><div class="section-header"><div class="section-badge">Who It's For</div><h2 class="section-title">Perfect For Every Hiker</h2></div><div class="audience-grid"><div class="audience-card"><h3>Health Enthusiasts</h3><p>Achieve 150 min/week moderate activity (100+ spm) guideline. Track Peak-30 cadence for cardiovascular health.
-          Meet WHO/CDC recommendations with precision—not just step counting.</p></div><div class="audience-card"><h3>Fitness Hikers</h3><p>Train with cadence zones (Zone 2 at 100-110 spm for aerobic base, intervals at 120-130 spm). Improve hiking
-          economy by 10-15% through systematic training. Track WSS to optimize load.</p></div><div class="audience-card"><h3>Race Hikers</h3><p>Master<a href="/pt-br/stride-mechanics/#race-hiking">race hiking technique</a>(130-160 spm, straight
-          leg, exaggerated hip rotation). Track biomechanics, monitor training load, prevent overtraining with ACWR.</p></div><div class="audience-card"><h3>Older Adults (65+)</h3><p>Monitor<a href="/pt-br/gait-analysis/#gait-speed">gait speed as a vital sign</a>(maintain &gt;1.0 m/s).
-          Track double support % (&lt;35%=good steadiness), asymmetry, and fall risk indicators. Early detection of
-            mobility decline.</p></div><div class="audience-card"><h3>Rehabilitation Patients</h3><p>Objectively track gait improvements with GSI formula (asymmetry &lt;5%=good), stride length recovery, and
-            hiking speed progress. Document outcomes for healthcare providers.</p></div><div class="audience-card"><h3>Weight Loss &amp; Health</h3><p>Optimize calorie burn with zone training. Calculate energy expenditure accurately with Moore's cadence→METs
-          equation. Build sustainable exercise habits with gradual load progression.</p></div></div></div></section>
-Learning Resources Section - NEW
-<section class="learning-resources"><div class="container"><div class="section-header"><div class="section-badge">Learn</div><h2 class="section-title">Deep Scientific Knowledge</h2><p class="section-subtitle">Comprehensive guides explaining the science behind every metric</p></div><div class="resources-grid"><div class="resource-card"><div class="resource-category">Fundamentals</div><h3><a href="/pt-br/walking-zones/">Cadence-Based Training Zones</a></h3><p>Complete paradigm shift from HR to cadence. Learn the 5 zones (60-99 to 130+ spm), CADENCE-Adults research,
-          Peak-30 concept, and IWT protocols.</p></div><div class="resource-card"><div class="resource-category">Biomechanics</div><h3><a href="/pt-br/stride-mechanics/">Hiking Stride Mechanics</a></h3><p>Gait cycle phases, race hiking technique (World Athletics rules), hiking vs running differences. GSI
-          formula for asymmetry, ground reaction forces.</p></div><div class="resource-card"><div class="resource-category">Performance</div><h3><a href="/pt-br/gait-efficiency/">Hiking Economy &amp; CoT</a></h3><p>Cost of Transport optimization, inverted pendulum model (65-70% energy recovery), Froude number, U-shaped
-          economy curve, hike-run transition at 2.2 m/s.</p></div><div class="resource-card"><div class="resource-category">Training</div><h3><a href="/pt-br/training-load/">Training Load Management</a></h3><p>Peak-30 cadence (Del Pozo-Cruz 2022), brisk bouts concept, ACWR injury prevention, 3:1 periodization,
-          polarized vs pyramidal intensity distribution.</p></div><div class="resource-card"><div class="resource-category">Metrics</div><h3><a href="/pt-br/gait-analysis/">Gait Analysis Metrics</a></h3><p>7 essential metrics with clinical thresholds: cadence (100 spm = 3 METs), stride length (40-50% height),
-          double support (&gt;35% = fall risk), asymmetry, speed.</p></div><div class="resource-card"><div class="resource-category">Formulas</div><h3><a href="/pt-br/formulas/">Scientific Formulas</a></h3><p>11 validated equations: Moore cadence→METs (R²=0.87), ACSM VO₂, energy expenditure, GSI, EF, Cost of
-          Transport, training load, 6MWT prediction.</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/pt-br/research/">Explore All Research Articles →</a></div></div></section>
-Pricing Section
-<section class="pricing"><div class="container"><div class="section-header"><div class="section-badge">Pricing</div><h2 class="section-title">Simple, Transparent Pricing</h2><p class="section-subtitle">Try Hike Analytics free for 7 days. No credit card required.</p></div><div class="pricing-card"><div class="price-header"><h3>Hike Analytics Premium</h3><div class="price"><span class="amount">$3,99</span><span class="period">/month</span></div></div><ul class="features-list"><li>Peak-30 cadence tracking</li><li>Cadence-based training zones</li><li>Advanced gait analysis (GSI, CoT, EF, Vertical Ratio)</li><li>Hiking Stress Score (WSS)</li><li>ACWR injury prevention</li><li>11 validated formulas</li><li>Complete data privacy (local processing)</li><li>Apple Health integration</li><li>No ads, ever</li></ul><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Start Free Trial</a><p class="trial-note">7-day free trial • Cancel anytime • No credit card required</p></div></div></section>
-FAQ Section
-<section class="faq"><div class="container"><div class="section-header"><div class="section-badge">FAQ</div><h2 class="section-title">Frequently Asked Questions</h2></div><div class="faq-grid"><div class="faq-item"><h3>What makes Hike Analytics different from other hiking apps?</h3><p>We're the only hiking app built on peer-reviewed research. Every metric—Peak-30 cadence, ACWR, Cost of
-          Transport—comes from published studies. We cite 50+ scientific papers and explain the evidence behind each
-          recommendation. It's not step counting; it's biomechanics and exercise physiology applied to hiking.</p></div><div class="faq-item"><h3>What is Peak-30 cadence and why does it matter?</h3><p>Peak-30 cadence is your average steps per minute during the best 30 consecutive minutes of hiking each day.
-          A breakthrough study of 78,500 people (Del Pozo-Cruz, JAMA 2022) showed it independently predicts mortality
-          risk—even after controlling for total daily steps. We track this automatically, something no other app does.</p></div><div class="faq-item"><h3>How does ACWR prevent injuries?</h3><p>Acute:Chronic Workload Ratio compares your recent training (last 7 days) to your longer-term average (28
-          days). Research shows ACWR &gt;1.50 increases injury risk 2-4 times. We calculate this daily and warn you before
-          dangerous spikes, helping you progress safely with 5-10% weekly increases.</p></div><div class="faq-item"><h3>Why cadence zones instead of heart rate zones?</h3><p>Cadence is more reliable and practical. The CADENCE-Adults study proved 100 spm = moderate intensity (3 METs)
-          with 86% sensitivity and 90% specificity. Heart rate varies with heat, stress, illness, caffeine—cadence
-          doesn't. Plus, you don't need a chest strap or watch; just count steps.</p></div><div class="faq-item"><h3>Can Hike Analytics help with fall prevention?</h3><p>Yes. We track clinical fall risk indicators: gait speed &lt;0.8 m/s, double support&gt;35%, asymmetry (GSI) &gt;10%,
-            and hiking steadiness. These are evidence-based thresholds from geriatric research. Early detection allows
-            intervention before falls occur—critical for adults 65+.</p></div><div class="faq-item"><h3>How does Hike Analytics protect my privacy?</h3><p>All data stays on your iPhone—period. No cloud sync, no accounts, no servers receiving your health data. We
-          process everything locally using on-device algorithms. Your hiking metrics, location, heart rate—completely
-          private. We follow GDPR and HIPAA philosophy even though we're not legally required to (since we never see
-          your data).</p></div><div class="faq-item"><h3>Do I need special equipment?</h3><p>No. Hike Analytics works with iPhone or Apple Watch. For basic metrics (cadence, distance, steps), just your
-          phone. For heart rate data and more accurate metrics, an Apple Watch helps but isn't required. We integrate
-          with Apple Health, so any compatible device works.</p></div><div class="faq-item"><h3>Is Hike Analytics suitable for rehabilitation?</h3><p>Absolutely. We're used by rehab patients tracking recovery objectively. The Gait Symmetry Index (GSI) formula
-          quantifies left-right differences (&lt;3% normal,&gt;10% clinically significant). Monitor stride length recovery,
-            hiking speed improvement, and asymmetry reduction. Share objective data with your physical therapist or
-            physician.</p></div><div class="faq-item"><h3>What's the scientific basis for the 11 formulas?</h3><p>Each<a href="/pt-br/formulas/">formula</a>includes validation data and original research citation.
-          Example: Moore's cadence→METs equation (R²=0.87, ±0.5 METs accuracy, 76 adults) is 23-35% more accurate than
-          older ACSM equations. We show the science, not just black-box calculations.</p></div></div></div></section>
-CTA Section
-<section class="final-cta"><div class="container"><div class="cta-content"><h2>Ready to Hike Smarter?</h2><p>Join hikers improving health with research-backed gait analysis and training science</p><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Download Hike Analytics</a><p class="cta-note">7-day free trial • iOS 16+ • Apple Health compatible • No credit card required</p></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Private Hiking Analytics - Análise de marcha, WSS, métricas de...</h2><p class="ai-citation-answer">Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na...</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>aplicativo de análise de caminhadas · aplicativo de análise de marcha · Aplicativo iOS que prioriza a privacidade · métricas de saúde para caminhadas · análise de passada</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../pt-br/bibliography/">
+    Página inicial do aplicativo Hike Analytics - página inicial
+Seção Hero com introdução ao aplicativo
+<section class="app-hero">
+<div class="container">
+<div class="app-hero-content">
+<div class="app-hero-text">
+<div class="app-hero-badge">
+<span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span>
+<span>Análise de caminhadas com base científica</span>
+</div>
+<h1>Caminhe de maneira mais inteligente, viva com mais saúde</h1>
+<p class="app-hero-subtitle">Aplicativo iOS com privacidade, com análise de marcha apoiada em pesquisas, zonas de treinamento baseadas em cadência e abrangente
+          rastreamento de saúde.
+          Desenvolvido por estudos revisados ​​por pares, incluindo CADENCE-Adults, pesquisa Peak-30 e ciência biomecânica.</p>
+<div class="app-hero-cta">
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Baixe em App Store</a>
+<a class="btn btn-large btn-secondary" href="#science">Explore a ciência</a>
+</div>
+<p class="mt-6 text-sm-muted">✓ Teste gratuito de 7 dias    ✓ Não é necessária uma conta    ✓ 100% de dados locais</p>
+</div>
+<div class="app-hero-mockup">
+<div class="mockup-phone">
+<img alt="Aplicativo Hike Analytics iOS mostrando exercícios de caminhada com métricas de marcha e dados de saúde no iPhone" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+Seção Fundação Científica - NOVO
+<section class="scientific-foundation" id="science">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Apoiado em pesquisa</div>
+<h2 class="section-title">Baseado em evidências científicas</h2>
+<p class="section-subtitle">Cada métrica e recomendação é baseada em pesquisas revisadas por pares</p>
+</div>
+<div class="science-highlights">
+<div class="science-card">
+<div class="science-number">78.500</div>
+<h3>Pesquisa de cadência Peak-30</h3>
+<p>Com base no estudo do UK Biobank que mostra ≥100 spm por 30 minutos, prevê independentemente um risco de mortalidade 40-50% menor
+          (Del Pozo-Cruz et al., JAMA 2022)</p>
+</div>
+<div class="science-card">
+<div class="science-number">100 ppm</div>
+<h3>Limiar de intensidade moderada</h3>
+<p>O estudo CADENCE-Adults (Tudor-Locke et al., 2019) estabeleceu 100 passos/minuto = 3 METs com sensibilidade de 86%,
+          Especificidade de 89,6% – a base das nossas zonas de cadência</p>
+</div>
+<div class="science-card">
+<div class="science-number">2-4×</div>
+<h3>Prevenção de lesões ACWR</h3>
+<p>Aguda: Taxa de carga de trabalho crônica &gt;1,50 aumenta o risco de lesões em 2 a 4× (Gabbett, Br J Sports Med 2016) – rastreamos isso
+          automaticamente para mantê-lo seguro</p>
+</div>
+<div class="science-card">
+<div class="science-number">11</div>
+<h3>Fórmulas Validadas</h3>
+<p>Da equação de cadência → METs de Moore aos cálculos de custo de transporte,<a href="/pt-br/formulas/">cada
+            fórmula</a>inclui dados de validação e interpretação clínica</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a class="btn btn-secondary" href="/pt-br/bibliography/">Veja mais de 50 referências científicas →</a>
+</div>
+</div>
+</section>
+Seção de recursos principais
+<section class="app-features" id="features">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Recursos</div>
+<h2 class="section-title">Métricas avançadas de desempenho em caminhadas</h2>
+<p class="section-subtitle">Análise de nível profissional projetada para caminhantes de todos os níveis</p>
+</div>
+<div class="app-features-grid">
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-zones"></use>
+</svg>
+</div>
+<h3>Zonas de treinamento baseadas em cadência</h3>
+<p>Treine com<a href="/pt-br/walking-zones/">5 zonas apoiadas por pesquisa</a>(60-99 ppm a 130+ spm) com base em
+          CADENCE-Estudo para adultos. Mais prático do que zonas de frequência cardíaca – não é necessária cinta torácica. Acompanhe a cadência do Peak-30 diariamente.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-chart"></use>
+</svg>
+</div>
+<h3>Análise Abrangente da Marcha</h3>
+<p>Rastrear<a href="/pt-br/gait-analysis/">7 métricas essenciais de marcha</a>: cadência, comprimento da passada (40-50%
+          altura), tempo de contato com o solo (200-300ms), suporte duplo (20-30%), assimetria (fórmula GSI), velocidade e
+          oscilação vertical (4-8cm).</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-load"></use>
+</svg>
+</div>
+<h3>Gerenciamento de carga de treinamento</h3>
+<p>Evite o overtraining com<a href="/pt-br/training-load/">Pontuação de estresse em caminhadas (WSS)</a>e ACWR
+          rastreamento. Monitore a relação agudo:crônico (mantenha 0,80-1,30) e obtenha recomendações de recuperação personalizadas com base em
+          sua carga.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-stride"></use>
+</svg>
+</div>
+<h3>Biomecânica e Eficiência</h3>
+<p>Profundo<a href="/pt-br/stride-mechanics/">análise da mecânica da passada</a>e<a href="/pt-br/gait-efficiency/">economia de caminhada</a>rastreamento. Otimize o custo de transporte (~0,48-0,55
+          kcal/kg/km a 1,3 m/s), identificar desvios da marcha, melhorar a eficiência em 10-15%.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-health"></use>
+</svg>
+</div>
+<h3>Integração em Saúde</h3>
+<p>Integração perfeita do Apple Health. Importe treinos de caminhada automaticamente e sincronize frequência cardíaca, distância,
+          etapas e métricas de saúde. Compatível com métricas de mobilidade do Apple Watch (estabilidade na caminhada,% de suporte duplo,
+          Assimetria).</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg aria-hidden="true" class="icon">
+<use href="../assets/images/icons-sprite.svg#icon-privacy"></use>
+</svg>
+</div>
+<h3>Privacidade completa</h3>
+<p>Todos os seus dados de caminhada permanecem no seu iPhone. Sem sincronização na nuvem, sem contas, sem rastreamento. Suas métricas de saúde são
+          100% privado e seguro com processamento local. Compatível com a filosofia GDPR e HIPAA.</p>
+</div>
+</div>
+</div>
+</section>
+Seção de Diferenciadores Científicos - NOVO
+<section class="differentiators">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Por que caminhar pelo Analytics</div>
+<h2 class="section-title">O único aplicativo de caminhada baseado na ciência</h2>
+<p class="section-subtitle">Não apenas contagem de passos: análises abrangentes apoiadas por pesquisas biomecânicas</p>
+</div>
+<div class="differentiator-list">
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Cadência acima da frequência cardíaca</h3>
+<p><strong>Por que é importante:</strong>A frequência cardíaca varia com o calor, estresse, cafeína, doença. Cadência é
+            confiável, prático e comprovado. O estudo CADENCE-Adults mostrou 100 spm = intensidade moderada com 86%
+            sensibilidade – mais precisa do que a estimativa de RH.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Rastreamento de cadência Peak-30</h3>
+<p><strong>Métrica de avanço:</strong>Seus melhores 30 minutos consecutivos de caminhada por dia de forma independente
+            prevê saúde cardiovascular e mortalidade (78.500 participantes do Biobank do Reino Unido). Acompanhamos isso diariamente - nenhum outro
+            aplicativo de caminhada faz.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Prevenção de Lesões com ACWR</h3>
+<p><strong>Ciência do esporte adaptada para caminhadas:</strong>Monitore sua proporção de carga de trabalho aguda:crônica para evitar
+            lesões por uso excessivo. A pesquisa mostra ACWR&gt; 1,50 = 2-4× risco de lesão. Alertamos você antes que ocorram picos perigosos.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Otimização da Economia de Caminhadas</h3>
+<p><strong>Eficiência energética:</strong>Acompanhe o custo de transporte e a eficiência das caminhadas (EF, proporção vertical).
+            Melhore a economia em 10-15% através do treinamento na Zona 2, otimização da passada e trabalho de força - com exercícios específicos
+            orientação.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Simetria da marcha e risco de queda</h3>
+<p><strong>Métricas de nível clínico:</strong>Calcule o Índice de Simetria da Marcha (GSI) para detectar assimetria. Duplo
+            suporte &gt;35% e velocidade de caminhada &lt;0,8 m/s indicam risco elevado de queda – crítico para adultos mais velhos e
+              reabilitação.</p>
+</div>
+</div>
+<div class="differentiator-item">
+<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+<div class="differentiator-content">
+<h3>Mais de 50 citações revisadas por pares</h3>
+<p><strong>Orientação baseada em evidências:</strong>Cada recomendação está vinculada a<a href="/pt-br/bibliography/">pesquisa publicada</a>. Dos limiares de cadência de Tudor-Locke até
+            Sinal vital da velocidade da marcha de Studenski - transparência na ciência.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+Seção Como Funciona
+<section class="how-it-works">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Como funciona</div>
+<h2 class="section-title">Comece a caminhar de maneira mais inteligente em 3 etapas</h2>
+</div>
+<div class="steps-container steps-grid">
+<div class="step-card">
+<div class="step-number">1</div>
+<h3>Conecte Apple Health</h3>
+<p>Importe seus treinos de caminhada automaticamente do Apple Health. Hike Analytics analisa seus dados históricos para
+          estabeleça métricas básicas e calcule sua carga crônica de treinamento (média de 28 dias).</p>
+</div>
+<div class="step-card">
+<div class="step-number">2</div>
+<h3>Obtenha insights baseados em evidências</h3>
+<p>Receba análises abrangentes, incluindo cadência Peak-30, métricas de marcha, economia de caminhada (custo de transporte),
+          e ACWR. Entenda seus padrões com limites apoiados por pesquisas.</p>
+</div>
+<div class="step-card">
+<div class="step-number">3</div>
+<h3>Treine Cientificamente</h3>
+<p>Siga recomendações personalizadas para zonas de cadência, progressão da carga de treinamento (5-10% semanalmente) e
+          recuperação. Acompanhe melhorias em eficiência, velocidade e resultados de saúde ao longo do tempo.</p>
+</div>
+</div>
+</div>
+</section>
+Seção para quem se destina
+<section class="target-audience">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Para quem é</div>
+<h2 class="section-title">Perfeito para todos os caminhantes</h2>
+</div>
+<div class="audience-grid">
+<div class="audience-card">
+<h3>Entusiastas da saúde</h3>
+<p>Atingir a diretriz de atividade moderada de 150 min/semana (100+ spm). Acompanhe a cadência do Peak-30 para saúde cardiovascular.
+          Atenda às recomendações da OMS/CDC com precisão – não apenas contando passos.</p>
+</div>
+<div class="audience-card">
+<h3>Caminhantes de fitness</h3>
+<p>Treine com zonas de cadência (Zona 2 a 100-110 spm para base aeróbica, intervalos a 120-130 spm). Melhorar caminhadas
+          economia em 10-15% através de formação sistemática. Rastreie o WSS para otimizar a carga.</p>
+</div>
+<div class="audience-card">
+<h3>Caminhantes de corrida</h3>
+<p>Mestre<a href="/pt-br/stride-mechanics/#race-hiking">técnica de caminhada esportiva</a>(130-160 ppm, direto
+          perna, rotação exagerada do quadril). Acompanhe a biomecânica, monitore a carga de treinamento e evite o overtraining com o ACWR.</p>
+</div>
+<div class="audience-card">
+<h3>Idosos (65+)</h3>
+<p>Monitorar<a href="/pt-br/gait-analysis/#gait-speed">velocidade da marcha como sinal vital</a>(manter &gt;1,0 m/s).
+          Acompanhe % de suporte duplo (&lt;35% = boa estabilidade), assimetria e indicadores de risco de queda. Detecção precoce de
+            declínio da mobilidade.</p>
+</div>
+<div class="audience-card">
+<h3>Pacientes de reabilitação</h3>
+<p>Acompanhe objetivamente as melhorias da marcha com a fórmula GSI (assimetria &lt;5% = boa), recuperação do comprimento da passada e
+            progresso da velocidade da caminhada. Documente os resultados para os prestadores de cuidados de saúde.</p>
+</div>
+<div class="audience-card">
+<h3>Perda de peso e saúde</h3>
+<p>Otimize a queima de calorias com treinamento de zona. Calcule o gasto energético com precisão com a cadência de Moore → METs
+          equação. Crie hábitos de exercício sustentáveis ​​com progressão gradual da carga.</p>
+</div>
+</div>
+</div>
+</section>
+Seção de Recursos de Aprendizagem - NOVO
+<section class="learning-resources">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Aprenda</div>
+<h2 class="section-title">Conhecimento Científico Profundo</h2>
+<p class="section-subtitle">Guias abrangentes que explicam a ciência por trás de cada métrica</p>
+</div>
+<div class="resources-grid">
+<div class="resource-card">
+<div class="resource-category">Fundamentos</div>
+<h3><a href="/pt-br/walking-zones/">Zonas de treinamento baseadas em cadência</a></h3>
+<p>Mudança completa de paradigma de RH para cadência. Aprenda as 5 zonas (60-99 a 130+ spm), pesquisa CADENCE-Adultos,
+          Conceito Peak-30 e protocolos IWT.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Biomecânica</div>
+<h3><a href="/pt-br/stride-mechanics/">Mecânica da passada de caminhada</a></h3>
+<p>Fases do ciclo da marcha, técnica de caminhada atlética (regras mundiais de atletismo), diferenças entre caminhada e corrida. GSI
+          fórmula para assimetria, forças de reação do solo.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Desempenho</div>
+<h3><a href="/pt-br/gait-efficiency/">Economia de caminhada e CoT</a></h3>
+<p>Otimização do custo de transporte, modelo de pêndulo invertido (65-70% de recuperação de energia), número de Froude, em forma de U
+          curva de economia, transição caminhada-corrida a 2,2 m/s.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Treinamento</div>
+<h3><a href="/pt-br/training-load/">Gerenciamento de carga de treinamento</a></h3>
+<p>Cadência de pico 30 (Del Pozo-Cruz 2022), conceito de lutas rápidas, prevenção de lesões ACWR, periodização 3:1,
+          distribuição de intensidade polarizada vs piramidal.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Métricas</div>
+<h3><a href="/pt-br/gait-analysis/">Métricas de análise de marcha</a></h3>
+<p>7 métricas essenciais com limiares clínicos: cadência (100 spm = 3 METs), comprimento da passada (40-50% da altura),
+          duplo apoio (&gt;35% = risco de queda), assimetria, velocidade.</p>
+</div>
+<div class="resource-card">
+<div class="resource-category">Fórmulas</div>
+<h3><a href="/pt-br/formulas/">Fórmulas Científicas</a></h3>
+<p>11 equações validadas: cadência de Moore→METs (R²=0,87), ACSM VO₂, gasto energético, GSI, EF, custo de
+          Transporte, carga de treino, previsão do TC6.</p>
+</div>
+</div>
+<div class="text-center mt-8">
+<a class="btn btn-secondary" href="/pt-br/research/">Explore todos os artigos de pesquisa →</a>
+</div>
+</div>
+</section>
+Seção de preços
+<section class="pricing">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Preços</div>
+<h2 class="section-title">Preços simples e transparentes</h2>
+<p class="section-subtitle">Experimente o Hike Analytics gratuitamente por 7 dias. Não é necessário cartão de crédito.</p>
+</div>
+<div class="pricing-card">
+<div class="price-header">
+<h3>Caminhada Analytics Premium</h3>
+<div class="price">
+<span class="amount">US$ 3,99</span>
+<span class="period">/mês</span>
+</div>
+</div>
+<ul class="features-list">
+<li>Rastreamento de cadência Peak-30</li>
+<li>Zonas de treinamento baseadas em cadência</li>
+<li>Análise avançada de marcha (GSI, CoT, EF, Vertical Ratio)</li>
+<li>Pontuação de estresse em caminhadas (WSS)</li>
+<li>Prevenção de lesões ACWR</li>
+<li>11 fórmulas validadas</li>
+<li>Privacidade total dos dados (processamento local)</li>
+<li>Integração Apple Health</li>
+<li>Sem anúncios, nunca</li>
+</ul>
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Comece o teste gratuito</a>
+<p class="trial-note">Teste gratuito de 7 dias • Cancele a qualquer momento • Não é necessário cartão de crédito</p>
+</div>
+</div>
+</section>
+Seção de perguntas frequentes
+<section class="faq">
+<div class="container">
+<div class="section-header">
+<div class="section-badge">Perguntas frequentes</div>
+<h2 class="section-title">Perguntas frequentes</h2>
+</div>
+<div class="faq-grid">
+<div class="faq-item">
+<h3>O que torna o Hike Analytics diferente de outros aplicativos de caminhada?</h3>
+<p>Somos o único aplicativo de caminhada desenvolvido com base em pesquisas revisadas por pares. Cada métrica – cadência de pico 30, ACWR, custo de
+          Transporte – vem de estudos publicados. Citamos mais de 50 artigos científicos e explicamos as evidências por trás de cada um
+          recomendação. Não é contagem de passos; é a biomecânica e a fisiologia do exercício aplicadas às caminhadas.</p>
+</div>
+<div class="faq-item">
+<h3>O que é a cadência do Peak-30 e por que isso é importante?</h3>
+<p>A cadência de pico 30 é a média de passos por minuto durante os melhores 30 minutos consecutivos de caminhada todos os dias.
+          Um estudo inovador com 78.500 pessoas (Del Pozo-Cruz, JAMA 2022) mostrou que prevê de forma independente a mortalidade
+          risco – mesmo depois de controlar o total de passos diários. Rastreamos isso automaticamente, algo que nenhum outro aplicativo faz.</p>
+</div>
+<div class="faq-item">
+<h3>Como o ACWR previne lesões?</h3>
+<p>A proporção de carga de trabalho aguda:crônica compara seu treinamento recente (últimos 7 dias) com sua média de longo prazo (28
+          dias). A pesquisa mostra que o ACWR&gt; 1,50 aumenta o risco de lesões de 2 a 4 vezes. Calculamos isso diariamente e avisamos antes
+          picos perigosos, ajudando você a progredir com segurança com aumentos semanais de 5 a 10%.</p>
+</div>
+<div class="faq-item">
+<h3>Porquê zonas de cadência em vez de zonas de frequência cardíaca?</h3>
+<p>A cadência é mais confiável e prática. O estudo CADENCE-Adults provou 100 spm = intensidade moderada (3 METs)
+          com sensibilidade de 86% e especificidade de 90%. A frequência cardíaca varia com o calor, estresse, doença, cafeína – cadência
+          não. Além disso, você não precisa de cinta torácica ou relógio; apenas conte os passos.</p>
+</div>
+<div class="faq-item">
+<h3>O Hike Analytics pode ajudar na prevenção de quedas?</h3>
+<p>Sim. Acompanhamos indicadores clínicos de risco de queda: velocidade de marcha &lt;0,8 m/s, duplo apoio &gt;35%, assimetria (GSI) &gt;10%,
+            e firmeza na caminhada. Estes são limites baseados em evidências de pesquisas geriátricas. A detecção precoce permite
+            intervenção antes que ocorram quedas – fundamental para adultos com mais de 65 anos.</p>
+</div>
+<div class="faq-item">
+<h3>Como o Hike Analytics protege minha privacidade?</h3>
+<p>Todos os dados permanecem no seu iPhone – ponto final. Sem sincronização na nuvem, sem contas, sem servidores recebendo seus dados de saúde. Nós
+          processe tudo localmente usando algoritmos no dispositivo. Suas métricas de caminhada, localização, frequência cardíaca – completamente
+          privado. Seguimos a filosofia GDPR e HIPAA, embora não sejamos legalmente obrigados a fazê-lo (já que nunca vemos
+          seus dados).</p>
+</div>
+<div class="faq-item">
+<h3>Preciso de equipamento especial?</h3>
+<p>Não. O Hike Analytics funciona com iPhone ou Apple Watch. Para métricas básicas (cadência, distância, passos), apenas o seu
+          telefone. Para dados de frequência cardíaca e métricas mais precisas, um Apple Watch ajuda, mas não é obrigatório. Nós integramos
+          com Apple Health, para que qualquer dispositivo compatível funcione.</p>
+</div>
+<div class="faq-item">
+<h3>O Hike Analytics é adequado para reabilitação?</h3>
+<p>Absolutamente. Somos usados ​​por pacientes de reabilitação que acompanham a recuperação de forma objetiva. A fórmula do Índice de Simetria da Marcha (GSI)
+          quantifica diferenças esquerda-direita (&lt;3% normal,&gt;10% clinicamente significativo). Monitore a recuperação do comprimento da passada,
+            melhoria da velocidade de caminhada e redução da assimetria. Compartilhe dados objetivos com seu fisioterapeuta ou
+            médico.</p>
+</div>
+<div class="faq-item">
+<h3>Qual é a base científica para as 11 fórmulas?</h3>
+<p>Cada<a href="/pt-br/formulas/">fórmula</a>inclui dados de validação e citação de pesquisa original.
+          Exemplo: A equação cadência→METs de Moore (R²=0,87, precisão de ±0,5 METs, 76 adultos) é 23-35% mais precisa do que
+          equações ACSM mais antigas. Mostramos a ciência, não apenas cálculos de caixa preta.</p>
+</div>
+</div>
+</div>
+</section>
+Seção CTA
+<section class="final-cta">
+<div class="container">
+<div class="cta-content">
+<h2>Pronto para caminhar de maneira mais inteligente?</h2>
+<p>Junte-se aos caminhantes que melhoram a saúde com análise de marcha apoiada por pesquisas e ciência de treinamento</p>
+<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Baixe o Hike Analytics</a>
+<p class="cta-note">Avaliação gratuita de 7 dias • iOS 16+ • Compatível com Apple Health • Não é necessário cartão de crédito</p>
+</div>
+</div>
+</section>
+    
+
+    
+    
+
+    
+    
+<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
+  <div class="container ai-citation-shell">
+    <h2 class="ai-citation-title">Private Hiking Analytics - Análise de marcha, WSS, métricas de...</h2>
+    <p class="ai-citation-answer">Aplicativo privado de caminhada para iOS com análise avançada de marcha. Acompanhe métricas de passada, zonas de caminhada e WSS localmente. Insights baseados na...</p>
+
+    <ul class="ai-citation-facts" role="list">
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">📅</span>
+        <span>2026-03-24</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact ai-citation-keywords">
+        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
+        <span>aplicativo de análise de caminhadas · aplicativo de análise de marcha · Aplicativo iOS que prioriza a privacidade · métricas de saúde para caminhadas · análise de passada</span>
+      </li>
+      
+
+      
+      <li class="ai-citation-fact">
+        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
+        <a href="../pt-br/bibliography/">
           
           Bibliografia
           
-        </a></li></ul><nav class="ai-citation-links" aria-label="Private Hiking Analytics - Análise de marcha, WSS, métricas de..."><a class="ai-related-link" href="../pt-br/research/">
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <nav class="ai-citation-links" aria-label="Private Hiking Analytics - Análise de marcha, WSS, métricas de...">
+      
+      <a class="ai-related-link" href="../pt-br/research/">
         Pesquisar
-      </a><a class="ai-related-link" href="../pt-br/getting-started/">
+      </a>
+      
+      <a class="ai-related-link" href="../pt-br/getting-started/">
         Começando
-      </a><a class="ai-related-link" href="../pt-br/contact/">
+      </a>
+      
+      <a class="ai-related-link" href="../pt-br/contact/">
         Contato
-      </a></nav></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Baixe na App Store"><img src="../assets/images/badge-app-store.svg"
+      </a>
+      
+    </nav>
+    
+  </div>
+</section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+        
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                
+                <h2>Hike Analytics</h2>
+                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
+                
+            </div>
+
+            
+            <div class="footer-download">
+                <h3 class="footer-heading">Download</h3>
+                <div class="footer-badges">
+                    
+                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Baixe na App Store">
+                        <img src="../assets/images/badge-app-store.svg"
                             alt="Baixe na App Store" width="135"
-                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Obtenha no Google Play"><img src="../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Obtenha no Google Play">
+                        <img src="../assets/images/badge-google-play.svg"
                             alt="Obtenha no Google Play" width="135"
-                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Disponível em</h3><div class="lang-grid"><a href="/af/" class="lang-link"
+                            height="40" loading="lazy">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class="footer-languages">
+            <h3 class="footer-heading">Disponível em</h3>
+            <div class="lang-grid">
+                
+                <a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a><a href="/am/" class="lang-link"
+                </a>
+                
+                <a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a><a href="/ar/" class="lang-link"
+                </a>
+                
+                <a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a><a href="/bg/" class="lang-link"
+                </a>
+                
+                <a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a><a href="/bn/" class="lang-link"
+                </a>
+                
+                <a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a><a href="/ca/" class="lang-link"
+                </a>
+                
+                <a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a><a href="/cs/" class="lang-link"
+                </a>
+                
+                <a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a><a href="/da/" class="lang-link"
+                </a>
+                
+                <a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a><a href="/de/" class="lang-link"
+                </a>
+                
+                <a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a><a href="/el/" class="lang-link"
+                </a>
+                
+                <a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a><a href="/en/" class="lang-link"
+                </a>
+                
+                <a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a><a href="/es/" class="lang-link"
+                </a>
+                
+                <a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a><a href="/et/" class="lang-link"
+                </a>
+                
+                <a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a><a href="/fa/" class="lang-link"
+                </a>
+                
+                <a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a><a href="/fi/" class="lang-link"
+                </a>
+                
+                <a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a><a href="/fr/" class="lang-link"
+                </a>
+                
+                <a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a><a href="/gu/" class="lang-link"
+                </a>
+                
+                <a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a><a href="/ha/" class="lang-link"
+                </a>
+                
+                <a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a><a href="/he/" class="lang-link"
+                </a>
+                
+                <a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a><a href="/hi/" class="lang-link"
+                </a>
+                
+                <a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a><a href="/hr/" class="lang-link"
+                </a>
+                
+                <a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a><a href="/hu/" class="lang-link"
+                </a>
+                
+                <a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a><a href="/id/" class="lang-link"
+                </a>
+                
+                <a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a><a href="/is/" class="lang-link"
+                </a>
+                
+                <a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a><a href="/it/" class="lang-link"
+                </a>
+                
+                <a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a><a href="/ja/" class="lang-link"
+                </a>
+                
+                <a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a><a href="/km/" class="lang-link"
+                </a>
+                
+                <a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a><a href="/kn/" class="lang-link"
+                </a>
+                
+                <a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a><a href="/ko/" class="lang-link"
+                </a>
+                
+                <a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a><a href="/lt/" class="lang-link"
+                </a>
+                
+                <a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a><a href="/lv/" class="lang-link"
+                </a>
+                
+                <a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a><a href="/ms/" class="lang-link"
+                </a>
+                
+                <a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a><a href="/my/" class="lang-link"
+                </a>
+                
+                <a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a><a href="/nb/" class="lang-link"
+                </a>
+                
+                <a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a><a href="/nl/" class="lang-link"
+                </a>
+                
+                <a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a><a href="/pl/" class="lang-link"
+                </a>
+                
+                <a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a><a href="/pt/" class="lang-link"
+                </a>
+                
+                <a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a><a href="/pt-br/" class="lang-link active"
+                </a>
+                
+                <a href="/pt-br/" class="lang-link active"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a><a href="/ro/" class="lang-link"
+                </a>
+                
+                <a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a><a href="/ru/" class="lang-link"
+                </a>
+                
+                <a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a><a href="/sk/" class="lang-link"
+                </a>
+                
+                <a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a><a href="/sl/" class="lang-link"
+                </a>
+                
+                <a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a><a href="/sr/" class="lang-link"
+                </a>
+                
+                <a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a><a href="/sv/" class="lang-link"
+                </a>
+                
+                <a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a><a href="/sw/" class="lang-link"
+                </a>
+                
+                <a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a><a href="/ta/" class="lang-link"
+                </a>
+                
+                <a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a><a href="/te/" class="lang-link"
+                </a>
+                
+                <a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a><a href="/th/" class="lang-link"
+                </a>
+                
+                <a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a><a href="/tl/" class="lang-link"
+                </a>
+                
+                <a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a><a href="/tr/" class="lang-link"
+                </a>
+                
+                <a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a><a href="/uk/" class="lang-link"
+                </a>
+                
+                <a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a><a href="/ur/" class="lang-link"
+                </a>
+                
+                <a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a><a href="/vi/" class="lang-link"
+                </a>
+                
+                <a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a><a href="/yo/" class="lang-link"
+                </a>
+                
+                <a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a><a href="/zh/" class="lang-link"
+                </a>
+                
+                <a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        
+        <div class="footer-bottom">
+            <p class="copyright">
                 &copy; 2026 Hike Analytics. Todos os direitos reservados
-            </p><ul class="footer-legal"><li><a href="/pt-br/privacy/">Privacidade</a></li><li><a href="/pt-br/terms/">Termos</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Este site utiliza cookies para melhorar sua experiência.</p><a href="/pt-br/privacy/" class="text-sm">Saber mais</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Declínio</button><button id="cookie-accept" class="btn btn-primary btn-small">Aceitar</button></div></div></div><script src="../assets/js/core.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/search.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/carousel.min.js?v=f4a4f52b4341" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>
+            </p>
+            <ul class="footer-legal">
+                <li><a href="/pt-br/privacy/">Privacidade</a></li>
+                <li><a href="/pt-br/terms/">Termos</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+  
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Este site utiliza cookies para melhorar sua experiência.</p>
+            <a href="/pt-br/privacy/" class="text-sm">Saber mais</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Declínio</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Aceitar</button>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="../assets/js/core.min.js?v=19fdca55b3da" defer></script>
+  <script src="../assets/js/search.min.js?v=19fdca55b3da" defer></script>
+  
+  <script src="../assets/js/carousel.min.js?v=19fdca55b3da" defer></script>
+  
+
+  
+  
+  <script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
+  
+
+  
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
+</body>
+
+</html>
