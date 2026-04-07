@@ -1,247 +1,61 @@
-<!DOCTYPE html>
-<html lang="nl" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Private Hiking Analytics - Ganganalyse, WSS...</title>
-  <meta name="description" content="Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="app voor wandelanalyse, loopanalyse-app, privacy-eerste iOS-app, gezondheidsstatistieken wandelen, stap analyse">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/nl/">
-
-  
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hike.analyticszone.app/nl/">
-  <meta property="og:title" content="Private Hiking Analytics - Ganganalyse, WSS...">
-  <meta property="og:description" content="Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars.">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="nl_NL">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/nl/">
-  <meta name="twitter:title" content="Private Hiking Analytics - Ganganalyse, WSS...">
-  <meta name="twitter:description" content="Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars.">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="nl" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>Private Hiking Analytics - Ganganalyse, WSS...</title><meta name="description" content="Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="app voor wandelanalyse, loopanalyse-app, privacy-eerste iOS-app, gezondheidsstatistieken wandelen, stap analyse"><link rel="canonical" href="https://hike.analyticszone.app/nl/"><meta property="og:type" content="website"><meta property="og:url" content="https://hike.analyticszone.app/nl/"><meta property="og:title" content="Private Hiking Analytics - Ganganalyse, WSS..."><meta property="og:description" content="Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="nl_NL"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/nl/"><meta name="twitter:title" content="Private Hiking Analytics - Ganganalyse, WSS..."><meta name="twitter:description" content="Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -500,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -548,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -560,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "nl"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -579,14 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -629,22 +416,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -658,1465 +430,457 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Naar inhoud gaan</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/nl/" class="site-logo">
-                <picture>
-                    <source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/nl/" 
+  </script></head><body><a href="#main-content" class="skip-link">Naar inhoud gaan</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/nl/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/nl/" 
                                 aria-current="">
                                 Thuis
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/nl/getting-started/" class="nav-label">Leren</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/nl/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/nl/getting-started/" class="nav-label">Leren</a><ul class="submenu"><li><a href="/nl/getting-started/" 
                                         aria-current="">
                                         Aan de slag
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/walking-zones/" 
+                                    </a></li><li><a href="/nl/walking-zones/" 
                                         aria-current="">
                                         Loopzones
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/gait-analysis/" 
+                                    </a></li><li><a href="/nl/gait-analysis/" 
                                         aria-current="">
                                         Loopanalyse
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/training-load/" 
+                                    </a></li><li><a href="/nl/training-load/" 
                                         aria-current="">
                                         Trainingsbelasting
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/wss-calculator/" 
+                                    </a></li><li><a href="/nl/wss-calculator/" 
                                         aria-current="">
                                         WSS-calculator
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/nl/research/" class="nav-label">Wetenschap</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/nl/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/nl/research/" class="nav-label">Wetenschap</a><ul class="submenu"><li><a href="/nl/research/" 
                                         aria-current="">
                                         Onderzoek
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/formulas/" 
+                                    </a></li><li><a href="/nl/formulas/" 
                                         aria-current="">
                                         Formules
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/gait-efficiency/" 
+                                    </a></li><li><a href="/nl/gait-efficiency/" 
                                         aria-current="">
                                         Loopefficiëntie
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/stride-mechanics/" 
+                                    </a></li><li><a href="/nl/stride-mechanics/" 
                                         aria-current="">
                                         Pasmechanica
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/walking-vs-running/" 
+                                    </a></li><li><a href="/nl/walking-vs-running/" 
                                         aria-current="">
                                         Lopen vs Hardlopen
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/benchmarks/" 
+                                    </a></li><li><a href="/nl/benchmarks/" 
                                         aria-current="">
                                         Prestatie Benchmarks
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/bibliography/" 
+                                    </a></li><li><a href="/nl/bibliography/" 
                                         aria-current="">
                                         Bibliografie
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/nl/for-health/" class="nav-label">Voor Jou</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/nl/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/nl/for-health/" class="nav-label">Voor Jou</a><ul class="submenu"><li><a href="/nl/for-health/" 
                                         aria-current="">
                                         Voor Gezondheid
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/for-fitness/" 
+                                    </a></li><li><a href="/nl/for-fitness/" 
                                         aria-current="">
                                         Voor Fitness
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/for-seniors/" 
+                                    </a></li><li><a href="/nl/for-seniors/" 
                                         aria-current="">
                                         Voor Senioren
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/for-rehabilitation/" 
+                                    </a></li><li><a href="/nl/for-rehabilitation/" 
                                         aria-current="">
                                         Voor Revalidatie
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/nl/cadence-calculator/" class="nav-label">Hulpmiddelen</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/nl/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/nl/cadence-calculator/" class="nav-label">Hulpmiddelen</a><ul class="submenu"><li><a href="/nl/cadence-calculator/" 
                                         aria-current="">
                                         Cadans Calculator
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/gait-assessment/" 
+                                    </a></li><li><a href="/nl/gait-assessment/" 
                                         aria-current="">
                                         Loopbeoordeling
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/nl/vo2max-calculator/" 
+                                    </a></li><li><a href="/nl/vo2max-calculator/" 
                                         aria-current="">
                                         VO₂max Rekenmachine
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/nl/contact/" 
+                                    </a></li></ul></li><li><a href="/nl/contact/" 
                                 aria-current="">
                                 Contact
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Selecteer taal">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Selecteer taal"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" selected>
+                        </option><option value="nl" selected>
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Menu in-/uitschakelen"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Menu in-/uitschakelen"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content">
     
     Landingspagina van de Analytics-app - startpagina
 Hero-sectie met app-introductie
-<section class="app-hero">
-<div class="container">
-<div class="app-hero-content">
-<div class="app-hero-text">
-<div class="app-hero-badge">
-<span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span>
-<span>Op wetenschap gebaseerde wandelanalyses</span>
-</div>
-<h1>Wandel slimmer, leef gezonder</h1>
-<p class="app-hero-subtitle">Privacy-first iOS-app met door onderzoek ondersteunde loopanalyse, op cadans gebaseerde trainingszones en uitgebreide
+<section class="app-hero"><div class="container"><div class="app-hero-content"><div class="app-hero-text"><div class="app-hero-badge"><span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span><span>Op wetenschap gebaseerde wandelanalyses</span></div><h1>Wandel slimmer, leef gezonder</h1><p class="app-hero-subtitle">Privacy-first iOS-app met door onderzoek ondersteunde loopanalyse, op cadans gebaseerde trainingszones en uitgebreide
           gezondheid volgen.
-          Mogelijk gemaakt door peer-reviewed onderzoeken, waaronder CADENCE-Adults, Peak-30-onderzoek en biomechanica-wetenschap.</p>
-<div class="app-hero-cta">
-<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Downloaden op App Store</a>
-<a class="btn btn-large btn-secondary" href="#science">Ontdek de wetenschap</a>
-</div>
-<p class="mt-6 text-sm-muted">✓ Gratis proefperiode van 7 dagen    ✓ Geen account vereist    ✓ 100% lokale data</p>
-</div>
-<div class="app-hero-mockup">
-<div class="mockup-phone">
-<img alt="Wandelanalyse iOS-app die wandeltrainingen toont met loopstatistieken en gezondheidsgegevens op iPhone" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/>
-</div>
-</div>
-</div>
-</div>
-</section>
+          Mogelijk gemaakt door peer-reviewed onderzoeken, waaronder CADENCE-Adults, Peak-30-onderzoek en biomechanica-wetenschap.</p><div class="app-hero-cta"><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Downloaden op App Store</a><a class="btn btn-large btn-secondary" href="#science">Ontdek de wetenschap</a></div><p class="mt-6 text-sm-muted">✓ Gratis proefperiode van 7 dagen    ✓ Geen account vereist    ✓ 100% lokale data</p></div><div class="app-hero-mockup"><div class="mockup-phone"><img alt="Wandelanalyse iOS-app die wandeltrainingen toont met loopstatistieken en gezondheidsgegevens op iPhone" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/></div></div></div></div></section>
 Sectie Wetenschappelijke Stichting - NIEUW
-<section class="scientific-foundation" id="science">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Door onderzoek ondersteund</div>
-<h2 class="section-title">Gebouwd op wetenschappelijk bewijs</h2>
-<p class="section-subtitle">Elke maatstaf en aanbeveling is gebaseerd op peer-reviewed onderzoek</p>
-</div>
-<div class="science-highlights">
-<div class="science-card">
-<div class="science-number">78.500</div>
-<h3>Peak-30 cadansonderzoek</h3>
-<p>Gebaseerd op onderzoek van de Britse Biobank waaruit blijkt dat ≥100 spm gedurende 30 minuten onafhankelijk een 40-50% lager sterfterisico voorspelt
-          (Del Pozo-Cruz et al., JAMA 2022)</p>
-</div>
-<div class="science-card">
-<div class="science-number">100 sp/min</div>
-<h3>Gematigde intensiteitsdrempel</h3>
-<p>CADENCE-Adults-onderzoek (Tudor-Locke et al., 2019) stelde 100 stappen/minuut = 3 MET's vast met een gevoeligheid van 86%,
-          89,6% specificiteit: de basis van onze cadanszones</p>
-</div>
-<div class="science-card">
-<div class="science-number">2-4×</div>
-<h3>ACWR-blessurepreventie</h3>
-<p>Acuut: chronische werklastratio &gt;1,50 verhoogt het risico op blessures met 2-4× (Gabbett, Br J Sports Med 2016) – we volgen dit
-          automatisch om u veilig te houden</p>
-</div>
-<div class="science-card">
-<div class="science-number">11</div>
-<h3>Gevalideerde formules</h3>
-<p>Van Moore's cadans → METs-vergelijking tot berekeningen van de transportkosten,<a href="/nl/formulas/">elke
-            formule</a>omvat validatiegegevens en klinische interpretatie</p>
-</div>
-</div>
-<div class="text-center mt-8">
-<a class="btn btn-secondary" href="/nl/bibliography/">Bekijk 50+ wetenschappelijke referenties →</a>
-</div>
-</div>
-</section>
+<section class="scientific-foundation" id="science"><div class="container"><div class="section-header"><div class="section-badge">Door onderzoek ondersteund</div><h2 class="section-title">Gebouwd op wetenschappelijk bewijs</h2><p class="section-subtitle">Elke maatstaf en aanbeveling is gebaseerd op peer-reviewed onderzoek</p></div><div class="science-highlights"><div class="science-card"><div class="science-number">78.500</div><h3>Peak-30 cadansonderzoek</h3><p>Gebaseerd op onderzoek van de Britse Biobank waaruit blijkt dat ≥100 spm gedurende 30 minuten onafhankelijk een 40-50% lager sterfterisico voorspelt
+          (Del Pozo-Cruz et al., JAMA 2022)</p></div><div class="science-card"><div class="science-number">100 sp/min</div><h3>Gematigde intensiteitsdrempel</h3><p>CADENCE-Adults-onderzoek (Tudor-Locke et al., 2019) stelde 100 stappen/minuut = 3 MET's vast met een gevoeligheid van 86%,
+          89,6% specificiteit: de basis van onze cadanszones</p></div><div class="science-card"><div class="science-number">2-4×</div><h3>ACWR-blessurepreventie</h3><p>Acuut: chronische werklastratio &gt;1,50 verhoogt het risico op blessures met 2-4× (Gabbett, Br J Sports Med 2016) – we volgen dit
+          automatisch om u veilig te houden</p></div><div class="science-card"><div class="science-number">11</div><h3>Gevalideerde formules</h3><p>Van Moore's cadans → METs-vergelijking tot berekeningen van de transportkosten,<a href="/nl/formulas/">elke
+            formule</a>omvat validatiegegevens en klinische interpretatie</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/nl/bibliography/">Bekijk 50+ wetenschappelijke referenties →</a></div></div></section>
 Sectie Belangrijkste kenmerken
-<section class="app-features" id="features">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Kenmerken</div>
-<h2 class="section-title">Geavanceerde prestatiestatistieken voor wandelen</h2>
-<p class="section-subtitle">Professionele analyse ontworpen voor wandelaars op elk niveau</p>
-</div>
-<div class="app-features-grid">
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-zones"></use>
-</svg>
-</div>
-<h3>Op cadans gebaseerde trainingszones</h3>
-<p>Train met<a href="/nl/walking-zones/">5 door onderzoek ondersteunde zones</a>(60-99 spm tot 130+ spm) op basis van
-          CADENCE-studie voor volwassenen. Praktischer dan hartslagzones: geen borstband nodig. Houd dagelijks de Peak-30-cadans bij.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-chart"></use>
-</svg>
-</div>
-<h3>Uitgebreide loopanalyse</h3>
-<p>Volg<a href="/nl/gait-analysis/">7 essentiële loopgegevens</a>: cadans, paslengte (40-50%
+<section class="app-features" id="features"><div class="container"><div class="section-header"><div class="section-badge">Kenmerken</div><h2 class="section-title">Geavanceerde prestatiestatistieken voor wandelen</h2><p class="section-subtitle">Professionele analyse ontworpen voor wandelaars op elk niveau</p></div><div class="app-features-grid"><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-zones"></use></svg></div><h3>Op cadans gebaseerde trainingszones</h3><p>Train met<a href="/nl/walking-zones/">5 door onderzoek ondersteunde zones</a>(60-99 spm tot 130+ spm) op basis van
+          CADENCE-studie voor volwassenen. Praktischer dan hartslagzones: geen borstband nodig. Houd dagelijks de Peak-30-cadans bij.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>Uitgebreide loopanalyse</h3><p>Volg<a href="/nl/gait-analysis/">7 essentiële loopgegevens</a>: cadans, paslengte (40-50%
           hoogte), grondcontacttijd (200-300 ms), dubbele ondersteuning (20-30%), asymmetrie (GSI-formule), snelheid en
-          verticale oscillatie (4-8 cm).</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-load"></use>
-</svg>
-</div>
-<h3>Beheer van trainingsbelasting</h3>
-<p>Voorkom overtraining met<a href="/nl/training-load/">Wandelstressscore (WSS)</a>en ACWR
+          verticale oscillatie (4-8 cm).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-load"></use></svg></div><h3>Beheer van trainingsbelasting</h3><p>Voorkom overtraining met<a href="/nl/training-load/">Wandelstressscore (WSS)</a>en ACWR
           volgen. Houd de acute:chronische verhouding in de gaten (houd 0,80-1,30 aan) en ontvang gepersonaliseerde herstelaanbevelingen op basis van
-          uw lading.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-stride"></use>
-</svg>
-</div>
-<h3>Biomechanica en efficiëntie</h3>
-<p>Diep<a href="/nl/stride-mechanics/">analyse van stapmechanica</a>en<a href="/nl/gait-efficiency/">wandeleconomie</a>volgen. Optimaliseer de transportkosten (~0,48-0,55
-          kcal/kg/km bij 1,3 m/s), loopafwijkingen identificeren, efficiëntie verbeteren met 10-15%.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-health"></use>
-</svg>
-</div>
-<h3>Integratie van gezondheidszorg</h3>
-<p>Naadloze Apple Health-integratie. Importeer wandeltrainingen automatisch en synchroniseer hartslag, afstand,
+          uw lading.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-stride"></use></svg></div><h3>Biomechanica en efficiëntie</h3><p>Diep<a href="/nl/stride-mechanics/">analyse van stapmechanica</a>en<a href="/nl/gait-efficiency/">wandeleconomie</a>volgen. Optimaliseer de transportkosten (~0,48-0,55
+          kcal/kg/km bij 1,3 m/s), loopafwijkingen identificeren, efficiëntie verbeteren met 10-15%.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-health"></use></svg></div><h3>Integratie van gezondheidszorg</h3><p>Naadloze Apple Health-integratie. Importeer wandeltrainingen automatisch en synchroniseer hartslag, afstand,
           stappen en gezondheidsstatistieken. Compatibel met Apple Watch-mobiliteitsstatistieken (wandelstabiliteit, dubbele ondersteuningspercentage,
-          Asymmetrie).</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-privacy"></use>
-</svg>
-</div>
-<h3>Volledige privacy</h3>
-<p>Al uw wandelgegevens blijven op uw iPhone. Geen cloudsynchronisatie, geen accounts, geen tracking. Uw gezondheidsstatistieken zijn dat wel
-          100% privé en veilig met lokale verwerking. Voldoet aan de AVG en HIPAA-filosofie.</p>
-</div>
-</div>
-</div>
-</section>
+          Asymmetrie).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-privacy"></use></svg></div><h3>Volledige privacy</h3><p>Al uw wandelgegevens blijven op uw iPhone. Geen cloudsynchronisatie, geen accounts, geen tracking. Uw gezondheidsstatistieken zijn dat wel
+          100% privé en veilig met lokale verwerking. Voldoet aan de AVG en HIPAA-filosofie.</p></div></div></div></section>
 Sectie Wetenschappelijke Differentiatoren - NIEUW
-<section class="differentiators">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Waarom Analytics verhogen</div>
-<h2 class="section-title">De enige wandel-app gebouwd op wetenschap</h2>
-<p class="section-subtitle">Niet alleen het tellen van stappen: uitgebreide analyses ondersteund door onderzoek naar biomechanica</p>
-</div>
-<div class="differentiator-list">
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>Cadans boven hartslag</h3>
-<p><strong>Waarom het ertoe doet:</strong>De hartslag varieert afhankelijk van hitte, stress, cafeïne en ziekte. Cadans wel
+<section class="differentiators"><div class="container"><div class="section-header"><div class="section-badge">Waarom Analytics verhogen</div><h2 class="section-title">De enige wandel-app gebouwd op wetenschap</h2><p class="section-subtitle">Niet alleen het tellen van stappen: uitgebreide analyses ondersteund door onderzoek naar biomechanica</p></div><div class="differentiator-list"><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Cadans boven hartslag</h3><p><strong>Waarom het ertoe doet:</strong>De hartslag varieert afhankelijk van hitte, stress, cafeïne en ziekte. Cadans wel
             betrouwbaar, praktisch en bewezen. Uit het CADENCE-Adults-onderzoek bleek dat 100 spm = matige intensiteit met 86%
-            gevoeligheid – nauwkeuriger dan HR-schatting.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>Piek-30 cadans volgen</h3>
-<p><strong>Doorbraakstatistiek:</strong>Je beste 30 minuten aaneengesloten wandelen per dag zelfstandig
+            gevoeligheid – nauwkeuriger dan HR-schatting.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Piek-30 cadans volgen</h3><p><strong>Doorbraakstatistiek:</strong>Je beste 30 minuten aaneengesloten wandelen per dag zelfstandig
             voorspelt de cardiovasculaire gezondheid en mortaliteit (78.500 UK Biobank-deelnemers). Wij volgen dit dagelijks – geen ander
-            wandel-app wel.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>Blessurepreventie met ACWR</h3>
-<p><strong>Sportwetenschap aangepast voor wandelen:</strong>Bewaak uw acute: chronische werklastratio om dit te voorkomen
-            overbelastingsblessures. Uit onderzoek blijkt dat ACWR &gt;1,50 = 2-4× letselrisico. Wij waarschuwen u voordat gevaarlijke pieken optreden.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>Optimalisatie van de wandeleconomie</h3>
-<p><strong>Energie-efficiëntie:</strong>Houd de kosten van transport en wandelefficiëntie bij (EF, Vertical Ratio).
+            wandel-app wel.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Blessurepreventie met ACWR</h3><p><strong>Sportwetenschap aangepast voor wandelen:</strong>Bewaak uw acute: chronische werklastratio om dit te voorkomen
+            overbelastingsblessures. Uit onderzoek blijkt dat ACWR &gt;1,50 = 2-4× letselrisico. Wij waarschuwen u voordat gevaarlijke pieken optreden.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Optimalisatie van de wandeleconomie</h3><p><strong>Energie-efficiëntie:</strong>Houd de kosten van transport en wandelefficiëntie bij (EF, Vertical Ratio).
             Verbeter de economie met 10-15% door middel van Zone 2-training, pasoptimalisatie en krachttraining, met specifieke kenmerken
-            begeleiding.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>Gangsymmetrie en valrisico</h3>
-<p><strong>Klinische statistieken:</strong>Bereken Gait Symmetry Index (GSI) om asymmetrie te detecteren. Dubbel
+            begeleiding.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>Gangsymmetrie en valrisico</h3><p><strong>Klinische statistieken:</strong>Bereken Gait Symmetry Index (GSI) om asymmetrie te detecteren. Dubbel
             ondersteuning &gt;35% en wandelsnelheid &lt;0,8 m/s duiden op een verhoogd valrisico – van cruciaal belang voor oudere volwassenen en
-              revalidatie.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>50+ peer-reviewed citaten</h3>
-<p><strong>Op bewijs gebaseerde begeleiding:</strong>Elke aanbeveling linkt naar<a href="/nl/bibliography/">gepubliceerd onderzoek</a>. Van de cadansdrempels van Tudor-Locke tot
-            Studenski's loopsnelheid is een vitaal teken: transparantie in de wetenschap.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+              revalidatie.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>50+ peer-reviewed citaten</h3><p><strong>Op bewijs gebaseerde begeleiding:</strong>Elke aanbeveling linkt naar<a href="/nl/bibliography/">gepubliceerd onderzoek</a>. Van de cadansdrempels van Tudor-Locke tot
+            Studenski's loopsnelheid is een vitaal teken: transparantie in de wetenschap.</p></div></div></div></div></section>
 Hoe het werkt Sectie
-<section class="how-it-works">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Hoe het werkt</div>
-<h2 class="section-title">Begin slimmer met wandelen in 3 stappen</h2>
-</div>
-<div class="steps-container steps-grid">
-<div class="step-card">
-<div class="step-number">1</div>
-<h3>Sluit Apple Health</h3>
-<p>aan Importeer uw wandeltrainingen automatisch vanuit Apple Health. Hike Analytics analyseert uw historische gegevens
-          stel basisgegevens vast en bereken uw chronische trainingsbelasting (gemiddelde over 28 dagen).</p>
-</div>
-<div class="step-card">
-<div class="step-number">2</div>
-<h3>Krijg op bewijs gebaseerde inzichten</h3>
-<p>Ontvang uitgebreide analyses, inclusief Peak-30-cadans, loopgegevens, wandeleconomie (transportkosten),
-          en ACWR. Begrijp uw patronen met door onderzoek ondersteunde drempels.</p>
-</div>
-<div class="step-card">
-<div class="step-number">3</div>
-<h3>Wetenschappelijk trainen</h3>
-<p>Volg persoonlijke aanbevelingen voor cadanszones, progressie van de trainingsbelasting (5-10% per week) en
-          herstel. Volg verbeteringen op het gebied van efficiëntie, snelheid en gezondheidsresultaten in de loop van de tijd.</p>
-</div>
-</div>
-</div>
-</section>
+<section class="how-it-works"><div class="container"><div class="section-header"><div class="section-badge">Hoe het werkt</div><h2 class="section-title">Begin slimmer met wandelen in 3 stappen</h2></div><div class="steps-container steps-grid"><div class="step-card"><div class="step-number">1</div><h3>Sluit Apple Health</h3><p>aan Importeer uw wandeltrainingen automatisch vanuit Apple Health. Hike Analytics analyseert uw historische gegevens
+          stel basisgegevens vast en bereken uw chronische trainingsbelasting (gemiddelde over 28 dagen).</p></div><div class="step-card"><div class="step-number">2</div><h3>Krijg op bewijs gebaseerde inzichten</h3><p>Ontvang uitgebreide analyses, inclusief Peak-30-cadans, loopgegevens, wandeleconomie (transportkosten),
+          en ACWR. Begrijp uw patronen met door onderzoek ondersteunde drempels.</p></div><div class="step-card"><div class="step-number">3</div><h3>Wetenschappelijk trainen</h3><p>Volg persoonlijke aanbevelingen voor cadanszones, progressie van de trainingsbelasting (5-10% per week) en
+          herstel. Volg verbeteringen op het gebied van efficiëntie, snelheid en gezondheidsresultaten in de loop van de tijd.</p></div></div></div></section>
 Voor wie is het bedoeld Sectie
-<section class="target-audience">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Voor wie is het</div>
-<h2 class="section-title">Perfect voor elke wandelaar</h2>
-</div>
-<div class="audience-grid">
-<div class="audience-card">
-<h3>Gezondheidsliefhebbers</h3>
-<p>Bereik de richtlijn van 150 min/week voor matige activiteit (100+ spm). Volg de Peak-30-cadans voor cardiovasculaire gezondheid.
-          Voldoe nauwkeurig aan de WHO/CDC-aanbevelingen, en niet alleen door het tellen van stappen.</p>
-</div>
-<div class="audience-card">
-<h3>Fitnesswandelaars</h3>
-<p>Train met cadanszones (Zone 2 op 100-110 spm voor aërobe basis, intervallen op 120-130 spm). Verbeter het wandelen
-          economie met 10-15% te verlagen door middel van systematische training. Volg WSS om de belasting te optimaliseren.</p>
-</div>
-<div class="audience-card">
-<h3>Race wandelaars</h3>
-<p>Meester<a href="/nl/stride-mechanics/#race-hiking">techniek voor racewandelen</a>(130-160 tpm, rechtdoor
-          been, overdreven heuprotatie). Volg de biomechanica, bewaak de trainingsbelasting en voorkom overtraining met ACWR.</p>
-</div>
-<div class="audience-card">
-<h3>Oudere volwassenen (65+)</h3>
-<p>Monitor<a href="/nl/gait-analysis/#gait-speed">loopsnelheid als een vitaal teken</a>(behoud &gt;1,0 m/s).
+<section class="target-audience"><div class="container"><div class="section-header"><div class="section-badge">Voor wie is het</div><h2 class="section-title">Perfect voor elke wandelaar</h2></div><div class="audience-grid"><div class="audience-card"><h3>Gezondheidsliefhebbers</h3><p>Bereik de richtlijn van 150 min/week voor matige activiteit (100+ spm). Volg de Peak-30-cadans voor cardiovasculaire gezondheid.
+          Voldoe nauwkeurig aan de WHO/CDC-aanbevelingen, en niet alleen door het tellen van stappen.</p></div><div class="audience-card"><h3>Fitnesswandelaars</h3><p>Train met cadanszones (Zone 2 op 100-110 spm voor aërobe basis, intervallen op 120-130 spm). Verbeter het wandelen
+          economie met 10-15% te verlagen door middel van systematische training. Volg WSS om de belasting te optimaliseren.</p></div><div class="audience-card"><h3>Race wandelaars</h3><p>Meester<a href="/nl/stride-mechanics/#race-hiking">techniek voor racewandelen</a>(130-160 tpm, rechtdoor
+          been, overdreven heuprotatie). Volg de biomechanica, bewaak de trainingsbelasting en voorkom overtraining met ACWR.</p></div><div class="audience-card"><h3>Oudere volwassenen (65+)</h3><p>Monitor<a href="/nl/gait-analysis/#gait-speed">loopsnelheid als een vitaal teken</a>(behoud &gt;1,0 m/s).
           Houd het percentage dubbele ondersteuning (&lt;35%=goede stabiliteit), asymmetrie en valrisico-indicatoren bij. Vroege detectie van
-            mobiliteit achteruit.</p>
-</div>
-<div class="audience-card">
-<h3>Rehabilitatiepatiënten</h3>
-<p>Volg objectief loopverbeteringen met de GSI-formule (asymmetrie &lt;5%=goed), paslengteherstel en
-            vooruitgang van de wandelsnelheid. Documenteer de uitkomsten voor zorgverleners.</p>
-</div>
-<div class="audience-card">
-<h3>Gewichtsverlies en gezondheid</h3>
-<p>Optimaliseer de calorieverbranding met zonetraining. Bereken het energieverbruik nauwkeurig met Moore's cadans →MET's
-          vergelijking. Bouw duurzame trainingsgewoonten op met geleidelijke progressie van de belasting.</p>
-</div>
-</div>
-</div>
-</section>
+            mobiliteit achteruit.</p></div><div class="audience-card"><h3>Rehabilitatiepatiënten</h3><p>Volg objectief loopverbeteringen met de GSI-formule (asymmetrie &lt;5%=goed), paslengteherstel en
+            vooruitgang van de wandelsnelheid. Documenteer de uitkomsten voor zorgverleners.</p></div><div class="audience-card"><h3>Gewichtsverlies en gezondheid</h3><p>Optimaliseer de calorieverbranding met zonetraining. Bereken het energieverbruik nauwkeurig met Moore's cadans →MET's
+          vergelijking. Bouw duurzame trainingsgewoonten op met geleidelijke progressie van de belasting.</p></div></div></div></section>
 Sectie Leermiddelen - NIEUW
-<section class="learning-resources">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Leer</div>
-<h2 class="section-title">Diepe wetenschappelijke kennis</h2>
-<p class="section-subtitle">Uitgebreide handleidingen waarin de wetenschap achter elke statistiek wordt uitgelegd</p>
-</div>
-<div class="resources-grid">
-<div class="resource-card">
-<div class="resource-category">Grondbeginselen</div>
-<h3><a href="/nl/walking-zones/">Op cadans gebaseerde trainingszones</a></h3>
-<p>Volledige paradigmaverschuiving van HR naar cadans. Leer de 5 zones (60-99 tot 130+ spm), CADENCE-volwassenenonderzoek,
-          Peak-30-concept en IWT-protocollen.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">Biomechanica</div>
-<h3><a href="/nl/stride-mechanics/">Wandelpasmechanica</a></h3>
-<p>Loopcyclusfasen, wedstrijdwandeltechniek (World Athletics-regels), verschillen tussen wandelen en hardlopen. GSI
-          formule voor asymmetrie, grondreactiekrachten.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">Prestatie</div>
-<h3><a href="/nl/gait-efficiency/">Wandelen Economie &amp; CoT</a></h3>
-<p>Optimalisatie van transportkosten, omgekeerd slingermodel (65-70% energieterugwinning), Froudegetal, U-vormig
-          economiecurve, overgang van stijging naar run met 2,2 m/s.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">Opleiding</div>
-<h3><a href="/nl/training-load/">Beheer van trainingsbelasting</a></h3>
-<p>Piek-30 cadans (Del Pozo-Cruz 2022), stevige periodesconcept, ACWR-blessurepreventie, 3:1 periodisering,
-          gepolariseerde versus piramidale intensiteitsverdeling.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">Statistieken</div>
-<h3><a href="/nl/gait-analysis/">Ganganalysestatistieken</a></h3>
-<p>7 essentiële meetgegevens met klinische drempels: cadans (100 spm = 3 MET's), paslengte (40-50% hoogte),
-          dubbele ondersteuning (&gt;35% = valrisico), asymmetrie, snelheid.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">Formules</div>
-<h3><a href="/nl/formulas/">Wetenschappelijke formules</a></h3>
-<p>11 gevalideerde vergelijkingen: Moore-cadans →MET's (R²=0,87), ACSM VO₂, energieverbruik, GSI, EF, kosten van
-          Transport, trainingsbelasting, 6MWT-voorspelling.</p>
-</div>
-</div>
-<div class="text-center mt-8">
-<a class="btn btn-secondary" href="/nl/research/">Ontdek alle onderzoeksartikelen →</a>
-</div>
-</div>
-</section>
+<section class="learning-resources"><div class="container"><div class="section-header"><div class="section-badge">Leer</div><h2 class="section-title">Diepe wetenschappelijke kennis</h2><p class="section-subtitle">Uitgebreide handleidingen waarin de wetenschap achter elke statistiek wordt uitgelegd</p></div><div class="resources-grid"><div class="resource-card"><div class="resource-category">Grondbeginselen</div><h3><a href="/nl/walking-zones/">Op cadans gebaseerde trainingszones</a></h3><p>Volledige paradigmaverschuiving van HR naar cadans. Leer de 5 zones (60-99 tot 130+ spm), CADENCE-volwassenenonderzoek,
+          Peak-30-concept en IWT-protocollen.</p></div><div class="resource-card"><div class="resource-category">Biomechanica</div><h3><a href="/nl/stride-mechanics/">Wandelpasmechanica</a></h3><p>Loopcyclusfasen, wedstrijdwandeltechniek (World Athletics-regels), verschillen tussen wandelen en hardlopen. GSI
+          formule voor asymmetrie, grondreactiekrachten.</p></div><div class="resource-card"><div class="resource-category">Prestatie</div><h3><a href="/nl/gait-efficiency/">Wandelen Economie &amp; CoT</a></h3><p>Optimalisatie van transportkosten, omgekeerd slingermodel (65-70% energieterugwinning), Froudegetal, U-vormig
+          economiecurve, overgang van stijging naar run met 2,2 m/s.</p></div><div class="resource-card"><div class="resource-category">Opleiding</div><h3><a href="/nl/training-load/">Beheer van trainingsbelasting</a></h3><p>Piek-30 cadans (Del Pozo-Cruz 2022), stevige periodesconcept, ACWR-blessurepreventie, 3:1 periodisering,
+          gepolariseerde versus piramidale intensiteitsverdeling.</p></div><div class="resource-card"><div class="resource-category">Statistieken</div><h3><a href="/nl/gait-analysis/">Ganganalysestatistieken</a></h3><p>7 essentiële meetgegevens met klinische drempels: cadans (100 spm = 3 MET's), paslengte (40-50% hoogte),
+          dubbele ondersteuning (&gt;35% = valrisico), asymmetrie, snelheid.</p></div><div class="resource-card"><div class="resource-category">Formules</div><h3><a href="/nl/formulas/">Wetenschappelijke formules</a></h3><p>11 gevalideerde vergelijkingen: Moore-cadans →MET's (R²=0,87), ACSM VO₂, energieverbruik, GSI, EF, kosten van
+          Transport, trainingsbelasting, 6MWT-voorspelling.</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/nl/research/">Ontdek alle onderzoeksartikelen →</a></div></div></section>
 Prijssectie
-<section class="pricing">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Prijzen</div>
-<h2 class="section-title">Eenvoudige, transparante prijzen</h2>
-<p class="section-subtitle">Probeer Hike Analytics 7 dagen gratis. Geen creditcard vereist.</p>
-</div>
-<div class="pricing-card">
-<div class="price-header">
-<h3>Analytics Premium verhogen</h3>
-<div class="price">
-<span class="amount">$ 3,99</span>
-<span class="period">/maand</span>
-</div>
-</div>
-<ul class="features-list">
-<li>Piek-30 cadans volgen</li>
-<li>Op cadans gebaseerde trainingszones</li>
-<li>Geavanceerde loopanalyse (GSI, CoT, EF, Vertical Ratio)</li>
-<li>Wandelstressscore (WSS)</li>
-<li>ACWR-blessurepreventie</li>
-<li>11 gevalideerde formules</li>
-<li>Volledige gegevensprivacy (lokale verwerking)</li>
-<li>Apple Health-integratie</li>
-<li>Geen advertenties, ooit</li>
-</ul>
-<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Gratis proefperiode starten</a>
-<p class="trial-note">Gratis proefperiode van 7 dagen • Op elk moment opzeggen • Geen creditcard vereist</p>
-</div>
-</div>
-</section>
+<section class="pricing"><div class="container"><div class="section-header"><div class="section-badge">Prijzen</div><h2 class="section-title">Eenvoudige, transparante prijzen</h2><p class="section-subtitle">Probeer Hike Analytics 7 dagen gratis. Geen creditcard vereist.</p></div><div class="pricing-card"><div class="price-header"><h3>Analytics Premium verhogen</h3><div class="price"><span class="amount">$ 3,99</span><span class="period">/maand</span></div></div><ul class="features-list"><li>Piek-30 cadans volgen</li><li>Op cadans gebaseerde trainingszones</li><li>Geavanceerde loopanalyse (GSI, CoT, EF, Vertical Ratio)</li><li>Wandelstressscore (WSS)</li><li>ACWR-blessurepreventie</li><li>11 gevalideerde formules</li><li>Volledige gegevensprivacy (lokale verwerking)</li><li>Apple Health-integratie</li><li>Geen advertenties, ooit</li></ul><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Gratis proefperiode starten</a><p class="trial-note">Gratis proefperiode van 7 dagen • Op elk moment opzeggen • Geen creditcard vereist</p></div></div></section>
 Sectie Veelgestelde vragen
-<section class="faq">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">Veelgestelde vragen</div>
-<h2 class="section-title">Veelgestelde vragen</h2>
-</div>
-<div class="faq-grid">
-<div class="faq-item">
-<h3>Wat maakt Hike Analytics anders dan andere wandel-apps?</h3>
-<p>Wij zijn de enige wandel-app die is gebouwd op peer-reviewed onderzoek. Elke statistiek: piek-30-cadans, ACWR, kosten van
+<section class="faq"><div class="container"><div class="section-header"><div class="section-badge">Veelgestelde vragen</div><h2 class="section-title">Veelgestelde vragen</h2></div><div class="faq-grid"><div class="faq-item"><h3>Wat maakt Hike Analytics anders dan andere wandel-apps?</h3><p>Wij zijn de enige wandel-app die is gebouwd op peer-reviewed onderzoek. Elke statistiek: piek-30-cadans, ACWR, kosten van
           Transport – komt uit gepubliceerde onderzoeken. We citeren meer dan 50 wetenschappelijke artikelen en leggen het bewijsmateriaal achter elk artikel uit
-          aanbeveling. Het is geen stappen tellen; het zijn biomechanica en inspanningsfysiologie toegepast op wandelen.</p>
-</div>
-<div class="faq-item">
-<h3>Wat is Peak-30-cadans en waarom doet dit ertoe?</h3>
-<p>De piek-30-cadans is uw gemiddelde stappen per minuut tijdens de beste 30 opeenvolgende minuten wandelen per dag.
+          aanbeveling. Het is geen stappen tellen; het zijn biomechanica en inspanningsfysiologie toegepast op wandelen.</p></div><div class="faq-item"><h3>Wat is Peak-30-cadans en waarom doet dit ertoe?</h3><p>De piek-30-cadans is uw gemiddelde stappen per minuut tijdens de beste 30 opeenvolgende minuten wandelen per dag.
           Een baanbrekend onderzoek onder 78.500 mensen (Del Pozo-Cruz, JAMA 2022) toonde aan dat het onafhankelijk de sterfte voorspelt
-          risico, zelfs na controle voor het totale aantal dagelijkse stappen. Wij houden dit automatisch bij, iets wat geen enkele andere app doet.</p>
-</div>
-<div class="faq-item">
-<h3>Hoe voorkomt ACWR blessures?</h3>
-<p>Acute:Chronic Workload Ratio vergelijkt uw recente training (laatste 7 dagen) met uw langetermijngemiddelde (28
+          risico, zelfs na controle voor het totale aantal dagelijkse stappen. Wij houden dit automatisch bij, iets wat geen enkele andere app doet.</p></div><div class="faq-item"><h3>Hoe voorkomt ACWR blessures?</h3><p>Acute:Chronic Workload Ratio vergelijkt uw recente training (laatste 7 dagen) met uw langetermijngemiddelde (28
           dagen). Onderzoek toont aan dat ACWR &gt;1,50 het risico op blessures 2 tot 4 keer verhoogt. Wij berekenen dit dagelijks en waarschuwen u vooraf
-          gevaarlijke pieken, waardoor u veilig vooruitgang kunt boeken met wekelijkse verhogingen van 5-10%.</p>
-</div>
-<div class="faq-item">
-<h3>Waarom cadanszones in plaats van hartslagzones?</h3>
-<p>Cadans is betrouwbaarder en praktischer. Uit het CADENCE-Adults-onderzoek bleek dat 100 spm = matige intensiteit (3 MET's)
+          gevaarlijke pieken, waardoor u veilig vooruitgang kunt boeken met wekelijkse verhogingen van 5-10%.</p></div><div class="faq-item"><h3>Waarom cadanszones in plaats van hartslagzones?</h3><p>Cadans is betrouwbaarder en praktischer. Uit het CADENCE-Adults-onderzoek bleek dat 100 spm = matige intensiteit (3 MET's)
           met 86% gevoeligheid en 90% specificiteit. De hartslag varieert afhankelijk van hitte, stress, ziekte, cafeïne en cadans
-          niet. Bovendien heb je geen borstband of horloge nodig; tel gewoon stappen.</p>
-</div>
-<div class="faq-item">
-<h3>Kan Hike Analytics helpen bij valpreventie?</h3>
-<p>Ja. We volgen klinische valrisico-indicatoren: loopsnelheid &lt;0,8 m/s, dubbele ondersteuning&gt;35%, asymmetrie (GSI)&gt;10%,
+          niet. Bovendien heb je geen borstband of horloge nodig; tel gewoon stappen.</p></div><div class="faq-item"><h3>Kan Hike Analytics helpen bij valpreventie?</h3><p>Ja. We volgen klinische valrisico-indicatoren: loopsnelheid &lt;0,8 m/s, dubbele ondersteuning&gt;35%, asymmetrie (GSI)&gt;10%,
             en stabiliteit tijdens het wandelen. Dit zijn evidence-based drempelwaarden uit geriatrisch onderzoek. Vroege detectie maakt dit mogelijk
-            interventie voordat vallen plaatsvindt – van cruciaal belang voor volwassenen van 65+.</p>
-</div>
-<div class="faq-item">
-<h3>Hoe beschermt Hike Analytics mijn privacy?</h3>
-<p>Alle gegevens blijven op uw iPhone-periode. Geen cloudsynchronisatie, geen accounts, geen servers die uw gezondheidsgegevens ontvangen. Wij
+            interventie voordat vallen plaatsvindt – van cruciaal belang voor volwassenen van 65+.</p></div><div class="faq-item"><h3>Hoe beschermt Hike Analytics mijn privacy?</h3><p>Alle gegevens blijven op uw iPhone-periode. Geen cloudsynchronisatie, geen accounts, geen servers die uw gezondheidsgegevens ontvangen. Wij
           alles lokaal verwerken met behulp van algoritmen op het apparaat. Uw wandelgegevens, locatie en hartslag: volledig
           privé. We volgen de GDPR- en HIPAA-filosofie, ook al zijn we daar wettelijk niet toe verplicht (omdat we dat nooit zien).
-          uw gegevens).</p>
-</div>
-<div class="faq-item">
-<h3>Heb ik speciale apparatuur nodig?</h3>
-<p>Nee. Hike Analytics werkt met iPhone of Apple Watch. Voor basisstatistieken (cadans, afstand, stappen) gebruikt u alleen uw
+          uw gegevens).</p></div><div class="faq-item"><h3>Heb ik speciale apparatuur nodig?</h3><p>Nee. Hike Analytics werkt met iPhone of Apple Watch. Voor basisstatistieken (cadans, afstand, stappen) gebruikt u alleen uw
           telefoon. Voor hartslaggegevens en nauwkeurigere statistieken helpt een Apple Watch, maar deze is niet vereist. Wij integreren
-          met Apple Health, zodat elk compatibel apparaat werkt.</p>
-</div>
-<div class="faq-item">
-<h3>Is Hike Analytics geschikt voor revalidatie?</h3>
-<p>Absoluut. We worden gebruikt door revalidatiepatiënten die het herstel objectief volgen. De Gait Symmetry Index (GSI)-formule
+          met Apple Health, zodat elk compatibel apparaat werkt.</p></div><div class="faq-item"><h3>Is Hike Analytics geschikt voor revalidatie?</h3><p>Absoluut. We worden gebruikt door revalidatiepatiënten die het herstel objectief volgen. De Gait Symmetry Index (GSI)-formule
           kwantificeert links-rechtsverschillen (&lt;3% normaal,&gt;10% klinisch significant). Monitor het herstel van de paslengte,
             verbetering van de wandelsnelheid en vermindering van asymmetrie. Deel objectieve gegevens met uw fysiotherapeut of
-            arts.</p>
-</div>
-<div class="faq-item">
-<h3>Wat is de wetenschappelijke basis voor de 11 formules?</h3>
-<p>Elke<a href="/nl/formulas/">formule</a>omvat validatiegegevens en origineel onderzoekscitaat.
+            arts.</p></div><div class="faq-item"><h3>Wat is de wetenschappelijke basis voor de 11 formules?</h3><p>Elke<a href="/nl/formulas/">formule</a>omvat validatiegegevens en origineel onderzoekscitaat.
           Voorbeeld: Moore's cadans →METs-vergelijking (R²=0,87, ±0,5 METs-nauwkeurigheid, 76 volwassenen) is 23-35% nauwkeuriger dan
-          oudere ACSM-vergelijkingen. We laten de wetenschap zien, niet alleen maar black-box-berekeningen.</p>
-</div>
-</div>
-</div>
-</section>
+          oudere ACSM-vergelijkingen. We laten de wetenschap zien, niet alleen maar black-box-berekeningen.</p></div></div></div></section>
 CTA-sectie
-<section class="final-cta">
-<div class="container">
-<div class="cta-content">
-<h2>Klaar om slimmer te wandelen?</h2>
-<p>Sluit je aan bij wandelaars die de gezondheid verbeteren met door onderzoek ondersteunde loopanalyse en trainingswetenschap</p>
-<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Download stijgingsanalyse</a>
-<p class="cta-note">Gratis proefperiode van 7 dagen • iOS 16+ • Apple Health compatibel • Geen creditcard vereist</p>
-</div>
-</div>
-</section>
-    
-
-    
-    
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Private Hiking Analytics - Ganganalyse, WSS...</h2>
-    <p class="ai-citation-answer">Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-11</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>app voor wandelanalyse · loopanalyse-app · privacy-eerste iOS-app · gezondheidsstatistieken wandelen · stap analyse</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../nl/bibliography/">
+<section class="final-cta"><div class="container"><div class="cta-content"><h2>Klaar om slimmer te wandelen?</h2><p>Sluit je aan bij wandelaars die de gezondheid verbeteren met door onderzoek ondersteunde loopanalyse en trainingswetenschap</p><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Download stijgingsanalyse</a><p class="cta-note">Gratis proefperiode van 7 dagen • iOS 16+ • Apple Health compatibel • Geen creditcard vereist</p></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Private Hiking Analytics - Ganganalyse, WSS...</h2><p class="ai-citation-answer">Privé iOS-wandelapp met geavanceerde loopanalyse. Houd uw passtatistieken, wandelzones en WSS lokaal bij. Op wetenschap gebaseerde inzichten voor wandelaars.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>app voor wandelanalyse · loopanalyse-app · privacy-eerste iOS-app · gezondheidsstatistieken wandelen · stap analyse</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../nl/bibliography/">
           
           Bibliografie
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-    <nav class="ai-citation-links" aria-label="Private Hiking Analytics - Ganganalyse, WSS...">
-      
-      <a class="ai-related-link" href="../nl/research/">
+        </a></li></ul><nav class="ai-citation-links" aria-label="Private Hiking Analytics - Ganganalyse, WSS..."><a class="ai-related-link" href="../nl/research/">
         Onderzoek
-      </a>
-      
-      <a class="ai-related-link" href="../nl/getting-started/">
+      </a><a class="ai-related-link" href="../nl/getting-started/">
         Aan de slag
-      </a>
-      
-      <a class="ai-related-link" href="../nl/contact/">
+      </a><a class="ai-related-link" href="../nl/contact/">
         Contact
-      </a>
-      
-    </nav>
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Downloaden</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Download in de App Store">
-                        <img src="../assets/images/badge-app-store.svg"
+      </a></nav></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Downloaden</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Download in de App Store"><img src="../assets/images/badge-app-store.svg"
                             alt="Download in de App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="ONTDEK HET OP Google Play">
-                        <img src="../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="ONTDEK HET OP Google Play"><img src="../assets/images/badge-google-play.svg"
                             alt="ONTDEK HET OP Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Beschikbaar in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Beschikbaar in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link active"
+                </a><a href="/nl/" class="lang-link active"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. Alle rechten voorbehouden
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/nl/privacy/">Privacy</a></li>
-                <li><a href="/nl/terms/">Voorwaarden</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Deze website gebruikt cookies om uw ervaring te verbeteren.</p>
-            <a href="/nl/privacy/" class="text-sm">Meer informatie</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Weigeren</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Accepteren</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-  <script src="../assets/js/carousel.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/nl/privacy/">Privacy</a></li><li><a href="/nl/terms/">Voorwaarden</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Deze website gebruikt cookies om uw ervaring te verbeteren.</p><a href="/nl/privacy/" class="text-sm">Meer informatie</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Weigeren</button><button id="cookie-accept" class="btn btn-primary btn-small">Accepteren</button></div></div></div><script src="../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../assets/js/carousel.min.js?v=cd68d98548fd" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>

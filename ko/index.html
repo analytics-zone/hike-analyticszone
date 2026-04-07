@@ -1,247 +1,61 @@
-<!DOCTYPE html>
-<html lang="ko" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표</title>
-  <meta name="description" content="Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="하이킹 분석 앱, 보행분석 앱, 개인 정보 보호를 최우선으로 하는 iOS 앱, 하이킹 건강 지표, 보폭 분석">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/ko/">
-
-  
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hike.analyticszone.app/ko/">
-  <meta property="og:title" content="개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표">
-  <meta property="og:description" content="Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and.">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/ko/">
-  <meta name="twitter:title" content="개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표">
-  <meta name="twitter:description" content="Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and.">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="ko" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표</title><meta name="description" content="Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="하이킹 분석 앱, 보행분석 앱, 개인 정보 보호를 최우선으로 하는 iOS 앱, 하이킹 건강 지표, 보폭 분석"><link rel="canonical" href="https://hike.analyticszone.app/ko/"><meta property="og:type" content="website"><meta property="og:url" content="https://hike.analyticszone.app/ko/"><meta property="og:title" content="개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표"><meta property="og:description" content="Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/ko/"><meta name="twitter:title" content="개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표"><meta name="twitter:description" content="Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/"><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -500,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -548,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -560,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "ko"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -579,14 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -629,22 +416,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -658,1465 +430,457 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">콘텐츠로 건너뛰기</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/ko/" class="site-logo">
-                <picture>
-                    <source srcset="../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/ko/" 
+  </script></head><body><a href="#main-content" class="skip-link">콘텐츠로 건너뛰기</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ko/" class="site-logo"><picture><source srcset="../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ko/" 
                                 aria-current="">
                                 집
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ko/getting-started/" class="nav-label">배우다</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ko/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/ko/getting-started/" class="nav-label">배우다</a><ul class="submenu"><li><a href="/ko/getting-started/" 
                                         aria-current="">
                                         시작하기
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/walking-zones/" 
+                                    </a></li><li><a href="/ko/walking-zones/" 
                                         aria-current="">
                                         하이킹 구역
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/gait-analysis/" 
+                                    </a></li><li><a href="/ko/gait-analysis/" 
                                         aria-current="">
                                         보행분석
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/training-load/" 
+                                    </a></li><li><a href="/ko/training-load/" 
                                         aria-current="">
                                         훈련 부하
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/wss-calculator/" 
+                                    </a></li><li><a href="/ko/wss-calculator/" 
                                         aria-current="">
                                         WSS 계산기
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ko/research/" class="nav-label">과학</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ko/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ko/research/" class="nav-label">과학</a><ul class="submenu"><li><a href="/ko/research/" 
                                         aria-current="">
                                         연구
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/formulas/" 
+                                    </a></li><li><a href="/ko/formulas/" 
                                         aria-current="">
                                         방식
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/gait-efficiency/" 
+                                    </a></li><li><a href="/ko/gait-efficiency/" 
                                         aria-current="">
                                         보행 효율성
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/stride-mechanics/" 
+                                    </a></li><li><a href="/ko/stride-mechanics/" 
                                         aria-current="">
                                         보폭 역학
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/walking-vs-running/" 
+                                    </a></li><li><a href="/ko/walking-vs-running/" 
                                         aria-current="">
                                         하이킹 vs 달리기
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/benchmarks/" 
+                                    </a></li><li><a href="/ko/benchmarks/" 
                                         aria-current="">
                                         벤치마크
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/bibliography/" 
+                                    </a></li><li><a href="/ko/bibliography/" 
                                         aria-current="">
                                         서지
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ko/for-health/" class="nav-label">당신을 위한</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ko/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ko/for-health/" class="nav-label">당신을 위한</a><ul class="submenu"><li><a href="/ko/for-health/" 
                                         aria-current="">
                                         건강을 위해
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/for-fitness/" 
+                                    </a></li><li><a href="/ko/for-fitness/" 
                                         aria-current="">
                                         피트니스용
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/for-seniors/" 
+                                    </a></li><li><a href="/ko/for-seniors/" 
                                         aria-current="">
                                         노인을 위한
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/for-rehabilitation/" 
+                                    </a></li><li><a href="/ko/for-rehabilitation/" 
                                         aria-current="">
                                         재활을 위해
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ko/cadence-calculator/" class="nav-label">도구</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ko/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ko/cadence-calculator/" class="nav-label">도구</a><ul class="submenu"><li><a href="/ko/cadence-calculator/" 
                                         aria-current="">
                                         케이던스 계산기
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/gait-assessment/" 
+                                    </a></li><li><a href="/ko/gait-assessment/" 
                                         aria-current="">
                                         보행 평가
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ko/vo2max-calculator/" 
+                                    </a></li><li><a href="/ko/vo2max-calculator/" 
                                         aria-current="">
                                         VO2max 계산기
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ko/contact/" 
+                                    </a></li></ul></li><li><a href="/ko/contact/" 
                                 aria-current="">
                                 연락하다
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="언어 선택">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="언어 선택"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" selected>
+                        </option><option value="ko" selected>
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="토글 메뉴"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="토글 메뉴"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><main id="main-content" class="main-content">
     
     Hike Analytics 앱 랜딩 페이지 - 홈페이지
 앱 소개가 포함된 히어로 섹션
-<section class="app-hero">
-<div class="container">
-<div class="app-hero-content">
-<div class="app-hero-text">
-<div class="app-hero-badge">
-<span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span>
-<span>과학 기반 하이킹 분석</span>
-</div>
-<h1>더 스마트하게 하이킹하고 더 건강하게 생활하세요</h1>
-<p class="app-hero-subtitle">연구 기반 보행 분석, 케이던스 기반 훈련 영역 및 포괄적인 기능을 갖춘 개인 정보 보호 우선 iOS 앱
+<section class="app-hero"><div class="container"><div class="app-hero-content"><div class="app-hero-text"><div class="app-hero-badge"><span><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></span><span>과학 기반 하이킹 분석</span></div><h1>더 스마트하게 하이킹하고 더 건강하게 생활하세요</h1><p class="app-hero-subtitle">연구 기반 보행 분석, 케이던스 기반 훈련 영역 및 포괄적인 기능을 갖춘 개인 정보 보호 우선 iOS 앱
           건강 추적.
-          CADENCE-Adults, Peak-30 연구 및 생체역학 과학을 포함한 동료 검토 연구를 기반으로 합니다.</p>
-<div class="app-hero-cta">
-<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">App Store에서 다운로드</a>
-<a class="btn btn-large btn-secondary" href="#science">과학을 탐험해보세요</a>
-</div>
-<p class="mt-6 text-sm-muted">✓ 7일 무료 평가판    ✓ 계정 필요 없음    ✓ 100% 로컬 데이터</p>
-</div>
-<div class="app-hero-mockup">
-<div class="mockup-phone">
-<img alt="iPhone의 보행 지표 및 건강 데이터를 통해 하이킹 운동을 보여주는 Hike Analytics iOS 앱" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/>
-</div>
-</div>
-</div>
-</div>
-</section>
+          CADENCE-Adults, Peak-30 연구 및 생체역학 과학을 포함한 동료 검토 연구를 기반으로 합니다.</p><div class="app-hero-cta"><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">App Store에서 다운로드</a><a class="btn btn-large btn-secondary" href="#science">과학을 탐험해보세요</a></div><p class="mt-6 text-sm-muted">✓ 7일 무료 평가판    ✓ 계정 필요 없음    ✓ 100% 로컬 데이터</p></div><div class="app-hero-mockup"><div class="mockup-phone"><img alt="iPhone의 보행 지표 및 건강 데이터를 통해 하이킹 운동을 보여주는 Hike Analytics iOS 앱" height="auto" loading="eager" src="../assets/images/screenshots/workouts-list.png" width="400"/></div></div></div></div></section>
 과학 기초 섹션 - 신규
-<section class="scientific-foundation" id="science">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">연구 지원</div>
-<h2 class="section-title">과학적 증거를 바탕으로 구축됨</h2>
-<p class="section-subtitle">모든 지표와 권장 사항은 동료 검토 연구를 기반으로 합니다</p>
-</div>
-<div class="science-highlights">
-<div class="science-card">
-<div class="science-number">78,500</div>
-<h3>피크-30 케이던스 연구</h3>
-<p>영국 바이오뱅크(Biobank) 연구에 따르면 30분 동안 100spm 이상을 섭취하면 사망률이 40~50% 더 낮아질 것으로 독립적으로 예측됩니다.
-          (Del Pozo-Cruz 외, JAMA 2022)</p>
-</div>
-<div class="science-card">
-<div class="science-number">100spm</div>
-<h3>중간 강도 임계값</h3>
-<p>CADENCE-성인 연구(Tudor-Locke et al., 2019)는 86% 감도로 분당 100걸음 = 3 MET를 확립했습니다.
-          89.6% 특이성—케이던스 존의 기초</p>
-</div>
-<div class="science-card">
-<div class="science-number">2-4×</div>
-<h3>ACWR 부상 예방</h3>
-<p>급성:만성 작업 부하 비율 &gt;1.50은 부상 위험을 2~4배 증가시킵니다(Gabbett, Br J Sports Med 2016). 이를 추적합니다.
-          당신을 안전하게 보호하기 위해 자동으로</p>
-</div>
-<div class="science-card">
-<div class="science-number">11</div>
-<h3>검증된 공식</h3>
-<p>무어의 종지→MET 방정식에서 운송 비용 계산까지,<a href="/ko/formulas/">모든
-            공식</a>검증 데이터와 임상 해석이 포함되어 있습니다</p>
-</div>
-</div>
-<div class="text-center mt-8">
-<a class="btn btn-secondary" href="/ko/bibliography/">50개 이상의 과학 참고문헌 보기 →</a>
-</div>
-</div>
-</section>
+<section class="scientific-foundation" id="science"><div class="container"><div class="section-header"><div class="section-badge">연구 지원</div><h2 class="section-title">과학적 증거를 바탕으로 구축됨</h2><p class="section-subtitle">모든 지표와 권장 사항은 동료 검토 연구를 기반으로 합니다</p></div><div class="science-highlights"><div class="science-card"><div class="science-number">78,500</div><h3>피크-30 케이던스 연구</h3><p>영국 바이오뱅크(Biobank) 연구에 따르면 30분 동안 100spm 이상을 섭취하면 사망률이 40~50% 더 낮아질 것으로 독립적으로 예측됩니다.
+          (Del Pozo-Cruz 외, JAMA 2022)</p></div><div class="science-card"><div class="science-number">100spm</div><h3>중간 강도 임계값</h3><p>CADENCE-성인 연구(Tudor-Locke et al., 2019)는 86% 감도로 분당 100걸음 = 3 MET를 확립했습니다.
+          89.6% 특이성—케이던스 존의 기초</p></div><div class="science-card"><div class="science-number">2-4×</div><h3>ACWR 부상 예방</h3><p>급성:만성 작업 부하 비율 &gt;1.50은 부상 위험을 2~4배 증가시킵니다(Gabbett, Br J Sports Med 2016). 이를 추적합니다.
+          당신을 안전하게 보호하기 위해 자동으로</p></div><div class="science-card"><div class="science-number">11</div><h3>검증된 공식</h3><p>무어의 종지→MET 방정식에서 운송 비용 계산까지,<a href="/ko/formulas/">모든
+            공식</a>검증 데이터와 임상 해석이 포함되어 있습니다</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/ko/bibliography/">50개 이상의 과학 참고문헌 보기 →</a></div></div></section>
 주요 기능 섹션
-<section class="app-features" id="features">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">특징</div>
-<h2 class="section-title">고급 하이킹 성과 지표</h2>
-<p class="section-subtitle">모든 수준의 등산객을 위해 설계된 전문가 수준의 분석</p>
-</div>
-<div class="app-features-grid">
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-zones"></use>
-</svg>
-</div>
-<h3>케이던스 기반 트레이닝 존</h3>
-<p><a href="/ko/walking-zones/">로 훈련 5개의 연구 지원 구역</a>(60-99 spm ~ 130+ spm) 기준
-          CADENCE-성인 연구. 심박수 구간보다 더 실용적입니다. 가슴 끈이 필요하지 않습니다. 매일 Peak-30 케이던스를 추적하세요.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-chart"></use>
-</svg>
-</div>
-<h3>종합적인 보행 분석</h3>
-<p>추적<a href="/ko/gait-analysis/">7가지 필수 보행 지표</a>: 케이던스, 보폭(40-50%
+<section class="app-features" id="features"><div class="container"><div class="section-header"><div class="section-badge">특징</div><h2 class="section-title">고급 하이킹 성과 지표</h2><p class="section-subtitle">모든 수준의 등산객을 위해 설계된 전문가 수준의 분석</p></div><div class="app-features-grid"><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-zones"></use></svg></div><h3>케이던스 기반 트레이닝 존</h3><p><a href="/ko/walking-zones/">로 훈련 5개의 연구 지원 구역</a>(60-99 spm ~ 130+ spm) 기준
+          CADENCE-성인 연구. 심박수 구간보다 더 실용적입니다. 가슴 끈이 필요하지 않습니다. 매일 Peak-30 케이던스를 추적하세요.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-chart"></use></svg></div><h3>종합적인 보행 분석</h3><p>추적<a href="/ko/gait-analysis/">7가지 필수 보행 지표</a>: 케이던스, 보폭(40-50%
           높이), 지면 접촉 시간(200-300ms), 이중 지지(20-30%), 비대칭(GSI 공식), 속도 및
-          수직 진동(4-8cm).</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-load"></use>
-</svg>
-</div>
-<h3>훈련 부하 관리</h3>
-<p><a href="/ko/training-load/">로 과도한 훈련을 방지하세요. 하이킹 스트레스 점수(WSS)</a>및 ACWR
+          수직 진동(4-8cm).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-load"></use></svg></div><h3>훈련 부하 관리</h3><p><a href="/ko/training-load/">로 과도한 훈련을 방지하세요. 하이킹 스트레스 점수(WSS)</a>및 ACWR
           추적. 급성:만성 비율(0.80~1.30 유지)을 모니터링하고 다음을 기반으로 맞춤형 회복 권장사항을 받으세요.
-          당신의 짐.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-stride"></use>
-</svg>
-</div>
-<h3>생체역학 및 효율성</h3>
-<p>깊은<a href="/ko/stride-mechanics/">보폭 역학 분석</a>그리고<a href="/ko/gait-efficiency/">하이킹 경제</a>추적. 운송 비용 최적화(~0.48-0.55
-          1.3m/s에서 kcal/kg/km), 보행 편차를 식별하고 효율성을 10-15% 향상시킵니다.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-health"></use>
-</svg>
-</div>
-<h3>건강 통합</h3>
-<p>원활한 Apple Health 통합. 하이킹 운동을 자동으로 가져오고 심박수, 거리,
+          당신의 짐.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-stride"></use></svg></div><h3>생체역학 및 효율성</h3><p>깊은<a href="/ko/stride-mechanics/">보폭 역학 분석</a>그리고<a href="/ko/gait-efficiency/">하이킹 경제</a>추적. 운송 비용 최적화(~0.48-0.55
+          1.3m/s에서 kcal/kg/km), 보행 편차를 식별하고 효율성을 10-15% 향상시킵니다.</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-health"></use></svg></div><h3>건강 통합</h3><p>원활한 Apple Health 통합. 하이킹 운동을 자동으로 가져오고 심박수, 거리,
           단계 및 건강 지표. Apple Watch 이동성 지표(하이킹 안정성, 이중 지원 %,
-          비대칭).</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<svg aria-hidden="true" class="icon">
-<use href="../assets/images/icons-sprite.svg#icon-privacy"></use>
-</svg>
-</div>
-<h3>완전한 개인정보 보호</h3>
-<p>모든 하이킹 데이터는 iPhone에 보관됩니다. 클라우드 동기화, 계정, 추적이 없습니다. 귀하의 건강 지표는 다음과 같습니다.
-          100% 비공개이며 로컬 처리로 안전합니다. GDPR 및 HIPAA 철학을 준수합니다.</p>
-</div>
-</div>
-</div>
-</section>
+          비대칭).</p></div><div class="feature-card"><div class="feature-icon"><svg aria-hidden="true" class="icon"><use href="../assets/images/icons-sprite.svg#icon-privacy"></use></svg></div><h3>완전한 개인정보 보호</h3><p>모든 하이킹 데이터는 iPhone에 보관됩니다. 클라우드 동기화, 계정, 추적이 없습니다. 귀하의 건강 지표는 다음과 같습니다.
+          100% 비공개이며 로컬 처리로 안전합니다. GDPR 및 HIPAA 철학을 준수합니다.</p></div></div></div></section>
 과학적 차별화 요소 섹션 - 신규
-<section class="differentiators">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">하이킹을 해야 하는 이유 분석</div>
-<h2 class="section-title">과학을 바탕으로 만들어진 유일한 하이킹 앱</h2>
-<p class="section-subtitle">걸음 수 계산뿐만 아니라 생체역학 연구를 바탕으로 한 포괄적인 분석</p>
-</div>
-<div class="differentiator-list">
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>심박수에 따른 케이던스</h3>
-<p><strong>그것이 중요한 이유:</strong>심박수는 열, 스트레스, 카페인, 질병에 따라 달라집니다. 케이던스는
+<section class="differentiators"><div class="container"><div class="section-header"><div class="section-badge">하이킹을 해야 하는 이유 분석</div><h2 class="section-title">과학을 바탕으로 만들어진 유일한 하이킹 앱</h2><p class="section-subtitle">걸음 수 계산뿐만 아니라 생체역학 연구를 바탕으로 한 포괄적인 분석</p></div><div class="differentiator-list"><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>심박수에 따른 케이던스</h3><p><strong>그것이 중요한 이유:</strong>심박수는 열, 스트레스, 카페인, 질병에 따라 달라집니다. 케이던스는
             신뢰할 수 있고 실용적이며 입증되었습니다. CADENCE-Adults 연구에 따르면 100spm = 중간 강도(86%)가 나타났습니다.
-            민감도 - HR 추정보다 더 정확합니다.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>피크-30 케이던스 추적</h3>
-<p><strong>획기적인 지표:</strong>하루에 30분간 연속으로 가장 좋은 하이킹을 독립적으로 수행한 경우
+            민감도 - HR 추정보다 더 정확합니다.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>피크-30 케이던스 추적</h3><p><strong>획기적인 지표:</strong>하루에 30분간 연속으로 가장 좋은 하이킹을 독립적으로 수행한 경우
             심혈관 건강과 사망률을 예측합니다(영국 바이오뱅크 참가자 78,500명). 우리는 이것을 매일 추적합니다.
-            하이킹 앱이 그렇습니다.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>ACWR을 통한 부상 예방</h3>
-<p><strong>하이킹에 적합한 스포츠 과학:</strong>급성:만성 작업 부하 비율을 모니터링하여 예방하세요.
-            과도한 사용으로 인한 부상. 연구에 따르면 ACWR &gt;1.50 = 2-4× 부상 위험이 있습니다. 위험한 스파이크가 발생하기 전에 알려드립니다.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>하이킹 경제 최적화</h3>
-<p><strong>에너지 효율성:</strong>운송 비용 및 하이킹 효율성을 추적합니다(EF, 수직 비율).
+            하이킹 앱이 그렇습니다.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>ACWR을 통한 부상 예방</h3><p><strong>하이킹에 적합한 스포츠 과학:</strong>급성:만성 작업 부하 비율을 모니터링하여 예방하세요.
+            과도한 사용으로 인한 부상. 연구에 따르면 ACWR &gt;1.50 = 2-4× 부상 위험이 있습니다. 위험한 스파이크가 발생하기 전에 알려드립니다.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>하이킹 경제 최적화</h3><p><strong>에너지 효율성:</strong>운송 비용 및 하이킹 효율성을 추적합니다(EF, 수직 비율).
             Zone 2 훈련, 보폭 최적화 및 근력 운동을 통해 경제성을 10-15% 향상합니다.
-            지도.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>보행 대칭 및 낙상 위험</h3>
-<p><strong>임상 등급 지표:</strong>보행 대칭 지수(GSI)를 계산하여 비대칭을 감지합니다. 더블
+            지도.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>보행 대칭 및 낙상 위험</h3><p><strong>임상 등급 지표:</strong>보행 대칭 지수(GSI)를 계산하여 비대칭을 감지합니다. 더블
             지지력 &gt;35% 및 하이킹 속도 &lt;0.8m/s는 낙상 위험이 높다는 것을 나타냅니다. 이는 노인과
-              재활.</p>
-</div>
-</div>
-<div class="differentiator-item">
-<div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-<div class="differentiator-content">
-<h3>50개 이상의 동료 검토 인용</h3>
-<p><strong>증거 기반 지침:</strong>모든 추천 링크는<a href="/ko/bibliography/">출판된 연구</a>. Tudor-Locke의 케이던스 임계값에서
-            Studenski의 보행 속도 바이탈 사인 - 과학의 투명성.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+              재활.</p></div></div><div class="differentiator-item"><div class="differentiator-icon"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div class="differentiator-content"><h3>50개 이상의 동료 검토 인용</h3><p><strong>증거 기반 지침:</strong>모든 추천 링크는<a href="/ko/bibliography/">출판된 연구</a>. Tudor-Locke의 케이던스 임계값에서
+            Studenski의 보행 속도 바이탈 사인 - 과학의 투명성.</p></div></div></div></div></section>
 작동 방식 섹션
-<section class="how-it-works">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">작동 방식</div>
-<h2 class="section-title">3단계로 더욱 스마트하게 하이킹을 시작해 보세요</h2>
-</div>
-<div class="steps-container steps-grid">
-<div class="step-card">
-<div class="step-number">1</div>
-<h3>Apple Health 연결</h3>
-<p>Apple Health에서 하이킹 운동을 자동으로 가져옵니다. Hike Analytics는 과거 데이터를 분석하여
-          기준 지표를 설정하고 만성 훈련 부하(28일 평균)를 계산합니다.</p>
-</div>
-<div class="step-card">
-<div class="step-number">2</div>
-<h3>증거 기반 통찰력 확보</h3>
-<p>Peak-30 케이던스, 보행 지표, 하이킹 경제성(교통 비용),
-          그리고 ACWR. 연구 기반 임계값을 통해 패턴을 이해하세요.</p>
-</div>
-<div class="step-card">
-<div class="step-number">3</div>
-<h3>과학적으로 훈련</h3>
-<p>케이던스 존, 트레이닝 로드 진행(매주 5~10%) 및
-          회복. 시간이 지남에 따라 효율성, 속도 및 상태 결과의 개선을 추적합니다.</p>
-</div>
-</div>
-</div>
-</section>
+<section class="how-it-works"><div class="container"><div class="section-header"><div class="section-badge">작동 방식</div><h2 class="section-title">3단계로 더욱 스마트하게 하이킹을 시작해 보세요</h2></div><div class="steps-container steps-grid"><div class="step-card"><div class="step-number">1</div><h3>Apple Health 연결</h3><p>Apple Health에서 하이킹 운동을 자동으로 가져옵니다. Hike Analytics는 과거 데이터를 분석하여
+          기준 지표를 설정하고 만성 훈련 부하(28일 평균)를 계산합니다.</p></div><div class="step-card"><div class="step-number">2</div><h3>증거 기반 통찰력 확보</h3><p>Peak-30 케이던스, 보행 지표, 하이킹 경제성(교통 비용),
+          그리고 ACWR. 연구 기반 임계값을 통해 패턴을 이해하세요.</p></div><div class="step-card"><div class="step-number">3</div><h3>과학적으로 훈련</h3><p>케이던스 존, 트레이닝 로드 진행(매주 5~10%) 및
+          회복. 시간이 지남에 따라 효율성, 속도 및 상태 결과의 개선을 추적합니다.</p></div></div></div></section>
 누구를 위한 섹션인가요
-<section class="target-audience">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">누구를 위한 것인가</div>
-<h2 class="section-title">모든 등산객에게 완벽한</h2>
-</div>
-<div class="audience-grid">
-<div class="audience-card">
-<h3>건강 매니아</h3>
-<p>주당 150분 적당한 활동(100+ spm) 지침을 달성하세요. 심혈관 건강을 위해 Peak-30 케이던스를 추적하세요.
-          단지 걸음 수를 세는 것이 아니라 정확하게 WHO/CDC 권장 사항을 충족하세요.</p>
-</div>
-<div class="audience-card">
-<h3>피트니스 등산객</h3>
-<p>케이던스 구역을 사용하여 훈련하십시오(유산소 베이스의 경우 구역 2, 120-130 spm의 간격). 하이킹 개선
-          체계적인 훈련을 통해 경제성을 10~15% 향상시킵니다. WSS를 추적하여 로드를 최적화합니다.</p>
-</div>
-<div class="audience-card">
-<h3>경주 등산객</h3>
-<p>스승님<a href="/ko/stride-mechanics/#race-hiking">경주 하이킹 기술</a>(130-160 spm, 직선
-          다리, 과장된 엉덩이 회전). ACWR을 통해 생체역학을 추적하고, 훈련 부하를 모니터링하고, 과도한 훈련을 방지하세요.</p>
-</div>
-<div class="audience-card">
-<h3>노인(65세 이상)</h3>
-<p>모니터<a href="/ko/gait-analysis/#gait-speed">보행 속도를 활력 징후로 삼아</a>(&gt;1.0m/s 유지).
+<section class="target-audience"><div class="container"><div class="section-header"><div class="section-badge">누구를 위한 것인가</div><h2 class="section-title">모든 등산객에게 완벽한</h2></div><div class="audience-grid"><div class="audience-card"><h3>건강 매니아</h3><p>주당 150분 적당한 활동(100+ spm) 지침을 달성하세요. 심혈관 건강을 위해 Peak-30 케이던스를 추적하세요.
+          단지 걸음 수를 세는 것이 아니라 정확하게 WHO/CDC 권장 사항을 충족하세요.</p></div><div class="audience-card"><h3>피트니스 등산객</h3><p>케이던스 구역을 사용하여 훈련하십시오(유산소 베이스의 경우 구역 2, 120-130 spm의 간격). 하이킹 개선
+          체계적인 훈련을 통해 경제성을 10~15% 향상시킵니다. WSS를 추적하여 로드를 최적화합니다.</p></div><div class="audience-card"><h3>경주 등산객</h3><p>스승님<a href="/ko/stride-mechanics/#race-hiking">경주 하이킹 기술</a>(130-160 spm, 직선
+          다리, 과장된 엉덩이 회전). ACWR을 통해 생체역학을 추적하고, 훈련 부하를 모니터링하고, 과도한 훈련을 방지하세요.</p></div><div class="audience-card"><h3>노인(65세 이상)</h3><p>모니터<a href="/ko/gait-analysis/#gait-speed">보행 속도를 활력 징후로 삼아</a>(&gt;1.0m/s 유지).
           이중 지지율(&lt;35%=양호한 안정성), 비대칭 및 낙상 위험 지표를 추적합니다. 조기 발견
-            이동성 저하.</p>
-</div>
-<div class="audience-card">
-<h3>재활 환자</h3>
-<p>GSI 공식(비대칭 &lt;5%=양호), 보폭 회복을 통해 보행 개선을 객관적으로 추적합니다.
-            하이킹 속도 진행. 의료 서비스 제공자를 위한 결과를 문서화합니다.</p>
-</div>
-<div class="audience-card">
-<h3>체중 감량 및 건강</h3>
-<p>존 트레이닝으로 칼로리 소모를 최적화하세요. 무어의 종지→MET를 사용하여 에너지 소비를 정확하게 계산합니다.
-          방정식. 점진적인 부하 진행으로 지속 가능한 운동 습관을 구축하세요.</p>
-</div>
-</div>
-</div>
-</section>
+            이동성 저하.</p></div><div class="audience-card"><h3>재활 환자</h3><p>GSI 공식(비대칭 &lt;5%=양호), 보폭 회복을 통해 보행 개선을 객관적으로 추적합니다.
+            하이킹 속도 진행. 의료 서비스 제공자를 위한 결과를 문서화합니다.</p></div><div class="audience-card"><h3>체중 감량 및 건강</h3><p>존 트레이닝으로 칼로리 소모를 최적화하세요. 무어의 종지→MET를 사용하여 에너지 소비를 정확하게 계산합니다.
+          방정식. 점진적인 부하 진행으로 지속 가능한 운동 습관을 구축하세요.</p></div></div></div></section>
 학습 리소스 섹션 - 신규
-<section class="learning-resources">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">배우세요</div>
-<h2 class="section-title">깊은 과학적 지식</h2>
-<p class="section-subtitle">모든 지표 뒤에 숨은 과학을 설명하는 종합 가이드</p>
-</div>
-<div class="resources-grid">
-<div class="resource-card">
-<div class="resource-category">기초</div>
-<h3><a href="/ko/walking-zones/">케이던스 기반 트레이닝 존</a></h3>
-<p>HR에서 케이던스로 패러다임 전환을 완료하세요. 5개 구역(60-99 ~ 130+ spm), CADENCE-성인 연구,
-          Peak-30 개념 및 IWT 프로토콜.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">생체역학</div>
-<h3><a href="/ko/stride-mechanics/">하이킹 보폭 역학</a></h3>
-<p>보행 주기 단계, 경주 하이킹 기술(세계 육상 경기 규칙), 하이킹과 달리기의 차이점. GSI
-          비대칭, 지면 반력에 대한 공식.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">성능</div>
-<h3><a href="/ko/gait-efficiency/">하이킹 경제 및 CoT</a></h3>
-<p>운송 비용 최적화, 역진자 모델(65-70% 에너지 회수), 프루드 수, U자형
-          경제 곡선, 하이킹-런 전환 속도는 2.2m/s입니다.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">훈련</div>
-<h3><a href="/ko/training-load/">훈련 부하 관리</a></h3>
-<p>피크-30 케이던스(Del Pozo-Cruz 2022), 활발한 시합 개념, ACWR 부상 예방, 3:1 주기화,
-          편광 대 피라미드 강도 분포.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">측정항목</div>
-<h3><a href="/ko/gait-analysis/">보행 분석 지표</a></h3>
-<p>임상 임계값이 있는 7가지 필수 지표: 케이던스(100 spm = 3 MET), 보폭(40-50% 높이),
-          이중 지지(&gt;35% = 추락 위험), 비대칭, 속도.</p>
-</div>
-<div class="resource-card">
-<div class="resource-category">수식</div>
-<h3><a href="/ko/formulas/">과학 공식</a></h3>
-<p>11개의 검증된 방정식: 무어 케이던스→METs(R²=0.87), ACSM VO2, 에너지 소비, GSI, EF, 비용
-          운송, 훈련 부하, 6MWT 예측.</p>
-</div>
-</div>
-<div class="text-center mt-8">
-<a class="btn btn-secondary" href="/ko/research/">모든 연구 기사 탐색 →</a>
-</div>
-</div>
-</section>
+<section class="learning-resources"><div class="container"><div class="section-header"><div class="section-badge">배우세요</div><h2 class="section-title">깊은 과학적 지식</h2><p class="section-subtitle">모든 지표 뒤에 숨은 과학을 설명하는 종합 가이드</p></div><div class="resources-grid"><div class="resource-card"><div class="resource-category">기초</div><h3><a href="/ko/walking-zones/">케이던스 기반 트레이닝 존</a></h3><p>HR에서 케이던스로 패러다임 전환을 완료하세요. 5개 구역(60-99 ~ 130+ spm), CADENCE-성인 연구,
+          Peak-30 개념 및 IWT 프로토콜.</p></div><div class="resource-card"><div class="resource-category">생체역학</div><h3><a href="/ko/stride-mechanics/">하이킹 보폭 역학</a></h3><p>보행 주기 단계, 경주 하이킹 기술(세계 육상 경기 규칙), 하이킹과 달리기의 차이점. GSI
+          비대칭, 지면 반력에 대한 공식.</p></div><div class="resource-card"><div class="resource-category">성능</div><h3><a href="/ko/gait-efficiency/">하이킹 경제 및 CoT</a></h3><p>운송 비용 최적화, 역진자 모델(65-70% 에너지 회수), 프루드 수, U자형
+          경제 곡선, 하이킹-런 전환 속도는 2.2m/s입니다.</p></div><div class="resource-card"><div class="resource-category">훈련</div><h3><a href="/ko/training-load/">훈련 부하 관리</a></h3><p>피크-30 케이던스(Del Pozo-Cruz 2022), 활발한 시합 개념, ACWR 부상 예방, 3:1 주기화,
+          편광 대 피라미드 강도 분포.</p></div><div class="resource-card"><div class="resource-category">측정항목</div><h3><a href="/ko/gait-analysis/">보행 분석 지표</a></h3><p>임상 임계값이 있는 7가지 필수 지표: 케이던스(100 spm = 3 MET), 보폭(40-50% 높이),
+          이중 지지(&gt;35% = 추락 위험), 비대칭, 속도.</p></div><div class="resource-card"><div class="resource-category">수식</div><h3><a href="/ko/formulas/">과학 공식</a></h3><p>11개의 검증된 방정식: 무어 케이던스→METs(R²=0.87), ACSM VO2, 에너지 소비, GSI, EF, 비용
+          운송, 훈련 부하, 6MWT 예측.</p></div></div><div class="text-center mt-8"><a class="btn btn-secondary" href="/ko/research/">모든 연구 기사 탐색 →</a></div></div></section>
 가격 섹션
-<section class="pricing">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">가격</div>
-<h2 class="section-title">간단하고 투명한 가격</h2>
-<p class="section-subtitle">Hike Analytics를 7일 동안 무료로 사용해 보세요. 신용 카드가 필요하지 않습니다.</p>
-</div>
-<div class="pricing-card">
-<div class="price-header">
-<h3>Hike Analytics 프리미엄</h3>
-<div class="price">
-<span class="amount">$3,99</span>
-<span class="period">/월</span>
-</div>
-</div>
-<ul class="features-list">
-<li>피크-30 케이던스 추적</li>
-<li>케이던스 기반 훈련 영역</li>
-<li>고급 보행 분석(GSI, CoT, EF, 수직비)</li>
-<li>하이킹 스트레스 점수(WSS)</li>
-<li>ACWR 부상 예방</li>
-<li>11개의 검증된 공식</li>
-<li>완전한 데이터 개인정보 보호(로컬 처리)</li>
-<li>Apple Health 통합</li>
-<li>광고는 절대 없어</li>
-</ul>
-<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">무료 평가판 시작</a>
-<p class="trial-note">7일 무료 평가판 • 언제든지 취소 가능 • 신용카드 불필요</p>
-</div>
-</div>
-</section>
+<section class="pricing"><div class="container"><div class="section-header"><div class="section-badge">가격</div><h2 class="section-title">간단하고 투명한 가격</h2><p class="section-subtitle">Hike Analytics를 7일 동안 무료로 사용해 보세요. 신용 카드가 필요하지 않습니다.</p></div><div class="pricing-card"><div class="price-header"><h3>Hike Analytics 프리미엄</h3><div class="price"><span class="amount">$3,99</span><span class="period">/월</span></div></div><ul class="features-list"><li>피크-30 케이던스 추적</li><li>케이던스 기반 훈련 영역</li><li>고급 보행 분석(GSI, CoT, EF, 수직비)</li><li>하이킹 스트레스 점수(WSS)</li><li>ACWR 부상 예방</li><li>11개의 검증된 공식</li><li>완전한 데이터 개인정보 보호(로컬 처리)</li><li>Apple Health 통합</li><li>광고는 절대 없어</li></ul><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">무료 평가판 시작</a><p class="trial-note">7일 무료 평가판 • 언제든지 취소 가능 • 신용카드 불필요</p></div></div></section>
 FAQ 섹션
-<section class="faq">
-<div class="container">
-<div class="section-header">
-<div class="section-badge">FAQ</div>
-<h2 class="section-title">자주 묻는 질문</h2>
-</div>
-<div class="faq-grid">
-<div class="faq-item">
-<h3>Hike Analytics가 다른 하이킹 앱과 다른 점은 무엇입니까?</h3>
-<p>우리는 동료 검토 연구를 기반으로 구축된 유일한 하이킹 앱입니다. 모든 지표 - 피크-30 케이던스, ACWR, 비용
+<section class="faq"><div class="container"><div class="section-header"><div class="section-badge">FAQ</div><h2 class="section-title">자주 묻는 질문</h2></div><div class="faq-grid"><div class="faq-item"><h3>Hike Analytics가 다른 하이킹 앱과 다른 점은 무엇입니까?</h3><p>우리는 동료 검토 연구를 기반으로 구축된 유일한 하이킹 앱입니다. 모든 지표 - 피크-30 케이던스, ACWR, 비용
           운송 - 출판된 연구에서 나온 것입니다. 우리는 50개 이상의 과학 논문을 인용하고 각 논문의 근거를 설명합니다.
-          추천. 걸음 수를 세는 것이 아닙니다. 그것은 하이킹에 적용되는 생체역학과 운동 생리학입니다.</p>
-</div>
-<div class="faq-item">
-<h3>Peak-30 케이던스는 무엇이며 왜 중요한가요?</h3>
-<p>피크-30 케이던스는 매일 최고의 연속 하이킹 30분 동안의 분당 평균 걸음 수입니다.
+          추천. 걸음 수를 세는 것이 아닙니다. 그것은 하이킹에 적용되는 생체역학과 운동 생리학입니다.</p></div><div class="faq-item"><h3>Peak-30 케이던스는 무엇이며 왜 중요한가요?</h3><p>피크-30 케이던스는 매일 최고의 연속 하이킹 30분 동안의 분당 평균 걸음 수입니다.
           78,500명을 대상으로 한 획기적인 연구(Del Pozo-Cruz, JAMA 2022)에서 독립적으로 사망률을 예측하는 것으로 나타났습니다.
-          일일 총 걸음수를 통제한 후에도 위험합니다. 우리는 이를 자동으로 추적하는데, 이는 다른 앱에서는 할 수 없는 일입니다.</p>
-</div>
-<div class="faq-item">
-<h3>ACWR은 부상을 어떻게 예방합니까?</h3>
-<p>급성:만성 작업 부하 비율은 최근 훈련(지난 7일)을 장기 평균(28일)과 비교합니다.
+          일일 총 걸음수를 통제한 후에도 위험합니다. 우리는 이를 자동으로 추적하는데, 이는 다른 앱에서는 할 수 없는 일입니다.</p></div><div class="faq-item"><h3>ACWR은 부상을 어떻게 예방합니까?</h3><p>급성:만성 작업 부하 비율은 최근 훈련(지난 7일)을 장기 평균(28일)과 비교합니다.
           일). 연구에 따르면 ACWR &gt;1.50은 부상 위험을 2~4배 증가시킵니다. 우리는 이것을 매일 계산하고 전에 경고합니다.
-          위험한 스파이크를 발생시켜 매주 5~10%씩 증가하여 안전한 발전을 돕습니다.</p>
-</div>
-<div class="faq-item">
-<h3>심박수 구역 대신 케이던스 구역을 사용하는 이유는 무엇입니까?</h3>
-<p>케이던스가 더 안정적이고 실용적입니다. CADENCE-Adults 연구에서는 100spm = 중간 강도(3MET)가 입증되었습니다.
+          위험한 스파이크를 발생시켜 매주 5~10%씩 증가하여 안전한 발전을 돕습니다.</p></div><div class="faq-item"><h3>심박수 구역 대신 케이던스 구역을 사용하는 이유는 무엇입니까?</h3><p>케이던스가 더 안정적이고 실용적입니다. CADENCE-Adults 연구에서는 100spm = 중간 강도(3MET)가 입증되었습니다.
           민감도 86%, 특이도 90%로 심박수는 열, 스트레스, 질병, 카페인에 따라 달라집니다.
-          그렇지 않습니다. 게다가 가슴 끈이나 시계도 필요하지 않습니다. 그냥 걸음수를 세어보세요.</p>
-</div>
-<div class="faq-item">
-<h3>Hike Analytics가 넘어짐 예방에 도움이 될 수 있습니까?</h3>
-<p>예. 임상적 낙상 위험 지표를 추적합니다: 보행 속도 &lt;0.8m/s, 이중 지지대&gt;35%, 비대칭(GSI) &gt;10%,
+          그렇지 않습니다. 게다가 가슴 끈이나 시계도 필요하지 않습니다. 그냥 걸음수를 세어보세요.</p></div><div class="faq-item"><h3>Hike Analytics가 넘어짐 예방에 도움이 될 수 있습니까?</h3><p>예. 임상적 낙상 위험 지표를 추적합니다: 보행 속도 &lt;0.8m/s, 이중 지지대&gt;35%, 비대칭(GSI) &gt;10%,
             그리고 하이킹의 꾸준함. 이는 노인 연구의 증거 기반 임계값입니다. 조기 발견이 가능
-            낙상이 발생하기 전 개입 - 65세 이상 성인에게 중요합니다.</p>
-</div>
-<div class="faq-item">
-<h3>Hike Analytics는 내 개인 정보를 어떻게 보호합니까?</h3>
-<p>모든 데이터는 iPhone에 보관됩니다. 클라우드 동기화, 계정, 건강 데이터를 수신하는 서버가 없습니다. 우리
+            낙상이 발생하기 전 개입 - 65세 이상 성인에게 중요합니다.</p></div><div class="faq-item"><h3>Hike Analytics는 내 개인 정보를 어떻게 보호합니까?</h3><p>모든 데이터는 iPhone에 보관됩니다. 클라우드 동기화, 계정, 건강 데이터를 수신하는 서버가 없습니다. 우리
           온디바이스 알고리즘을 사용하여 모든 것을 로컬에서 처리합니다. 하이킹 지표, 위치, 심박수 등 모든 정보
           비공개. 법적으로 요구되지는 않지만 GDPR 및 HIPAA 철학을 따릅니다.
-          귀하의 데이터).</p>
-</div>
-<div class="faq-item">
-<h3>특별한 장비가 필요합니까?</h3>
-<p>아니요. Hike Analytics는 iPhone 또는 Apple Watch와 함께 작동합니다. 기본 측정항목(케이던스, 거리, 걸음수)의 경우
+          귀하의 데이터).</p></div><div class="faq-item"><h3>특별한 장비가 필요합니까?</h3><p>아니요. Hike Analytics는 iPhone 또는 Apple Watch와 함께 작동합니다. 기본 측정항목(케이던스, 거리, 걸음수)의 경우
           전화. 심박수 데이터와 보다 정확한 측정을 위해 Apple Watch가 도움이 되지만 필수는 아닙니다. 우리는 통합한다
-          Apple Health를 사용하면 모든 호환 장치가 작동합니다.</p>
-</div>
-<div class="faq-item">
-<h3>Hike Analytics는 재활에 적합합니까?</h3>
-<p>전적으로. 우리는 회복을 객관적으로 추적하는 재활 환자들에게 사용됩니다. 보행 대칭 지수(GSI) 공식
+          Apple Health를 사용하면 모든 호환 장치가 작동합니다.</p></div><div class="faq-item"><h3>Hike Analytics는 재활에 적합합니까?</h3><p>전적으로. 우리는 회복을 객관적으로 추적하는 재활 환자들에게 사용됩니다. 보행 대칭 지수(GSI) 공식
           좌우 차이를 정량화합니다(&lt;3% 정상, &gt;10% 임상적으로 유의함). 보폭 회복을 모니터링하고,
             하이킹 속도 향상 및 비대칭 감소. 객관적인 데이터를 물리치료사와 공유하거나
-            의사.</p>
-</div>
-<div class="faq-item">
-<h3>11가지 공식의 과학적 근거는 무엇입니까?</h3>
-<p>각각<a href="/ko/formulas/">공식</a>검증 데이터와 독창적인 연구 인용이 포함되어 있습니다.
+            의사.</p></div><div class="faq-item"><h3>11가지 공식의 과학적 근거는 무엇입니까?</h3><p>각각<a href="/ko/formulas/">공식</a>검증 데이터와 독창적인 연구 인용이 포함되어 있습니다.
           예: 무어의 종지→MET 방정식(R²=0.87, ±0.5 MET 정확도, 성인 76명)은 다음보다 23-35% 더 정확합니다.
-          이전 ACSM 방정식. 단순한 블랙박스 계산이 아닌 과학을 보여드립니다.</p>
-</div>
-</div>
-</div>
-</section>
+          이전 ACSM 방정식. 단순한 블랙박스 계산이 아닌 과학을 보여드립니다.</p></div></div></div></section>
 CTA 섹션
-<section class="final-cta">
-<div class="container">
-<div class="cta-content">
-<h2>더 스마트하게 하이킹할 준비가 되셨나요?</h2>
-<p>연구 기반 보행 분석 및 훈련 과학을 통해 건강을 개선하는 등산객과 함께하세요</p>
-<a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">하이킹 분석 다운로드</a>
-<p class="cta-note">7일 무료 평가판 • iOS 16+ • Apple Health 호환 • 신용카드 불필요</p>
-</div>
-</div>
-</section>
-    
-
-    
-    
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표</h2>
-    <p class="ai-citation-answer">Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-11</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>하이킹 분석 앱 · 보행분석 앱 · 개인 정보 보호를 최우선으로 하는 iOS 앱 · 하이킹 건강 지표 · 보폭 분석</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../ko/bibliography/">
+<section class="final-cta"><div class="container"><div class="cta-content"><h2>더 스마트하게 하이킹할 준비가 되셨나요?</h2><p>연구 기반 보행 분석 및 훈련 과학을 통해 건강을 개선하는 등산객과 함께하세요</p><a class="btn btn-large btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">하이킹 분석 다운로드</a><p class="cta-note">7일 무료 평가판 • iOS 16+ • Apple Health 호환 • 신용카드 불필요</p></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="index"><div class="container ai-citation-shell"><h2 class="ai-citation-title">개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표</h2><p class="ai-citation-answer">Science-Based Hiking Analytics Hike Smarter, Live Healthier Privacy-first iOS app with research-backed gait analysis, cadence-based training zones, and.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>하이킹 분석 앱 · 보행분석 앱 · 개인 정보 보호를 최우선으로 하는 iOS 앱 · 하이킹 건강 지표 · 보폭 분석</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../ko/bibliography/">
           
           서지
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-    <nav class="ai-citation-links" aria-label="개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표">
-      
-      <a class="ai-related-link" href="../ko/research/">
+        </a></li></ul><nav class="ai-citation-links" aria-label="개인 하이킹 분석 - iOS용 보행 분석, WSS, 건강 지표"><a class="ai-related-link" href="../ko/research/">
         연구
-      </a>
-      
-      <a class="ai-related-link" href="../ko/getting-started/">
+      </a><a class="ai-related-link" href="../ko/getting-started/">
         시작하기
-      </a>
-      
-      <a class="ai-related-link" href="../ko/contact/">
+      </a><a class="ai-related-link" href="../ko/contact/">
         연락하다
-      </a>
-      
-    </nav>
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">다운로드</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="앱 스토어에서 다운로드">
-                        <img src="../assets/images/badge-app-store.svg"
+      </a></nav></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">다운로드</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="앱 스토어에서 다운로드"><img src="../assets/images/badge-app-store.svg"
                             alt="앱 스토어에서 다운로드" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Google Play에서 구매하세요">
-                        <img src="../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Google Play에서 구매하세요"><img src="../assets/images/badge-google-play.svg"
                             alt="Google Play에서 구매하세요" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">사용 가능</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">사용 가능</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link active"
+                </a><a href="/ko/" class="lang-link active"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. 모든 권리 보유
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/ko/privacy/">은둔</a></li>
-                <li><a href="/ko/terms/">자귀</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>이 웹사이트는 귀하의 경험을 개선하기 위해 쿠키를 사용합니다.</p>
-            <a href="/ko/privacy/" class="text-sm">자세히 알아보기</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">감소</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">수용하다</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-  <script src="../assets/js/carousel.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/ko/privacy/">은둔</a></li><li><a href="/ko/terms/">자귀</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>이 웹사이트는 귀하의 경험을 개선하기 위해 쿠키를 사용합니다.</p><a href="/ko/privacy/" class="text-sm">자세히 알아보기</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">감소</button><button id="cookie-accept" class="btn btn-primary btn-small">수용하다</button></div></div></div><script src="../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../assets/js/carousel.min.js?v=cd68d98548fd" defer></script><script src="../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../sw.js') }</script></body></html>

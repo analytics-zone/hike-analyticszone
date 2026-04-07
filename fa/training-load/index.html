@@ -1,251 +1,61 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای</title>
-  <meta name="description" content="معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="نمره استرس پیاده روی, ماشین حساب WSS, بار تمرین پیاده روی, حجم پیاده روی هفتگی, ردیابی تناسب اندام پیاده روی">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/fa/training-load/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-11T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://hike.analyticszone.app/fa/training-load/">
-  <meta property="og:title" content="راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای">
-  <meta property="og:description" content="معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید.">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="fa_IR">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/fa/training-load/">
-  <meta name="twitter:title" content="راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای">
-  <meta name="twitter:description" content="معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید.">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/training-load/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/training-load/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/training-load/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/training-load/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/training-load/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/training-load/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/training-load/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/training-load/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/training-load/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/training-load/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/training-load/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/training-load/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/training-load/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/training-load/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/training-load/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/training-load/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/training-load/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/training-load/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/training-load/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/training-load/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/training-load/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/training-load/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/training-load/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/training-load/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/training-load/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/training-load/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/training-load/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/training-load/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/training-load/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/training-load/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/training-load/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/training-load/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/training-load/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/training-load/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/training-load/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/training-load/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/training-load/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/training-load/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/training-load/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/training-load/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/training-load/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/training-load/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/training-load/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/training-load/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/training-load/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/training-load/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/training-load/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/training-load/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/training-load/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/training-load/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/training-load/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/training-load/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/training-load/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/training-load/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/training-load/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/training-load/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای</title><meta name="description" content="معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="نمره استرس پیاده روی, ماشین حساب WSS, بار تمرین پیاده روی, حجم پیاده روی هفتگی, ردیابی تناسب اندام پیاده روی"><link rel="canonical" href="https://hike.analyticszone.app/fa/training-load/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-11T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://hike.analyticszone.app/fa/training-load/"><meta property="og:title" content="راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای"><meta property="og:description" content="معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="fa_IR"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/fa/training-load/"><meta name="twitter:title" content="راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای"><meta name="twitter:description" content="معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/training-load/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/training-load/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/training-load/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/training-load/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/training-load/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/training-load/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/training-load/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/training-load/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/training-load/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/training-load/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/training-load/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/training-load/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/training-load/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/training-load/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/training-load/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/training-load/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/training-load/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/training-load/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/training-load/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/training-load/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/training-load/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/training-load/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/training-load/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/training-load/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/training-load/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/training-load/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/training-load/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/training-load/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/training-load/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/training-load/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/training-load/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/training-load/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/training-load/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/training-load/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/training-load/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/training-load/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/training-load/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/training-load/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/training-load/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/training-load/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/training-load/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/training-load/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/training-load/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/training-load/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/training-load/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/training-load/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/training-load/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/training-load/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/training-load/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/training-load/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/training-load/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/training-load/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/training-load/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/training-load/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/training-load/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/training-load/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -504,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -552,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -564,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "fa"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -583,12 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -617,11 +402,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -664,14 +445,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -696,17 +470,7 @@ img[width][height] {
     "@id": "https://hike.analyticszone.app/fa/training-load/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -720,1989 +484,431 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">پرش به محتوا</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/fa/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/fa/" 
+  </script></head><body><a href="#main-content" class="skip-link">پرش به محتوا</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/fa/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/fa/" 
                                 aria-current="">
                                 صفحه اصلی
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/fa/getting-started/" class="nav-label">یاد بگیرید</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/fa/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/fa/getting-started/" class="nav-label">یاد بگیرید</a><ul class="submenu"><li><a href="/fa/getting-started/" 
                                         aria-current="">
                                         شروع به کار
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/walking-zones/" 
+                                    </a></li><li><a href="/fa/walking-zones/" 
                                         aria-current="">
                                         مناطق پیاده روی
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/gait-analysis/" 
+                                    </a></li><li><a href="/fa/gait-analysis/" 
                                         aria-current="">
                                         تجزیه و تحلیل راه رفتن
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/training-load/" class="active" 
+                                    </a></li><li><a href="/fa/training-load/" class="active" 
                                         aria-current="page">
                                         بار آموزشی
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/wss-calculator/" 
+                                    </a></li><li><a href="/fa/wss-calculator/" 
                                         aria-current="">
                                         ماشین حساب WSS
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/fa/research/" class="nav-label">علم</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/fa/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/fa/research/" class="nav-label">علم</a><ul class="submenu"><li><a href="/fa/research/" 
                                         aria-current="">
                                         تحقیق کنید
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/formulas/" 
+                                    </a></li><li><a href="/fa/formulas/" 
                                         aria-current="">
                                         فرمول ها
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/gait-efficiency/" 
+                                    </a></li><li><a href="/fa/gait-efficiency/" 
                                         aria-current="">
                                         کارایی راه رفتن
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/stride-mechanics/" 
+                                    </a></li><li><a href="/fa/stride-mechanics/" 
                                         aria-current="">
                                         مکانیک گام
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/walking-vs-running/" 
+                                    </a></li><li><a href="/fa/walking-vs-running/" 
                                         aria-current="">
                                         پیاده روی در مقابل دویدن
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/benchmarks/" 
+                                    </a></li><li><a href="/fa/benchmarks/" 
                                         aria-current="">
                                         معیارها
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/bibliography/" 
+                                    </a></li><li><a href="/fa/bibliography/" 
                                         aria-current="">
                                         کتابشناسی
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/fa/for-health/" class="nav-label">برای شما</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/fa/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/fa/for-health/" class="nav-label">برای شما</a><ul class="submenu"><li><a href="/fa/for-health/" 
                                         aria-current="">
                                         برای سلامتی
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/for-fitness/" 
+                                    </a></li><li><a href="/fa/for-fitness/" 
                                         aria-current="">
                                         برای تناسب اندام
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/for-seniors/" 
+                                    </a></li><li><a href="/fa/for-seniors/" 
                                         aria-current="">
                                         برای سالمندان
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/for-rehabilitation/" 
+                                    </a></li><li><a href="/fa/for-rehabilitation/" 
                                         aria-current="">
                                         برای توانبخشی
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/fa/cadence-calculator/" class="nav-label">ابزار</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/fa/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/fa/cadence-calculator/" class="nav-label">ابزار</a><ul class="submenu"><li><a href="/fa/cadence-calculator/" 
                                         aria-current="">
                                         ماشین حساب آهنگ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/gait-assessment/" 
+                                    </a></li><li><a href="/fa/gait-assessment/" 
                                         aria-current="">
                                         ارزیابی راه رفتن
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/fa/vo2max-calculator/" 
+                                    </a></li><li><a href="/fa/vo2max-calculator/" 
                                         aria-current="">
                                         ماشین حساب VO2max
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/fa/contact/" 
+                                    </a></li></ul></li><li><a href="/fa/contact/" 
                                 aria-current="">
                                 تماس بگیرید
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="زبان را انتخاب کنید">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="زبان را انتخاب کنید"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" selected>
+                        </option><option value="fa" selected>
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="تغییر منو"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/fa/">صفحه اصلی</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/fa/getting-started/">یاد بگیرید</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">بار آموزشی</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="تغییر منو"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/fa/">صفحه اصلی</a></li><li><a href="/fa/getting-started/">یاد بگیرید</a></li><li><span aria-current="page">بار آموزشی</span></li></ol></div></nav><main id="main-content" class="main-content">
     
     راهنمای بار آموزشی
-<section class="guide-hero">
-<div class="container">
-<div class="breadcrumb">
-<a href="/fa/">صفحه اصلی</a>/<a href="/fa/#learn">یاد بگیرید</a>/ بار آموزشی</div>
-<h1>مدیریت بار آموزش پیاده روی</h1>
-<p class="lead">رویکرد علمی برای متعادل کردن محرک های تمرینی، سازگاری و ریکاوری</p>
-</div>
-</section>
-<section class="guide-content">
-<div class="container">
-<div class="content-grid">
-<div class="main-content">
+<section class="guide-hero"><div class="container"><div class="breadcrumb"><a href="/fa/">صفحه اصلی</a>/<a href="/fa/#learn">یاد بگیرید</a>/ بار آموزشی</div><h1>مدیریت بار آموزش پیاده روی</h1><p class="lead">رویکرد علمی برای متعادل کردن محرک های تمرینی، سازگاری و ریکاوری</p></div></section><section class="guide-content"><div class="container"><div class="content-grid"><div class="main-content">
 مقدمه
-<h2 id="intro">بار آموزشی چیست؟</h2>
-<p><strong>بار آموزشی</strong>استرس فیزیولوژیکی تجمعی که بدن شما از تمرینات پیاده روی تجربه می کند را کمیت می کند. این سه بعد کلیدی را ادغام می کند:</p>
-<ol>
-<li><strong>مدت زمان:</strong>چقدر پیاده روی می کنید</li>
-<li><strong>شدت:</strong>چقدر سخت پیاده روی می کنید ( آهنگ، ضربان قلب، سرعت)</li>
-<li><strong>فرکانس:</strong>چند وقت یکبار پیاده روی می کنید</li>
-</ol>
-<p>مدیریت صحیح بار تمرینی، بهبود مداوم را در عین به حداقل رساندن خطر آسیب و تمرین بیش از حد امکان پذیر می کند. بر خلاف پیاده روی گاه به گاه برای حمل و نقل،<strong>پیاده روی آموزش محور</strong>نیاز به برنامه ریزی سیستماتیک پیشرفت و بهبود دارد.</p>
-<div class="key-finding">
-<strong>بینش تحقیق:</strong>رابطه بین بار تمرینی و انطباق از یک منحنی U معکوس پیروی می کند: بار بسیار کم هیچ انطباق ایجاد نمی کند، بار بهینه باعث بهبود می شود و بار بیش از حد منجر به تمرین بیش از حد و آسیب می شود (Soligard et al., 2016).</div>
+<h2 id="intro">بار آموزشی چیست؟</h2><p><strong>بار آموزشی</strong>استرس فیزیولوژیکی تجمعی که بدن شما از تمرینات پیاده روی تجربه می کند را کمیت می کند. این سه بعد کلیدی را ادغام می کند:</p><ol><li><strong>مدت زمان:</strong>چقدر پیاده روی می کنید</li><li><strong>شدت:</strong>چقدر سخت پیاده روی می کنید ( آهنگ، ضربان قلب، سرعت)</li><li><strong>فرکانس:</strong>چند وقت یکبار پیاده روی می کنید</li></ol><p>مدیریت صحیح بار تمرینی، بهبود مداوم را در عین به حداقل رساندن خطر آسیب و تمرین بیش از حد امکان پذیر می کند. بر خلاف پیاده روی گاه به گاه برای حمل و نقل،<strong>پیاده روی آموزش محور</strong>نیاز به برنامه ریزی سیستماتیک پیشرفت و بهبود دارد.</p><div class="key-finding"><strong>بینش تحقیق:</strong>رابطه بین بار تمرینی و انطباق از یک منحنی U معکوس پیروی می کند: بار بسیار کم هیچ انطباق ایجاد نمی کند، بار بهینه باعث بهبود می شود و بار بیش از حد منجر به تمرین بیش از حد و آسیب می شود (Soligard et al., 2016).</div>
 Peak-30 Cadence
-<h2 id="peak30">آهنگ Peak-30: A Breakthrough Metric</h2>
-<p>تحقیقات اخیر،<strong>پیک-30 آهنگ</strong>به عنوان یک پیش بینی کننده قوی برای پیامدهای سلامتی و خطر مرگ و میر، مستقل از کل مراحل روزانه.</p>
-<h3>Peak-30 Cadence چیست؟</h3>
-<p><strong>پیک-30 آهنگ</strong>میانگین آهنگ (گام در دقیقه) در طول<strong>شما است بهترین 30 دقیقه متوالی</strong>پیاده روی در یک روز این معیار توانایی شما برای حفظ پیاده روی هدفمند و سریع را نشان می دهد.</p>
-<div class="key-finding">
-<strong>مطالعه پیشرفت:</strong>دل پوزو-کروز و همکاران (2022) 78500 شرکت کننده در Biobank انگلستان را تجزیه و تحلیل کرد و دریافت که آهنگ Peak-30 به طور مستقل مرگ و میر همه علل و خطر بیماری قلبی عروقی را حتی پس از کنترل کل مراحل روزانه پیش بینی می کند.</div>
-<h3>آستانه آهنگ پیک-30 و پیامدهای سلامت</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Peak-30 Cadence</th>
-<th>طبقه بندی</th>
-<th>خطر مرگ و میر</th>
-<th>وضعیت سلامت</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;60 spm</td>
-<td>خیلی کم</td>
-<td>مرجع (بالاترین)</td>
-<td>الگوی بی تحرکی</td>
-</tr>
-<tr>
-<td>60-79 spm</td>
-<td>کم</td>
-<td>~15% خطر کمتر</td>
-<td>پیاده روی گاه به گاه</td>
-</tr>
-<tr>
-<td>80-99 spm</td>
-<td>متوسط ​​</td>
-<td>~30٪ خطر کمتر</td>
-<td>پیاده روی منظم</td>
-</tr>
-<tr>
-<td>100-109 spm</td>
-<td>تند</td>
-<td>~40٪ خطر کمتر</td>
-<td>تناسب اندام</td>
-</tr>
-<tr>
-<td>≥110 spm</td>
-<td>خیلی تند</td>
-<td>~50٪ خطر کمتر</td>
-<td>تناسب اندام بالا</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>بینش کلیدی:</strong>پیک-30 آهنگ ≥100 spm مربوط به<strong>است فعالیت بدنی متوسط ​​تا شدید</strong>(MVPA) و آستانه مزایای قابل توجه سلامتی را نشان می دهد.</p>
-<h3>مفاهیم آموزشی</h3>
-<p>آهنگ Peak-30 راهنمایی آموزشی عملی را ارائه می دهد:</p>
-<ul>
-<li><strong>تعیین هدف:</strong>Target Peak-30 cadence 100+ spm حداقل 5 روز در هفته</li>
-<li><strong>طراحی تمرین:</strong>حداقل یک مسابقه سریع 30 دقیقه ای را در پیاده روی روزانه بگنجانید</li>
-<li><strong>پیگیری پیشرفت:</strong>با بهبود تناسب اندام، مانیتور در آهنگ Peak-30 افزایش می یابد</li>
-<li><strong>تجویز شدت:</strong>برای آموزش عملی تر به جای HR از مناطق آهنگ استفاده کنید</li>
-</ul>
+<h2 id="peak30">آهنگ Peak-30: A Breakthrough Metric</h2><p>تحقیقات اخیر،<strong>پیک-30 آهنگ</strong>به عنوان یک پیش بینی کننده قوی برای پیامدهای سلامتی و خطر مرگ و میر، مستقل از کل مراحل روزانه.</p><h3>Peak-30 Cadence چیست؟</h3><p><strong>پیک-30 آهنگ</strong>میانگین آهنگ (گام در دقیقه) در طول<strong>شما است بهترین 30 دقیقه متوالی</strong>پیاده روی در یک روز این معیار توانایی شما برای حفظ پیاده روی هدفمند و سریع را نشان می دهد.</p><div class="key-finding"><strong>مطالعه پیشرفت:</strong>دل پوزو-کروز و همکاران (2022) 78500 شرکت کننده در Biobank انگلستان را تجزیه و تحلیل کرد و دریافت که آهنگ Peak-30 به طور مستقل مرگ و میر همه علل و خطر بیماری قلبی عروقی را حتی پس از کنترل کل مراحل روزانه پیش بینی می کند.</div><h3>آستانه آهنگ پیک-30 و پیامدهای سلامت</h3><div class="data-table"><table><thead><tr><th>Peak-30 Cadence</th><th>طبقه بندی</th><th>خطر مرگ و میر</th><th>وضعیت سلامت</th></tr></thead><tbody><tr><td>&lt;60 spm</td><td>خیلی کم</td><td>مرجع (بالاترین)</td><td>الگوی بی تحرکی</td></tr><tr><td>60-79 spm</td><td>کم</td><td>~15% خطر کمتر</td><td>پیاده روی گاه به گاه</td></tr><tr><td>80-99 spm</td><td>متوسط ​​</td><td>~30٪ خطر کمتر</td><td>پیاده روی منظم</td></tr><tr><td>100-109 spm</td><td>تند</td><td>~40٪ خطر کمتر</td><td>تناسب اندام</td></tr><tr><td>≥110 spm</td><td>خیلی تند</td><td>~50٪ خطر کمتر</td><td>تناسب اندام بالا</td></tr></tbody></table></div><p><strong>بینش کلیدی:</strong>پیک-30 آهنگ ≥100 spm مربوط به<strong>است فعالیت بدنی متوسط ​​تا شدید</strong>(MVPA) و آستانه مزایای قابل توجه سلامتی را نشان می دهد.</p><h3>مفاهیم آموزشی</h3><p>آهنگ Peak-30 راهنمایی آموزشی عملی را ارائه می دهد:</p><ul><li><strong>تعیین هدف:</strong>Target Peak-30 cadence 100+ spm حداقل 5 روز در هفته</li><li><strong>طراحی تمرین:</strong>حداقل یک مسابقه سریع 30 دقیقه ای را در پیاده روی روزانه بگنجانید</li><li><strong>پیگیری پیشرفت:</strong>با بهبود تناسب اندام، مانیتور در آهنگ Peak-30 افزایش می یابد</li><li><strong>تجویز شدت:</strong>برای آموزش عملی تر به جای HR از مناطق آهنگ استفاده کنید</li></ul>
 حملات سریع
-<h2 id="brisk-bouts">حملات سریع: کیفیت بیش از کمیت</h2>
-<p>الف<strong>مبارزه سریع</strong>یک دوره پیاده روی مداوم با بیش از 100 قدم در دقیقه (آستانه شدت متوسط) است که حداقل 10 دقیقه طول می کشد بدون اینکه به مدت بیش از 1-2 دقیقه به زیر آستانه آهنگ افت کند.</p>
-<h3>دلیل علمی</h3>
-<p>دستورالعمل‌های فعالیت بدنی ایالات متحده در سال 2018، الزام قبلی را که فعالیت هوازی حداقل در 10 دقیقه انجام می‌شد، حذف کرد. با این حال تحقیقات نشان می دهد که<strong>حملات تند پایدار</strong>ارائه مزایای منحصر به فرد:</p>
-<ul>
-<li><strong>سازگاری قلبی عروقی:</strong>افزایش مداوم منابع انسانی باعث بهبود هوازی می شود</li>
-<li><strong>بازده متابولیک:</strong>بیش از 10 دقیقه به مسیرهای متابولیک اجازه می دهد تا به طور کامل درگیر شوند</li>
-<li><strong>رشد مهارت:</strong>سرعت بالاتر پایدار مکانیک پیاده روی را بهبود می بخشد</li>
-<li><strong>فایده روانی:</strong>طرز فکر "تمرینی" عمدی در مقابل حرکت اتفاقی</li>
-</ul>
-<h3>اهداف مبارزه سریع هفتگی</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>سطح تناسب اندام</th>
-<th>دقایق تند هفتگی</th>
-<th>تعداد دفعات</th>
-<th>نمونه برنامه</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>مبتدی</strong></td>
-<td>75-100 دقیقه</td>
-<td>3-4 مسابقه 20-30 دقیقه ای</td>
-<td>دوشنبه/چهارشنبه/جمعه: هر کدام 25 دقیقه</td>
-</tr>
-<tr>
-<td><strong>متوسط ​​</strong></td>
-<td>150-200 دقیقه</td>
-<td>5-6 مسابقه 25-40 دقیقه ای</td>
-<td>روزانه 30 دقیقه + 1 پیاده روی طولانی آخر هفته</td>
-</tr>
-<tr>
-<td><strong>پیشرفته</strong></td>
-<td>200-300+ دقیقه</td>
-<td>5-7 مسابقه 30-60 دقیقه ای</td>
-<td>روزانه 40 دقیقه + فواصل زمانی + پیاده روی طولانی</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>جلسه دستورالعمل بهداشت عمومی:</strong>150 دقیقه در هفته فعالیت با شدت متوسط ​​(100+ spm سرعت) با توصیه های WHO و CDC برای مزایای سلامتی مطابقت دارد.</p>
-<h3>معیارهای کیفی سریع</h3>
-<p>همه حملات سریع برابر نیستند. کیفیت را می توان توسط:</p>
-<ol>
-<li><strong>ارزیابی کرد پایداری آهنگ:</strong>حداقل نوسان حول آهنگ هدف (±5 spm)</li>
-<li><strong>مدت زمان:</strong>مسابقات طولانی تر (30 تا 45 دقیقه) &gt; چند دوره کوتاه</li>
-<li><strong>شدت:</strong>میانگین آهنگ بالاتر در طول مبارزه (110 spm &gt; 100 spm)</li>
-<li><strong>قوام:</strong>فراوانی روزهای حمله سریع در هفته (5-7 روز &gt; 3 روز)</li>
-</ol>
+<h2 id="brisk-bouts">حملات سریع: کیفیت بیش از کمیت</h2><p>الف<strong>مبارزه سریع</strong>یک دوره پیاده روی مداوم با بیش از 100 قدم در دقیقه (آستانه شدت متوسط) است که حداقل 10 دقیقه طول می کشد بدون اینکه به مدت بیش از 1-2 دقیقه به زیر آستانه آهنگ افت کند.</p><h3>دلیل علمی</h3><p>دستورالعمل‌های فعالیت بدنی ایالات متحده در سال 2018، الزام قبلی را که فعالیت هوازی حداقل در 10 دقیقه انجام می‌شد، حذف کرد. با این حال تحقیقات نشان می دهد که<strong>حملات تند پایدار</strong>ارائه مزایای منحصر به فرد:</p><ul><li><strong>سازگاری قلبی عروقی:</strong>افزایش مداوم منابع انسانی باعث بهبود هوازی می شود</li><li><strong>بازده متابولیک:</strong>بیش از 10 دقیقه به مسیرهای متابولیک اجازه می دهد تا به طور کامل درگیر شوند</li><li><strong>رشد مهارت:</strong>سرعت بالاتر پایدار مکانیک پیاده روی را بهبود می بخشد</li><li><strong>فایده روانی:</strong>طرز فکر "تمرینی" عمدی در مقابل حرکت اتفاقی</li></ul><h3>اهداف مبارزه سریع هفتگی</h3><div class="data-table"><table><thead><tr><th>سطح تناسب اندام</th><th>دقایق تند هفتگی</th><th>تعداد دفعات</th><th>نمونه برنامه</th></tr></thead><tbody><tr><td><strong>مبتدی</strong></td><td>75-100 دقیقه</td><td>3-4 مسابقه 20-30 دقیقه ای</td><td>دوشنبه/چهارشنبه/جمعه: هر کدام 25 دقیقه</td></tr><tr><td><strong>متوسط ​​</strong></td><td>150-200 دقیقه</td><td>5-6 مسابقه 25-40 دقیقه ای</td><td>روزانه 30 دقیقه + 1 پیاده روی طولانی آخر هفته</td></tr><tr><td><strong>پیشرفته</strong></td><td>200-300+ دقیقه</td><td>5-7 مسابقه 30-60 دقیقه ای</td><td>روزانه 40 دقیقه + فواصل زمانی + پیاده روی طولانی</td></tr></tbody></table></div><p><strong>جلسه دستورالعمل بهداشت عمومی:</strong>150 دقیقه در هفته فعالیت با شدت متوسط ​​(100+ spm سرعت) با توصیه های WHO و CDC برای مزایای سلامتی مطابقت دارد.</p><h3>معیارهای کیفی سریع</h3><p>همه حملات سریع برابر نیستند. کیفیت را می توان توسط:</p><ol><li><strong>ارزیابی کرد پایداری آهنگ:</strong>حداقل نوسان حول آهنگ هدف (±5 spm)</li><li><strong>مدت زمان:</strong>مسابقات طولانی تر (30 تا 45 دقیقه) &gt; چند دوره کوتاه</li><li><strong>شدت:</strong>میانگین آهنگ بالاتر در طول مبارزه (110 spm &gt; 100 spm)</li><li><strong>قوام:</strong>فراوانی روزهای حمله سریع در هفته (5-7 روز &gt; 3 روز)</li></ol>
 امتیاز استرس پیاده روی
-<h2 id="wss">امتیاز استرس پیاده روی (WSS)</h2>
-<p><strong>امتیاز استرس پیاده روی (WSS)</strong>یک معیار اختصاصی است که بار تمرینی تمرینات فردی را کمیت می کند. این مفاهیم را از امتیاز استرس تمرینی (TSS) که در دوچرخه سواری و دویدن استفاده می شود، تطبیق می دهد.</p>
-<h3>روش های محاسبه WSS</h3>
-<p>WSS را می توان با استفاده از<strong>محاسبه کرد ضربان قلب</strong>یا<strong>آهنگ</strong>به عنوان متریک شدت:</p>
-<h4>روش 1: WSS مبتنی بر ضربان قلب</h4>
-<p>وزن زمان بر اساس منطقه ضربان قلب:</p>
-<div class="formula-box">
-<pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
+<h2 id="wss">امتیاز استرس پیاده روی (WSS)</h2><p><strong>امتیاز استرس پیاده روی (WSS)</strong>یک معیار اختصاصی است که بار تمرینی تمرینات فردی را کمیت می کند. این مفاهیم را از امتیاز استرس تمرینی (TSS) که در دوچرخه سواری و دویدن استفاده می شود، تطبیق می دهد.</p><h3>روش های محاسبه WSS</h3><p>WSS را می توان با استفاده از<strong>محاسبه کرد ضربان قلب</strong>یا<strong>آهنگ</strong>به عنوان متریک شدت:</p><h4>روش 1: WSS مبتنی بر ضربان قلب</h4><p>وزن زمان بر اساس منطقه ضربان قلب:</p><div class="formula-box"><pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
 
 Zone Multipliers:
   Zone 1 (50-60% HRmax): 1.0
   Zone 2 (60-70% HRmax): 2.0
   Zone 3 (70-80% HRmax): 3.0
   Zone 4 (80-90% HRmax): 4.0
-  Zone 5 (90-100% HRmax): 5.0</pre>
-</div>
-<p><strong>مثال:</strong>پیاده روی 60 دقیقه ای با:</p>
-<ul>
-<li>گرم کردن 10 دقیقه در منطقه 1 = 10 × 1.0 = 10</li>
-<li>40 دقیقه ثابت در منطقه 2 = 40 × 2.0 = 80</li>
-<li>10 دقیقه خنک شدن در منطقه 1 = 10 × 1.0 = 10</li>
-<li><strong>مجموع WSS = 100</strong></li>
-</ul>
-<h4>روش 2: WSS مبتنی بر آهنگ</h4>
-<p>وزن زمان بر اساس شدت آهنگ:</p>
-<div class="formula-box">
-<pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
+  Zone 5 (90-100% HRmax): 5.0</pre></div><p><strong>مثال:</strong>پیاده روی 60 دقیقه ای با:</p><ul><li>گرم کردن 10 دقیقه در منطقه 1 = 10 × 1.0 = 10</li><li>40 دقیقه ثابت در منطقه 2 = 40 × 2.0 = 80</li><li>10 دقیقه خنک شدن در منطقه 1 = 10 × 1.0 = 10</li><li><strong>مجموع WSS = 100</strong></li></ul><h4>روش 2: WSS مبتنی بر آهنگ</h4><p>وزن زمان بر اساس شدت آهنگ:</p><div class="formula-box"><pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
 
 Cadence Multipliers:
   60-99 spm (light): 1.0
   100-109 spm (moderate): 2.5
   110-119 spm (mod-vigorous): 3.5
   120-129 spm (vigorous): 4.5
-  ≥130 spm (very vigorous): 6.0</pre>
-</div>
-<p><strong>مزیت:</strong>WSS مبتنی بر Cadence به مانیتور HR نیاز ندارد و برای بیشتر کوهنوردان کاربردی تر است.</p>
-<h3>مقادیر معمول WSS بر اساس نوع تمرین</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>نوع تمرین</th>
-<th>مدت زمان</th>
-<th>شدت متوسط ​​</th>
-<th>WSS معمولی</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ریکاوری</td>
-<td>20-30 دقیقه</td>
-<td>منطقه 1، &lt;100 spm</td>
-<td>20-30</td>
-</tr>
-<tr>
-<td>پیاده روی آسان هوازی</td>
-<td>30-45 دقیقه</td>
-<td>Zone 2, 100-105 spm</td>
-<td>60-90</td>
-</tr>
-<tr>
-<td>پیاده روی سریع و پیوسته</td>
-<td>45-60 دقیقه</td>
-<td>Zone 2, 105-110 spm</td>
-<td>90-150</td>
-</tr>
-<tr>
-<td>افزایش سرعت</td>
-<td>30-40 دقیقه</td>
-<td>زون 3 110-120 spm</td>
-<td>90-140</td>
-</tr>
-<tr>
-<td>تمرین اینتروال</td>
-<td>40-50 دقیقه</td>
-<td>مناطق مختلط، پیک 120+ spm</td>
-<td>120-200</td>
-</tr>
-<tr>
-<td>پیاده روی طولانی مدت</td>
-<td>90-120 دقیقه</td>
-<td>زون 2 100-110 spm</td>
-<td>180-300</td>
-</tr>
-<tr>
-<td>آموزش پیاده روی مسابقه ای</td>
-<td>60-90 دقیقه</td>
-<td>Zone 3-4, 120-140 spm</td>
-<td>200-400</td>
-</tr>
-</tbody>
-</table>
-</div>
+  ≥130 spm (very vigorous): 6.0</pre></div><p><strong>مزیت:</strong>WSS مبتنی بر Cadence به مانیتور HR نیاز ندارد و برای بیشتر کوهنوردان کاربردی تر است.</p><h3>مقادیر معمول WSS بر اساس نوع تمرین</h3><div class="data-table"><table><thead><tr><th>نوع تمرین</th><th>مدت زمان</th><th>شدت متوسط ​​</th><th>WSS معمولی</th></tr></thead><tbody><tr><td>ریکاوری</td><td>20-30 دقیقه</td><td>منطقه 1، &lt;100 spm</td><td>20-30</td></tr><tr><td>پیاده روی آسان هوازی</td><td>30-45 دقیقه</td><td>Zone 2, 100-105 spm</td><td>60-90</td></tr><tr><td>پیاده روی سریع و پیوسته</td><td>45-60 دقیقه</td><td>Zone 2, 105-110 spm</td><td>90-150</td></tr><tr><td>افزایش سرعت</td><td>30-40 دقیقه</td><td>زون 3 110-120 spm</td><td>90-140</td></tr><tr><td>تمرین اینتروال</td><td>40-50 دقیقه</td><td>مناطق مختلط، پیک 120+ spm</td><td>120-200</td></tr><tr><td>پیاده روی طولانی مدت</td><td>90-120 دقیقه</td><td>زون 2 100-110 spm</td><td>180-300</td></tr><tr><td>آموزش پیاده روی مسابقه ای</td><td>60-90 دقیقه</td><td>Zone 3-4, 120-140 spm</td><td>200-400</td></tr></tbody></table></div>
 بار آموزشی هفتگی
-<h2 id="weekly-load">دستورالعمل بارگذاری هفتگی آموزش</h2>
-<p>بار تمرینی هفتگی باید بر اساس سطح آمادگی جسمانی، اهداف و زمان در دسترس، فردی باشد. دستورالعمل ها در هر دو<strong>ارائه شده است WSS</strong>و<strong>دقیقه سریع</strong>برای انعطاف پذیری</p>
-<h3>مبتدی (0-6 ماه سابقه آموزش)</h3>
-<ul>
-<li><strong>WSS هفتگی:</strong>150-300</li>
-<li><strong>دقیقه سریع (≥100 spm):</strong>75-120 دقیقه در هفته</li>
-<li><strong>کل زمان پیاده روی:</strong>120-200 دقیقه در هفته</li>
-<li><strong>هدف پیک-30:</strong>90-100 spm</li>
-<li><strong>جلسات در هفته:</strong>4-5</li>
-<li><strong>تمرکز:</strong>سازگاری، شکل گیری عادت، توسعه تکنیک</li>
-<li><strong>پیشرفت:</strong>افزایش 5-10% در هفته</li>
-</ul>
-<p><strong>هفته نمونه (کل WSS: 250):</strong></p>
-<ul>
-<li>دوشنبه: 30 دقیقه پیاده روی آسان، 100 اسپرم در دقیقه (WSS 50)</li>
-<li>سه شنبه: استراحت یا آرام 20 دقیقه پیاده روی</li>
-<li>چهارشنبه: 35 دقیقه پیاده روی سریع، 105 اسپرم در دقیقه (WSS 70)</li>
-<li>پنج شنبه: 25 دقیقه پیاده روی آسان، 95 اسپرم در دقیقه (WSS 40)</li>
-<li>جمعه: استراحت</li>
-<li>شنبه: 45 دقیقه پیاده روی ثابت، 102 اسپرم در دقیقه (WSS 90)</li>
-<li>خورشید: آسان 20-30 دقیقه</li>
-</ul>
-<h3>متوسط ​​(6-18 ماه سابقه آموزش)</h3>
-<ul>
-<li><strong>WSS هفتگی:</strong>300-550</li>
-<li><strong>دقیقه سریع (≥100 spm):</strong>150-250 دقیقه در هفته</li>
-<li><strong>کل زمان پیاده روی:</strong>250-400 دقیقه در هفته</li>
-<li><strong>هدف پیک-30:</strong>105-115 spm</li>
-<li><strong>جلسات در هفته:</strong>5-6</li>
-<li><strong>تمرکز:</strong>ایجاد ظرفیت هوازی، استقامت سرعت، معرفی فاصله</li>
-<li><strong>پیشرفت:</strong>افزایش 10 درصدی در هفته، با هفته های بهبودی</li>
-</ul>
-<p><strong>هفته نمونه (کل WSS: 420):</strong></p>
-<ul>
-<li>دوشنبه: 40 دقیقه پیاده روی ثابت، 108 اسپرم در دقیقه (WSS 100)</li>
-<li>سه شنبه: 30 دقیقه بازیابی آسان، 95 spm (WSS 45)</li>
-<li>چهارشنبه: فواصل 45 دقیقه (5×4 دقیقه @ 120 اسپرم در دقیقه / 3 دقیقه آسان) (WSS 130)</li>
-<li>پنج شنبه: 35 دقیقه پیاده روی آسان، 100 اسپرم در دقیقه (WSS 60)</li>
-<li>جمعه: استراحت یا 20 دقیقه پیاده روی ملایم</li>
-<li>شنبه: 75 دقیقه پیاده روی طولانی، 105 spm (WSS 150)</li>
-<li>خورشید: 30 دقیقه بازیابی آسان (WSS 40)</li>
-</ul>
-<h3>پیشرفته (18 ماه سابقه آموزش)</h3>
-<ul>
-<li><strong>WSS هفتگی:</strong>500-900+</li>
-<li><strong>دقیقه سریع (≥100 spm):</strong>250-400+ دقیقه در هفته</li>
-<li><strong>کل زمان پیاده روی:</strong>400-700+ دقیقه در هفته</li>
-<li><strong>هدف پیک-30:</strong>115-130+ spm</li>
-<li><strong>جلسات در هفته:</strong>6-7</li>
-<li><strong>تمرکز:</strong>عملکرد، مسابقه، تکنیک پیاده روی مسابقه ای</li>
-<li><strong>پیشرفت:</strong>دوره ای با مراحل تمرینی متمایز</li>
-</ul>
-<p><strong>هفته نمونه (کل WSS: 720):</strong></p>
-<ul>
-<li>دوشنبه: 50 دقیقه پیاده روی ثابت، 110 اسپرم در دقیقه (WSS 120)</li>
-<li>سه شنبه: 40 دقیقه پیاده روی آسان، 100 اسپرم در دقیقه (WSS 70)</li>
-<li>چهارشنبه: 60 دقیقه سرعت (40 دقیقه @ 115-120 spm) (WSS 180)</li>
-<li>پنجشنبه: 35 دقیقه افزایش بازیابی، 95 اسپرم در دقیقه (WSS 50)</li>
-<li>جمعه: فواصل 50 دقیقه (10×2 دقیقه @ 130+ spm / 2 دقیقه آسان) (WSS 180)</li>
-<li>شنبه: 90 دقیقه پیاده روی طولانی، 108 اسپرم در دقیقه (WSS 200)</li>
-<li>خورشید: 40 دقیقه پیاده روی آسان (WSS 60)</li>
-</ul>
+<h2 id="weekly-load">دستورالعمل بارگذاری هفتگی آموزش</h2><p>بار تمرینی هفتگی باید بر اساس سطح آمادگی جسمانی، اهداف و زمان در دسترس، فردی باشد. دستورالعمل ها در هر دو<strong>ارائه شده است WSS</strong>و<strong>دقیقه سریع</strong>برای انعطاف پذیری</p><h3>مبتدی (0-6 ماه سابقه آموزش)</h3><ul><li><strong>WSS هفتگی:</strong>150-300</li><li><strong>دقیقه سریع (≥100 spm):</strong>75-120 دقیقه در هفته</li><li><strong>کل زمان پیاده روی:</strong>120-200 دقیقه در هفته</li><li><strong>هدف پیک-30:</strong>90-100 spm</li><li><strong>جلسات در هفته:</strong>4-5</li><li><strong>تمرکز:</strong>سازگاری، شکل گیری عادت، توسعه تکنیک</li><li><strong>پیشرفت:</strong>افزایش 5-10% در هفته</li></ul><p><strong>هفته نمونه (کل WSS: 250):</strong></p><ul><li>دوشنبه: 30 دقیقه پیاده روی آسان، 100 اسپرم در دقیقه (WSS 50)</li><li>سه شنبه: استراحت یا آرام 20 دقیقه پیاده روی</li><li>چهارشنبه: 35 دقیقه پیاده روی سریع، 105 اسپرم در دقیقه (WSS 70)</li><li>پنج شنبه: 25 دقیقه پیاده روی آسان، 95 اسپرم در دقیقه (WSS 40)</li><li>جمعه: استراحت</li><li>شنبه: 45 دقیقه پیاده روی ثابت، 102 اسپرم در دقیقه (WSS 90)</li><li>خورشید: آسان 20-30 دقیقه</li></ul><h3>متوسط ​​(6-18 ماه سابقه آموزش)</h3><ul><li><strong>WSS هفتگی:</strong>300-550</li><li><strong>دقیقه سریع (≥100 spm):</strong>150-250 دقیقه در هفته</li><li><strong>کل زمان پیاده روی:</strong>250-400 دقیقه در هفته</li><li><strong>هدف پیک-30:</strong>105-115 spm</li><li><strong>جلسات در هفته:</strong>5-6</li><li><strong>تمرکز:</strong>ایجاد ظرفیت هوازی، استقامت سرعت، معرفی فاصله</li><li><strong>پیشرفت:</strong>افزایش 10 درصدی در هفته، با هفته های بهبودی</li></ul><p><strong>هفته نمونه (کل WSS: 420):</strong></p><ul><li>دوشنبه: 40 دقیقه پیاده روی ثابت، 108 اسپرم در دقیقه (WSS 100)</li><li>سه شنبه: 30 دقیقه بازیابی آسان، 95 spm (WSS 45)</li><li>چهارشنبه: فواصل 45 دقیقه (5×4 دقیقه @ 120 اسپرم در دقیقه / 3 دقیقه آسان) (WSS 130)</li><li>پنج شنبه: 35 دقیقه پیاده روی آسان، 100 اسپرم در دقیقه (WSS 60)</li><li>جمعه: استراحت یا 20 دقیقه پیاده روی ملایم</li><li>شنبه: 75 دقیقه پیاده روی طولانی، 105 spm (WSS 150)</li><li>خورشید: 30 دقیقه بازیابی آسان (WSS 40)</li></ul><h3>پیشرفته (18 ماه سابقه آموزش)</h3><ul><li><strong>WSS هفتگی:</strong>500-900+</li><li><strong>دقیقه سریع (≥100 spm):</strong>250-400+ دقیقه در هفته</li><li><strong>کل زمان پیاده روی:</strong>400-700+ دقیقه در هفته</li><li><strong>هدف پیک-30:</strong>115-130+ spm</li><li><strong>جلسات در هفته:</strong>6-7</li><li><strong>تمرکز:</strong>عملکرد، مسابقه، تکنیک پیاده روی مسابقه ای</li><li><strong>پیشرفت:</strong>دوره ای با مراحل تمرینی متمایز</li></ul><p><strong>هفته نمونه (کل WSS: 720):</strong></p><ul><li>دوشنبه: 50 دقیقه پیاده روی ثابت، 110 اسپرم در دقیقه (WSS 120)</li><li>سه شنبه: 40 دقیقه پیاده روی آسان، 100 اسپرم در دقیقه (WSS 70)</li><li>چهارشنبه: 60 دقیقه سرعت (40 دقیقه @ 115-120 spm) (WSS 180)</li><li>پنجشنبه: 35 دقیقه افزایش بازیابی، 95 اسپرم در دقیقه (WSS 50)</li><li>جمعه: فواصل 50 دقیقه (10×2 دقیقه @ 130+ spm / 2 دقیقه آسان) (WSS 180)</li><li>شنبه: 90 دقیقه پیاده روی طولانی، 108 اسپرم در دقیقه (WSS 200)</li><li>خورشید: 40 دقیقه پیاده روی آسان (WSS 60)</li></ul>
 بار حاد در مقابل بار مزمن
-<h2 id="acwr">نسبت حجم کار حاد: مزمن (ACWR)</h2>
-<p><strong>نسبت حجم کار حاد: مزمن</strong>ابزار قدرتمندی برای مدیریت خطر آسیب با مقایسه بار تمرینی اخیر (حاد) با بار تمرینی طولانی مدت (مزمن) است.</p>
-<h3>محاسبه</h3>
-<div class="formula-box">
-<pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
+<h2 id="acwr">نسبت حجم کار حاد: مزمن (ACWR)</h2><p><strong>نسبت حجم کار حاد: مزمن</strong>ابزار قدرتمندی برای مدیریت خطر آسیب با مقایسه بار تمرینی اخیر (حاد) با بار تمرینی طولانی مدت (مزمن) است.</p><h3>محاسبه</h3><div class="formula-box"><pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
 
 Example:
   Last 7 days WSS: 450
   Average of previous 28 days: 380
-  ACWR = 450 / 380 = 1.18</pre>
-</div>
-<h3>تفسیر ACWR</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>محدوده ACWR</th>
-<th>خطر آسیب</th>
-<th>وضعیت آموزش</th>
-<th>اقدام</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;0.80</td>
-<td>کم-متوسط ​​</td>
-<td>امكان بي آموزشي</td>
-<td>در صورت سالم بودن بار را در نظر بگیرید</td>
-</tr>
-<tr>
-<td>0.80-1.00</td>
-<td>کم</td>
-<td>تمرین پایدار</td>
-<td>حفظ بار فعلی</td>
-</tr>
-<tr>
-<td>1.00-1.30</td>
-<td>کم</td>
-<td>پیشرفت بهینه</td>
-<td>نقطه شیرین برای اقتباس</td>
-</tr>
-<tr>
-<td>1.30-1.50</td>
-<td>متوسط ​​</td>
-<td>افزایش سریع</td>
-<td>مانیتور علائم خستگی</td>
-</tr>
-<tr>
-<td>&gt;1.50</td>
-<td>بالا</td>
-<td>سنبله خطرناک</td>
-<td>کاهش بار، اولویت بندی بازیابی</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="key-finding">
-<strong>یافته های تحقیق:</strong>ورزشکاران با ACWR &gt; 1.50 در مقایسه با ورزشکارانی که در محدوده 0.80-1.30 قرار دارند، 2 تا 4 برابر خطر آسیب بیشتری دارند (Gabbett, 2016). این اصل در تمام ورزش ها از جمله تمرین پیاده روی صدق می کند.</div>
-<h3>کاربرد عملی</h3>
-<p><strong>سناریو 1: بازگشت پس از بیماری</strong></p>
-<ul>
-<li>هفته قبل از بیماری: 400 WSS</li>
-<li>10 روز از دست رفته (میانگین 28 روزه به 285 کاهش می یابد)</li>
-<li>به 400 برنگرد (ACWR = 1.40)</li>
-<li>در عوض: از سرگیری در 250-300 WSS (ACWR = 0.88-1.05)</li>
-</ul>
-<p><strong>سناریو 2: پیشرفت جاه طلبانه</strong></p>
-<ul>
-<li>میانگین فعلی 4 هفته: 350 WSS/هفته</li>
-<li>برنامه ریزی هفته آینده: می خواهید 500 WSS انجام دهید</li>
-<li>ACWR 1.43 (خطر متوسط-بالا) خواهد بود</li>
-<li>رویکرد بهتر: 420-450 WSS (ACWR 1.20-1.29)</li>
-</ul>
+  ACWR = 450 / 380 = 1.18</pre></div><h3>تفسیر ACWR</h3><div class="data-table"><table><thead><tr><th>محدوده ACWR</th><th>خطر آسیب</th><th>وضعیت آموزش</th><th>اقدام</th></tr></thead><tbody><tr><td>&lt;0.80</td><td>کم-متوسط ​​</td><td>امكان بي آموزشي</td><td>در صورت سالم بودن بار را در نظر بگیرید</td></tr><tr><td>0.80-1.00</td><td>کم</td><td>تمرین پایدار</td><td>حفظ بار فعلی</td></tr><tr><td>1.00-1.30</td><td>کم</td><td>پیشرفت بهینه</td><td>نقطه شیرین برای اقتباس</td></tr><tr><td>1.30-1.50</td><td>متوسط ​​</td><td>افزایش سریع</td><td>مانیتور علائم خستگی</td></tr><tr><td>&gt;1.50</td><td>بالا</td><td>سنبله خطرناک</td><td>کاهش بار، اولویت بندی بازیابی</td></tr></tbody></table></div><div class="key-finding"><strong>یافته های تحقیق:</strong>ورزشکاران با ACWR &gt; 1.50 در مقایسه با ورزشکارانی که در محدوده 0.80-1.30 قرار دارند، 2 تا 4 برابر خطر آسیب بیشتری دارند (Gabbett, 2016). این اصل در تمام ورزش ها از جمله تمرین پیاده روی صدق می کند.</div><h3>کاربرد عملی</h3><p><strong>سناریو 1: بازگشت پس از بیماری</strong></p><ul><li>هفته قبل از بیماری: 400 WSS</li><li>10 روز از دست رفته (میانگین 28 روزه به 285 کاهش می یابد)</li><li>به 400 برنگرد (ACWR = 1.40)</li><li>در عوض: از سرگیری در 250-300 WSS (ACWR = 0.88-1.05)</li></ul><p><strong>سناریو 2: پیشرفت جاه طلبانه</strong></p><ul><li>میانگین فعلی 4 هفته: 350 WSS/هفته</li><li>برنامه ریزی هفته آینده: می خواهید 500 WSS انجام دهید</li><li>ACWR 1.43 (خطر متوسط-بالا) خواهد بود</li><li>رویکرد بهتر: 420-450 WSS (ACWR 1.20-1.29)</li></ul>
 پیشرفت بار آموزشی
-<h2 id="progression">استراتژی های افزایش بار آموزشی</h2>
-<h3>قانون 10% (با تفاوت های ظریف)</h3>
-<p>سنتی<strong>قانون 10%</strong>پیشنهاد می کند حجم تمرین هفتگی را حداکثر تا 10 درصد در هفته افزایش دهید. در حالی که به عنوان یک راهنما مفید است، تحقیقات مدرن رویکردهای ظریف تری را پیشنهاد می کند:</p>
-<ul>
-<li><strong>برای مبتدیان:</strong>5-10 درصد افزایش هفتگی مناسب است</li>
-<li><strong>برای کوهنوردان با تجربه:</strong>اگر ACWR &lt;1.30 باقی بماند، 10-15٪ افزایش قابل تحمل است</li>
-<li><strong>بعد از استراحت:</strong>پیشرفت آهسته تر (5%) ایمن تر است</li>
-<li><strong>در هنگام بار زیاد:</strong>حفظ یا کاهش به جای ادامه افزایش</li>
-</ul>
-<h3>دوره بندی: مدل 3:1</h3>
-<p>مدل پیشرفت مبتنی بر شواهد جایگزین<strong>3 هفته افزایش بار</strong>با<strong>1 هفته ریکاوری</strong>:</p>
-<p><strong>مثال بلوک 8 هفته ای (شروع از 300 WSS):</strong></p>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>هفته</th>
-<th>WSS هفتگی</th>
-<th>تغییر</th>
-<th>فاز</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>300</td>
-<td>پایه</td>
-<td>ساخت</td>
-</tr>
-<tr>
-<td>2</td>
-<td>330</td>
-<td>+10%</td>
-<td>ساخت</td>
-</tr>
-<tr>
-<td>3</td>
-<td>365</td>
-<td>+11%</td>
-<td>ساخت</td>
-</tr>
-<tr>
-<td>4</td>
-<td>220</td>
-<td>-40%</td>
-<td><strong>بازیابی</strong></td>
-</tr>
-<tr>
-<td>5</td>
-<td>400</td>
-<td>+10%</td>
-<td>ساخت</td>
-</tr>
-<tr>
-<td>6</td>
-<td>440</td>
-<td>+10%</td>
-<td>ساخت</td>
-</tr>
-<tr>
-<td>7</td>
-<td>485</td>
-<td>+10%</td>
-<td>ساخت</td>
-</tr>
-<tr>
-<td>8</td>
-<td>290</td>
-<td>-40%</td>
-<td><strong>بازیابی</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>فواید هفته های نقاهت:</strong></p>
-<ul>
-<li>به سازگاری فیزیولوژیکی (ابر جبران) اجازه می دهد</li>
-<li>ذخایر گلیکوژن را پر می کند</li>
-<li>ترمیم آسیب های ریز به بافت ها</li>
-<li>خستگی انباشته را کاهش می دهد</li>
-<li>تجدید انگیزه و انرژی ذهنی</li>
-<li>بدن را برای بلوک تمرین بعدی آماده می کند</li>
-</ul>
-<h3>دوره بندی بلوک</h3>
-<p>برای آموزش کوهنوردان پیشرفته برای اجرا یا رویدادها، آموزش را به صورت<strong>مجزا سازماندهی کنید مزوسیکل ها</strong>(بلوک های 4-8 هفته):</p>
-<p><strong>مثال دوره بندی سالانه:</strong></p>
-<ol>
-<li>
-<strong>فاز پایه (8-12 هفته):</strong>
-<ul>
-<li>تمرکز: ساخت پایه هوازی با حجم زون 2</li>
-<li>WSS هفتگی: 400-550</li>
-<li>80% زمان در 100-110 spm</li>
-<li>افزایش طولانی مدت از 60 دقیقه به 120 دقیقه</li>
-</ul>
-</li>
-<li>
-<strong>فاز ساخت (6-8 هفته):</strong>
-<ul>
-<li>تمرکز: اضافه کردن زون 3 سرعت کار و فواصل کوتاه</li>
-<li>WSS هفتگی: 500-650</li>
-<li>70% منطقه 2، 20% منطقه 3، 10% منطقه 4</li>
-<li>2 جلسه با کیفیت در هفته</li>
-</ul>
-</li>
-<li>
-<strong>فاز پیک (4-6 هفته):</strong>
-<ul>
-<li>تمرکز: کار با شدت بالا، مخصوص مسابقه</li>
-<li>WSS هفتگی: 550-750</li>
-<li>فواصل و شبیه‌سازی‌های سرعت مسابقه را شامل شود</li>
-<li>مقداری حجم آسان را حفظ کنید</li>
-</ul>
-</li>
-<li>
-<strong>Taper (1-2 هفته):</strong>
-<ul>
-<li>تمرکز: کاهش حجم، حفظ شدت</li>
-<li>WSS هفتگی: 200-350 (50٪ کاهش)</li>
-<li>1-2 جلسه کوتاه و تند داشته باشید</li>
-<li>استراحت و آمادگی را در اولویت قرار دهید</li>
-</ul>
-</li>
-<li>
-<strong>ریکاوری/انتقال (2-4 هفته):</strong>
-<ul>
-<li>تمرکز: ریکاوری فعال، تمرین متقابل</li>
-<li>WSS هفتگی: 150-300</li>
-<li>همه پیاده روی آسان، بدون ساختار</li>
-<li>بازسازی ذهنی و جسمی</li>
-</ul>
-</li>
-</ol>
+<h2 id="progression">استراتژی های افزایش بار آموزشی</h2><h3>قانون 10% (با تفاوت های ظریف)</h3><p>سنتی<strong>قانون 10%</strong>پیشنهاد می کند حجم تمرین هفتگی را حداکثر تا 10 درصد در هفته افزایش دهید. در حالی که به عنوان یک راهنما مفید است، تحقیقات مدرن رویکردهای ظریف تری را پیشنهاد می کند:</p><ul><li><strong>برای مبتدیان:</strong>5-10 درصد افزایش هفتگی مناسب است</li><li><strong>برای کوهنوردان با تجربه:</strong>اگر ACWR &lt;1.30 باقی بماند، 10-15٪ افزایش قابل تحمل است</li><li><strong>بعد از استراحت:</strong>پیشرفت آهسته تر (5%) ایمن تر است</li><li><strong>در هنگام بار زیاد:</strong>حفظ یا کاهش به جای ادامه افزایش</li></ul><h3>دوره بندی: مدل 3:1</h3><p>مدل پیشرفت مبتنی بر شواهد جایگزین<strong>3 هفته افزایش بار</strong>با<strong>1 هفته ریکاوری</strong>:</p><p><strong>مثال بلوک 8 هفته ای (شروع از 300 WSS):</strong></p><div class="data-table"><table><thead><tr><th>هفته</th><th>WSS هفتگی</th><th>تغییر</th><th>فاز</th></tr></thead><tbody><tr><td>1</td><td>300</td><td>پایه</td><td>ساخت</td></tr><tr><td>2</td><td>330</td><td>+10%</td><td>ساخت</td></tr><tr><td>3</td><td>365</td><td>+11%</td><td>ساخت</td></tr><tr><td>4</td><td>220</td><td>-40%</td><td><strong>بازیابی</strong></td></tr><tr><td>5</td><td>400</td><td>+10%</td><td>ساخت</td></tr><tr><td>6</td><td>440</td><td>+10%</td><td>ساخت</td></tr><tr><td>7</td><td>485</td><td>+10%</td><td>ساخت</td></tr><tr><td>8</td><td>290</td><td>-40%</td><td><strong>بازیابی</strong></td></tr></tbody></table></div><p><strong>فواید هفته های نقاهت:</strong></p><ul><li>به سازگاری فیزیولوژیکی (ابر جبران) اجازه می دهد</li><li>ذخایر گلیکوژن را پر می کند</li><li>ترمیم آسیب های ریز به بافت ها</li><li>خستگی انباشته را کاهش می دهد</li><li>تجدید انگیزه و انرژی ذهنی</li><li>بدن را برای بلوک تمرین بعدی آماده می کند</li></ul><h3>دوره بندی بلوک</h3><p>برای آموزش کوهنوردان پیشرفته برای اجرا یا رویدادها، آموزش را به صورت<strong>مجزا سازماندهی کنید مزوسیکل ها</strong>(بلوک های 4-8 هفته):</p><p><strong>مثال دوره بندی سالانه:</strong></p><ol><li><strong>فاز پایه (8-12 هفته):</strong><ul><li>تمرکز: ساخت پایه هوازی با حجم زون 2</li><li>WSS هفتگی: 400-550</li><li>80% زمان در 100-110 spm</li><li>افزایش طولانی مدت از 60 دقیقه به 120 دقیقه</li></ul></li><li><strong>فاز ساخت (6-8 هفته):</strong><ul><li>تمرکز: اضافه کردن زون 3 سرعت کار و فواصل کوتاه</li><li>WSS هفتگی: 500-650</li><li>70% منطقه 2، 20% منطقه 3، 10% منطقه 4</li><li>2 جلسه با کیفیت در هفته</li></ul></li><li><strong>فاز پیک (4-6 هفته):</strong><ul><li>تمرکز: کار با شدت بالا، مخصوص مسابقه</li><li>WSS هفتگی: 550-750</li><li>فواصل و شبیه‌سازی‌های سرعت مسابقه را شامل شود</li><li>مقداری حجم آسان را حفظ کنید</li></ul></li><li><strong>Taper (1-2 هفته):</strong><ul><li>تمرکز: کاهش حجم، حفظ شدت</li><li>WSS هفتگی: 200-350 (50٪ کاهش)</li><li>1-2 جلسه کوتاه و تند داشته باشید</li><li>استراحت و آمادگی را در اولویت قرار دهید</li></ul></li><li><strong>ریکاوری/انتقال (2-4 هفته):</strong><ul><li>تمرکز: ریکاوری فعال، تمرین متقابل</li><li>WSS هفتگی: 150-300</li><li>همه پیاده روی آسان، بدون ساختار</li><li>بازسازی ذهنی و جسمی</li></ul></li></ol>
 نظارت بر بار آموزشی
-<h2 id="monitoring">نظارت و تنظیم بار آموزشی</h2>
-<h3>معیارهای هدف</h3>
-<p><strong>این موارد را روزانه/هفتگی پیگیری کنید:</strong></p>
-<ol>
-<li>
-<strong>ضربان قلب در حالت استراحت (RHR):</strong>
-<ul>
-<li>هنگام بیدار شدن، قبل از بلند شدن از رختخواب اندازه گیری کنید</li>
-<li>آهنگ میانگین 7 روزه</li>
-<li>افزایش 5-10 ضربه در دقیقه نشان دهنده بهبودی ناقص است</li>
-<li>ارتفاع پایدار (بیش از 1 هفته) نشان دهنده خطر تمرین بیش از حد است</li>
-</ul>
-</li>
-<li>
-<strong>تغییرپذیری ضربان قلب (HRV):</strong>
-<ul>
-<li>HRV بالاتر = بهبودی و آمادگی بهتر</li>
-<li>کاهش &gt;10% از پایه = کاهش آمادگی</li>
-<li>از برنامه هایی مانند Elite HRV، HRV4Training یا Oura Ring</li>
-</ul>
-</li>
-<li>
-<strong>استفاده کنید Peak-30 Cadence:</strong>
-<ul>
-<li>پیگیری روزانه برای ارزیابی توانایی حفظ شدت</li>
-<li>روند کاهشی ممکن است نشان دهنده خستگی انباشته باشد</li>
-<li>استفاده به عنوان نشانگر آمادگی تمرین</li>
-</ul>
-</li>
-<li>
-<strong>سرعت پیاده روی در تلاش استاندارد:</strong>
-<ul>
-<li>آزمون ماهانه: 20-30 دقیقه با تلاش ادراک شده ثابت</li>
-<li>بهبود سرعت در همان تلاش = سازگاری مثبت</li>
-<li>کاهش سرعت = ریکاوری ناکافی یا تمرین بیش از حد</li>
-</ul>
-</li>
-</ol>
-<h3>معیارهای ذهنی</h3>
-<p><strong>پرسشنامه سلامت روزانه (هر کدام امتیاز 1-5):</strong></p>
-<ol>
-<li><strong>کیفیت خواب:</strong>1 = وحشتناک، 5 = عالی</li>
-<li><strong>میزان خستگی:</strong>1 = خسته، 5 = پر انرژی</li>
-<li><strong>درد عضلانی:</strong>1 = بسیار دردناک، 5 = بدون درد</li>
-<li><strong>خلق و خو/انگیزه:</strong>1 = فقیر، 5 = عالی</li>
-<li><strong>سطح استرس:</strong>1 = خیلی زیاد، 5 = خیلی کم</li>
-</ol>
-<p><strong>تفسیر نمره کل سلامتی:</strong></p>
-<ul>
-<li><strong>20-25:</strong>آمادگی عالی ادامه با آموزش برنامه ریزی شده</li>
-<li><strong>15-19:</strong>آمادگی خوب، آموزش طبق برنامه ریزی یا کمی کاهش یافته</li>
-<li><strong>10-14:</strong>نگرانی های متوسط، روز راحت تر یا جلسه کوتاه تر را در نظر بگیرید</li>
-<li><strong>5-9:</strong>آمادگی ضعیف، روز را بسیار آسان کنید یا روز استراحت کنید</li>
-</ul>
-<h3>نشانه های بار آموزشی مناسب</h3>
-<ul>
-<li>احساس انرژی و انگیزه برای اکثر پیاده روی ها</li>
-<li>بهبود تدریجی عملکرد در طول هفته/ماه</li>
-<li>کیفیت خواب ثابت (7-9 ساعت، احساس استراحت)</li>
-<li>ضربان قلب ثابت یا در حال استراحت</li>
-<li>حداقل درد عضلانی بیش از 24 تا 48 ساعت بعد از تمرین</li>
-<li>حفظ اشتیاق برای پیاده روی</li>
-<li>قادر به ضربه زدن به سرعت / آهنگ هدف به طور مداوم</li>
-</ul>
-<h3>علائم هشدار دهنده بار تمرینی بیش از حد</h3>
-<ul>
-<li><strong>اجرا:</strong>کاهش سرعت، ناتوانی در رسیدن به آهنگ های هدف، افزایش تلاش درک شده</li>
-<li><strong>فیزیولوژیکی:</strong>RHR بالا (5-10+ bpm بالاتر از سطح پایه)، کاهش HRV، خستگی مداوم علیرغم استراحت</li>
-<li><strong>عضلانی اسکلتی:</strong>درد مداوم عضلانی، دردهای جزئی متعدد، افزایش وقوع آسیب</li>
-<li><strong>روانشناسی:</strong>از دست دادن انگیزه، تحریک پذیری، اختلالات خلقی، مشکل در تمرکز</li>
-<li><strong>بخواب:</strong>مشکل در به خواب رفتن، بیدار شدن مکرر، عدم احساس استراحت با وجود ساعات کافی</li>
-<li><strong>مصون:</strong>سرماخوردگی یا عفونت های مکرر، بهبودی آهسته از آسیب های جزئی</li>
-</ul>
-<p><strong>برنامه اقدام در صورت ظاهر شدن علائم هشدار دهنده:</strong></p>
-<ol>
-<li>فوراً بار تمرینی را 30-50٪ کاهش دهید</li>
-<li>فقط روی پیاده روی های آسان و لذت بخش تمرکز کنید</li>
-<li>خواب را در اولویت قرار دهید (8-9 ساعت هدف قرار دهید)</li>
-<li>بررسی تغذیه و هیدراتاسیون</li>
-<li>استرس غیر کوهنوردی (کار، زندگی) را در نظر بگیرید و در صورت امکان آدرس دهید</li>
-<li>اگر علائم بیش از یک هفته ادامه یافت، با ارائه دهنده مراقبت های بهداشتی مشورت کنید</li>
-</ol>
+<h2 id="monitoring">نظارت و تنظیم بار آموزشی</h2><h3>معیارهای هدف</h3><p><strong>این موارد را روزانه/هفتگی پیگیری کنید:</strong></p><ol><li><strong>ضربان قلب در حالت استراحت (RHR):</strong><ul><li>هنگام بیدار شدن، قبل از بلند شدن از رختخواب اندازه گیری کنید</li><li>آهنگ میانگین 7 روزه</li><li>افزایش 5-10 ضربه در دقیقه نشان دهنده بهبودی ناقص است</li><li>ارتفاع پایدار (بیش از 1 هفته) نشان دهنده خطر تمرین بیش از حد است</li></ul></li><li><strong>تغییرپذیری ضربان قلب (HRV):</strong><ul><li>HRV بالاتر = بهبودی و آمادگی بهتر</li><li>کاهش &gt;10% از پایه = کاهش آمادگی</li><li>از برنامه هایی مانند Elite HRV، HRV4Training یا Oura Ring</li></ul></li><li><strong>استفاده کنید Peak-30 Cadence:</strong><ul><li>پیگیری روزانه برای ارزیابی توانایی حفظ شدت</li><li>روند کاهشی ممکن است نشان دهنده خستگی انباشته باشد</li><li>استفاده به عنوان نشانگر آمادگی تمرین</li></ul></li><li><strong>سرعت پیاده روی در تلاش استاندارد:</strong><ul><li>آزمون ماهانه: 20-30 دقیقه با تلاش ادراک شده ثابت</li><li>بهبود سرعت در همان تلاش = سازگاری مثبت</li><li>کاهش سرعت = ریکاوری ناکافی یا تمرین بیش از حد</li></ul></li></ol><h3>معیارهای ذهنی</h3><p><strong>پرسشنامه سلامت روزانه (هر کدام امتیاز 1-5):</strong></p><ol><li><strong>کیفیت خواب:</strong>1 = وحشتناک، 5 = عالی</li><li><strong>میزان خستگی:</strong>1 = خسته، 5 = پر انرژی</li><li><strong>درد عضلانی:</strong>1 = بسیار دردناک، 5 = بدون درد</li><li><strong>خلق و خو/انگیزه:</strong>1 = فقیر، 5 = عالی</li><li><strong>سطح استرس:</strong>1 = خیلی زیاد، 5 = خیلی کم</li></ol><p><strong>تفسیر نمره کل سلامتی:</strong></p><ul><li><strong>20-25:</strong>آمادگی عالی ادامه با آموزش برنامه ریزی شده</li><li><strong>15-19:</strong>آمادگی خوب، آموزش طبق برنامه ریزی یا کمی کاهش یافته</li><li><strong>10-14:</strong>نگرانی های متوسط، روز راحت تر یا جلسه کوتاه تر را در نظر بگیرید</li><li><strong>5-9:</strong>آمادگی ضعیف، روز را بسیار آسان کنید یا روز استراحت کنید</li></ul><h3>نشانه های بار آموزشی مناسب</h3><ul><li>احساس انرژی و انگیزه برای اکثر پیاده روی ها</li><li>بهبود تدریجی عملکرد در طول هفته/ماه</li><li>کیفیت خواب ثابت (7-9 ساعت، احساس استراحت)</li><li>ضربان قلب ثابت یا در حال استراحت</li><li>حداقل درد عضلانی بیش از 24 تا 48 ساعت بعد از تمرین</li><li>حفظ اشتیاق برای پیاده روی</li><li>قادر به ضربه زدن به سرعت / آهنگ هدف به طور مداوم</li></ul><h3>علائم هشدار دهنده بار تمرینی بیش از حد</h3><ul><li><strong>اجرا:</strong>کاهش سرعت، ناتوانی در رسیدن به آهنگ های هدف، افزایش تلاش درک شده</li><li><strong>فیزیولوژیکی:</strong>RHR بالا (5-10+ bpm بالاتر از سطح پایه)، کاهش HRV، خستگی مداوم علیرغم استراحت</li><li><strong>عضلانی اسکلتی:</strong>درد مداوم عضلانی، دردهای جزئی متعدد، افزایش وقوع آسیب</li><li><strong>روانشناسی:</strong>از دست دادن انگیزه، تحریک پذیری، اختلالات خلقی، مشکل در تمرکز</li><li><strong>بخواب:</strong>مشکل در به خواب رفتن، بیدار شدن مکرر، عدم احساس استراحت با وجود ساعات کافی</li><li><strong>مصون:</strong>سرماخوردگی یا عفونت های مکرر، بهبودی آهسته از آسیب های جزئی</li></ul><p><strong>برنامه اقدام در صورت ظاهر شدن علائم هشدار دهنده:</strong></p><ol><li>فوراً بار تمرینی را 30-50٪ کاهش دهید</li><li>فقط روی پیاده روی های آسان و لذت بخش تمرکز کنید</li><li>خواب را در اولویت قرار دهید (8-9 ساعت هدف قرار دهید)</li><li>بررسی تغذیه و هیدراتاسیون</li><li>استرس غیر کوهنوردی (کار، زندگی) را در نظر بگیرید و در صورت امکان آدرس دهید</li><li>اگر علائم بیش از یک هفته ادامه یافت، با ارائه دهنده مراقبت های بهداشتی مشورت کنید</li></ol>
 توزیع شدت
-<h2 id="intensity">مدل های توزیع شدت</h2>
-<p>نحوه توزیع شدت تمرین در طول هفته به طور قابل توجهی بر سازگاری و عملکرد تأثیر می گذارد. دو مدل اولیه استفاده می شود:</p>
-<h3>آموزش پلاریزه (مدل 80/20)</h3>
-<p><strong>مدل 80/20</strong>زمان تمرین را بین شدت کم و زیاد با حداقل شدت متوسط ​​تقسیم می کند:</p>
-<ul>
-<li><strong>80% آسان (منطقه 1-2):</strong>95-105 spm، سرعت مکالمه</li>
-<li><strong>0-5% متوسط ​​(منطقه 3):</strong>حداقل زمان در 110-120 spm</li>
-<li><strong>15-20% سخت (منطقه 4-5):</strong>120+ فواصل اسپم و سرعت</li>
-</ul>
-<p><strong>دلیل منطقی:</strong>توسعه هوازی (حجم آسان) را به حداکثر می‌رساند و در عین حال محرکی با شدت بالا برای عملکرد بدون انباشته شدن خستگی ناشی از کار زیاد متوسط ​​ارائه می‌کند.</p>
-<p><strong>بهترین برای:</strong>کوهنوردان پیشرفته، کوهنوردان مسابقه، آموزش عملکرد محور</p>
-<p><strong>نمونه برنامه هفتگی (مجموع 300 دقیقه):</strong></p>
-<ul>
-<li>240 دقیقه آسان (80%): پیاده روی آسان روزانه 30-40 دقیقه + پیاده روی طولانی آخر هفته</li>
-<li>60 دقیقه سخت (20%): 2× جلسه با فاصله/تمپو در هفته</li>
-</ul>
-<h3>آموزش هرمی (مدل 60/30/10)</h3>
-<p><strong>مدل هرمی</strong>شدت را در تمام مناطق توزیع می کند:</p>
-<ul>
-<li><strong>60-70% آسان (منطقه 1-2):</strong>توسعه هوازی پایه</li>
-<li><strong>20-30% متوسط ​​(منطقه 3):</strong>تمپو و کار پایدار سریع</li>
-<li><strong>10% سخت (منطقه 4-5):</strong>فواصل با شدت بالا</li>
-</ul>
-<p><strong>دلیل:</strong>پیشرفت تدریجی تر، برای ایجاد ظرفیت با شدت متوسط ​​بهتر است، بهبودی آسان تر.</p>
-<p><strong>بهترین برای:</strong>کوهنوردان مبتدی تا متوسط، آموزش متمرکز بر سلامت، کسانی که در معرض آسیب هستند</p>
-<p><strong>نمونه برنامه هفتگی (مجموع 300 دقیقه):</strong></p>
-<ul>
-<li>180-210 دقیقه آسان (60-70%): اکثر پیاده روی های روزانه با سرعت راحت</li>
-<li>60-90 دقیقه متوسط ​​(20-30%): 2-3× پیاده روی سریع در هفته</li>
-<li>30 دقیقه سخت (10%): 1× جلسه فواصل در هفته</li>
-</ul>
-<div class="key-finding">
-<strong>بینش تحقیق:</strong>ورزشکاران نخبه استقامتی در سراسر ورزش به طور مداوم از تمرینات پلاریزه استفاده می کنند. با این حال، برای نتایج سلامتی و تناسب اندام، مدل های هرمی نتایج عالی با خطر آسیب کمتر ایجاد می کنند (Stöggl &amp; Sperlich، 2014).</div>
+<h2 id="intensity">مدل های توزیع شدت</h2><p>نحوه توزیع شدت تمرین در طول هفته به طور قابل توجهی بر سازگاری و عملکرد تأثیر می گذارد. دو مدل اولیه استفاده می شود:</p><h3>آموزش پلاریزه (مدل 80/20)</h3><p><strong>مدل 80/20</strong>زمان تمرین را بین شدت کم و زیاد با حداقل شدت متوسط ​​تقسیم می کند:</p><ul><li><strong>80% آسان (منطقه 1-2):</strong>95-105 spm، سرعت مکالمه</li><li><strong>0-5% متوسط ​​(منطقه 3):</strong>حداقل زمان در 110-120 spm</li><li><strong>15-20% سخت (منطقه 4-5):</strong>120+ فواصل اسپم و سرعت</li></ul><p><strong>دلیل منطقی:</strong>توسعه هوازی (حجم آسان) را به حداکثر می‌رساند و در عین حال محرکی با شدت بالا برای عملکرد بدون انباشته شدن خستگی ناشی از کار زیاد متوسط ​​ارائه می‌کند.</p><p><strong>بهترین برای:</strong>کوهنوردان پیشرفته، کوهنوردان مسابقه، آموزش عملکرد محور</p><p><strong>نمونه برنامه هفتگی (مجموع 300 دقیقه):</strong></p><ul><li>240 دقیقه آسان (80%): پیاده روی آسان روزانه 30-40 دقیقه + پیاده روی طولانی آخر هفته</li><li>60 دقیقه سخت (20%): 2× جلسه با فاصله/تمپو در هفته</li></ul><h3>آموزش هرمی (مدل 60/30/10)</h3><p><strong>مدل هرمی</strong>شدت را در تمام مناطق توزیع می کند:</p><ul><li><strong>60-70% آسان (منطقه 1-2):</strong>توسعه هوازی پایه</li><li><strong>20-30% متوسط ​​(منطقه 3):</strong>تمپو و کار پایدار سریع</li><li><strong>10% سخت (منطقه 4-5):</strong>فواصل با شدت بالا</li></ul><p><strong>دلیل:</strong>پیشرفت تدریجی تر، برای ایجاد ظرفیت با شدت متوسط ​​بهتر است، بهبودی آسان تر.</p><p><strong>بهترین برای:</strong>کوهنوردان مبتدی تا متوسط، آموزش متمرکز بر سلامت، کسانی که در معرض آسیب هستند</p><p><strong>نمونه برنامه هفتگی (مجموع 300 دقیقه):</strong></p><ul><li>180-210 دقیقه آسان (60-70%): اکثر پیاده روی های روزانه با سرعت راحت</li><li>60-90 دقیقه متوسط ​​(20-30%): 2-3× پیاده روی سریع در هفته</li><li>30 دقیقه سخت (10%): 1× جلسه فواصل در هفته</li></ul><div class="key-finding"><strong>بینش تحقیق:</strong>ورزشکاران نخبه استقامتی در سراسر ورزش به طور مداوم از تمرینات پلاریزه استفاده می کنند. با این حال، برای نتایج سلامتی و تناسب اندام، مدل های هرمی نتایج عالی با خطر آسیب کمتر ایجاد می کنند (Stöggl &amp; Sperlich، 2014).</div>
 استراتژی های بازیابی
-<h2 id="recovery">راهبردهای بازیابی و انطباق</h2>
-<p>محرک آموزشی تنها زمانی سازگاری ایجاد می کند که با بهبودی کافی همراه باشد. بدون ریکاوری، بار تمرینی بدون فایده به استرس تمرین تبدیل می شود.</p>
-<h3>تکنیک های بازیابی فعال</h3>
-<ol>
-<li>
-<strong>پیاده روی آسان (60-90 spm):</strong>
-<ul>
-<li>20-30 دقیقه با شدت بسیار کم</li>
-<li>افزایش جریان خون بدون استرس اضافی</li>
-<li>فایده روانی حرکت</li>
-</ul>
-</li>
-<li>
-<strong>تمرین متقابل:</strong>
-<ul>
-<li>دوچرخه سواری، یوگا، تای چی</li>
-<li>الگوهای حرکتی مختلف استرس تکراری را کاهش می دهد</li>
-<li>تناسب اندام را با تنوع حفظ می کند</li>
-</ul>
-</li>
-<li>
-<strong>کشش و تحرک پویا:</strong>
-<ul>
-<li>روزانه 15-20 دقیقه</li>
-<li>تمرکز بر روی باسن، مچ پا، ساق پا، همسترینگ</li>
-<li>دامنه حرکت را برای راه رفتن کارآمد حفظ می کند</li>
-</ul>
-</li>
-</ol>
-<h3>تکنیک های بازیابی غیرفعال</h3>
-<ol>
-<li>
-<strong>بهینه سازی خواب:</strong>
-<ul>
-<li>7-9 ساعت در شب (بزرگسالان)</li>
-<li>برنامه خواب و بیداری ثابت</li>
-<li>اتاق خنک و تاریک (60-67 درجه فارنهایت / 16-19 درجه سانتی گراد)</li>
-<li>محدود کردن نمایشگرها 1 ساعت قبل از خواب</li>
-</ul>
-</li>
-<li>
-<strong>تغذیه برای بهبودی:</strong>
-<ul>
-<li>پروتئین: 1.2-1.6 گرم بر کیلوگرم وزن بدن روزانه</li>
-<li>کربوهیدرات: برای پر کردن گلیکوژن کافی (3-5 گرم بر کیلوگرم)</li>
-<li>هیدراتاسیون: نظارت بر رنگ ادرار (زرد کم رنگ)</li>
-<li>غذاهای ضد التهاب: توت ها، ماهی های چرب، سبزیجات برگ دار</li>
-</ul>
-</li>
-<li>
-<strong>ماساژ و رهاسازی میوفاشیال:</strong>
-<ul>
-<li>فوم نورد 10-15 دقیقه پس از پیاده روی</li>
-<li>تمرکز روی گوساله ها، باند IT، فلکسورهای لگن، باسن</li>
-<li>ماساژ حرفه ای هر 2-4 هفته در صورت امکان</li>
-</ul>
-</li>
-<li>
-<strong>غوطه وری در آب سرد (اختیاری):</strong>
-<ul>
-<li>10-15 دقیقه در 50-59 درجه فارنهایت (10-15 درجه سانتیگراد) آب</li>
-<li>در عرض 1 ساعت بعد از تمرین</li>
-<li>ممکن است درد و التهاب عضلانی را کاهش دهد</li>
-<li>بیش از 2× در هفته توصیه نمی شود</li>
-</ul>
-</li>
-</ol>
-<h3>ریکاوری ذهنی</h3>
-<ul>
-<li><strong>تنوع:</strong>مسیرها، زمین‌ها و مناظر را برای حفظ تعامل با هم ترکیب کنید</li>
-<li><strong>پیاده روی اجتماعی:</strong>پیاده روی با دوستان یا گروه ها برای لذت بردن</li>
-<li><strong>ذهن آگاهی:</strong>آگاهی از لحظه حال را در طول پیاده روی های آسان تمرین کنید</li>
-<li><strong>بارگذاری هفته:</strong>استراحت ذهنی از تمرین ساختاریافته هر 3-4 هفته</li>
-<li><strong>خارج از فصل:</strong>2-4 هفته در سال پیاده روی حداقل ساختاری</li>
-</ul>
+<h2 id="recovery">راهبردهای بازیابی و انطباق</h2><p>محرک آموزشی تنها زمانی سازگاری ایجاد می کند که با بهبودی کافی همراه باشد. بدون ریکاوری، بار تمرینی بدون فایده به استرس تمرین تبدیل می شود.</p><h3>تکنیک های بازیابی فعال</h3><ol><li><strong>پیاده روی آسان (60-90 spm):</strong><ul><li>20-30 دقیقه با شدت بسیار کم</li><li>افزایش جریان خون بدون استرس اضافی</li><li>فایده روانی حرکت</li></ul></li><li><strong>تمرین متقابل:</strong><ul><li>دوچرخه سواری، یوگا، تای چی</li><li>الگوهای حرکتی مختلف استرس تکراری را کاهش می دهد</li><li>تناسب اندام را با تنوع حفظ می کند</li></ul></li><li><strong>کشش و تحرک پویا:</strong><ul><li>روزانه 15-20 دقیقه</li><li>تمرکز بر روی باسن، مچ پا، ساق پا، همسترینگ</li><li>دامنه حرکت را برای راه رفتن کارآمد حفظ می کند</li></ul></li></ol><h3>تکنیک های بازیابی غیرفعال</h3><ol><li><strong>بهینه سازی خواب:</strong><ul><li>7-9 ساعت در شب (بزرگسالان)</li><li>برنامه خواب و بیداری ثابت</li><li>اتاق خنک و تاریک (60-67 درجه فارنهایت / 16-19 درجه سانتی گراد)</li><li>محدود کردن نمایشگرها 1 ساعت قبل از خواب</li></ul></li><li><strong>تغذیه برای بهبودی:</strong><ul><li>پروتئین: 1.2-1.6 گرم بر کیلوگرم وزن بدن روزانه</li><li>کربوهیدرات: برای پر کردن گلیکوژن کافی (3-5 گرم بر کیلوگرم)</li><li>هیدراتاسیون: نظارت بر رنگ ادرار (زرد کم رنگ)</li><li>غذاهای ضد التهاب: توت ها، ماهی های چرب، سبزیجات برگ دار</li></ul></li><li><strong>ماساژ و رهاسازی میوفاشیال:</strong><ul><li>فوم نورد 10-15 دقیقه پس از پیاده روی</li><li>تمرکز روی گوساله ها، باند IT، فلکسورهای لگن، باسن</li><li>ماساژ حرفه ای هر 2-4 هفته در صورت امکان</li></ul></li><li><strong>غوطه وری در آب سرد (اختیاری):</strong><ul><li>10-15 دقیقه در 50-59 درجه فارنهایت (10-15 درجه سانتیگراد) آب</li><li>در عرض 1 ساعت بعد از تمرین</li><li>ممکن است درد و التهاب عضلانی را کاهش دهد</li><li>بیش از 2× در هفته توصیه نمی شود</li></ul></li></ol><h3>ریکاوری ذهنی</h3><ul><li><strong>تنوع:</strong>مسیرها، زمین‌ها و مناظر را برای حفظ تعامل با هم ترکیب کنید</li><li><strong>پیاده روی اجتماعی:</strong>پیاده روی با دوستان یا گروه ها برای لذت بردن</li><li><strong>ذهن آگاهی:</strong>آگاهی از لحظه حال را در طول پیاده روی های آسان تمرین کنید</li><li><strong>بارگذاری هفته:</strong>استراحت ذهنی از تمرین ساختاریافته هر 3-4 هفته</li><li><strong>خارج از فصل:</strong>2-4 هفته در سال پیاده روی حداقل ساختاری</li></ul>
 مفاهیم پیشرفته
-<h2 id="advanced">مفاهیم بار آموزشی پیشرفته</h2>
-<h3>Training Impulse (TRIMP)</h3>
-<p><strong>TRIMP</strong>(Training Impulse) بار تمرین را با استفاده از داده‌های ضربان قلب با وزن‌دهی نمایی برای شدت‌های بالاتر کمیت می‌کند.</p>
-<div class="formula-box">
-<pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
+<h2 id="advanced">مفاهیم بار آموزشی پیشرفته</h2><h3>Training Impulse (TRIMP)</h3><p><strong>TRIMP</strong>(Training Impulse) بار تمرین را با استفاده از داده‌های ضربان قلب با وزن‌دهی نمایی برای شدت‌های بالاتر کمیت می‌کند.</p><div class="formula-box"><pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
 
 Where:
-  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre>
-</div>
-<p><strong>مثال:</strong></p>
-<ul>
-<li>مدت زمان: 60 دقیقه</li>
-<li>میانگین HR: 130 bpm</li>
-<li>HR در حال استراحت: 60 bpm</li>
-<li>حداکثر HR: 180 bpm</li>
-<li>نسبت ΔHR = (130-60)/(180-60) = 70/120 = 0.583</li>
-<li>TRIMP = 60 × 0.583 × 0.64e^(1.92×0.583) = 60 × 0.583 × 1.94 = 67.9</li>
-</ul>
-<p><strong>توجه:</strong>مقادیر TRIMP مستقیماً با WSS قابل مقایسه نیستند، اما هر دو میزان بار تمرینی را تعیین می کنند.</p>
-<h3>مدل تناسب اندام-خستگی</h3>
-<p>آموزش دو اثر متضاد ایجاد می کند:</p>
-<ul>
-<li><strong>تناسب اندام:</strong>انطباق مثبت آهسته ساز، آهسته پوسیده (ثابت زمانی 42 روزه)</li>
-<li><strong>خستگی:</strong>اثر منفی سریع ساخت و پوسیدگی (ثابت زمانی 7 روزه)</li>
-</ul>
-<p><strong>عملکرد = تناسب اندام - خستگی</strong></p>
-<p>این مدل توضیح می دهد:</p>
-<ul>
-<li>چرا روزهای استراحت می تواند منجر به عملکرد بهتر شود (خستگی سریعتر از تناسب اندام از بین می رود)</li>
-<li>چرا تیپرها کار می کنند (کاهش خستگی با حفظ تناسب اندام)</li>
-<li>چرا هفته های ریکاوری ضروری هستند (مدیریت خستگی انباشته شده)</li>
-</ul>
-<h3>بار آموزشی مزمن (CTL) و فرم</h3>
-<p>معیارهای پیشرفته ردیابی شده توسط پلتفرم هایی مانند Hike Analytics:</p>
-<ul>
-<li><strong>CTL (بار آموزشی مزمن):</strong>میانگین وزنی نمایی 42 روزه WSS روزانه - نشان دهنده تناسب اندام</li>
-<li><strong>ATL (بار آموزشی حاد):</strong>میانگین وزنی نمایی 7 روزه WSS روزانه - نشان دهنده خستگی</li>
-<li><strong>است TSB (تعادل استرس آموزشی):</strong>CTL - ATL — نمایانگر فرم/طراوت</li>
-</ul>
-<p><strong>تعبیر TSB:</strong></p>
-<ul>
-<li><strong>TSB &lt; -30:</strong>خستگی زیاد، خطر بیش از حد</li>
-<li><strong>TSB -30 تا -10:</strong>منطقه تمرین مولد، خستگی طبیعی</li>
-<li><strong>TSB -10 تا +10:</strong>شکل خنثی</li>
-<li><strong>TSB +10 تا +25:</strong>تازه، آمادگی مسابقه خوب</li>
-<li><strong>TSB &gt; +25:</strong>بسیار تازه، اما در صورت تداوم بی تمرین</li>
-</ul>
+  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre></div><p><strong>مثال:</strong></p><ul><li>مدت زمان: 60 دقیقه</li><li>میانگین HR: 130 bpm</li><li>HR در حال استراحت: 60 bpm</li><li>حداکثر HR: 180 bpm</li><li>نسبت ΔHR = (130-60)/(180-60) = 70/120 = 0.583</li><li>TRIMP = 60 × 0.583 × 0.64e^(1.92×0.583) = 60 × 0.583 × 1.94 = 67.9</li></ul><p><strong>توجه:</strong>مقادیر TRIMP مستقیماً با WSS قابل مقایسه نیستند، اما هر دو میزان بار تمرینی را تعیین می کنند.</p><h3>مدل تناسب اندام-خستگی</h3><p>آموزش دو اثر متضاد ایجاد می کند:</p><ul><li><strong>تناسب اندام:</strong>انطباق مثبت آهسته ساز، آهسته پوسیده (ثابت زمانی 42 روزه)</li><li><strong>خستگی:</strong>اثر منفی سریع ساخت و پوسیدگی (ثابت زمانی 7 روزه)</li></ul><p><strong>عملکرد = تناسب اندام - خستگی</strong></p><p>این مدل توضیح می دهد:</p><ul><li>چرا روزهای استراحت می تواند منجر به عملکرد بهتر شود (خستگی سریعتر از تناسب اندام از بین می رود)</li><li>چرا تیپرها کار می کنند (کاهش خستگی با حفظ تناسب اندام)</li><li>چرا هفته های ریکاوری ضروری هستند (مدیریت خستگی انباشته شده)</li></ul><h3>بار آموزشی مزمن (CTL) و فرم</h3><p>معیارهای پیشرفته ردیابی شده توسط پلتفرم هایی مانند Hike Analytics:</p><ul><li><strong>CTL (بار آموزشی مزمن):</strong>میانگین وزنی نمایی 42 روزه WSS روزانه - نشان دهنده تناسب اندام</li><li><strong>ATL (بار آموزشی حاد):</strong>میانگین وزنی نمایی 7 روزه WSS روزانه - نشان دهنده خستگی</li><li><strong>است TSB (تعادل استرس آموزشی):</strong>CTL - ATL — نمایانگر فرم/طراوت</li></ul><p><strong>تعبیر TSB:</strong></p><ul><li><strong>TSB &lt; -30:</strong>خستگی زیاد، خطر بیش از حد</li><li><strong>TSB -30 تا -10:</strong>منطقه تمرین مولد، خستگی طبیعی</li><li><strong>TSB -10 تا +10:</strong>شکل خنثی</li><li><strong>TSB +10 تا +25:</strong>تازه، آمادگی مسابقه خوب</li><li><strong>TSB &gt; +25:</strong>بسیار تازه، اما در صورت تداوم بی تمرین</li></ul>
 کاربرد عملی
-<h2 id="practical">مدیریت بار آموزش عملی</h2>
-<h3>قالب برنامه ریزی هفتگی</h3>
-<p><strong>ساختار هر هفته با:</strong></p>
-<ol>
-<li><strong>1-2 جلسه با کیفیت:</strong>فواصل، سرعت یا کار با سرعت مسابقه</li>
-<li><strong>1 پیاده روی طولانی:</strong>60-120 دقیقه با سرعت آسان و متوسط ​​</li>
-<li><strong>3-4 پیاده روی آسان:</strong>بازیابی و انباشت حجم</li>
-<li><strong>1 روز استراحت:</strong>استراحت کامل یا فعالیت بسیار ملایم</li>
-</ol>
-<p><strong>مثال هفته متوسط ​​(هدف: 420 WSS):</strong></p>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>روز</th>
-<th>تمرین</th>
-<th>مدت زمان</th>
-<th>شدت</th>
-<th>WSS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>دوشنبه</td>
-<td>پیاده روی ثابت</td>
-<td>45 دقیقه</td>
-<td>105 spm (منطقه 2)</td>
-<td>90</td>
-</tr>
-<tr>
-<td>سه شنبه</td>
-<td>بازیابی آسان</td>
-<td>30 دقیقه</td>
-<td>95 spm (منطقه 1)</td>
-<td>40</td>
-</tr>
-<tr>
-<td>چهارشنبه</td>
-<td><strong>فواصل</strong></td>
-<td>50 دقیقه کل</td>
-<td>5×5 دقیقه @ 120 اسپرم در دقیقه</td>
-<td>140</td>
-</tr>
-<tr>
-<td>پنجشنبه</td>
-<td>پیاده روی آسان</td>
-<td>35 دقیقه</td>
-<td>100 spm (منطقه 2)</td>
-<td>55</td>
-</tr>
-<tr>
-<td>جمعه</td>
-<td>روز استراحت</td>
-<td>—</td>
-<td>—</td>
-<td>0</td>
-</tr>
-<tr>
-<td>شنبه</td>
-<td><strong>پیاده روی طولانی</strong></td>
-<td>75 دقیقه</td>
-<td>105 spm (منطقه 2)</td>
-<td>150</td>
-</tr>
-<tr>
-<td>یکشنبه</td>
-<td>بازیابی آسان</td>
-<td>30 دقیقه</td>
-<td>95 spm (منطقه 1)</td>
-<td>40</td>
-</tr>
-<tr>
-<td colspan="4"><strong>مجموع هفتگی</strong></td>
-<td><strong>515 WSS</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3>تنظیم بر اساس بازخورد</h3>
-<p><strong>سناریو 1: احساس خستگی در اواسط هفته</strong></p>
-<ul>
-<li>RHR (بالا؟) و نمره سلامتی (کم؟)</li>
-<li>ورزش سخت را با پیاده روی آسان جایگزین کنید</li>
-<li>اضافه کردن روز استراحت در صورت نیاز</li>
-<li>از سرگیری تمرینات برنامه ریزی شده پس از بهبودی</li>
-</ul>
-<p><strong>سناریو 2: احساس عالی بودن و پیشرفت خوب</strong></p>
-<ul>
-<li>برنامه فعلی را ادامه دهید (بار اضافی را به صورت ناگهانی اضافه نکنید)</li>
-<li>افزایش بار 5-10% در هفته آینده</li>
-<li>کیفیت را بر کمیت در نظر بگیرید (شدت را اندکی افزایش دهید)</li>
-</ul>
-<p><strong>سناریو 3: عملکرد ضعیف مداوم</strong></p>
-<ul>
-<li>بررسی استرس های غیر تمرینی (کار، خواب، رویدادهای زندگی)</li>
-<li>کاهش بار تمرینی 30-40٪ برای 1-2 هفته</li>
-<li>تمرکز بر خواب، تغذیه و مدیریت استرس</li>
-<li>پس از تایید ریکاوری به تدریج بازسازی کنید</li>
-</ul>
+<h2 id="practical">مدیریت بار آموزش عملی</h2><h3>قالب برنامه ریزی هفتگی</h3><p><strong>ساختار هر هفته با:</strong></p><ol><li><strong>1-2 جلسه با کیفیت:</strong>فواصل، سرعت یا کار با سرعت مسابقه</li><li><strong>1 پیاده روی طولانی:</strong>60-120 دقیقه با سرعت آسان و متوسط ​​</li><li><strong>3-4 پیاده روی آسان:</strong>بازیابی و انباشت حجم</li><li><strong>1 روز استراحت:</strong>استراحت کامل یا فعالیت بسیار ملایم</li></ol><p><strong>مثال هفته متوسط ​​(هدف: 420 WSS):</strong></p><div class="data-table"><table><thead><tr><th>روز</th><th>تمرین</th><th>مدت زمان</th><th>شدت</th><th>WSS</th></tr></thead><tbody><tr><td>دوشنبه</td><td>پیاده روی ثابت</td><td>45 دقیقه</td><td>105 spm (منطقه 2)</td><td>90</td></tr><tr><td>سه شنبه</td><td>بازیابی آسان</td><td>30 دقیقه</td><td>95 spm (منطقه 1)</td><td>40</td></tr><tr><td>چهارشنبه</td><td><strong>فواصل</strong></td><td>50 دقیقه کل</td><td>5×5 دقیقه @ 120 اسپرم در دقیقه</td><td>140</td></tr><tr><td>پنجشنبه</td><td>پیاده روی آسان</td><td>35 دقیقه</td><td>100 spm (منطقه 2)</td><td>55</td></tr><tr><td>جمعه</td><td>روز استراحت</td><td>—</td><td>—</td><td>0</td></tr><tr><td>شنبه</td><td><strong>پیاده روی طولانی</strong></td><td>75 دقیقه</td><td>105 spm (منطقه 2)</td><td>150</td></tr><tr><td>یکشنبه</td><td>بازیابی آسان</td><td>30 دقیقه</td><td>95 spm (منطقه 1)</td><td>40</td></tr><tr><td colspan="4"><strong>مجموع هفتگی</strong></td><td><strong>515 WSS</strong></td></tr></tbody></table></div><h3>تنظیم بر اساس بازخورد</h3><p><strong>سناریو 1: احساس خستگی در اواسط هفته</strong></p><ul><li>RHR (بالا؟) و نمره سلامتی (کم؟)</li><li>ورزش سخت را با پیاده روی آسان جایگزین کنید</li><li>اضافه کردن روز استراحت در صورت نیاز</li><li>از سرگیری تمرینات برنامه ریزی شده پس از بهبودی</li></ul><p><strong>سناریو 2: احساس عالی بودن و پیشرفت خوب</strong></p><ul><li>برنامه فعلی را ادامه دهید (بار اضافی را به صورت ناگهانی اضافه نکنید)</li><li>افزایش بار 5-10% در هفته آینده</li><li>کیفیت را بر کمیت در نظر بگیرید (شدت را اندکی افزایش دهید)</li></ul><p><strong>سناریو 3: عملکرد ضعیف مداوم</strong></p><ul><li>بررسی استرس های غیر تمرینی (کار، خواب، رویدادهای زندگی)</li><li>کاهش بار تمرینی 30-40٪ برای 1-2 هفته</li><li>تمرکز بر خواب، تغذیه و مدیریت استرس</li><li>پس از تایید ریکاوری به تدریج بازسازی کنید</li></ul>
 خلاصه
-<h2 id="summary">خلاصه: اصول بار آموزشی کلیدی</h2>
-<div class="key-finding">
-<strong>پنج رکن مدیریت بار آموزشی:</strong>
-<ol>
-<li><strong>کمیت بار:</strong>از WSS، دقیقه سریع یا TRIMP برای ردیابی محرک تمرین استفاده کنید</li>
-<li><strong>پیشرفت تدریجی:</strong>5-10% افزایش هفتگی، با نسبت ساخت: بازیابی 3:1</li>
-<li><strong>مانیتور ACWR:</strong>نسبت حاد: مزمن را بین 0.80-1.30 نگه دارید تا خطر آسیب به حداقل برسد</li>
-<li><strong>اولویت بندی بازیابی:</strong>آموزش + بازیابی = انطباق (فقدان یکی از آنها مانع پیشرفت می شود)</li>
-<li><strong>فردی کردن:</strong>بر اساس معیارهای عینی (RHR، HRV، عملکرد) و احساس ذهنی تنظیم کنید</li>
-</ol>
-</div>
-<p><strong>مراحل اقدام:</strong></p>
-<ol>
-<li>WSS هفتگی فعلی خود را با استفاده از ماشین حساب زیر محاسبه کنید</li>
-<li>هدف واقعی را بر اساس سطح تجربه خود تنظیم کنید</li>
-<li>برنامه ریزی افزایش هفتگی تدریجی (5-10%)</li>
-<li>هفته های بهبودی را هر 3-4 هفته برنامه ریزی کنید</li>
-<li>آهنگ پیک-30 آهنگ و ضربان قلب در حال استراحت روزانه</li>
-<li>از پرسشنامه سلامتی برای راهنمایی تنظیمات روزانه استفاده کنید</li>
-<li>ACWR هفتگی را مرور کنید تا زود هنگام میخ های خطرناک را بگیرید</li>
-<li>اولویت خواب (7-9 ساعت) و تغذیه برای بهبودی</li>
-</ol>
+<h2 id="summary">خلاصه: اصول بار آموزشی کلیدی</h2><div class="key-finding"><strong>پنج رکن مدیریت بار آموزشی:</strong><ol><li><strong>کمیت بار:</strong>از WSS، دقیقه سریع یا TRIMP برای ردیابی محرک تمرین استفاده کنید</li><li><strong>پیشرفت تدریجی:</strong>5-10% افزایش هفتگی، با نسبت ساخت: بازیابی 3:1</li><li><strong>مانیتور ACWR:</strong>نسبت حاد: مزمن را بین 0.80-1.30 نگه دارید تا خطر آسیب به حداقل برسد</li><li><strong>اولویت بندی بازیابی:</strong>آموزش + بازیابی = انطباق (فقدان یکی از آنها مانع پیشرفت می شود)</li><li><strong>فردی کردن:</strong>بر اساس معیارهای عینی (RHR، HRV، عملکرد) و احساس ذهنی تنظیم کنید</li></ol></div><p><strong>مراحل اقدام:</strong></p><ol><li>WSS هفتگی فعلی خود را با استفاده از ماشین حساب زیر محاسبه کنید</li><li>هدف واقعی را بر اساس سطح تجربه خود تنظیم کنید</li><li>برنامه ریزی افزایش هفتگی تدریجی (5-10%)</li><li>هفته های بهبودی را هر 3-4 هفته برنامه ریزی کنید</li><li>آهنگ پیک-30 آهنگ و ضربان قلب در حال استراحت روزانه</li><li>از پرسشنامه سلامتی برای راهنمایی تنظیمات روزانه استفاده کنید</li><li>ACWR هفتگی را مرور کنید تا زود هنگام میخ های خطرناک را بگیرید</li><li>اولویت خواب (7-9 ساعت) و تغذیه برای بهبودی</li></ol>
 ماشین حساب و ابزار
-<h2 id="calculating">بار آموزشی خود را محاسبه کنید</h2>
-<p>از ماشین حساب رایگان ما برای تعیین بار آموزشی خود استفاده کنید:</p>
-<ul>
-<li><a href="/fa/wss-calculator/"><strong>ماشین حساب WSS</strong></a>— محاسبه امتیاز استرس پیاده روی برای تمرینات فردی</li>
-</ul>
+<h2 id="calculating">بار آموزشی خود را محاسبه کنید</h2><p>از ماشین حساب رایگان ما برای تعیین بار آموزشی خود استفاده کنید:</p><ul><li><a href="/fa/wss-calculator/"><strong>ماشین حساب WSS</strong></a>— محاسبه امتیاز استرس پیاده روی برای تمرینات فردی</li></ul>
 مراجع علمی
-<h2 id="references">مراجع علمی</h2>
-<p>این راهنما تحقیقاتی را از فیزیولوژی ورزش، علوم ورزشی و مطالعات خاص پیاده روی ترکیب می کند:</p>
-<ul>
-<li><strong>دل پوزو-کروز بی، و همکاران. (2022).</strong>"ارتباط تعداد و شدت گام های روزانه با بروز بیماری قلبی عروقی."<em>شبکه جاما باز</em>5 (12): e2248107. [پژوهش آهنگ پیک-30]</li>
-<li><strong>گبت تی جی. (2016).</strong>"پارادوکس آموزشی-پیشگیری از آسیب."<em>مجله پزشکی ورزشی بریتانیا</em>50:273-280. [ACWR و خطر آسیب]</li>
-<li><strong>سولیگارد تی و همکاران (2016).</strong>"چقدر زیاد است؟ (قسمت 1) بیانیه اجماع کمیته بین المللی المپیک در مورد بار در ورزش و خطر آسیب."<em>مجله پزشکی ورزشی بریتانیا</em>50:1030-1041.</li>
-<li><strong>Stöggl TL، Sperlich B. (2014).</strong>تمرین پلاریزه تاثیر بیشتری بر متغیرهای کلیدی استقامتی نسبت به تمرین آستانه، شدت بالا یا حجم بالا دارد.<em>مرزها در فیزیولوژی</em>5:33. [توزیع شدت]</li>
-<li><strong>نرده EW. (1991).</strong>"عملکرد ورزشی نخبگان مدلینگ." در: مک دوگال JD، و همکاران، ویرایش.<em>تست فیزیولوژیکی ورزشکاران نخبه</em>. سینتیک انسانی. [مدل تناسب اندام-خستگی، TRIMP]</li>
-<li><strong>تودور-لاک سی، و همکاران. (2019).</strong>آهنگ پیاده روی (گام در دقیقه) و شدت در 21-40 سال: CADENCE- بزرگسالان."<em>Int J Behav Nutr Phys Act</em>16:8. [آستانه های آهنگ]</li>
-</ul>
-<p><strong>برای تحقیق بیشتر:</strong></p>
-<ul>
-<li><a href="/fa/bibliography/">کتابنامه علمی کامل</a></li>
-<li><a href="/fa/research/">جدیدترین تحقیقات پیاده روی</a></li>
-</ul>
+<h2 id="references">مراجع علمی</h2><p>این راهنما تحقیقاتی را از فیزیولوژی ورزش، علوم ورزشی و مطالعات خاص پیاده روی ترکیب می کند:</p><ul><li><strong>دل پوزو-کروز بی، و همکاران. (2022).</strong>"ارتباط تعداد و شدت گام های روزانه با بروز بیماری قلبی عروقی."<em>شبکه جاما باز</em>5 (12): e2248107. [پژوهش آهنگ پیک-30]</li><li><strong>گبت تی جی. (2016).</strong>"پارادوکس آموزشی-پیشگیری از آسیب."<em>مجله پزشکی ورزشی بریتانیا</em>50:273-280. [ACWR و خطر آسیب]</li><li><strong>سولیگارد تی و همکاران (2016).</strong>"چقدر زیاد است؟ (قسمت 1) بیانیه اجماع کمیته بین المللی المپیک در مورد بار در ورزش و خطر آسیب."<em>مجله پزشکی ورزشی بریتانیا</em>50:1030-1041.</li><li><strong>Stöggl TL، Sperlich B. (2014).</strong>تمرین پلاریزه تاثیر بیشتری بر متغیرهای کلیدی استقامتی نسبت به تمرین آستانه، شدت بالا یا حجم بالا دارد.<em>مرزها در فیزیولوژی</em>5:33. [توزیع شدت]</li><li><strong>نرده EW. (1991).</strong>"عملکرد ورزشی نخبگان مدلینگ." در: مک دوگال JD، و همکاران، ویرایش.<em>تست فیزیولوژیکی ورزشکاران نخبه</em>. سینتیک انسانی. [مدل تناسب اندام-خستگی، TRIMP]</li><li><strong>تودور-لاک سی، و همکاران. (2019).</strong>آهنگ پیاده روی (گام در دقیقه) و شدت در 21-40 سال: CADENCE- بزرگسالان."<em>Int J Behav Nutr Phys Act</em>16:8. [آستانه های آهنگ]</li></ul><p><strong>برای تحقیق بیشتر:</strong></p><ul><li><a href="/fa/bibliography/">کتابنامه علمی کامل</a></li><li><a href="/fa/research/">جدیدترین تحقیقات پیاده روی</a></li></ul>
 مراحل بعدی
-<h2 id="next-steps">مراحل بعدی</h2>
-<ul>
-<li><a href="/fa/walking-zones/">درباره مناطق تمرینی مبتنی بر آهنگ بیاموزید</a></li>
-<li><a href="/fa/formulas/">فرمول ها و محاسبات بار آموزشی را کاوش کنید</a></li>
-<li><a href="/fa/gait-analysis/">درک معیارهای راه رفتن برای نظارت</a></li>
-<li><a href="/fa/stride-mechanics/">بهینه سازی بیومکانیک پیاده روی</a></li>
-</ul>
-</div>
+<h2 id="next-steps">مراحل بعدی</h2><ul><li><a href="/fa/walking-zones/">درباره مناطق تمرینی مبتنی بر آهنگ بیاموزید</a></li><li><a href="/fa/formulas/">فرمول ها و محاسبات بار آموزشی را کاوش کنید</a></li><li><a href="/fa/gait-analysis/">درک معیارهای راه رفتن برای نظارت</a></li><li><a href="/fa/stride-mechanics/">بهینه سازی بیومکانیک پیاده روی</a></li></ul></div>
 نوار کناری
-<aside class="sidebar">
-<div class="toc">
-<h3>فهرست مطالب</h3>
-<ul>
-<li><a href="#intro">بار آموزشی چیست؟</a></li>
-<li><a href="#peak30">Peak-30 Cadence</a></li>
-<li><a href="#brisk-bouts">حملات سریع</a></li>
-<li><a href="#wss">امتیاز استرس پیاده روی</a></li>
-<li><a href="#weekly-load">دستورالعمل های هفتگی</a></li>
-<li><a href="#acwr">نسبت حاد: مزمن</a></li>
-<li><a href="#progression">استراتژی های پیشرفت</a></li>
-<li><a href="#monitoring">بار نظارتی</a></li>
-<li><a href="#intensity">توزیع شدت</a></li>
-<li><a href="#recovery">استراتژی های بازیابی</a></li>
-<li><a href="#advanced">مفاهیم پیشرفته</a></li>
-<li><a href="#practical">کاربرد عملی</a></li>
-<li><a href="#summary">خلاصه</a></li>
-<li><a href="#calculating">ماشین حساب</a></li>
-<li><a href="#references">مراجع</a></li>
-</ul>
-</div>
-<div class="cta-box">
-<h3>بار خود را ردیابی کنید</h3>
-<p>WSS، آهنگ Peak-30 و ACWR را به طور خودکار با Hike Analytics نظارت کنید.</p>
-<a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">دانلود اپلیکیشن</a>
-</div>
-<div class="tip-box">
-<h4>نکته سریع</h4>
-<p>ردیابی آهنگ Peak-30 خود را از امروز شروع کنید! حداقل 30 دقیقه ≥100 spm را هدف قرار دهید تا به آستانه مزایای سلامتی برسید.</p>
-</div>
-</aside>
-</div>
-</div>
-</section>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+<aside class="sidebar"><div class="toc"><h3>فهرست مطالب</h3><ul><li><a href="#intro">بار آموزشی چیست؟</a></li><li><a href="#peak30">Peak-30 Cadence</a></li><li><a href="#brisk-bouts">حملات سریع</a></li><li><a href="#wss">امتیاز استرس پیاده روی</a></li><li><a href="#weekly-load">دستورالعمل های هفتگی</a></li><li><a href="#acwr">نسبت حاد: مزمن</a></li><li><a href="#progression">استراتژی های پیشرفت</a></li><li><a href="#monitoring">بار نظارتی</a></li><li><a href="#intensity">توزیع شدت</a></li><li><a href="#recovery">استراتژی های بازیابی</a></li><li><a href="#advanced">مفاهیم پیشرفته</a></li><li><a href="#practical">کاربرد عملی</a></li><li><a href="#summary">خلاصه</a></li><li><a href="#calculating">ماشین حساب</a></li><li><a href="#references">مراجع</a></li></ul></div><div class="cta-box"><h3>بار خود را ردیابی کنید</h3><p>WSS، آهنگ Peak-30 و ACWR را به طور خودکار با Hike Analytics نظارت کنید.</p><a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">دانلود اپلیکیشن</a></div><div class="tip-box"><h4>نکته سریع</h4><p>ردیابی آهنگ Peak-30 خود را از امروز شروع کنید! حداقل 30 دقیقه ≥100 spm را هدف قرار دهید تا به آستانه مزایای سلامتی برسید.</p></div></aside></div></div></section><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">AnalyticsZone Team</span>
-          </span>
-        </h3>
-        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">AnalyticsZone Team</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای</h2>
-    <p class="ai-citation-answer">معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-11</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>نمره استرس پیاده روی · ماشین حساب WSS · بار تمرین پیاده روی · حجم پیاده روی هفتگی · ردیابی تناسب اندام پیاده روی</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../fa/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load"><div class="container ai-citation-shell"><h2 class="ai-citation-title">راهنمای بار آموزشی پیاده روی: WSS، حجم هفتگی و معیارهای</h2><p class="ai-citation-answer">معیارهای بار تمرین پیاده روی را بیاموزید. محاسبه WSS، ردیابی حجم هفتگی، نظارت بر بازیابی. تناسب اندام را به صورت علمی پیگیری کنید.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>نمره استرس پیاده روی · ماشین حساب WSS · بار تمرین پیاده روی · حجم پیاده روی هفتگی · ردیابی تناسب اندام پیاده روی</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../fa/bibliography/">
           
           کتابشناسی
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">دانلود کنید</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="در اپ استور دانلود کنید">
-                        <img src="../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">دانلود کنید</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="در اپ استور دانلود کنید"><img src="../../assets/images/badge-app-store.svg"
                             alt="در اپ استور دانلود کنید" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="آن را در Google Play دریافت کنید">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="آن را در Google Play دریافت کنید"><img src="../../assets/images/badge-google-play.svg"
                             alt="آن را در Google Play دریافت کنید" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">موجود در</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">موجود در</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link active"
+                </a><a href="/fa/" class="lang-link active"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. تمامی حقوق محفوظ است
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/fa/privacy/">حریم خصوصی</a></li>
-                <li><a href="/fa/terms/">شرایط</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>این وب سایت از کوکی ها برای بهبود تجربه شما استفاده می کند.</p>
-            <a href="/fa/privacy/" class="text-sm">بیشتر بدانید</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">رد کردن</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">قبول کنید</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/fa/privacy/">حریم خصوصی</a></li><li><a href="/fa/terms/">شرایط</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>این وب سایت از کوکی ها برای بهبود تجربه شما استفاده می کند.</p><a href="/fa/privacy/" class="text-sm">بیشتر بدانید</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">رد کردن</button><button id="cookie-accept" class="btn btn-primary btn-small">قبول کنید</button></div></div></div><script src="../../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

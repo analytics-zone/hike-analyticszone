@@ -1,251 +1,61 @@
-<!DOCTYPE html>
-<html lang="ms" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik</title>
-  <meta name="description" content="Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="skor tekanan mendaki, Kalkulator WSS, beban latihan mendaki, jumlah mendaki mingguan, pengesanan kecergasan mendaki">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/ms/training-load/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-11T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://hike.analyticszone.app/ms/training-load/">
-  <meta property="og:title" content="Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik">
-  <meta property="og:description" content="Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik.">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="ms_MY">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/ms/training-load/">
-  <meta name="twitter:title" content="Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik">
-  <meta name="twitter:description" content="Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik.">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/training-load/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/training-load/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/training-load/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/training-load/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/training-load/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/training-load/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/training-load/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/training-load/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/training-load/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/training-load/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/training-load/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/training-load/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/training-load/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/training-load/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/training-load/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/training-load/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/training-load/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/training-load/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/training-load/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/training-load/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/training-load/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/training-load/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/training-load/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/training-load/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/training-load/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/training-load/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/training-load/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/training-load/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/training-load/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/training-load/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/training-load/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/training-load/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/training-load/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/training-load/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/training-load/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/training-load/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/training-load/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/training-load/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/training-load/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/training-load/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/training-load/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/training-load/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/training-load/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/training-load/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/training-load/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/training-load/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/training-load/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/training-load/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/training-load/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/training-load/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/training-load/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/training-load/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/training-load/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/training-load/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/training-load/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/training-load/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="ms" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik</title><meta name="description" content="Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="skor tekanan mendaki, Kalkulator WSS, beban latihan mendaki, jumlah mendaki mingguan, pengesanan kecergasan mendaki"><link rel="canonical" href="https://hike.analyticszone.app/ms/training-load/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-11T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://hike.analyticszone.app/ms/training-load/"><meta property="og:title" content="Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik"><meta property="og:description" content="Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ms_MY"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/ms/training-load/"><meta name="twitter:title" content="Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik"><meta name="twitter:description" content="Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/training-load/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/training-load/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/training-load/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/training-load/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/training-load/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/training-load/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/training-load/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/training-load/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/training-load/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/training-load/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/training-load/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/training-load/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/training-load/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/training-load/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/training-load/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/training-load/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/training-load/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/training-load/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/training-load/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/training-load/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/training-load/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/training-load/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/training-load/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/training-load/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/training-load/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/training-load/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/training-load/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/training-load/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/training-load/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/training-load/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/training-load/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/training-load/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/training-load/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/training-load/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/training-load/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/training-load/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/training-load/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/training-load/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/training-load/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/training-load/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/training-load/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/training-load/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/training-load/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/training-load/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/training-load/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/training-load/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/training-load/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/training-load/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/training-load/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/training-load/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/training-load/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/training-load/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/training-load/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/training-load/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/training-load/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/training-load/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -504,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -552,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -564,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "ms"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -583,12 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -617,11 +402,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -664,14 +445,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -696,17 +470,7 @@ img[width][height] {
     "@id": "https://hike.analyticszone.app/ms/training-load/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -720,1989 +484,431 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Langkau ke kandungan</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/ms/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/ms/" 
+  </script></head><body><a href="#main-content" class="skip-link">Langkau ke kandungan</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ms/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ms/" 
                                 aria-current="">
                                 Rumah
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ms/getting-started/" class="nav-label">Belajar</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ms/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/ms/getting-started/" class="nav-label">Belajar</a><ul class="submenu"><li><a href="/ms/getting-started/" 
                                         aria-current="">
                                         Bermula
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/walking-zones/" 
+                                    </a></li><li><a href="/ms/walking-zones/" 
                                         aria-current="">
                                         Zon Kembara
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/gait-analysis/" 
+                                    </a></li><li><a href="/ms/gait-analysis/" 
                                         aria-current="">
                                         Analisis Gait
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/training-load/" class="active" 
+                                    </a></li><li><a href="/ms/training-load/" class="active" 
                                         aria-current="page">
                                         Beban Latihan
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/wss-calculator/" 
+                                    </a></li><li><a href="/ms/wss-calculator/" 
                                         aria-current="">
                                         Kalkulator WSS
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ms/research/" class="nav-label">Sains</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ms/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ms/research/" class="nav-label">Sains</a><ul class="submenu"><li><a href="/ms/research/" 
                                         aria-current="">
                                         Penyelidikan
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/formulas/" 
+                                    </a></li><li><a href="/ms/formulas/" 
                                         aria-current="">
                                         Formula
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/gait-efficiency/" 
+                                    </a></li><li><a href="/ms/gait-efficiency/" 
                                         aria-current="">
                                         Kecekapan Gaya Berjalan
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/stride-mechanics/" 
+                                    </a></li><li><a href="/ms/stride-mechanics/" 
                                         aria-current="">
                                         Mekanik Langkah
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/walking-vs-running/" 
+                                    </a></li><li><a href="/ms/walking-vs-running/" 
                                         aria-current="">
                                         Mendaki vs Berlari
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/benchmarks/" 
+                                    </a></li><li><a href="/ms/benchmarks/" 
                                         aria-current="">
                                         Penanda aras
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/bibliography/" 
+                                    </a></li><li><a href="/ms/bibliography/" 
                                         aria-current="">
                                         Bibliografi
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ms/for-health/" class="nav-label">Untuk Awak</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ms/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ms/for-health/" class="nav-label">Untuk Awak</a><ul class="submenu"><li><a href="/ms/for-health/" 
                                         aria-current="">
                                         Untuk Kesihatan
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/for-fitness/" 
+                                    </a></li><li><a href="/ms/for-fitness/" 
                                         aria-current="">
                                         Untuk Kecergasan
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/for-seniors/" 
+                                    </a></li><li><a href="/ms/for-seniors/" 
                                         aria-current="">
                                         Untuk Warga Emas
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/for-rehabilitation/" 
+                                    </a></li><li><a href="/ms/for-rehabilitation/" 
                                         aria-current="">
                                         Untuk Pemulihan
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ms/cadence-calculator/" class="nav-label">Alatan</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ms/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ms/cadence-calculator/" class="nav-label">Alatan</a><ul class="submenu"><li><a href="/ms/cadence-calculator/" 
                                         aria-current="">
                                         Kalkulator Irama
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/gait-assessment/" 
+                                    </a></li><li><a href="/ms/gait-assessment/" 
                                         aria-current="">
                                         Penilaian Gait
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ms/vo2max-calculator/" 
+                                    </a></li><li><a href="/ms/vo2max-calculator/" 
                                         aria-current="">
                                         Kalkulator VO₂max
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ms/contact/" 
+                                    </a></li></ul></li><li><a href="/ms/contact/" 
                                 aria-current="">
                                 Kenalan
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Pilih bahasa">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Pilih bahasa"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" selected>
+                        </option><option value="ms" selected>
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Togol menu"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/ms/">Rumah</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/ms/getting-started/">Belajar</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">Beban Latihan</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Togol menu"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/ms/">Rumah</a></li><li><a href="/ms/getting-started/">Belajar</a></li><li><span aria-current="page">Beban Latihan</span></li></ol></div></nav><main id="main-content" class="main-content">
     
     Panduan Beban Latihan
-<section class="guide-hero">
-<div class="container">
-<div class="breadcrumb">
-<a href="/ms/">Rumah</a>/<a href="/ms/#learn">Belajar</a>/ Beban Latihan</div>
-<h1>Pengurusan Beban Latihan Kembara</h1>
-<p class="lead">Pendekatan saintifik untuk mengimbangi rangsangan latihan, penyesuaian dan pemulihan</p>
-</div>
-</section>
-<section class="guide-content">
-<div class="container">
-<div class="content-grid">
-<div class="main-content">
+<section class="guide-hero"><div class="container"><div class="breadcrumb"><a href="/ms/">Rumah</a>/<a href="/ms/#learn">Belajar</a>/ Beban Latihan</div><h1>Pengurusan Beban Latihan Kembara</h1><p class="lead">Pendekatan saintifik untuk mengimbangi rangsangan latihan, penyesuaian dan pemulihan</p></div></section><section class="guide-content"><div class="container"><div class="content-grid"><div class="main-content">
 Pengenalan
-<h2 id="intro">Apakah Beban Latihan?</h2>
-<p><strong>Beban latihan</strong>mengukur tekanan fisiologi terkumpul yang dialami oleh badan anda daripada latihan mendaki. Ia menyepadukan tiga dimensi utama:</p>
-<ol>
-<li><strong>Tempoh:</strong>Berapa lama anda mendaki</li>
-<li><strong>Intensiti:</strong>Seberapa sukar anda mendaki (irama, degupan jantung, kelajuan)</li>
-<li><strong>Kekerapan:</strong>Berapa kerap anda mendaki</li>
-</ol>
-<p>Pengurusan beban latihan yang betul membolehkan peningkatan yang konsisten sambil meminimumkan risiko kecederaan dan latihan berlebihan. Tidak seperti mendaki kasual untuk pengangkutan,<strong>mendaki berorientasikan latihan</strong>memerlukan perkembangan sistematik dan perancangan pemulihan.</p>
-<div class="key-finding">
-<strong>Wawasan Penyelidikan:</strong>Hubungan antara beban latihan dan penyesuaian mengikuti lengkung U terbalik: beban yang terlalu sedikit tidak menghasilkan penyesuaian, beban yang optimum mendorong peningkatan, dan beban yang berlebihan membawa kepada latihan berlebihan dan kecederaan (Soligard et al., 2016).</div>
+<h2 id="intro">Apakah Beban Latihan?</h2><p><strong>Beban latihan</strong>mengukur tekanan fisiologi terkumpul yang dialami oleh badan anda daripada latihan mendaki. Ia menyepadukan tiga dimensi utama:</p><ol><li><strong>Tempoh:</strong>Berapa lama anda mendaki</li><li><strong>Intensiti:</strong>Seberapa sukar anda mendaki (irama, degupan jantung, kelajuan)</li><li><strong>Kekerapan:</strong>Berapa kerap anda mendaki</li></ol><p>Pengurusan beban latihan yang betul membolehkan peningkatan yang konsisten sambil meminimumkan risiko kecederaan dan latihan berlebihan. Tidak seperti mendaki kasual untuk pengangkutan,<strong>mendaki berorientasikan latihan</strong>memerlukan perkembangan sistematik dan perancangan pemulihan.</p><div class="key-finding"><strong>Wawasan Penyelidikan:</strong>Hubungan antara beban latihan dan penyesuaian mengikuti lengkung U terbalik: beban yang terlalu sedikit tidak menghasilkan penyesuaian, beban yang optimum mendorong peningkatan, dan beban yang berlebihan membawa kepada latihan berlebihan dan kecederaan (Soligard et al., 2016).</div>
 Puncak-30 Irama
-<h2 id="peak30">Irama Puncak-30: Metrik Terobosan</h2>
-<p>Penyelidikan terkini telah mengenal pasti<strong>Irama puncak-30</strong>sebagai peramal kuat hasil kesihatan dan risiko kematian, bebas daripada jumlah langkah harian.</p>
-<h3>Apakah Irama Puncak-30?</h3>
-<p><strong>Irama puncak-30</strong>ialah irama purata (langkah seminit) semasa<strong>anda terbaik 30 minit berturut-turut</strong>mendaki dalam sehari. Metrik ini menangkap keupayaan anda untuk mengekalkan kembara yang bertujuan dan pantas.</p>
-<div class="key-finding">
-<strong>Kajian Terobosan:</strong>Del Pozo-Cruz et al. (2022) menganalisis 78,500 peserta UK Biobank dan mendapati bahawa irama Peak-30 secara bebas meramalkan semua punca kematian dan risiko penyakit kardiovaskular, walaupun selepas mengawal jumlah langkah harian.</div>
-<h3>Ambang Irama Puncak-30 dan Hasil Kesihatan</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Puncak-30 Irama</th>
-<th>Klasifikasi</th>
-<th>Risiko Kematian</th>
-<th>Status Kesihatan</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;60 spm</td>
-<td>Sangat rendah</td>
-<td>Rujukan (tertinggi)</td>
-<td>Corak sedentari</td>
-</tr>
-<tr>
-<td>60-79 spm</td>
-<td>Rendah</td>
-<td>~15% risiko lebih rendah</td>
-<td>Kembara kasual</td>
-</tr>
-<tr>
-<td>80-99 spm</td>
-<td>Sederhana</td>
-<td>~30% risiko lebih rendah</td>
-<td>Kembara biasa</td>
-</tr>
-<tr>
-<td>100-109 spm</td>
-<td>Pantas</td>
-<td>~40% risiko lebih rendah</td>
-<td>Berorientasikan kecergasan</td>
-</tr>
-<tr>
-<td>≥110 spm</td>
-<td>Sangat pantas</td>
-<td>~50% risiko lebih rendah</td>
-<td>Kecergasan tinggi</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Wawasan Utama:</strong>Puncak-30 irama ≥100 spm sepadan dengan<strong>aktiviti fizikal sederhana hingga cergas</strong>(MVPA) dan mewakili ambang untuk manfaat kesihatan yang besar.</p>
-<h3>Implikasi Latihan</h3>
-<p>Irama puncak-30 menyediakan panduan latihan yang boleh diambil tindakan:</p>
-<ul>
-<li><strong>Penetapan matlamat:</strong>Puncak Sasaran-30 irama 100+ spm sekurang-kurangnya 5 hari seminggu</li>
-<li><strong>Reka bentuk senaman:</strong>Sertakan sekurang-kurangnya satu pertarungan pantas 30 minit dalam pendakian harian</li>
-<li><strong>Penjejakan kemajuan:</strong>Pantau peningkatan dalam kaden Puncak-30 apabila kecergasan bertambah baik</li>
-<li><strong>Preskripsi intensiti:</strong>Gunakan zon irama dan bukannya HR untuk lebih banyak latihan praktikal</li>
-</ul>
+<h2 id="peak30">Irama Puncak-30: Metrik Terobosan</h2><p>Penyelidikan terkini telah mengenal pasti<strong>Irama puncak-30</strong>sebagai peramal kuat hasil kesihatan dan risiko kematian, bebas daripada jumlah langkah harian.</p><h3>Apakah Irama Puncak-30?</h3><p><strong>Irama puncak-30</strong>ialah irama purata (langkah seminit) semasa<strong>anda terbaik 30 minit berturut-turut</strong>mendaki dalam sehari. Metrik ini menangkap keupayaan anda untuk mengekalkan kembara yang bertujuan dan pantas.</p><div class="key-finding"><strong>Kajian Terobosan:</strong>Del Pozo-Cruz et al. (2022) menganalisis 78,500 peserta UK Biobank dan mendapati bahawa irama Peak-30 secara bebas meramalkan semua punca kematian dan risiko penyakit kardiovaskular, walaupun selepas mengawal jumlah langkah harian.</div><h3>Ambang Irama Puncak-30 dan Hasil Kesihatan</h3><div class="data-table"><table><thead><tr><th>Puncak-30 Irama</th><th>Klasifikasi</th><th>Risiko Kematian</th><th>Status Kesihatan</th></tr></thead><tbody><tr><td>&lt;60 spm</td><td>Sangat rendah</td><td>Rujukan (tertinggi)</td><td>Corak sedentari</td></tr><tr><td>60-79 spm</td><td>Rendah</td><td>~15% risiko lebih rendah</td><td>Kembara kasual</td></tr><tr><td>80-99 spm</td><td>Sederhana</td><td>~30% risiko lebih rendah</td><td>Kembara biasa</td></tr><tr><td>100-109 spm</td><td>Pantas</td><td>~40% risiko lebih rendah</td><td>Berorientasikan kecergasan</td></tr><tr><td>≥110 spm</td><td>Sangat pantas</td><td>~50% risiko lebih rendah</td><td>Kecergasan tinggi</td></tr></tbody></table></div><p><strong>Wawasan Utama:</strong>Puncak-30 irama ≥100 spm sepadan dengan<strong>aktiviti fizikal sederhana hingga cergas</strong>(MVPA) dan mewakili ambang untuk manfaat kesihatan yang besar.</p><h3>Implikasi Latihan</h3><p>Irama puncak-30 menyediakan panduan latihan yang boleh diambil tindakan:</p><ul><li><strong>Penetapan matlamat:</strong>Puncak Sasaran-30 irama 100+ spm sekurang-kurangnya 5 hari seminggu</li><li><strong>Reka bentuk senaman:</strong>Sertakan sekurang-kurangnya satu pertarungan pantas 30 minit dalam pendakian harian</li><li><strong>Penjejakan kemajuan:</strong>Pantau peningkatan dalam kaden Puncak-30 apabila kecergasan bertambah baik</li><li><strong>Preskripsi intensiti:</strong>Gunakan zon irama dan bukannya HR untuk lebih banyak latihan praktikal</li></ul>
 Pertarungan Pantas
-<h2 id="brisk-bouts">Pertarungan Pantas: Kualiti Berbanding Kuantiti</h2>
-<p>A<strong>pertarungan pantas</strong>ialah tempoh mendaki berterusan pada ≥100 langkah seminit (ambang intensiti sederhana) yang berlangsung sekurang-kurangnya 10 minit tanpa jatuh di bawah ambang irama selama lebih daripada 1-2 minit.</p>
-<h3>Rasional Saintifik</h3>
-<p>Garis Panduan Aktiviti Fizikal A.S. 2018 telah menghapuskan keperluan sebelum ini bahawa aktiviti aerobik berlaku dalam pertarungan sekurang-kurangnya 10 minit. Walau bagaimanapun, penyelidikan menunjukkan bahawa<strong>pertarungan pantas yang berterusan</strong>memberikan faedah unik:</p>
-<ul>
-<li><strong>Penyesuaian kardiovaskular:</strong>HR tinggi yang berterusan memacu peningkatan aerobik</li>
-<li><strong>Kecekapan metabolik:</strong>10+ minit membolehkan laluan metabolik terlibat sepenuhnya</li>
-<li><strong>Pembangunan kemahiran:</strong>Irama lebih tinggi yang berterusan meningkatkan mekanik mendaki</li>
-<li><strong>Faedah psikologi:</strong>Pemikiran "senaman" yang disengajakan berbanding pergerakan sampingan</li>
-</ul>
-<h3>Sasaran Pertarungan Pantas Mingguan</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Tahap Kecergasan</th>
-<th>Minit Pantas Mingguan</th>
-<th>Bilangan Pertarungan</th>
-<th>Jadual Contoh</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Pemula</strong></td>
-<td>75-100 min</td>
-<td>3-4 pertarungan 20-30 min</td>
-<td>Isn/Rabu/Jum: 25 minit setiap satu</td>
-</tr>
-<tr>
-<td><strong>Pertengahan</strong></td>
-<td>150-200 min</td>
-<td>5-6 pertarungan 25-40 min</td>
-<td>Setiap hari 30 min + 1 kembara hujung minggu panjang</td>
-</tr>
-<tr>
-<td><strong>Lanjutan</strong></td>
-<td>200-300+ min</td>
-<td>5-7 pertarungan 30-60 min</td>
-<td>Setiap hari 40 min + selang waktu + pendakian panjang</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Memenuhi Garis Panduan Kesihatan Awam:</strong>150 minit/minggu aktiviti intensiti sederhana (100+ spm cadence) memenuhi cadangan WHO dan CDC untuk manfaat kesihatan.</p>
-<h3>Metrik Kualiti Pertarungan Pantas</h3>
-<p>Tidak semua pertarungan pantas adalah sama. Kualiti boleh dinilai dengan:</p>
-<ol>
-<li><strong>Kestabilan irama:</strong>Turun naik minimum di sekitar irama sasaran (±5 spm)</li>
-<li><strong>Tempoh:</strong>Pertarungan yang lebih lama (30-45 min) &gt; berbilang pertarungan pendek</li>
-<li><strong>Intensiti:</strong>Irama purata yang lebih tinggi dalam pertarungan (110 spm &gt; 100 spm)</li>
-<li><strong>Ketekalan:</strong>Kekerapan hari pertarungan pantas setiap minggu (5-7 hari &gt; 3 hari)</li>
-</ol>
+<h2 id="brisk-bouts">Pertarungan Pantas: Kualiti Berbanding Kuantiti</h2><p>A<strong>pertarungan pantas</strong>ialah tempoh mendaki berterusan pada ≥100 langkah seminit (ambang intensiti sederhana) yang berlangsung sekurang-kurangnya 10 minit tanpa jatuh di bawah ambang irama selama lebih daripada 1-2 minit.</p><h3>Rasional Saintifik</h3><p>Garis Panduan Aktiviti Fizikal A.S. 2018 telah menghapuskan keperluan sebelum ini bahawa aktiviti aerobik berlaku dalam pertarungan sekurang-kurangnya 10 minit. Walau bagaimanapun, penyelidikan menunjukkan bahawa<strong>pertarungan pantas yang berterusan</strong>memberikan faedah unik:</p><ul><li><strong>Penyesuaian kardiovaskular:</strong>HR tinggi yang berterusan memacu peningkatan aerobik</li><li><strong>Kecekapan metabolik:</strong>10+ minit membolehkan laluan metabolik terlibat sepenuhnya</li><li><strong>Pembangunan kemahiran:</strong>Irama lebih tinggi yang berterusan meningkatkan mekanik mendaki</li><li><strong>Faedah psikologi:</strong>Pemikiran "senaman" yang disengajakan berbanding pergerakan sampingan</li></ul><h3>Sasaran Pertarungan Pantas Mingguan</h3><div class="data-table"><table><thead><tr><th>Tahap Kecergasan</th><th>Minit Pantas Mingguan</th><th>Bilangan Pertarungan</th><th>Jadual Contoh</th></tr></thead><tbody><tr><td><strong>Pemula</strong></td><td>75-100 min</td><td>3-4 pertarungan 20-30 min</td><td>Isn/Rabu/Jum: 25 minit setiap satu</td></tr><tr><td><strong>Pertengahan</strong></td><td>150-200 min</td><td>5-6 pertarungan 25-40 min</td><td>Setiap hari 30 min + 1 kembara hujung minggu panjang</td></tr><tr><td><strong>Lanjutan</strong></td><td>200-300+ min</td><td>5-7 pertarungan 30-60 min</td><td>Setiap hari 40 min + selang waktu + pendakian panjang</td></tr></tbody></table></div><p><strong>Memenuhi Garis Panduan Kesihatan Awam:</strong>150 minit/minggu aktiviti intensiti sederhana (100+ spm cadence) memenuhi cadangan WHO dan CDC untuk manfaat kesihatan.</p><h3>Metrik Kualiti Pertarungan Pantas</h3><p>Tidak semua pertarungan pantas adalah sama. Kualiti boleh dinilai dengan:</p><ol><li><strong>Kestabilan irama:</strong>Turun naik minimum di sekitar irama sasaran (±5 spm)</li><li><strong>Tempoh:</strong>Pertarungan yang lebih lama (30-45 min) &gt; berbilang pertarungan pendek</li><li><strong>Intensiti:</strong>Irama purata yang lebih tinggi dalam pertarungan (110 spm &gt; 100 spm)</li><li><strong>Ketekalan:</strong>Kekerapan hari pertarungan pantas setiap minggu (5-7 hari &gt; 3 hari)</li></ol>
 Skor Tekanan Kembara
-<h2 id="wss">Skor Tekanan Kembara (WSS)</h2>
-<p><strong>Skor Tekanan Kembara (WSS)</strong>ialah metrik proprietari yang mengukur beban latihan latihan individu. Ia menyesuaikan konsep daripada Skor Tekanan Latihan (TSS) yang digunakan dalam berbasikal dan berlari.</p>
-<h3>Kaedah Pengiraan WSS</h3>
-<p>WSS boleh dikira menggunakan sama ada<strong>kadar denyutan jantung</strong>atau<strong>irama</strong>sebagai metrik keamatan:</p>
-<h4>Kaedah 1: WSS Berdasarkan Kadar Jantung</h4>
-<p>Ditimbangkan masa mengikut zon kadar jantung:</p>
-<div class="formula-box">
-<pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
+<h2 id="wss">Skor Tekanan Kembara (WSS)</h2><p><strong>Skor Tekanan Kembara (WSS)</strong>ialah metrik proprietari yang mengukur beban latihan latihan individu. Ia menyesuaikan konsep daripada Skor Tekanan Latihan (TSS) yang digunakan dalam berbasikal dan berlari.</p><h3>Kaedah Pengiraan WSS</h3><p>WSS boleh dikira menggunakan sama ada<strong>kadar denyutan jantung</strong>atau<strong>irama</strong>sebagai metrik keamatan:</p><h4>Kaedah 1: WSS Berdasarkan Kadar Jantung</h4><p>Ditimbangkan masa mengikut zon kadar jantung:</p><div class="formula-box"><pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
 
 Zone Multipliers:
   Zone 1 (50-60% HRmax): 1.0
   Zone 2 (60-70% HRmax): 2.0
   Zone 3 (70-80% HRmax): 3.0
   Zone 4 (80-90% HRmax): 4.0
-  Zone 5 (90-100% HRmax): 5.0</pre>
-</div>
-<p><strong>Contoh:</strong>Kembara 60 minit dengan:</p>
-<ul>
-<li>10 minit memanaskan badan di Zon 1 = 10 × 1.0 = 10</li>
-<li>40 min stabil di Zon 2 = 40 × 2.0 = 80</li>
-<li>10 minit bertenang di Zon 1 = 10 × 1.0 = 10</li>
-<li><strong>Jumlah WSS = 100</strong></li>
-</ul>
-<h4>Kaedah 2: WSS Berasaskan Irama</h4>
-<p>Ditimbang masa mengikut keamatan irama:</p>
-<div class="formula-box">
-<pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
+  Zone 5 (90-100% HRmax): 5.0</pre></div><p><strong>Contoh:</strong>Kembara 60 minit dengan:</p><ul><li>10 minit memanaskan badan di Zon 1 = 10 × 1.0 = 10</li><li>40 min stabil di Zon 2 = 40 × 2.0 = 80</li><li>10 minit bertenang di Zon 1 = 10 × 1.0 = 10</li><li><strong>Jumlah WSS = 100</strong></li></ul><h4>Kaedah 2: WSS Berasaskan Irama</h4><p>Ditimbang masa mengikut keamatan irama:</p><div class="formula-box"><pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
 
 Cadence Multipliers:
   60-99 spm (light): 1.0
   100-109 spm (moderate): 2.5
   110-119 spm (mod-vigorous): 3.5
   120-129 spm (vigorous): 4.5
-  ≥130 spm (very vigorous): 6.0</pre>
-</div>
-<p><strong>Kelebihan:</strong>WSS berasaskan irama tidak memerlukan pemantauan HR dan lebih praktikal untuk kebanyakan pejalan kaki.</p>
-<h3>Nilai WSS Biasa mengikut Jenis Latihan</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Jenis Latihan</th>
-<th>Tempoh</th>
-<th>Purata Intensiti</th>
-<th>WSS biasa</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Kenaikan pemulihan</td>
-<td>20-30 min</td>
-<td>Zon 1, &lt;100 spm</td>
-<td>20-30</td>
-</tr>
-<tr>
-<td>Kenaikan aerobik yang mudah</td>
-<td>30-45 min</td>
-<td>Zon 2, 100-105 spm</td>
-<td>60-90</td>
-</tr>
-<tr>
-<td>Kenaikan pantas yang berterusan</td>
-<td>45-60 min</td>
-<td>Zon 2, 105-110 spm</td>
-<td>90-150</td>
-</tr>
-<tr>
-<td>Tempoh kenaikan</td>
-<td>30-40 min</td>
-<td>Zon 3, 110-120 spm</td>
-<td>90-140</td>
-</tr>
-<tr>
-<td>Senaman jeda</td>
-<td>40-50 min</td>
-<td>Zon bercampur, puncak 120+ spm</td>
-<td>120-200</td>
-</tr>
-<tr>
-<td>Kenaikan tahan lama</td>
-<td>90-120 min</td>
-<td>Zon 2, 100-110 spm</td>
-<td>180-300</td>
-</tr>
-<tr>
-<td>Latihan mendaki perlumbaan</td>
-<td>60-90 min</td>
-<td>Zon 3-4, 120-140 spm</td>
-<td>200-400</td>
-</tr>
-</tbody>
-</table>
-</div>
+  ≥130 spm (very vigorous): 6.0</pre></div><p><strong>Kelebihan:</strong>WSS berasaskan irama tidak memerlukan pemantauan HR dan lebih praktikal untuk kebanyakan pejalan kaki.</p><h3>Nilai WSS Biasa mengikut Jenis Latihan</h3><div class="data-table"><table><thead><tr><th>Jenis Latihan</th><th>Tempoh</th><th>Purata Intensiti</th><th>WSS biasa</th></tr></thead><tbody><tr><td>Kenaikan pemulihan</td><td>20-30 min</td><td>Zon 1, &lt;100 spm</td><td>20-30</td></tr><tr><td>Kenaikan aerobik yang mudah</td><td>30-45 min</td><td>Zon 2, 100-105 spm</td><td>60-90</td></tr><tr><td>Kenaikan pantas yang berterusan</td><td>45-60 min</td><td>Zon 2, 105-110 spm</td><td>90-150</td></tr><tr><td>Tempoh kenaikan</td><td>30-40 min</td><td>Zon 3, 110-120 spm</td><td>90-140</td></tr><tr><td>Senaman jeda</td><td>40-50 min</td><td>Zon bercampur, puncak 120+ spm</td><td>120-200</td></tr><tr><td>Kenaikan tahan lama</td><td>90-120 min</td><td>Zon 2, 100-110 spm</td><td>180-300</td></tr><tr><td>Latihan mendaki perlumbaan</td><td>60-90 min</td><td>Zon 3-4, 120-140 spm</td><td>200-400</td></tr></tbody></table></div>
 Beban Latihan Mingguan
-<h2 id="weekly-load">Garis Panduan Beban Latihan Mingguan</h2>
-<p>Beban latihan mingguan harus disesuaikan secara individu berdasarkan tahap kecergasan, matlamat dan masa yang ada. Garis panduan disediakan dalam kedua-dua<strong>WSS</strong>dan<strong>minit pantas</strong>untuk fleksibiliti.</p>
-<h3>Pemula (0-6 bulan pengalaman latihan)</h3>
-<ul>
-<li><strong>WSS Mingguan:</strong>150-300</li>
-<li><strong>Minit pantas (≥100 spm):</strong>75-120 min/minggu</li>
-<li><strong>Jumlah masa mendaki:</strong>120-200 min/minggu</li>
-<li><strong>Sasaran puncak-30:</strong>90-100 spm</li>
-<li><strong>Sesi setiap minggu:</strong>4-5</li>
-<li><strong>Fokus:</strong>Ketekalan, pembentukan tabiat, pembangunan teknik</li>
-<li><strong>Kemajuan:</strong>Peningkatan sebanyak 5-10% seminggu</li>
-</ul>
-<p><strong>Minggu sampel (Jumlah WSS: 250):</strong></p>
-<ul>
-<li>Isn: 30 min pendakian mudah, 100 spm (WSS 50)</li>
-<li>Sel: Berehat atau berjalan kaki 20 minit secara perlahan</li>
-<li>Rab: 35 min mendaki pantas, 105 spm (WSS 70)</li>
-<li>Kha: 25 min pendakian mudah, 95 spm (WSS 40)</li>
-<li>Jum: Rehat</li>
-<li>Sabtu: 45 min pendakian tetap, 102 spm (WSS 90)</li>
-<li>Matahari: Mudah 20-30 min</li>
-</ul>
-<h3>Pertengahan (pengalaman latihan 6-18 bulan)</h3>
-<ul>
-<li><strong>WSS Mingguan:</strong>300-550</li>
-<li><strong>Minit pantas (≥100 spm):</strong>150-250 min/minggu</li>
-<li><strong>Jumlah masa mendaki:</strong>250-400 min/minggu</li>
-<li><strong>Sasaran puncak-30:</strong>105-115 spm</li>
-<li><strong>Sesi setiap minggu:</strong>5-6</li>
-<li><strong>Fokus:</strong>Membina kapasiti aerobik, ketahanan kelajuan, pengenalan selang</li>
-<li><strong>Kemajuan:</strong>Peningkatan sebanyak 10% setiap minggu, dengan minggu pemulihan</li>
-</ul>
-<p><strong>Minggu sampel (Jumlah WSS: 420):</strong></p>
-<ul>
-<li>Isn: 40 min kenaikan berterusan, 108 spm (WSS 100)</li>
-<li>Sel: 30 min pemulihan mudah, 95 spm (WSS 45)</li>
-<li>Rab: 45 min selang (5×4 min @ 120 spm / 3 min mudah) (WSS 130)</li>
-<li>Kha: 35 min pendakian mudah, 100 spm (WSS 60)</li>
-<li>Jum: Rehat atau 20 min pendakian lembut</li>
-<li>Sabtu: 75 min pendakian panjang, 105 spm (WSS 150)</li>
-<li>Ahad: 30 minit pemulihan mudah (WSS 40)</li>
-</ul>
-<h3>Lanjutan (18+ bulan pengalaman latihan)</h3>
-<ul>
-<li><strong>WSS Mingguan:</strong>500-900+</li>
-<li><strong>Minit pantas (≥100 spm):</strong>250-400+ min/minggu</li>
-<li><strong>Jumlah masa mendaki:</strong>400-700+ min/minggu</li>
-<li><strong>Sasaran puncak-30:</strong>115-130+ spm</li>
-<li><strong>Sesi setiap minggu:</strong>6-7</li>
-<li><strong>Fokus:</strong>Prestasi, pertandingan, teknik mendaki perlumbaan</li>
-<li><strong>Kemajuan:</strong>Diperingkat dengan fasa latihan yang berbeza</li>
-</ul>
-<p><strong>Minggu sampel (Jumlah WSS: 720):</strong></p>
-<ul>
-<li>Isn: 50 min pendakian berterusan, 110 spm (WSS 120)</li>
-<li>Sel: 40 min pendakian mudah, 100 spm (WSS 70)</li>
-<li>Rab: 60 min tempo (40 min @ 115-120 spm) (WSS 180)</li>
-<li>Kha: 35 min kenaikan pemulihan, 95 spm (WSS 50)</li>
-<li>Jum: 50 min selang (10×2 min @ 130+ spm / 2 min mudah) (WSS 180)</li>
-<li>Sabtu: 90 min mendaki, 108 spm (WSS 200)</li>
-<li>Matahari: 40 min pendakian mudah (WSS 60)</li>
-</ul>
+<h2 id="weekly-load">Garis Panduan Beban Latihan Mingguan</h2><p>Beban latihan mingguan harus disesuaikan secara individu berdasarkan tahap kecergasan, matlamat dan masa yang ada. Garis panduan disediakan dalam kedua-dua<strong>WSS</strong>dan<strong>minit pantas</strong>untuk fleksibiliti.</p><h3>Pemula (0-6 bulan pengalaman latihan)</h3><ul><li><strong>WSS Mingguan:</strong>150-300</li><li><strong>Minit pantas (≥100 spm):</strong>75-120 min/minggu</li><li><strong>Jumlah masa mendaki:</strong>120-200 min/minggu</li><li><strong>Sasaran puncak-30:</strong>90-100 spm</li><li><strong>Sesi setiap minggu:</strong>4-5</li><li><strong>Fokus:</strong>Ketekalan, pembentukan tabiat, pembangunan teknik</li><li><strong>Kemajuan:</strong>Peningkatan sebanyak 5-10% seminggu</li></ul><p><strong>Minggu sampel (Jumlah WSS: 250):</strong></p><ul><li>Isn: 30 min pendakian mudah, 100 spm (WSS 50)</li><li>Sel: Berehat atau berjalan kaki 20 minit secara perlahan</li><li>Rab: 35 min mendaki pantas, 105 spm (WSS 70)</li><li>Kha: 25 min pendakian mudah, 95 spm (WSS 40)</li><li>Jum: Rehat</li><li>Sabtu: 45 min pendakian tetap, 102 spm (WSS 90)</li><li>Matahari: Mudah 20-30 min</li></ul><h3>Pertengahan (pengalaman latihan 6-18 bulan)</h3><ul><li><strong>WSS Mingguan:</strong>300-550</li><li><strong>Minit pantas (≥100 spm):</strong>150-250 min/minggu</li><li><strong>Jumlah masa mendaki:</strong>250-400 min/minggu</li><li><strong>Sasaran puncak-30:</strong>105-115 spm</li><li><strong>Sesi setiap minggu:</strong>5-6</li><li><strong>Fokus:</strong>Membina kapasiti aerobik, ketahanan kelajuan, pengenalan selang</li><li><strong>Kemajuan:</strong>Peningkatan sebanyak 10% setiap minggu, dengan minggu pemulihan</li></ul><p><strong>Minggu sampel (Jumlah WSS: 420):</strong></p><ul><li>Isn: 40 min kenaikan berterusan, 108 spm (WSS 100)</li><li>Sel: 30 min pemulihan mudah, 95 spm (WSS 45)</li><li>Rab: 45 min selang (5×4 min @ 120 spm / 3 min mudah) (WSS 130)</li><li>Kha: 35 min pendakian mudah, 100 spm (WSS 60)</li><li>Jum: Rehat atau 20 min pendakian lembut</li><li>Sabtu: 75 min pendakian panjang, 105 spm (WSS 150)</li><li>Ahad: 30 minit pemulihan mudah (WSS 40)</li></ul><h3>Lanjutan (18+ bulan pengalaman latihan)</h3><ul><li><strong>WSS Mingguan:</strong>500-900+</li><li><strong>Minit pantas (≥100 spm):</strong>250-400+ min/minggu</li><li><strong>Jumlah masa mendaki:</strong>400-700+ min/minggu</li><li><strong>Sasaran puncak-30:</strong>115-130+ spm</li><li><strong>Sesi setiap minggu:</strong>6-7</li><li><strong>Fokus:</strong>Prestasi, pertandingan, teknik mendaki perlumbaan</li><li><strong>Kemajuan:</strong>Diperingkat dengan fasa latihan yang berbeza</li></ul><p><strong>Minggu sampel (Jumlah WSS: 720):</strong></p><ul><li>Isn: 50 min pendakian berterusan, 110 spm (WSS 120)</li><li>Sel: 40 min pendakian mudah, 100 spm (WSS 70)</li><li>Rab: 60 min tempo (40 min @ 115-120 spm) (WSS 180)</li><li>Kha: 35 min kenaikan pemulihan, 95 spm (WSS 50)</li><li>Jum: 50 min selang (10×2 min @ 130+ spm / 2 min mudah) (WSS 180)</li><li>Sabtu: 90 min mendaki, 108 spm (WSS 200)</li><li>Matahari: 40 min pendakian mudah (WSS 60)</li></ul>
 Beban Akut lwn Kronik
-<h2 id="acwr">Akut:Nisbah Beban Kerja Kronik (ACWR)</h2>
-<p><strong>Akut:Nisbah Beban Kerja Kronik</strong>ialah alat yang berkuasa untuk menguruskan risiko kecederaan dengan membandingkan beban latihan terkini (akut) kepada beban latihan jangka panjang (kronik).</p>
-<h3>Pengiraan</h3>
-<div class="formula-box">
-<pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
+<h2 id="acwr">Akut:Nisbah Beban Kerja Kronik (ACWR)</h2><p><strong>Akut:Nisbah Beban Kerja Kronik</strong>ialah alat yang berkuasa untuk menguruskan risiko kecederaan dengan membandingkan beban latihan terkini (akut) kepada beban latihan jangka panjang (kronik).</p><h3>Pengiraan</h3><div class="formula-box"><pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
 
 Example:
   Last 7 days WSS: 450
   Average of previous 28 days: 380
-  ACWR = 450 / 380 = 1.18</pre>
-</div>
-<h3>Mentafsir ACWR</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Julat ACWR</th>
-<th>Risiko Kecederaan</th>
-<th>Status Latihan</th>
-<th>Tindakan</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;0.80</td>
-<td>Rendah-Sederhana</td>
-<td>Penyahlatihan mungkin</td>
-<td>Pertimbangkan untuk meningkatkan beban jika sihat</td>
-</tr>
-<tr>
-<td>0.80-1.00</td>
-<td>Rendah</td>
-<td>Latihan yang stabil</td>
-<td>Kekalkan beban semasa</td>
-</tr>
-<tr>
-<td>1.00-1.30</td>
-<td>Rendah</td>
-<td>Perkembangan optimum</td>
-<td>Sweet spot untuk adaptasi</td>
-</tr>
-<tr>
-<td>1.30-1.50</td>
-<td>Sederhana</td>
-<td>Peningkatan pesat</td>
-<td>Pantau tanda-tanda keletihan</td>
-</tr>
-<tr>
-<td>&gt;1.50</td>
-<td>Tinggi</td>
-<td>Pancang berbahaya</td>
-<td>Kurangkan beban, utamakan pemulihan</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="key-finding">
-<strong>Penemuan Penyelidikan:</strong>Atlet dengan ACWR &gt;1.50 mempunyai risiko kecederaan 2-4 kali ganda lebih tinggi berbanding mereka dalam julat 0.80-1.30 (Gabbett, 2016). Prinsip ini terpakai di seluruh sukan, termasuk latihan mendaki.</div>
-<h3>Aplikasi Praktikal</h3>
-<p><strong>Senario 1: Pulang selepas sakit</strong></p>
-<ul>
-<li>Minggu sebelum sakit: 400 WSS</li>
-<li>Terlepas 10 hari (purata 28 hari turun kepada 285)</li>
-<li>Jangan melompat kembali ke 400 (ACWR = 1.40)</li>
-<li>Sebaliknya: Sambung semula pada 250-300 WSS (ACWR = 0.88-1.05)</li>
-</ul>
-<p><strong>Senario 2: Kemajuan bercita-cita tinggi</strong></p>
-<ul>
-<li>Purata 4 minggu semasa: 350 WSS/minggu</li>
-<li>Perancangan minggu depan: Ingin melakukan 500 WSS</li>
-<li>ACWR ialah 1.43 (risiko sederhana-tinggi)</li>
-<li>Pendekatan yang lebih baik: 420-450 WSS (ACWR 1.20-1.29)</li>
-</ul>
+  ACWR = 450 / 380 = 1.18</pre></div><h3>Mentafsir ACWR</h3><div class="data-table"><table><thead><tr><th>Julat ACWR</th><th>Risiko Kecederaan</th><th>Status Latihan</th><th>Tindakan</th></tr></thead><tbody><tr><td>&lt;0.80</td><td>Rendah-Sederhana</td><td>Penyahlatihan mungkin</td><td>Pertimbangkan untuk meningkatkan beban jika sihat</td></tr><tr><td>0.80-1.00</td><td>Rendah</td><td>Latihan yang stabil</td><td>Kekalkan beban semasa</td></tr><tr><td>1.00-1.30</td><td>Rendah</td><td>Perkembangan optimum</td><td>Sweet spot untuk adaptasi</td></tr><tr><td>1.30-1.50</td><td>Sederhana</td><td>Peningkatan pesat</td><td>Pantau tanda-tanda keletihan</td></tr><tr><td>&gt;1.50</td><td>Tinggi</td><td>Pancang berbahaya</td><td>Kurangkan beban, utamakan pemulihan</td></tr></tbody></table></div><div class="key-finding"><strong>Penemuan Penyelidikan:</strong>Atlet dengan ACWR &gt;1.50 mempunyai risiko kecederaan 2-4 kali ganda lebih tinggi berbanding mereka dalam julat 0.80-1.30 (Gabbett, 2016). Prinsip ini terpakai di seluruh sukan, termasuk latihan mendaki.</div><h3>Aplikasi Praktikal</h3><p><strong>Senario 1: Pulang selepas sakit</strong></p><ul><li>Minggu sebelum sakit: 400 WSS</li><li>Terlepas 10 hari (purata 28 hari turun kepada 285)</li><li>Jangan melompat kembali ke 400 (ACWR = 1.40)</li><li>Sebaliknya: Sambung semula pada 250-300 WSS (ACWR = 0.88-1.05)</li></ul><p><strong>Senario 2: Kemajuan bercita-cita tinggi</strong></p><ul><li>Purata 4 minggu semasa: 350 WSS/minggu</li><li>Perancangan minggu depan: Ingin melakukan 500 WSS</li><li>ACWR ialah 1.43 (risiko sederhana-tinggi)</li><li>Pendekatan yang lebih baik: 420-450 WSS (ACWR 1.20-1.29)</li></ul>
 Kemajuan Beban Latihan
-<h2 id="progression">Strategi Kemajuan Beban Latihan</h2>
-<h3>Peraturan 10% (dengan nuansa)</h3>
-<p>Tradisional<strong>Peraturan 10%</strong>mencadangkan peningkatan volum latihan mingguan tidak lebih daripada 10% seminggu. Walaupun berguna sebagai garis panduan, penyelidikan moden mencadangkan pendekatan yang lebih bernuansa:</p>
-<ul>
-<li><strong>Untuk pemula:</strong>5-10% kenaikan mingguan adalah sesuai</li>
-<li><strong>Untuk pengembara yang berpengalaman:</strong>Peningkatan 10-15% boleh diterima jika ACWR kekal &lt;1.30</li>
-<li><strong>Selepas rehat:</strong>Perkembangan yang lebih perlahan (5%) adalah lebih selamat</li>
-<li><strong>Semasa beban tinggi:</strong>Kekalkan atau kurangkan daripada terus meningkat</li>
-</ul>
-<h3>Periodisasi: Model 3:1</h3>
-<p>Model kemajuan berasaskan bukti yang paling banyak bergantian<strong>3 minggu peningkatan beban</strong>dengan<strong>1 minggu pemulihan</strong>:</p>
-<p><strong>Contoh blok 8 minggu (bermula pada 300 WSS):</strong></p>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Minggu</th>
-<th>WSS Mingguan</th>
-<th>Tukar</th>
-<th>Fasa</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>300</td>
-<td>Garis dasar</td>
-<td>Bina</td>
-</tr>
-<tr>
-<td>2</td>
-<td>330</td>
-<td>+10%</td>
-<td>Bina</td>
-</tr>
-<tr>
-<td>3</td>
-<td>365</td>
-<td>+11%</td>
-<td>Bina</td>
-</tr>
-<tr>
-<td>4</td>
-<td>220</td>
-<td>-40%</td>
-<td><strong>Pemulihan</strong></td>
-</tr>
-<tr>
-<td>5</td>
-<td>400</td>
-<td>+10%</td>
-<td>Bina</td>
-</tr>
-<tr>
-<td>6</td>
-<td>440</td>
-<td>+10%</td>
-<td>Bina</td>
-</tr>
-<tr>
-<td>7</td>
-<td>485</td>
-<td>+10%</td>
-<td>Bina</td>
-</tr>
-<tr>
-<td>8</td>
-<td>290</td>
-<td>-40%</td>
-<td><strong>Pemulihan</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Faedah minggu pemulihan:</strong></p>
-<ul>
-<li>Membenarkan penyesuaian fisiologi (supercompensation)</li>
-<li>Menambah semula simpanan glikogen</li>
-<li>Membaiki kerosakan mikro pada tisu</li>
-<li>Mengurangkan keletihan terkumpul</li>
-<li>Menyegarkan motivasi dan tenaga mental</li>
-<li>Menyediakan badan untuk blok latihan seterusnya</li>
-</ul>
-<h3>Periodisasi Blok</h3>
-<p>Untuk latihan pejalan kaki lanjutan untuk persembahan atau acara, atur latihan ke dalam<strong>yang berbeza mesocycles</strong>(blok 4-8 ​​minggu):</p>
-<p><strong>Contoh periodisasi tahunan:</strong></p>
-<ol>
-<li>
-<strong>Fasa Asas (8-12 minggu):</strong>
-<ul>
-<li>Fokus: Bina pangkalan aerobik dengan volum Zon 2</li>
-<li>WSS Mingguan: 400-550</li>
-<li>80% masa pada 100-110 spm</li>
-<li>Kenaikan panjang meningkat daripada 60 kepada 120 minit</li>
-</ul>
-</li>
-<li>
-<strong>Fasa Binaan (6-8 minggu):</strong>
-<ul>
-<li>Fokus: Tambah kerja tempo Zon 3 dan selang pendek</li>
-<li>WSS Mingguan: 500-650</li>
-<li>70% Zon 2, 20% Zon 3, 10% Zon 4</li>
-<li>2 sesi kualiti setiap minggu</li>
-</ul>
-</li>
-<li>
-<strong>Fasa Puncak (4-6 minggu):</strong>
-<ul>
-<li>Fokus: Keamatan tinggi, kerja khusus kaum</li>
-<li>WSS Mingguan: 550-750</li>
-<li>Sertakan selang dan simulasi perlumbaan</li>
-<li>Kekalkan sedikit volum mudah</li>
-</ul>
-</li>
-<li>
-<strong>Tirus (1-2 minggu):</strong>
-<ul>
-<li>Fokus: Kurangkan kelantangan, kekalkan keamatan</li>
-<li>WSS Mingguan: 200-350 (pengurangan 50%)</li>
-<li>Simpan 1-2 sesi pendek dan tajam</li>
-<li>Utamakan rehat dan kesediaan</li>
-</ul>
-</li>
-<li>
-<strong>Pemulihan/Peralihan (2-4 minggu):</strong>
-<ul>
-<li>Fokus: Pemulihan aktif, latihan silang</li>
-<li>WSS Mingguan: 150-300</li>
-<li>Semua mendaki mudah, tiada struktur</li>
-<li>Penjanaan semula mental dan fizikal</li>
-</ul>
-</li>
-</ol>
+<h2 id="progression">Strategi Kemajuan Beban Latihan</h2><h3>Peraturan 10% (dengan nuansa)</h3><p>Tradisional<strong>Peraturan 10%</strong>mencadangkan peningkatan volum latihan mingguan tidak lebih daripada 10% seminggu. Walaupun berguna sebagai garis panduan, penyelidikan moden mencadangkan pendekatan yang lebih bernuansa:</p><ul><li><strong>Untuk pemula:</strong>5-10% kenaikan mingguan adalah sesuai</li><li><strong>Untuk pengembara yang berpengalaman:</strong>Peningkatan 10-15% boleh diterima jika ACWR kekal &lt;1.30</li><li><strong>Selepas rehat:</strong>Perkembangan yang lebih perlahan (5%) adalah lebih selamat</li><li><strong>Semasa beban tinggi:</strong>Kekalkan atau kurangkan daripada terus meningkat</li></ul><h3>Periodisasi: Model 3:1</h3><p>Model kemajuan berasaskan bukti yang paling banyak bergantian<strong>3 minggu peningkatan beban</strong>dengan<strong>1 minggu pemulihan</strong>:</p><p><strong>Contoh blok 8 minggu (bermula pada 300 WSS):</strong></p><div class="data-table"><table><thead><tr><th>Minggu</th><th>WSS Mingguan</th><th>Tukar</th><th>Fasa</th></tr></thead><tbody><tr><td>1</td><td>300</td><td>Garis dasar</td><td>Bina</td></tr><tr><td>2</td><td>330</td><td>+10%</td><td>Bina</td></tr><tr><td>3</td><td>365</td><td>+11%</td><td>Bina</td></tr><tr><td>4</td><td>220</td><td>-40%</td><td><strong>Pemulihan</strong></td></tr><tr><td>5</td><td>400</td><td>+10%</td><td>Bina</td></tr><tr><td>6</td><td>440</td><td>+10%</td><td>Bina</td></tr><tr><td>7</td><td>485</td><td>+10%</td><td>Bina</td></tr><tr><td>8</td><td>290</td><td>-40%</td><td><strong>Pemulihan</strong></td></tr></tbody></table></div><p><strong>Faedah minggu pemulihan:</strong></p><ul><li>Membenarkan penyesuaian fisiologi (supercompensation)</li><li>Menambah semula simpanan glikogen</li><li>Membaiki kerosakan mikro pada tisu</li><li>Mengurangkan keletihan terkumpul</li><li>Menyegarkan motivasi dan tenaga mental</li><li>Menyediakan badan untuk blok latihan seterusnya</li></ul><h3>Periodisasi Blok</h3><p>Untuk latihan pejalan kaki lanjutan untuk persembahan atau acara, atur latihan ke dalam<strong>yang berbeza mesocycles</strong>(blok 4-8 ​​minggu):</p><p><strong>Contoh periodisasi tahunan:</strong></p><ol><li><strong>Fasa Asas (8-12 minggu):</strong><ul><li>Fokus: Bina pangkalan aerobik dengan volum Zon 2</li><li>WSS Mingguan: 400-550</li><li>80% masa pada 100-110 spm</li><li>Kenaikan panjang meningkat daripada 60 kepada 120 minit</li></ul></li><li><strong>Fasa Binaan (6-8 minggu):</strong><ul><li>Fokus: Tambah kerja tempo Zon 3 dan selang pendek</li><li>WSS Mingguan: 500-650</li><li>70% Zon 2, 20% Zon 3, 10% Zon 4</li><li>2 sesi kualiti setiap minggu</li></ul></li><li><strong>Fasa Puncak (4-6 minggu):</strong><ul><li>Fokus: Keamatan tinggi, kerja khusus kaum</li><li>WSS Mingguan: 550-750</li><li>Sertakan selang dan simulasi perlumbaan</li><li>Kekalkan sedikit volum mudah</li></ul></li><li><strong>Tirus (1-2 minggu):</strong><ul><li>Fokus: Kurangkan kelantangan, kekalkan keamatan</li><li>WSS Mingguan: 200-350 (pengurangan 50%)</li><li>Simpan 1-2 sesi pendek dan tajam</li><li>Utamakan rehat dan kesediaan</li></ul></li><li><strong>Pemulihan/Peralihan (2-4 minggu):</strong><ul><li>Fokus: Pemulihan aktif, latihan silang</li><li>WSS Mingguan: 150-300</li><li>Semua mendaki mudah, tiada struktur</li><li>Penjanaan semula mental dan fizikal</li></ul></li></ol>
 Memantau Beban Latihan
-<h2 id="monitoring">Memantau dan Melaraskan Beban Latihan</h2>
-<h3>Metrik Objektif</h3>
-<p><strong>Jejaki ini setiap hari/mingguan:</strong></p>
-<ol>
-<li>
-<strong>Kadar Jantung Rehat (RHR):</strong>
-<ul>
-<li>Ukur apabila bangun, sebelum bangun dari katil</li>
-<li>Jejaki purata pusingan 7 hari</li>
-<li>Ketinggian 5-10 bpm mencadangkan pemulihan tidak lengkap</li>
-<li>Ketinggian yang berterusan (&gt;1 minggu) menunjukkan risiko latihan berlebihan</li>
-</ul>
-</li>
-<li>
-<strong>Kebolehubahan Kadar Jantung (HRV):</strong>
-<ul>
-<li>HRV yang lebih tinggi = pemulihan dan kesediaan yang lebih baik</li>
-<li>Penurunan &gt;10% daripada garis dasar = kesediaan berkurangan</li>
-<li>Gunakan apl seperti Elite HRV, HRV4Training atau Oura Ring</li>
-</ul>
-</li>
-<li>
-<strong>Irama Puncak-30:</strong>
-<ul>
-<li>Jejaki setiap hari untuk menilai keupayaan mengekalkan keamatan</li>
-<li>Aliran menurun mungkin menunjukkan keletihan terkumpul</li>
-<li>Gunakan sebagai penunjuk kesediaan senaman</li>
-</ul>
-</li>
-<li>
-<strong>Kelajuan Kembara dengan Usaha Standard:</strong>
-<ul>
-<li>Ujian bulanan: 20-30 min pada usaha yang dirasakan konsisten</li>
-<li>Meningkatkan kelajuan pada usaha yang sama = penyesuaian positif</li>
-<li>Kelajuan menurun = pemulihan yang tidak mencukupi atau latihan berlebihan</li>
-</ul>
-</li>
-</ol>
-<h3>Metrik Subjektif</h3>
-<p><strong>Soal selidik kesihatan harian (skor 1-5 setiap satu):</strong></p>
-<ol>
-<li><strong>Kualiti tidur:</strong>1 = dahsyat, 5 = cemerlang</li>
-<li><strong>Tahap keletihan:</strong>1 = letih, 5 = bertenaga</li>
-<li><strong>Sakit otot:</strong>1 = sangat sakit, 5 = tidak sakit</li>
-<li><strong>Mood/motivasi:</strong>1 = miskin, 5 = hebat</li>
-<li><strong>Tahap tekanan:</strong>1 = sangat tinggi, 5 = sangat rendah</li>
-</ol>
-<p><strong>Jumlah tafsiran skor kesihatan:</strong></p>
-<ul>
-<li><strong>20-25:</strong>Kesediaan yang sangat baik, teruskan dengan latihan yang dirancang</li>
-<li><strong>15-19:</strong>Kesediaan yang baik, latihan seperti yang dirancang atau dikurangkan sedikit</li>
-<li><strong>10-14:</strong>Kebimbangan sederhana, pertimbangkan hari yang lebih mudah atau sesi yang lebih singkat</li>
-<li><strong>5-9:</strong>Kesediaan yang lemah, jadikan hari sangat mudah atau ambil hari rehat</li>
-</ul>
-<h3>Tanda-tanda Beban Latihan yang Sesuai</h3>
-<ul>
-<li>Rasa bertenaga dan bermotivasi untuk kebanyakan pendakian</li>
-<li>Peningkatan prestasi secara beransur-ansur selama beberapa minggu/bulan</li>
-<li>Kualiti tidur yang konsisten (7-9 jam, rasa rehat)</li>
-<li>Degupan jantung rehat yang stabil atau bertambah baik</li>
-<li>Kesakitan otot minimum melebihi 24-48 jam selepas bersenam</li>
-<li>Mengekalkan semangat untuk mendaki</li>
-<li>Mampu mencapai rentak/irama sasaran secara konsisten</li>
-</ul>
-<h3>Tanda Amaran Beban Latihan Berlebihan</h3>
-<ul>
-<li><strong>Prestasi:</strong>Kelajuan yang menurun, ketidakupayaan untuk mencapai rentak sasaran, peningkatan usaha yang dirasakan</li>
-<li><strong>Fisiologi:</strong>RHR dinaikkan (5-10+ bpm di atas garis dasar), HRV menurun, keletihan berterusan walaupun berehat</li>
-<li><strong>Muskuloskeletal:</strong>Kesakitan otot yang berterusan, pelbagai kesakitan dan kesakitan kecil, peningkatan kejadian kecederaan</li>
-<li><strong>Psikologi:</strong>Hilang motivasi, cepat marah, gangguan mood, kesukaran menumpukan perhatian</li>
-<li><strong>Tidur:</strong>Sukar untuk tidur, kerap bangun, tidak berasa rehat walaupun jam yang mencukupi</li>
-<li><strong>Kebal:</strong>Kerap selsema atau jangkitan, lambat sembuh daripada kecederaan ringan</li>
-</ul>
-<p><strong>Pelan tindakan jika tanda amaran muncul:</strong></p>
-<ol>
-<li>Segera kurangkan beban latihan sebanyak 30-50%</li>
-<li>Fokus pada pendakian yang mudah dan menyeronokkan sahaja</li>
-<li>Utamakan tidur (sasaran 8-9 jam)</li>
-<li>Semak pemakanan dan penghidratan</li>
-<li>Pertimbangkan tekanan bukan mendaki (kerja, kehidupan) dan atasi jika boleh</li>
-<li>Jika simptom berterusan &gt;1 minggu, rujuk penyedia penjagaan kesihatan</li>
-</ol>
+<h2 id="monitoring">Memantau dan Melaraskan Beban Latihan</h2><h3>Metrik Objektif</h3><p><strong>Jejaki ini setiap hari/mingguan:</strong></p><ol><li><strong>Kadar Jantung Rehat (RHR):</strong><ul><li>Ukur apabila bangun, sebelum bangun dari katil</li><li>Jejaki purata pusingan 7 hari</li><li>Ketinggian 5-10 bpm mencadangkan pemulihan tidak lengkap</li><li>Ketinggian yang berterusan (&gt;1 minggu) menunjukkan risiko latihan berlebihan</li></ul></li><li><strong>Kebolehubahan Kadar Jantung (HRV):</strong><ul><li>HRV yang lebih tinggi = pemulihan dan kesediaan yang lebih baik</li><li>Penurunan &gt;10% daripada garis dasar = kesediaan berkurangan</li><li>Gunakan apl seperti Elite HRV, HRV4Training atau Oura Ring</li></ul></li><li><strong>Irama Puncak-30:</strong><ul><li>Jejaki setiap hari untuk menilai keupayaan mengekalkan keamatan</li><li>Aliran menurun mungkin menunjukkan keletihan terkumpul</li><li>Gunakan sebagai penunjuk kesediaan senaman</li></ul></li><li><strong>Kelajuan Kembara dengan Usaha Standard:</strong><ul><li>Ujian bulanan: 20-30 min pada usaha yang dirasakan konsisten</li><li>Meningkatkan kelajuan pada usaha yang sama = penyesuaian positif</li><li>Kelajuan menurun = pemulihan yang tidak mencukupi atau latihan berlebihan</li></ul></li></ol><h3>Metrik Subjektif</h3><p><strong>Soal selidik kesihatan harian (skor 1-5 setiap satu):</strong></p><ol><li><strong>Kualiti tidur:</strong>1 = dahsyat, 5 = cemerlang</li><li><strong>Tahap keletihan:</strong>1 = letih, 5 = bertenaga</li><li><strong>Sakit otot:</strong>1 = sangat sakit, 5 = tidak sakit</li><li><strong>Mood/motivasi:</strong>1 = miskin, 5 = hebat</li><li><strong>Tahap tekanan:</strong>1 = sangat tinggi, 5 = sangat rendah</li></ol><p><strong>Jumlah tafsiran skor kesihatan:</strong></p><ul><li><strong>20-25:</strong>Kesediaan yang sangat baik, teruskan dengan latihan yang dirancang</li><li><strong>15-19:</strong>Kesediaan yang baik, latihan seperti yang dirancang atau dikurangkan sedikit</li><li><strong>10-14:</strong>Kebimbangan sederhana, pertimbangkan hari yang lebih mudah atau sesi yang lebih singkat</li><li><strong>5-9:</strong>Kesediaan yang lemah, jadikan hari sangat mudah atau ambil hari rehat</li></ul><h3>Tanda-tanda Beban Latihan yang Sesuai</h3><ul><li>Rasa bertenaga dan bermotivasi untuk kebanyakan pendakian</li><li>Peningkatan prestasi secara beransur-ansur selama beberapa minggu/bulan</li><li>Kualiti tidur yang konsisten (7-9 jam, rasa rehat)</li><li>Degupan jantung rehat yang stabil atau bertambah baik</li><li>Kesakitan otot minimum melebihi 24-48 jam selepas bersenam</li><li>Mengekalkan semangat untuk mendaki</li><li>Mampu mencapai rentak/irama sasaran secara konsisten</li></ul><h3>Tanda Amaran Beban Latihan Berlebihan</h3><ul><li><strong>Prestasi:</strong>Kelajuan yang menurun, ketidakupayaan untuk mencapai rentak sasaran, peningkatan usaha yang dirasakan</li><li><strong>Fisiologi:</strong>RHR dinaikkan (5-10+ bpm di atas garis dasar), HRV menurun, keletihan berterusan walaupun berehat</li><li><strong>Muskuloskeletal:</strong>Kesakitan otot yang berterusan, pelbagai kesakitan dan kesakitan kecil, peningkatan kejadian kecederaan</li><li><strong>Psikologi:</strong>Hilang motivasi, cepat marah, gangguan mood, kesukaran menumpukan perhatian</li><li><strong>Tidur:</strong>Sukar untuk tidur, kerap bangun, tidak berasa rehat walaupun jam yang mencukupi</li><li><strong>Kebal:</strong>Kerap selsema atau jangkitan, lambat sembuh daripada kecederaan ringan</li></ul><p><strong>Pelan tindakan jika tanda amaran muncul:</strong></p><ol><li>Segera kurangkan beban latihan sebanyak 30-50%</li><li>Fokus pada pendakian yang mudah dan menyeronokkan sahaja</li><li>Utamakan tidur (sasaran 8-9 jam)</li><li>Semak pemakanan dan penghidratan</li><li>Pertimbangkan tekanan bukan mendaki (kerja, kehidupan) dan atasi jika boleh</li><li>Jika simptom berterusan &gt;1 minggu, rujuk penyedia penjagaan kesihatan</li></ol>
 Taburan Intensiti
-<h2 id="intensity">Model Taburan Intensiti</h2>
-<p>Cara anda mengagihkan intensiti latihan sepanjang minggu memberi kesan ketara kepada penyesuaian dan prestasi. Dua model utama digunakan:</p>
-<h3>Latihan Terpolarisasi (Model 80/20)</h3>
-<p><strong>Model 80/20</strong>membahagikan masa latihan antara intensiti rendah dan tinggi dengan intensiti sederhana minimum:</p>
-<ul>
-<li><strong>80% mudah (Zon 1-2):</strong>95-105 spm, kadar perbualan</li>
-<li><strong>0-5% sederhana (Zon 3):</strong>Masa minimum pada 110-120 spm</li>
-<li><strong>15-20% keras (Zon 4-5):</strong>120+ selang spm dan tempo</li>
-</ul>
-<p><strong>Rasional:</strong>Memaksimumkan perkembangan aerobik (isipadu mudah) sambil memberikan rangsangan intensiti tinggi untuk prestasi tanpa mengumpul keletihan daripada kerja sederhana yang berlebihan.</p>
-<p><strong>Terbaik untuk:</strong>Pejalan kaki lanjutan, pejalan kaki perlumbaan, latihan berorientasikan prestasi</p>
-<p><strong>Contoh jadual mingguan (jumlah 300 min):</strong></p>
-<ul>
-<li>240 min mudah (80%): Setiap hari 30-40 min pendakian mudah + pendakian hujung minggu panjang</li>
-<li>60 min keras (20%): 2× sesi selang/tempo setiap minggu</li>
-</ul>
-<h3>Latihan Piramidal (Model 60/30/10)</h3>
-<p><strong>model piramid</strong>mengedarkan keamatan merentas semua zon:</p>
-<ul>
-<li><strong>60-70% mudah (Zon 1-2):</strong>Pembangunan aerobik asas</li>
-<li><strong>20-30% sederhana (Zon 3):</strong>Tempo dan kerja pantas yang berterusan</li>
-<li><strong>10% keras (Zon 4-5):</strong>Selang intensiti tinggi</li>
-</ul>
-<p><strong>Rasional:</strong>Perkembangan intensiti yang lebih beransur-ansur, lebih baik untuk membangunkan kapasiti intensiti sederhana, lebih mudah untuk pulih.</p>
-<p><strong>Terbaik untuk:</strong>Pemula hingga pejalan kaki pertengahan, latihan berfokuskan kesihatan, mereka yang terdedah kepada kecederaan</p>
-<p><strong>Contoh jadual mingguan (jumlah 300 min):</strong></p>
-<ul>
-<li>180-210 min mudah (60-70%): Kebanyakan pendakian harian pada kadar yang selesa</li>
-<li>60-90 min sederhana (20-30%): 2-3× kenaikan pantas setiap minggu</li>
-<li>30 min keras (10%): 1× sesi selang setiap minggu</li>
-</ul>
-<div class="key-finding">
-<strong>Wawasan Penyelidikan:</strong>Atlet ketahanan elit merentas sukan secara konsisten menggunakan latihan terpolarisasi. Walau bagaimanapun, untuk hasil kesihatan dan kecergasan, model piramid menghasilkan keputusan yang sangat baik dengan risiko kecederaan yang lebih rendah (Stöggl &amp; Sperlich, 2014).</div>
+<h2 id="intensity">Model Taburan Intensiti</h2><p>Cara anda mengagihkan intensiti latihan sepanjang minggu memberi kesan ketara kepada penyesuaian dan prestasi. Dua model utama digunakan:</p><h3>Latihan Terpolarisasi (Model 80/20)</h3><p><strong>Model 80/20</strong>membahagikan masa latihan antara intensiti rendah dan tinggi dengan intensiti sederhana minimum:</p><ul><li><strong>80% mudah (Zon 1-2):</strong>95-105 spm, kadar perbualan</li><li><strong>0-5% sederhana (Zon 3):</strong>Masa minimum pada 110-120 spm</li><li><strong>15-20% keras (Zon 4-5):</strong>120+ selang spm dan tempo</li></ul><p><strong>Rasional:</strong>Memaksimumkan perkembangan aerobik (isipadu mudah) sambil memberikan rangsangan intensiti tinggi untuk prestasi tanpa mengumpul keletihan daripada kerja sederhana yang berlebihan.</p><p><strong>Terbaik untuk:</strong>Pejalan kaki lanjutan, pejalan kaki perlumbaan, latihan berorientasikan prestasi</p><p><strong>Contoh jadual mingguan (jumlah 300 min):</strong></p><ul><li>240 min mudah (80%): Setiap hari 30-40 min pendakian mudah + pendakian hujung minggu panjang</li><li>60 min keras (20%): 2× sesi selang/tempo setiap minggu</li></ul><h3>Latihan Piramidal (Model 60/30/10)</h3><p><strong>model piramid</strong>mengedarkan keamatan merentas semua zon:</p><ul><li><strong>60-70% mudah (Zon 1-2):</strong>Pembangunan aerobik asas</li><li><strong>20-30% sederhana (Zon 3):</strong>Tempo dan kerja pantas yang berterusan</li><li><strong>10% keras (Zon 4-5):</strong>Selang intensiti tinggi</li></ul><p><strong>Rasional:</strong>Perkembangan intensiti yang lebih beransur-ansur, lebih baik untuk membangunkan kapasiti intensiti sederhana, lebih mudah untuk pulih.</p><p><strong>Terbaik untuk:</strong>Pemula hingga pejalan kaki pertengahan, latihan berfokuskan kesihatan, mereka yang terdedah kepada kecederaan</p><p><strong>Contoh jadual mingguan (jumlah 300 min):</strong></p><ul><li>180-210 min mudah (60-70%): Kebanyakan pendakian harian pada kadar yang selesa</li><li>60-90 min sederhana (20-30%): 2-3× kenaikan pantas setiap minggu</li><li>30 min keras (10%): 1× sesi selang setiap minggu</li></ul><div class="key-finding"><strong>Wawasan Penyelidikan:</strong>Atlet ketahanan elit merentas sukan secara konsisten menggunakan latihan terpolarisasi. Walau bagaimanapun, untuk hasil kesihatan dan kecergasan, model piramid menghasilkan keputusan yang sangat baik dengan risiko kecederaan yang lebih rendah (Stöggl &amp; Sperlich, 2014).</div>
 Strategi Pemulihan
-<h2 id="recovery">Strategi Pemulihan dan Penyesuaian</h2>
-<p>Rangsangan latihan mencipta penyesuaian hanya apabila dipasangkan dengan pemulihan yang mencukupi. Tanpa pemulihan, beban latihan menjadi tekanan latihan tanpa faedah.</p>
-<h3>Teknik Pemulihan Aktif</h3>
-<ol>
-<li>
-<strong>Kenaikan mudah (60-90 spm):</strong>
-<ul>
-<li>20-30 minit pada keamatan yang sangat rendah</li>
-<li>Menggalakkan pengaliran darah tanpa tekanan tambahan</li>
-<li>Faedah psikologi pergerakan</li>
-</ul>
-</li>
-<li>
-<strong>Latihan silang:</strong>
-<ul>
-<li>berbasikal, yoga, tai chi</li>
-<li>Corak pergerakan yang berbeza mengurangkan tekanan berulang</li>
-<li>Mengekalkan kecergasan dengan pelbagai</li>
-</ul>
-</li>
-<li>
-<strong>Regangan dan mobiliti dinamik:</strong>
-<ul>
-<li>15-20 minit setiap hari</li>
-<li>Fokus pada pinggul, buku lali, betis, hamstring</li>
-<li>Mengekalkan julat pergerakan untuk gaya berjalan yang cekap</li>
-</ul>
-</li>
-</ol>
-<h3>Teknik Pemulihan Pasif</h3>
-<ol>
-<li>
-<strong>Pengoptimuman tidur:</strong>
-<ul>
-<li>7-9 jam setiap malam (dewasa)</li>
-<li>Jadual tidur/bangun yang konsisten</li>
-<li>Bilik yang sejuk dan gelap (60-67°F / 16-19°C)</li>
-<li>Hadkan skrin 1 jam sebelum tidur</li>
-</ul>
-</li>
-<li>
-<strong>Pemakanan untuk pemulihan:</strong>
-<ul>
-<li>Protein: 1.2-1.6 g/kg berat badan setiap hari</li>
-<li>Karbohidrat: Mencukupi untuk menambah glikogen (3-5 g/kg)</li>
-<li>Penghidratan: Pantau warna air kencing (kuning pucat)</li>
-<li>Makanan anti-radang: Beri, ikan berlemak, sayur-sayuran berdaun</li>
-</ul>
-</li>
-<li>
-<strong>Urut dan pelepasan myofascial:</strong>
-<ul>
-<li>Buih bergolek 10-15 minit selepas mendaki</li>
-<li>Fokus pada betis, jalur IT, fleksor pinggul, glute</li>
-<li>Urut profesional setiap 2-4 minggu jika bajet mengizinkan</li>
-</ul>
-</li>
-<li>
-<strong>Rendaman air sejuk (pilihan):</strong>
-<ul>
-<li>10-15 minit dalam air 50-59°F (10-15°C)</li>
-<li>Dalam masa 1 jam selepas senaman keras</li>
-<li>Boleh mengurangkan sakit otot dan keradangan</li>
-<li>Tidak disyorkan lebih daripada 2× seminggu</li>
-</ul>
-</li>
-</ol>
-<h3>Pemulihan Mental</h3>
-<ul>
-<li><strong>Pelbagai:</strong>Campurkan laluan, rupa bumi dan pemandangan untuk mengekalkan penglibatan</li>
-<li><strong>Kenaikan sosial:</strong>Kembara bersama rakan atau kumpulan untuk keseronokan</li>
-<li><strong>Kesedaran:</strong>Amalkan kesedaran masa kini semasa pendakian mudah</li>
-<li><strong>Muat turun minggu:</strong>Rehat mental daripada latihan berstruktur setiap 3-4 minggu</li>
-<li><strong>Luar musim:</strong>2-4 minggu setiap tahun untuk mendaki berstruktur minimum</li>
-</ul>
+<h2 id="recovery">Strategi Pemulihan dan Penyesuaian</h2><p>Rangsangan latihan mencipta penyesuaian hanya apabila dipasangkan dengan pemulihan yang mencukupi. Tanpa pemulihan, beban latihan menjadi tekanan latihan tanpa faedah.</p><h3>Teknik Pemulihan Aktif</h3><ol><li><strong>Kenaikan mudah (60-90 spm):</strong><ul><li>20-30 minit pada keamatan yang sangat rendah</li><li>Menggalakkan pengaliran darah tanpa tekanan tambahan</li><li>Faedah psikologi pergerakan</li></ul></li><li><strong>Latihan silang:</strong><ul><li>berbasikal, yoga, tai chi</li><li>Corak pergerakan yang berbeza mengurangkan tekanan berulang</li><li>Mengekalkan kecergasan dengan pelbagai</li></ul></li><li><strong>Regangan dan mobiliti dinamik:</strong><ul><li>15-20 minit setiap hari</li><li>Fokus pada pinggul, buku lali, betis, hamstring</li><li>Mengekalkan julat pergerakan untuk gaya berjalan yang cekap</li></ul></li></ol><h3>Teknik Pemulihan Pasif</h3><ol><li><strong>Pengoptimuman tidur:</strong><ul><li>7-9 jam setiap malam (dewasa)</li><li>Jadual tidur/bangun yang konsisten</li><li>Bilik yang sejuk dan gelap (60-67°F / 16-19°C)</li><li>Hadkan skrin 1 jam sebelum tidur</li></ul></li><li><strong>Pemakanan untuk pemulihan:</strong><ul><li>Protein: 1.2-1.6 g/kg berat badan setiap hari</li><li>Karbohidrat: Mencukupi untuk menambah glikogen (3-5 g/kg)</li><li>Penghidratan: Pantau warna air kencing (kuning pucat)</li><li>Makanan anti-radang: Beri, ikan berlemak, sayur-sayuran berdaun</li></ul></li><li><strong>Urut dan pelepasan myofascial:</strong><ul><li>Buih bergolek 10-15 minit selepas mendaki</li><li>Fokus pada betis, jalur IT, fleksor pinggul, glute</li><li>Urut profesional setiap 2-4 minggu jika bajet mengizinkan</li></ul></li><li><strong>Rendaman air sejuk (pilihan):</strong><ul><li>10-15 minit dalam air 50-59°F (10-15°C)</li><li>Dalam masa 1 jam selepas senaman keras</li><li>Boleh mengurangkan sakit otot dan keradangan</li><li>Tidak disyorkan lebih daripada 2× seminggu</li></ul></li></ol><h3>Pemulihan Mental</h3><ul><li><strong>Pelbagai:</strong>Campurkan laluan, rupa bumi dan pemandangan untuk mengekalkan penglibatan</li><li><strong>Kenaikan sosial:</strong>Kembara bersama rakan atau kumpulan untuk keseronokan</li><li><strong>Kesedaran:</strong>Amalkan kesedaran masa kini semasa pendakian mudah</li><li><strong>Muat turun minggu:</strong>Rehat mental daripada latihan berstruktur setiap 3-4 minggu</li><li><strong>Luar musim:</strong>2-4 minggu setiap tahun untuk mendaki berstruktur minimum</li></ul>
 Konsep Lanjutan
-<h2 id="advanced">Konsep Beban Latihan Lanjutan</h2>
-<h3>Dorongan Latihan (TRIMP)</h3>
-<p><strong>TRIMP</strong>(Impuls Latihan) mengukur beban latihan menggunakan data kadar denyutan jantung dengan pemberat eksponen untuk keamatan yang lebih tinggi.</p>
-<div class="formula-box">
-<pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
+<h2 id="advanced">Konsep Beban Latihan Lanjutan</h2><h3>Dorongan Latihan (TRIMP)</h3><p><strong>TRIMP</strong>(Impuls Latihan) mengukur beban latihan menggunakan data kadar denyutan jantung dengan pemberat eksponen untuk keamatan yang lebih tinggi.</p><div class="formula-box"><pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
 
 Where:
-  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre>
-</div>
-<p><strong>Contoh:</strong></p>
-<ul>
-<li>Tempoh: 60 minit</li>
-<li>Purata HR: 130 bpm</li>
-<li>HR Rehat: 60 bpm</li>
-<li>HR Maks: 180 bpm</li>
-<li>Nisbah ΔHR = (130-60)/(180-60) = 70/120 = 0.583</li>
-<li>TRIMP = 60 × 0.583 × 0.64e^(1.92×0.583) = 60 × 0.583 × 1.94 = 67.9</li>
-</ul>
-<p><strong>Nota:</strong>Nilai TRIMP tidak dapat dibandingkan secara langsung dengan WSS, tetapi kedua-duanya mengukur beban latihan.</p>
-<h3>Model Kecergasan-Kepenatan</h3>
-<p>Latihan menghasilkan dua kesan yang bertentangan:</p>
-<ul>
-<li><strong>Kecergasan:</strong>Adaptasi positif yang dibina perlahan, perlahan mereput (pemalar masa 42 hari)</li>
-<li><strong>Keletihan:</strong>Kesan negatif yang cepat membina dan mereput (pemalar masa 7 hari)</li>
-</ul>
-<p><strong>Prestasi = Kecergasan - Keletihan</strong></p>
-<p>Model ini menerangkan:</p>
-<ul>
-<li>Mengapa hari rehat boleh membawa kepada prestasi yang lebih baik (keletihan hilang lebih cepat daripada kecergasan)</li>
-<li>Mengapa tirus berfungsi (mengurangkan keletihan sambil mengekalkan kecergasan)</li>
-<li>Mengapa minggu pemulihan adalah penting (uruskan keletihan terkumpul)</li>
-</ul>
-<h3>Beban Latihan Kronik (CTL) dan Borang</h3>
-<p>Metrik lanjutan yang dijejaki oleh platform seperti Analitis Kenaikan:</p>
-<ul>
-<li><strong>CTL (Beban Latihan Kronik):</strong>Purata wajaran eksponen 42 hari WSS harian — mewakili kecergasan</li>
-<li><strong>ATL (Beban Latihan Akut):</strong>Purata wajaran eksponen 7 hari bagi WSS harian — mewakili keletihan</li>
-<li><strong>TSB (Imbangan Tekanan Latihan):</strong>CTL - ATL — mewakili bentuk/kesegaran</li>
-</ul>
-<p><strong>TSB Tafsiran:</strong></p>
-<ul>
-<li><strong>TSB &lt; -30:</strong>Keletihan yang tinggi, risiko melampau</li>
-<li><strong>TSB -30 hingga -10:</strong>Zon latihan produktif, keletihan biasa</li>
-<li><strong>TSB -10 hingga +10:</strong>Bentuk neutral</li>
-<li><strong>TSB +10 hingga +25:</strong>Kesediaan perlumbaan yang segar dan baik</li>
-<li><strong>TSB &gt; +25:</strong>Sangat segar, tetapi melemahkan jika berterusan</li>
-</ul>
+  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre></div><p><strong>Contoh:</strong></p><ul><li>Tempoh: 60 minit</li><li>Purata HR: 130 bpm</li><li>HR Rehat: 60 bpm</li><li>HR Maks: 180 bpm</li><li>Nisbah ΔHR = (130-60)/(180-60) = 70/120 = 0.583</li><li>TRIMP = 60 × 0.583 × 0.64e^(1.92×0.583) = 60 × 0.583 × 1.94 = 67.9</li></ul><p><strong>Nota:</strong>Nilai TRIMP tidak dapat dibandingkan secara langsung dengan WSS, tetapi kedua-duanya mengukur beban latihan.</p><h3>Model Kecergasan-Kepenatan</h3><p>Latihan menghasilkan dua kesan yang bertentangan:</p><ul><li><strong>Kecergasan:</strong>Adaptasi positif yang dibina perlahan, perlahan mereput (pemalar masa 42 hari)</li><li><strong>Keletihan:</strong>Kesan negatif yang cepat membina dan mereput (pemalar masa 7 hari)</li></ul><p><strong>Prestasi = Kecergasan - Keletihan</strong></p><p>Model ini menerangkan:</p><ul><li>Mengapa hari rehat boleh membawa kepada prestasi yang lebih baik (keletihan hilang lebih cepat daripada kecergasan)</li><li>Mengapa tirus berfungsi (mengurangkan keletihan sambil mengekalkan kecergasan)</li><li>Mengapa minggu pemulihan adalah penting (uruskan keletihan terkumpul)</li></ul><h3>Beban Latihan Kronik (CTL) dan Borang</h3><p>Metrik lanjutan yang dijejaki oleh platform seperti Analitis Kenaikan:</p><ul><li><strong>CTL (Beban Latihan Kronik):</strong>Purata wajaran eksponen 42 hari WSS harian — mewakili kecergasan</li><li><strong>ATL (Beban Latihan Akut):</strong>Purata wajaran eksponen 7 hari bagi WSS harian — mewakili keletihan</li><li><strong>TSB (Imbangan Tekanan Latihan):</strong>CTL - ATL — mewakili bentuk/kesegaran</li></ul><p><strong>TSB Tafsiran:</strong></p><ul><li><strong>TSB &lt; -30:</strong>Keletihan yang tinggi, risiko melampau</li><li><strong>TSB -30 hingga -10:</strong>Zon latihan produktif, keletihan biasa</li><li><strong>TSB -10 hingga +10:</strong>Bentuk neutral</li><li><strong>TSB +10 hingga +25:</strong>Kesediaan perlumbaan yang segar dan baik</li><li><strong>TSB &gt; +25:</strong>Sangat segar, tetapi melemahkan jika berterusan</li></ul>
 Aplikasi Praktikal
-<h2 id="practical">Pengurusan Beban Latihan Amali</h2>
-<h3>Templat Perancangan Mingguan</h3>
-<p><strong>Struktur setiap minggu dengan:</strong></p>
-<ol>
-<li><strong>1-2 sesi kualiti:</strong>Selang masa, tempo atau kerja rentak perlumbaan</li>
-<li><strong>1 pendakian panjang:</strong>60-120 minit pada kadar mudah-sederhana</li>
-<li><strong>3-4 pendakian mudah:</strong>Pemulihan dan pengumpulan volum</li>
-<li><strong>1 hari rehat:</strong>Rehat sepenuhnya atau aktiviti yang sangat lembut</li>
-</ol>
-<p><strong>Contoh minggu pertengahan (Sasaran: 420 WSS):</strong></p>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Hari</th>
-<th>Senaman</th>
-<th>Tempoh</th>
-<th>Intensiti</th>
-<th>WSS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Isnin</td>
-<td>Kenaikan berterusan</td>
-<td>45 min</td>
-<td>105 spm (Zon 2)</td>
-<td>90</td>
-</tr>
-<tr>
-<td>Selasa</td>
-<td>Pemulihan mudah</td>
-<td>30 min</td>
-<td>95 spm (Zon 1)</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Rabu</td>
-<td><strong>Selang</strong></td>
-<td>50 min jumlah</td>
-<td>5×5 min @ 120 spm</td>
-<td>140</td>
-</tr>
-<tr>
-<td>Khamis</td>
-<td>Kenaikan mudah</td>
-<td>35 min</td>
-<td>100 spm (Zon 2)</td>
-<td>55</td>
-</tr>
-<tr>
-<td>Jumaat</td>
-<td>Hari rehat</td>
-<td>—</td>
-<td>—</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Sabtu</td>
-<td><strong>Kembara panjang</strong></td>
-<td>75 min</td>
-<td>105 spm (Zon 2)</td>
-<td>150</td>
-</tr>
-<tr>
-<td>Ahad</td>
-<td>Pemulihan mudah</td>
-<td>30 min</td>
-<td>95 spm (Zon 1)</td>
-<td>40</td>
-</tr>
-<tr>
-<td colspan="4"><strong>Jumlah Mingguan</strong></td>
-<td><strong>515 WSS</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3>Melaraskan Berdasarkan Maklum Balas</h3>
-<p><strong>Senario 1: Merasa keletihan pada pertengahan minggu</strong></p>
-<ul>
-<li>Semak RHR (dinaikkan?) dan skor kesihatan (rendah?)</li>
-<li>Gantikan senaman keras dengan pendakian yang mudah</li>
-<li>Tambahkan hari rehat jika perlu</li>
-<li>Sambung semula latihan yang dirancang apabila dipulihkan</li>
-</ul>
-<p><strong>Senario 2: Berasa hebat dan maju dengan baik</strong></p>
-<ul>
-<li>Teruskan rancangan semasa (jangan tambah beban tambahan secara impulsif)</li>
-<li>Tingkatkan beban sebanyak 5-10% minggu depan</li>
-<li>Pertimbangkan kualiti berbanding kuantiti (tingkatkan sedikit keamatan)</li>
-</ul>
-<p><strong>Senario 3: Prestasi rendah berterusan</strong></p>
-<ul>
-<li>Semak tekanan bukan latihan (kerja, tidur, peristiwa kehidupan)</li>
-<li>Kurangkan beban latihan sebanyak 30-40% selama 1-2 minggu</li>
-<li>Fokus pada tidur, pemakanan dan pengurusan tekanan</li>
-<li>Bina semula secara beransur-ansur selepas pemulihan disahkan</li>
-</ul>
+<h2 id="practical">Pengurusan Beban Latihan Amali</h2><h3>Templat Perancangan Mingguan</h3><p><strong>Struktur setiap minggu dengan:</strong></p><ol><li><strong>1-2 sesi kualiti:</strong>Selang masa, tempo atau kerja rentak perlumbaan</li><li><strong>1 pendakian panjang:</strong>60-120 minit pada kadar mudah-sederhana</li><li><strong>3-4 pendakian mudah:</strong>Pemulihan dan pengumpulan volum</li><li><strong>1 hari rehat:</strong>Rehat sepenuhnya atau aktiviti yang sangat lembut</li></ol><p><strong>Contoh minggu pertengahan (Sasaran: 420 WSS):</strong></p><div class="data-table"><table><thead><tr><th>Hari</th><th>Senaman</th><th>Tempoh</th><th>Intensiti</th><th>WSS</th></tr></thead><tbody><tr><td>Isnin</td><td>Kenaikan berterusan</td><td>45 min</td><td>105 spm (Zon 2)</td><td>90</td></tr><tr><td>Selasa</td><td>Pemulihan mudah</td><td>30 min</td><td>95 spm (Zon 1)</td><td>40</td></tr><tr><td>Rabu</td><td><strong>Selang</strong></td><td>50 min jumlah</td><td>5×5 min @ 120 spm</td><td>140</td></tr><tr><td>Khamis</td><td>Kenaikan mudah</td><td>35 min</td><td>100 spm (Zon 2)</td><td>55</td></tr><tr><td>Jumaat</td><td>Hari rehat</td><td>—</td><td>—</td><td>0</td></tr><tr><td>Sabtu</td><td><strong>Kembara panjang</strong></td><td>75 min</td><td>105 spm (Zon 2)</td><td>150</td></tr><tr><td>Ahad</td><td>Pemulihan mudah</td><td>30 min</td><td>95 spm (Zon 1)</td><td>40</td></tr><tr><td colspan="4"><strong>Jumlah Mingguan</strong></td><td><strong>515 WSS</strong></td></tr></tbody></table></div><h3>Melaraskan Berdasarkan Maklum Balas</h3><p><strong>Senario 1: Merasa keletihan pada pertengahan minggu</strong></p><ul><li>Semak RHR (dinaikkan?) dan skor kesihatan (rendah?)</li><li>Gantikan senaman keras dengan pendakian yang mudah</li><li>Tambahkan hari rehat jika perlu</li><li>Sambung semula latihan yang dirancang apabila dipulihkan</li></ul><p><strong>Senario 2: Berasa hebat dan maju dengan baik</strong></p><ul><li>Teruskan rancangan semasa (jangan tambah beban tambahan secara impulsif)</li><li>Tingkatkan beban sebanyak 5-10% minggu depan</li><li>Pertimbangkan kualiti berbanding kuantiti (tingkatkan sedikit keamatan)</li></ul><p><strong>Senario 3: Prestasi rendah berterusan</strong></p><ul><li>Semak tekanan bukan latihan (kerja, tidur, peristiwa kehidupan)</li><li>Kurangkan beban latihan sebanyak 30-40% selama 1-2 minggu</li><li>Fokus pada tidur, pemakanan dan pengurusan tekanan</li><li>Bina semula secara beransur-ansur selepas pemulihan disahkan</li></ul>
 Ringkasan
-<h2 id="summary">Ringkasan: Prinsip Beban Latihan Utama</h2>
-<div class="key-finding">
-<strong>Lima Tunjang Pengurusan Beban Latihan:</strong>
-<ol>
-<li><strong>Kuantiti Muatan:</strong>Gunakan WSS, minit pantas atau TRIMP untuk menjejaki rangsangan latihan</li>
-<li><strong>Kemajuan Secara Berperingkat:</strong>5-10% peningkatan mingguan, dengan nisbah binaan:pemulihan 3:1</li>
-<li><strong>Pantau ACWR:</strong>Kekalkan nisbah akut:kronik antara 0.80-1.30 untuk meminimumkan risiko kecederaan</li>
-<li><strong>Utamakan Pemulihan:</strong>Latihan + Pemulihan = Penyesuaian (tiada sama ada menghalang kemajuan)</li>
-<li><strong>Individualize:</strong>Laraskan berdasarkan metrik objektif (RHR, HRV, prestasi) dan rasa subjektif</li>
-</ol>
-</div>
-<p><strong>Langkah tindakan:</strong></p>
-<ol>
-<li>Kira WSS mingguan semasa anda menggunakan kalkulator di bawah</li>
-<li>Tetapkan sasaran realistik berdasarkan tahap pengalaman anda</li>
-<li>Rancang kenaikan mingguan progresif (5-10%)</li>
-<li>Jadualkan minggu pemulihan setiap 3-4 minggu</li>
-<li>Jejaki irama Puncak-30 dan kadar denyutan jantung berehat setiap hari</li>
-<li>Gunakan soal selidik kesihatan untuk membimbing pelarasan harian</li>
-<li>Semak ACWR setiap minggu untuk menangkap pancang berbahaya lebih awal</li>
-<li>Utamakan tidur (7-9 jam) dan pemakanan untuk pemulihan</li>
-</ol>
+<h2 id="summary">Ringkasan: Prinsip Beban Latihan Utama</h2><div class="key-finding"><strong>Lima Tunjang Pengurusan Beban Latihan:</strong><ol><li><strong>Kuantiti Muatan:</strong>Gunakan WSS, minit pantas atau TRIMP untuk menjejaki rangsangan latihan</li><li><strong>Kemajuan Secara Berperingkat:</strong>5-10% peningkatan mingguan, dengan nisbah binaan:pemulihan 3:1</li><li><strong>Pantau ACWR:</strong>Kekalkan nisbah akut:kronik antara 0.80-1.30 untuk meminimumkan risiko kecederaan</li><li><strong>Utamakan Pemulihan:</strong>Latihan + Pemulihan = Penyesuaian (tiada sama ada menghalang kemajuan)</li><li><strong>Individualize:</strong>Laraskan berdasarkan metrik objektif (RHR, HRV, prestasi) dan rasa subjektif</li></ol></div><p><strong>Langkah tindakan:</strong></p><ol><li>Kira WSS mingguan semasa anda menggunakan kalkulator di bawah</li><li>Tetapkan sasaran realistik berdasarkan tahap pengalaman anda</li><li>Rancang kenaikan mingguan progresif (5-10%)</li><li>Jadualkan minggu pemulihan setiap 3-4 minggu</li><li>Jejaki irama Puncak-30 dan kadar denyutan jantung berehat setiap hari</li><li>Gunakan soal selidik kesihatan untuk membimbing pelarasan harian</li><li>Semak ACWR setiap minggu untuk menangkap pancang berbahaya lebih awal</li><li>Utamakan tidur (7-9 jam) dan pemakanan untuk pemulihan</li></ol>
 Kalkulator dan Alat
-<h2 id="calculating">Kira Beban Latihan Anda</h2>
-<p>Gunakan kalkulator percuma kami untuk menentukan beban latihan anda:</p>
-<ul>
-<li><a href="/ms/wss-calculator/"><strong>Kalkulator WSS</strong></a>— Kira Skor Tekanan Kembara untuk senaman individu</li>
-</ul>
+<h2 id="calculating">Kira Beban Latihan Anda</h2><p>Gunakan kalkulator percuma kami untuk menentukan beban latihan anda:</p><ul><li><a href="/ms/wss-calculator/"><strong>Kalkulator WSS</strong></a>— Kira Skor Tekanan Kembara untuk senaman individu</li></ul>
 Rujukan Saintifik
-<h2 id="references">Rujukan Saintifik</h2>
-<p>Panduan ini mensintesis penyelidikan daripada fisiologi senaman, sains sukan dan kajian khusus mendaki:</p>
-<ul>
-<li><strong>Del Pozo-Cruz B, et al. (2022).</strong>"Persatuan Kiraan Langkah Harian dan Intensiti Dengan Kejadian Penyakit Kardiovaskular."<em>Rangkaian JAMA Terbuka</em>5(12):e2248107. [Penyelidikan irama puncak-30]</li>
-<li><strong>Gabbett TJ. (2016).</strong>"Paradoks pencegahan kecederaan latihan."<em>Jurnal Perubatan Sukan British</em>50:273-280. [ACWR dan risiko kecederaan]</li>
-<li><strong>Solidard T, et al. (2016).</strong>"Berapa terlalu banyak? (Bahagian 1) Kenyataan konsensus Jawatankuasa Olimpik Antarabangsa mengenai beban dalam sukan dan risiko kecederaan."<em>Jurnal Perubatan Sukan British</em>50:1030-1041.</li>
-<li><strong>Stöggl TL, Sperlich B. (2014).</strong>"Latihan terpolarisasi mempunyai kesan yang lebih besar pada pembolehubah daya tahan utama daripada latihan ambang, intensiti tinggi atau volum tinggi."<em>Sempadan dalam Fisiologi</em>5:33. [Taburan intensiti]</li>
-<li><strong>Banister EW. (1991).</strong>"Memodelkan prestasi olahraga elit." Dalam: MacDougall JD, et al., eds.<em>Ujian Fisiologi Atlet Elit</em>. Kinetik Manusia. [Model keletihan kecergasan, TRIMP]</li>
-<li><strong>Tudor-Locke C, et al. (2019).</strong>"Irama mendaki (langkah/min) dan intensiti dalam 21-40 tahun: CADENCE-dewasa."<em>Int J Behav Nutr Phys Act</em>16:8. [Ambang irama]</li>
-</ul>
-<p><strong>Untuk penyelidikan lanjut:</strong></p>
-<ul>
-<li><a href="/ms/bibliography/">Bibliografi Saintifik Lengkap</a></li>
-<li><a href="/ms/research/">Penyelidikan Kembara Terkini</a></li>
-</ul>
+<h2 id="references">Rujukan Saintifik</h2><p>Panduan ini mensintesis penyelidikan daripada fisiologi senaman, sains sukan dan kajian khusus mendaki:</p><ul><li><strong>Del Pozo-Cruz B, et al. (2022).</strong>"Persatuan Kiraan Langkah Harian dan Intensiti Dengan Kejadian Penyakit Kardiovaskular."<em>Rangkaian JAMA Terbuka</em>5(12):e2248107. [Penyelidikan irama puncak-30]</li><li><strong>Gabbett TJ. (2016).</strong>"Paradoks pencegahan kecederaan latihan."<em>Jurnal Perubatan Sukan British</em>50:273-280. [ACWR dan risiko kecederaan]</li><li><strong>Solidard T, et al. (2016).</strong>"Berapa terlalu banyak? (Bahagian 1) Kenyataan konsensus Jawatankuasa Olimpik Antarabangsa mengenai beban dalam sukan dan risiko kecederaan."<em>Jurnal Perubatan Sukan British</em>50:1030-1041.</li><li><strong>Stöggl TL, Sperlich B. (2014).</strong>"Latihan terpolarisasi mempunyai kesan yang lebih besar pada pembolehubah daya tahan utama daripada latihan ambang, intensiti tinggi atau volum tinggi."<em>Sempadan dalam Fisiologi</em>5:33. [Taburan intensiti]</li><li><strong>Banister EW. (1991).</strong>"Memodelkan prestasi olahraga elit." Dalam: MacDougall JD, et al., eds.<em>Ujian Fisiologi Atlet Elit</em>. Kinetik Manusia. [Model keletihan kecergasan, TRIMP]</li><li><strong>Tudor-Locke C, et al. (2019).</strong>"Irama mendaki (langkah/min) dan intensiti dalam 21-40 tahun: CADENCE-dewasa."<em>Int J Behav Nutr Phys Act</em>16:8. [Ambang irama]</li></ul><p><strong>Untuk penyelidikan lanjut:</strong></p><ul><li><a href="/ms/bibliography/">Bibliografi Saintifik Lengkap</a></li><li><a href="/ms/research/">Penyelidikan Kembara Terkini</a></li></ul>
 Langkah Seterusnya
-<h2 id="next-steps">Langkah Seterusnya</h2>
-<ul>
-<li><a href="/ms/walking-zones/">Ketahui tentang zon latihan berasaskan irama</a></li>
-<li><a href="/ms/formulas/">Terokai formula dan pengiraan beban latihan</a></li>
-<li><a href="/ms/gait-analysis/">Fahami metrik gait untuk pemantauan</a></li>
-<li><a href="/ms/stride-mechanics/">Optimumkan biomekanik mendaki</a></li>
-</ul>
-</div>
+<h2 id="next-steps">Langkah Seterusnya</h2><ul><li><a href="/ms/walking-zones/">Ketahui tentang zon latihan berasaskan irama</a></li><li><a href="/ms/formulas/">Terokai formula dan pengiraan beban latihan</a></li><li><a href="/ms/gait-analysis/">Fahami metrik gait untuk pemantauan</a></li><li><a href="/ms/stride-mechanics/">Optimumkan biomekanik mendaki</a></li></ul></div>
 Bar sisi
-<aside class="sidebar">
-<div class="toc">
-<h3>Jadual Kandungan</h3>
-<ul>
-<li><a href="#intro">Apakah Beban Latihan?</a></li>
-<li><a href="#peak30">Puncak-30 Irama</a></li>
-<li><a href="#brisk-bouts">Pertarungan Pantas</a></li>
-<li><a href="#wss">Skor Tekanan Kembara</a></li>
-<li><a href="#weekly-load">Garis Panduan Mingguan</a></li>
-<li><a href="#acwr">Akut:Nisbah Kronik</a></li>
-<li><a href="#progression">Strategi Kemajuan</a></li>
-<li><a href="#monitoring">Beban Pemantauan</a></li>
-<li><a href="#intensity">Taburan Intensiti</a></li>
-<li><a href="#recovery">Strategi Pemulihan</a></li>
-<li><a href="#advanced">Konsep Lanjutan</a></li>
-<li><a href="#practical">Aplikasi Praktikal</a></li>
-<li><a href="#summary">Ringkasan</a></li>
-<li><a href="#calculating">Kalkulator</a></li>
-<li><a href="#references">Rujukan</a></li>
-</ul>
-</div>
-<div class="cta-box">
-<h3>Jejaki Muatan Anda</h3>
-<p>Pantau WSS, irama Puncak-30 dan ACWR secara automatik dengan Analitis Kenaikan.</p>
-<a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Muat turun Apl</a>
-</div>
-<div class="tip-box">
-<h4>Petua Pantas</h4>
-<p>Mula menjejaki irama Puncak-30 anda hari ini! Sasarkan ≥100 spm selama sekurang-kurangnya 30 minit untuk mencapai ambang manfaat kesihatan.</p>
-</div>
-</aside>
-</div>
-</div>
-</section>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+<aside class="sidebar"><div class="toc"><h3>Jadual Kandungan</h3><ul><li><a href="#intro">Apakah Beban Latihan?</a></li><li><a href="#peak30">Puncak-30 Irama</a></li><li><a href="#brisk-bouts">Pertarungan Pantas</a></li><li><a href="#wss">Skor Tekanan Kembara</a></li><li><a href="#weekly-load">Garis Panduan Mingguan</a></li><li><a href="#acwr">Akut:Nisbah Kronik</a></li><li><a href="#progression">Strategi Kemajuan</a></li><li><a href="#monitoring">Beban Pemantauan</a></li><li><a href="#intensity">Taburan Intensiti</a></li><li><a href="#recovery">Strategi Pemulihan</a></li><li><a href="#advanced">Konsep Lanjutan</a></li><li><a href="#practical">Aplikasi Praktikal</a></li><li><a href="#summary">Ringkasan</a></li><li><a href="#calculating">Kalkulator</a></li><li><a href="#references">Rujukan</a></li></ul></div><div class="cta-box"><h3>Jejaki Muatan Anda</h3><p>Pantau WSS, irama Puncak-30 dan ACWR secara automatik dengan Analitis Kenaikan.</p><a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Muat turun Apl</a></div><div class="tip-box"><h4>Petua Pantas</h4><p>Mula menjejaki irama Puncak-30 anda hari ini! Sasarkan ≥100 spm selama sekurang-kurangnya 30 minit untuk mencapai ambang manfaat kesihatan.</p></div></aside></div></div></section><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">AnalyticsZone Team</span>
-          </span>
-        </h3>
-        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">AnalyticsZone Team</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik</h2>
-    <p class="ai-citation-answer">Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-11</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>skor tekanan mendaki · Kalkulator WSS · beban latihan mendaki · jumlah mendaki mingguan · pengesanan kecergasan mendaki</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../ms/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Panduan Beban Latihan Kembara: WSS, Volum Mingguan &amp; Metrik</h2><p class="ai-citation-answer">Ketahui metrik beban latihan mendaki. Pengiraan WSS, penjejakan volum mingguan, pemantauan pemulihan. Jejaki kecergasan secara saintifik.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>skor tekanan mendaki · Kalkulator WSS · beban latihan mendaki · jumlah mendaki mingguan · pengesanan kecergasan mendaki</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../ms/bibliography/">
           
           Bibliografi
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Muat turun</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Muat turun di App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Muat turun</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Muat turun di App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Muat turun di App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Dapatkannya di Google Play">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Dapatkannya di Google Play"><img src="../../assets/images/badge-google-play.svg"
                             alt="Dapatkannya di Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Tersedia dalam</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Tersedia dalam</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link active"
+                </a><a href="/ms/" class="lang-link active"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. Semua hak terpelihara
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/ms/privacy/">Privasi</a></li>
-                <li><a href="/ms/terms/">Syarat</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Laman web ini menggunakan kuki untuk meningkatkan pengalaman anda.</p>
-            <a href="/ms/privacy/" class="text-sm">Ketahui lebih lanjut</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Tolak</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Terima</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/ms/privacy/">Privasi</a></li><li><a href="/ms/terms/">Syarat</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Laman web ini menggunakan kuki untuk meningkatkan pengalaman anda.</p><a href="/ms/privacy/" class="text-sm">Ketahui lebih lanjut</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Tolak</button><button id="cookie-accept" class="btn btn-primary btn-small">Terima</button></div></div></div><script src="../../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

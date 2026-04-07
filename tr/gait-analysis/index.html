@@ -1,251 +1,61 @@
-<!DOCTYPE html>
-<html lang="tr" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Yürüyüşçüler için Yürüyüş Analizi - Adım Simetrisi, Kadans</title>
-  <meta name="description" content="Kapsamlı yürüyüş analizi kılavuzu. Adım uzunluğu, tempo, simetri ve denge ölçümlerini anlayın. Yürüyüş verimliliğini artırın ve yaralanmaları önleyin.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="yürüyüş analizi, adım simetrisi, yürüyüş temposu, yürüyüş dengesi ölçümleri, yürüyüş biyomekaniği">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/tr/gait-analysis/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-11T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://hike.analyticszone.app/tr/gait-analysis/">
-  <meta property="og:title" content="Yürüyüşçüler için Yürüyüş Analizi - Adım Simetrisi, Kadans">
-  <meta property="og:description" content="Kapsamlı yürüyüş analizi kılavuzu. Adım uzunluğu, tempo, simetri ve denge ölçümlerini anlayın. Yürüyüş verimliliğini artırın ve yaralanmaları önleyin.">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="tr_TR">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/tr/gait-analysis/">
-  <meta name="twitter:title" content="Yürüyüşçüler için Yürüyüş Analizi - Adım Simetrisi, Kadans">
-  <meta name="twitter:description" content="Kapsamlı yürüyüş analizi kılavuzu. Adım uzunluğu, tempo, simetri ve denge ölçümlerini anlayın. Yürüyüş verimliliğini artırın ve yaralanmaları önleyin.">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/gait-analysis/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/gait-analysis/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/gait-analysis/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/gait-analysis/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/gait-analysis/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/gait-analysis/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/gait-analysis/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/gait-analysis/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/gait-analysis/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/gait-analysis/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/gait-analysis/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/gait-analysis/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/gait-analysis/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/gait-analysis/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/gait-analysis/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/gait-analysis/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/gait-analysis/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/gait-analysis/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/gait-analysis/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/gait-analysis/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/gait-analysis/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/gait-analysis/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/gait-analysis/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/gait-analysis/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/gait-analysis/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/gait-analysis/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/gait-analysis/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/gait-analysis/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/gait-analysis/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/gait-analysis/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/gait-analysis/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/gait-analysis/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/gait-analysis/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/gait-analysis/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/gait-analysis/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/gait-analysis/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/gait-analysis/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/gait-analysis/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/gait-analysis/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/gait-analysis/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/gait-analysis/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/gait-analysis/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/gait-analysis/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/gait-analysis/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/gait-analysis/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/gait-analysis/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/gait-analysis/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="tr" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>Yürüyüş Analizi: Kadans, Adım, Simetri ve Denge</title><meta name="description" content="Yürüyüş analizi; kadans, adım zamanlaması, simetri ve denge sinyallerini birlikte yorumlar. Sadece hız değil, hareket kalitesini anlamak için kullanılır."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="yürüyüş analizi, yürüyüş gait analizi, adım simetrisi, kadans, denge ölçümleri, yürüyüş biyomekaniği"><link rel="canonical" href="https://hike.analyticszone.app/tr/gait-analysis/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-11T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://hike.analyticszone.app/tr/gait-analysis/"><meta property="og:title" content="Yürüyüş Analizi: Kadans, Adım, Simetri ve Denge"><meta property="og:description" content="Yürüyüş analizi; kadans, adım zamanlaması, simetri ve denge sinyallerini birlikte yorumlar. Sadece hız değil, hareket kalitesini anlamak için kullanılır."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="tr_TR"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/tr/gait-analysis/"><meta name="twitter:title" content="Yürüyüş Analizi: Kadans, Adım, Simetri ve Denge"><meta name="twitter:description" content="Yürüyüş analizi; kadans, adım zamanlaması, simetri ve denge sinyallerini birlikte yorumlar. Sadece hız değil, hareket kalitesini anlamak için kullanılır."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/gait-analysis/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/gait-analysis/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/gait-analysis/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/gait-analysis/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/gait-analysis/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/gait-analysis/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/gait-analysis/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/gait-analysis/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/gait-analysis/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/gait-analysis/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/gait-analysis/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/gait-analysis/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/gait-analysis/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/gait-analysis/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/gait-analysis/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/gait-analysis/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/gait-analysis/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/gait-analysis/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/gait-analysis/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/gait-analysis/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/gait-analysis/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/gait-analysis/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/gait-analysis/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/gait-analysis/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/gait-analysis/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/gait-analysis/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/gait-analysis/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/gait-analysis/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/gait-analysis/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/gait-analysis/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/gait-analysis/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/gait-analysis/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/gait-analysis/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/gait-analysis/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/gait-analysis/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/gait-analysis/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/gait-analysis/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/gait-analysis/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/gait-analysis/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/gait-analysis/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/gait-analysis/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/gait-analysis/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/gait-analysis/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/gait-analysis/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/gait-analysis/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/gait-analysis/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/gait-analysis/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/gait-analysis/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/gait-analysis/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/gait-analysis/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/gait-analysis/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/gait-analysis/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/gait-analysis/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/gait-analysis/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/gait-analysis/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/gait-analysis/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -504,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -552,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -564,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "tr"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -583,12 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -617,16 +402,12 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Yürüyüşçüler için Yürüyüş Analizi - Adım Simetrisi, Kadans",
-  "description": "Kapsamlı yürüyüş analizi kılavuzu. Adım uzunluğu, tempo, simetri ve denge ölçümlerini anlayın. Yürüyüş verimliliğini artırın ve yaralanmaları önleyin.",
+  "name": "Yürüyüş Analizi: Kadans, Adım, Simetri ve Denge",
+  "description": "Yürüyüş analizi; kadans, adım zamanlaması, simetri ve denge sinyallerini birlikte yorumlar. Sadece hız değil, hareket kalitesini anlamak için kullanılır.",
   "url": "https://hike.analyticszone.app/tr/gait-analysis/",
   "inLanguage": "tr",
   "isPartOf": {
@@ -636,11 +417,16 @@ img[width][height] {
   },
   "datePublished": "2025-01-15",
   "dateModified": "2026-03-11",
-  "keywords": ["yürüyüş analizi", "adım simetrisi", "yürüyüş temposu", "yürüyüş dengesi ölçümleri", "yürüyüş biyomekaniği"],
+  "keywords": ["yürüyüş analizi", "yürüyüş gait analizi", "adım simetrisi", "kadans", "denge ölçümleri", "yürüyüş biyomekaniği"],
   "about": [
     {
       "@type": "Thing",
       "name": "yürüyüş analizi"
+    }, 
+  
+    {
+      "@type": "Thing",
+      "name": "yürüyüş gait analizi"
     }, 
   
     {
@@ -650,12 +436,12 @@ img[width][height] {
   
     {
       "@type": "Thing",
-      "name": "yürüyüş temposu"
+      "name": "kadans"
     }, 
   
     {
       "@type": "Thing",
-      "name": "yürüyüş dengesi ölçümleri"
+      "name": "denge ölçümleri"
     }, 
   
     {
@@ -664,19 +450,12 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Yürüyüşçüler için Yürüyüş Analizi - Adım Simetrisi, Kadans",
-  "description": "Kapsamlı yürüyüş analizi kılavuzu. Adım uzunluğu, tempo, simetri ve denge ölçümlerini anlayın. Yürüyüş verimliliğini artırın ve yaralanmaları önleyin.",
+  "headline": "Yürüyüş Analizi: Kadans, Adım, Simetri ve Denge",
+  "description": "Yürüyüş analizi; kadans, adım zamanlaması, simetri ve denge sinyallerini birlikte yorumlar. Sadece hız değil, hareket kalitesini anlamak için kullanılır.",
   "author": {
     "@type": "Person",
     "name": "AnalyticsZone Team"
@@ -696,17 +475,7 @@ img[width][height] {
     "@id": "https://hike.analyticszone.app/tr/gait-analysis/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -720,1686 +489,375 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">İçeriğe atla</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/tr/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/tr/" 
+  </script></head><body><a href="#main-content" class="skip-link">İçeriğe atla</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/tr/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/tr/" 
                                 aria-current="">
                                 Ev
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/tr/getting-started/" class="nav-label">Öğrenmek</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/tr/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/tr/getting-started/" class="nav-label">Öğrenmek</a><ul class="submenu"><li><a href="/tr/getting-started/" 
                                         aria-current="">
                                         Başlarken
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/walking-zones/" 
+                                    </a></li><li><a href="/tr/walking-zones/" 
                                         aria-current="">
                                         Yürüyüş Bölgeleri
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/gait-analysis/" class="active" 
+                                    </a></li><li><a href="/tr/gait-analysis/" class="active" 
                                         aria-current="page">
                                         Yürüyüş Analizi
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/training-load/" 
+                                    </a></li><li><a href="/tr/training-load/" 
                                         aria-current="">
                                         Eğitim Yükü
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/wss-calculator/" 
+                                    </a></li><li><a href="/tr/wss-calculator/" 
                                         aria-current="">
                                         WSS Hesaplayıcı
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/tr/research/" class="nav-label">Bilim</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/tr/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/tr/research/" class="nav-label">Bilim</a><ul class="submenu"><li><a href="/tr/research/" 
                                         aria-current="">
                                         Araştırma
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/formulas/" 
+                                    </a></li><li><a href="/tr/formulas/" 
                                         aria-current="">
                                         Formüller
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/gait-efficiency/" 
+                                    </a></li><li><a href="/tr/gait-efficiency/" 
                                         aria-current="">
                                         Yürüyüş Verimliliği
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/stride-mechanics/" 
+                                    </a></li><li><a href="/tr/stride-mechanics/" 
                                         aria-current="">
                                         Adım Mekaniği
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/walking-vs-running/" 
+                                    </a></li><li><a href="/tr/walking-vs-running/" 
                                         aria-current="">
                                         Yürüyüş ve Koşu
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/benchmarks/" 
+                                    </a></li><li><a href="/tr/benchmarks/" 
                                         aria-current="">
                                         Karşılaştırmalar
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/bibliography/" 
+                                    </a></li><li><a href="/tr/bibliography/" 
                                         aria-current="">
                                         Kaynakça
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/tr/for-health/" class="nav-label">Senin için</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/tr/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/tr/for-health/" class="nav-label">Senin için</a><ul class="submenu"><li><a href="/tr/for-health/" 
                                         aria-current="">
                                         Sağlık İçin
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/for-fitness/" 
+                                    </a></li><li><a href="/tr/for-fitness/" 
                                         aria-current="">
                                         Fitness için
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/for-seniors/" 
+                                    </a></li><li><a href="/tr/for-seniors/" 
                                         aria-current="">
                                         Yaşlılar için
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/for-rehabilitation/" 
+                                    </a></li><li><a href="/tr/for-rehabilitation/" 
                                         aria-current="">
                                         Rehabilitasyon için
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/tr/cadence-calculator/" class="nav-label">Aletler</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/tr/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/tr/cadence-calculator/" class="nav-label">Aletler</a><ul class="submenu"><li><a href="/tr/cadence-calculator/" 
                                         aria-current="">
                                         Tempo Hesaplayıcı
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/gait-assessment/" 
+                                    </a></li><li><a href="/tr/gait-assessment/" 
                                         aria-current="">
                                         Yürüyüş Değerlendirmesi
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/tr/vo2max-calculator/" 
+                                    </a></li><li><a href="/tr/vo2max-calculator/" 
                                         aria-current="">
                                         VO₂max Hesaplayıcı
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/tr/contact/" 
+                                    </a></li></ul></li><li><a href="/tr/contact/" 
                                 aria-current="">
                                 Temas etmek
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Dil seçin">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Dil seçin"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" selected>
+                        </option><option value="tr" selected>
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Menüyü değiştir"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/tr/">Ev</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/tr/getting-started/">Öğrenmek</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">Yürüyüş Analizi</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Menüyü değiştir"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/tr/">Ev</a></li><li><a href="/tr/getting-started/">Öğrenmek</a></li><li><span aria-current="page">Yürüyüş Analizi</span></li></ol></div></nav><main id="main-content" class="main-content">
     
     Yürüyüş Analizi Kılavuzu
-<section class="guide-hero">
-<div class="container">
-<div class="breadcrumb">
-<a href="/tr/">Ana Sayfa</a>/<a href="/tr/#learn">Öğrenin</a>/ Yürüyüş Analizi</div>
-<h1>Yürüyüş Yürüyüş Analizi</h1>
-<p class="lead">Daha iyi performans, sağlık ve yaralanmaların önlenmesi için bilime dayalı ölçümler kullanarak yürüyüş biyomekaniğinizi nasıl analiz edeceğinizi öğrenin</p>
-</div>
-</section>
-<section class="guide-content">
-<div class="container">
-<div class="content-grid">
-<div class="main-content">
-<h2 id="what-is-gait">Yürüyüş Analizi Nedir?</h2>
-<p>Yürüyüş analizi, yürüyüş şeklinizin ve biyomekaniğinizin sistematik olarak incelenmesidir. Yürüyüş sırasında vücudunuzun nasıl hareket ettiğini inceleyerek verimsizlikleri, asimetrileri ve olası yaralanma risklerini belirler.</p>
-<div class="key-insight">
-<p><strong>Neden önemlidir:</strong>Yürüyüş analizi, yalnızca özel laboratuvarlarda kullanılan bir klinik araçtan, akıllı saatler ve akıllı telefonlar aracılığıyla erişilebilen bir tüketici teknolojisine dönüştü. Araştırmalar, yürüyüş modeli analizinin sağlık sonuçlarını tahmin edebildiğini, nörolojik durumların erken belirtilerini tespit edebildiğini ve yürüyüş verimliliğini optimize edebildiğini gösteriyor.</p>
-</div>
-<p>Hike Analytics, iPhone ve Apple Watch'unuz tarafından pasif olarak toplanan yürüyüş ölçümlerini analiz etmek için Apple HealthKit ile entegre olarak yürüyüş kalitenize ilişkin klinik düzeyde bilgiler sağlar.</p>
-<h2 id="key-metrics">Temel Yürüyüş Metrikleri</h2>
-<h3 id="cadence">1. Tempo (Dakikadaki Adım Sayısı)</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Dakikada atılan adım sayısı (spm)</p>
-<p><strong>Neden en önemli yürüyüş ölçütü:</strong>Kadans, yürüyüş yoğunluğunun ve enerji harcamasının en iyi tahmincisidir. Hızın aksine (adım uzunluğuna bağlıdır), ritim doğrudan hareket sıklığını ve metabolik talebi yansıtır.</p>
-<div class="science-box">
-<h4>Bilimsel Kanıt: 100 spm Eşiği</h4>
-<p>Dönüm noktası niteliğindeki CADENCE-Adults çalışması (Tudor-Locke ve diğerleri, 2019) 76 yetişkini test etti ve şunu tespit etti:</p>
-<ul>
-<li><strong>100 adım/dak = 3 MET</strong>(orta şiddette) %86 duyarlılık ve %89,6 özgüllük ile</li>
-<li><strong>110 spm ≈ 4 MET</strong>(orta-kuvvetli)</li>
-<li><strong>120 spm ≈ 5 MET</strong>(güçlü)</li>
-<li><strong>130 spm = 6 MET</strong>(çok kuvvetli yoğunluk eşiği)</li>
-</ul>
-<p>Bu ilişki<strong>21-85 yaşları arasında oldukça tutarlı</strong>kadansı evrensel bir yoğunluk ölçüsü haline getiriyor.</p>
-</div>
-<div class="data-table">
-<h4>Kadans Aralıkları ve Uygulamaları</h4>
-<table>
-<thead>
-<tr>
-<th>Tempo (spm)</th>
-<th>Kategori</th>
-<th>Başvuru</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>60-90</td>
-<td>Çok yavaş</td>
-<td>İyileşme, hareket kabiliyeti bozukluğu</td>
-</tr>
-<tr>
-<td>90-100</td>
-<td>Işık yoğunluğu</td>
-<td>Hafif aktivite, ısınma</td>
-</tr>
-<tr class="highlight-row">
-<td><strong>100-110</strong></td>
-<td><strong>Orta şiddette</strong></td>
-<td><strong>Sağlık yararları, yağ yakımı, önerilen temel değer</strong></td>
-</tr>
-<tr>
-<td>110-120</td>
-<td>Orta-kuvvetli</td>
-<td>Kardiyovasküler kondisyon, tempolu yürüyüş</td>
-</tr>
-<tr>
-<td>120-130</td>
-<td>Güçlü</td>
-<td>Güç yürüyüşü, fitness antrenmanı</td>
-</tr>
-<tr>
-<td>130-140</td>
-<td>Çok güçlü</td>
-<td>Gelişmiş kondisyon, aralıklı antrenman</td>
-</tr>
-<tr>
-<td>140-180</td>
-<td>Yarış yürüyüşü</td>
-<td>Rekabetçi yürüyüş, elit sporcular</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Nasıl ölçülür:</strong>Apple Watch ve çoğu fitness takipçisi tempoyu otomatik olarak hesaplar. Ayrıca adımları 30 saniye boyunca sayıp 2 ile çarpabilirsiniz.</p>
-<p><strong>Hedef ritim:</strong></p>
-<ul>
-<li><strong>Genel sağlık:</strong>Orta şiddete ulaşmak için yürüyüşler sırasında ≥100 spm'yi hedefleyin</li>
-<li><strong>Kondisyon gelişimi:</strong>Aerobik gelişim için hedef 110-120 spm</li>
-<li><strong>Performans eğitimi:</strong>120-130+ spm'de egzersiz aralıkları</li>
-</ul>
-</div>
-<h3 id="stride-length">2. Adım Uzunluğu</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Bir tam adım döngüsünde kat edilen mesafe (bir ayağın topuk vuruşundan aynı ayağın bir sonraki topuk vuruşuna kadar)</p>
-<p><strong>Optimum adım uzunluğu:</strong>Araştırmalar optimum adım uzunluğunun<strong>Vücut boyunun %40-50'si</strong>normal yürüyüş sırasında.</p>
-<div class="data-table">
-<h4>Adım Uzunluğu Karşılaştırmaları</h4>
-<table>
-<thead>
-<tr>
-<th>Yükseklik</th>
-<th>Optimum Adım (%40-50 yükseklik)</th>
-<th>Elit Yürüyüşçü (%70'e kadar)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>5'0" (152 cm)</td>
-<td>0,61-0,76 m (24-30")</td>
-<td>1,06 m'ye (42") kadar</td>
-</tr>
-<tr>
-<td>5'6" (168 cm)</td>
-<td>0,67-0,84 m (26-33")</td>
-<td>1,18 m'ye (46") kadar</td>
-</tr>
-<tr>
-<td>6'0" (183 cm)</td>
-<td>0,73-0,91 m (29-36")</td>
-<td>1,28 m'ye (50") kadar</td>
-</tr>
-<tr>
-<td>6'6" (198 cm)</td>
-<td>0,79-0,99 m (31-39")</td>
-<td>1,39 m'ye (55") kadar</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Anahtar ilişki:</strong>Hız = Adım Uzunluğu × Tempo</p>
-<p>Bu, daha uzun adımlar atarak VEYA tempoyu artırarak yürüyüş hızınızı artırabileceğiniz anlamına gelir. Ancak<strong>tempoyu artırmak genellikle daha verimli ve daha güvenlidir</strong>aşırıya kaçmaktansa.</p>
-<div class="warning-box">
-<h4>⚠️ Aşırı Adım Atmaktan Kaçının</h4>
-<p><strong>Aşırı adım atma</strong>ayağınız kütle merkezinizin çok ilerisine düştüğünde meydana gelir. Bu:</p>
-<ul>
-<li>Frenleme kuvvetlerini ve zemin reaksiyon kuvvetlerini artırır</li>
-<li>Yürüyüş verimliliğini azaltır (her adımda "fren yapıyorsunuz")</li>
-<li>Dizler ve kalçalardaki stresi artırır</li>
-<li>Yaralanma riskini artırır</li>
-</ul>
-<p><strong>Çözüm:</strong>Ayağınızı vücudunuzun kütle merkezine daha yakın olacak şekilde yere inmeye odaklanın ve arka ayağınızdan güçlü bir şekilde itin.</p>
-</div>
-<p><strong>Apple HealthKit metriği:</strong>iOS 14+ önlem<code>walkingStepLength</code>iPhone cepte/çantada taşındığında pasif olarak.</p>
-</div>
-<h3 id="ground-contact">3. Yerle Temas Süresi</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Bir adım sırasında her ayağın yerle temasta kaldığı süre</p>
-<p><strong>Yürüyüşe özgü değerler:</strong>Adım başına 200-300 milisaniye (koşmanın &lt;200 ms'sinden önemli ölçüde daha uzun)</p>
-<div class="science-box">
-<h4>Yürüyüşün 5 Aşaması İletişim</h4>
-<p>Her adım 5 ayrı aşamadan oluşur:</p>
-<ol>
-<li><strong>İlk temas (topuk vuruşu):</strong>Topuk ~10° dorsifleksiyonda yere temas ediyor</li>
-<li><strong>Yükleme tepkisi (ayak düz):</strong>Tam ayak teması, ağırlık kabulü</li>
-<li><strong>Duruş ortası:</strong>Vücut ağırlığı destek ayağının üzerinden geçer</li>
-<li><strong>Terminal duruşu (topuk yükselişi):</strong>Topuk kalkmaya başlar, ağırlık öne doğru kayar</li>
-<li><strong>Salınım öncesi (ayak parmağı kaldırma):</strong>Ön ayaktan itme, itme aşaması</li>
-</ol>
-</div>
-<p><strong>Yerle temas süresini neler etkiler:</strong></p>
-<ul>
-<li><strong>Hız:</strong>Daha hızlı yürüyüş = daha kısa temas süresi</li>
-<li><strong>Kadans:</strong>Daha yüksek kadans = adım başına daha kısa temas süresi</li>
-<li><strong>Arazi:</strong>Yokuş yukarı temas süresini artırır, yokuş aşağı ise azaltabilir</li>
-<li><strong>Yorgunluk:</strong>Yorgun kaslar = daha uzun temas süresi</li>
-</ul>
-<p><strong>Koşuyla karşılaştırma:</strong></p>
-<ul>
-<li>Yürüyüş: 200-300ms temas, destek aşamasında yürüyüş döngüsünün %62'si</li>
-<li>Koşu: &lt;200ms temas, destek aşamasında yürüyüş döngüsünün yalnızca %31'i</li>
-<li>Bu temel fark yürüyüşün neden<strong>daha düşük darbe kuvvetleri</strong>ve yaralanmaların iyileşmesi için uygundur</li>
-</ul>
-</div>
-<h3 id="double-support">4. İki Kat Destek Süresi</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Yürüyüş döngüsünün her iki ayağın aynı anda yerle temas halinde olduğu kısmı</p>
-<p><strong>Yürüyüşün temel ayırt edici özelliği:</strong>Yürüyüş her zaman çift destek aşamasına sahiptir (yürüyüş döngüsünün %20-30'u), koşu ise yer temasının olmadığı bir uçuş aşamasına sahiptir.</p>
-<div class="key-insight">
-<p><strong>Klinik önemi:</strong>Çift destek yüzdesi, özellikle yaşlı yetişkinlerde düşme riskinin ve denge güveninin güçlü bir göstergesidir.</p>
-</div>
-<div class="data-table">
-<h4>Çift Destekli Yorumlama</h4>
-<table>
-<thead>
-<tr>
-<th>Çift Destek %</th>
-<th>Yorumlama</th>
-<th>Eylem</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;%15</td>
-<td>Çok düşük (koşmaya yaklaşan yürüyüş)</td>
-<td>Güvenlik nedeniyle çok hızlı yürüyor olabilirsiniz</td>
-</tr>
-<tr class="highlight-row">
-<td><strong>%20-30</strong></td>
-<td><strong>Normal, sağlıklı aralık</strong></td>
-<td><strong>Optimum denge ve verimlilik</strong></td>
-</tr>
-<tr>
-<td>%30-35</td>
-<td>Yüksek, hafif endişe</td>
-<td>Değişiklikleri izleyin, denge egzersizlerini düşünün</td>
-</tr>
-<tr class="warning-row">
-<td><strong>&gt;%35</strong></td>
-<td><strong>Yüksek düşme riski göstergesi</strong></td>
-<td><strong>Sağlık uzmanına danışın, denge eğitimine başlayın</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Çift desteğin yükselmesine ne sebep olur:</strong></p>
-<ul>
-<li>Düşme korkusu veya denge güveninin azalması</li>
-<li>Nörolojik durumlar (Parkinson, felç, nöropati)</li>
-<li>Kas zayıflığı (özellikle kalça abdüktörleri ve ayak bileği dorsifleksörleri)</li>
-<li>Eklem ağrısı veya sertliği</li>
-<li>Görme bozukluğu</li>
-</ul>
-<p><strong>Apple HealthKit metriği:</strong> <code>walkingDoubleSupportPercentage</code>iPhone 8+ ve iOS 14+ ile pasif olarak ölçülmüştür. Bu ölçüm, Apple'ın Yürüyüş Dengesi değerlendirmesinin bir parçasıdır.</p>
-</div>
-<h3 id="asymmetry">5.Yürüyüş Asimetrisi</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Sol ve sağ adım süreleri, adım uzunlukları veya temas süreleri arasındaki fark</p>
-<div class="science-box">
-<h4>Yürüyüş Simetri İndeksi (GSI) Formülü</h4>
-<p>Yürüyüş asimetrisini ölçmek için standart formül:</p>
-<div class="formula-box">
-<p><strong>GSI = |Sağ - Sol| / [0,5 × (Sağ + Sol)] × 100</strong></p>
-</div>
-<p>Örnek: Sağ adım süresi = 520 ms ve sol adım süresi = 480 ms ise:</p>
-<p>GSI = |520 - 480| / [0,5 × (520 + 480)] × 100 = 40 / 500 × 100 =<strong>%8 asimetri</strong></p>
-</div>
-<div class="data-table">
-<h4>Asimetri Sınıflandırması</h4>
-<table>
-<thead>
-<tr>
-<th>Asimetri %</th>
-<th>Sınıflandırma</th>
-<th>Klinik Önem</th>
-</tr>
-</thead>
-<tbody>
-<tr class="highlight-row">
-<td><strong>&lt;%2-3</strong></td>
-<td><strong>Normal, simetrik</strong></td>
-<td>Sağlıklı yürüyüş modeli</td>
-</tr>
-<tr>
-<td>%3-5</td>
-<td>Hafif asimetri</td>
-<td>Monitör, küçük bir zayıflık veya alışkanlığın işareti olabilir</td>
-</tr>
-<tr>
-<td>%5-10</td>
-<td>Orta derecede asimetri</td>
-<td>Profesyonel değerlendirmeyi düşünün</td>
-</tr>
-<tr class="warning-row">
-<td><strong>&gt;%10</strong></td>
-<td><strong>Klinik olarak anlamlı</strong></td>
-<td><strong>Muhtemelen yaralanma, zayıflık veya nörolojik soruna işaret eder</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Asimetrinin yaygın nedenleri:</strong></p>
-<ul>
-<li><strong>Önceki yaralanma tazminatı:</strong>Sakatlıktan sonra tek bacağı tercih etmek</li>
-<li><strong>Kas dengesizlikleri:</strong>Bir tarafta kalça, diz veya ayak bileğinde zayıflık</li>
-<li><strong>Bacak uzunluğu farklılığı:</strong>Bacak uzunluğunda gerçek veya fonksiyonel fark</li>
-<li><strong>Ortak sorunlar:</strong>Artrit, kalça/diz/ayak bileğinde azalmış ROM</li>
-<li><strong>Nörolojik durumlar:</strong>Felç, Parkinson, MS</li>
-<li><strong>Ayakkabı:</strong>Düzensiz ayakkabı aşınması veya yanlış uyum</li>
-</ul>
-<p><strong>Apple HealthKit metriği:</strong> <code>walkingAsymmetryPercentage</code>sol ve sağ adım süreleri arasındaki farkı ölçer. Değerler &gt;%10 bildirimleri tetikler.</p>
-<div class="tip-box">
-<h4>💡 Simetriyi İyileştirme</h4>
-<ul>
-<li>Tek bacak denge egzersizleri (bacak başına 30-60 saniye)</li>
-<li>Tek taraflı kuvvet antrenmanı (zayıf tarafa odaklanın)</li>
-<li>Görsel/işitsel geri bildirimle yürüyüş eğitimi</li>
-<li>Altta yatan yaralanmaları veya durumları ele alın</li>
-<li>Asimetri &gt;%5 devam ederse profesyonel yürüyüş değerlendirmesi</li>
-</ul>
-</div>
-</div>
-<h3 id="hiking-speed">6. Yürüyüş Hızı</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Genellikle saniyede metre (m/s) veya saatte mil (mph) cinsinden ölçülen ortalama yürüyüş hızınız</p>
-<div class="key-insight">
-<p><strong>Hız neden "hayati bir işarettir":</strong>2011 yılında 34.485 yaşlı yetişkin üzerinde yapılan dönüm noktası niteliğindeki bir JAMA çalışması, yürüyüş hızının mortalitenin en güçlü tek belirleyicilerinden biri olduğunu ve bunun klinik bir "yaşam belirtisi" olarak tanımlanmasını kazandığını buldu (Studenski ve ark., 2011).</p>
-</div>
-<div class="data-table">
-<h4>Yürüyüş Hızı Sağlık Karşılaştırmaları</h4>
-<table>
-<thead>
-<tr>
-<th>Hız</th>
-<th>Sınıflandırma</th>
-<th>Sağlık Göstergesi</th>
-</tr>
-</thead>
-<tbody>
-<tr class="warning-row">
-<td><strong>&lt;0,6 m/s (1,3 mil/saat)</strong></td>
-<td><strong>Ciddi derecede engelli</strong></td>
-<td>Yüksek ölüm riski, sağlık uzmanına danışın</td>
-</tr>
-<tr>
-<td>0,6-0,8 m/s (1,3-1,8 mil/saat)</td>
-<td>Hareket kabiliyeti sınırlı</td>
-<td>Artan sağlık riskleri, işlevsel sınırlamalar</td>
-</tr>
-<tr>
-<td>0,8-1,0 m/s (1,8-2,2 mil/saat)</td>
-<td>Normalin altında</td>
-<td>Orta risk, iyileştirme fırsatı</td>
-</tr>
-<tr class="highlight-row">
-<td><strong>1,0-1,3 m/s (2,2-2,9 mil/saat)</strong></td>
-<td><strong>İyi fonksiyonel sağlık</strong></td>
-<td>Normal sağlık göstergeleri</td>
-</tr>
-<tr>
-<td>1,3-1,5 m/s (2,9-3,4 mil/saat)</td>
-<td>Ortalamanın üstünde</td>
-<td>Mükemmel sağlık göstergesi, düşük ölüm riski</td>
-</tr>
-<tr>
-<td>&gt;1,5 m/s (&gt;3,4 mil/saat)</td>
-<td>Fitness yürüyüşü</td>
-<td>Atletik yetenek, çok düşük sağlık riskleri</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="science-box">
-<h4>Hız-Hayatta Kalma Gradyanı</h4>
-<p>Araştırmalar gösteriyor ki<strong>Yürüyüş hızındaki her 0,1 m/s'lik artış, ölüm riskinde ~%12'lik bir azalma ile ilişkilidir</strong>. Bu ilişki popülasyonlar arasında oldukça doğrusaldır.</p>
-</div>
-<p><strong>Apple HealthKit metriği:</strong> <code>walkingSpeed</code>iPhone hareket sensörlerinden hesaplanır (iPhone 8+ ile iOS 14+). Doğrulanmış çalışmalar, klinik süreli yürüyüş testleriyle r=0,86-0,91 arasında korelasyon göstermektedir.</p>
-</div>
-<h3 id="vertical-oscillation">7. Dikey Salınım</h3>
-<div class="metric-detail">
-<p><strong>Nedir:</strong>Yürüyüş döngüsü sırasında kütle merkezinizin dikey yer değiştirmesi</p>
-<p><strong>Normal aralık:</strong>4-8 cm dikey hareket</p>
-<div class="data-table">
-<h4>Dikey Salınım Yorumu</h4>
-<table>
-<thead>
-<tr>
-<th>Salınım</th>
-<th>Değerlendirme</th>
-<th>Sonuç</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;4 cm</td>
-<td>Çok az (karışık yürüyüş)</td>
-<td>Zayıflık, nörolojik sorunlar veya düşme korkusunu gösterebilir</td>
-</tr>
-<tr class="highlight-row">
-<td><strong>4-8cm</strong></td>
-<td><strong>Normal, verimli aralık</strong></td>
-<td>Optimum enerji tüketimi</td>
-</tr>
-<tr>
-<td>&gt;8-10 cm</td>
-<td>Aşırı (zıplayan yürüyüş)</td>
-<td>Enerji israfı, verimsiz mekanik</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Neden önemlidir:</strong>Aşırı dikey salınım, her adımda çok fazla "zıpladığınız" ve yer çekimine karşı savaşarak enerjinizi boşa harcadığınız anlamına gelir. Minimal salınım, Parkinson hastalığına veya düşme korkusuna bağlı ayak sürüyerek yürüme düzeninin göstergesi olabilir.</p>
-<p><strong>Nasıl optimize edilir:</strong></p>
-<ul>
-<li>Yukarıya değil ileriye doğru ilerlemeye odaklanın</li>
-<li>Ayak bileklerinden hafif öne eğilmeyi (2-5°) koruyun</li>
-<li>Başınızı düz tutun ve gözlerinizi ileri doğru tutun</li>
-<li>Adımlar arasında düzgün ağırlık aktarımı yapın</li>
-</ul>
-</div>
-<h2 id="apple-metrics">Apple HealthKit Yürüyüş Metrikleri</h2>
-<div class="tech-section">
-<p>Apple, iOS 14'te (2020) iPhone hareket sensörlerinden klinik düzeyde yürüyüş verilerini pasif olarak toplayan gelişmiş yürüyüş ölçümlerini kullanıma sundu. Bu metrikler<strong>araştırma düzeyindeki değerlendirmelere göre doğrulandı</strong>ve artık tıbbi araştırmalarda kullanılıyor.</p>
-<h3>Yürüyüş Dengesi</h3>
-<p>Apple'ın tescilli<strong>Yürüyüş Dengesi</strong>metrik, aşağıdakileri birleştiren bileşik bir ölçüdür:</p>
-<ul>
-<li>Yürüyüş hızı</li>
-<li>Adım uzunluğu</li>
-<li>Çift destek yüzdesi</li>
-<li>Yürüyüş asimetrisi</li>
-<li>Yürüyüş hızı değişkenliği</li>
-<li>Adım uzunluğu değişkenliği</li>
-</ul>
-<div class="data-table">
-<h4>Yürüyüş Dengesi Sınıflandırması</h4>
-<table>
-<thead>
-<tr>
-<th>Sınıflandırma</th>
-<th>Düşme Riski</th>
-<th>Eylem</th>
-</tr>
-</thead>
-<tbody>
-<tr class="highlight-row">
-<td><strong>Tamam</strong></td>
-<td>&lt;%1 yıllık düşme riski</td>
-<td>Mevcut aktivite seviyesini koruyun</td>
-</tr>
-<tr>
-<td><strong>Düşük</strong></td>
-<td>Yıllık %1-5 düşme riski</td>
-<td>Denge egzersizlerini düşünün, trendleri izleyin</td>
-</tr>
-<tr class="warning-row">
-<td><strong>Çok Düşük</strong></td>
-<td>&gt;%5 yıllık düşme riski</td>
-<td><strong>iPhone bildirimi gönderildi, sağlık uzmanına danışın</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3>6 Dakikalık Yürüyüş Testi (6DYT)</h3>
-<p>Apple Watch Series 3+ tahmin edebilir<strong>6 Dakikalık Yürüyüş Test Mesafesi</strong>geçmiş yürüyüş verilerinden.6DYT fonksiyonel egzersiz kapasitesinin altın standart klinik değerlendirmesidir.</p>
-<div class="science-box">
-<h4>6DYT Yorumlama</h4>
-<ul>
-<li><strong>&lt;350 metre:</strong>Önemli işlevsel sınırlama</li>
-<li><strong>350-450 metre:</strong>Orta sınırlama</li>
-<li><strong>450-550 metre:</strong>Hafif kısıtlılık veya yaşlı yetişkin</li>
-<li><strong>&gt;550 metre:</strong>İyi fonksiyonel kapasite</li>
-<li><strong>&gt;650 metre:</strong>Mükemmel kapasite</li>
-</ul>
-<p><em>Not: Değerler yaşa, cinsiyete ve boya göre değişir. Bunlar genel kurallardır.</em></p>
-</div>
-<h3>Veri Gizliliği</h3>
-<p>Tüm Apple HealthKit yürüyüş ölçümleri şunlardır:</p>
-<ul>
-<li><strong>Cihazda işlendi:</strong>Hiçbir zaman Apple sunucularına gönderilmedi</li>
-<li><strong>Kullanıcı kontrollü:</strong>Verilerinize hangi uygulamaların erişebileceğine siz karar verirsiniz</li>
-<li><strong>Şifrelenmiş:</strong>iOS şifrelemesi ile korunmaktadır</li>
-<li><strong>Silinebilir:</strong>Tüm sağlık verilerini silmek için tam kontrol</li>
-</ul>
-</div>
-<h2 id="interpreting">Yürüyüş Analizinizi Yorumlama</h2>
-<h3>Sağlıklı Yürüyüşün Belirtileri</h3>
-<ul>
-<li><strong>Kadans:</strong>Amaçlı yürüyüş sırasında ≥100 spm</li>
-<li><strong>Hız:</strong>≥1,0 m/s (2,2 mph) alışılmış yürüyüş hızı</li>
-<li><strong>Simetri:</strong>Sol ve sağ arasında &lt;%3 asimetri</li>
-<li><strong>Çift destek:</strong>Yürüyüş döngüsünün %20-30'u</li>
-<li><strong>Tutarlılık:</strong>Birden fazla gün boyunca benzer ölçümler</li>
-<li><strong>Yürüyüş Dengesi:</strong>"Tamam" sınıflandırması</li>
-</ul>
-<h3>Dikkat Gerektiren Uyarı İşaretleri</h3>
-<div class="warning-box">
-<ul>
-<li><strong>Ani asimetri artışı:</strong>Akut yaralanmayı gösterebilir</li>
-<li><strong>Hızın zamanla azalması:</strong>Fonksiyonel düşüş, özellikle yılda &gt;0,05 m/s ise</li>
-<li><strong>Çift desteğin artırılması:</strong>Denge güveninin veya gücünün azalması</li>
-<li><strong>Yürüyüş Dengesi "Düşük" veya "Çok Düşük"e düşer:</strong>Artan düşme riski</li>
-<li><strong>Kalıcı asimetri &gt;%10:</strong>Profesyonel değerlendirmeyi garanti eder</li>
-<li><strong>Hız &lt;0,8 m/s:</strong>Yüksek sağlık riski, doktora danışın</li>
-</ul>
-</div>
-<h2 id="improving">Yürüyüşünüzü Nasıl Geliştirebilirsiniz</h2>
-<h3>Kadans Eğitimi</h3>
-<p><strong>Hedef:</strong>Yürüyüşler sırasında ≥100 spm'ye ulaşın</p>
-<p><strong>Yöntemler:</strong></p>
-<ul>
-<li>100-120 BPM'ye ayarlanmış metronom uygulamasını kullanın</li>
-<li>100-120 BPM tempoyla müziğe yürüyüş</li>
-<li>"Hızlı ayak" alıştırmaları yapın: kısa, hızlı adımlar</li>
-<li>Adım uzunluğuna değil devir hızına odaklanın</li>
-<li>Tempo hedefin altına düştüğünde Apple Watch uyarılarını ayarlayın</li>
-</ul>
-<h3>Simetriyi İyileştirme</h3>
-<p><strong>Alıştırmalar:</strong></p>
-<ul>
-<li><strong>Tek bacaklı standlar:</strong>Bacak başına 30-60 saniye, gözler açık ve kapalı</li>
-<li><strong>Tek taraflı güç:</strong>Tek bacakla deadlift, step-up, hamle</li>
-<li><strong>Denge tahtası eğitimi:</strong>Wobble tahtası veya BOSU topu</li>
-<li><strong>Ayna yürüyüşü:</strong>Farklılıkları belirlemek için yansımanızı izleyerek yürüyüşe çıkın</li>
-<li><strong>Video analizi:</strong>Yürüyüş yaparken kendinizi önden ve arkadan filme alın</li>
-</ul>
-<h3>Yürüyüş Hızını Güvenle Artırma</h3>
-<p><strong>Aşamalı yaklaşım:</strong></p>
-<ol>
-<li><strong>Önce tempoyu artırın:</strong>Adım uzunluğuna odaklanmadan önce 110-120 rpm'ye kadar çalışın</li>
-<li><strong>Aralıklı eğitim:</strong>Alternatif 2 dakika hızlı + 2 dakika normal tempo</li>
-<li><strong>Güç antrenmanı:</strong>Kalça ve ayak bileği kuvveti doğrudan yürüyüş hızını artırır</li>
-<li><strong>Kademeli ilerleme:</strong>Hızı ayda ~0,1 m/s artırın</li>
-</ol>
-<h3>Çift Desteğin Azaltılması (yükseltilmişse)</h3>
-<p><strong>Denge egzersizleri:</strong></p>
-<ul>
-<li>Tandem yürüyüş (topuktan ayağa)</li>
-<li>Kol hareketleri ile tek ayaklı duruşlar</li>
-<li>Başlangıçta daha geniş destek tabanına sahip yürüyüş modeli egzersizleri</li>
-<li>Kuvvet antrenmanı: kalça abdüktörleri, ayak bileği dorsifleksörleri, göbek</li>
-<li>Tai Chi veya denge odaklı grup dersleri</li>
-</ul>
-<h2 id="special-populations">Özel Popülasyonlar İçin Yürüyüş Analizi</h2>
-<h3>Yaşlı Yetişkinler (65+)</h3>
-<p><strong>Öncelik ölçümleri:</strong></p>
-<ul>
-<li><strong>Yürüyüş hızı:</strong>Yıllık olarak takip edin; düşüş &gt;0,05 m/s/yıl riske işaret eder</li>
-<li><strong>Çift destek:</strong>Düşme riskini gösteren artışları izleyin</li>
-<li><strong>Yürüyüş Dengesi:</strong>"Düşük" veya "Çok Düşük" bildirimlerini etkinleştirin</li>
-<li><strong>Asimetri:</strong>Gelişmekte olan nörolojik sorunların göstergesi olabilir</li>
-</ul>
-<p><strong>Hedefler:</strong></p>
-<ul>
-<li>Hızı koruyun ≥1,0 ​​m/s</li>
-<li>Çifte desteği koruyun &lt;%30</li>
-<li>Yürüyüş Dengesi "Tamam"</li>
-<li>Asimetri &lt;%5</li>
-</ul>
-<h3>Rehabilitasyon Hastaları</h3>
-<p><strong>Kurtarma ilerlemesini takip edin:</strong></p>
-<ul>
-<li><strong>Simetri normalizasyonu:</strong>&lt;%3 asimetriye dönüş hedefi</li>
-<li><strong>Hız kurtarma:</strong>Yaralanma öncesi temel çizgiye yönelik haftalık iyileştirmeleri takip edin</li>
-<li><strong>Kadans tutarlılığı:</strong>≥100 spm'yi sürdürebilme yeteneği normal aktiviteye hazır olunduğunu gösterir</li>
-<li><strong>Tazminat kalıpları:</strong>Yeni asimetrilerin gelişimini izleyin</li>
-</ul>
-<h3>Fitness Yürüyüşçüleri ve Sporcular</h3>
-<p><strong>Performans hedefleri:</strong></p>
-<ul>
-<li><strong>Kadans:</strong>Fitness yürüyüşü için 120-140 spm; Yarış yürüyüşü için 140-180 spm</li>
-<li><strong>Hız:</strong>Kondisyon için &gt;1,5 m/s (3,4 mil/saat); Rekabetçi için &gt;2,0 m/s (4,5 mil/saat)</li>
-<li><strong>Simetri:</strong>&gt;%97 (çok düşük asimetri)</li>
-<li><strong>Çift destek:</strong>Verimlilik için %15-20'ye kadar azaltın</li>
-</ul>
-<h2 id="limitations">Teknoloji Doğruluğu ve Sınırlamalar</h2>
-<h3>Tüketici Cihazları Neleri İyi Yapıyor</h3>
-<ul>
-<li><strong>Adım sayma:</strong>Araştırma adım ölçerlerine kıyasla %95-99 doğruluk</li>
-<li><strong>Kadans:</strong>±2-3 spm hatası</li>
-<li><strong>Yürüyüş hızı:</strong>r=0,86-0,91 klinik testlerle korelasyon</li>
-<li><strong>Trend tespiti:</strong>Zaman içindeki değişiklikleri izlemek için mükemmel</li>
-</ul>
-<h3>Anlaşılması Gereken Sınırlamalar</h3>
-<ul>
-<li><strong>Tanısal değil:</strong>Tüketici cihazları tıbbi teşhis değil, tarama aracıdır</li>
-<li><strong>Yerleştirme önemlidir:</strong>iPhone cepte/çantada taşınmalıdır; Bilekte Apple Watch</li>
-<li><strong>İç mekan ve dış mekan:</strong>GPS doğruluğu dış mekan ölçümlerini etkiler</li>
-<li><strong>Bireysel varyasyon:</strong>"Normal" aralıklar nüfus ortalamalarıdır</li>
-<li><strong>Klinik yürüyüş laboratuvarlarının yerini alamaz:</strong>Ayrıntılı 3D kinematik, kuvvet plakaları için EMG gerekli</li>
-</ul>
-<h3>Profesyonel Yürüyüş Analizine Ne Zaman Başvurulmalı</h3>
-<ul>
-<li>Kalıcı asimetri &gt;%10</li>
-<li>Yürüyüş hızı &lt;0,8 m/s, bilinmeyen bir neden olmadan</li>
-<li>Sık düşmeler veya düşmeye yakın düşmeler</li>
-<li>Yürüyüş sırasında veya sonrasında kronik ağrı</li>
-<li>Yürüyüş ölçümlerinde ani değişiklikler</li>
-<li>Nörolojik semptomlar (uyuşma, karıncalanma, koordinasyon sorunları)</li>
-</ul>
-<h2 id="next-steps">Sonraki Adımlar</h2>
-<div class="next-steps-grid">
-<div class="next-step-card">
-<h3>Yürüyüş Bölgeleri</h3>
-<p>Sağlık ve fitness için en uygun yoğunluk bölgelerinde antrenman yapmak için tempoyu nasıl kullanacağınızı öğrenin.</p>
-<a class="btn btn-secondary" href="/tr/walking-zones/">Bölgeler Hakkında Bilgi Edinin →</a>
-</div>
-<div class="next-step-card">
-<h3>Adım Mekaniği</h3>
-<p>Yürüyüş biyomekaniği, duruş, kol sallama ve ayak vuruşu modellerini derinlemesine inceleyin.</p>
-<a class="btn btn-secondary" href="/tr/stride-mechanics/">Mekaniği Keşfedin →</a>
-</div>
-<div class="next-step-card">
-<h3>Bilimsel Araştırma</h3>
-<p>Yürüyüş analizini ve yürüyüş ölçümlerini destekleyen bilimsel kanıtları inceleyin.</p>
-<a class="btn btn-secondary" href="/tr/research/">Araştırmayı Görüntüle →</a>
-</div>
-<div class="next-step-card">
-<h3>Tam Kaynakça</h3>
-<p>Yayınlara doğrudan bağlantılar içeren hakemli referanslara erişin.</p>
-<a class="btn btn-secondary" href="/tr/bibliography/">Kaynakçayı Görüntüle →</a>
-</div>
-</div>
-</div>
-<aside class="sidebar">
-<div class="toc">
-<h3>İçindekiler</h3>
-<ul>
-<li><a href="#what-is-gait">Yürüyüş Analizi Nedir?</a></li>
-<li><a href="#key-metrics">Temel Metrikler</a>
-<ul>
-<li><a href="#cadence">Ritim</a></li>
-<li><a href="#stride-length">Adım Uzunluğu</a></li>
-<li><a href="#ground-contact">Zemin Teması</a></li>
-<li><a href="#double-support">Çift Destek</a></li>
-<li><a href="#asymmetry">Asimetri</a></li>
-<li><a href="#hiking-speed">Yürüyüş Hızı</a></li>
-<li><a href="#vertical-oscillation">Dikey Salınım</a></li>
-</ul>
-</li>
-<li><a href="#apple-metrics">Apple HealthKit Metrikleri</a></li>
-<li><a href="#interpreting">Tercümanlık Analizi</a></li>
-<li><a href="#improving">Yürüyüşünüzü İyileştirme</a></li>
-<li><a href="#special-populations">Özel Popülasyonlar</a></li>
-<li><a href="#limitations">Doğruluk ve Sınırlamalar</a></li>
-<li><a href="#next-steps">Sonraki Adımlar</a></li>
-</ul>
-</div>
-<div class="cta-box">
-<h3>Yürüyüşünüzü Analiz Edin</h3>
-<p>Yürüyüş mekaniğinizi Hike Analytics'i kullanarak bilime dayalı ölçümlerle takip edin.</p>
-<a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Uygulamayı İndir</a>
-</div>
-<div class="info-box">
-<h4>📊 Temel Çözüm</h4>
-<p><strong>'ye odaklanın ritim ≥100 spm</strong>ve<strong>hız ≥1,0 ​​m/s</strong>birincil hedefleriniz olarak. Bu iki ölçüm sağlık sonuçlarının en güçlü belirleyicileridir.</p>
-</div>
-</aside>
-</div>
-</div>
-</section>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+<section class="guide-hero"><div class="container"><div class="breadcrumb"><a href="/tr/">Ana Sayfa</a>/<a href="/tr/#learn">Öğrenin</a>/ Yürüyüş Analizi</div><h1>Yürüyüş Yürüyüş Analizi</h1><p class="lead">Daha iyi performans, sağlık ve yaralanmaların önlenmesi için bilime dayalı ölçümler kullanarak yürüyüş biyomekaniğinizi nasıl analiz edeceğinizi öğrenin</p></div></section><section class="guide-content"><div class="container"><div class="content-grid"><div class="main-content"><h2 id="what-is-gait">Yürüyüş Analizi Nedir?</h2><p>Yürüyüş analizi, yürüyüş şeklinizin ve biyomekaniğinizin sistematik olarak incelenmesidir. Yürüyüş sırasında vücudunuzun nasıl hareket ettiğini inceleyerek verimsizlikleri, asimetrileri ve olası yaralanma risklerini belirler.</p><div class="key-insight"><p><strong>Neden önemlidir:</strong>Yürüyüş analizi, yalnızca özel laboratuvarlarda kullanılan bir klinik araçtan, akıllı saatler ve akıllı telefonlar aracılığıyla erişilebilen bir tüketici teknolojisine dönüştü. Araştırmalar, yürüyüş modeli analizinin sağlık sonuçlarını tahmin edebildiğini, nörolojik durumların erken belirtilerini tespit edebildiğini ve yürüyüş verimliliğini optimize edebildiğini gösteriyor.</p></div><p>Hike Analytics, iPhone ve Apple Watch'unuz tarafından pasif olarak toplanan yürüyüş ölçümlerini analiz etmek için Apple HealthKit ile entegre olarak yürüyüş kalitenize ilişkin klinik düzeyde bilgiler sağlar.</p><h2 id="key-metrics">Temel Yürüyüş Metrikleri</h2><h3 id="cadence">1. Tempo (Dakikadaki Adım Sayısı)</h3><div class="metric-detail"><p><strong>Nedir:</strong>Dakikada atılan adım sayısı (spm)</p><p><strong>Neden en önemli yürüyüş ölçütü:</strong>Kadans, yürüyüş yoğunluğunun ve enerji harcamasının en iyi tahmincisidir. Hızın aksine (adım uzunluğuna bağlıdır), ritim doğrudan hareket sıklığını ve metabolik talebi yansıtır.</p><div class="science-box"><h4>Bilimsel Kanıt: 100 spm Eşiği</h4><p>Dönüm noktası niteliğindeki CADENCE-Adults çalışması (Tudor-Locke ve diğerleri, 2019) 76 yetişkini test etti ve şunu tespit etti:</p><ul><li><strong>100 adım/dak = 3 MET</strong>(orta şiddette) %86 duyarlılık ve %89,6 özgüllük ile</li><li><strong>110 spm ≈ 4 MET</strong>(orta-kuvvetli)</li><li><strong>120 spm ≈ 5 MET</strong>(güçlü)</li><li><strong>130 spm = 6 MET</strong>(çok kuvvetli yoğunluk eşiği)</li></ul><p>Bu ilişki<strong>21-85 yaşları arasında oldukça tutarlı</strong>kadansı evrensel bir yoğunluk ölçüsü haline getiriyor.</p></div><div class="data-table"><h4>Kadans Aralıkları ve Uygulamaları</h4><table><thead><tr><th>Tempo (spm)</th><th>Kategori</th><th>Başvuru</th></tr></thead><tbody><tr><td>60-90</td><td>Çok yavaş</td><td>İyileşme, hareket kabiliyeti bozukluğu</td></tr><tr><td>90-100</td><td>Işık yoğunluğu</td><td>Hafif aktivite, ısınma</td></tr><tr class="highlight-row"><td><strong>100-110</strong></td><td><strong>Orta şiddette</strong></td><td><strong>Sağlık yararları, yağ yakımı, önerilen temel değer</strong></td></tr><tr><td>110-120</td><td>Orta-kuvvetli</td><td>Kardiyovasküler kondisyon, tempolu yürüyüş</td></tr><tr><td>120-130</td><td>Güçlü</td><td>Güç yürüyüşü, fitness antrenmanı</td></tr><tr><td>130-140</td><td>Çok güçlü</td><td>Gelişmiş kondisyon, aralıklı antrenman</td></tr><tr><td>140-180</td><td>Yarış yürüyüşü</td><td>Rekabetçi yürüyüş, elit sporcular</td></tr></tbody></table></div><p><strong>Nasıl ölçülür:</strong>Apple Watch ve çoğu fitness takipçisi tempoyu otomatik olarak hesaplar. Ayrıca adımları 30 saniye boyunca sayıp 2 ile çarpabilirsiniz.</p><p><strong>Hedef ritim:</strong></p><ul><li><strong>Genel sağlık:</strong>Orta şiddete ulaşmak için yürüyüşler sırasında ≥100 spm'yi hedefleyin</li><li><strong>Kondisyon gelişimi:</strong>Aerobik gelişim için hedef 110-120 spm</li><li><strong>Performans eğitimi:</strong>120-130+ spm'de egzersiz aralıkları</li></ul></div><h3 id="stride-length">2. Adım Uzunluğu</h3><div class="metric-detail"><p><strong>Nedir:</strong>Bir tam adım döngüsünde kat edilen mesafe (bir ayağın topuk vuruşundan aynı ayağın bir sonraki topuk vuruşuna kadar)</p><p><strong>Optimum adım uzunluğu:</strong>Araştırmalar optimum adım uzunluğunun<strong>Vücut boyunun %40-50'si</strong>normal yürüyüş sırasında.</p><div class="data-table"><h4>Adım Uzunluğu Karşılaştırmaları</h4><table><thead><tr><th>Yükseklik</th><th>Optimum Adım (%40-50 yükseklik)</th><th>Elit Yürüyüşçü (%70'e kadar)</th></tr></thead><tbody><tr><td>5'0" (152 cm)</td><td>0,61-0,76 m (24-30")</td><td>1,06 m'ye (42") kadar</td></tr><tr><td>5'6" (168 cm)</td><td>0,67-0,84 m (26-33")</td><td>1,18 m'ye (46") kadar</td></tr><tr><td>6'0" (183 cm)</td><td>0,73-0,91 m (29-36")</td><td>1,28 m'ye (50") kadar</td></tr><tr><td>6'6" (198 cm)</td><td>0,79-0,99 m (31-39")</td><td>1,39 m'ye (55") kadar</td></tr></tbody></table></div><p><strong>Anahtar ilişki:</strong>Hız = Adım Uzunluğu × Tempo</p><p>Bu, daha uzun adımlar atarak VEYA tempoyu artırarak yürüyüş hızınızı artırabileceğiniz anlamına gelir. Ancak<strong>tempoyu artırmak genellikle daha verimli ve daha güvenlidir</strong>aşırıya kaçmaktansa.</p><div class="warning-box"><h4>⚠️ Aşırı Adım Atmaktan Kaçının</h4><p><strong>Aşırı adım atma</strong>ayağınız kütle merkezinizin çok ilerisine düştüğünde meydana gelir. Bu:</p><ul><li>Frenleme kuvvetlerini ve zemin reaksiyon kuvvetlerini artırır</li><li>Yürüyüş verimliliğini azaltır (her adımda "fren yapıyorsunuz")</li><li>Dizler ve kalçalardaki stresi artırır</li><li>Yaralanma riskini artırır</li></ul><p><strong>Çözüm:</strong>Ayağınızı vücudunuzun kütle merkezine daha yakın olacak şekilde yere inmeye odaklanın ve arka ayağınızdan güçlü bir şekilde itin.</p></div><p><strong>Apple HealthKit metriği:</strong>iOS 14+ önlem<code>walkingStepLength</code>iPhone cepte/çantada taşındığında pasif olarak.</p></div><h3 id="ground-contact">3. Yerle Temas Süresi</h3><div class="metric-detail"><p><strong>Nedir:</strong>Bir adım sırasında her ayağın yerle temasta kaldığı süre</p><p><strong>Yürüyüşe özgü değerler:</strong>Adım başına 200-300 milisaniye (koşmanın &lt;200 ms'sinden önemli ölçüde daha uzun)</p><div class="science-box"><h4>Yürüyüşün 5 Aşaması İletişim</h4><p>Her adım 5 ayrı aşamadan oluşur:</p><ol><li><strong>İlk temas (topuk vuruşu):</strong>Topuk ~10° dorsifleksiyonda yere temas ediyor</li><li><strong>Yükleme tepkisi (ayak düz):</strong>Tam ayak teması, ağırlık kabulü</li><li><strong>Duruş ortası:</strong>Vücut ağırlığı destek ayağının üzerinden geçer</li><li><strong>Terminal duruşu (topuk yükselişi):</strong>Topuk kalkmaya başlar, ağırlık öne doğru kayar</li><li><strong>Salınım öncesi (ayak parmağı kaldırma):</strong>Ön ayaktan itme, itme aşaması</li></ol></div><p><strong>Yerle temas süresini neler etkiler:</strong></p><ul><li><strong>Hız:</strong>Daha hızlı yürüyüş = daha kısa temas süresi</li><li><strong>Kadans:</strong>Daha yüksek kadans = adım başına daha kısa temas süresi</li><li><strong>Arazi:</strong>Yokuş yukarı temas süresini artırır, yokuş aşağı ise azaltabilir</li><li><strong>Yorgunluk:</strong>Yorgun kaslar = daha uzun temas süresi</li></ul><p><strong>Koşuyla karşılaştırma:</strong></p><ul><li>Yürüyüş: 200-300ms temas, destek aşamasında yürüyüş döngüsünün %62'si</li><li>Koşu: &lt;200ms temas, destek aşamasında yürüyüş döngüsünün yalnızca %31'i</li><li>Bu temel fark yürüyüşün neden<strong>daha düşük darbe kuvvetleri</strong>ve yaralanmaların iyileşmesi için uygundur</li></ul></div><h3 id="double-support">4. İki Kat Destek Süresi</h3><div class="metric-detail"><p><strong>Nedir:</strong>Yürüyüş döngüsünün her iki ayağın aynı anda yerle temas halinde olduğu kısmı</p><p><strong>Yürüyüşün temel ayırt edici özelliği:</strong>Yürüyüş her zaman çift destek aşamasına sahiptir (yürüyüş döngüsünün %20-30'u), koşu ise yer temasının olmadığı bir uçuş aşamasına sahiptir.</p><div class="key-insight"><p><strong>Klinik önemi:</strong>Çift destek yüzdesi, özellikle yaşlı yetişkinlerde düşme riskinin ve denge güveninin güçlü bir göstergesidir.</p></div><div class="data-table"><h4>Çift Destekli Yorumlama</h4><table><thead><tr><th>Çift Destek %</th><th>Yorumlama</th><th>Eylem</th></tr></thead><tbody><tr><td>&lt;%15</td><td>Çok düşük (koşmaya yaklaşan yürüyüş)</td><td>Güvenlik nedeniyle çok hızlı yürüyor olabilirsiniz</td></tr><tr class="highlight-row"><td><strong>%20-30</strong></td><td><strong>Normal, sağlıklı aralık</strong></td><td><strong>Optimum denge ve verimlilik</strong></td></tr><tr><td>%30-35</td><td>Yüksek, hafif endişe</td><td>Değişiklikleri izleyin, denge egzersizlerini düşünün</td></tr><tr class="warning-row"><td><strong>&gt;%35</strong></td><td><strong>Yüksek düşme riski göstergesi</strong></td><td><strong>Sağlık uzmanına danışın, denge eğitimine başlayın</strong></td></tr></tbody></table></div><p><strong>Çift desteğin yükselmesine ne sebep olur:</strong></p><ul><li>Düşme korkusu veya denge güveninin azalması</li><li>Nörolojik durumlar (Parkinson, felç, nöropati)</li><li>Kas zayıflığı (özellikle kalça abdüktörleri ve ayak bileği dorsifleksörleri)</li><li>Eklem ağrısı veya sertliği</li><li>Görme bozukluğu</li></ul><p><strong>Apple HealthKit metriği:</strong><code>walkingDoubleSupportPercentage</code>iPhone 8+ ve iOS 14+ ile pasif olarak ölçülmüştür. Bu ölçüm, Apple'ın Yürüyüş Dengesi değerlendirmesinin bir parçasıdır.</p></div><h3 id="asymmetry">5.Yürüyüş Asimetrisi</h3><div class="metric-detail"><p><strong>Nedir:</strong>Sol ve sağ adım süreleri, adım uzunlukları veya temas süreleri arasındaki fark</p><div class="science-box"><h4>Yürüyüş Simetri İndeksi (GSI) Formülü</h4><p>Yürüyüş asimetrisini ölçmek için standart formül:</p><div class="formula-box"><p><strong>GSI = |Sağ - Sol| / [0,5 × (Sağ + Sol)] × 100</strong></p></div><p>Örnek: Sağ adım süresi = 520 ms ve sol adım süresi = 480 ms ise:</p><p>GSI = |520 - 480| / [0,5 × (520 + 480)] × 100 = 40 / 500 × 100 =<strong>%8 asimetri</strong></p></div><div class="data-table"><h4>Asimetri Sınıflandırması</h4><table><thead><tr><th>Asimetri %</th><th>Sınıflandırma</th><th>Klinik Önem</th></tr></thead><tbody><tr class="highlight-row"><td><strong>&lt;%2-3</strong></td><td><strong>Normal, simetrik</strong></td><td>Sağlıklı yürüyüş modeli</td></tr><tr><td>%3-5</td><td>Hafif asimetri</td><td>Monitör, küçük bir zayıflık veya alışkanlığın işareti olabilir</td></tr><tr><td>%5-10</td><td>Orta derecede asimetri</td><td>Profesyonel değerlendirmeyi düşünün</td></tr><tr class="warning-row"><td><strong>&gt;%10</strong></td><td><strong>Klinik olarak anlamlı</strong></td><td><strong>Muhtemelen yaralanma, zayıflık veya nörolojik soruna işaret eder</strong></td></tr></tbody></table></div><p><strong>Asimetrinin yaygın nedenleri:</strong></p><ul><li><strong>Önceki yaralanma tazminatı:</strong>Sakatlıktan sonra tek bacağı tercih etmek</li><li><strong>Kas dengesizlikleri:</strong>Bir tarafta kalça, diz veya ayak bileğinde zayıflık</li><li><strong>Bacak uzunluğu farklılığı:</strong>Bacak uzunluğunda gerçek veya fonksiyonel fark</li><li><strong>Ortak sorunlar:</strong>Artrit, kalça/diz/ayak bileğinde azalmış ROM</li><li><strong>Nörolojik durumlar:</strong>Felç, Parkinson, MS</li><li><strong>Ayakkabı:</strong>Düzensiz ayakkabı aşınması veya yanlış uyum</li></ul><p><strong>Apple HealthKit metriği:</strong><code>walkingAsymmetryPercentage</code>sol ve sağ adım süreleri arasındaki farkı ölçer. Değerler &gt;%10 bildirimleri tetikler.</p><div class="tip-box"><h4>💡 Simetriyi İyileştirme</h4><ul><li>Tek bacak denge egzersizleri (bacak başına 30-60 saniye)</li><li>Tek taraflı kuvvet antrenmanı (zayıf tarafa odaklanın)</li><li>Görsel/işitsel geri bildirimle yürüyüş eğitimi</li><li>Altta yatan yaralanmaları veya durumları ele alın</li><li>Asimetri &gt;%5 devam ederse profesyonel yürüyüş değerlendirmesi</li></ul></div></div><h3 id="hiking-speed">6. Yürüyüş Hızı</h3><div class="metric-detail"><p><strong>Nedir:</strong>Genellikle saniyede metre (m/s) veya saatte mil (mph) cinsinden ölçülen ortalama yürüyüş hızınız</p><div class="key-insight"><p><strong>Hız neden "hayati bir işarettir":</strong>2011 yılında 34.485 yaşlı yetişkin üzerinde yapılan dönüm noktası niteliğindeki bir JAMA çalışması, yürüyüş hızının mortalitenin en güçlü tek belirleyicilerinden biri olduğunu ve bunun klinik bir "yaşam belirtisi" olarak tanımlanmasını kazandığını buldu (Studenski ve ark., 2011).</p></div><div class="data-table"><h4>Yürüyüş Hızı Sağlık Karşılaştırmaları</h4><table><thead><tr><th>Hız</th><th>Sınıflandırma</th><th>Sağlık Göstergesi</th></tr></thead><tbody><tr class="warning-row"><td><strong>&lt;0,6 m/s (1,3 mil/saat)</strong></td><td><strong>Ciddi derecede engelli</strong></td><td>Yüksek ölüm riski, sağlık uzmanına danışın</td></tr><tr><td>0,6-0,8 m/s (1,3-1,8 mil/saat)</td><td>Hareket kabiliyeti sınırlı</td><td>Artan sağlık riskleri, işlevsel sınırlamalar</td></tr><tr><td>0,8-1,0 m/s (1,8-2,2 mil/saat)</td><td>Normalin altında</td><td>Orta risk, iyileştirme fırsatı</td></tr><tr class="highlight-row"><td><strong>1,0-1,3 m/s (2,2-2,9 mil/saat)</strong></td><td><strong>İyi fonksiyonel sağlık</strong></td><td>Normal sağlık göstergeleri</td></tr><tr><td>1,3-1,5 m/s (2,9-3,4 mil/saat)</td><td>Ortalamanın üstünde</td><td>Mükemmel sağlık göstergesi, düşük ölüm riski</td></tr><tr><td>&gt;1,5 m/s (&gt;3,4 mil/saat)</td><td>Fitness yürüyüşü</td><td>Atletik yetenek, çok düşük sağlık riskleri</td></tr></tbody></table></div><div class="science-box"><h4>Hız-Hayatta Kalma Gradyanı</h4><p>Araştırmalar gösteriyor ki<strong>Yürüyüş hızındaki her 0,1 m/s'lik artış, ölüm riskinde ~%12'lik bir azalma ile ilişkilidir</strong>. Bu ilişki popülasyonlar arasında oldukça doğrusaldır.</p></div><p><strong>Apple HealthKit metriği:</strong><code>walkingSpeed</code>iPhone hareket sensörlerinden hesaplanır (iPhone 8+ ile iOS 14+). Doğrulanmış çalışmalar, klinik süreli yürüyüş testleriyle r=0,86-0,91 arasında korelasyon göstermektedir.</p></div><h3 id="vertical-oscillation">7. Dikey Salınım</h3><div class="metric-detail"><p><strong>Nedir:</strong>Yürüyüş döngüsü sırasında kütle merkezinizin dikey yer değiştirmesi</p><p><strong>Normal aralık:</strong>4-8 cm dikey hareket</p><div class="data-table"><h4>Dikey Salınım Yorumu</h4><table><thead><tr><th>Salınım</th><th>Değerlendirme</th><th>Sonuç</th></tr></thead><tbody><tr><td>&lt;4 cm</td><td>Çok az (karışık yürüyüş)</td><td>Zayıflık, nörolojik sorunlar veya düşme korkusunu gösterebilir</td></tr><tr class="highlight-row"><td><strong>4-8cm</strong></td><td><strong>Normal, verimli aralık</strong></td><td>Optimum enerji tüketimi</td></tr><tr><td>&gt;8-10 cm</td><td>Aşırı (zıplayan yürüyüş)</td><td>Enerji israfı, verimsiz mekanik</td></tr></tbody></table></div><p><strong>Neden önemlidir:</strong>Aşırı dikey salınım, her adımda çok fazla "zıpladığınız" ve yer çekimine karşı savaşarak enerjinizi boşa harcadığınız anlamına gelir. Minimal salınım, Parkinson hastalığına veya düşme korkusuna bağlı ayak sürüyerek yürüme düzeninin göstergesi olabilir.</p><p><strong>Nasıl optimize edilir:</strong></p><ul><li>Yukarıya değil ileriye doğru ilerlemeye odaklanın</li><li>Ayak bileklerinden hafif öne eğilmeyi (2-5°) koruyun</li><li>Başınızı düz tutun ve gözlerinizi ileri doğru tutun</li><li>Adımlar arasında düzgün ağırlık aktarımı yapın</li></ul></div><h2 id="apple-metrics">Apple HealthKit Yürüyüş Metrikleri</h2><div class="tech-section"><p>Apple, iOS 14'te (2020) iPhone hareket sensörlerinden klinik düzeyde yürüyüş verilerini pasif olarak toplayan gelişmiş yürüyüş ölçümlerini kullanıma sundu. Bu metrikler<strong>araştırma düzeyindeki değerlendirmelere göre doğrulandı</strong>ve artık tıbbi araştırmalarda kullanılıyor.</p><h3>Yürüyüş Dengesi</h3><p>Apple'ın tescilli<strong>Yürüyüş Dengesi</strong>metrik, aşağıdakileri birleştiren bileşik bir ölçüdür:</p><ul><li>Yürüyüş hızı</li><li>Adım uzunluğu</li><li>Çift destek yüzdesi</li><li>Yürüyüş asimetrisi</li><li>Yürüyüş hızı değişkenliği</li><li>Adım uzunluğu değişkenliği</li></ul><div class="data-table"><h4>Yürüyüş Dengesi Sınıflandırması</h4><table><thead><tr><th>Sınıflandırma</th><th>Düşme Riski</th><th>Eylem</th></tr></thead><tbody><tr class="highlight-row"><td><strong>Tamam</strong></td><td>&lt;%1 yıllık düşme riski</td><td>Mevcut aktivite seviyesini koruyun</td></tr><tr><td><strong>Düşük</strong></td><td>Yıllık %1-5 düşme riski</td><td>Denge egzersizlerini düşünün, trendleri izleyin</td></tr><tr class="warning-row"><td><strong>Çok Düşük</strong></td><td>&gt;%5 yıllık düşme riski</td><td><strong>iPhone bildirimi gönderildi, sağlık uzmanına danışın</strong></td></tr></tbody></table></div><h3>6 Dakikalık Yürüyüş Testi (6DYT)</h3><p>Apple Watch Series 3+ tahmin edebilir<strong>6 Dakikalık Yürüyüş Test Mesafesi</strong>geçmiş yürüyüş verilerinden.6DYT fonksiyonel egzersiz kapasitesinin altın standart klinik değerlendirmesidir.</p><div class="science-box"><h4>6DYT Yorumlama</h4><ul><li><strong>&lt;350 metre:</strong>Önemli işlevsel sınırlama</li><li><strong>350-450 metre:</strong>Orta sınırlama</li><li><strong>450-550 metre:</strong>Hafif kısıtlılık veya yaşlı yetişkin</li><li><strong>&gt;550 metre:</strong>İyi fonksiyonel kapasite</li><li><strong>&gt;650 metre:</strong>Mükemmel kapasite</li></ul><p><em>Not: Değerler yaşa, cinsiyete ve boya göre değişir. Bunlar genel kurallardır.</em></p></div><h3>Veri Gizliliği</h3><p>Tüm Apple HealthKit yürüyüş ölçümleri şunlardır:</p><ul><li><strong>Cihazda işlendi:</strong>Hiçbir zaman Apple sunucularına gönderilmedi</li><li><strong>Kullanıcı kontrollü:</strong>Verilerinize hangi uygulamaların erişebileceğine siz karar verirsiniz</li><li><strong>Şifrelenmiş:</strong>iOS şifrelemesi ile korunmaktadır</li><li><strong>Silinebilir:</strong>Tüm sağlık verilerini silmek için tam kontrol</li></ul></div><h2 id="interpreting">Yürüyüş Analizinizi Yorumlama</h2><h3>Sağlıklı Yürüyüşün Belirtileri</h3><ul><li><strong>Kadans:</strong>Amaçlı yürüyüş sırasında ≥100 spm</li><li><strong>Hız:</strong>≥1,0 m/s (2,2 mph) alışılmış yürüyüş hızı</li><li><strong>Simetri:</strong>Sol ve sağ arasında &lt;%3 asimetri</li><li><strong>Çift destek:</strong>Yürüyüş döngüsünün %20-30'u</li><li><strong>Tutarlılık:</strong>Birden fazla gün boyunca benzer ölçümler</li><li><strong>Yürüyüş Dengesi:</strong>"Tamam" sınıflandırması</li></ul><h3>Dikkat Gerektiren Uyarı İşaretleri</h3><div class="warning-box"><ul><li><strong>Ani asimetri artışı:</strong>Akut yaralanmayı gösterebilir</li><li><strong>Hızın zamanla azalması:</strong>Fonksiyonel düşüş, özellikle yılda &gt;0,05 m/s ise</li><li><strong>Çift desteğin artırılması:</strong>Denge güveninin veya gücünün azalması</li><li><strong>Yürüyüş Dengesi "Düşük" veya "Çok Düşük"e düşer:</strong>Artan düşme riski</li><li><strong>Kalıcı asimetri &gt;%10:</strong>Profesyonel değerlendirmeyi garanti eder</li><li><strong>Hız &lt;0,8 m/s:</strong>Yüksek sağlık riski, doktora danışın</li></ul></div><h2 id="improving">Yürüyüşünüzü Nasıl Geliştirebilirsiniz</h2><h3>Kadans Eğitimi</h3><p><strong>Hedef:</strong>Yürüyüşler sırasında ≥100 spm'ye ulaşın</p><p><strong>Yöntemler:</strong></p><ul><li>100-120 BPM'ye ayarlanmış metronom uygulamasını kullanın</li><li>100-120 BPM tempoyla müziğe yürüyüş</li><li>"Hızlı ayak" alıştırmaları yapın: kısa, hızlı adımlar</li><li>Adım uzunluğuna değil devir hızına odaklanın</li><li>Tempo hedefin altına düştüğünde Apple Watch uyarılarını ayarlayın</li></ul><h3>Simetriyi İyileştirme</h3><p><strong>Alıştırmalar:</strong></p><ul><li><strong>Tek bacaklı standlar:</strong>Bacak başına 30-60 saniye, gözler açık ve kapalı</li><li><strong>Tek taraflı güç:</strong>Tek bacakla deadlift, step-up, hamle</li><li><strong>Denge tahtası eğitimi:</strong>Wobble tahtası veya BOSU topu</li><li><strong>Ayna yürüyüşü:</strong>Farklılıkları belirlemek için yansımanızı izleyerek yürüyüşe çıkın</li><li><strong>Video analizi:</strong>Yürüyüş yaparken kendinizi önden ve arkadan filme alın</li></ul><h3>Yürüyüş Hızını Güvenle Artırma</h3><p><strong>Aşamalı yaklaşım:</strong></p><ol><li><strong>Önce tempoyu artırın:</strong>Adım uzunluğuna odaklanmadan önce 110-120 rpm'ye kadar çalışın</li><li><strong>Aralıklı eğitim:</strong>Alternatif 2 dakika hızlı + 2 dakika normal tempo</li><li><strong>Güç antrenmanı:</strong>Kalça ve ayak bileği kuvveti doğrudan yürüyüş hızını artırır</li><li><strong>Kademeli ilerleme:</strong>Hızı ayda ~0,1 m/s artırın</li></ol><h3>Çift Desteğin Azaltılması (yükseltilmişse)</h3><p><strong>Denge egzersizleri:</strong></p><ul><li>Tandem yürüyüş (topuktan ayağa)</li><li>Kol hareketleri ile tek ayaklı duruşlar</li><li>Başlangıçta daha geniş destek tabanına sahip yürüyüş modeli egzersizleri</li><li>Kuvvet antrenmanı: kalça abdüktörleri, ayak bileği dorsifleksörleri, göbek</li><li>Tai Chi veya denge odaklı grup dersleri</li></ul><h2 id="special-populations">Özel Popülasyonlar İçin Yürüyüş Analizi</h2><h3>Yaşlı Yetişkinler (65+)</h3><p><strong>Öncelik ölçümleri:</strong></p><ul><li><strong>Yürüyüş hızı:</strong>Yıllık olarak takip edin; düşüş &gt;0,05 m/s/yıl riske işaret eder</li><li><strong>Çift destek:</strong>Düşme riskini gösteren artışları izleyin</li><li><strong>Yürüyüş Dengesi:</strong>"Düşük" veya "Çok Düşük" bildirimlerini etkinleştirin</li><li><strong>Asimetri:</strong>Gelişmekte olan nörolojik sorunların göstergesi olabilir</li></ul><p><strong>Hedefler:</strong></p><ul><li>Hızı koruyun ≥1,0 ​​m/s</li><li>Çifte desteği koruyun &lt;%30</li><li>Yürüyüş Dengesi "Tamam"</li><li>Asimetri &lt;%5</li></ul><h3>Rehabilitasyon Hastaları</h3><p><strong>Kurtarma ilerlemesini takip edin:</strong></p><ul><li><strong>Simetri normalizasyonu:</strong>&lt;%3 asimetriye dönüş hedefi</li><li><strong>Hız kurtarma:</strong>Yaralanma öncesi temel çizgiye yönelik haftalık iyileştirmeleri takip edin</li><li><strong>Kadans tutarlılığı:</strong>≥100 spm'yi sürdürebilme yeteneği normal aktiviteye hazır olunduğunu gösterir</li><li><strong>Tazminat kalıpları:</strong>Yeni asimetrilerin gelişimini izleyin</li></ul><h3>Fitness Yürüyüşçüleri ve Sporcular</h3><p><strong>Performans hedefleri:</strong></p><ul><li><strong>Kadans:</strong>Fitness yürüyüşü için 120-140 spm; Yarış yürüyüşü için 140-180 spm</li><li><strong>Hız:</strong>Kondisyon için &gt;1,5 m/s (3,4 mil/saat); Rekabetçi için &gt;2,0 m/s (4,5 mil/saat)</li><li><strong>Simetri:</strong>&gt;%97 (çok düşük asimetri)</li><li><strong>Çift destek:</strong>Verimlilik için %15-20'ye kadar azaltın</li></ul><h2 id="limitations">Teknoloji Doğruluğu ve Sınırlamalar</h2><h3>Tüketici Cihazları Neleri İyi Yapıyor</h3><ul><li><strong>Adım sayma:</strong>Araştırma adım ölçerlerine kıyasla %95-99 doğruluk</li><li><strong>Kadans:</strong>±2-3 spm hatası</li><li><strong>Yürüyüş hızı:</strong>r=0,86-0,91 klinik testlerle korelasyon</li><li><strong>Trend tespiti:</strong>Zaman içindeki değişiklikleri izlemek için mükemmel</li></ul><h3>Anlaşılması Gereken Sınırlamalar</h3><ul><li><strong>Tanısal değil:</strong>Tüketici cihazları tıbbi teşhis değil, tarama aracıdır</li><li><strong>Yerleştirme önemlidir:</strong>iPhone cepte/çantada taşınmalıdır; Bilekte Apple Watch</li><li><strong>İç mekan ve dış mekan:</strong>GPS doğruluğu dış mekan ölçümlerini etkiler</li><li><strong>Bireysel varyasyon:</strong>"Normal" aralıklar nüfus ortalamalarıdır</li><li><strong>Klinik yürüyüş laboratuvarlarının yerini alamaz:</strong>Ayrıntılı 3D kinematik, kuvvet plakaları için EMG gerekli</li></ul><h3>Profesyonel Yürüyüş Analizine Ne Zaman Başvurulmalı</h3><ul><li>Kalıcı asimetri &gt;%10</li><li>Yürüyüş hızı &lt;0,8 m/s, bilinmeyen bir neden olmadan</li><li>Sık düşmeler veya düşmeye yakın düşmeler</li><li>Yürüyüş sırasında veya sonrasında kronik ağrı</li><li>Yürüyüş ölçümlerinde ani değişiklikler</li><li>Nörolojik semptomlar (uyuşma, karıncalanma, koordinasyon sorunları)</li></ul><h2 id="next-steps">Sonraki Adımlar</h2><div class="next-steps-grid"><div class="next-step-card"><h3>Yürüyüş Bölgeleri</h3><p>Sağlık ve fitness için en uygun yoğunluk bölgelerinde antrenman yapmak için tempoyu nasıl kullanacağınızı öğrenin.</p><a class="btn btn-secondary" href="/tr/walking-zones/">Bölgeler Hakkında Bilgi Edinin →</a></div><div class="next-step-card"><h3>Adım Mekaniği</h3><p>Yürüyüş biyomekaniği, duruş, kol sallama ve ayak vuruşu modellerini derinlemesine inceleyin.</p><a class="btn btn-secondary" href="/tr/stride-mechanics/">Mekaniği Keşfedin →</a></div><div class="next-step-card"><h3>Bilimsel Araştırma</h3><p>Yürüyüş analizini ve yürüyüş ölçümlerini destekleyen bilimsel kanıtları inceleyin.</p><a class="btn btn-secondary" href="/tr/research/">Araştırmayı Görüntüle →</a></div><div class="next-step-card"><h3>Tam Kaynakça</h3><p>Yayınlara doğrudan bağlantılar içeren hakemli referanslara erişin.</p><a class="btn btn-secondary" href="/tr/bibliography/">Kaynakçayı Görüntüle →</a></div></div></div><aside class="sidebar"><div class="toc"><h3>İçindekiler</h3><ul><li><a href="#what-is-gait">Yürüyüş Analizi Nedir?</a></li><li><a href="#key-metrics">Temel Metrikler</a><ul><li><a href="#cadence">Ritim</a></li><li><a href="#stride-length">Adım Uzunluğu</a></li><li><a href="#ground-contact">Zemin Teması</a></li><li><a href="#double-support">Çift Destek</a></li><li><a href="#asymmetry">Asimetri</a></li><li><a href="#hiking-speed">Yürüyüş Hızı</a></li><li><a href="#vertical-oscillation">Dikey Salınım</a></li></ul></li><li><a href="#apple-metrics">Apple HealthKit Metrikleri</a></li><li><a href="#interpreting">Tercümanlık Analizi</a></li><li><a href="#improving">Yürüyüşünüzü İyileştirme</a></li><li><a href="#special-populations">Özel Popülasyonlar</a></li><li><a href="#limitations">Doğruluk ve Sınırlamalar</a></li><li><a href="#next-steps">Sonraki Adımlar</a></li></ul></div><div class="cta-box"><h3>Yürüyüşünüzü Analiz Edin</h3><p>Yürüyüş mekaniğinizi Hike Analytics'i kullanarak bilime dayalı ölçümlerle takip edin.</p><a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Uygulamayı İndir</a></div><div class="info-box"><h4>📊 Temel Çözüm</h4><p><strong>'ye odaklanın ritim ≥100 spm</strong>ve<strong>hız ≥1,0 ​​m/s</strong>birincil hedefleriniz olarak. Bu iki ölçüm sağlık sonuçlarının en güçlü belirleyicileridir.</p></div></aside></div></div></section><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">AnalyticsZone Team</span>
-          </span>
-        </h3>
-        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">AnalyticsZone Team</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="gait-analysis">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Yürüyüşçüler için Yürüyüş Analizi - Adım Simetrisi, Kadans</h2>
-    <p class="ai-citation-answer">Kapsamlı yürüyüş analizi kılavuzu. Adım uzunluğu, tempo, simetri ve denge ölçümlerini anlayın. Yürüyüş verimliliğini artırın ve yaralanmaları önleyin.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-11</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>yürüyüş analizi · adım simetrisi · yürüyüş temposu · yürüyüş dengesi ölçümleri · yürüyüş biyomekaniği</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../tr/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="gait-analysis"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Yürüyüş Analizi: Kadans, Adım, Simetri ve Denge</h2><p class="ai-citation-answer">Yürüyüş analizi, yürüyüş düzeninizin ritim, zamanlama, simetri ve denge açısından nasıl organize olduğunu açıklar. Verimliliği artırmak, bozulmayı fark etmek veya aynı temponun neden farklı hissettirdiğini anlamak için en faydalı araçlardan biridir.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>yürüyüş analizi · yürüyüş gait analizi · adım simetrisi · kadans · denge ölçümleri</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../tr/bibliography/">
           
           Kaynakça
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">İndirmek</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="App Store&#39;dan indirin">
-                        <img src="../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">İndirmek</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="App Store&#39;dan indirin"><img src="../../assets/images/badge-app-store.svg"
                             alt="App Store&#39;dan indirin" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Google Play&#39;den edinin">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Google Play&#39;den edinin"><img src="../../assets/images/badge-google-play.svg"
                             alt="Google Play&#39;den edinin" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Mevcut</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Mevcut</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link active"
+                </a><a href="/tr/" class="lang-link active"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. Her hakkı saklıdır
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/tr/privacy/">Mahremiyet</a></li>
-                <li><a href="/tr/terms/">Şartlar</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Bu web sitesi deneyiminizi geliştirmek için çerezleri kullanır.</p>
-            <a href="/tr/privacy/" class="text-sm">Daha fazla bilgi edin</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Reddetmek</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Kabul etmek</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/tr/privacy/">Mahremiyet</a></li><li><a href="/tr/terms/">Şartlar</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Bu web sitesi deneyiminizi geliştirmek için çerezleri kullanır.</p><a href="/tr/privacy/" class="text-sm">Daha fazla bilgi edin</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Reddetmek</button><button id="cookie-accept" class="btn btn-primary btn-small">Kabul etmek</button></div></div></div><script src="../../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

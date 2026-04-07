@@ -1,251 +1,61 @@
-<!DOCTYPE html>
-<html lang="ru" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Руководство по тренировочной нагрузке для пешего туризма:</title>
-  <meta name="description" content="Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="Оценка стресса в походе, Калькулятор WSS, туристическая тренировочная нагрузка, еженедельный объем походов, походы, фитнес-отслеживание">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/ru/training-load/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-11T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://hike.analyticszone.app/ru/training-load/">
-  <meta property="og:title" content="Руководство по тренировочной нагрузке для пешего туризма:">
-  <meta property="og:description" content="Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления.">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/ru/training-load/">
-  <meta name="twitter:title" content="Руководство по тренировочной нагрузке для пешего туризма:">
-  <meta name="twitter:description" content="Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления.">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/training-load/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/training-load/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/training-load/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/training-load/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/training-load/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/training-load/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/training-load/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/training-load/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/training-load/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/training-load/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/training-load/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/training-load/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/training-load/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/training-load/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/training-load/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/training-load/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/training-load/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/training-load/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/training-load/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/training-load/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/training-load/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/training-load/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/training-load/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/training-load/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/training-load/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/training-load/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/training-load/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/training-load/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/training-load/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/training-load/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/training-load/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/training-load/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/training-load/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/training-load/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/training-load/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/training-load/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/training-load/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/training-load/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/training-load/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/training-load/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/training-load/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/training-load/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/training-load/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/training-load/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/training-load/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/training-load/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/training-load/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/training-load/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/training-load/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/training-load/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/training-load/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/training-load/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/training-load/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/training-load/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/training-load/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/training-load/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="ru" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>Руководство по тренировочной нагрузке для пешего туризма:</title><meta name="description" content="Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="Оценка стресса в походе, Калькулятор WSS, туристическая тренировочная нагрузка, еженедельный объем походов, походы, фитнес-отслеживание"><link rel="canonical" href="https://hike.analyticszone.app/ru/training-load/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-11T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://hike.analyticszone.app/ru/training-load/"><meta property="og:title" content="Руководство по тренировочной нагрузке для пешего туризма:"><meta property="og:description" content="Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления."><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/ru/training-load/"><meta name="twitter:title" content="Руководство по тренировочной нагрузке для пешего туризма:"><meta name="twitter:description" content="Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления."><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/training-load/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/training-load/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/training-load/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/training-load/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/training-load/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/training-load/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/training-load/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/training-load/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/training-load/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/training-load/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/training-load/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/training-load/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/training-load/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/training-load/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/training-load/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/training-load/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/training-load/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/training-load/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/training-load/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/training-load/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/training-load/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/training-load/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/training-load/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/training-load/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/training-load/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/training-load/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/training-load/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/training-load/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/training-load/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/training-load/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/training-load/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/training-load/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/training-load/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/training-load/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/training-load/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/training-load/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/training-load/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/training-load/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/training-load/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/training-load/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/training-load/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/training-load/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/training-load/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/training-load/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/training-load/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/training-load/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/training-load/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/training-load/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/training-load/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/training-load/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/training-load/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/training-load/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/training-load/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/training-load/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/training-load/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/training-load/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -504,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -552,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -564,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "ru"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -583,12 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -617,11 +402,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -664,14 +445,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -696,17 +470,7 @@ img[width][height] {
     "@id": "https://hike.analyticszone.app/ru/training-load/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -720,1989 +484,431 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Перейти к содержимому</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/ru/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/ru/" 
+  </script></head><body><a href="#main-content" class="skip-link">Перейти к содержимому</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/ru/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/ru/" 
                                 aria-current="">
                                 Дом
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ru/getting-started/" class="nav-label">Учиться</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ru/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/ru/getting-started/" class="nav-label">Учиться</a><ul class="submenu"><li><a href="/ru/getting-started/" 
                                         aria-current="">
                                         Начиная
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/walking-zones/" 
+                                    </a></li><li><a href="/ru/walking-zones/" 
                                         aria-current="">
                                         Зоны для пеших прогулок
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/gait-analysis/" 
+                                    </a></li><li><a href="/ru/gait-analysis/" 
                                         aria-current="">
                                         Анализ походки
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/training-load/" class="active" 
+                                    </a></li><li><a href="/ru/training-load/" class="active" 
                                         aria-current="page">
                                         Тренировочная нагрузка
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/wss-calculator/" 
+                                    </a></li><li><a href="/ru/wss-calculator/" 
                                         aria-current="">
                                         Калькулятор ВСС
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ru/research/" class="nav-label">Наука</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ru/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ru/research/" class="nav-label">Наука</a><ul class="submenu"><li><a href="/ru/research/" 
                                         aria-current="">
                                         Исследовать
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/formulas/" 
+                                    </a></li><li><a href="/ru/formulas/" 
                                         aria-current="">
                                         Формулы
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/gait-efficiency/" 
+                                    </a></li><li><a href="/ru/gait-efficiency/" 
                                         aria-current="">
                                         Эффективность походки
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/stride-mechanics/" 
+                                    </a></li><li><a href="/ru/stride-mechanics/" 
                                         aria-current="">
                                         Механика шага
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/walking-vs-running/" 
+                                    </a></li><li><a href="/ru/walking-vs-running/" 
                                         aria-current="">
                                         Поход против бега
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/benchmarks/" 
+                                    </a></li><li><a href="/ru/benchmarks/" 
                                         aria-current="">
                                         Тесты
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/bibliography/" 
+                                    </a></li><li><a href="/ru/bibliography/" 
                                         aria-current="">
                                         Библиография
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ru/for-health/" class="nav-label">Для тебя</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ru/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ru/for-health/" class="nav-label">Для тебя</a><ul class="submenu"><li><a href="/ru/for-health/" 
                                         aria-current="">
                                         Для здоровья
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/for-fitness/" 
+                                    </a></li><li><a href="/ru/for-fitness/" 
                                         aria-current="">
                                         Для фитнеса
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/for-seniors/" 
+                                    </a></li><li><a href="/ru/for-seniors/" 
                                         aria-current="">
                                         Для пожилых людей
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/for-rehabilitation/" 
+                                    </a></li><li><a href="/ru/for-rehabilitation/" 
                                         aria-current="">
                                         Для реабилитации
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/ru/cadence-calculator/" class="nav-label">Инструменты</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/ru/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/ru/cadence-calculator/" class="nav-label">Инструменты</a><ul class="submenu"><li><a href="/ru/cadence-calculator/" 
                                         aria-current="">
                                         Калькулятор частоты вращения педалей
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/gait-assessment/" 
+                                    </a></li><li><a href="/ru/gait-assessment/" 
                                         aria-current="">
                                         Оценка походки
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/ru/vo2max-calculator/" 
+                                    </a></li><li><a href="/ru/vo2max-calculator/" 
                                         aria-current="">
                                         Калькулятор VO₂max
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/ru/contact/" 
+                                    </a></li></ul></li><li><a href="/ru/contact/" 
                                 aria-current="">
                                 Контакт
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Выберите язык">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Выберите язык"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" selected>
+                        </option><option value="ru" selected>
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Переключить меню"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/ru/">Дом</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/ru/getting-started/">Учиться</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">Тренировочная нагрузка</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Переключить меню"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/ru/">Дом</a></li><li><a href="/ru/getting-started/">Учиться</a></li><li><span aria-current="page">Тренировочная нагрузка</span></li></ol></div></nav><main id="main-content" class="main-content">
     
     Руководство по тренировочной нагрузке
-<section class="guide-hero">
-<div class="container">
-<div class="breadcrumb">
-<a href="/ru/">Главная</a>/<a href="/ru/#learn">Узнать</a>/ Тренировочная нагрузка</div>
-<h1>Управление нагрузкой для пеших прогулок</h1>
-<p class="lead">Научный подход к балансированию тренировочного стимула, адаптации и восстановления</p>
-</div>
-</section>
-<section class="guide-content">
-<div class="container">
-<div class="content-grid">
-<div class="main-content">
+<section class="guide-hero"><div class="container"><div class="breadcrumb"><a href="/ru/">Главная</a>/<a href="/ru/#learn">Узнать</a>/ Тренировочная нагрузка</div><h1>Управление нагрузкой для пеших прогулок</h1><p class="lead">Научный подход к балансированию тренировочного стимула, адаптации и восстановления</p></div></section><section class="guide-content"><div class="container"><div class="content-grid"><div class="main-content">
 Введение
-<h2 id="intro">Что такое тренировочная нагрузка?</h2>
-<p><strong>Тренировочная нагрузка</strong>определяет количественный совокупный физиологический стресс, который испытывает ваше тело во время пеших тренировок. Он объединяет три ключевых аспекта:</p>
-<ol>
-<li><strong>Продолжительность:</strong>Как долго вы путешествуете</li>
-<li><strong>Интенсивность:</strong>Насколько интенсивно вы ходите (каденс, частота сердечных сокращений, скорость)</li>
-<li><strong>Частота:</strong>Как часто вы путешествуете пешком</li>
-</ol>
-<p>Правильное управление тренировочной нагрузкой позволяет последовательно совершенствоваться, сводя к минимуму риск травм и перетренированности. В отличие от обычных походов с целью передвижения,<strong>тренировочно-ориентированный поход</strong>требует систематического прогрессирования и планирования восстановления.</p>
-<div class="key-finding">
-<strong>Исследование:</strong>Взаимосвязь между тренировочной нагрузкой и адаптацией представляет собой перевернутую U-образную кривую: слишком малая нагрузка не приводит к адаптации, оптимальная нагрузка способствует улучшению, а чрезмерная нагрузка приводит к перетренированности и травмам (Soligard et al., 2016).</div>
+<h2 id="intro">Что такое тренировочная нагрузка?</h2><p><strong>Тренировочная нагрузка</strong>определяет количественный совокупный физиологический стресс, который испытывает ваше тело во время пеших тренировок. Он объединяет три ключевых аспекта:</p><ol><li><strong>Продолжительность:</strong>Как долго вы путешествуете</li><li><strong>Интенсивность:</strong>Насколько интенсивно вы ходите (каденс, частота сердечных сокращений, скорость)</li><li><strong>Частота:</strong>Как часто вы путешествуете пешком</li></ol><p>Правильное управление тренировочной нагрузкой позволяет последовательно совершенствоваться, сводя к минимуму риск травм и перетренированности. В отличие от обычных походов с целью передвижения,<strong>тренировочно-ориентированный поход</strong>требует систематического прогрессирования и планирования восстановления.</p><div class="key-finding"><strong>Исследование:</strong>Взаимосвязь между тренировочной нагрузкой и адаптацией представляет собой перевернутую U-образную кривую: слишком малая нагрузка не приводит к адаптации, оптимальная нагрузка способствует улучшению, а чрезмерная нагрузка приводит к перетренированности и травмам (Soligard et al., 2016).</div>
 Пик-30 Каденс
-<h2 id="peak30">Пик-30: революционная метрика</h2>
-<p>Недавние исследования выявили<strong>Пик-30 каденса</strong>как мощный предиктор последствий для здоровья и риска смертности, независимо от общего количества ежедневных шагов.</p>
-<h3>Что такое каденция Peak-30?</h3>
-<p><strong>Пик-30 каденса</strong>— это средняя частота шагов (шагов в минуту) во время занятий<strong>лучшие 30 минут подряд</strong>похода за день. Этот показатель отражает вашу способность совершать целенаправленные и быстрые пешие прогулки.</p>
-<div class="key-finding">
-<strong>Прорывное исследование:</strong>Дель Посо-Круз и др. (2022) проанализировали 78 500 участников Биобанка Великобритании и обнаружили, что каденция Peak-30 независимо предсказывает смертность от всех причин и риск сердечно-сосудистых заболеваний даже после контроля общего количества ежедневных шагов.</div>
-<h3>Пороговые значения частоты вращения педалей Пик-30 и результаты для здоровья</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Пик-30 Каденс</th>
-<th>Классификация</th>
-<th>Риск смертности</th>
-<th>Состояние здоровья</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;60 сп/мин</td>
-<td>Очень низкий</td>
-<td>Ссылка (высшая)</td>
-<td>Сидячий образ жизни</td>
-</tr>
-<tr>
-<td>60-79 шт./мин</td>
-<td>Низкий</td>
-<td>~15% снижение риска</td>
-<td>Повседневный поход</td>
-</tr>
-<tr>
-<td>80-99 сп/мин</td>
-<td>Умеренный</td>
-<td>~30% снижение риска</td>
-<td>Регулярные походы</td>
-</tr>
-<tr>
-<td>100-109 сп/мин</td>
-<td>Бодрый</td>
-<td>~40 % снижение риска</td>
-<td>Фитнес-ориентированный</td>
-</tr>
-<tr>
-<td>≥110 вспышек в минуту</td>
-<td>Очень оживленный</td>
-<td>~50 % снижение риска</td>
-<td>Высокая физическая подготовка</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Ключевая идея:</strong>Пиковая частота вращения 30 ≥100 ударов в минуту соответствует<strong>физическая активность от умеренной до высокой</strong>(MVPA) и представляет собой порог существенной пользы для здоровья.</p>
-<h3>Последствия обучения</h3>
-<p>Каденция Peak-30 дает действенные рекомендации по тренировкам:</p>
-<ul>
-<li><strong>Постановка цели:</strong>Частота вращения Target Peak-30: 100+ выстрелов в минуту не менее 5 дней в неделю</li>
-<li><strong>Дизайн тренировки:</strong>Включите хотя бы одну 30-минутную активную прогулку в ежедневные походы</li>
-<li><strong>Отслеживание прогресса:</strong>Следите за увеличением частоты вращения педалей Peak-30 по мере улучшения физической формы</li>
-<li><strong>Назначение интенсивности:</strong>Используйте зоны частоты вращения педалей, а не HR для более практического обучения</li>
-</ul>
+<h2 id="peak30">Пик-30: революционная метрика</h2><p>Недавние исследования выявили<strong>Пик-30 каденса</strong>как мощный предиктор последствий для здоровья и риска смертности, независимо от общего количества ежедневных шагов.</p><h3>Что такое каденция Peak-30?</h3><p><strong>Пик-30 каденса</strong>— это средняя частота шагов (шагов в минуту) во время занятий<strong>лучшие 30 минут подряд</strong>похода за день. Этот показатель отражает вашу способность совершать целенаправленные и быстрые пешие прогулки.</p><div class="key-finding"><strong>Прорывное исследование:</strong>Дель Посо-Круз и др. (2022) проанализировали 78 500 участников Биобанка Великобритании и обнаружили, что каденция Peak-30 независимо предсказывает смертность от всех причин и риск сердечно-сосудистых заболеваний даже после контроля общего количества ежедневных шагов.</div><h3>Пороговые значения частоты вращения педалей Пик-30 и результаты для здоровья</h3><div class="data-table"><table><thead><tr><th>Пик-30 Каденс</th><th>Классификация</th><th>Риск смертности</th><th>Состояние здоровья</th></tr></thead><tbody><tr><td>&lt;60 сп/мин</td><td>Очень низкий</td><td>Ссылка (высшая)</td><td>Сидячий образ жизни</td></tr><tr><td>60-79 шт./мин</td><td>Низкий</td><td>~15% снижение риска</td><td>Повседневный поход</td></tr><tr><td>80-99 сп/мин</td><td>Умеренный</td><td>~30% снижение риска</td><td>Регулярные походы</td></tr><tr><td>100-109 сп/мин</td><td>Бодрый</td><td>~40 % снижение риска</td><td>Фитнес-ориентированный</td></tr><tr><td>≥110 вспышек в минуту</td><td>Очень оживленный</td><td>~50 % снижение риска</td><td>Высокая физическая подготовка</td></tr></tbody></table></div><p><strong>Ключевая идея:</strong>Пиковая частота вращения 30 ≥100 ударов в минуту соответствует<strong>физическая активность от умеренной до высокой</strong>(MVPA) и представляет собой порог существенной пользы для здоровья.</p><h3>Последствия обучения</h3><p>Каденция Peak-30 дает действенные рекомендации по тренировкам:</p><ul><li><strong>Постановка цели:</strong>Частота вращения Target Peak-30: 100+ выстрелов в минуту не менее 5 дней в неделю</li><li><strong>Дизайн тренировки:</strong>Включите хотя бы одну 30-минутную активную прогулку в ежедневные походы</li><li><strong>Отслеживание прогресса:</strong>Следите за увеличением частоты вращения педалей Peak-30 по мере улучшения физической формы</li><li><strong>Назначение интенсивности:</strong>Используйте зоны частоты вращения педалей, а не HR для более практического обучения</li></ul>
 Оживленные приступы
-<h2 id="brisk-bouts">Оживленные приступы: качество важнее количества</h2>
-<p>А<strong>оживленный бой</strong>— это непрерывный период ходьбы со скоростью ≥100 шагов в минуту (порог умеренной интенсивности), продолжающийся не менее 10 минут без падения ниже порога частоты вращения педалей более чем на 1-2 минуты.</p>
-<h3>Научное обоснование</h3>
-<p>Рекомендации США по физической активности 2018 года устранили предыдущее требование о том, чтобы аэробная активность происходила в виде приступов продолжительностью не менее 10 минут. Однако исследования показывают, что<strong>продолжительные оживленные приступы</strong>предоставляют уникальные преимущества:</p>
-<ul>
-<li><strong>Сердечно-сосудистая адаптация:</strong>Устойчивое повышение ЧСС способствует улучшению аэробных показателей</li>
-<li><strong>Метаболическая эффективность:</strong>Более 10 минут позволяют метаболическим путям полностью задействоваться</li>
-<li><strong>Развитие навыков:</strong>Постоянно более высокий темп улучшает механику походов</li>
-<li><strong>Психологическая выгода:</strong>Намеренное «тренировочное» мышление и случайное движение</li>
-</ul>
-<h3>Еженедельные цели по активным тренировкам</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Уровень физической подготовки</th>
-<th>Еженедельные активные минуты</th>
-<th>Количество боев</th>
-<th>Пример расписания</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Новичок</strong></td>
-<td>75-100 мин</td>
-<td>3-4 подхода по 20-30 мин</td>
-<td>Пн/Ср/Пт: 25 минут</td>
-</tr>
-<tr>
-<td><strong>Средний</strong></td>
-<td>150-200 мин</td>
-<td>5-6 подходов по 25-40 мин</td>
-<td>Ежедневно 30 минут + 1 поход на длинные выходные.</td>
-</tr>
-<tr>
-<td><strong>Продвинутый</strong></td>
-<td>200-300+ мин</td>
-<td>5-7 подходов по 30-60 мин</td>
-<td>Ежедневно 40 минут + интервалы + длительный поход</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Соблюдение руководящих принципов общественного здравоохранения:</strong>150 минут занятий умеренной интенсивностью в неделю (частота более 100 уд/мин) соответствуют рекомендациям ВОЗ и Центров по контролю и профилактике заболеваний (CDC) по улучшению здоровья.</p>
-<h3>Показатели качества оживленного боя</h3>
-<p>Не все быстрые схватки одинаковы. Качество можно оценить по:</p>
-<ol>
-<li><strong>Стабильность частоты вращения педалей:</strong>Минимальное отклонение от заданной частоты вращения (±5 уд/мин)</li>
-<li><strong>Продолжительность:</strong>Более длительные устойчивые приступы (30-45 минут) &gt; несколько коротких приступов</li>
-<li><strong>Интенсивность:</strong>Более высокий средний темп во время боя (110 об/мин &gt; 100 об/мин)</li>
-<li><strong>Консистенция:</strong>Частота оживленных приступов в неделю (5-7 дней &gt; 3 дней)</li>
-</ol>
+<h2 id="brisk-bouts">Оживленные приступы: качество важнее количества</h2><p>А<strong>оживленный бой</strong>— это непрерывный период ходьбы со скоростью ≥100 шагов в минуту (порог умеренной интенсивности), продолжающийся не менее 10 минут без падения ниже порога частоты вращения педалей более чем на 1-2 минуты.</p><h3>Научное обоснование</h3><p>Рекомендации США по физической активности 2018 года устранили предыдущее требование о том, чтобы аэробная активность происходила в виде приступов продолжительностью не менее 10 минут. Однако исследования показывают, что<strong>продолжительные оживленные приступы</strong>предоставляют уникальные преимущества:</p><ul><li><strong>Сердечно-сосудистая адаптация:</strong>Устойчивое повышение ЧСС способствует улучшению аэробных показателей</li><li><strong>Метаболическая эффективность:</strong>Более 10 минут позволяют метаболическим путям полностью задействоваться</li><li><strong>Развитие навыков:</strong>Постоянно более высокий темп улучшает механику походов</li><li><strong>Психологическая выгода:</strong>Намеренное «тренировочное» мышление и случайное движение</li></ul><h3>Еженедельные цели по активным тренировкам</h3><div class="data-table"><table><thead><tr><th>Уровень физической подготовки</th><th>Еженедельные активные минуты</th><th>Количество боев</th><th>Пример расписания</th></tr></thead><tbody><tr><td><strong>Новичок</strong></td><td>75-100 мин</td><td>3-4 подхода по 20-30 мин</td><td>Пн/Ср/Пт: 25 минут</td></tr><tr><td><strong>Средний</strong></td><td>150-200 мин</td><td>5-6 подходов по 25-40 мин</td><td>Ежедневно 30 минут + 1 поход на длинные выходные.</td></tr><tr><td><strong>Продвинутый</strong></td><td>200-300+ мин</td><td>5-7 подходов по 30-60 мин</td><td>Ежедневно 40 минут + интервалы + длительный поход</td></tr></tbody></table></div><p><strong>Соблюдение руководящих принципов общественного здравоохранения:</strong>150 минут занятий умеренной интенсивностью в неделю (частота более 100 уд/мин) соответствуют рекомендациям ВОЗ и Центров по контролю и профилактике заболеваний (CDC) по улучшению здоровья.</p><h3>Показатели качества оживленного боя</h3><p>Не все быстрые схватки одинаковы. Качество можно оценить по:</p><ol><li><strong>Стабильность частоты вращения педалей:</strong>Минимальное отклонение от заданной частоты вращения (±5 уд/мин)</li><li><strong>Продолжительность:</strong>Более длительные устойчивые приступы (30-45 минут) &gt; несколько коротких приступов</li><li><strong>Интенсивность:</strong>Более высокий средний темп во время боя (110 об/мин &gt; 100 об/мин)</li><li><strong>Консистенция:</strong>Частота оживленных приступов в неделю (5-7 дней &gt; 3 дней)</li></ol>
 Оценка стресса при пешем туризме
-<h2 id="wss">Оценка стресса в походе (WSS)</h2>
-<p><strong>Оценка стресса в походе (WSS)</strong>— это запатентованный показатель, который количественно определяет тренировочную нагрузку отдельных тренировок. Он адаптирует концепции оценки тренировочного стресса (TSS), используемые в велоспорте и беге.</p>
-<h3>Методы расчета WSS</h3>
-<p>WSS можно рассчитать с помощью<strong>частота сердечных сокращений</strong>или<strong>каденция</strong>как метрика интенсивности:</p>
-<h4>Метод 1: WSS на основе частоты пульса</h4>
-<p>Взвешенное по времени по зоне сердечного ритма:</p>
-<div class="formula-box">
-<pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
+<h2 id="wss">Оценка стресса в походе (WSS)</h2><p><strong>Оценка стресса в походе (WSS)</strong>— это запатентованный показатель, который количественно определяет тренировочную нагрузку отдельных тренировок. Он адаптирует концепции оценки тренировочного стресса (TSS), используемые в велоспорте и беге.</p><h3>Методы расчета WSS</h3><p>WSS можно рассчитать с помощью<strong>частота сердечных сокращений</strong>или<strong>каденция</strong>как метрика интенсивности:</p><h4>Метод 1: WSS на основе частоты пульса</h4><p>Взвешенное по времени по зоне сердечного ритма:</p><div class="formula-box"><pre>WSS = Σ (Minutes in Zone × Zone Multiplier)
 
 Zone Multipliers:
   Zone 1 (50-60% HRmax): 1.0
   Zone 2 (60-70% HRmax): 2.0
   Zone 3 (70-80% HRmax): 3.0
   Zone 4 (80-90% HRmax): 4.0
-  Zone 5 (90-100% HRmax): 5.0</pre>
-</div>
-<p><strong>Пример:</strong>60-минутный поход с:</p>
-<ul>
-<li>10-минутная разминка в зоне 1 = 10 × 1,0 = 10</li>
-<li>40 минут стабильно в зоне 2 = 40 × 2,0 = 80</li>
-<li>10-минутное время восстановления в Зоне 1 = 10 × 1,0 = 10</li>
-<li><strong>Всего WSS = 100</strong></li>
-</ul>
-<h4>Метод 2: WSS на основе каденции</h4>
-<p>Взвешенное по времени по интенсивности ритма:</p>
-<div class="formula-box">
-<pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
+  Zone 5 (90-100% HRmax): 5.0</pre></div><p><strong>Пример:</strong>60-минутный поход с:</p><ul><li>10-минутная разминка в зоне 1 = 10 × 1,0 = 10</li><li>40 минут стабильно в зоне 2 = 40 × 2,0 = 80</li><li>10-минутное время восстановления в Зоне 1 = 10 × 1,0 = 10</li><li><strong>Всего WSS = 100</strong></li></ul><h4>Метод 2: WSS на основе каденции</h4><p>Взвешенное по времени по интенсивности ритма:</p><div class="formula-box"><pre>WSS = Σ (Minutes at Cadence × Cadence Multiplier)
 
 Cadence Multipliers:
   60-99 spm (light): 1.0
   100-109 spm (moderate): 2.5
   110-119 spm (mod-vigorous): 3.5
   120-129 spm (vigorous): 4.5
-  ≥130 spm (very vigorous): 6.0</pre>
-</div>
-<p><strong>Преимущество:</strong>WSS на основе каденса не требует монитора ЧСС и более практичен для большинства туристов.</p>
-<h3>Типичные значения WSS по типам тренировок</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Тип тренировки</th>
-<th>Продолжительность</th>
-<th>Средняя интенсивность</th>
-<th>Типичный СВС</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Поход на восстановление</td>
-<td>20-30 мин</td>
-<td>Зона 1, &lt;100 экземпляров в минуту</td>
-<td>20-30</td>
-</tr>
-<tr>
-<td>Легкий аэробный поход</td>
-<td>30-45 мин</td>
-<td>Зона 2, 100-105 сп/мин</td>
-<td>60-90</td>
-</tr>
-<tr>
-<td>Быстрый устойчивый поход</td>
-<td>45-60 мин</td>
-<td>Зона 2, 105-110 сп/мин</td>
-<td>90-150</td>
-</tr>
-<tr>
-<td>Повышение темпа</td>
-<td>30-40 мин</td>
-<td>Зона 3, 110-120 стр/мин</td>
-<td>90-140</td>
-</tr>
-<tr>
-<td>Интервальная тренировка</td>
-<td>40-50 мин</td>
-<td>Смешанные зоны, пик 120+ обр/мин</td>
-<td>120-200</td>
-</tr>
-<tr>
-<td>Длительный поход на выносливость</td>
-<td>90-120 мин</td>
-<td>Зона 2, 100-110 шт./мин</td>
-<td>180-300</td>
-</tr>
-<tr>
-<td>Тренировка по гоночному походу</td>
-<td>60-90 мин</td>
-<td>Зона 3-4, 120-140 стр/мин</td>
-<td>200-400</td>
-</tr>
-</tbody>
-</table>
-</div>
+  ≥130 spm (very vigorous): 6.0</pre></div><p><strong>Преимущество:</strong>WSS на основе каденса не требует монитора ЧСС и более практичен для большинства туристов.</p><h3>Типичные значения WSS по типам тренировок</h3><div class="data-table"><table><thead><tr><th>Тип тренировки</th><th>Продолжительность</th><th>Средняя интенсивность</th><th>Типичный СВС</th></tr></thead><tbody><tr><td>Поход на восстановление</td><td>20-30 мин</td><td>Зона 1, &lt;100 экземпляров в минуту</td><td>20-30</td></tr><tr><td>Легкий аэробный поход</td><td>30-45 мин</td><td>Зона 2, 100-105 сп/мин</td><td>60-90</td></tr><tr><td>Быстрый устойчивый поход</td><td>45-60 мин</td><td>Зона 2, 105-110 сп/мин</td><td>90-150</td></tr><tr><td>Повышение темпа</td><td>30-40 мин</td><td>Зона 3, 110-120 стр/мин</td><td>90-140</td></tr><tr><td>Интервальная тренировка</td><td>40-50 мин</td><td>Смешанные зоны, пик 120+ обр/мин</td><td>120-200</td></tr><tr><td>Длительный поход на выносливость</td><td>90-120 мин</td><td>Зона 2, 100-110 шт./мин</td><td>180-300</td></tr><tr><td>Тренировка по гоночному походу</td><td>60-90 мин</td><td>Зона 3-4, 120-140 стр/мин</td><td>200-400</td></tr></tbody></table></div>
 Еженедельная тренировочная нагрузка
-<h2 id="weekly-load">Рекомендации по еженедельной тренировочной нагрузке</h2>
-<p>Еженедельную тренировочную нагрузку следует подбирать индивидуально в зависимости от уровня физической подготовки, целей и свободного времени. Рекомендации представлены как в<strong>ВСС</strong>и<strong>быстрые минуты</strong>для гибкости.</p>
-<h3>Новичок (опыт обучения 0-6 месяцев)</h3>
-<ul>
-<li><strong>Еженедельный WSS:</strong>150-300</li>
-<li><strong>Активные минуты (≥100 выстрелов в минуту):</strong>75-120 мин/неделю</li>
-<li><strong>Общее время похода:</strong>120-200 мин/неделю</li>
-<li><strong>Цель Пик-30:</strong>90-100 шт/мин</li>
-<li><strong>Сессий в неделю:</strong>4-5</li>
-<li><strong>Фокус:</strong>Последовательность, формирование привычек, развитие техники</li>
-<li><strong>Прогресс:</strong>Увеличение на 5-10% в неделю</li>
-</ul>
-<p><strong>Выборочная неделя (всего WSS: 250):</strong></p>
-<ul>
-<li>Пн: 30 минут лёгкого похода, 100 шагов в минуту (WSS 50)</li>
-<li>Вт: Отдых или нежная 20-минутная прогулка</li>
-<li>Ср: 35 минут быстрым шагом, 105 в/мин (WSS 70)</li>
-<li>Четверг: 25 минут легкого похода, 95 шагов в минуту (WSS 40)</li>
-<li>Пт: Отдых</li>
-<li>Суббота: 45-минутный устойчивый поход, 102 подъема в минуту (WSS 90)</li>
-<li>Вс: Легко 20-30 мин</li>
-</ul>
-<h3>Средний (опыт обучения 6-18 месяцев)</h3>
-<ul>
-<li><strong>Еженедельный WSS:</strong>300-550</li>
-<li><strong>Активные минуты (≥100 выстрелов в минуту):</strong>150-250 мин/неделю</li>
-<li><strong>Общее время похода:</strong>250-400 мин/неделю</li>
-<li><strong>Цель Пик-30:</strong>105-115 сп/мин</li>
-<li><strong>Сессий в неделю:</strong>5-6</li>
-<li><strong>Фокус:</strong>Развитие аэробных способностей, скоростной выносливости, введение интервальных тренировок</li>
-<li><strong>Прогресс:</strong>Увеличение на 10% в неделю с неделями восстановления</li>
-</ul>
-<p><strong>Выборочная неделя (всего WSS: 420):</strong></p>
-<ul>
-<li>Пн: 40-минутный устойчивый поход, 108 шагов в минуту (WSS 100)</li>
-<li>Вт: 30 минут легкого восстановления, 95 выстрелов в минуту (WSS 45)</li>
-<li>Ср: интервалы по 45 минут (5 × 4 минуты при 120 выстрелов в минуту / 3 минуты легко) (WSS 130)</li>
-<li>Четверг: 35 минут лёгкого похода, 100 шагов в минуту (WSS 60)</li>
-<li>Пт: Отдых или 20-минутная легкая прогулка</li>
-<li>Суббота: 75-минутный поход, 105 шагов в минуту (WSS 150)</li>
-<li>Вс: 30 минут легкого восстановления (WSS 40)</li>
-</ul>
-<h3>Продвинутый уровень (опыт обучения более 18 месяцев)</h3>
-<ul>
-<li><strong>Еженедельный WSS:</strong>500-900+</li>
-<li><strong>Активные минуты (≥100 выстрелов в минуту):</strong>250-400+ мин/неделю</li>
-<li><strong>Общее время похода:</strong>400-700+ мин/неделю</li>
-<li><strong>Цель Пик-30:</strong>115-130+ вспышек в минуту</li>
-<li><strong>Сеансов в неделю:</strong>6-7</li>
-<li><strong>Фокус:</strong>Выступление, соревнования, техника гоночного похода</li>
-<li><strong>Прогресс:</strong>Периодизация с отдельными фазами обучения</li>
-</ul>
-<p><strong>Выборочная неделя (всего WSS: 720):</strong></p>
-<ul>
-<li>Пн: 50-минутный устойчивый поход, 110 шагов в минуту (WSS 120)</li>
-<li>Вт: 40 минут лёгкого похода, 100 шагов в минуту (WSS 70)</li>
-<li>Ср: 60 минут в темпе (40 минут при 115–120 с/мин) (WSS 180)</li>
-<li>Четверг: 35-минутный восстановительный поход, 95 подходов в минуту (WSS 50)</li>
-<li>Пт: интервалы по 50 минут (10 × 2 минуты при 130+ с/мин / 2 минуты легко) (WSS 180)</li>
-<li>Суббота: 90-минутный поход, 108 шагов в минуту (WSS 200)</li>
-<li>Вс: 40 минут лёгкого похода (WSS 60)</li>
-</ul>
+<h2 id="weekly-load">Рекомендации по еженедельной тренировочной нагрузке</h2><p>Еженедельную тренировочную нагрузку следует подбирать индивидуально в зависимости от уровня физической подготовки, целей и свободного времени. Рекомендации представлены как в<strong>ВСС</strong>и<strong>быстрые минуты</strong>для гибкости.</p><h3>Новичок (опыт обучения 0-6 месяцев)</h3><ul><li><strong>Еженедельный WSS:</strong>150-300</li><li><strong>Активные минуты (≥100 выстрелов в минуту):</strong>75-120 мин/неделю</li><li><strong>Общее время похода:</strong>120-200 мин/неделю</li><li><strong>Цель Пик-30:</strong>90-100 шт/мин</li><li><strong>Сессий в неделю:</strong>4-5</li><li><strong>Фокус:</strong>Последовательность, формирование привычек, развитие техники</li><li><strong>Прогресс:</strong>Увеличение на 5-10% в неделю</li></ul><p><strong>Выборочная неделя (всего WSS: 250):</strong></p><ul><li>Пн: 30 минут лёгкого похода, 100 шагов в минуту (WSS 50)</li><li>Вт: Отдых или нежная 20-минутная прогулка</li><li>Ср: 35 минут быстрым шагом, 105 в/мин (WSS 70)</li><li>Четверг: 25 минут легкого похода, 95 шагов в минуту (WSS 40)</li><li>Пт: Отдых</li><li>Суббота: 45-минутный устойчивый поход, 102 подъема в минуту (WSS 90)</li><li>Вс: Легко 20-30 мин</li></ul><h3>Средний (опыт обучения 6-18 месяцев)</h3><ul><li><strong>Еженедельный WSS:</strong>300-550</li><li><strong>Активные минуты (≥100 выстрелов в минуту):</strong>150-250 мин/неделю</li><li><strong>Общее время похода:</strong>250-400 мин/неделю</li><li><strong>Цель Пик-30:</strong>105-115 сп/мин</li><li><strong>Сессий в неделю:</strong>5-6</li><li><strong>Фокус:</strong>Развитие аэробных способностей, скоростной выносливости, введение интервальных тренировок</li><li><strong>Прогресс:</strong>Увеличение на 10% в неделю с неделями восстановления</li></ul><p><strong>Выборочная неделя (всего WSS: 420):</strong></p><ul><li>Пн: 40-минутный устойчивый поход, 108 шагов в минуту (WSS 100)</li><li>Вт: 30 минут легкого восстановления, 95 выстрелов в минуту (WSS 45)</li><li>Ср: интервалы по 45 минут (5 × 4 минуты при 120 выстрелов в минуту / 3 минуты легко) (WSS 130)</li><li>Четверг: 35 минут лёгкого похода, 100 шагов в минуту (WSS 60)</li><li>Пт: Отдых или 20-минутная легкая прогулка</li><li>Суббота: 75-минутный поход, 105 шагов в минуту (WSS 150)</li><li>Вс: 30 минут легкого восстановления (WSS 40)</li></ul><h3>Продвинутый уровень (опыт обучения более 18 месяцев)</h3><ul><li><strong>Еженедельный WSS:</strong>500-900+</li><li><strong>Активные минуты (≥100 выстрелов в минуту):</strong>250-400+ мин/неделю</li><li><strong>Общее время похода:</strong>400-700+ мин/неделю</li><li><strong>Цель Пик-30:</strong>115-130+ вспышек в минуту</li><li><strong>Сеансов в неделю:</strong>6-7</li><li><strong>Фокус:</strong>Выступление, соревнования, техника гоночного похода</li><li><strong>Прогресс:</strong>Периодизация с отдельными фазами обучения</li></ul><p><strong>Выборочная неделя (всего WSS: 720):</strong></p><ul><li>Пн: 50-минутный устойчивый поход, 110 шагов в минуту (WSS 120)</li><li>Вт: 40 минут лёгкого похода, 100 шагов в минуту (WSS 70)</li><li>Ср: 60 минут в темпе (40 минут при 115–120 с/мин) (WSS 180)</li><li>Четверг: 35-минутный восстановительный поход, 95 подходов в минуту (WSS 50)</li><li>Пт: интервалы по 50 минут (10 × 2 минуты при 130+ с/мин / 2 минуты легко) (WSS 180)</li><li>Суббота: 90-минутный поход, 108 шагов в минуту (WSS 200)</li><li>Вс: 40 минут лёгкого похода (WSS 60)</li></ul>
 Острая и хроническая нагрузка
-<h2 id="acwr">Коэффициент острой:хронической рабочей нагрузки (ACWR)</h2>
-<p><strong>Коэффициент острой:хронической рабочей нагрузки</strong>является мощным инструментом для управления риском травм путем сравнения недавней тренировочной нагрузки (острой) с долгосрочной тренировочной нагрузкой (хронической).</p>
-<h3>Расчет</h3>
-<div class="formula-box">
-<pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
+<h2 id="acwr">Коэффициент острой:хронической рабочей нагрузки (ACWR)</h2><p><strong>Коэффициент острой:хронической рабочей нагрузки</strong>является мощным инструментом для управления риском травм путем сравнения недавней тренировочной нагрузки (острой) с долгосрочной тренировочной нагрузкой (хронической).</p><h3>Расчет</h3><div class="formula-box"><pre>ACWR = Acute Load (7 days) / Chronic Load (28 days average)
 
 Example:
   Last 7 days WSS: 450
   Average of previous 28 days: 380
-  ACWR = 450 / 380 = 1.18</pre>
-</div>
-<h3>Интерпретация ACWR</h3>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Диапазон ACWR</th>
-<th>Риск травм</th>
-<th>Статус обучения</th>
-<th>Действие</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;0,80</td>
-<td>Низкий-умеренный</td>
-<td>Возможна детренировка</td>
-<td>Если вы здоровы, рассмотрите возможность увеличения нагрузки</td>
-</tr>
-<tr>
-<td>0,80-1,00</td>
-<td>Низкий</td>
-<td>Стабильное обучение</td>
-<td>Поддерживать текущую нагрузку</td>
-</tr>
-<tr>
-<td>1.00-1.30</td>
-<td>Низкий</td>
-<td>Оптимальное развитие</td>
-<td>Золотая середина для адаптации</td>
-</tr>
-<tr>
-<td>1,30-1,50</td>
-<td>Умеренный</td>
-<td>Быстрый рост</td>
-<td>Мониторинг признаков усталости</td>
-</tr>
-<tr>
-<td>&gt;1,50</td>
-<td>Высокий</td>
-<td>Опасный шип</td>
-<td>Снизьте нагрузку, отдайте приоритет восстановлению</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="key-finding">
-<strong>Результаты исследования:</strong>Спортсмены с ACWR &gt;1,50 имеют в 2–4 раза более высокий риск травм по сравнению со спортсменами в диапазоне 0,80–1,30 (Gabbett, 2016). Этот принцип применим ко всем видам спорта, включая пешие походы.</div>
-<h3>Практическое применение</h3>
-<p><strong>Сценарий 1: Возвращение после болезни</strong></p>
-<ul>
-<li>Неделя до болезни: 400 WSS</li>
-<li>Пропущено 10 дней (среднее значение за 28 дней падает до 285)</li>
-<li>Не возвращайтесь к 400 (ACWR = 1,40)</li>
-<li>Вместо этого: возобновите работу на уровне 250–300 WSS (ACWR = 0,88–1,05)</li>
-</ul>
-<p><strong>Сценарий 2: Амбициозное развитие</strong></p>
-<ul>
-<li>Текущее среднее значение за 4 недели: 350 WSS в неделю</li>
-<li>Планирование на следующую неделю: хочу сделать 500 WSS</li>
-<li>ACWR составит 1,43 (умеренно-высокий риск)</li>
-<li>Лучший подход: 420-450 WSS (ACWR 1.20-1.29)</li>
-</ul>
+  ACWR = 450 / 380 = 1.18</pre></div><h3>Интерпретация ACWR</h3><div class="data-table"><table><thead><tr><th>Диапазон ACWR</th><th>Риск травм</th><th>Статус обучения</th><th>Действие</th></tr></thead><tbody><tr><td>&lt;0,80</td><td>Низкий-умеренный</td><td>Возможна детренировка</td><td>Если вы здоровы, рассмотрите возможность увеличения нагрузки</td></tr><tr><td>0,80-1,00</td><td>Низкий</td><td>Стабильное обучение</td><td>Поддерживать текущую нагрузку</td></tr><tr><td>1.00-1.30</td><td>Низкий</td><td>Оптимальное развитие</td><td>Золотая середина для адаптации</td></tr><tr><td>1,30-1,50</td><td>Умеренный</td><td>Быстрый рост</td><td>Мониторинг признаков усталости</td></tr><tr><td>&gt;1,50</td><td>Высокий</td><td>Опасный шип</td><td>Снизьте нагрузку, отдайте приоритет восстановлению</td></tr></tbody></table></div><div class="key-finding"><strong>Результаты исследования:</strong>Спортсмены с ACWR &gt;1,50 имеют в 2–4 раза более высокий риск травм по сравнению со спортсменами в диапазоне 0,80–1,30 (Gabbett, 2016). Этот принцип применим ко всем видам спорта, включая пешие походы.</div><h3>Практическое применение</h3><p><strong>Сценарий 1: Возвращение после болезни</strong></p><ul><li>Неделя до болезни: 400 WSS</li><li>Пропущено 10 дней (среднее значение за 28 дней падает до 285)</li><li>Не возвращайтесь к 400 (ACWR = 1,40)</li><li>Вместо этого: возобновите работу на уровне 250–300 WSS (ACWR = 0,88–1,05)</li></ul><p><strong>Сценарий 2: Амбициозное развитие</strong></p><ul><li>Текущее среднее значение за 4 недели: 350 WSS в неделю</li><li>Планирование на следующую неделю: хочу сделать 500 WSS</li><li>ACWR составит 1,43 (умеренно-высокий риск)</li><li>Лучший подход: 420-450 WSS (ACWR 1.20-1.29)</li></ul>
 Прогресс тренировочной нагрузки
-<h2 id="progression">Стратегии увеличения тренировочной нагрузки</h2>
-<h3>Правило 10% (с нюансами)</h3>
-<p>Традиционный<strong>Правило 10%</strong>предлагает увеличивать еженедельный объем тренировок не более чем на 10% в неделю. Хотя современные исследования полезны в качестве ориентира, они предлагают более тонкие подходы:</p>
-<ul>
-<li><strong>Для новичков:</strong>Целесообразно еженедельное увеличение на 5-10%</li>
-<li><strong>Для опытных туристов:</strong>Увеличение на 10–15% допустимо, если ACWR остается &lt;1,30</li>
-<li><strong>После перерывов:</strong>Медленное прогрессирование (5%) безопаснее</li>
-<li><strong>При высокой нагрузке:</strong>Сохранить или сократить, а не продолжать увеличивать</li>
-</ul>
-<h3>Периодизация: модель 3:1</h3>
-<p>Альтернативная модель прогрессирования, наиболее доказательная<strong>3 недели возрастающей нагрузки</strong>с<strong>1 неделя восстановления</strong>:</p>
-<p><strong>Пример 8-недельного блока (начиная с 300 WSS):</strong></p>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>Неделя</th>
-<th>Еженедельный WSS</th>
-<th>Изменить</th>
-<th>Фаза</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>300</td>
-<td>Базовый уровень</td>
-<td>Построить</td>
-</tr>
-<tr>
-<td>2</td>
-<td>330</td>
-<td>+10%</td>
-<td>Построить</td>
-</tr>
-<tr>
-<td>3</td>
-<td>365</td>
-<td>+11%</td>
-<td>Построить</td>
-</tr>
-<tr>
-<td>4</td>
-<td>220</td>
-<td>-40%</td>
-<td><strong>Восстановление</strong></td>
-</tr>
-<tr>
-<td>5</td>
-<td>400</td>
-<td>+10%</td>
-<td>Построить</td>
-</tr>
-<tr>
-<td>6</td>
-<td>440</td>
-<td>+10%</td>
-<td>Построить</td>
-</tr>
-<tr>
-<td>7</td>
-<td>485</td>
-<td>+10%</td>
-<td>Построить</td>
-</tr>
-<tr>
-<td>8</td>
-<td>290</td>
-<td>-40%</td>
-<td><strong>Восстановление</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Преимущества недель восстановления:</strong></p>
-<ul>
-<li>Обеспечивает физиологическую адаптацию (суперкомпенсацию)</li>
-<li>Пополняет запасы гликогена</li>
-<li>Восстанавливает микроповреждения тканей</li>
-<li>Снижает накопленную усталость</li>
-<li>Освежает мотивацию и умственную энергию</li>
-<li>Готовит тело к следующему тренировочному блоку</li>
-</ul>
-<h3>Блочная периодизация</h3>
-<p>Для продвинутых туристов, готовящихся к выступлениям или мероприятиям, организуйте обучение в отдельных<strong>мезоциклы</strong>(блоки 4–8 недель):</p>
-<p><strong>Пример годовой периодизации:</strong></p>
-<ol>
-<li>
-<strong>Базовая фаза (8–12 недель):</strong>
-<ul>
-<li>Цель: создать аэробную базу с объемом Зоны 2</li>
-<li>Еженедельный WSS: 400-550</li>
-<li>80% времени при 100-110 выстрелах в минуту</li>
-<li>Длительные походы увеличиваются с 60 до 120 минут</li>
-</ul>
-</li>
-<li>
-<strong>Фаза сборки (6–8 недель):</strong>
-<ul>
-<li>Фокус: добавить темповую работу в Зоне 3 и короткие интервалы</li>
-<li>Еженедельный WSS: 500-650</li>
-<li>70% Зона 2, 20% Зона 3, 10% Зона 4</li>
-<li>2 качественных занятия в неделю</li>
-</ul>
-</li>
-<li>
-<strong>Пиковая фаза (4-6 недель):</strong>
-<ul>
-<li>Фокус: высокоинтенсивная работа с учетом особенностей гонки</li>
-<li>Еженедельный WSS: 550-750</li>
-<li>Включите интервалы гоночного темпа и симуляции.</li>
-<li>Поддерживайте легкий объем</li>
-</ul>
-</li>
-<li>
-<strong>Снижение дозы (1–2 недели):</strong>
-<ul>
-<li>Фокус: уменьшить объем, сохранить интенсивность</li>
-<li>Еженедельный WSS: 200-350 (снижение на 50%)</li>
-<li>Проведите 1-2 коротких и резких занятия</li>
-<li>Отдавайте приоритет отдыху и готовности</li>
-</ul>
-</li>
-<li>
-<strong>Восстановление/переход (2–4 недели):</strong>
-<ul>
-<li>Фокус: активное восстановление, кросс-тренинг</li>
-<li>Еженедельный WSS: 150-300</li>
-<li>Все легкие походы, никакой структуры</li>
-<li>Психическое и физическое восстановление</li>
-</ul>
-</li>
-</ol>
+<h2 id="progression">Стратегии увеличения тренировочной нагрузки</h2><h3>Правило 10% (с нюансами)</h3><p>Традиционный<strong>Правило 10%</strong>предлагает увеличивать еженедельный объем тренировок не более чем на 10% в неделю. Хотя современные исследования полезны в качестве ориентира, они предлагают более тонкие подходы:</p><ul><li><strong>Для новичков:</strong>Целесообразно еженедельное увеличение на 5-10%</li><li><strong>Для опытных туристов:</strong>Увеличение на 10–15% допустимо, если ACWR остается &lt;1,30</li><li><strong>После перерывов:</strong>Медленное прогрессирование (5%) безопаснее</li><li><strong>При высокой нагрузке:</strong>Сохранить или сократить, а не продолжать увеличивать</li></ul><h3>Периодизация: модель 3:1</h3><p>Альтернативная модель прогрессирования, наиболее доказательная<strong>3 недели возрастающей нагрузки</strong>с<strong>1 неделя восстановления</strong>:</p><p><strong>Пример 8-недельного блока (начиная с 300 WSS):</strong></p><div class="data-table"><table><thead><tr><th>Неделя</th><th>Еженедельный WSS</th><th>Изменить</th><th>Фаза</th></tr></thead><tbody><tr><td>1</td><td>300</td><td>Базовый уровень</td><td>Построить</td></tr><tr><td>2</td><td>330</td><td>+10%</td><td>Построить</td></tr><tr><td>3</td><td>365</td><td>+11%</td><td>Построить</td></tr><tr><td>4</td><td>220</td><td>-40%</td><td><strong>Восстановление</strong></td></tr><tr><td>5</td><td>400</td><td>+10%</td><td>Построить</td></tr><tr><td>6</td><td>440</td><td>+10%</td><td>Построить</td></tr><tr><td>7</td><td>485</td><td>+10%</td><td>Построить</td></tr><tr><td>8</td><td>290</td><td>-40%</td><td><strong>Восстановление</strong></td></tr></tbody></table></div><p><strong>Преимущества недель восстановления:</strong></p><ul><li>Обеспечивает физиологическую адаптацию (суперкомпенсацию)</li><li>Пополняет запасы гликогена</li><li>Восстанавливает микроповреждения тканей</li><li>Снижает накопленную усталость</li><li>Освежает мотивацию и умственную энергию</li><li>Готовит тело к следующему тренировочному блоку</li></ul><h3>Блочная периодизация</h3><p>Для продвинутых туристов, готовящихся к выступлениям или мероприятиям, организуйте обучение в отдельных<strong>мезоциклы</strong>(блоки 4–8 недель):</p><p><strong>Пример годовой периодизации:</strong></p><ol><li><strong>Базовая фаза (8–12 недель):</strong><ul><li>Цель: создать аэробную базу с объемом Зоны 2</li><li>Еженедельный WSS: 400-550</li><li>80% времени при 100-110 выстрелах в минуту</li><li>Длительные походы увеличиваются с 60 до 120 минут</li></ul></li><li><strong>Фаза сборки (6–8 недель):</strong><ul><li>Фокус: добавить темповую работу в Зоне 3 и короткие интервалы</li><li>Еженедельный WSS: 500-650</li><li>70% Зона 2, 20% Зона 3, 10% Зона 4</li><li>2 качественных занятия в неделю</li></ul></li><li><strong>Пиковая фаза (4-6 недель):</strong><ul><li>Фокус: высокоинтенсивная работа с учетом особенностей гонки</li><li>Еженедельный WSS: 550-750</li><li>Включите интервалы гоночного темпа и симуляции.</li><li>Поддерживайте легкий объем</li></ul></li><li><strong>Снижение дозы (1–2 недели):</strong><ul><li>Фокус: уменьшить объем, сохранить интенсивность</li><li>Еженедельный WSS: 200-350 (снижение на 50%)</li><li>Проведите 1-2 коротких и резких занятия</li><li>Отдавайте приоритет отдыху и готовности</li></ul></li><li><strong>Восстановление/переход (2–4 недели):</strong><ul><li>Фокус: активное восстановление, кросс-тренинг</li><li>Еженедельный WSS: 150-300</li><li>Все легкие походы, никакой структуры</li><li>Психическое и физическое восстановление</li></ul></li></ol>
 Мониторинг тренировочной нагрузки
-<h2 id="monitoring">Мониторинг и корректировка тренировочной нагрузки</h2>
-<h3>Целевые показатели</h3>
-<p><strong>Отслеживайте их ежедневно/еженедельно:</strong></p>
-<ol>
-<li>
-<strong>Частота сердечных сокращений в состоянии покоя (RHR):</strong>
-<ul>
-<li>Измеряйте после пробуждения, прежде чем встать с постели</li>
-<li>Отслеживать 7-дневное скользящее среднее</li>
-<li>Повышение на 5-10 ударов в минуту предполагает неполное восстановление</li>
-<li>Устойчивое повышение (&gt;1 недели) указывает на риск перетренированности</li>
-</ul>
-</li>
-<li>
-<strong>Вариабельность сердечного ритма (ВСР):</strong>
-<ul>
-<li>Более высокая ВСР = лучшее восстановление и готовность</li>
-<li>Снижение &gt;10% от базового уровня = снижение готовности</li>
-<li>Используйте такие приложения, как Elite HRV, HRV4Training или Oura Ring</li>
-</ul>
-</li>
-<li>
-<strong>Пик-30 Каденс:</strong>
-<ul>
-<li>Ежедневно отслеживайте, чтобы оценить способность поддерживать интенсивность</li>
-<li>Тенденция к снижению может указывать на накопившуюся усталость</li>
-<li>Использовать в качестве индикатора готовности к тренировке</li>
-</ul>
-</li>
-<li>
-<strong>Скорость похода со стандартным усилием:</strong>
-<ul>
-<li>Ежемесячный тест: 20–30 минут при постоянном воспринимаемом усилии</li>
-<li>Увеличение скорости при тех же усилиях = положительная адаптация</li>
-<li>Снижение скорости = недостаточное восстановление или перетренированность</li>
-</ul>
-</li>
-</ol>
-<h3>Субъективные показатели</h3>
-<p><strong>Ежедневный опросник о состоянии здоровья (оценка 1–5 баллов):</strong></p>
-<ol>
-<li><strong>Качество сна:</strong>1 = ужасно, 5 = отлично</li>
-<li><strong>Уровень усталости:</strong>1 = истощен, 5 = под напряжением</li>
-<li><strong>Мышечная болезненность:</strong>1 = очень больно, 5 = боли нет</li>
-<li><strong>Настроение/мотивация:</strong>1 = плохо, 5 = отлично</li>
-<li><strong>Уровень стресса:</strong>1 = очень высокий, 5 = очень низкий</li>
-</ol>
-<p><strong>Интерпретация общей оценки здоровья:</strong></p>
-<ul>
-<li><strong>20-25:</strong>Отличная готовность, приступаем к плановому обучению</li>
-<li><strong>15–19:</strong>Хорошая готовность, обучение по плану или незначительно сокращено</li>
-<li><strong>10–14:</strong>Умеренные опасения, рассмотрите возможность более легкого дня или более короткого сеанса</li>
-<li><strong>5–9:</strong>Плохая готовность, сделайте день очень легким или возьмите день отдыха</li>
-</ul>
-<h3>Признаки адекватной тренировочной нагрузки</h3>
-<ul>
-<li>Чувствую прилив энергии и мотивацию для большинства походов</li>
-<li>Постепенное улучшение производительности в течение недель/месяцев</li>
-<li>Постоянное качество сна (7-9 часов, ощущение отдохнувшего)</li>
-<li>Стабилизация или улучшение сердечного ритма в состоянии покоя</li>
-<li>Минимальная мышечная болезненность в течение 24–48 часов после тренировки</li>
-<li>Поддержание энтузиазма к походам</li>
-<li>Способность последовательно достигать целевых темпов/каденсов</li>
-</ul>
-<h3>Предупреждающие признаки чрезмерной тренировочной нагрузки</h3>
-<ul>
-<li><strong>Производительность:</strong>Снижение скорости, неспособность достичь целевого ритма, увеличение воспринимаемого усилия</li>
-<li><strong>Физиологический:</strong>Повышенная ЧСС (на 5–10+ ударов в минуту выше исходного уровня), снижение ВСР, стойкая утомляемость, несмотря на отдых</li>
-<li><strong>Опорно-двигательный аппарат:</strong>Постоянная болезненность мышц, множественные незначительные боли и боли, увеличение частоты травм</li>
-<li><strong>Психологическое:</strong>Потеря мотивации, раздражительность, нарушения настроения, трудности с концентрацией внимания</li>
-<li><strong>Сон:</strong>Трудно заснуть, часто просыпаюсь, не чувствую себя отдохнувшим, несмотря на достаточное количество часов</li>
-<li><strong>Иммунитет:</strong>Частые простуды или инфекции, медленное заживление мелких травм</li>
-</ul>
-<p><strong>План действий при появлении предупреждающих знаков:</strong></p>
-<ol>
-<li>Немедленно снизить тренировочную нагрузку на 30-50%</li>
-<li>Сосредоточьтесь только на легких и приятных походах</li>
-<li>Отдавайте приоритет сну (старайтесь спать 8–9 часов)</li>
-<li>Обзор питания и увлажнения</li>
-<li>Учитывайте стресс, не связанный с походами (работа, жизнь), и устраняйте его, если это возможно</li>
-<li>Если симптомы сохраняются &gt;1 недели, обратитесь к врачу</li>
-</ol>
+<h2 id="monitoring">Мониторинг и корректировка тренировочной нагрузки</h2><h3>Целевые показатели</h3><p><strong>Отслеживайте их ежедневно/еженедельно:</strong></p><ol><li><strong>Частота сердечных сокращений в состоянии покоя (RHR):</strong><ul><li>Измеряйте после пробуждения, прежде чем встать с постели</li><li>Отслеживать 7-дневное скользящее среднее</li><li>Повышение на 5-10 ударов в минуту предполагает неполное восстановление</li><li>Устойчивое повышение (&gt;1 недели) указывает на риск перетренированности</li></ul></li><li><strong>Вариабельность сердечного ритма (ВСР):</strong><ul><li>Более высокая ВСР = лучшее восстановление и готовность</li><li>Снижение &gt;10% от базового уровня = снижение готовности</li><li>Используйте такие приложения, как Elite HRV, HRV4Training или Oura Ring</li></ul></li><li><strong>Пик-30 Каденс:</strong><ul><li>Ежедневно отслеживайте, чтобы оценить способность поддерживать интенсивность</li><li>Тенденция к снижению может указывать на накопившуюся усталость</li><li>Использовать в качестве индикатора готовности к тренировке</li></ul></li><li><strong>Скорость похода со стандартным усилием:</strong><ul><li>Ежемесячный тест: 20–30 минут при постоянном воспринимаемом усилии</li><li>Увеличение скорости при тех же усилиях = положительная адаптация</li><li>Снижение скорости = недостаточное восстановление или перетренированность</li></ul></li></ol><h3>Субъективные показатели</h3><p><strong>Ежедневный опросник о состоянии здоровья (оценка 1–5 баллов):</strong></p><ol><li><strong>Качество сна:</strong>1 = ужасно, 5 = отлично</li><li><strong>Уровень усталости:</strong>1 = истощен, 5 = под напряжением</li><li><strong>Мышечная болезненность:</strong>1 = очень больно, 5 = боли нет</li><li><strong>Настроение/мотивация:</strong>1 = плохо, 5 = отлично</li><li><strong>Уровень стресса:</strong>1 = очень высокий, 5 = очень низкий</li></ol><p><strong>Интерпретация общей оценки здоровья:</strong></p><ul><li><strong>20-25:</strong>Отличная готовность, приступаем к плановому обучению</li><li><strong>15–19:</strong>Хорошая готовность, обучение по плану или незначительно сокращено</li><li><strong>10–14:</strong>Умеренные опасения, рассмотрите возможность более легкого дня или более короткого сеанса</li><li><strong>5–9:</strong>Плохая готовность, сделайте день очень легким или возьмите день отдыха</li></ul><h3>Признаки адекватной тренировочной нагрузки</h3><ul><li>Чувствую прилив энергии и мотивацию для большинства походов</li><li>Постепенное улучшение производительности в течение недель/месяцев</li><li>Постоянное качество сна (7-9 часов, ощущение отдохнувшего)</li><li>Стабилизация или улучшение сердечного ритма в состоянии покоя</li><li>Минимальная мышечная болезненность в течение 24–48 часов после тренировки</li><li>Поддержание энтузиазма к походам</li><li>Способность последовательно достигать целевых темпов/каденсов</li></ul><h3>Предупреждающие признаки чрезмерной тренировочной нагрузки</h3><ul><li><strong>Производительность:</strong>Снижение скорости, неспособность достичь целевого ритма, увеличение воспринимаемого усилия</li><li><strong>Физиологический:</strong>Повышенная ЧСС (на 5–10+ ударов в минуту выше исходного уровня), снижение ВСР, стойкая утомляемость, несмотря на отдых</li><li><strong>Опорно-двигательный аппарат:</strong>Постоянная болезненность мышц, множественные незначительные боли и боли, увеличение частоты травм</li><li><strong>Психологическое:</strong>Потеря мотивации, раздражительность, нарушения настроения, трудности с концентрацией внимания</li><li><strong>Сон:</strong>Трудно заснуть, часто просыпаюсь, не чувствую себя отдохнувшим, несмотря на достаточное количество часов</li><li><strong>Иммунитет:</strong>Частые простуды или инфекции, медленное заживление мелких травм</li></ul><p><strong>План действий при появлении предупреждающих знаков:</strong></p><ol><li>Немедленно снизить тренировочную нагрузку на 30-50%</li><li>Сосредоточьтесь только на легких и приятных походах</li><li>Отдавайте приоритет сну (старайтесь спать 8–9 часов)</li><li>Обзор питания и увлажнения</li><li>Учитывайте стресс, не связанный с походами (работа, жизнь), и устраняйте его, если это возможно</li><li>Если симптомы сохраняются &gt;1 недели, обратитесь к врачу</li></ol>
 Распределение интенсивности
-<h2 id="intensity">Модели распределения интенсивности</h2>
-<p>То, как вы распределяете интенсивность тренировок в течение недели, существенно влияет на адаптацию и производительность. Используются две основные модели:</p>
-<h3>Поляризованное обучение (модель 80/20)</h3>
-<p><strong>Модель 80/20</strong>делит время тренировки между низкой и высокой интенсивностью с минимальной умеренной интенсивностью:</p>
-<ul>
-<li><strong>80 % легко (зоны 1–2):</strong>95-105 ударов в минуту, разговорный темп</li>
-<li><strong>0-5% умеренный (зона 3):</strong>Минимальное время при 110-120 об/мин</li>
-<li><strong>15-20% жесткий (зона 4-5):</strong>120+ интервалов и темпа в минуту</li>
-</ul>
-<p><strong>Обоснование:</strong>Максимизирует аэробное развитие (легкий объем), одновременно обеспечивая высокоинтенсивный стимул для производительности без накопления усталости от чрезмерной умеренной работы.</p>
-<p><strong>Лучше всего подходит для:</strong>Продвинутые туристы, любители гоночных походов, тренировки, ориентированные на результат</p>
-<p><strong>Пример расписания на неделю (всего 300 минут):</strong></p>
-<ul>
-<li>240 минут легко (80%): ежедневные 30-40-минутные легкие походы + длинные походы на выходные</li>
-<li>60 минут тяжело (20%): 2 интервальных/темповых занятия в неделю</li>
-</ul>
-<h3>Пирамидальная тренировка (модель 60/30/10)</h3>
-<p><strong>пирамидальная модель</strong>распределяет интенсивность по всем зонам:</p>
-<ul>
-<li><strong>60-70% легко (зона 1-2):</strong>Базовое аэробное развитие</li>
-<li><strong>20-30% умеренная (зона 3):</strong>Темп и оживленная последовательная работа</li>
-<li><strong>10 % жесткий (зоны 4–5):</strong>Интервалы высокой интенсивности</li>
-</ul>
-<p><strong>Обоснование:</strong>Более постепенное увеличение интенсивности, лучше подходит для развития способности к умеренной интенсивности, легче восстанавливается.</p>
-<p><strong>Лучше всего подходит для:</strong>Туристы от начинающего до среднего уровня, тренирующиеся, ориентированные на здоровье, склонные к травмам</p>
-<p><strong>Пример расписания на неделю (всего 300 минут):</strong></p>
-<ul>
-<li>180-210 минут легко (60-70%): большинство ежедневных походов в комфортном темпе</li>
-<li>60–90 минут умеренно (20–30 %): 2–3 быстрых похода в неделю</li>
-<li>30 минут тяжело (10%): 1 интервальная тренировка в неделю</li>
-</ul>
-<div class="key-finding">
-<strong>Исследование:</strong>Элитные спортсмены, занимающиеся выносливостью в разных видах спорта, постоянно используют поляризованные тренировки. Однако с точки зрения здоровья и фитнеса пирамидальные модели дают отличные результаты с меньшим риском травм (Stöggl &amp; Sperlich, 2014).</div>
+<h2 id="intensity">Модели распределения интенсивности</h2><p>То, как вы распределяете интенсивность тренировок в течение недели, существенно влияет на адаптацию и производительность. Используются две основные модели:</p><h3>Поляризованное обучение (модель 80/20)</h3><p><strong>Модель 80/20</strong>делит время тренировки между низкой и высокой интенсивностью с минимальной умеренной интенсивностью:</p><ul><li><strong>80 % легко (зоны 1–2):</strong>95-105 ударов в минуту, разговорный темп</li><li><strong>0-5% умеренный (зона 3):</strong>Минимальное время при 110-120 об/мин</li><li><strong>15-20% жесткий (зона 4-5):</strong>120+ интервалов и темпа в минуту</li></ul><p><strong>Обоснование:</strong>Максимизирует аэробное развитие (легкий объем), одновременно обеспечивая высокоинтенсивный стимул для производительности без накопления усталости от чрезмерной умеренной работы.</p><p><strong>Лучше всего подходит для:</strong>Продвинутые туристы, любители гоночных походов, тренировки, ориентированные на результат</p><p><strong>Пример расписания на неделю (всего 300 минут):</strong></p><ul><li>240 минут легко (80%): ежедневные 30-40-минутные легкие походы + длинные походы на выходные</li><li>60 минут тяжело (20%): 2 интервальных/темповых занятия в неделю</li></ul><h3>Пирамидальная тренировка (модель 60/30/10)</h3><p><strong>пирамидальная модель</strong>распределяет интенсивность по всем зонам:</p><ul><li><strong>60-70% легко (зона 1-2):</strong>Базовое аэробное развитие</li><li><strong>20-30% умеренная (зона 3):</strong>Темп и оживленная последовательная работа</li><li><strong>10 % жесткий (зоны 4–5):</strong>Интервалы высокой интенсивности</li></ul><p><strong>Обоснование:</strong>Более постепенное увеличение интенсивности, лучше подходит для развития способности к умеренной интенсивности, легче восстанавливается.</p><p><strong>Лучше всего подходит для:</strong>Туристы от начинающего до среднего уровня, тренирующиеся, ориентированные на здоровье, склонные к травмам</p><p><strong>Пример расписания на неделю (всего 300 минут):</strong></p><ul><li>180-210 минут легко (60-70%): большинство ежедневных походов в комфортном темпе</li><li>60–90 минут умеренно (20–30 %): 2–3 быстрых похода в неделю</li><li>30 минут тяжело (10%): 1 интервальная тренировка в неделю</li></ul><div class="key-finding"><strong>Исследование:</strong>Элитные спортсмены, занимающиеся выносливостью в разных видах спорта, постоянно используют поляризованные тренировки. Однако с точки зрения здоровья и фитнеса пирамидальные модели дают отличные результаты с меньшим риском травм (Stöggl &amp; Sperlich, 2014).</div>
 Стратегии восстановления
-<h2 id="recovery">Стратегии восстановления и адаптации</h2>
-<p>Тренировочный стимул создает адаптацию только в сочетании с адекватным восстановлением. Без восстановления тренировочная нагрузка становится тренировочным стрессом, не приносящим пользы.</p>
-<h3>Методы активного восстановления</h3>
-<ol>
-<li>
-<strong>Легкие походы (60-90 шагов в минуту):</strong>
-<ul>
-<li>20-30 минут при очень низкой интенсивности</li>
-<li>Способствует кровотоку без дополнительного стресса</li>
-<li>Психологическая польза движения</li>
-</ul>
-</li>
-<li>
-<strong>Перекрестное обучение:</strong>
-<ul>
-<li>езда на велосипеде, йога, тай-чи</li>
-<li>Различные модели движений уменьшают повторяющийся стресс</li>
-<li>Поддерживает физическую форму с помощью разнообразия</li>
-</ul>
-</li>
-<li>
-<strong>Динамическая растяжка и подвижность:</strong>
-<ul>
-<li>15-20 минут в день</li>
-<li>Сосредоточьтесь на бедрах, лодыжках, икрах, подколенных сухожилиях</li>
-<li>Сохраняет диапазон движений для эффективной походки</li>
-</ul>
-</li>
-</ol>
-<h3>Методы пассивного восстановления</h3>
-<ol>
-<li>
-<strong>Оптимизация сна:</strong>
-<ul>
-<li>7-9 часов в сутки (взрослые)</li>
-<li>Последовательный график сна/бодрствования</li>
-<li>Прохладная темная комната (16–19 °C)</li>
-<li>Ограничьте экраны за 1 час до сна</li>
-</ul>
-</li>
-<li>
-<strong>Питание для восстановления:</strong>
-<ul>
-<li>Белок: 1,2–1,6 г/кг массы тела в день</li>
-<li>Углеводы: Достаточно для восполнения запасов гликогена (3-5 г/кг)</li>
-<li>Гидратация: Следите за цветом мочи (бледно-желтый)</li>
-<li>Противовоспалительные продукты: Ягоды, жирная рыба, листовая зелень</li>
-</ul>
-</li>
-<li>
-<strong>Массаж и миофасциальный релиз:</strong>
-<ul>
-<li>Пена скатывается через 10-15 минут после похода</li>
-<li>Сосредоточьтесь на икрах, ИТ-диапазоне, сгибателях бедра, ягодицах</li>
-<li>Профессиональный массаж каждые 2-4 недели, если позволяет бюджет</li>
-</ul>
-</li>
-<li>
-<strong>Погружение в холодную воду (опция):</strong>
-<ul>
-<li>10–15 минут в воде с температурой 50–59°F (10–15°C)</li>
-<li>В течение 1 часа после тяжелой тренировки</li>
-<li>Может уменьшить болезненность и воспаление мышц</li>
-<li>Не рекомендуется чаще 2 раз в неделю</li>
-</ul>
-</li>
-</ol>
-<h3>Психическое восстановление</h3>
-<ul>
-<li><strong>Разнообразие:</strong>Смешивайте маршруты, ландшафты и пейзажи, чтобы поддерживать взаимодействие</li>
-<li><strong>Социальные походы:</strong>Отправляйтесь в поход с друзьями или группой для удовольствия</li>
-<li><strong>Внимательность:</strong>Практикуйте осознанность настоящего момента во время легких походов</li>
-<li><strong>Недели разгрузки:</strong>Психический перерыв от структурированных тренировок каждые 3-4 недели</li>
-<li><strong>Межсезонье:</strong>2-4 недели минимальных структурированных походов в год</li>
-</ul>
+<h2 id="recovery">Стратегии восстановления и адаптации</h2><p>Тренировочный стимул создает адаптацию только в сочетании с адекватным восстановлением. Без восстановления тренировочная нагрузка становится тренировочным стрессом, не приносящим пользы.</p><h3>Методы активного восстановления</h3><ol><li><strong>Легкие походы (60-90 шагов в минуту):</strong><ul><li>20-30 минут при очень низкой интенсивности</li><li>Способствует кровотоку без дополнительного стресса</li><li>Психологическая польза движения</li></ul></li><li><strong>Перекрестное обучение:</strong><ul><li>езда на велосипеде, йога, тай-чи</li><li>Различные модели движений уменьшают повторяющийся стресс</li><li>Поддерживает физическую форму с помощью разнообразия</li></ul></li><li><strong>Динамическая растяжка и подвижность:</strong><ul><li>15-20 минут в день</li><li>Сосредоточьтесь на бедрах, лодыжках, икрах, подколенных сухожилиях</li><li>Сохраняет диапазон движений для эффективной походки</li></ul></li></ol><h3>Методы пассивного восстановления</h3><ol><li><strong>Оптимизация сна:</strong><ul><li>7-9 часов в сутки (взрослые)</li><li>Последовательный график сна/бодрствования</li><li>Прохладная темная комната (16–19 °C)</li><li>Ограничьте экраны за 1 час до сна</li></ul></li><li><strong>Питание для восстановления:</strong><ul><li>Белок: 1,2–1,6 г/кг массы тела в день</li><li>Углеводы: Достаточно для восполнения запасов гликогена (3-5 г/кг)</li><li>Гидратация: Следите за цветом мочи (бледно-желтый)</li><li>Противовоспалительные продукты: Ягоды, жирная рыба, листовая зелень</li></ul></li><li><strong>Массаж и миофасциальный релиз:</strong><ul><li>Пена скатывается через 10-15 минут после похода</li><li>Сосредоточьтесь на икрах, ИТ-диапазоне, сгибателях бедра, ягодицах</li><li>Профессиональный массаж каждые 2-4 недели, если позволяет бюджет</li></ul></li><li><strong>Погружение в холодную воду (опция):</strong><ul><li>10–15 минут в воде с температурой 50–59°F (10–15°C)</li><li>В течение 1 часа после тяжелой тренировки</li><li>Может уменьшить болезненность и воспаление мышц</li><li>Не рекомендуется чаще 2 раз в неделю</li></ul></li></ol><h3>Психическое восстановление</h3><ul><li><strong>Разнообразие:</strong>Смешивайте маршруты, ландшафты и пейзажи, чтобы поддерживать взаимодействие</li><li><strong>Социальные походы:</strong>Отправляйтесь в поход с друзьями или группой для удовольствия</li><li><strong>Внимательность:</strong>Практикуйте осознанность настоящего момента во время легких походов</li><li><strong>Недели разгрузки:</strong>Психический перерыв от структурированных тренировок каждые 3-4 недели</li><li><strong>Межсезонье:</strong>2-4 недели минимальных структурированных походов в год</li></ul>
 Расширенные концепции
-<h2 id="advanced">Концепции нагрузки для продвинутых тренировок</h2>
-<h3>Тренировочный импульс (TRIMP)</h3>
-<p><strong>TRIMP</strong>(Тренировочный импульс) определяет количественную тренировочную нагрузку, используя данные о частоте пульса с экспоненциальным взвешиванием для более высокой интенсивности.</p>
-<div class="formula-box">
-<pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
+<h2 id="advanced">Концепции нагрузки для продвинутых тренировок</h2><h3>Тренировочный импульс (TRIMP)</h3><p><strong>TRIMP</strong>(Тренировочный импульс) определяет количественную тренировочную нагрузку, используя данные о частоте пульса с экспоненциальным взвешиванием для более высокой интенсивности.</p><div class="formula-box"><pre>TRIMP = Duration (min) × ΔHR ratio × 0.64e^(1.92 × ΔHR ratio)
 
 Where:
-  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre>
-</div>
-<p><strong>Пример:</strong></p>
-<ul>
-<li>Продолжительность: 60 минут</li>
-<li>Средняя ЧСС: 130 ударов в минуту</li>
-<li>ЧСС в состоянии покоя: 60 ударов в минуту</li>
-<li>Макс. ЧСС: 180 ударов в минуту</li>
-<li>Отношение ΔHR = (130-60)/(180-60) = 70/120 = 0,583</li>
-<li>TRIMP = 60 × 0,583 × 0,64e^(1,92 × 0,583) = 60 × 0,583 × 1,94 = 67,9</li>
-</ul>
-<p><strong>Примечание:</strong>Значения TRIMP нельзя напрямую сравнивать с WSS, но оба они определяют количественную тренировочную нагрузку.</p>
-<h3>Модель фитнес-усталости</h3>
-<p>Обучение дает два противоположных эффекта:</p>
-<ul>
-<li><strong>Фитнес:</strong>Медленно развивающаяся и медленно затухающая положительная адаптация (42-дневная постоянная времени)</li>
-<li><strong>Усталость:</strong>Быстро нарастающий и быстро затухающий отрицательный эффект (7-дневная постоянная времени)</li>
-</ul>
-<p><strong>Производительность = Фитнес - Усталость</strong></p>
-<p>Эта модель объясняет:</p>
-<ul>
-<li>Почему дни отдыха могут привести к повышению производительности (усталость рассеивается быстрее, чем физическая форма)</li>
-<li>Почему тейперы эффективны (снижают усталость, сохраняя при этом физическую форму)</li>
-<li>Почему важны недели восстановления (управление накопленной усталостью)</li>
-</ul>
-<h3>Хроническая тренировочная нагрузка (CTL) и ее форма</h3>
-<p>Расширенные показатели, отслеживаемые такими платформами, как Hike Analytics:</p>
-<ul>
-<li><strong>CTL (хроническая тренировочная нагрузка):</strong>42-дневное экспоненциально взвешенное среднее значение ежедневного WSS — представляет собой фитнес</li>
-<li><strong>ATL (острая тренировочная нагрузка):</strong>7-дневное экспоненциально взвешенное среднее ежедневного WSS — отражает усталость</li>
-<li><strong>TSB (Тренировочный баланс стресса):</strong>CTL - ATL — олицетворяет форму/свежесть</li>
-</ul>
-<p><strong>TSB Интерпретация:</strong></p>
-<ul>
-<li><strong>TSB &lt; -30:</strong>Высокая утомляемость, чрезмерный риск</li>
-<li><strong>TSB от -30 до -10:</strong>Зона продуктивных тренировок, нормальная усталость</li>
-<li><strong>TSB от -10 до +10:</strong>Нейтральная форма</li>
-<li><strong>TSB от +10 до +25:</strong>Свежий, хорошая готовность к гонкам</li>
-<li><strong>TSB &gt; +25:</strong>Очень свежо, но если продолжать, то разряжает</li>
-</ul>
+  ΔHR ratio = (Average HR - Resting HR) / (Max HR - Resting HR)</pre></div><p><strong>Пример:</strong></p><ul><li>Продолжительность: 60 минут</li><li>Средняя ЧСС: 130 ударов в минуту</li><li>ЧСС в состоянии покоя: 60 ударов в минуту</li><li>Макс. ЧСС: 180 ударов в минуту</li><li>Отношение ΔHR = (130-60)/(180-60) = 70/120 = 0,583</li><li>TRIMP = 60 × 0,583 × 0,64e^(1,92 × 0,583) = 60 × 0,583 × 1,94 = 67,9</li></ul><p><strong>Примечание:</strong>Значения TRIMP нельзя напрямую сравнивать с WSS, но оба они определяют количественную тренировочную нагрузку.</p><h3>Модель фитнес-усталости</h3><p>Обучение дает два противоположных эффекта:</p><ul><li><strong>Фитнес:</strong>Медленно развивающаяся и медленно затухающая положительная адаптация (42-дневная постоянная времени)</li><li><strong>Усталость:</strong>Быстро нарастающий и быстро затухающий отрицательный эффект (7-дневная постоянная времени)</li></ul><p><strong>Производительность = Фитнес - Усталость</strong></p><p>Эта модель объясняет:</p><ul><li>Почему дни отдыха могут привести к повышению производительности (усталость рассеивается быстрее, чем физическая форма)</li><li>Почему тейперы эффективны (снижают усталость, сохраняя при этом физическую форму)</li><li>Почему важны недели восстановления (управление накопленной усталостью)</li></ul><h3>Хроническая тренировочная нагрузка (CTL) и ее форма</h3><p>Расширенные показатели, отслеживаемые такими платформами, как Hike Analytics:</p><ul><li><strong>CTL (хроническая тренировочная нагрузка):</strong>42-дневное экспоненциально взвешенное среднее значение ежедневного WSS — представляет собой фитнес</li><li><strong>ATL (острая тренировочная нагрузка):</strong>7-дневное экспоненциально взвешенное среднее ежедневного WSS — отражает усталость</li><li><strong>TSB (Тренировочный баланс стресса):</strong>CTL - ATL — олицетворяет форму/свежесть</li></ul><p><strong>TSB Интерпретация:</strong></p><ul><li><strong>TSB &lt; -30:</strong>Высокая утомляемость, чрезмерный риск</li><li><strong>TSB от -30 до -10:</strong>Зона продуктивных тренировок, нормальная усталость</li><li><strong>TSB от -10 до +10:</strong>Нейтральная форма</li><li><strong>TSB от +10 до +25:</strong>Свежий, хорошая готовность к гонкам</li><li><strong>TSB &gt; +25:</strong>Очень свежо, но если продолжать, то разряжает</li></ul>
 Практическое применение
-<h2 id="practical">Практическое обучение «Управление нагрузкой»</h2>
-<h3>Шаблон еженедельного планирования</h3>
-<p><strong>Каждую неделю структурируйте:</strong></p>
-<ol>
-<li><strong>1-2 качественные сессии:</strong>Интервалы, темп или работа в гоночном темпе</li>
-<li><strong>1 длинный поход:</strong>60-120 минут в легко-умеренном темпе</li>
-<li><strong>3-4 легких похода:</strong>Восстановление и накопление объема</li>
-<li><strong>1 выходной день:</strong>Полный отдых или очень спокойная деятельность</li>
-</ol>
-<p><strong>Пример промежуточной недели (цель: 420 WSS):</strong></p>
-<div class="data-table">
-<table>
-<thead>
-<tr>
-<th>День</th>
-<th>Тренировка</th>
-<th>Продолжительность</th>
-<th>Интенсивность</th>
-<th>ВСС</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Понедельник</td>
-<td>Устойчивый поход</td>
-<td>45 мин</td>
-<td>105 экземпляров в минуту (зона 2)</td>
-<td>90</td>
-</tr>
-<tr>
-<td>Вторник</td>
-<td>Легкое восстановление</td>
-<td>30 мин</td>
-<td>95 экземпляров в минуту (зона 1)</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Среда</td>
-<td><strong>Интервалы</strong></td>
-<td>всего 50 минут</td>
-<td>5×5 мин при 120 с/мин</td>
-<td>140</td>
-</tr>
-<tr>
-<td>Четверг</td>
-<td>Легкий поход</td>
-<td>35 мин</td>
-<td>100 стежков в минуту (зона 2)</td>
-<td>55</td>
-</tr>
-<tr>
-<td>Пятница</td>
-<td>День отдыха</td>
-<td>—</td>
-<td>—</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Суббота</td>
-<td><strong>Долгий поход</strong></td>
-<td>75 мин</td>
-<td>105 экземпляров в минуту (зона 2)</td>
-<td>150</td>
-</tr>
-<tr>
-<td>Воскресенье</td>
-<td>Легкое восстановление</td>
-<td>30 мин</td>
-<td>95 экземпляров в минуту (зона 1)</td>
-<td>40</td>
-</tr>
-<tr>
-<td colspan="4"><strong>Итого за неделю</strong></td>
-<td><strong>515 ВСС</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3>Корректировка на основе обратной связи</h3>
-<p><strong>Сценарий 1: Чувство усталости в середине недели</strong></p>
-<ul>
-<li>Проверьте RHR (повышенный?) и оценку здоровья (низкий?)</li>
-<li>Замените тяжелую тренировку легким походом</li>
-<li>При необходимости добавьте день отдыха</li>
-<li>Возобновить запланированное обучение после выздоровления</li>
-</ul>
-<p><strong>Сценарий 2: Чувствую себя прекрасно и прогрессирует</strong></p>
-<ul>
-<li>Продолжить текущий план (не добавлять дополнительную нагрузку импульсивно)</li>
-<li>На следующей неделе увеличить нагрузку на 5-10%</li>
-<li>Отдавайте предпочтение качеству, а не количеству (слегка увеличьте интенсивность)</li>
-</ul>
-<p><strong>Сценарий 3: Постоянное отставание</strong></p>
-<ul>
-<li>Рассмотрите стресс, не связанный с тренировкой (работа, сон, жизненные события)</li>
-<li>Снизить тренировочную нагрузку на 30-40% за 1-2 недели</li>
-<li>Сосредоточьтесь на сне, питании и управлении стрессом</li>
-<li>Постепенное восстановление после подтверждения восстановления</li>
-</ul>
+<h2 id="practical">Практическое обучение «Управление нагрузкой»</h2><h3>Шаблон еженедельного планирования</h3><p><strong>Каждую неделю структурируйте:</strong></p><ol><li><strong>1-2 качественные сессии:</strong>Интервалы, темп или работа в гоночном темпе</li><li><strong>1 длинный поход:</strong>60-120 минут в легко-умеренном темпе</li><li><strong>3-4 легких похода:</strong>Восстановление и накопление объема</li><li><strong>1 выходной день:</strong>Полный отдых или очень спокойная деятельность</li></ol><p><strong>Пример промежуточной недели (цель: 420 WSS):</strong></p><div class="data-table"><table><thead><tr><th>День</th><th>Тренировка</th><th>Продолжительность</th><th>Интенсивность</th><th>ВСС</th></tr></thead><tbody><tr><td>Понедельник</td><td>Устойчивый поход</td><td>45 мин</td><td>105 экземпляров в минуту (зона 2)</td><td>90</td></tr><tr><td>Вторник</td><td>Легкое восстановление</td><td>30 мин</td><td>95 экземпляров в минуту (зона 1)</td><td>40</td></tr><tr><td>Среда</td><td><strong>Интервалы</strong></td><td>всего 50 минут</td><td>5×5 мин при 120 с/мин</td><td>140</td></tr><tr><td>Четверг</td><td>Легкий поход</td><td>35 мин</td><td>100 стежков в минуту (зона 2)</td><td>55</td></tr><tr><td>Пятница</td><td>День отдыха</td><td>—</td><td>—</td><td>0</td></tr><tr><td>Суббота</td><td><strong>Долгий поход</strong></td><td>75 мин</td><td>105 экземпляров в минуту (зона 2)</td><td>150</td></tr><tr><td>Воскресенье</td><td>Легкое восстановление</td><td>30 мин</td><td>95 экземпляров в минуту (зона 1)</td><td>40</td></tr><tr><td colspan="4"><strong>Итого за неделю</strong></td><td><strong>515 ВСС</strong></td></tr></tbody></table></div><h3>Корректировка на основе обратной связи</h3><p><strong>Сценарий 1: Чувство усталости в середине недели</strong></p><ul><li>Проверьте RHR (повышенный?) и оценку здоровья (низкий?)</li><li>Замените тяжелую тренировку легким походом</li><li>При необходимости добавьте день отдыха</li><li>Возобновить запланированное обучение после выздоровления</li></ul><p><strong>Сценарий 2: Чувствую себя прекрасно и прогрессирует</strong></p><ul><li>Продолжить текущий план (не добавлять дополнительную нагрузку импульсивно)</li><li>На следующей неделе увеличить нагрузку на 5-10%</li><li>Отдавайте предпочтение качеству, а не количеству (слегка увеличьте интенсивность)</li></ul><p><strong>Сценарий 3: Постоянное отставание</strong></p><ul><li>Рассмотрите стресс, не связанный с тренировкой (работа, сон, жизненные события)</li><li>Снизить тренировочную нагрузку на 30-40% за 1-2 недели</li><li>Сосредоточьтесь на сне, питании и управлении стрессом</li><li>Постепенное восстановление после подтверждения восстановления</li></ul>
 Резюме
-<h2 id="summary">Резюме: Ключевые принципы тренировочной нагрузки</h2>
-<div class="key-finding">
-<strong>Пять столпов управления тренировочной нагрузкой:</strong>
-<ol>
-<li><strong>Оцените нагрузку:</strong>Используйте WSS, активные минуты или TRIMP для отслеживания тренировочных стимулов</li>
-<li><strong>Прогресс постепенно:</strong>Еженедельный прирост на 5–10%, соотношение строительства и восстановления 3:1</li>
-<li><strong>Мониторинг ACWR:</strong>Поддерживайте соотношение острой:хронической болезни в пределах 0,80–1,30, чтобы свести к минимуму риск травм</li>
-<li><strong>Приоритизация восстановления:</strong>Тренировка + Восстановление = Адаптация (отсутствие любого из них препятствует прогрессу)</li>
-<li><strong>Индивидуализация:</strong>Корректировка на основе объективных показателей (RHR, HRV, производительность) и субъективных ощущений</li>
-</ol>
-</div>
-<p><strong>Этапы действий:</strong></p>
-<ol>
-<li>Рассчитайте свой текущий недельный WSS, используя калькулятор ниже</li>
-<li>Установите реалистичную цель в зависимости от вашего уровня опыта</li>
-<li>Планируйте постепенное еженедельное увеличение (5–10%)</li>
-<li>Планируйте недели восстановления каждые 3-4 недели</li>
-<li>Отслеживайте частоту шагов Peak-30 и частоту сердечных сокращений в состоянии покоя ежедневно</li>
-<li>Используйте анкету о состоянии здоровья для ежедневной корректировки</li>
-<li>Еженедельно просматривайте ACWR, чтобы вовремя обнаружить опасные всплески</li>
-<li>Отдавайте приоритет сну (7-9 часов) и питанию для восстановления</li>
-</ol>
+<h2 id="summary">Резюме: Ключевые принципы тренировочной нагрузки</h2><div class="key-finding"><strong>Пять столпов управления тренировочной нагрузкой:</strong><ol><li><strong>Оцените нагрузку:</strong>Используйте WSS, активные минуты или TRIMP для отслеживания тренировочных стимулов</li><li><strong>Прогресс постепенно:</strong>Еженедельный прирост на 5–10%, соотношение строительства и восстановления 3:1</li><li><strong>Мониторинг ACWR:</strong>Поддерживайте соотношение острой:хронической болезни в пределах 0,80–1,30, чтобы свести к минимуму риск травм</li><li><strong>Приоритизация восстановления:</strong>Тренировка + Восстановление = Адаптация (отсутствие любого из них препятствует прогрессу)</li><li><strong>Индивидуализация:</strong>Корректировка на основе объективных показателей (RHR, HRV, производительность) и субъективных ощущений</li></ol></div><p><strong>Этапы действий:</strong></p><ol><li>Рассчитайте свой текущий недельный WSS, используя калькулятор ниже</li><li>Установите реалистичную цель в зависимости от вашего уровня опыта</li><li>Планируйте постепенное еженедельное увеличение (5–10%)</li><li>Планируйте недели восстановления каждые 3-4 недели</li><li>Отслеживайте частоту шагов Peak-30 и частоту сердечных сокращений в состоянии покоя ежедневно</li><li>Используйте анкету о состоянии здоровья для ежедневной корректировки</li><li>Еженедельно просматривайте ACWR, чтобы вовремя обнаружить опасные всплески</li><li>Отдавайте приоритет сну (7-9 часов) и питанию для восстановления</li></ol>
 Калькулятор и инструменты
-<h2 id="calculating">Рассчитайте свою тренировочную нагрузку</h2>
-<p>Воспользуйтесь нашими бесплатными калькуляторами, чтобы определить свою тренировочную нагрузку:</p>
-<ul>
-<li><a href="/ru/wss-calculator/"><strong>Калькулятор ВСС</strong></a>— Рассчитать оценку стресса для индивидуальных тренировок</li>
-</ul>
+<h2 id="calculating">Рассчитайте свою тренировочную нагрузку</h2><p>Воспользуйтесь нашими бесплатными калькуляторами, чтобы определить свою тренировочную нагрузку:</p><ul><li><a href="/ru/wss-calculator/"><strong>Калькулятор ВСС</strong></a>— Рассчитать оценку стресса для индивидуальных тренировок</li></ul>
 Научные ссылки
-<h2 id="references">Научные ссылки</h2>
-<p>В этом руководстве синтезированы исследования в области физиологии физических упражнений, спортивной науки и исследований, посвященных пешему туризму:</p>
-<ul>
-<li><strong>Дель Посо-Круз Б. и др. (2022).</strong>«Связь ежедневного количества шагов и интенсивности с возникновением сердечно-сосудистых заболеваний».<em>Сеть JAMA открыта</em>5(12):e2248107. [Исследование каденса Пик-30]</li>
-<li><strong>Габбетт Т.Дж. (2016).</strong>«Парадокс предотвращения травм при тренировках».<em>Британский журнал спортивной медицины</em>50:273-280. [ACWR и риск травм]</li>
-<li><strong>Солигард Т. и др. (2016).</strong>«Сколько это слишком много? (Часть 1) Консенсусное заявление Международного олимпийского комитета о нагрузках в спорте и риске травм».<em>Британский журнал спортивной медицины</em>50:1030-1041.</li>
-<li><strong>Стёггл Т.Л., Сперлих Б. (2014).</strong>«Поляризованная тренировка оказывает большее влияние на ключевые переменные выносливости, чем тренировка с порогом, высокой интенсивностью или большим объемом».<em>Границы физиологии</em>5:33. [Распределение интенсивности]</li>
-<li><strong>Банистер РЭБ. (1991).</strong>«Моделирование элитных спортивных результатов». В: MacDougall JD и др., ред.<em>Физиологическое тестирование элитных спортсменов</em>. Кинетика человека. [Модель фитнес-усталости, TRIMP]</li>
-<li><strong>Тюдор-Локк С. и др. (2019).</strong>«Тенденция ходьбы (шагов в минуту) и интенсивность у людей в возрасте 21–40 лет: КАДЕНЦИЯ – взрослые».<em>Int J Behav Nutr Phys Act</em>16:8. [Пороги частоты вращения педалей]</li>
-</ul>
-<p><strong>Дополнительные исследования:</strong></p>
-<ul>
-<li><a href="/ru/bibliography/">Полная научная библиография</a></li>
-<li><a href="/ru/research/">Последние исследования в области пешего туризма</a></li>
-</ul>
+<h2 id="references">Научные ссылки</h2><p>В этом руководстве синтезированы исследования в области физиологии физических упражнений, спортивной науки и исследований, посвященных пешему туризму:</p><ul><li><strong>Дель Посо-Круз Б. и др. (2022).</strong>«Связь ежедневного количества шагов и интенсивности с возникновением сердечно-сосудистых заболеваний».<em>Сеть JAMA открыта</em>5(12):e2248107. [Исследование каденса Пик-30]</li><li><strong>Габбетт Т.Дж. (2016).</strong>«Парадокс предотвращения травм при тренировках».<em>Британский журнал спортивной медицины</em>50:273-280. [ACWR и риск травм]</li><li><strong>Солигард Т. и др. (2016).</strong>«Сколько это слишком много? (Часть 1) Консенсусное заявление Международного олимпийского комитета о нагрузках в спорте и риске травм».<em>Британский журнал спортивной медицины</em>50:1030-1041.</li><li><strong>Стёггл Т.Л., Сперлих Б. (2014).</strong>«Поляризованная тренировка оказывает большее влияние на ключевые переменные выносливости, чем тренировка с порогом, высокой интенсивностью или большим объемом».<em>Границы физиологии</em>5:33. [Распределение интенсивности]</li><li><strong>Банистер РЭБ. (1991).</strong>«Моделирование элитных спортивных результатов». В: MacDougall JD и др., ред.<em>Физиологическое тестирование элитных спортсменов</em>. Кинетика человека. [Модель фитнес-усталости, TRIMP]</li><li><strong>Тюдор-Локк С. и др. (2019).</strong>«Тенденция ходьбы (шагов в минуту) и интенсивность у людей в возрасте 21–40 лет: КАДЕНЦИЯ – взрослые».<em>Int J Behav Nutr Phys Act</em>16:8. [Пороги частоты вращения педалей]</li></ul><p><strong>Дополнительные исследования:</strong></p><ul><li><a href="/ru/bibliography/">Полная научная библиография</a></li><li><a href="/ru/research/">Последние исследования в области пешего туризма</a></li></ul>
 Следующие шаги
-<h2 id="next-steps">Следующие шаги</h2>
-<ul>
-<li><a href="/ru/walking-zones/">Узнайте о тренировочных зонах с учетом частоты вращения педалей</a></li>
-<li><a href="/ru/formulas/">Изучите формулы и расчеты тренировочной нагрузки</a></li>
-<li><a href="/ru/gait-analysis/">Понимание показателей походки для мониторинга</a></li>
-<li><a href="/ru/stride-mechanics/">Оптимизировать биомеханику походов</a></li>
-</ul>
-</div>
+<h2 id="next-steps">Следующие шаги</h2><ul><li><a href="/ru/walking-zones/">Узнайте о тренировочных зонах с учетом частоты вращения педалей</a></li><li><a href="/ru/formulas/">Изучите формулы и расчеты тренировочной нагрузки</a></li><li><a href="/ru/gait-analysis/">Понимание показателей походки для мониторинга</a></li><li><a href="/ru/stride-mechanics/">Оптимизировать биомеханику походов</a></li></ul></div>
 Боковая панель
-<aside class="sidebar">
-<div class="toc">
-<h3>Оглавление</h3>
-<ul>
-<li><a href="#intro">Что такое тренировочная нагрузка?</a></li>
-<li><a href="#peak30">Пик-30 Каденс</a></li>
-<li><a href="#brisk-bouts">Оживленные приступы</a></li>
-<li><a href="#wss">Оценка стресса при пешем туризме</a></li>
-<li><a href="#weekly-load">Еженедельные рекомендации</a></li>
-<li><a href="#acwr">Соотношение острая:хроническая</a></li>
-<li><a href="#progression">Стратегии прогресса</a></li>
-<li><a href="#monitoring">Мониторинг нагрузки</a></li>
-<li><a href="#intensity">Распределение интенсивности</a></li>
-<li><a href="#recovery">Стратегии восстановления</a></li>
-<li><a href="#advanced">Расширенные концепции</a></li>
-<li><a href="#practical">Практическое применение</a></li>
-<li><a href="#summary">Резюме</a></li>
-<li><a href="#calculating">Калькуляторы</a></li>
-<li><a href="#references">Ссылки</a></li>
-</ul>
-</div>
-<div class="cta-box">
-<h3>Отслеживайте свою нагрузку</h3>
-<p>Автоматически отслеживайте WSS, частоту вращения педалей Peak-30 и ACWR с помощью Hike Analytics.</p>
-<a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Скачать приложение</a>
-</div>
-<div class="tip-box">
-<h4>Быстрый совет</h4>
-<p>Начните отслеживать свой каденс Peak-30 сегодня! Стремитесь к ≥100 выстрелов в минуту в течение как минимум 30 минут, чтобы достичь порога пользы для здоровья.</p>
-</div>
-</aside>
-</div>
-</div>
-</section>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+<aside class="sidebar"><div class="toc"><h3>Оглавление</h3><ul><li><a href="#intro">Что такое тренировочная нагрузка?</a></li><li><a href="#peak30">Пик-30 Каденс</a></li><li><a href="#brisk-bouts">Оживленные приступы</a></li><li><a href="#wss">Оценка стресса при пешем туризме</a></li><li><a href="#weekly-load">Еженедельные рекомендации</a></li><li><a href="#acwr">Соотношение острая:хроническая</a></li><li><a href="#progression">Стратегии прогресса</a></li><li><a href="#monitoring">Мониторинг нагрузки</a></li><li><a href="#intensity">Распределение интенсивности</a></li><li><a href="#recovery">Стратегии восстановления</a></li><li><a href="#advanced">Расширенные концепции</a></li><li><a href="#practical">Практическое применение</a></li><li><a href="#summary">Резюме</a></li><li><a href="#calculating">Калькуляторы</a></li><li><a href="#references">Ссылки</a></li></ul></div><div class="cta-box"><h3>Отслеживайте свою нагрузку</h3><p>Автоматически отслеживайте WSS, частоту вращения педалей Peak-30 и ACWR с помощью Hike Analytics.</p><a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">Скачать приложение</a></div><div class="tip-box"><h4>Быстрый совет</h4><p>Начните отслеживать свой каденс Peak-30 сегодня! Стремитесь к ≥100 выстрелов в минуту в течение как минимум 30 минут, чтобы достичь порога пользы для здоровья.</p></div></aside></div></div></section><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">AnalyticsZone Team</span>
-          </span>
-        </h3>
-        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">AnalyticsZone Team</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">Руководство по тренировочной нагрузке для пешего туризма:</h2>
-    <p class="ai-citation-answer">Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления.</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-11</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>Оценка стресса в походе · Калькулятор WSS · туристическая тренировочная нагрузка · еженедельный объем походов · походы, фитнес-отслеживание</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../ru/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="training-load"><div class="container ai-citation-shell"><h2 class="ai-citation-title">Руководство по тренировочной нагрузке для пешего туризма:</h2><p class="ai-citation-answer">Изучите показатели нагрузки при тренировках в походе. Расчет WSS, еженедельное отслеживание объема, мониторинг восстановления.</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-11</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>Оценка стресса в походе · Калькулятор WSS · туристическая тренировочная нагрузка · еженедельный объем походов · походы, фитнес-отслеживание</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../ru/bibliography/">
           
           Библиография
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Скачать</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="Загрузите в App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">Скачать</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="Загрузите в App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Загрузите в App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="Загрузите его в Google Play">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="Загрузите его в Google Play"><img src="../../assets/images/badge-google-play.svg"
                             alt="Загрузите его в Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Доступно в</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Доступно в</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link active"
+                </a><a href="/ru/" class="lang-link active"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. Все права защищены
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/ru/privacy/">Конфиденциальность</a></li>
-                <li><a href="/ru/terms/">Условия</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Этот веб-сайт использует файлы cookie для улучшения вашего опыта.</p>
-            <a href="/ru/privacy/" class="text-sm">Узнать больше</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Отклонить</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Принимать</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/ru/privacy/">Конфиденциальность</a></li><li><a href="/ru/terms/">Условия</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Этот веб-сайт использует файлы cookie для улучшения вашего опыта.</p><a href="/ru/privacy/" class="text-sm">Узнать больше</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Отклонить</button><button id="cookie-accept" class="btn btn-primary btn-small">Принимать</button></div></div></div><script src="../../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

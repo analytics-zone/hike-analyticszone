@@ -1,251 +1,61 @@
-<!DOCTYPE html>
-<html lang="zh" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
-    rel="stylesheet">
-
-  
-  <title>步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式</title>
-  <meta name="description" content="步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算">
-  
-
-  
-  <link rel="canonical" href="https://hike.analyticszone.app/zh/formulas/">
-
-  
-  
-  <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-  <meta property="article:modified_time" content="2026-03-24T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://hike.analyticszone.app/zh/formulas/">
-  <meta property="og:title" content="步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式">
-  <meta property="og:description" content="步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics">
-  <meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="Hike Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://hike.analyticszone.app/zh/formulas/">
-  <meta name="twitter:title" content="步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式">
-  <meta name="twitter:description" content="步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics">
-  <meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg">
-  
-  <meta name="twitter:site" content="@hikeanalytics">
-  <meta name="twitter:creator" content="@hikeanalytics">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://hike.analyticszone.app/af/formulas/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://hike.analyticszone.app/am/formulas/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://hike.analyticszone.app/ar/formulas/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://hike.analyticszone.app/bg/formulas/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://hike.analyticszone.app/bn/formulas/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://hike.analyticszone.app/ca/formulas/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://hike.analyticszone.app/cs/formulas/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://hike.analyticszone.app/da/formulas/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://hike.analyticszone.app/de/formulas/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://hike.analyticszone.app/el/formulas/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://hike.analyticszone.app/en/formulas/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://hike.analyticszone.app/es/formulas/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://hike.analyticszone.app/et/formulas/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://hike.analyticszone.app/fa/formulas/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://hike.analyticszone.app/fi/formulas/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://hike.analyticszone.app/fr/formulas/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://hike.analyticszone.app/gu/formulas/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://hike.analyticszone.app/ha/formulas/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://hike.analyticszone.app/he/formulas/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://hike.analyticszone.app/hi/formulas/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://hike.analyticszone.app/hr/formulas/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://hike.analyticszone.app/hu/formulas/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://hike.analyticszone.app/id/formulas/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://hike.analyticszone.app/is/formulas/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://hike.analyticszone.app/it/formulas/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://hike.analyticszone.app/ja/formulas/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://hike.analyticszone.app/km/formulas/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://hike.analyticszone.app/kn/formulas/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://hike.analyticszone.app/ko/formulas/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://hike.analyticszone.app/lt/formulas/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://hike.analyticszone.app/lv/formulas/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://hike.analyticszone.app/ms/formulas/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://hike.analyticszone.app/my/formulas/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://hike.analyticszone.app/nb/formulas/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://hike.analyticszone.app/nl/formulas/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://hike.analyticszone.app/pl/formulas/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://hike.analyticszone.app/pt/formulas/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://hike.analyticszone.app/pt-br/formulas/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://hike.analyticszone.app/ro/formulas/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://hike.analyticszone.app/ru/formulas/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://hike.analyticszone.app/sk/formulas/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://hike.analyticszone.app/sl/formulas/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://hike.analyticszone.app/sr/formulas/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://hike.analyticszone.app/sv/formulas/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://hike.analyticszone.app/sw/formulas/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://hike.analyticszone.app/ta/formulas/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://hike.analyticszone.app/te/formulas/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://hike.analyticszone.app/th/formulas/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://hike.analyticszone.app/tl/formulas/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://hike.analyticszone.app/tr/formulas/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://hike.analyticszone.app/uk/formulas/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://hike.analyticszone.app/ur/formulas/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://hike.analyticszone.app/vi/formulas/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://hike.analyticszone.app/yo/formulas/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://hike.analyticszone.app/zh/formulas/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://hike.analyticszone.app/en/formulas/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  
-  
-  
-  
-  <meta name="robots" content="index, follow">
-  
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6760036261">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="zh" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=optional"
+    rel="stylesheet"><title>步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式</title><meta name="description" content="步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics"><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算"><link rel="canonical" href="https://hike.analyticszone.app/zh/formulas/"><meta property="article:published_time" content="2025-01-15T10:00:00Z"><meta property="article:modified_time" content="2026-03-24T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://hike.analyticszone.app/zh/formulas/"><meta property="og:title" content="步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式"><meta property="og:description" content="步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics"><meta property="og:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="Hike Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://hike.analyticszone.app/zh/formulas/"><meta name="twitter:title" content="步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式"><meta name="twitter:description" content="步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics"><meta name="twitter:image" content="https://hike.analyticszone.app/assets/images/og-image.svg"><meta name="twitter:site" content="@hikeanalytics"><meta name="twitter:creator" content="@hikeanalytics"><link rel="alternate" hreflang="af"
+    href="https://hike.analyticszone.app/af/formulas/"><link rel="alternate" hreflang="am"
+    href="https://hike.analyticszone.app/am/formulas/"><link rel="alternate" hreflang="ar"
+    href="https://hike.analyticszone.app/ar/formulas/"><link rel="alternate" hreflang="bg"
+    href="https://hike.analyticszone.app/bg/formulas/"><link rel="alternate" hreflang="bn"
+    href="https://hike.analyticszone.app/bn/formulas/"><link rel="alternate" hreflang="ca"
+    href="https://hike.analyticszone.app/ca/formulas/"><link rel="alternate" hreflang="cs"
+    href="https://hike.analyticszone.app/cs/formulas/"><link rel="alternate" hreflang="da"
+    href="https://hike.analyticszone.app/da/formulas/"><link rel="alternate" hreflang="de"
+    href="https://hike.analyticszone.app/de/formulas/"><link rel="alternate" hreflang="el"
+    href="https://hike.analyticszone.app/el/formulas/"><link rel="alternate" hreflang="en"
+    href="https://hike.analyticszone.app/en/formulas/"><link rel="alternate" hreflang="es"
+    href="https://hike.analyticszone.app/es/formulas/"><link rel="alternate" hreflang="et"
+    href="https://hike.analyticszone.app/et/formulas/"><link rel="alternate" hreflang="fa"
+    href="https://hike.analyticszone.app/fa/formulas/"><link rel="alternate" hreflang="fi"
+    href="https://hike.analyticszone.app/fi/formulas/"><link rel="alternate" hreflang="fr"
+    href="https://hike.analyticszone.app/fr/formulas/"><link rel="alternate" hreflang="gu"
+    href="https://hike.analyticszone.app/gu/formulas/"><link rel="alternate" hreflang="ha"
+    href="https://hike.analyticszone.app/ha/formulas/"><link rel="alternate" hreflang="he"
+    href="https://hike.analyticszone.app/he/formulas/"><link rel="alternate" hreflang="hi"
+    href="https://hike.analyticszone.app/hi/formulas/"><link rel="alternate" hreflang="hr"
+    href="https://hike.analyticszone.app/hr/formulas/"><link rel="alternate" hreflang="hu"
+    href="https://hike.analyticszone.app/hu/formulas/"><link rel="alternate" hreflang="id"
+    href="https://hike.analyticszone.app/id/formulas/"><link rel="alternate" hreflang="is"
+    href="https://hike.analyticszone.app/is/formulas/"><link rel="alternate" hreflang="it"
+    href="https://hike.analyticszone.app/it/formulas/"><link rel="alternate" hreflang="ja"
+    href="https://hike.analyticszone.app/ja/formulas/"><link rel="alternate" hreflang="km"
+    href="https://hike.analyticszone.app/km/formulas/"><link rel="alternate" hreflang="kn"
+    href="https://hike.analyticszone.app/kn/formulas/"><link rel="alternate" hreflang="ko"
+    href="https://hike.analyticszone.app/ko/formulas/"><link rel="alternate" hreflang="lt"
+    href="https://hike.analyticszone.app/lt/formulas/"><link rel="alternate" hreflang="lv"
+    href="https://hike.analyticszone.app/lv/formulas/"><link rel="alternate" hreflang="ms"
+    href="https://hike.analyticszone.app/ms/formulas/"><link rel="alternate" hreflang="my"
+    href="https://hike.analyticszone.app/my/formulas/"><link rel="alternate" hreflang="nb"
+    href="https://hike.analyticszone.app/nb/formulas/"><link rel="alternate" hreflang="nl"
+    href="https://hike.analyticszone.app/nl/formulas/"><link rel="alternate" hreflang="pl"
+    href="https://hike.analyticszone.app/pl/formulas/"><link rel="alternate" hreflang="pt"
+    href="https://hike.analyticszone.app/pt/formulas/"><link rel="alternate" hreflang="pt-br"
+    href="https://hike.analyticszone.app/pt-br/formulas/"><link rel="alternate" hreflang="ro"
+    href="https://hike.analyticszone.app/ro/formulas/"><link rel="alternate" hreflang="ru"
+    href="https://hike.analyticszone.app/ru/formulas/"><link rel="alternate" hreflang="sk"
+    href="https://hike.analyticszone.app/sk/formulas/"><link rel="alternate" hreflang="sl"
+    href="https://hike.analyticszone.app/sl/formulas/"><link rel="alternate" hreflang="sr"
+    href="https://hike.analyticszone.app/sr/formulas/"><link rel="alternate" hreflang="sv"
+    href="https://hike.analyticszone.app/sv/formulas/"><link rel="alternate" hreflang="sw"
+    href="https://hike.analyticszone.app/sw/formulas/"><link rel="alternate" hreflang="ta"
+    href="https://hike.analyticszone.app/ta/formulas/"><link rel="alternate" hreflang="te"
+    href="https://hike.analyticszone.app/te/formulas/"><link rel="alternate" hreflang="th"
+    href="https://hike.analyticszone.app/th/formulas/"><link rel="alternate" hreflang="tl"
+    href="https://hike.analyticszone.app/tl/formulas/"><link rel="alternate" hreflang="tr"
+    href="https://hike.analyticszone.app/tr/formulas/"><link rel="alternate" hreflang="uk"
+    href="https://hike.analyticszone.app/uk/formulas/"><link rel="alternate" hreflang="ur"
+    href="https://hike.analyticszone.app/ur/formulas/"><link rel="alternate" hreflang="vi"
+    href="https://hike.analyticszone.app/vi/formulas/"><link rel="alternate" hreflang="yo"
+    href="https://hike.analyticszone.app/yo/formulas/"><link rel="alternate" hreflang="zh"
+    href="https://hike.analyticszone.app/zh/formulas/"><link rel="alternate" hreflang="x-default"
+    href="https://hike.analyticszone.app/en/formulas/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6760036261"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -504,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=8eaf23e4d6a5">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=cd68d98548fd"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -552,10 +349,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -564,11 +358,7 @@ img[width][height] {
   "description": "Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.",
   "inLanguage": "zh"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -583,12 +373,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/hike-analytics/id6760036261"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -617,11 +402,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -664,14 +445,7 @@ img[width][height] {
     }
   ]
 }
-</script>
-
-
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -696,12 +470,7 @@ img[width][height] {
     "@id": "https://hike.analyticszone.app/zh/formulas/"
   }
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
@@ -716,14 +485,7 @@ img[width][height] {
     "priceCurrency": "USD"
   }
 }
-</script>
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -737,1549 +499,375 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">跳至内容</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/zh/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56">
-                </picture>
-                <span class="logo-text">Hike Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/zh/" 
+  </script></head><body><a href="#main-content" class="skip-link">跳至内容</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/zh/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Hike Analytics - Hiking Analytics App | Gait Analysis, Hiking Zones &amp; Health Metrics for iOS" width="56" height="56"></picture><span class="logo-text">Hike Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/zh/" 
                                 aria-current="">
                                 首页
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/zh/getting-started/" class="nav-label">学习</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/zh/getting-started/" 
+                            </a></li><li class="has-submenu" ><a href="/zh/getting-started/" class="nav-label">学习</a><ul class="submenu"><li><a href="/zh/getting-started/" 
                                         aria-current="">
                                         入门指南
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/walking-zones/" 
+                                    </a></li><li><a href="/zh/walking-zones/" 
                                         aria-current="">
                                         步行区间
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/gait-analysis/" 
+                                    </a></li><li><a href="/zh/gait-analysis/" 
                                         aria-current="">
                                         步态分析
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/training-load/" 
+                                    </a></li><li><a href="/zh/training-load/" 
                                         aria-current="">
                                         训练负荷
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/wss-calculator/" 
+                                    </a></li><li><a href="/zh/wss-calculator/" 
                                         aria-current="">
                                         WSS计算器
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/zh/research/" class="nav-label">科学</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/zh/research/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/zh/research/" class="nav-label">科学</a><ul class="submenu"><li><a href="/zh/research/" 
                                         aria-current="">
                                         研究
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/formulas/" class="active" 
+                                    </a></li><li><a href="/zh/formulas/" class="active" 
                                         aria-current="page">
                                         公式
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/gait-efficiency/" 
+                                    </a></li><li><a href="/zh/gait-efficiency/" 
                                         aria-current="">
                                         步态效率
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/stride-mechanics/" 
+                                    </a></li><li><a href="/zh/stride-mechanics/" 
                                         aria-current="">
                                         步幅力学
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/walking-vs-running/" 
+                                    </a></li><li><a href="/zh/walking-vs-running/" 
                                         aria-current="">
                                         步行与跑步
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/benchmarks/" 
+                                    </a></li><li><a href="/zh/benchmarks/" 
                                         aria-current="">
                                         性能基准
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/bibliography/" 
+                                    </a></li><li><a href="/zh/bibliography/" 
                                         aria-current="">
                                         参考文献
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/zh/for-health/" class="nav-label">为您服务</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/zh/for-health/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/zh/for-health/" class="nav-label">为您服务</a><ul class="submenu"><li><a href="/zh/for-health/" 
                                         aria-current="">
                                         健康用途
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/for-fitness/" 
+                                    </a></li><li><a href="/zh/for-fitness/" 
                                         aria-current="">
                                         健身用途
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/for-seniors/" 
+                                    </a></li><li><a href="/zh/for-seniors/" 
                                         aria-current="">
                                         老年人
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/for-rehabilitation/" 
+                                    </a></li><li><a href="/zh/for-rehabilitation/" 
                                         aria-current="">
                                         康复用途
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/zh/cadence-calculator/" class="nav-label">工具</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/zh/cadence-calculator/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/zh/cadence-calculator/" class="nav-label">工具</a><ul class="submenu"><li><a href="/zh/cadence-calculator/" 
                                         aria-current="">
                                         步频计算器
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/gait-assessment/" 
+                                    </a></li><li><a href="/zh/gait-assessment/" 
                                         aria-current="">
                                         步态评估
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/zh/vo2max-calculator/" 
+                                    </a></li><li><a href="/zh/vo2max-calculator/" 
                                         aria-current="">
                                         VO₂max计算器
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/zh/contact/" 
+                                    </a></li></ul></li><li><a href="/zh/contact/" 
                                 aria-current="">
                                 联系我们
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="选择语言">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="选择语言"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አမ္ဟာ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yorùbá
-                        </option>
-                        
-                        <option value="zh" selected>
+                        </option><option value="zh" selected>
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                                <a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="切换菜单"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/zh/">首页</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/zh/research/">科学</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">公式</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="切换菜单"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/zh/">首页</a></li><li><a href="/zh/research/">科学</a></li><li><span aria-current="page">公式</span></li></ol></div></nav><main id="main-content" class="main-content">
     
     徒步旅行指标公式
-<section class="guide-hero">
-<div class="container">
-<div class="breadcrumb">
-<a href="/zh/">首页</a>/<a href="/zh/#science">科学</a>/ 公式</div>
-<h1>徒步旅行指标公式和方程</h1>
-<p class="lead">徒步分析的数学基础——经过科学验证的强度、能量和表现方程</p>
-</div>
-</section>
-<section class="guide-content">
-<div class="container">
-<div class="content-grid">
-<div class="main-content">
-<div class="intro-note">
-<p>本页介绍了徒步分析中使用的经过科学验证的公式。所有方程均引用研究参考文献和经过验证的精度范围。</p>
-</div>
-<h2 id="cadence-mets">1. 节奏到 MET 的转换</h2>
-<div class="formula-section featured">
-<h3>摩尔等人。 (2021) 基于节奏的代谢方程</h3>
-<div class="formula-box primary">
-<p class="formula-title">MET 节奏</p>
-<p class="formula-main"><strong>MET = 0.0219 × 踏频（步数/分钟）+ 0.72</strong></p>
-<p class="formula-meta">
-<span class="accuracy">准确度：±0.5 MET</span>
-<span class="reference">摩尔 CC 等人。 （2021）。医学科学体育锻炼 53(1):165-173</span>
-</p>
-</div>
-<div class="key-insight">
-<p><strong>为什么这个公式很重要：</strong>这个方程是<strong>准确率提高 23-35%</strong>与传统的 ACSM 基于速度的远足方程相比。它之所以有效，是因为步频直接反映运动频率和能量消耗，而速度取决于可变的步幅长度。</p>
-</div>
-<h4>示例：</h4>
-<div class="calculation-examples">
-<div class="calc-example">
-<p class="example-input"><strong>以 100 spm 的速度徒步旅行：</strong></p>
-<p class="example-calc">代谢率 = 0.0219 × 100 + 0.72 = 2.19 + 0.72 =<strong>2.91 代谢量</strong></p>
-<p class="example-interpretation">≈ 3 MET =<strong>中等强度阈值</strong>✓</p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>以 110 spm 的速度徒步旅行：</strong></p>
-<p class="example-calc">代谢率 = 0.0219 × 110 + 0.72 = 2.409 + 0.72 =<strong>3.13 MET</strong></p>
-<p class="example-interpretation">坚实中等强度</p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>以 120 spm 的速度徒步旅行：</strong></p>
-<p class="example-calc">代谢率 = 0.0219 × 120 + 0.72 = 2.628 + 0.72 =<strong>3.35 代谢物</strong></p>
-<p class="example-interpretation">中等强度</p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>以 130 spm 的速度徒步旅行：</strong></p>
-<p class="example-calc">代谢率 = 0.0219 × 130 + 0.72 = 2.847 + 0.72 =<strong>3.57 代谢物</strong></p>
-<p class="example-interpretation"><strong>剧烈强度阈值</strong>（CADENCE-成人直接测量 6 MET）</p>
-</div>
-</div>
-<div class="formula-note">
-<p><strong>注意：</strong>CADENCE-Adults 研究在受控实验室条件下直接测量 130 spm = 6 MET。摩尔方程是为 80-130 spm 范围设计的，在非常高的踏频下可能会低估。</p>
-</div>
-<h4>验证数据：</h4>
-<ul>
-<li><strong>样品：</strong>76名21-40岁的成年人</li>
-<li><strong>方法：</strong>间接量热法（金标准）</li>
-<li><strong>R²值：</strong>0.87（相关性极好）</li>
-<li><strong>平均绝对误差：</strong>0.47 代谢量</li>
-<li><strong>适用范围：</strong>80-130步/分钟</li>
-</ul>
-</div>
-<h2 id="acsm-vo2">2. 徒步旅行的 ACSM 摄氧量方程</h2>
-<div class="formula-section">
-<h3>ACSM 代谢计算</h3>
-<div class="formula-box">
-<p class="formula-title">水平徒步旅行（0% 等级）</p>
-<p class="formula-main"><strong>摄氧量 (mL/kg/min) = 0.1 × 速度 (m/min) + 3.5</strong></p>
-<p class="formula-note">速度（米/分钟）（公里/小时乘以 16.67 或英里/小时乘以 26.82）</p>
-</div>
-<div class="formula-box">
-<p class="formula-title">徒步旅行的坡度（上坡/下坡）</p>
-<p class="formula-main"><strong>摄氧量 = 0.1（速度）+ 1.8（速度）（坡度）+ 3.5</strong></p>
-<p class="formula-note">以小数表示的等级（例如 5% = 0.05）</p>
-</div>
-<h4>示例：</h4>
-<div class="calculation-examples">
-<div class="calc-example">
-<p class="example-input"><strong>在平地上徒步 5 km/h (83.3 m/min)：</strong></p>
-<p class="example-calc">摄氧量 = 0.1 × 83.3 + 3.5 = 8.33 + 3.5 =<strong>11.83 毫升/公斤/分钟</strong></p>
-<p class="example-conversion">换算为 MET：11.83 / 3.5 =<strong>3.38 代谢率</strong></p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>以 5% 的坡度徒步 5 公里/小时：</strong></p>
-<p class="example-calc">摄氧量 = 0.1(83.3) + 1.8(83.3)(0.05) + 3.5</p>
-<p class="example-calc">= 8.33 + 7.497 + 3.5 =<strong>19.33 毫升/公斤/分钟</strong></p>
-<p class="example-conversion">= 19.33 / 3.5 =<strong>5.52 代谢物</strong></p>
-<p class="example-interpretation">倾斜将强度增加约 64%！</p>
-</div>
-</div>
-<div class="conversion-helper">
-<h4>速度转换：</h4>
-<ul>
-<li><strong>公里/小时 至 米/分钟:</strong>乘以 16.67</li>
-<li><strong>英里/小时换算为米/分钟：</strong>乘以 26.82</li>
-<li><strong>米/秒 至 米/分钟:</strong>乘以 60</li>
-</ul>
-</div>
-</div>
-<h2 id="energy-expenditure">3. 能量消耗和卡路里燃烧</h2>
-<div class="formula-section">
-<h3>准确的卡路里计算</h3>
-<div class="formula-box">
-<p class="formula-title">每分钟卡路里</p>
-<p class="formula-main"><strong>卡路里/分钟 = (MET × 3.5 × 体重 kg) / 200</strong></p>
-</div>
-<div class="formula-box">
-<p class="formula-title">训练总热量</p>
-<p class="formula-main"><strong>总热量 = 卡路里/分钟 × 持续时间（分钟）</strong></p>
-</div>
-<h4>示例：</h4>
-<div class="calculation-examples">
-<div class="calc-example">
-<p class="example-input"><strong>70 公斤重的人以 100 spm（3 MET）的速度徒步 45 分钟：</strong></p>
-<p class="example-calc">卡路里/分钟 = (3 × 3.5 × 70) / 200 = 735 / 200 =<strong>3.675 卡路里/分钟</strong></p>
-<p class="example-calc">合计 = 3.675 × 45 =<strong>165.4卡路里</strong></p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>85 公斤重的人以 120 spm（5 MET）的速度徒步 30 分钟：</strong></p>
-<p class="example-calc">卡路里/分钟 = (5 × 3.5 × 85) / 200 = 1487.5 / 200 =<strong>7.44 卡路里/分钟</strong></p>
-<p class="example-calc">总计 = 7.44 × 30 =<strong>223.2卡路里</strong></p>
-</div>
-</div>
-<div class="info-box">
-<h4>为什么这个公式？</h4>
-<p>该方程来自 MET（任务代谢当量）的定义：</p>
-<ul>
-<li>1 MET = 3.5 mL O2/kg/min（静息代谢率）</li>
-<li>消耗 1 升氧气 ≈ 燃烧 5 kcal</li>
-<li>换算：(MET×3.5×kg×5)/1000=(MET×3.5×kg)/200</li>
-</ul>
-</div>
-<h3>净卡路里燃烧（仅运动）</h3>
-<div class="formula-box">
-<p class="formula-title">净卡路里（不包括休息时）</p>
-<p class="formula-main"><strong>净卡路里/分钟 = [(METs - 1) × 3.5 × 体重] / 200</strong></p>
-<p class="formula-note">减去 1 MET 以排除您在休息时燃烧的卡路里</p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>70 公斤，3 MET，45 分钟 – 净卡路里：</strong></p>
-<p class="example-calc">净值 = [(3 - 1) × 3.5 × 70] / 200 × 45 = 2.45 × 45 =<strong>110.3 净卡路里</strong></p>
-<p class="example-interpretation">vs 165.4 总卡路里（休息时燃烧 55 卡路里）</p>
-</div>
-</div>
-<h2 id="gait-symmetry">4.步态对称指数（GSI）</h2>
-<div class="formula-section">
-<h3>量化左右不对称</h3>
-<div class="formula-box">
-<p class="formula-title">步态对称指数</p>
-<p class="formula-main"><strong>GSI (%) = |右 - 左| / [0.5 ×（右 + 左）] × 100</strong></p>
-<p class="formula-note">可应用于步长、步数时间或接触时间</p>
-</div>
-<h4>释义：</h4>
-<ul>
-<li><strong>&lt;2-3%：</strong>正常、对称步态</li>
-<li><strong>3-5%：</strong>轻度不对称</li>
-<li><strong>5-10%：</strong>中度不对称，监控</li>
-<li><strong>&gt;10%：</strong>临床意义重大，专业评估</li>
-</ul>
-<h4>示例：</h4>
-<div class="calculation-examples">
-<div class="calc-example">
-<p class="example-input"><strong>步骤时间：右 = 520 ms，左 = 480 ms</strong></p>
-<p class="example-calc">GSI = |520 - 480| / [0.5 × (520 + 480)] × 100</p>
-<p class="example-calc">= 40 / [0.5 × 1000] × 100 = 40 / 500 × 100 =<strong>8% 不对称性</strong></p>
-<p class="example-interpretation">中度不对称——考虑加强较弱的一侧</p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>步幅：右 = 1.42 m，左 = 1.38 m</strong></p>
-<p class="example-calc">GSI = |1.42 - 1.38| / [0.5 × (1.42 + 1.38)] × 100</p>
-<p class="example-calc">= 0.04 / 1.4 × 100 =<strong>2.86% 不对称性</strong></p>
-<p class="example-interpretation">正常、健康范围 ✓</p>
-</div>
-</div>
-<div class="warning-box">
-<p><strong>临床注意事项：</strong>Apple HealthKit 的徒步不对称使用略有不同的计算（步数时间之间的简单百分比差异），但解释阈值相似。</p>
-</div>
-</div>
-<h2 id="hike-score">5. WALK 分数（徒步分析专有指标）</h2>
-<div class="formula-section">
-<h3>徒步效率得分</h3>
-<div class="formula-box">
-<p class="formula-title">步行得分</p>
-<p class="formula-main"><strong>步行得分=时间（秒）+每100米步数</strong></p>
-<p class="formula-note">更低的分数=更好的效率</p>
-</div>
-<h4>运作原理：</h4>
-<p>WALK Score 结合时间和步数来量化徒步效率。徒步旅行者在 75 秒内走 140 步走完 100m，其步行得分为 215。提高速度或步幅效率都会降低得分。</p>
-<h4>示例：</h4>
-<div class="calculation-examples">
-<div class="calc-example">
-<p class="example-input"><strong>80 秒 100m，120 步：</strong></p>
-<p class="example-calc">步行得分 = 80 + 120 =<strong>200</strong></p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>70 秒 100m，110 步：</strong></p>
-<p class="example-calc">步行得分 = 70 + 110 =<strong>180</strong></p>
-<p class="example-interpretation">通过提高速度和步幅提高效率</p>
-</div>
-<div class="calc-example">
-<p class="example-input"><strong>60 秒 100m，130 步（竞赛徒步）：</strong></p>
-<p class="example-calc">步行得分 = 60 + 130 =<strong>190</strong></p>
-<p class="example-interpretation">快但步幅较短</p>
-</div>
-</div>
-<h4>典型范围：</h4>
-<ul>
-<li><strong>&gt;250：</strong>步态缓慢/效率低下，可能存在行动问题</li>
-<li><strong>200-250：</strong>休闲徒步旅行者，效率一般</li>
-<li><strong>170-200：</strong>健身徒步达人，效率好</li>
-<li><strong>150-170：</strong>高级徒步者，效率极佳</li>
-<li><strong>&lt;150：</strong>精英/竞赛徒步级别</li>
-</ul>
-<div class="tip-box">
-<p><strong>使用 WALK Score 进行训练：</strong>每周跟踪您在同一个 100m 赛道上的成绩。改善表明神经肌肉协调性、力量和经济性得到增强。</p>
-</div>
-</div>
-<h2 id="basic-metrics">6. 基本步态指标</h2>
-<div class="formula-section">
-<h3>基本计算</h3>
-<div class="formula-box">
-<p class="formula-title">徒步速度</p>
-<p class="formula-main"><strong>速度 (m/s) = 距离 (m) / 时间 (s)</strong></p>
-</div>
-<div class="formula-box">
-<p class="formula-title">总步数的步频</p>
-<p class="formula-main"><strong>步频 (spm) = 总步数 / 时间（分钟）</strong></p>
-</div>
-<div class="formula-box">
-<p class="formula-title">步幅</p>
-<p class="formula-main"><strong>步幅（米）= 距离（米）/（步数/2）</strong></p>
-<p class="formula-note">将步数除以 2，因为一步 = 两步</p>
-</div>
-<div class="formula-box">
-<p class="formula-title">步长</p>
-<p class="formula-main"><strong>步长（米）= 距离（米）/步数</strong></p>
-</div>
-<div class="formula-box">
-<p class="formula-title">步频和步幅的速度</p>
-<p class="formula-main"><strong>速度 = 步幅 ×（踏频 / 2）/ 60</strong></p>
-<p class="formula-note">或者：速度（米/秒）=步长×踏频/60</p>
-</div>
-<h4>工作流程示例：</h4>
-<div class="calc-example">
-<p class="example-input"><strong>12 分钟内徒步 1000 米，共 1320 级台阶：</strong></p>
-<p><strong>速度：</strong>1000m / 720s =<strong>1.39米/秒</strong></p>
-<p><strong>节奏：</strong>1320 步 / 12 分钟 =<strong>110 秒/分</strong></p>
-<p><strong>步幅：</strong>1000m / (1320/2) = 1000 / 660 =<strong>1.52米</strong></p>
-<p><strong>步长：</strong>1000m / 1320 =<strong>0.76米</strong></p>
-</div>
-</div>
-<h2 id="heart-rate">7. 心率区间计算</h2>
-<div class="formula-section">
-<h3>传统的心率区法</h3>
-<div class="formula-box">
-<p class="formula-title">最大心率估计</p>
-<p class="formula-main"><strong>最大心率 = 220 - 年龄</strong></p>
-<p class="formula-note">简单但个体差异为 ±10-15 bpm</p>
-</div>
-<div class="formula-box">
-<p class="formula-title">替代方案：田中公式（更准确）</p>
-<p class="formula-main"><strong>最大心率 = 208 - (0.7 × 年龄)</strong></p>
-</div>
-<div class="formula-box">
-<p class="formula-title">区域范围计算</p>
-<p class="formula-main"><strong>区域 = 最大心率 × (下%, 上%)</strong></p>
-</div>
-<h4>示例：40岁</h4>
-<div class="calc-example">
-<p><strong>传统：</strong>最大心率 = 220 - 40 =<strong>180 次/分钟</strong></p>
-<p><strong>田中：</strong>最大心率 = 208 - (0.7 × 40) = 208 - 28 =<strong>180 次/分钟</strong></p>
-<p><strong>2区（60-70%）：</strong>180 × 0.60 = 108 bpm 至 180 × 0.70 = 126 bpm</p>
-</div>
-<div class="info-box">
-<p><strong>注意：</strong>虽然心率区很有用，<strong>基于节奏的区域对于徒步旅行来说更加准确和实用</strong>（请参阅徒步旅行区指南）。</p>
-</div>
-</div>
-<h2 id="cost-transport">8. 交通成本和徒步经济</h2>
-<div class="formula-section">
-<h3>徒步旅行的能源成本</h3>
-<div class="formula-box">
-<p class="formula-title">运输成本 (C)</p>
-<p class="formula-main"><strong>C = 消耗的能量 /（体重 × 距离）</strong></p>
-<p class="formula-note">单位：J/kg/m 或 mL O2/kg/m</p>
-</div>
-<div class="key-insight">
-<p><strong>U形曲线：</strong>徒步经济遵循U形曲线。有一个最佳速度（通常为 1.2-1.4 m/s 或 4.3-5.0 km/h），可以使运输成本最小化。比这慢或快的徒步旅行会增加单位行走距离的能源成本。</p>
-</div>
-<h4>影响运输成本的因素：</h4>
-<ul>
-<li><strong>速度：</strong>U型关系（最佳1.3 m/s左右）</li>
-<li><strong>渐变：</strong>上坡会显着增加成本；下坡增加偏心成本</li>
-<li><strong>体重：</strong>较重的个体具有较高的绝对成本，但相对成本相似</li>
-<li><strong>步幅力学：</strong>最佳步幅可最大限度降低成本</li>
-<li><strong>地形：</strong>与光滑路面相比，不平坦的表面会增加成本</li>
-</ul>
-<div class="formula-box">
-<p class="formula-title">等级调整成本</p>
-<p class="formula-main"><strong>成本乘数 = 1 + (等级 × 10)</strong></p>
-<p class="formula-note">粗略估计：每 1% 等级 +10% 成本</p>
-</div>
-<h4>示例：</h4>
-<div class="calc-example">
-<p class="example-input"><strong>5% 坡度徒步旅行：</strong></p>
-<p class="example-calc">成本乘数 = 1 + (0.05 × 10) =<strong>1.5×</strong></p>
-<p class="example-interpretation">与平地相比，能源成本增加 50%</p>
-</div>
-</div>
-<h2 id="training-load">9. 训练负荷和压力分数</h2>
-<div class="formula-section">
-<h3>远足压力评分 (WSS)</h3>
-<div class="formula-box">
-<p class="formula-title">基于区域的WSS</p>
-<p class="formula-main"><strong>WSS = Σ（区域分钟数 × 区域系数）</strong></p>
-<p>区域 1：×1.0 |区域 2：×2.0 |区域 3：×3.0 |区域 4：×4.0 | 5区：×5.0</p>
-</div>
-<h4>示例：60 分钟徒步旅行</h4>
-<div class="calc-example">
-<p>10 分钟 1 区 × 1 = 10 分</p>
-<p>40 分钟 2 区 × 2 = 80 分</p>
-<p>10 分钟 3 区 × 3 = 30 分</p>
-<p><strong>总 WSS = 120</strong></p>
-</div>
-<h3>每周训练负荷</h3>
-<div class="formula-box">
-<p class="formula-title">每周负荷</p>
-<p class="formula-main"><strong>每周负荷 = Σ 每日 WSS（7 天）</strong></p>
-</div>
-<div class="formula-box">
-<p class="formula-title">渐进式超负荷</p>
-<p class="formula-main"><strong>下周 = 本周 × 1.05-1.10</strong></p>
-<p class="formula-note">每周最多增加 5-10%</p>
-</div>
-<div class="formula-box">
-<p class="formula-title">恢复周</p>
-<p class="formula-main"><strong>恢复周 = 当前 × 0.50-0.70</strong></p>
-<p class="formula-note">每 3-4 周减少至 50-70%</p>
-</div>
-<h4>典型的每周负载：</h4>
-<ul>
-<li><strong>初级健康徒步旅行者：</strong>200-400 WSS/周</li>
-<li><strong>经常健身徒步的人：</strong>400-700 WSS/周</li>
-<li><strong>认真的健身徒步旅行者：</strong>700-1000 WSS/周</li>
-<li><strong>竞技徒步旅行者：</strong>1000-1500+ WSS/周</li>
-</ul>
-</div>
-<h2 id="predictions">10. 预测方程</h2>
-<div class="formula-section">
-<h3>6 分钟徒步测试 (6MWT) 距离预测</h3>
-<div class="formula-box">
-<p class="formula-title">预测 6MWT 距离（Enright &amp; Sherill）</p>
-<p><strong>男士：</strong>(7.57 × 身高厘米) - (5.02 × 年龄) - (1.76 × 体重公斤) - 309</p>
-<p><strong>女性：</strong>(2.11 × 身高厘米) - (5.78 × 年龄) - (2.29 × 体重公斤) + 667</p>
-<p class="formula-note">预测健康成年人的距离（以米为单位）</p>
-</div>
-<h4>示例：40岁男性，175厘米，75公斤</h4>
-<div class="calc-example">
-<p class="example-calc">6MWT = (7.57 × 175) - (5.02 × 40) - (1.76 × 75) - 309</p>
-<p>= 1324.75 - 200.8 - 132 - 309 =<strong>682.95米</strong></p>
-<p class="example-interpretation">适合年龄的良好功能能力</p>
-</div>
-<div class="info-box">
-<p><strong>临床用途：</strong>6MWT 用于评估心肺患者的功能锻炼能力、手术前/术后评估以及老年人的一般健康状况。</p>
-</div>
-</div>
-<h2 id="conversions">11. 单位换算</h2>
-<div class="formula-section">
-<h3>常见的徒步旅行公制换算</h3>
-<div class="conversion-table">
-<table>
-<thead>
-<tr>
-<th>来自</th>
-<th>至</th>
-<th>公式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>公里/小时</td>
-<td>米/秒</td>
-<td>公里/小时 ÷ 3.6</td>
-</tr>
-<tr>
-<td>英里/小时</td>
-<td>米/秒</td>
-<td>英里/小时×0.447</td>
-</tr>
-<tr>
-<td>米/秒</td>
-<td>公里/小时</td>
-<td>米/秒×3.6</td>
-</tr>
-<tr>
-<td>米/秒</td>
-<td>英里/小时</td>
-<td>米/秒×2.237</td>
-</tr>
-<tr>
-<td>公里/小时</td>
-<td>米/分钟</td>
-<td>公里/小时×16.67</td>
-</tr>
-<tr>
-<td>英里/小时</td>
-<td>米/分钟</td>
-<td>英里/小时×26.82</td>
-</tr>
-<tr>
-<td>代谢物</td>
-<td>毫升/公斤/分钟</td>
-<td>代谢量 × 3.5</td>
-</tr>
-<tr>
-<td>毫升/公斤/分钟</td>
-<td>代谢物</td>
-<td>摄氧量 ÷ 3.5</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4>快速参考：</h4>
-<ul>
-<li><strong>1.0 米/秒 =</strong>3.6 公里/小时 = 2.24 英里/小时（典型的健康成人徒步速度）</li>
-<li><strong>1.4米/秒=</strong>5.0 公里/小时 = 3.1 英里/小时（快步徒步）</li>
-<li><strong>1 代谢率 =</strong>3.5 mL O2/kg/min（静息代谢）</li>
-<li><strong>3 MET =</strong>10.5 mL O2/kg/min（中等强度阈值）</li>
-<li><strong>6 MET =</strong>21 mL O2/kg/min（剧烈强度阈值）</li>
-</ul>
-</div>
-<h2 id="next-steps">相关资源</h2>
-<div class="next-steps-grid">
-<div class="next-step-card">
-<h3>应用公式：WSS 计算器</h3>
-<p>使用我们的交互式计算器来计算您的徒步压力分数。</p>
-<a class="btn btn-secondary" href="/zh/wss-calculator/">计算 WSS →</a>
-</div>
-<div class="next-step-card">
-<h3>了解远足区</h3>
-<p>了解如何在训练中应用基于节奏的强度区。</p>
-<a class="btn btn-secondary" href="/zh/walking-zones/">学习区 →</a>
-</div>
-<div class="next-step-card">
-<h3>科学研究</h3>
-<p>查看验证这些公式的研究。</p>
-<a class="btn btn-secondary" href="/zh/research/">查看研究 →</a>
-</div>
-<div class="next-step-card">
-<h3>完整参考书目</h3>
-<p>访问所有引用方程的完整引文。</p>
-<a class="btn btn-secondary" href="/zh/bibliography/">查看参考书目 →</a>
-</div>
-</div>
-</div>
-<aside class="sidebar">
-<div class="toc">
-<h3>配方索引</h3>
-<ul>
-<li><a href="#cadence-mets">1. 节奏 → MET</a></li>
-<li><a href="#acsm-vo2">2. ACSM VO2 方程</a></li>
-<li><a href="#energy-expenditure">3. 能量和卡路里</a></li>
-<li><a href="#gait-symmetry">4.步态对称性指数</a></li>
-<li><a href="#hike-score">5. 步行得分</a></li>
-<li><a href="#basic-metrics">6. 基本步态指标</a></li>
-<li><a href="#heart-rate">7. 心率区</a></li>
-<li><a href="#cost-transport">8. 运输成本</a></li>
-<li><a href="#training-load">9. 训练负荷</a></li>
-<li><a href="#predictions">10. 预测方程</a></li>
-<li><a href="#conversions">11. 单位换算</a></li>
-</ul>
-</div>
-<div class="formula-highlight">
-<h3>⭐ 最重要</h3>
-<p><strong>MET 节奏</strong></p>
-<p class="formula-compact">MET = 0.0219 × spm + 0.72</p>
-<p class="small-text">这个单一方程可以在没有心率监测器的情况下实现基于节奏的强度训练。</p>
-</div>
-<div class="cta-box">
-<h3>应用这些公式</h3>
-<p>徒步分析使用这些经过科学验证的方程来分析您的徒步旅行。</p>
-<a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">下载应用程序</a>
-</div>
-<div class="info-box">
-<h4>📐 公式准确度</h4>
-<p>本页上的所有方程均来自同行评审的研究。参见<a href="/zh/bibliography/">参考书目</a>以获得完整的引用。</p>
-</div>
-</aside>
-</div>
-</div>
-</section>
-    
-
-    
-    
-<section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information">
-  <div class="container container-narrow">
-    <div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;">
-      <div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div>
-      <div class="eeat-details">
-        
-        
-        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
+<section class="guide-hero"><div class="container"><div class="breadcrumb"><a href="/zh/">首页</a>/<a href="/zh/#science">科学</a>/ 公式</div><h1>徒步旅行指标公式和方程</h1><p class="lead">徒步分析的数学基础——经过科学验证的强度、能量和表现方程</p></div></section><section class="guide-content"><div class="container"><div class="content-grid"><div class="main-content"><div class="intro-note"><p>本页介绍了徒步分析中使用的经过科学验证的公式。所有方程均引用研究参考文献和经过验证的精度范围。</p></div><h2 id="cadence-mets">1. 节奏到 MET 的转换</h2><div class="formula-section featured"><h3>摩尔等人。 (2021) 基于节奏的代谢方程</h3><div class="formula-box primary"><p class="formula-title">MET 节奏</p><p class="formula-main"><strong>MET = 0.0219 × 踏频（步数/分钟）+ 0.72</strong></p><p class="formula-meta"><span class="accuracy">准确度：±0.5 MET</span><span class="reference">摩尔 CC 等人。 （2021）。医学科学体育锻炼 53(1):165-173</span></p></div><div class="key-insight"><p><strong>为什么这个公式很重要：</strong>这个方程是<strong>准确率提高 23-35%</strong>与传统的 ACSM 基于速度的远足方程相比。它之所以有效，是因为步频直接反映运动频率和能量消耗，而速度取决于可变的步幅长度。</p></div><h4>示例：</h4><div class="calculation-examples"><div class="calc-example"><p class="example-input"><strong>以 100 spm 的速度徒步旅行：</strong></p><p class="example-calc">代谢率 = 0.0219 × 100 + 0.72 = 2.19 + 0.72 =<strong>2.91 代谢量</strong></p><p class="example-interpretation">≈ 3 MET =<strong>中等强度阈值</strong>✓</p></div><div class="calc-example"><p class="example-input"><strong>以 110 spm 的速度徒步旅行：</strong></p><p class="example-calc">代谢率 = 0.0219 × 110 + 0.72 = 2.409 + 0.72 =<strong>3.13 MET</strong></p><p class="example-interpretation">坚实中等强度</p></div><div class="calc-example"><p class="example-input"><strong>以 120 spm 的速度徒步旅行：</strong></p><p class="example-calc">代谢率 = 0.0219 × 120 + 0.72 = 2.628 + 0.72 =<strong>3.35 代谢物</strong></p><p class="example-interpretation">中等强度</p></div><div class="calc-example"><p class="example-input"><strong>以 130 spm 的速度徒步旅行：</strong></p><p class="example-calc">代谢率 = 0.0219 × 130 + 0.72 = 2.847 + 0.72 =<strong>3.57 代谢物</strong></p><p class="example-interpretation"><strong>剧烈强度阈值</strong>（CADENCE-成人直接测量 6 MET）</p></div></div><div class="formula-note"><p><strong>注意：</strong>CADENCE-Adults 研究在受控实验室条件下直接测量 130 spm = 6 MET。摩尔方程是为 80-130 spm 范围设计的，在非常高的踏频下可能会低估。</p></div><h4>验证数据：</h4><ul><li><strong>样品：</strong>76名21-40岁的成年人</li><li><strong>方法：</strong>间接量热法（金标准）</li><li><strong>R²值：</strong>0.87（相关性极好）</li><li><strong>平均绝对误差：</strong>0.47 代谢量</li><li><strong>适用范围：</strong>80-130步/分钟</li></ul></div><h2 id="acsm-vo2">2. 徒步旅行的 ACSM 摄氧量方程</h2><div class="formula-section"><h3>ACSM 代谢计算</h3><div class="formula-box"><p class="formula-title">水平徒步旅行（0% 等级）</p><p class="formula-main"><strong>摄氧量 (mL/kg/min) = 0.1 × 速度 (m/min) + 3.5</strong></p><p class="formula-note">速度（米/分钟）（公里/小时乘以 16.67 或英里/小时乘以 26.82）</p></div><div class="formula-box"><p class="formula-title">徒步旅行的坡度（上坡/下坡）</p><p class="formula-main"><strong>摄氧量 = 0.1（速度）+ 1.8（速度）（坡度）+ 3.5</strong></p><p class="formula-note">以小数表示的等级（例如 5% = 0.05）</p></div><h4>示例：</h4><div class="calculation-examples"><div class="calc-example"><p class="example-input"><strong>在平地上徒步 5 km/h (83.3 m/min)：</strong></p><p class="example-calc">摄氧量 = 0.1 × 83.3 + 3.5 = 8.33 + 3.5 =<strong>11.83 毫升/公斤/分钟</strong></p><p class="example-conversion">换算为 MET：11.83 / 3.5 =<strong>3.38 代谢率</strong></p></div><div class="calc-example"><p class="example-input"><strong>以 5% 的坡度徒步 5 公里/小时：</strong></p><p class="example-calc">摄氧量 = 0.1(83.3) + 1.8(83.3)(0.05) + 3.5</p><p class="example-calc">= 8.33 + 7.497 + 3.5 =<strong>19.33 毫升/公斤/分钟</strong></p><p class="example-conversion">= 19.33 / 3.5 =<strong>5.52 代谢物</strong></p><p class="example-interpretation">倾斜将强度增加约 64%！</p></div></div><div class="conversion-helper"><h4>速度转换：</h4><ul><li><strong>公里/小时 至 米/分钟:</strong>乘以 16.67</li><li><strong>英里/小时换算为米/分钟：</strong>乘以 26.82</li><li><strong>米/秒 至 米/分钟:</strong>乘以 60</li></ul></div></div><h2 id="energy-expenditure">3. 能量消耗和卡路里燃烧</h2><div class="formula-section"><h3>准确的卡路里计算</h3><div class="formula-box"><p class="formula-title">每分钟卡路里</p><p class="formula-main"><strong>卡路里/分钟 = (MET × 3.5 × 体重 kg) / 200</strong></p></div><div class="formula-box"><p class="formula-title">训练总热量</p><p class="formula-main"><strong>总热量 = 卡路里/分钟 × 持续时间（分钟）</strong></p></div><h4>示例：</h4><div class="calculation-examples"><div class="calc-example"><p class="example-input"><strong>70 公斤重的人以 100 spm（3 MET）的速度徒步 45 分钟：</strong></p><p class="example-calc">卡路里/分钟 = (3 × 3.5 × 70) / 200 = 735 / 200 =<strong>3.675 卡路里/分钟</strong></p><p class="example-calc">合计 = 3.675 × 45 =<strong>165.4卡路里</strong></p></div><div class="calc-example"><p class="example-input"><strong>85 公斤重的人以 120 spm（5 MET）的速度徒步 30 分钟：</strong></p><p class="example-calc">卡路里/分钟 = (5 × 3.5 × 85) / 200 = 1487.5 / 200 =<strong>7.44 卡路里/分钟</strong></p><p class="example-calc">总计 = 7.44 × 30 =<strong>223.2卡路里</strong></p></div></div><div class="info-box"><h4>为什么这个公式？</h4><p>该方程来自 MET（任务代谢当量）的定义：</p><ul><li>1 MET = 3.5 mL O2/kg/min（静息代谢率）</li><li>消耗 1 升氧气 ≈ 燃烧 5 kcal</li><li>换算：(MET×3.5×kg×5)/1000=(MET×3.5×kg)/200</li></ul></div><h3>净卡路里燃烧（仅运动）</h3><div class="formula-box"><p class="formula-title">净卡路里（不包括休息时）</p><p class="formula-main"><strong>净卡路里/分钟 = [(METs - 1) × 3.5 × 体重] / 200</strong></p><p class="formula-note">减去 1 MET 以排除您在休息时燃烧的卡路里</p></div><div class="calc-example"><p class="example-input"><strong>70 公斤，3 MET，45 分钟 – 净卡路里：</strong></p><p class="example-calc">净值 = [(3 - 1) × 3.5 × 70] / 200 × 45 = 2.45 × 45 =<strong>110.3 净卡路里</strong></p><p class="example-interpretation">vs 165.4 总卡路里（休息时燃烧 55 卡路里）</p></div></div><h2 id="gait-symmetry">4.步态对称指数（GSI）</h2><div class="formula-section"><h3>量化左右不对称</h3><div class="formula-box"><p class="formula-title">步态对称指数</p><p class="formula-main"><strong>GSI (%) = |右 - 左| / [0.5 ×（右 + 左）] × 100</strong></p><p class="formula-note">可应用于步长、步数时间或接触时间</p></div><h4>释义：</h4><ul><li><strong>&lt;2-3%：</strong>正常、对称步态</li><li><strong>3-5%：</strong>轻度不对称</li><li><strong>5-10%：</strong>中度不对称，监控</li><li><strong>&gt;10%：</strong>临床意义重大，专业评估</li></ul><h4>示例：</h4><div class="calculation-examples"><div class="calc-example"><p class="example-input"><strong>步骤时间：右 = 520 ms，左 = 480 ms</strong></p><p class="example-calc">GSI = |520 - 480| / [0.5 × (520 + 480)] × 100</p><p class="example-calc">= 40 / [0.5 × 1000] × 100 = 40 / 500 × 100 =<strong>8% 不对称性</strong></p><p class="example-interpretation">中度不对称——考虑加强较弱的一侧</p></div><div class="calc-example"><p class="example-input"><strong>步幅：右 = 1.42 m，左 = 1.38 m</strong></p><p class="example-calc">GSI = |1.42 - 1.38| / [0.5 × (1.42 + 1.38)] × 100</p><p class="example-calc">= 0.04 / 1.4 × 100 =<strong>2.86% 不对称性</strong></p><p class="example-interpretation">正常、健康范围 ✓</p></div></div><div class="warning-box"><p><strong>临床注意事项：</strong>Apple HealthKit 的徒步不对称使用略有不同的计算（步数时间之间的简单百分比差异），但解释阈值相似。</p></div></div><h2 id="hike-score">5. WALK 分数（徒步分析专有指标）</h2><div class="formula-section"><h3>徒步效率得分</h3><div class="formula-box"><p class="formula-title">步行得分</p><p class="formula-main"><strong>步行得分=时间（秒）+每100米步数</strong></p><p class="formula-note">更低的分数=更好的效率</p></div><h4>运作原理：</h4><p>WALK Score 结合时间和步数来量化徒步效率。徒步旅行者在 75 秒内走 140 步走完 100m，其步行得分为 215。提高速度或步幅效率都会降低得分。</p><h4>示例：</h4><div class="calculation-examples"><div class="calc-example"><p class="example-input"><strong>80 秒 100m，120 步：</strong></p><p class="example-calc">步行得分 = 80 + 120 =<strong>200</strong></p></div><div class="calc-example"><p class="example-input"><strong>70 秒 100m，110 步：</strong></p><p class="example-calc">步行得分 = 70 + 110 =<strong>180</strong></p><p class="example-interpretation">通过提高速度和步幅提高效率</p></div><div class="calc-example"><p class="example-input"><strong>60 秒 100m，130 步（竞赛徒步）：</strong></p><p class="example-calc">步行得分 = 60 + 130 =<strong>190</strong></p><p class="example-interpretation">快但步幅较短</p></div></div><h4>典型范围：</h4><ul><li><strong>&gt;250：</strong>步态缓慢/效率低下，可能存在行动问题</li><li><strong>200-250：</strong>休闲徒步旅行者，效率一般</li><li><strong>170-200：</strong>健身徒步达人，效率好</li><li><strong>150-170：</strong>高级徒步者，效率极佳</li><li><strong>&lt;150：</strong>精英/竞赛徒步级别</li></ul><div class="tip-box"><p><strong>使用 WALK Score 进行训练：</strong>每周跟踪您在同一个 100m 赛道上的成绩。改善表明神经肌肉协调性、力量和经济性得到增强。</p></div></div><h2 id="basic-metrics">6. 基本步态指标</h2><div class="formula-section"><h3>基本计算</h3><div class="formula-box"><p class="formula-title">徒步速度</p><p class="formula-main"><strong>速度 (m/s) = 距离 (m) / 时间 (s)</strong></p></div><div class="formula-box"><p class="formula-title">总步数的步频</p><p class="formula-main"><strong>步频 (spm) = 总步数 / 时间（分钟）</strong></p></div><div class="formula-box"><p class="formula-title">步幅</p><p class="formula-main"><strong>步幅（米）= 距离（米）/（步数/2）</strong></p><p class="formula-note">将步数除以 2，因为一步 = 两步</p></div><div class="formula-box"><p class="formula-title">步长</p><p class="formula-main"><strong>步长（米）= 距离（米）/步数</strong></p></div><div class="formula-box"><p class="formula-title">步频和步幅的速度</p><p class="formula-main"><strong>速度 = 步幅 ×（踏频 / 2）/ 60</strong></p><p class="formula-note">或者：速度（米/秒）=步长×踏频/60</p></div><h4>工作流程示例：</h4><div class="calc-example"><p class="example-input"><strong>12 分钟内徒步 1000 米，共 1320 级台阶：</strong></p><p><strong>速度：</strong>1000m / 720s =<strong>1.39米/秒</strong></p><p><strong>节奏：</strong>1320 步 / 12 分钟 =<strong>110 秒/分</strong></p><p><strong>步幅：</strong>1000m / (1320/2) = 1000 / 660 =<strong>1.52米</strong></p><p><strong>步长：</strong>1000m / 1320 =<strong>0.76米</strong></p></div></div><h2 id="heart-rate">7. 心率区间计算</h2><div class="formula-section"><h3>传统的心率区法</h3><div class="formula-box"><p class="formula-title">最大心率估计</p><p class="formula-main"><strong>最大心率 = 220 - 年龄</strong></p><p class="formula-note">简单但个体差异为 ±10-15 bpm</p></div><div class="formula-box"><p class="formula-title">替代方案：田中公式（更准确）</p><p class="formula-main"><strong>最大心率 = 208 - (0.7 × 年龄)</strong></p></div><div class="formula-box"><p class="formula-title">区域范围计算</p><p class="formula-main"><strong>区域 = 最大心率 × (下%, 上%)</strong></p></div><h4>示例：40岁</h4><div class="calc-example"><p><strong>传统：</strong>最大心率 = 220 - 40 =<strong>180 次/分钟</strong></p><p><strong>田中：</strong>最大心率 = 208 - (0.7 × 40) = 208 - 28 =<strong>180 次/分钟</strong></p><p><strong>2区（60-70%）：</strong>180 × 0.60 = 108 bpm 至 180 × 0.70 = 126 bpm</p></div><div class="info-box"><p><strong>注意：</strong>虽然心率区很有用，<strong>基于节奏的区域对于徒步旅行来说更加准确和实用</strong>（请参阅徒步旅行区指南）。</p></div></div><h2 id="cost-transport">8. 交通成本和徒步经济</h2><div class="formula-section"><h3>徒步旅行的能源成本</h3><div class="formula-box"><p class="formula-title">运输成本 (C)</p><p class="formula-main"><strong>C = 消耗的能量 /（体重 × 距离）</strong></p><p class="formula-note">单位：J/kg/m 或 mL O2/kg/m</p></div><div class="key-insight"><p><strong>U形曲线：</strong>徒步经济遵循U形曲线。有一个最佳速度（通常为 1.2-1.4 m/s 或 4.3-5.0 km/h），可以使运输成本最小化。比这慢或快的徒步旅行会增加单位行走距离的能源成本。</p></div><h4>影响运输成本的因素：</h4><ul><li><strong>速度：</strong>U型关系（最佳1.3 m/s左右）</li><li><strong>渐变：</strong>上坡会显着增加成本；下坡增加偏心成本</li><li><strong>体重：</strong>较重的个体具有较高的绝对成本，但相对成本相似</li><li><strong>步幅力学：</strong>最佳步幅可最大限度降低成本</li><li><strong>地形：</strong>与光滑路面相比，不平坦的表面会增加成本</li></ul><div class="formula-box"><p class="formula-title">等级调整成本</p><p class="formula-main"><strong>成本乘数 = 1 + (等级 × 10)</strong></p><p class="formula-note">粗略估计：每 1% 等级 +10% 成本</p></div><h4>示例：</h4><div class="calc-example"><p class="example-input"><strong>5% 坡度徒步旅行：</strong></p><p class="example-calc">成本乘数 = 1 + (0.05 × 10) =<strong>1.5×</strong></p><p class="example-interpretation">与平地相比，能源成本增加 50%</p></div></div><h2 id="training-load">9. 训练负荷和压力分数</h2><div class="formula-section"><h3>远足压力评分 (WSS)</h3><div class="formula-box"><p class="formula-title">基于区域的WSS</p><p class="formula-main"><strong>WSS = Σ（区域分钟数 × 区域系数）</strong></p><p>区域 1：×1.0 |区域 2：×2.0 |区域 3：×3.0 |区域 4：×4.0 | 5区：×5.0</p></div><h4>示例：60 分钟徒步旅行</h4><div class="calc-example"><p>10 分钟 1 区 × 1 = 10 分</p><p>40 分钟 2 区 × 2 = 80 分</p><p>10 分钟 3 区 × 3 = 30 分</p><p><strong>总 WSS = 120</strong></p></div><h3>每周训练负荷</h3><div class="formula-box"><p class="formula-title">每周负荷</p><p class="formula-main"><strong>每周负荷 = Σ 每日 WSS（7 天）</strong></p></div><div class="formula-box"><p class="formula-title">渐进式超负荷</p><p class="formula-main"><strong>下周 = 本周 × 1.05-1.10</strong></p><p class="formula-note">每周最多增加 5-10%</p></div><div class="formula-box"><p class="formula-title">恢复周</p><p class="formula-main"><strong>恢复周 = 当前 × 0.50-0.70</strong></p><p class="formula-note">每 3-4 周减少至 50-70%</p></div><h4>典型的每周负载：</h4><ul><li><strong>初级健康徒步旅行者：</strong>200-400 WSS/周</li><li><strong>经常健身徒步的人：</strong>400-700 WSS/周</li><li><strong>认真的健身徒步旅行者：</strong>700-1000 WSS/周</li><li><strong>竞技徒步旅行者：</strong>1000-1500+ WSS/周</li></ul></div><h2 id="predictions">10. 预测方程</h2><div class="formula-section"><h3>6 分钟徒步测试 (6MWT) 距离预测</h3><div class="formula-box"><p class="formula-title">预测 6MWT 距离（Enright &amp; Sherill）</p><p><strong>男士：</strong>(7.57 × 身高厘米) - (5.02 × 年龄) - (1.76 × 体重公斤) - 309</p><p><strong>女性：</strong>(2.11 × 身高厘米) - (5.78 × 年龄) - (2.29 × 体重公斤) + 667</p><p class="formula-note">预测健康成年人的距离（以米为单位）</p></div><h4>示例：40岁男性，175厘米，75公斤</h4><div class="calc-example"><p class="example-calc">6MWT = (7.57 × 175) - (5.02 × 40) - (1.76 × 75) - 309</p><p>= 1324.75 - 200.8 - 132 - 309 =<strong>682.95米</strong></p><p class="example-interpretation">适合年龄的良好功能能力</p></div><div class="info-box"><p><strong>临床用途：</strong>6MWT 用于评估心肺患者的功能锻炼能力、手术前/术后评估以及老年人的一般健康状况。</p></div></div><h2 id="conversions">11. 单位换算</h2><div class="formula-section"><h3>常见的徒步旅行公制换算</h3><div class="conversion-table"><table><thead><tr><th>来自</th><th>至</th><th>公式</th></tr></thead><tbody><tr><td>公里/小时</td><td>米/秒</td><td>公里/小时 ÷ 3.6</td></tr><tr><td>英里/小时</td><td>米/秒</td><td>英里/小时×0.447</td></tr><tr><td>米/秒</td><td>公里/小时</td><td>米/秒×3.6</td></tr><tr><td>米/秒</td><td>英里/小时</td><td>米/秒×2.237</td></tr><tr><td>公里/小时</td><td>米/分钟</td><td>公里/小时×16.67</td></tr><tr><td>英里/小时</td><td>米/分钟</td><td>英里/小时×26.82</td></tr><tr><td>代谢物</td><td>毫升/公斤/分钟</td><td>代谢量 × 3.5</td></tr><tr><td>毫升/公斤/分钟</td><td>代谢物</td><td>摄氧量 ÷ 3.5</td></tr></tbody></table></div><h4>快速参考：</h4><ul><li><strong>1.0 米/秒 =</strong>3.6 公里/小时 = 2.24 英里/小时（典型的健康成人徒步速度）</li><li><strong>1.4米/秒=</strong>5.0 公里/小时 = 3.1 英里/小时（快步徒步）</li><li><strong>1 代谢率 =</strong>3.5 mL O2/kg/min（静息代谢）</li><li><strong>3 MET =</strong>10.5 mL O2/kg/min（中等强度阈值）</li><li><strong>6 MET =</strong>21 mL O2/kg/min（剧烈强度阈值）</li></ul></div><h2 id="next-steps">相关资源</h2><div class="next-steps-grid"><div class="next-step-card"><h3>应用公式：WSS 计算器</h3><p>使用我们的交互式计算器来计算您的徒步压力分数。</p><a class="btn btn-secondary" href="/zh/wss-calculator/">计算 WSS →</a></div><div class="next-step-card"><h3>了解远足区</h3><p>了解如何在训练中应用基于节奏的强度区。</p><a class="btn btn-secondary" href="/zh/walking-zones/">学习区 →</a></div><div class="next-step-card"><h3>科学研究</h3><p>查看验证这些公式的研究。</p><a class="btn btn-secondary" href="/zh/research/">查看研究 →</a></div><div class="next-step-card"><h3>完整参考书目</h3><p>访问所有引用方程的完整引文。</p><a class="btn btn-secondary" href="/zh/bibliography/">查看参考书目 →</a></div></div></div><aside class="sidebar"><div class="toc"><h3>配方索引</h3><ul><li><a href="#cadence-mets">1. 节奏 → MET</a></li><li><a href="#acsm-vo2">2. ACSM VO2 方程</a></li><li><a href="#energy-expenditure">3. 能量和卡路里</a></li><li><a href="#gait-symmetry">4.步态对称性指数</a></li><li><a href="#hike-score">5. 步行得分</a></li><li><a href="#basic-metrics">6. 基本步态指标</a></li><li><a href="#heart-rate">7. 心率区</a></li><li><a href="#cost-transport">8. 运输成本</a></li><li><a href="#training-load">9. 训练负荷</a></li><li><a href="#predictions">10. 预测方程</a></li><li><a href="#conversions">11. 单位换算</a></li></ul></div><div class="formula-highlight"><h3>⭐ 最重要</h3><p><strong>MET 节奏</strong></p><p class="formula-compact">MET = 0.0219 × spm + 0.72</p><p class="small-text">这个单一方程可以在没有心率监测器的情况下实现基于节奏的强度训练。</p></div><div class="cta-box"><h3>应用这些公式</h3><p>徒步分析使用这些经过科学验证的方程来分析您的徒步旅行。</p><a class="btn btn-accent" href="https://apps.apple.com/us/app/hike-analytics/id6760036261" rel="noopener" target="_blank">下载应用程序</a></div><div class="info-box"><h4>📐 公式准确度</h4><p>本页上的所有方程均来自同行评审的研究。参见<a href="/zh/bibliography/">参考书目</a>以获得完整的引用。</p></div></aside></div></div></section><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
-          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-            <span itemprop="name">AnalyticsZone Team</span>
-          </span>
-        </h3>
-        <p style="margin: 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">AnalyticsZone Team</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
           This content has been written and reviewed by a sports data metrics expert to ensure technical accuracy and adherence to the latest sports science methodologies.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    
-    
-<section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="formulas">
-  <div class="container ai-citation-shell">
-    <h2 class="ai-citation-title">步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式</h2>
-    <p class="ai-citation-answer">步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics</p>
-
-    <ul class="ai-citation-facts" role="list">
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">📅</span>
-        <span>2026-03-24</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact ai-citation-keywords">
-        <span class="ai-citation-icon" aria-hidden="true">🏷️</span>
-        <span>步行公式 · WSS公式 · 步态指标计算 · 步行科学公式 · 步幅计算</span>
-      </li>
-      
-
-      
-      <li class="ai-citation-fact">
-        <span class="ai-citation-icon" aria-hidden="true">🔬</span>
-        <a href="../../zh/bibliography/">
+        </p></div></div></div></section><section class="ai-citation-block divider-top-xl" data-ai-ready="true" data-ai-page="formulas"><div class="container ai-citation-shell"><h2 class="ai-citation-title">步行指标计算公式 - WSS、步态与健康指标如何计算 | Hike Analytics | 步行公式</h2><p class="ai-citation-answer">步行分析背后的数学公式。了解WSS、步幅指标、步频和效率评分的计算方法。基于科学的方法论。 Hike Analytics, 步行公式, WSS公式, 步态指标计算, 步行科学公式, 步幅计算 Hike Analytics</p><ul class="ai-citation-facts" role="list"><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">📅</span><span>2026-03-24</span></li><li class="ai-citation-fact ai-citation-keywords"><span class="ai-citation-icon" aria-hidden="true">🏷️</span><span>步行公式 · WSS公式 · 步态指标计算 · 步行科学公式 · 步幅计算</span></li><li class="ai-citation-fact"><span class="ai-citation-icon" aria-hidden="true">🔬</span><a href="../../zh/bibliography/">
           
           参考文献
           
-        </a>
-      </li>
-      
-    </ul>
-
-    
-  </div>
-</section>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Hike Analytics</h2>
-                <p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">下载</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
-                        aria-label="在 App Store 上下载">
-                        <img src="../../assets/images/badge-app-store.svg"
+        </a></li></ul></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Hike Analytics</h2><p>Track gait metrics, hiking zones, and health analytics with Hike Analytics. Science-based iOS app for hikers &amp; health enthusiasts. 7-day free trial.</p></div><div class="footer-download"><h3 class="footer-heading">下载</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/hike-analytics/id6760036261" target="_blank" rel="noopener"
+                        aria-label="在 App Store 上下载"><img src="../../assets/images/badge-app-store.svg"
                             alt="在 App Store 上下载" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
-                        aria-label="在 Google Play 上获取">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.hikeanalytics" target="_blank" rel="noopener"
+                        aria-label="在 Google Play 上获取"><img src="../../assets/images/badge-google-play.svg"
                             alt="在 Google Play 上获取" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">可用于</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">可用于</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አမ္ဟာ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yorùbá
-                </a>
-                
-                <a href="/zh/" class="lang-link active"
+                </a><a href="/zh/" class="lang-link active"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. 版权所有
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/zh/privacy/">隐私政策</a></li>
-                <li><a href="/zh/terms/">使用条款</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>本网站使用cookies以改善您的体验。</p>
-            <a href="/zh/privacy/" class="text-sm">了解更多</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">拒绝</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">接受</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=8eaf23e4d6a5" defer></script>
-  <script src="../../assets/js/search.min.js?v=8eaf23e4d6a5" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/zh/privacy/">隐私政策</a></li><li><a href="/zh/terms/">使用条款</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>本网站使用cookies以改善您的体验。</p><a href="/zh/privacy/" class="text-sm">了解更多</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">拒绝</button><button id="cookie-accept" class="btn btn-primary btn-small">接受</button></div></div></div><script src="../../assets/js/core.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/search.min.js?v=cd68d98548fd" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
