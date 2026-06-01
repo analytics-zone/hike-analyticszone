@@ -314,7 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=3c6d85d6"><script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=fe8b5ea0"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -686,22 +686,22 @@ img[width][height] {
                             aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="مینو کو ٹوگل کریں۔"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/ur/">گھر</a></li><li><a href="/ur/cadence-calculator/">اوزار</a></li><li><span aria-current="page">VO₂max کیلکولیٹر</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>VO₂max Calculator (Rockport Hiking Test)</h1><p class="lead">
-        Estimate your VO₂max (aerobic fitness) using the Rockport 1-Mile Hiking Test. Hike 1 mile (1.61 km) as fast as possible, record your time and heart rate immediately upon finishing.
-    </p><section id="calculator"><div class="calculator-box"><h2>Calculate VO₂max</h2><div class="input-group"><label for="age">Age (years):</label><input type="number" id="age" min="18" max="90" value="35" /></div><div class="input-group"><label for="sex">Sex:</label><select id="sex"><option value="male">Male</option><option value="female">Female</option></select></div><div class="input-group"><label for="weight">Body Weight:</label><input type="number" id="weight" min="40" max="200" value="70" /><select id="weight-unit"><option value="kg">kg</option><option value="lbs">lbs</option></select></div><div class="input-group"><label for="time-min">1-Mile Hike Time:</label><input type="number" id="time-min" min="8" max="30" value="15" style="width:60px;" /><span>min</span><input type="number" id="time-sec" min="0" max="59" value="30" style="width:60px;" /><span>sec</span></div><div class="input-group"><label for="hr">Heart Rate (immediately after finishing):</label><input type="number" id="hr" min="80" max="200" value="130" /><span class="unit">bpm</span></div><button onclick="calculateVO2max()" class="btn-primary">Calculate VO₂max</button><div id="results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Estimated VO₂max:</strong><span id="vo2max-value"></span> ml/kg/min
-                </div><div class="result-item"><strong>Fitness Classification:</strong><span id="fitness-class"></span></div><div class="result-item"><strong>Percentile for Age/Sex:</strong><span id="percentile"></span></div><div class="result-item"><strong>Interpretation:</strong><span id="interpretation"></span></div></div></div></section><section id="reference"><h2>VO₂max Reference Values (ml/kg/min)</h2><h3>Men</h3><div class="data-table"><table><thead><tr><th>Age</th><th>Poor</th><th>Fair</th><th>Good</th><th>Excellent</th><th>Superior</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;33</td><td>33-38</td><td>39-45</td><td>46-52</td><td>&gt;52</td></tr><tr><td><strong>30-39</strong></td><td>&lt;31</td><td>31-36</td><td>37-43</td><td>44-50</td><td>&gt;50</td></tr><tr><td><strong>40-49</strong></td><td>&lt;29</td><td>29-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>50-59</strong></td><td>&lt;26</td><td>26-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>60+</strong></td><td>&lt;24</td><td>24-28</td><td>29-35</td><td>36-42</td><td>&gt;42</td></tr></tbody></table></div><h3>Women</h3><div class="data-table"><table><thead><tr><th>Age</th><th>Poor</th><th>Fair</th><th>Good</th><th>Excellent</th><th>Superior</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;28</td><td>28-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>30-39</strong></td><td>&lt;27</td><td>27-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>40-49</strong></td><td>&lt;25</td><td>25-29</td><td>30-36</td><td>37-43</td><td>&gt;43</td></tr><tr><td><strong>50-59</strong></td><td>&lt;23</td><td>23-27</td><td>28-34</td><td>35-41</td><td>&gt;41</td></tr><tr><td><strong>60+</strong></td><td>&lt;21</td><td>21-25</td><td>26-32</td><td>33-39</td><td>&gt;39</td></tr></tbody></table></div></section><section id="methodology"><h2>Methodology: Rockport Hiking Test</h2><div class="formula-box"><h3>Equation</h3><pre>
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/ur/">گھر</a></li><li><a href="/ur/cadence-calculator/">اوزار</a></li><li><span aria-current="page">VO₂max کیلکولیٹر</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>VO₂max کیلکولیٹر (راک پورٹ واکنگ ٹیسٹ)</h1><p class="lead">
+        راک پورٹ 1 میل واکنگ ٹیسٹ استعمال کرتے ہوئے اپنے VO₂max (ایروبک فٹنس) کا تخمینہ لگائیں۔ زیادہ سے زیادہ تیزی سے 1 میل (1.61 کلومیٹر) چلیں، اور ختم ہونے کے فوراً بعد اپنا وقت اور دل کی دھڑکن ریکارڈ کریں۔
+    </p><section id="calculator"><div class="calculator-box"><h2>VO₂max کا حساب لگائیں</h2><div class="input-group"><label for="age">عمر (سال):</label><input type="number" id="age" min="18" max="90" value="35" /></div><div class="input-group"><label for="sex">جنس:</label><select id="sex"><option value="male">مرد</option><option value="female">عورت</option></select></div><div class="input-group"><label for="weight">جسمانی وزن:</label><input type="number" id="weight" min="40" max="200" value="70" /><select id="weight-unit"><option value="kg">kg</option><option value="lbs">lbs</option></select></div><div class="input-group"><label for="time-min">1 میل پیدل چلنے کا وقت:</label><input type="number" id="time-min" min="8" max="30" value="15" style="width:60px;" /><span>منٹ</span><input type="number" id="time-sec" min="0" max="59" value="30" style="width:60px;" /><span>سیکنڈ</span></div><div class="input-group"><label for="hr">دل کی دھڑکن (ختم ہونے کے فوراً بعد):</label><input type="number" id="hr" min="80" max="200" value="130" /><span class="unit">bpm</span></div><button onclick="calculateVO2max()" class="btn-primary">VO₂max کا حساب لگائیں</button><div id="results" style="display:none;"><h3>نتائج</h3><div class="result-item"><strong>تخمینہ شدہ VO₂max:</strong><span id="vo2max-value"></span> ml/kg/min
+                </div><div class="result-item"><strong>فٹنس کی درجہ بندی:</strong><span id="fitness-class"></span></div><div class="result-item"><strong>عمر/جنس کے لیے فیصدی:</strong><span id="percentile"></span></div><div class="result-item"><strong>تشریح:</strong><span id="interpretation"></span></div></div></div></section><section id="reference"><h2>VO₂max حوالہ جاتی اقدار (ml/kg/min)</h2><h3>مرد</h3><div class="data-table"><table><thead><tr><th>عمر</th><th>ناقص</th><th>معمولی</th><th>اچھا</th><th>بہترین</th><th>عمدہ</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;33</td><td>33-38</td><td>39-45</td><td>46-52</td><td>&gt;52</td></tr><tr><td><strong>30-39</strong></td><td>&lt;31</td><td>31-36</td><td>37-43</td><td>44-50</td><td>&gt;50</td></tr><tr><td><strong>40-49</strong></td><td>&lt;29</td><td>29-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>50-59</strong></td><td>&lt;26</td><td>26-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>60+</strong></td><td>&lt;24</td><td>24-28</td><td>29-35</td><td>36-42</td><td>&gt;42</td></tr></tbody></table></div><h3>خواتین</h3><div class="data-table"><table><thead><tr><th>عمر</th><th>ناقص</th><th>معمولی</th><th>اچھا</th><th>بہترین</th><th>عمدہ</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;28</td><td>28-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>30-39</strong></td><td>&lt;27</td><td>27-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>40-49</strong></td><td>&lt;25</td><td>25-29</td><td>30-36</td><td>37-43</td><td>&gt;43</td></tr><tr><td><strong>50-59</strong></td><td>&lt;23</td><td>23-27</td><td>28-34</td><td>35-41</td><td>&gt;41</td></tr><tr><td><strong>60+</strong></td><td>&lt;21</td><td>21-25</td><td>26-32</td><td>33-39</td><td>&gt;39</td></tr></tbody></table></div></section><section id="methodology"><h2>طریقہ کار: راک پورٹ واکنگ ٹیسٹ</h2><div class="formula-box"><h3>مساوات</h3><pre>
 VO₂max (ml/kg/min) = 132.853
-                      - (0.0769 × Weight in lbs)
-                      - (0.3877 × Age in years)
-                      + (6.315 × Sex) [1 = male, 0 = female]
-                      - (3.2649 × Time in minutes)
-                      - (0.1565 × Heart Rate in bpm)
+                      - (0.0769 × وزن پاؤنڈز میں)
+                      - (0.3877 × عمر سالوں میں)
+                      + (6.315 × جنس) [1 = مرد، 0 = عورت]
+                      - (3.2649 × وقت منٹوں میں)
+                      - (0.1565 × دل کی دھڑکن bpm میں)
 
-Validation:
+توثیق:
   - Kline et al., Medicine & Science in Sports & Exercise (1987)
-  - Correlation with lab-measured VO₂max: r = 0.88-0.93
-  - Standard error: ±5 ml/kg/min
-            </pre></div><h3>Test Protocol</h3><ol><li><strong>Preparation:</strong> Avoid vigorous activity 24 hours before test; well-hydrated</li><li><strong>Warm-up:</strong> 5-10 minutes easy hiking</li><li><strong>Test:</strong> Hike 1 mile (1.61 km) as fast as possible while maintaining hiking gait (no running)</li><li><strong>Measurement:</strong> Record time (to nearest second) and heart rate immediately upon finishing</li><li><strong>Track:</strong> Flat 400m track (4 laps) or measured 1-mile route</li></ol></section></div><script>
+  - لیبارٹری میں ماپے گئے VO₂max کے ساتھ تعلق: r = 0.88-0.93
+  - معیاری خرابی: ±5 ml/kg/min
+            </pre></div><h3>ٹیسٹ کا طریقہ کار</h3><ol><li><strong>تیاری:</strong> ٹیسٹ سے 24 گھنٹے پہلے سخت سرگرمی سے پرہیز کریں؛ اچھی طرح ہائیڈریٹڈ رہیں</li><li><strong>وارم اپ:</strong> 5-10 منٹ آرام سے چلنا</li><li><strong>ٹیسٹ:</strong> چلنے کی حالت برقرار رکھتے ہوئے (دوڑنا نہیں) زیادہ سے زیادہ تیزی سے 1 میل (1.61 کلومیٹر) چلیں</li><li><strong>پیمائش:</strong> ختم ہونے کے فوراً بعد وقت (قریب ترین سیکنڈ تک) اور دل کی دھڑکن ریکارڈ کریں</li><li><strong>ٹریک:</strong> ہموار 400 میٹر ٹریک (4 چکر) یا ماپا ہوا 1 میل راستہ</li></ol></section></div><script>
 function calculateVO2max() {
     const age = parseFloat(document.getElementById('age').value);
     const sex = document.getElementById('sex').value;
@@ -713,7 +713,7 @@ function calculateVO2max() {
 
     // Validation
     if (isNaN(age) || isNaN(weight) || isNaN(timeMin) || isNaN(timeSec) || isNaN(hr)) {
-        alert('Please fill in all fields with valid numbers');
+        alert('براہ کرم تمام خانوں کو درست نمبروں سے بھریں');
         return;
     }
 
@@ -746,47 +746,47 @@ function calculateVO2max() {
 
     if (sex === 'male') {
         if (vo2max < 30) {
-            fitnessClass = 'Poor';
-            percentile = 'Below 20th percentile';
-            interpretation = 'Below average fitness; begin gradual hiking program';
+            fitnessClass = 'ناقص';
+            percentile = '20ویں فیصدی سے نیچے';
+            interpretation = 'اوسط سے کم فٹنس؛ بتدریج پیدل چلنے کا پروگرام شروع کریں';
         } else if (vo2max < 36) {
-            fitnessClass = 'Fair';
-            percentile = '20th-40th percentile';
-            interpretation = 'Below average; aim to increase to 150 min/week moderate hiking';
+            fitnessClass = 'معمولی';
+            percentile = '20ویں-40ویں فیصدی';
+            interpretation = 'اوسط سے کم؛ ہفتے میں 150 منٹ اعتدال سے چلنے کا ہدف رکھیں';
         } else if (vo2max < 42) {
-            fitnessClass = 'Good';
-            percentile = '40th-60th percentile';
-            interpretation = 'Average fitness; maintain regular activity';
+            fitnessClass = 'اچھا';
+            percentile = '40ویں-60ویں فیصدی';
+            interpretation = 'اوسط فٹنس؛ باقاعدہ سرگرمی برقرار رکھیں';
         } else if (vo2max < 48) {
-            fitnessClass = 'Excellent';
-            percentile = '60th-80th percentile';
-            interpretation = 'Above average; good cardiovascular health';
+            fitnessClass = 'بہترین';
+            percentile = '60ویں-80ویں فیصدی';
+            interpretation = 'اوسط سے بہتر؛ اچھی قلبی صحت';
         } else {
-            fitnessClass = 'Superior';
-            percentile = 'Above 80th percentile';
-            interpretation = 'Excellent aerobic fitness; athlete-level';
+            fitnessClass = 'عمدہ';
+            percentile = '80ویں فیصدی سے اوپر';
+            interpretation = 'بہترین ایروبک فٹنس؛ کھلاڑی کی سطح';
         }
     } else {
         if (vo2max < 25) {
-            fitnessClass = 'Poor';
-            percentile = 'Below 20th percentile';
-            interpretation = 'Below average fitness; begin gradual hiking program';
+            fitnessClass = 'ناقص';
+            percentile = '20ویں فیصدی سے نیچے';
+            interpretation = 'اوسط سے کم فٹنس؛ بتدریج پیدل چلنے کا پروگرام شروع کریں';
         } else if (vo2max < 30) {
-            fitnessClass = 'Fair';
-            percentile = '20th-40th percentile';
-            interpretation = 'Below average; aim to increase to 150 min/week moderate hiking';
+            fitnessClass = 'معمولی';
+            percentile = '20ویں-40ویں فیصدی';
+            interpretation = 'اوسط سے کم؛ ہفتے میں 150 منٹ اعتدال سے چلنے کا ہدف رکھیں';
         } else if (vo2max < 36) {
-            fitnessClass = 'Good';
-            percentile = '40th-60th percentile';
-            interpretation = 'Average fitness; maintain regular activity';
+            fitnessClass = 'اچھا';
+            percentile = '40ویں-60ویں فیصدی';
+            interpretation = 'اوسط فٹنس؛ باقاعدہ سرگرمی برقرار رکھیں';
         } else if (vo2max < 42) {
-            fitnessClass = 'Excellent';
-            percentile = '60th-80th percentile';
-            interpretation = 'Above average; good cardiovascular health';
+            fitnessClass = 'بہترین';
+            percentile = '60ویں-80ویں فیصدی';
+            interpretation = 'اوسط سے بہتر؛ اچھی قلبی صحت';
         } else {
-            fitnessClass = 'Superior';
-            percentile = 'Above 80th percentile';
-            interpretation = 'Excellent aerobic fitness; athlete-level';
+            fitnessClass = 'عمدہ';
+            percentile = '80ویں فیصدی سے اوپر';
+            interpretation = 'بہترین ایروبک فٹنس؛ کھلاڑی کی سطح';
         }
     }
 
@@ -1045,4 +1045,4 @@ function calculateVO2max() {
                     中文
                 </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. جملہ حقوق محفوظ ہیں۔
-            </p><ul class="footer-legal"><li><a href="/ur/privacy/">رازداری</a></li><li><a href="/ur/terms/">شرائط</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>یہ ویب سائٹ آپ کے تجربے کو بہتر بنانے کے لیے کوکیز کا استعمال کرتی ہے۔</p><a href="/ur/privacy/" class="text-sm">مزید جانیں</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">رد کرنا</button><button id="cookie-accept" class="btn btn-primary btn-small">قبول کریں۔</button></div></div></div><script src="../../assets/js/core.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/search.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
+            </p><ul class="footer-legal"><li><a href="/ur/privacy/">رازداری</a></li><li><a href="/ur/terms/">شرائط</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>یہ ویب سائٹ آپ کے تجربے کو بہتر بنانے کے لیے کوکیز کا استعمال کرتی ہے۔</p><a href="/ur/privacy/" class="text-sm">مزید جانیں</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">رد کرنا</button><button id="cookie-accept" class="btn btn-primary btn-small">قبول کریں۔</button></div></div></div><script src="../../assets/js/core.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/search.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

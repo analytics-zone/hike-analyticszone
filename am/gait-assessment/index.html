@@ -314,7 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=3c6d85d6"><script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=fe8b5ea0"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -671,175 +671,176 @@ img[width][height] {
                             aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="ሜኑ ቀያይር"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/am/">ቤት</a></li><li><a href="/am/cadence-calculator/">መሳሪያዎች</a></li><li><span aria-current="page">የእግር ጉዞ ግምገማ</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>Gait Assessment Tool</h1><p class="lead">
-        Assess your hiking gait using simple self-tests. These metrics help identify asymmetries, monitor recovery from injury, or track improvements in hiking efficiency.
-    </p><section id="gait-speed"><div class="calculator-box"><h2>1. Gait Speed Test (4-Meter Hike)</h2><p>Hike 4 meters at your comfortable pace. Time yourself from start to finish.</p><div class="input-group"><label for="time">Time to hike 4 meters (seconds):</label><input type="number" id="time" min="2" max="20" step="0.1" value="3.5" /><span class="unit">seconds</span></div><button onclick="calculateGaitSpeed()" class="btn-primary">Calculate</button><div id="speed-results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Gait Speed:</strong><span id="speed-value"></span> m/s
-                </div><div class="result-item"><strong>Classification:</strong><span id="speed-class"></span></div><div class="result-item"><strong>Clinical Significance:</strong><span id="speed-clinical"></span></div></div></div></section><section id="cadence-test"><div class="calculator-box"><h2>2. Cadence Test (60-Second Count)</h2><p>Hike at your normal pace for 60 seconds. Count your steps.</p><div class="input-group"><label for="steps">Total steps in 60 seconds:</label><input type="number" id="steps" min="40" max="180" value="100" /><span class="unit">steps</span></div><button onclick="assessCadence()" class="btn-primary">Assess</button><div id="cadence-results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Cadence:</strong><span id="cadence-value"></span> spm
-                </div><div class="result-item"><strong>Estimated METs:</strong><span id="cadence-mets"></span> METs
-                </div><div class="result-item"><strong>Intensity:</strong><span id="cadence-intensity"></span></div></div></div></section><section id="symmetry"><div class="calculator-box"><h2>3. Gait Symmetry Index (Step Length)</h2><p>Measure step length for each leg (heel to heel). You can use tape measure on a flat surface.</p><div class="input-group"><label for="right-step">Right leg step length (cm):</label><input type="number" id="right-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><div class="input-group"><label for="left-step">Left leg step length (cm):</label><input type="number" id="left-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><button onclick="calculateGSI()" class="btn-primary">Calculate GSI</button><div id="gsi-results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Gait Symmetry Index (GSI):</strong><span id="gsi-value"></span>%
-                </div><div class="result-item"><strong>Symmetry Classification:</strong><span id="gsi-class"></span></div><div class="result-item"><strong>Interpretation:</strong><span id="gsi-interp"></span></div></div></div></section><section id="reference"><h2>Reference Values</h2><h3>Gait Speed (Healthy Adults)</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;0.60 m/s</strong></td><td>Severely impaired</td></tr><tr><td><strong>0.60-0.80 m/s</strong></td><td>Moderately impaired</td></tr><tr><td><strong>0.80-1.00 m/s</strong></td><td>Mildly impaired</td></tr><tr><td><strong>1.00-1.20 m/s</strong></td><td>Functional threshold (community mobility)</td></tr><tr><td><strong>1.20-1.40 m/s</strong></td><td>Good functional capacity</td></tr><tr><td><strong>&gt;1.40 m/s</strong></td><td>Excellent capacity</td></tr></tbody></table></div><h3>Gait Symmetry Index</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;2%</strong></td><td>Excellent symmetry (healthy young adults)</td></tr><tr><td><strong>2-5%</strong></td><td>Good symmetry (normal variation)</td></tr><tr><td><strong>5-10%</strong></td><td>Mild asymmetry (monitor)</td></tr><tr><td><strong>10-20%</strong></td><td>Moderate asymmetry (PT consultation recommended)</td></tr><tr><td><strong>&gt;20%</strong></td><td>Severe asymmetry (medical evaluation needed)</td></tr></tbody></table></div></section></div><script>
-function calculateGaitSpeed() {
-    const time = parseFloat(document.getElementById('time').value);
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/am/">ቤት</a></li><li><a href="/am/cadence-calculator/">መሳሪያዎች</a></li><li><span aria-current="page">የእግር ጉዞ ግምገማ</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>የአካሄድ ግምገማ መሣሪያ</h1><p class="lead">
+        ቀላል የግል ሙከራዎችን በመጠቀም የአካሄድዎን ሁኔታ ይገምግሙ። እነዚህ መለኪያዎች የአካሄድ አለመመጣጠንን ለመለየት፣ ከጉዳት በኋላ ያለውን ማገገም ለመከታተል ወይም የእግር ጉዞ
+        ብቃትን ለማሻሻል ይረዳሉ።
+    </p><section id="gait-speed"><div class="calculator-box"><h2>1. የአካሄድ ፍጥነት ሙከራ (የ4-ሜትር ጉዞ)</h2><p>ለእርስዎ ምቹ በሆነ ፍጥነት 4 ሜትር ይራመዱ። ከጅምሩ እስከ መጨረሻ ያለውን ጊዜ ይመዝግቡ።</p><div class="input-group"><label for="time">4 ሜትር ለመጓዝ የፈጀው ጊዜ (በሰከንድ):</label><input type="number" id="time" min="2" max="20" step="0.1" value="3.5" /><span class="unit">ሰከንድ</span></div><button onclick="calculateGaitSpeed()" class="btn-primary">አስላ</button><div id="speed-results" style="display:none;"><h3>ውጤቶች</h3><div class="result-item"><strong>የአካሄድ ፍጥነት:</strong><span id="speed-value"></span> m/s
+                </div><div class="result-item"><strong>የደረጃ ምደባ:</strong><span id="speed-class"></span></div><div class="result-item"><strong>ክሊኒካዊ ትርጉም:</strong><span id="speed-clinical"></span></div></div></div></section><section id="cadence-test"><div class="calculator-box"><h2>2. የእርምጃ ብዛት ሙከራ (የ60-ሰከንድ ቆጠራ)</h2><p>በተለመደው ፍጥነትዎ ለ60 ሰከንድ ይራመዱ። እርምጃዎችዎን ይቁጠሩ።</p><div class="input-group"><label for="steps">በ60 ሰከንድ ውስጥ የተቆጠሩ እርምጃዎች:</label><input type="number" id="steps" min="40" max="180" value="100" /><span class="unit">እርምጃዎች</span></div><button onclick="assessCadence()" class="btn-primary">ገምግም</button><div id="cadence-results" style="display:none;"><h3>ውጤቶች</h3><div class="result-item"><strong>ካደንስ (Cadence):</strong><span id="cadence-value"></span> spm
+                </div><div class="result-item"><strong>የተገመተው ሜትስ (METs):</strong><span id="cadence-mets"></span> METs
+                </div><div class="result-item"><strong>ጥንካሬ:</strong><span id="cadence-intensity"></span></div></div></div></section><section id="symmetry"><div class="calculator-box"><h2>3. የአካሄድ ተመጣጣኝነት መለኪያ (GSI - የእርምጃ ርዝመት)</h2><p>ለእያንዳንዱ እግር የእርምጃ ርዝመትን (ከተረከዝ እስከ ተረከዝ) ይለኩ። በጠፍጣፋ ቦታ ላይ የሜትር ልኬትን መጠቀም ይችላሉ።</p><div class="input-group"><label for="right-step">የቀኝ እግር እርምጃ ርዝመት (በሴ.ሜ):</label><input type="number" id="right-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><div class="input-group"><label for="left-step">የግራ እግር እርምጃ ርዝመት (በሴ.ሜ):</label><input type="number" id="left-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><button onclick="calculateGSI()" class="btn-primary">GSI አስላ</button><div id="gsi-results" style="display:none;"><h3>ውጤቶች</h3><div class="result-item"><strong>የአካሄድ ተመጣጣኝነት መለኪያ (GSI):</strong><span id="gsi-value"></span>%
+                </div><div class="result-item"><strong>የተመጣጣኝነት ደረጃ:</strong><span id="gsi-class"></span></div><div class="result-item"><strong>ማብራሪያ:</strong><span id="gsi-interp"></span></div></div></div></section><section id="reference"><h2>የማጣቀሻ ዋጋዎች</h2><h3>የአካሄድ ፍጥነት (ለጤናማ አዋቂዎች)</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;0.60 m/s</strong></td><td>በጣም ዝቅተኛ</td></tr><tr><td><strong>0.60-0.80 m/s</strong></td><td>ዝቅተኛ</td></tr><tr><td><strong>0.80-1.00 m/s</strong></td><td>ትንሽ ዝቅተኛ</td></tr><tr><td><strong>1.00-1.20 m/s</strong></td><td>የተግባር መነሻ (በማኅበረሰብ ውስጥ ለመንቀሳቀስ)</td></tr><tr><td><strong>1.20-1.40 m/s</strong></td><td>ጥሩ የተግባር ብቃት</td></tr><tr><td><strong>&gt;1.40 m/s</strong></td><td>በጣም ጥሩ ብቃት</td></tr></tbody></table></div><h3>የአካሄድ ተመጣጣኝነት መለኪያ (GSI)</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;2%</strong></td><td>በጣም ምርጥ ተመጣጣኝነት (ለጤናማ ወጣቶች)</td></tr><tr><td><strong>2-5%</strong></td><td>ጥሩ ተመጣጣኝነት (የተለመደ ልዩነት)</td></tr><tr><td><strong>5-10%</strong></td><td>ትንሽ ያለመመጣጠን (ክትትል ያስፈልገዋል)</td></tr><tr><td><strong>10-20%</strong></td><td>መካከለኛ ያለመመጣጠን (የፊዚዮቴራፒ ምክር ይመከራል)</td></tr><tr><td><strong>&gt;20%</strong></td><td>ከባድ ያለመመጣጠን (የሕክምና ምርመራ ያስፈልገዋል)</td></tr></tbody></table></div></section></div><script>
+    function calculateGaitSpeed() {
+        const time = parseFloat(document.getElementById('time').value);
 
-    if (isNaN(time) || time < 2 || time > 20) {
-        alert('Please enter a valid time between 2-20 seconds');
-        return;
+        if (isNaN(time) || time < 2 || time > 20) {
+            alert('እባክዎ ከ2-20 ሰከንድ ባለው ክልል ውስጥ ትክክለኛ ጊዜ ያስገቡ');
+            return;
+        }
+
+        const speed = 4.0 / time; // 4 meters / time
+
+        let classification = '';
+        let clinical = '';
+
+        if (speed < 0.60) {
+            classification = 'በጣም ዝቅተኛ';
+            clinical = 'ለአብዛኞቹ ተግባራት በሌላ ሰው መታገዝን ይጠይቃል፤ የሕክምና ምርመራ ይመከራል';
+        } else if (speed < 0.80) {
+            classification = 'ዝቅተኛ';
+            clinical = 'በቤት ውስጥ የመንቀሳቀስ ችሎታ የተገደበ ነው፤ የፊዚዮቴራፒ ሕክምናን ያስቡበት';
+        } else if (speed < 1.00) {
+            classification = 'ትንሽ ዝቅተኛ';
+            clinical = 'በማኅበረሰብ ውስጥ የመንቀሳቀስ ችሎታ የተገደበ ነው፤ በስልጠና ማሻሻል ይቻላል';
+        } else if (speed < 1.20) {
+            classification = 'የተግባር መነሻ';
+            clinical = 'በማኅበረሰብ ውስጥ ራሱን ችሎ መንቀሳቀስ ይችላል፤ መንገድ ለመሻገር የሚያስፈልገውን አነስተኛ ፍጥነት ያሟላል';
+        } else if (speed < 1.40) {
+            classification = 'ጥሩ የተግባር ብቃት';
+            clinical = 'የጤናማ አዋቂ ሰው የተለመደ ፍጥነት፤ ዝቅተኛ የአካል ጉዳት ስጋት';
+        } else {
+            classification = 'በጣም ጥሩ ብቃት';
+            clinical = 'ጠንካራ ጤንነት፤ ከረጅም ዕድሜ ጋር የተያያዘ';
+        }
+
+        document.getElementById('speed-value').textContent = speed.toFixed(2);
+        document.getElementById('speed-class').textContent = classification;
+        document.getElementById('speed-clinical').textContent = clinical;
+        document.getElementById('speed-results').style.display = 'block';
     }
 
-    const speed = 4.0 / time; // 4 meters / time
+    function assessCadence() {
+        const steps = parseFloat(document.getElementById('steps').value);
 
-    let classification = '';
-    let clinical = '';
+        if (isNaN(steps) || steps < 40 || steps > 180) {
+            alert('እባክዎ ከ40-180 ባለው ክልል ውስጥ ትክክለኛ የእርምጃ ብዛት ያስገቡ');
+            return;
+        }
 
-    if (speed < 0.60) {
-        classification = 'Severely impaired';
-        clinical = 'Dependent for most activities; medical evaluation recommended';
-    } else if (speed < 0.80) {
-        classification = 'Moderately impaired';
-        clinical = 'Limited household mobility; consider physical therapy';
-    } else if (speed < 1.00) {
-        classification = 'Mildly impaired';
-        clinical = 'Limited community mobility; can improve with training';
-    } else if (speed < 1.20) {
-        classification = 'Functional threshold';
-        clinical = 'Independent in community; meets minimum for street crossing';
-    } else if (speed < 1.40) {
-        classification = 'Good functional capacity';
-        clinical = 'Healthy typical adult speed; low disability risk';
-    } else {
-        classification = 'Excellent capacity';
-        clinical = 'Robust health; associated with longevity';
+        const cadence = steps; // steps per minute
+        const mets = (0.0219 * cadence) + 0.72;
+
+        let intensity = '';
+        if (mets < 3.0) intensity = 'ቀሊል ጥንካሬ';
+        else if (mets < 6.0) intensity = 'መካከለኛ ጥንካሬ';
+        else intensity = 'ከፍተኛ ጥንካሬ';
+
+        document.getElementById('cadence-value').textContent = cadence;
+        document.getElementById('cadence-mets').textContent = mets.toFixed(1);
+        document.getElementById('cadence-intensity').textContent = intensity;
+        document.getElementById('cadence-results').style.display = 'block';
     }
 
-    document.getElementById('speed-value').textContent = speed.toFixed(2);
-    document.getElementById('speed-class').textContent = classification;
-    document.getElementById('speed-clinical').textContent = clinical;
-    document.getElementById('speed-results').style.display = 'block';
-}
+    function calculateGSI() {
+        const right = parseFloat(document.getElementById('right-step').value);
+        const left = parseFloat(document.getElementById('left-step').value);
 
-function assessCadence() {
-    const steps = parseFloat(document.getElementById('steps').value);
+        if (isNaN(right) || isNaN(left) || right < 30 || right > 120 || left < 30 || left > 120) {
+            alert('እባክዎ ከ30-120 ሴ.ሜ ባለው ክልል ውስጥ ትክክለኛ የእርምጃ ርዝመቶችን ያስገቡ');
+            return;
+        }
 
-    if (isNaN(steps) || steps < 40 || steps > 180) {
-        alert('Please enter a valid step count between 40-180');
-        return;
+        const gsi = Math.abs(right - left) / (0.5 * (right + left)) * 100;
+
+        let classification = '';
+        let interpretation = '';
+
+        if (gsi < 2) {
+            classification = 'በጣም ምርጥ ተመጣጣኝነት';
+            interpretation = 'የጤናማ አዋቂ ሰው መደበኛ አካሄድ';
+        } else if (gsi < 5) {
+            classification = 'ጥሩ ተመጣጣኝነት';
+            interpretation = 'የተለመደ ልዩነት፣ አሳሳቢ አይደለም';
+        } else if (gsi < 10) {
+            classification = 'ትንሽ ያለመመጣጠን';
+            interpretation = 'አነስተኛ ያለመመጣጠንን ሊያሳይ ይችላል፤ በጊዜ ሂደት ይከታተሉ';
+        } else if (gsi < 20) {
+            classification = 'መካከለኛ ያለመመጣጠን';
+            interpretation = 'ትኩረት ያስፈልገዋል፤ የፊዚዮቴራፒ ምርመራን ያስቡበት';
+        } else {
+            classification = 'ከባድ ያለመመጣጠን';
+            interpretation = 'የሕክምና ምርመራ ይመከራል፤ የሕመም ምልክት ሊሆን ይችላል';
+        }
+
+        document.getElementById('gsi-value').textContent = gsi.toFixed(1);
+        document.getElementById('gsi-class').textContent = classification;
+        document.getElementById('gsi-interp').textContent = interpretation;
+        document.getElementById('gsi-results').style.display = 'block';
     }
-
-    const cadence = steps; // steps per minute
-    const mets = (0.0219 * cadence) + 0.72;
-
-    let intensity = '';
-    if (mets < 3.0) intensity = 'Light intensity';
-    else if (mets < 6.0) intensity = 'Moderate intensity';
-    else intensity = 'Vigorous intensity';
-
-    document.getElementById('cadence-value').textContent = cadence;
-    document.getElementById('cadence-mets').textContent = mets.toFixed(1);
-    document.getElementById('cadence-intensity').textContent = intensity;
-    document.getElementById('cadence-results').style.display = 'block';
-}
-
-function calculateGSI() {
-    const right = parseFloat(document.getElementById('right-step').value);
-    const left = parseFloat(document.getElementById('left-step').value);
-
-    if (isNaN(right) || isNaN(left) || right < 30 || right > 120 || left < 30 || left > 120) {
-        alert('Please enter valid step lengths between 30-120 cm');
-        return;
-    }
-
-    const gsi = Math.abs(right - left) / (0.5 * (right + left)) * 100;
-
-    let classification = '';
-    let interpretation = '';
-
-    if (gsi < 2) {
-        classification = 'Excellent symmetry';
-        interpretation = 'Normal healthy adult gait';
-    } else if (gsi < 5) {
-        classification = 'Good symmetry';
-        interpretation = 'Normal variation, no concern';
-    } else if (gsi < 10) {
-        classification = 'Mild asymmetry';
-        interpretation = 'May indicate minor imbalance; monitor over time';
-    } else if (gsi < 20) {
-        classification = 'Moderate asymmetry';
-        interpretation = 'Warrants attention; consider PT evaluation';
-    } else {
-        classification = 'Severe asymmetry';
-        interpretation = 'Medical evaluation recommended; likely pathology';
-    }
-
-    document.getElementById('gsi-value').textContent = gsi.toFixed(1);
-    document.getElementById('gsi-class').textContent = classification;
-    document.getElementById('gsi-interp').textContent = interpretation;
-    document.getElementById('gsi-results').style.display = 'block';
-}
 </script><style>
-.calculator-box {
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
+    .calculator-box {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
 
-.input-group {
-    margin-bottom: 1.5rem;
-}
+    .input-group {
+        margin-bottom: 1.5rem;
+    }
 
-.input-group label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
+    .input-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
 
-.input-group input {
-    width: 120px;
-    padding: 0.5rem;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 1.1rem;
-}
+    .input-group input {
+        width: 120px;
+        padding: 0.5rem;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        font-size: 1.1rem;
+    }
 
-.input-group .unit {
-    margin-left: 0.5rem;
-    color: #6c757d;
-}
+    .input-group .unit {
+        margin-left: 0.5rem;
+        color: #6c757d;
+    }
 
-.btn-primary {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s;
-}
+    .btn-primary {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 0.75rem 2rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
 
-.btn-primary:hover {
-    background: #0056b3;
-}
+    .btn-primary:hover {
+        background: #0056b3;
+    }
 
-.result-item {
-    background: white;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-left: 4px solid #28a745;
-    border-radius: 4px;
-}
+    .result-item {
+        background: white;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border-left: 4px solid #28a745;
+        border-radius: 4px;
+    }
 
-.result-item strong {
-    color: #495057;
-}
+    .result-item strong {
+        color: #495057;
+    }
 
-.result-item span {
-    color: #28a745;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
+    .result-item span {
+        color: #28a745;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
 </style><section class="eeat-author bg-light divider-top-lg divider-bottom-lg" aria-label="Author and Reviewer Information"><div class="container container-narrow"><div class="eeat-card" style="display: flex; gap: 1.5rem; align-items: center; padding: 1.5rem; background: var(--color-bg-alt, #f8f9fa); border-radius: 8px; border: 1px solid var(--color-border, #e9ecef); margin-top: 3rem; margin-bottom: 2rem;"><div class="eeat-avatar" style="font-size: 2.5rem; line-height: 1; flex-shrink: 0;" aria-hidden="true">👨‍🔬</div><div class="eeat-details"><h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600;">
           Expertly Reviewed by 
           <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">AnalyticsZone Team</span></span></h3><p style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: var(--color-body-text, #4a5568); line-height: 1.5;">
@@ -1021,4 +1022,4 @@ function calculateGSI() {
                     中文
                 </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. ሁሉም መብቶች የተጠበቁ ናቸው።
-            </p><ul class="footer-legal"><li><a href="/am/privacy/">ግላዊነት</a></li><li><a href="/am/terms/">ውሎች</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>ይህ ድር ጣቢያ የእርስዎን ተሞክሮ ለማሻሻል ኩኪዎችን ይጠቀማል።</p><a href="/am/privacy/" class="text-sm">የበለጠ ተማር</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">አትቀበል</button><button id="cookie-accept" class="btn btn-primary btn-small">ተቀበል</button></div></div></div><script src="../../assets/js/core.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/search.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
+            </p><ul class="footer-legal"><li><a href="/am/privacy/">ግላዊነት</a></li><li><a href="/am/terms/">ውሎች</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>ይህ ድር ጣቢያ የእርስዎን ተሞክሮ ለማሻሻል ኩኪዎችን ይጠቀማል።</p><a href="/am/privacy/" class="text-sm">የበለጠ ተማር</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">አትቀበል</button><button id="cookie-accept" class="btn btn-primary btn-small">ተቀበል</button></div></div></div><script src="../../assets/js/core.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/search.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

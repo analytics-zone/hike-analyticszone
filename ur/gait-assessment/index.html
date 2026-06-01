@@ -314,7 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=3c6d85d6"><script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=fe8b5ea0"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -671,18 +671,18 @@ img[width][height] {
                             aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="مینو کو ٹوگل کریں۔"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/ur/">گھر</a></li><li><a href="/ur/cadence-calculator/">اوزار</a></li><li><span aria-current="page">چال کی تشخیص</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>Gait Assessment Tool</h1><p class="lead">
-        Assess your hiking gait using simple self-tests. These metrics help identify asymmetries, monitor recovery from injury, or track improvements in hiking efficiency.
-    </p><section id="gait-speed"><div class="calculator-box"><h2>1. Gait Speed Test (4-Meter Hike)</h2><p>Hike 4 meters at your comfortable pace. Time yourself from start to finish.</p><div class="input-group"><label for="time">Time to hike 4 meters (seconds):</label><input type="number" id="time" min="2" max="20" step="0.1" value="3.5" /><span class="unit">seconds</span></div><button onclick="calculateGaitSpeed()" class="btn-primary">Calculate</button><div id="speed-results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Gait Speed:</strong><span id="speed-value"></span> m/s
-                </div><div class="result-item"><strong>Classification:</strong><span id="speed-class"></span></div><div class="result-item"><strong>Clinical Significance:</strong><span id="speed-clinical"></span></div></div></div></section><section id="cadence-test"><div class="calculator-box"><h2>2. Cadence Test (60-Second Count)</h2><p>Hike at your normal pace for 60 seconds. Count your steps.</p><div class="input-group"><label for="steps">Total steps in 60 seconds:</label><input type="number" id="steps" min="40" max="180" value="100" /><span class="unit">steps</span></div><button onclick="assessCadence()" class="btn-primary">Assess</button><div id="cadence-results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Cadence:</strong><span id="cadence-value"></span> spm
-                </div><div class="result-item"><strong>Estimated METs:</strong><span id="cadence-mets"></span> METs
-                </div><div class="result-item"><strong>Intensity:</strong><span id="cadence-intensity"></span></div></div></div></section><section id="symmetry"><div class="calculator-box"><h2>3. Gait Symmetry Index (Step Length)</h2><p>Measure step length for each leg (heel to heel). You can use tape measure on a flat surface.</p><div class="input-group"><label for="right-step">Right leg step length (cm):</label><input type="number" id="right-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><div class="input-group"><label for="left-step">Left leg step length (cm):</label><input type="number" id="left-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><button onclick="calculateGSI()" class="btn-primary">Calculate GSI</button><div id="gsi-results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Gait Symmetry Index (GSI):</strong><span id="gsi-value"></span>%
-                </div><div class="result-item"><strong>Symmetry Classification:</strong><span id="gsi-class"></span></div><div class="result-item"><strong>Interpretation:</strong><span id="gsi-interp"></span></div></div></div></section><section id="reference"><h2>Reference Values</h2><h3>Gait Speed (Healthy Adults)</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;0.60 m/s</strong></td><td>Severely impaired</td></tr><tr><td><strong>0.60-0.80 m/s</strong></td><td>Moderately impaired</td></tr><tr><td><strong>0.80-1.00 m/s</strong></td><td>Mildly impaired</td></tr><tr><td><strong>1.00-1.20 m/s</strong></td><td>Functional threshold (community mobility)</td></tr><tr><td><strong>1.20-1.40 m/s</strong></td><td>Good functional capacity</td></tr><tr><td><strong>&gt;1.40 m/s</strong></td><td>Excellent capacity</td></tr></tbody></table></div><h3>Gait Symmetry Index</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;2%</strong></td><td>Excellent symmetry (healthy young adults)</td></tr><tr><td><strong>2-5%</strong></td><td>Good symmetry (normal variation)</td></tr><tr><td><strong>5-10%</strong></td><td>Mild asymmetry (monitor)</td></tr><tr><td><strong>10-20%</strong></td><td>Moderate asymmetry (PT consultation recommended)</td></tr><tr><td><strong>&gt;20%</strong></td><td>Severe asymmetry (medical evaluation needed)</td></tr></tbody></table></div></section></div><script>
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/ur/">گھر</a></li><li><a href="/ur/cadence-calculator/">اوزار</a></li><li><span aria-current="page">چال کی تشخیص</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>چال کی تشخیص کا آلہ</h1><p class="lead">
+        آسان خود ٹیسٹ استعمال کرتے ہوئے اپنی چال کا جائزہ لیں۔ یہ میٹرکس عدم توازن کی شناخت، چوٹ سے بحالی کی نگرانی، یا چلنے کی کارکردگی میں بہتری کو ٹریک کرنے میں مدد کرتی ہیں۔
+    </p><section id="gait-speed"><div class="calculator-box"><h2>1. چال کی رفتار کا ٹیسٹ (4 میٹر واک)</h2><p>اپنی آرام دہ رفتار سے 4 میٹر چلیں۔ شروع سے اختتام تک وقت نوٹ کریں۔</p><div class="input-group"><label for="time">4 میٹر چلنے میں لگنے والا وقت (سیکنڈ):</label><input type="number" id="time" min="2" max="20" step="0.1" value="3.5" /><span class="unit">سیکنڈ</span></div><button onclick="calculateGaitSpeed()" class="btn-primary">حساب لگائیں</button><div id="speed-results" style="display:none;"><h3>نتائج</h3><div class="result-item"><strong>چال کی رفتار:</strong><span id="speed-value"></span> m/s
+                </div><div class="result-item"><strong>درجہ بندی:</strong><span id="speed-class"></span></div><div class="result-item"><strong>طبی اہمیت:</strong><span id="speed-clinical"></span></div></div></div></section><section id="cadence-test"><div class="calculator-box"><h2>2. قدموں کی تعداد کا ٹیسٹ (60 سیکنڈ کی گنتی)</h2><p>60 سیکنڈ کے لیے اپنی عام رفتار سے چلیں۔ اپنے قدموں کی گنتی کریں۔</p><div class="input-group"><label for="steps">60 سیکنڈ میں کل قدم:</label><input type="number" id="steps" min="40" max="180" value="100" /><span class="unit">قدم</span></div><button onclick="assessCadence()" class="btn-primary">جائزہ لیں</button><div id="cadence-results" style="display:none;"><h3>نتائج</h3><div class="result-item"><strong>قدموں کی تعداد:</strong><span id="cadence-value"></span> spm
+                </div><div class="result-item"><strong>تخمینی METs:</strong><span id="cadence-mets"></span> METs
+                </div><div class="result-item"><strong>شدت:</strong><span id="cadence-intensity"></span></div></div></div></section><section id="symmetry"><div class="calculator-box"><h2>3. چال کی ہم آہنگی کا اشاریہ (قدم کی لمبائی)</h2><p>ہر ٹانگ کے لیے قدم کی لمبائی ناپیں (ایڑی سے ایڑی تک)۔ آپ فلیٹ سطح پر ٹیپ میژر استعمال کر سکتے ہیں۔</p><div class="input-group"><label for="right-step">دائیں ٹانگ کے قدم کی لمبائی (سینٹی میٹر):</label><input type="number" id="right-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><div class="input-group"><label for="left-step">بائیں ٹانگ کے قدم کی لمبائی (سینٹی میٹر):</label><input type="number" id="left-step" min="30" max="120" value="65" /><span class="unit">cm</span></div><button onclick="calculateGSI()" class="btn-primary">GSI کا حساب لگائیں</button><div id="gsi-results" style="display:none;"><h3>نتائج</h3><div class="result-item"><strong>چال کی ہم آہنگی کا اشاریہ (GSI):</strong><span id="gsi-value"></span>%
+                </div><div class="result-item"><strong>ہم آہنگی کی درجہ بندی:</strong><span id="gsi-class"></span></div><div class="result-item"><strong>تشریح:</strong><span id="gsi-interp"></span></div></div></div></section><section id="reference"><h2>حوالہ جاتی اقدار</h2><h3>چال کی رفتار (صحت مند بالغ افراد)</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;0.60 m/s</strong></td><td>شدید خرابی</td></tr><tr><td><strong>0.60-0.80 m/s</strong></td><td>اعتدال درجے کی خرابی</td></tr><tr><td><strong>0.80-1.00 m/s</strong></td><td>ہلکی خرابی</td></tr><tr><td><strong>1.00-1.20 m/s</strong></td><td>فعال حد (کمیونٹی نقل و حرکت)</td></tr><tr><td><strong>1.20-1.40 m/s</strong></td><td>اچھی فعالیت کی صلاحیت</td></tr><tr><td><strong>&gt;1.40 m/s</strong></td><td>بہترین صلاحیت</td></tr></tbody></table></div><h3>چال کی ہم آہنگی کا اشاریہ</h3><div class="data-table"><table><tbody><tr><td><strong>&lt;2%</strong></td><td>بہترین ہم آہنگی (صحت مند نوجوان بالغ)</td></tr><tr><td><strong>2-5%</strong></td><td>اچھی ہم آہنگی (عام تغیرات)</td></tr><tr><td><strong>5-10%</strong></td><td>ہلکا عدم توازن (نگرانی کریں)</td></tr><tr><td><strong>10-20%</strong></td><td>اعتدال درجے کا عدم توازن (PT مشاورت تجویز کی جاتی ہے)</td></tr><tr><td><strong>&gt;20%</strong></td><td>شدید عدم توازن (طبی جائزہ ضروری ہے)</td></tr></tbody></table></div></section></div><script>
 function calculateGaitSpeed() {
     const time = parseFloat(document.getElementById('time').value);
 
     if (isNaN(time) || time < 2 || time > 20) {
-        alert('Please enter a valid time between 2-20 seconds');
+        alert('براہ کرم 2-20 سیکنڈ کے درمیان درست وقت درج کریں');
         return;
     }
 
@@ -692,23 +692,23 @@ function calculateGaitSpeed() {
     let clinical = '';
 
     if (speed < 0.60) {
-        classification = 'Severely impaired';
-        clinical = 'Dependent for most activities; medical evaluation recommended';
+        classification = 'شدید خرابی';
+        clinical = 'زیادہ تر سرگرمیوں کے لیے انحصار؛ طبی جائزہ تجویز کیا جاتا ہے';
     } else if (speed < 0.80) {
-        classification = 'Moderately impaired';
-        clinical = 'Limited household mobility; consider physical therapy';
+        classification = 'اعتدال درجے کی خرابی';
+        clinical = 'محدود گھریلو نقل و حرکت؛ فزیوتھراپی پر غور کریں';
     } else if (speed < 1.00) {
-        classification = 'Mildly impaired';
-        clinical = 'Limited community mobility; can improve with training';
+        classification = 'ہلکی خرابی';
+        clinical = 'محدود کمیونٹی نقل و حرکت؛ تربیت سے بہتری آ سکتی ہے';
     } else if (speed < 1.20) {
-        classification = 'Functional threshold';
-        clinical = 'Independent in community; meets minimum for street crossing';
+        classification = 'فعال حد';
+        clinical = 'کمیونٹی میں خودمختار؛ سڑک پار کرنے کے لیے کم سے کم ضرورت پوری کرتا ہے';
     } else if (speed < 1.40) {
-        classification = 'Good functional capacity';
-        clinical = 'Healthy typical adult speed; low disability risk';
+        classification = 'اچھی فعالیت کی صلاحیت';
+        clinical = 'صحت مند عام بالغ رفتار؛ کم معذوری کا خطرہ';
     } else {
-        classification = 'Excellent capacity';
-        clinical = 'Robust health; associated with longevity';
+        classification = 'بہترین صلاحیت';
+        clinical = 'مضبوط صحت؛ طویل عمر سے منسلک';
     }
 
     document.getElementById('speed-value').textContent = speed.toFixed(2);
@@ -721,7 +721,7 @@ function assessCadence() {
     const steps = parseFloat(document.getElementById('steps').value);
 
     if (isNaN(steps) || steps < 40 || steps > 180) {
-        alert('Please enter a valid step count between 40-180');
+        alert('براہ کرم 40-180 کے درمیان درست قدموں کی تعداد درج کریں');
         return;
     }
 
@@ -729,9 +729,9 @@ function assessCadence() {
     const mets = (0.0219 * cadence) + 0.72;
 
     let intensity = '';
-    if (mets < 3.0) intensity = 'Light intensity';
-    else if (mets < 6.0) intensity = 'Moderate intensity';
-    else intensity = 'Vigorous intensity';
+    if (mets < 3.0) intensity = 'ہلکی شدت';
+    else if (mets < 6.0) intensity = 'اعتدال درجے کی شدت';
+    else intensity = 'تیز شدت';
 
     document.getElementById('cadence-value').textContent = cadence;
     document.getElementById('cadence-mets').textContent = mets.toFixed(1);
@@ -744,7 +744,7 @@ function calculateGSI() {
     const left = parseFloat(document.getElementById('left-step').value);
 
     if (isNaN(right) || isNaN(left) || right < 30 || right > 120 || left < 30 || left > 120) {
-        alert('Please enter valid step lengths between 30-120 cm');
+        alert('براہ کرم 30-120 سینٹی میٹر کے درمیان درست قدم کی لمبائی درج کریں');
         return;
     }
 
@@ -754,20 +754,20 @@ function calculateGSI() {
     let interpretation = '';
 
     if (gsi < 2) {
-        classification = 'Excellent symmetry';
-        interpretation = 'Normal healthy adult gait';
+        classification = 'بہترین ہم آہنگی';
+        interpretation = 'عام صحت مند بالغ چال';
     } else if (gsi < 5) {
-        classification = 'Good symmetry';
-        interpretation = 'Normal variation, no concern';
+        classification = 'اچھی ہم آہنگی';
+        interpretation = 'عام تغیرات، کوئی تشویش نہیں';
     } else if (gsi < 10) {
-        classification = 'Mild asymmetry';
-        interpretation = 'May indicate minor imbalance; monitor over time';
+        classification = 'ہلکا عدم توازن';
+        interpretation = 'معمولی عدم توازن کی نشاندہی ہو سکتی ہے؛ وقت کے ساتھ نگرانی کریں';
     } else if (gsi < 20) {
-        classification = 'Moderate asymmetry';
-        interpretation = 'Warrants attention; consider PT evaluation';
+        classification = 'اعتدال درجے کا عدم توازن';
+        interpretation = 'توجہ کی ضرورت ہے؛ PT جائزہ پر غور کریں';
     } else {
-        classification = 'Severe asymmetry';
-        interpretation = 'Medical evaluation recommended; likely pathology';
+        classification = 'شدید عدم توازن';
+        interpretation = 'طبی جائزہ تجویز کیا جاتا ہے؛ ممکنہ طور پر بیماری موجود ہے';
     }
 
     document.getElementById('gsi-value').textContent = gsi.toFixed(1);
@@ -1021,4 +1021,4 @@ function calculateGSI() {
                     中文
                 </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. جملہ حقوق محفوظ ہیں۔
-            </p><ul class="footer-legal"><li><a href="/ur/privacy/">رازداری</a></li><li><a href="/ur/terms/">شرائط</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>یہ ویب سائٹ آپ کے تجربے کو بہتر بنانے کے لیے کوکیز کا استعمال کرتی ہے۔</p><a href="/ur/privacy/" class="text-sm">مزید جانیں</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">رد کرنا</button><button id="cookie-accept" class="btn btn-primary btn-small">قبول کریں۔</button></div></div></div><script src="../../assets/js/core.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/search.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
+            </p><ul class="footer-legal"><li><a href="/ur/privacy/">رازداری</a></li><li><a href="/ur/terms/">شرائط</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>یہ ویب سائٹ آپ کے تجربے کو بہتر بنانے کے لیے کوکیز کا استعمال کرتی ہے۔</p><a href="/ur/privacy/" class="text-sm">مزید جانیں</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">رد کرنا</button><button id="cookie-accept" class="btn btn-primary btn-small">قبول کریں۔</button></div></div></div><script src="../../assets/js/core.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/search.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

@@ -314,7 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=3c6d85d6"><script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=fe8b5ea0"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -686,22 +686,22 @@ img[width][height] {
                             aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://cardio.analyticszone.app" class="suite-app-link">Cardio Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a><a href="https://sleep.analyticszone.app" class="suite-app-link">Sleep Analytics</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Chuyển đổi menu"
-                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/cadence-calculator/">Công cụ</a></li><li><span aria-current="page">Máy tính VO₂max</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>VO₂max Calculator (Rockport Hiking Test)</h1><p class="lead">
-        Estimate your VO₂max (aerobic fitness) using the Rockport 1-Mile Hiking Test. Hike 1 mile (1.61 km) as fast as possible, record your time and heart rate immediately upon finishing.
-    </p><section id="calculator"><div class="calculator-box"><h2>Calculate VO₂max</h2><div class="input-group"><label for="age">Age (years):</label><input type="number" id="age" min="18" max="90" value="35" /></div><div class="input-group"><label for="sex">Sex:</label><select id="sex"><option value="male">Male</option><option value="female">Female</option></select></div><div class="input-group"><label for="weight">Body Weight:</label><input type="number" id="weight" min="40" max="200" value="70" /><select id="weight-unit"><option value="kg">kg</option><option value="lbs">lbs</option></select></div><div class="input-group"><label for="time-min">1-Mile Hike Time:</label><input type="number" id="time-min" min="8" max="30" value="15" style="width:60px;" /><span>min</span><input type="number" id="time-sec" min="0" max="59" value="30" style="width:60px;" /><span>sec</span></div><div class="input-group"><label for="hr">Heart Rate (immediately after finishing):</label><input type="number" id="hr" min="80" max="200" value="130" /><span class="unit">bpm</span></div><button onclick="calculateVO2max()" class="btn-primary">Calculate VO₂max</button><div id="results" style="display:none;"><h3>Results</h3><div class="result-item"><strong>Estimated VO₂max:</strong><span id="vo2max-value"></span> ml/kg/min
-                </div><div class="result-item"><strong>Fitness Classification:</strong><span id="fitness-class"></span></div><div class="result-item"><strong>Percentile for Age/Sex:</strong><span id="percentile"></span></div><div class="result-item"><strong>Interpretation:</strong><span id="interpretation"></span></div></div></div></section><section id="reference"><h2>VO₂max Reference Values (ml/kg/min)</h2><h3>Men</h3><div class="data-table"><table><thead><tr><th>Age</th><th>Poor</th><th>Fair</th><th>Good</th><th>Excellent</th><th>Superior</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;33</td><td>33-38</td><td>39-45</td><td>46-52</td><td>&gt;52</td></tr><tr><td><strong>30-39</strong></td><td>&lt;31</td><td>31-36</td><td>37-43</td><td>44-50</td><td>&gt;50</td></tr><tr><td><strong>40-49</strong></td><td>&lt;29</td><td>29-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>50-59</strong></td><td>&lt;26</td><td>26-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>60+</strong></td><td>&lt;24</td><td>24-28</td><td>29-35</td><td>36-42</td><td>&gt;42</td></tr></tbody></table></div><h3>Women</h3><div class="data-table"><table><thead><tr><th>Age</th><th>Poor</th><th>Fair</th><th>Good</th><th>Excellent</th><th>Superior</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;28</td><td>28-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>30-39</strong></td><td>&lt;27</td><td>27-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>40-49</strong></td><td>&lt;25</td><td>25-29</td><td>30-36</td><td>37-43</td><td>&gt;43</td></tr><tr><td><strong>50-59</strong></td><td>&lt;23</td><td>23-27</td><td>28-34</td><td>35-41</td><td>&gt;41</td></tr><tr><td><strong>60+</strong></td><td>&lt;21</td><td>21-25</td><td>26-32</td><td>33-39</td><td>&gt;39</td></tr></tbody></table></div></section><section id="methodology"><h2>Methodology: Rockport Hiking Test</h2><div class="formula-box"><h3>Equation</h3><pre>
-VO₂max (ml/kg/min) = 132.853
-                      - (0.0769 × Weight in lbs)
-                      - (0.3877 × Age in years)
-                      + (6.315 × Sex) [1 = male, 0 = female]
-                      - (3.2649 × Time in minutes)
-                      - (0.1565 × Heart Rate in bpm)
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/vi/">Trang chủ</a></li><li><a href="/vi/cadence-calculator/">Công cụ</a></li><li><span aria-current="page">Máy tính VO₂max</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="content-wrapper"><h1>Máy Tính VO₂max (Kiểm Tra Đi Bộ Rockport)</h1><p class="lead">
+        Ước tính VO₂max (thể lực hiếu khí) của bạn bằng Kiểm Tra Đi Bộ 1 Dặm Rockport. Đi bộ 1 dặm (1,61 km) nhanh nhất có thể, ghi lại thời gian và nhịp tim ngay sau khi kết thúc.
+    </p><section id="calculator"><div class="calculator-box"><h2>Tính VO₂max</h2><div class="input-group"><label for="age">Tuổi (năm):</label><input type="number" id="age" min="18" max="90" value="35" /></div><div class="input-group"><label for="sex">Giới tính:</label><select id="sex"><option value="male">Nam</option><option value="female">Nữ</option></select></div><div class="input-group"><label for="weight">Cân nặng:</label><input type="number" id="weight" min="40" max="200" value="70" /><select id="weight-unit"><option value="kg">kg</option><option value="lbs">lbs</option></select></div><div class="input-group"><label for="time-min">Thời gian đi bộ 1 dặm:</label><input type="number" id="time-min" min="8" max="30" value="15" style="width:60px;" /><span>phút</span><input type="number" id="time-sec" min="0" max="59" value="30" style="width:60px;" /><span>giây</span></div><div class="input-group"><label for="hr">Nhịp tim (ngay sau khi kết thúc):</label><input type="number" id="hr" min="80" max="200" value="130" /><span class="unit">bpm</span></div><button onclick="calculateVO2max()" class="btn-primary">Tính VO₂max</button><div id="results" style="display:none;"><h3>Kết quả</h3><div class="result-item"><strong>VO₂max ước tính:</strong><span id="vo2max-value"></span> ml/kg/phút
+                </div><div class="result-item"><strong>Phân loại thể lực:</strong><span id="fitness-class"></span></div><div class="result-item"><strong>Phần trăm theo tuổi/giới tính:</strong><span id="percentile"></span></div><div class="result-item"><strong>Giải thích:</strong><span id="interpretation"></span></div></div></div></section><section id="reference"><h2>Giá Trị Tham Chiếu VO₂max (ml/kg/phút)</h2><h3>Nam giới</h3><div class="data-table"><table><thead><tr><th>Tuổi</th><th>Kém</th><th>Trung bình</th><th>Tốt</th><th>Xuất sắc</th><th>Vượt trội</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;33</td><td>33-38</td><td>39-45</td><td>46-52</td><td>&gt;52</td></tr><tr><td><strong>30-39</strong></td><td>&lt;31</td><td>31-36</td><td>37-43</td><td>44-50</td><td>&gt;50</td></tr><tr><td><strong>40-49</strong></td><td>&lt;29</td><td>29-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>50-59</strong></td><td>&lt;26</td><td>26-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>60+</strong></td><td>&lt;24</td><td>24-28</td><td>29-35</td><td>36-42</td><td>&gt;42</td></tr></tbody></table></div><h3>Nữ giới</h3><div class="data-table"><table><thead><tr><th>Tuổi</th><th>Kém</th><th>Trung bình</th><th>Tốt</th><th>Xuất sắc</th><th>Vượt trội</th></tr></thead><tbody><tr><td><strong>20-29</strong></td><td>&lt;28</td><td>28-33</td><td>34-40</td><td>41-47</td><td>&gt;47</td></tr><tr><td><strong>30-39</strong></td><td>&lt;27</td><td>27-31</td><td>32-38</td><td>39-45</td><td>&gt;45</td></tr><tr><td><strong>40-49</strong></td><td>&lt;25</td><td>25-29</td><td>30-36</td><td>37-43</td><td>&gt;43</td></tr><tr><td><strong>50-59</strong></td><td>&lt;23</td><td>23-27</td><td>28-34</td><td>35-41</td><td>&gt;41</td></tr><tr><td><strong>60+</strong></td><td>&lt;21</td><td>21-25</td><td>26-32</td><td>33-39</td><td>&gt;39</td></tr></tbody></table></div></section><section id="methodology"><h2>Phương pháp: Kiểm Tra Đi Bộ Rockport</h2><div class="formula-box"><h3>Công thức</h3><pre>
+VO₂max (ml/kg/phút) = 132.853
+                      - (0.0769 × Cân nặng tính bằng lbs)
+                      - (0.3877 × Tuổi tính bằng năm)
+                      + (6.315 × Giới tính) [1 = nam, 0 = nữ]
+                      - (3.2649 × Thời gian tính bằng phút)
+                      - (0.1565 × Nhịp tim tính bằng bpm)
 
-Validation:
+Xác thực:
   - Kline et al., Medicine & Science in Sports & Exercise (1987)
-  - Correlation with lab-measured VO₂max: r = 0.88-0.93
-  - Standard error: ±5 ml/kg/min
-            </pre></div><h3>Test Protocol</h3><ol><li><strong>Preparation:</strong> Avoid vigorous activity 24 hours before test; well-hydrated</li><li><strong>Warm-up:</strong> 5-10 minutes easy hiking</li><li><strong>Test:</strong> Hike 1 mile (1.61 km) as fast as possible while maintaining hiking gait (no running)</li><li><strong>Measurement:</strong> Record time (to nearest second) and heart rate immediately upon finishing</li><li><strong>Track:</strong> Flat 400m track (4 laps) or measured 1-mile route</li></ol></section></div><script>
+  - Tương quan với VO₂max đo trong phòng thí nghiệm: r = 0.88-0.93
+  - Sai số chuẩn: ±5 ml/kg/phút
+            </pre></div><h3>Quy trình kiểm tra</h3><ol><li><strong>Chuẩn bị:</strong> Tránh hoạt động mạnh 24 giờ trước kiểm tra; uống đủ nước</li><li><strong>Khởi động:</strong> Đi bộ nhẹ 5-10 phút</li><li><strong>Kiểm tra:</strong> Đi bộ 1 dặm (1,61 km) nhanh nhất có thể trong khi duy trì dáng đi bộ (không chạy)</li><li><strong>Đo lường:</strong> Ghi lại thời gian (đến giây gần nhất) và nhịp tim ngay sau khi kết thúc</li><li><strong>Đường chạy:</strong> Đường chạy 400m phẳng (4 vòng) hoặc đường 1 dặm đã đo</li></ol></section></div><script>
 function calculateVO2max() {
     const age = parseFloat(document.getElementById('age').value);
     const sex = document.getElementById('sex').value;
@@ -713,7 +713,7 @@ function calculateVO2max() {
 
     // Validation
     if (isNaN(age) || isNaN(weight) || isNaN(timeMin) || isNaN(timeSec) || isNaN(hr)) {
-        alert('Please fill in all fields with valid numbers');
+        alert('Vui lòng điền tất cả các trường với số hợp lệ');
         return;
     }
 
@@ -746,47 +746,47 @@ function calculateVO2max() {
 
     if (sex === 'male') {
         if (vo2max < 30) {
-            fitnessClass = 'Poor';
-            percentile = 'Below 20th percentile';
-            interpretation = 'Below average fitness; begin gradual hiking program';
+            fitnessClass = 'Kém';
+            percentile = 'Dưới phần trăm thứ 20';
+            interpretation = 'Thể lực dưới trung bình; bắt đầu chương trình đi bộ từ từ';
         } else if (vo2max < 36) {
-            fitnessClass = 'Fair';
-            percentile = '20th-40th percentile';
-            interpretation = 'Below average; aim to increase to 150 min/week moderate hiking';
+            fitnessClass = 'Trung bình';
+            percentile = 'Phần trăm thứ 20-40';
+            interpretation = 'Dưới trung bình; hướng đến tăng lên 150 phút/tuần đi bộ vừa phải';
         } else if (vo2max < 42) {
-            fitnessClass = 'Good';
-            percentile = '40th-60th percentile';
-            interpretation = 'Average fitness; maintain regular activity';
+            fitnessClass = 'Tốt';
+            percentile = 'Phần trăm thứ 40-60';
+            interpretation = 'Thể lực trung bình; duy trì hoạt động đều đặn';
         } else if (vo2max < 48) {
-            fitnessClass = 'Excellent';
-            percentile = '60th-80th percentile';
-            interpretation = 'Above average; good cardiovascular health';
+            fitnessClass = 'Xuất sắc';
+            percentile = 'Phần trăm thứ 60-80';
+            interpretation = 'Trên trung bình; sức khỏe tim mạch tốt';
         } else {
-            fitnessClass = 'Superior';
-            percentile = 'Above 80th percentile';
-            interpretation = 'Excellent aerobic fitness; athlete-level';
+            fitnessClass = 'Vượt trội';
+            percentile = 'Trên phần trăm thứ 80';
+            interpretation = 'Thể lực hiếu khí xuất sắc; cấp độ vận động viên';
         }
     } else {
         if (vo2max < 25) {
-            fitnessClass = 'Poor';
-            percentile = 'Below 20th percentile';
-            interpretation = 'Below average fitness; begin gradual hiking program';
+            fitnessClass = 'Kém';
+            percentile = 'Dưới phần trăm thứ 20';
+            interpretation = 'Thể lực dưới trung bình; bắt đầu chương trình đi bộ từ từ';
         } else if (vo2max < 30) {
-            fitnessClass = 'Fair';
-            percentile = '20th-40th percentile';
-            interpretation = 'Below average; aim to increase to 150 min/week moderate hiking';
+            fitnessClass = 'Trung bình';
+            percentile = 'Phần trăm thứ 20-40';
+            interpretation = 'Dưới trung bình; hướng đến tăng lên 150 phút/tuần đi bộ vừa phải';
         } else if (vo2max < 36) {
-            fitnessClass = 'Good';
-            percentile = '40th-60th percentile';
-            interpretation = 'Average fitness; maintain regular activity';
+            fitnessClass = 'Tốt';
+            percentile = 'Phần trăm thứ 40-60';
+            interpretation = 'Thể lực trung bình; duy trì hoạt động đều đặn';
         } else if (vo2max < 42) {
-            fitnessClass = 'Excellent';
-            percentile = '60th-80th percentile';
-            interpretation = 'Above average; good cardiovascular health';
+            fitnessClass = 'Xuất sắc';
+            percentile = 'Phần trăm thứ 60-80';
+            interpretation = 'Trên trung bình; sức khỏe tim mạch tốt';
         } else {
-            fitnessClass = 'Superior';
-            percentile = 'Above 80th percentile';
-            interpretation = 'Excellent aerobic fitness; athlete-level';
+            fitnessClass = 'Vượt trội';
+            percentile = 'Trên phần trăm thứ 80';
+            interpretation = 'Thể lực hiếu khí xuất sắc; cấp độ vận động viên';
         }
     }
 
@@ -1045,4 +1045,4 @@ function calculateVO2max() {
                     中文
                 </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Hike Analytics. Mọi quyền được bảo lưu
-            </p><ul class="footer-legal"><li><a href="/vi/privacy/">Sự riêng tư</a></li><li><a href="/vi/terms/">Điều khoản</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn.</p><a href="/vi/privacy/" class="text-sm">Tìm hiểu thêm</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Sự suy sụp</button><button id="cookie-accept" class="btn btn-primary btn-small">Chấp nhận</button></div></div></div><script src="../../assets/js/core.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/search.min.js?v=3c6d85d6" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
+            </p><ul class="footer-legal"><li><a href="/vi/privacy/">Sự riêng tư</a></li><li><a href="/vi/terms/">Điều khoản</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn.</p><a href="/vi/privacy/" class="text-sm">Tìm hiểu thêm</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Sự suy sụp</button><button id="cookie-accept" class="btn btn-primary btn-small">Chấp nhận</button></div></div></div><script src="../../assets/js/core.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/search.min.js?v=fe8b5ea0" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-H2GN68S089" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
